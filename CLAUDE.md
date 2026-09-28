@@ -7,18 +7,46 @@ Todo pedido de video se resuelve primero con la suite instalada en este proyecto
 - Composición principal: 30 fps.
 - Formatos: 1920x1080 (16:9) y 1080x1920 (9:16).
 
+## Trabajos (cómo se organiza cada pedido)
+Cada pedido es un **trabajo** con ID `AAAA-MM-DD_cliente_pieza` (minúsculas, sin tildes). El mismo ID se usa en todas las carpetas:
+
+| Dónde | Qué va |
+|---|---|
+| `<carpetaCrudos>/<ID>/` (fuera del proyecto, ver `herramientas.json`) | Originales tal cual llegaron (4K, etc.). Nunca se modifican |
+| `public/trabajos/<ID>/crudos/` | Proxies livianos (1080p, 30 fps constantes) hechos con ffmpeg |
+| `public/trabajos/<ID>/audio/` | Música preparada para este trabajo, voz limpia, efectos elegidos |
+| `public/trabajos/<ID>/img/` | Imágenes propias de este trabajo |
+| `public/trabajos/<ID>/datos/` | `transcripcion.json`, `clips.json`, `encuadre.json`… (se versionan) |
+| `src/trabajos/<ID>/` | `TRABAJO.md` (brief, decisiones, entregas), `composiciones.ts`, scripts propios del trabajo |
+| `out/<ID>/revision/` | Hojas de contacto, stills, borradores rápidos |
+| `out/<ID>/final/` | Entregas: `<pieza>_<formato>_v<N>.mp4` (p. ej. `clip-01_9x16_v2.mp4`) |
+
+Compartido entre trabajos:
+- `public/marcas/<cliente>/` + `src/marcas/<cliente>/marca.ts`: kit de marca (logo, fotos institucionales, colores, tipografía, curvas).
+- `public/biblioteca/`: música y efectos de Mixkit ya bajados (reutilizables).
+- `src/plantillas/`: plantillas reutilizables (`HistoriaMarca`, …) + `comunes/piezas.tsx`.
+
+Reglas:
+- Comandos: **`/nuevo-trabajo <cliente> <pieza> [crudos] [brief]`** abre un trabajo; **`/cerrar-trabajo <ID>`** lo cierra y archiva.
+- Si el pedido del usuario no nombra un trabajo, preguntar si es uno nuevo o la continuación de uno existente.
+- **Nunca sobrescribir un archivo de `out/<ID>/final/`**: cada cambio es una versión nueva `_vN+1`. Anotar cada entrega en `TRABAJO.md`.
+- Un trabajo parecido a otro anterior se hace reutilizando su plantilla y cambiando solo los datos (textos, imágenes, duraciones, música).
+- Remotion copia TODO `public/` en cada render: mantener solo trabajos activos; al terminar, `/cerrar-trabajo` mueve el material pesado a `<carpetaArchivo>/<ID>/`.
+- IDs de composición: solo letras, números y guiones (`<cliente>-<pieza>-<variante>`); se registran en `src/trabajos/index.ts`.
+
 ## Archivos
-- Material crudo en `public/` (`video/`, `audio/`, `audio/musica/`, `img/`, `fonts/`); datos JSON en `public/datos/`. Usar siempre `staticFile()`.
+- Todo lo que usa Remotion va dentro de `public/` y se referencia con `staticFile("trabajos/<ID>/…")`, `staticFile("marcas/<cliente>/…")`, etc.
 - NUNCA abrir ni leer binarios de `public/` (videos, audio, imágenes): usar solo sus nombres.
-- Rutas de las herramientas externas: leer `scripts/herramientas.json`.
+- Rutas de las herramientas externas y de las carpetas de crudos/archivo: leer `scripts/herramientas.json`.
 
 ## Código
 - Valores de animación como constantes al inicio de cada archivo.
 - `interpolate` siempre con `extrapolateLeft/Right: 'clamp'`.
 
 ## Render
-- NUNCA hacer un render completo salvo pedido explícito. Para verificar: `npx remotion still <entry> <Comp> out/check.png --frame=N`.
-- Render final: `--crf 18`. Audio final normalizado a -14 LUFS (`loudnorm`).
+- NUNCA hacer un render completo salvo pedido explícito. Para verificar: `npx remotion still src/index.ts <comp> out/<ID>/revision/f<N>.png --frame=N`, o una secuencia a `--scale=0.25` y una hoja de contactos en `out/<ID>/revision/`.
+- Render final: `npx remotion render src/index.ts <comp> out/<ID>/final/<pieza>_<formato>_v<N>.mp4 --crf=18`.
+- Audio final normalizado a -14 LUFS (`loudnorm`) y verificado con `ebur128`.
 
 ## Herramientas
 - ffmpeg: build **completo** del sistema (Gyan.FFmpeg 9.0.2 full, instalado con winget). Rutas en `scripts/herramientas.json` (`ffmpeg`, `ffprobe`).
@@ -33,8 +61,9 @@ Todo pedido de video se resuelve primero con la suite instalada en este proyecto
 - MediaPipe: Tasks API (`FaceDetector`) con el modelo `blaze_face_short_range.tflite`.
 - Color: LUTs `.cube` en `C:/Videos/_herramientas/luts`, aplicar con `-vf lut3d=archivo.cube`.
 - Mixkit (música y efectos gratis, de Envato): `node scripts/mixkit.mjs`.
-  - Buscar: `buscar <términos>` · `buscar mood:<estado>` · `buscar genero:<género>` · `buscar tag:<etiqueta>` · `buscar --sfx <términos>`. Leer `public/datos/mixkit-busqueda.json` (id, título, autor, etiquetas, duración) y proponer 2-3 opciones con su razón antes de bajar.
-  - Descargar: `bajar <id>` (música → `public/audio/musica/mixkit/`) o `bajar <id> --sfx` (efectos → `public/audio/sfx/mixkit/`). Registra la licencia en `public/audio/LICENCIAS-mixkit.json`.
+  - Buscar: `buscar <términos>` · `buscar mood:<estado>` · `buscar genero:<género>` · `buscar tag:<etiqueta>` · `buscar --sfx <términos>`. Leer `tmp/mixkit-busqueda.json` (id, título, autor, etiquetas, duración) y proponer 2-3 opciones con su razón antes de bajar.
+  - Descargar: `bajar <id>` (música → `public/biblioteca/musica/mixkit/`) o `bajar <id> --sfx` (efectos → `public/biblioteca/sfx/mixkit/`). Registra la licencia en `public/biblioteca/LICENCIAS-mixkit.json`.
+  - Para usar un tema en un trabajo: recortarlo, darle fundidos y normalizarlo con ffmpeg a `public/trabajos/<ID>/audio/` (ejemplo: `src/trabajos/2026-09-28_rastro_historia-ig/preparar_musica_15s.sh`).
   - Los términos de Mixkit PROHÍBEN descargas masivas con scripts: solo 1 búsqueda o 1 descarga por ejecución, de temas elegidos; nunca bajar en lote ni en bucle.
   - Estados de ánimo útiles (mood:): uplifting, happy, relaxing, dreamy, epic, energetic, romantic, sad. Géneros (genero:): corporate, ambient, hip-hop, jazz, funk, pop, rock, electronica, cinematic, lofi.
 
@@ -49,18 +78,18 @@ Todo pedido de video se resuelve primero con la suite instalada en este proyecto
 | Limpiar ruido de voz | DeepFilterNet |
 | Transcribir, tiempos por palabra | whisper.cpp |
 | Silencios y muletillas | whisper.cpp (huecos entre palabras) → Remotion corta |
-| Elegir fragmentos | leer la transcripción (texto, nunca el video) → `public/datos/clips.json` |
-| Posición del sujeto para 9:16 | MediaPipe → `public/datos/encuadre.json` |
-| Reencuadre, subtítulos, títulos, gráficos, transiciones, ducking, render | Remotion |
+| Elegir fragmentos | leer la transcripción (texto, nunca el video) → `public/trabajos/<ID>/datos/clips.json` |
+| Posición del sujeto para 9:16 | MediaPipe → `public/trabajos/<ID>/datos/encuadre.json` |
+| Reencuadre, subtítulos, títulos, gráficos, transiciones, ducking, render | Remotion (plantillas de `src/plantillas/`) |
 | Tipografías | `@remotion/google-fonts` |
-| Música de fondo | 1º Mixkit (`scripts/mixkit.mjs`); 2º música compuesta por código; siempre en `public/audio/musica/` |
-| Efectos de sonido (whoosh, click, pop, transiciones) | Mixkit `--sfx` → `public/audio/sfx/mixkit/` |
+| Música de fondo | 1º Mixkit (`scripts/mixkit.mjs` → biblioteca → preparada en `public/trabajos/<ID>/audio/`); 2º música compuesta por código |
+| Efectos de sonido (whoosh, click, pop, transiciones) | Mixkit `--sfx` → `public/biblioteca/sfx/mixkit/` |
 | Recortar música a la duración del video, fundidos | Remotion `<Audio trimBefore volume>` o ffmpeg `atrim`/`afade` + `loudnorm` |
 | Voz IA, avatar, doblaje, música generada, stock | ChatCut (preguntar antes: consume créditos) |
 | Duda entre dos opciones | la más rápida y barata en tokens; si afecta la calidad final, preguntar |
 
 ## Música
-- Fuente principal: Mixkit (licencia libre para uso comercial, sin atribución obligatoria; no se puede revender el tema suelto ni reclamarlo como propio). Cada descarga queda en `public/audio/LICENCIAS-mixkit.json`.
-- Alternativa: música compuesta por código (sin licencias de terceros), como `scripts/musica_rastro.py`.
+- Fuente principal: Mixkit (licencia libre para uso comercial, sin atribución obligatoria; no se puede revender el tema suelto ni reclamarlo como propio). Cada descarga queda en `public/biblioteca/LICENCIAS-mixkit.json`.
+- Alternativa: música compuesta por código (sin licencias de terceros), como `src/trabajos/2026-09-28_rastro_historia-ig/musica_rastro.py`.
 - Otras fuentes con licencia (YouTube Audio Library, Pixabay): revisar si exigen atribución.
 - Mezcla: música de fondo a -14 LUFS si va sola; si hay voz, la música ~12-18 dB por debajo (ducking en Remotion). Verificar con `ebur128`.

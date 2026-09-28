@@ -124,12 +124,16 @@ Espacio usado en `C:\Videos\_herramientas`: 2,9 GB. Los detalles están en `C:\V
 
 ---
 
-## 7. Trabajo realizado: historia de Instagram de RASTRO
+## 7. Organización por trabajos (desde el 2026-09-28)
 
-- **Versión 1 (15 s):** `out/historia-rastro.mp4`. Música house a 120 BPM. El código de esta versión fue reemplazado por la versión 2.
-- **Versión 2 (30 s, según el guion de 6 escenas):** `out/historia-rastro-30s.mp4`.
-  - Código: `src/Rastro/` (`HistoriaRastro.tsx`, `piezas.tsx`, `tema.ts`). Composición `HistoriaRastro`.
-  - Música: `scripts/musica_rastro.py`, que genera `public/audio/musica/rastro-base.wav` (base suave, Fa mayor, 120 BPM, normalizada a -16 LUFS, con entrada y salida graduales).
-  - Imágenes tomadas de somosrastro.com.ar, en `public/img/rastro/`.
-  - Identidad: papel `#f7f4ea`, tinta `#0d0d0d`, gris `#6f6b62`, Inter y la curva de animación `cubic-bezier(.16,1,.3,1)`.
-- **Versión 3 (15 s, mismo guion comprimido):** `out/historia-rastro-15s.mp4`. Composición `HistoriaRastro15`: el mismo código con `version: "15s"`, donde el factor `ritmo` (0,45) acelera todas las apariciones. Música: `python scripts/musica_rastro.py <salida> 15`, que genera `rastro-base-15s.wav`.
+Cada pedido es un **trabajo** con ID `AAAA-MM-DD_cliente_pieza`, y el mismo ID se usa en `public/trabajos/<ID>/` (proxies, audio, img, datos), `src/trabajos/<ID>/` (`TRABAJO.md` + `composiciones.ts`) y `out/<ID>/` (`revision/` y `final/` con `_vN`). Los originales viven fuera del proyecto (`C:/Videos/crudos/<ID>/`) y los trabajos cerrados se archivan en `C:/Videos/archivo/<ID>/`, porque Remotion copia todo `public/` en cada render.
+
+Compartido entre trabajos: kits de marca (`src/marcas/` + `public/marcas/`), plantillas (`src/plantillas/`) y biblioteca de Mixkit (`public/biblioteca/`). Comandos de Claude Code: `/nuevo-trabajo` y `/cerrar-trabajo` (`.claude/commands/`). Detalle en `CLAUDE.md`.
+
+**Primer trabajo migrado: `2026-09-28_rastro_historia-ig`** (historia de Instagram de RASTRO). La ficha completa (brief, decisiones, música y entregas) está en `src/trabajos/2026-09-28_rastro_historia-ig/TRABAJO.md`. Resumen:
+- La historia se convirtió en la plantilla reutilizable **`HistoriaMarca`** (escenas portada, equipo, pieza y contacto, alimentadas con datos) y la identidad en el kit **`src/marcas/rastro`**. Tras la migración, los 900 frames salen idénticos a los anteriores.
+- Composiciones `rastro-historia-ig-30s` (música compuesta por código) y `rastro-historia-ig-15s` (Mixkit "Happy Home", id 801, tramo 93,7–108,7 s).
+- Entregas en `out/2026-09-28_rastro_historia-ig/final/`: `historia-15s_9x16_v1` (primera versión, house), `historia-30s_9x16_v1` y `historia-15s_9x16_v2`.
+- Identidad: papel `#f7f4ea`, tinta `#0d0d0d`, gris `#6f6b62`, Inter y la curva `cubic-bezier(.16,1,.3,1)`.
+
+**Próxima plantilla sugerida:** `ClipVertical` (crudo 16:9 → clips 9:16 con seguimiento de MediaPipe y subtítulos de Whisper), a construir con el primer trabajo que traiga crudos reales.

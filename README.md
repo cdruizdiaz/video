@@ -24,11 +24,20 @@ Las herramientas pesadas se instalan una sola vez por PC en `C:\Videos\_herramie
 
 ## Uso
 
+Cada pedido es un **trabajo** con ID `AAAA-MM-DD_cliente_pieza`. En Claude Code:
+
+```
+/nuevo-trabajo rastro clips-charla C:\Videos\crudos\charla "3 clips 9:16 de 30-45 s con subtítulos"
+... (Claude arma proxies, transcribe, propone fragmentos, compone, muestra revisiones) ...
+/cerrar-trabajo 2026-10-02_rastro_clips-charla
+```
+
+Comandos directos:
+
 ```bash
-npm run dev                       # Remotion Studio (vista previa)
-npx remotion render src/index.ts HistoriaRastro   out/historia-rastro-30s.mp4 --crf=18
-npx remotion render src/index.ts HistoriaRastro15 out/historia-rastro-15s.mp4 --crf=18
-node scripts/mixkit.mjs buscar mood:uplifting     # música gratis (Mixkit)
+npm run dev                                          # Remotion Studio (una carpeta por trabajo)
+npx remotion render src/index.ts rastro-historia-ig-15s out/2026-09-28_rastro_historia-ig/final/historia-15s_9x16_v3.mp4 --crf=18
+node scripts/mixkit.mjs buscar mood:uplifting        # música gratis (Mixkit)
 ```
 
 ## Documentación
@@ -43,16 +52,23 @@ node scripts/mixkit.mjs buscar mood:uplifting     # música gratis (Mixkit)
 ## Estructura
 
 ```
-public/            material (video/, audio/, img/, fonts/, datos/) — los videos y audios no se versionan
-scripts/           mixkit.mjs, musica_rastro.py, herramientas.json (rutas de la PC)
-setup/             prompt_instalacion.txt + herramientas/ (instalar-whisper.mjs, requirements.txt, READMEs)
-src/Rastro/        historias de Instagram de RASTRO (30 s y 15 s)
-out/               renders (no se versiona)
+public/marcas/<cliente>/       kit de marca (logo, fotos, tipografías)
+public/biblioteca/             música y efectos de Mixkit (+ LICENCIAS-mixkit.json)
+public/trabajos/<ID>/          crudos/ (proxies), audio/, img/, datos/ — solo datos/ se versiona
+src/marcas/<cliente>/          colores, tipografía, curvas y logo de cada marca
+src/plantillas/                plantillas reutilizables (HistoriaMarca, …) + piezas comunes
+src/trabajos/<ID>/             TRABAJO.md (brief, decisiones, entregas) + composiciones.ts
+out/<ID>/revision|final/       renders (no se versiona); finales como <pieza>_<formato>_v<N>.mp4
+scripts/                       mixkit.mjs, herramientas.json (rutas de la PC)
+setup/                         prompt_instalacion.txt + herramientas/
+.claude/commands/              /nuevo-trabajo y /cerrar-trabajo
 ```
+
+Originales fuera del proyecto en `C:\Videos\crudos\<ID>\`; trabajos cerrados en `C:\Videos\archivo\<ID>\`.
 
 ## Licencias de recursos
 
-- Imágenes de `public/img/rastro/`: propiedad de RASTRO (somosrastro.com.ar).
-- Música de Mixkit: *Mixkit Stock Music Free License*; cada tema bajado queda registrado en `public/audio/LICENCIAS-mixkit.json`.
-- Música de RASTRO: compuesta por código (`scripts/musica_rastro.py`), sin material de terceros.
+- Imágenes de `public/marcas/rastro/`: propiedad de RASTRO (somosrastro.com.ar).
+- Música de Mixkit: *Mixkit Stock Music Free License*; cada tema bajado queda registrado en `public/biblioteca/LICENCIAS-mixkit.json`.
+- Música de la historia de 30 s de RASTRO: compuesta por código (`src/trabajos/2026-09-28_rastro_historia-ig/musica_rastro.py`), sin material de terceros.
 - Remotion: gratis para individuos y empresas de hasta 3 personas ([licencia](https://www.remotion.dev/license)).

@@ -16,9 +16,10 @@
 //   node scripts/mixkit.mjs buscar --sfx <términos>      efectos de sonido (whoosh, click, pop...)
 //   node scripts/mixkit.mjs bajar <id> [--sfx]           descarga UN tema/efecto
 //
-// Resultados de búsqueda: public/datos/mixkit-busqueda.json (leer este JSON, no el HTML).
-// Descargas: public/audio/musica/mixkit/ y public/audio/sfx/mixkit/,
-// con registro de licencia en public/audio/LICENCIAS-mixkit.json.
+// Resultados de búsqueda: tmp/mixkit-busqueda.json (leer este JSON, no el HTML).
+// Descargas a la biblioteca compartida: public/biblioteca/musica/mixkit/ y public/biblioteca/sfx/mixkit/,
+// con registro de licencia en public/biblioteca/LICENCIAS-mixkit.json.
+// Para usar un tema en un trabajo, prepararlo (recorte, fundidos, loudnorm) en public/trabajos/<ID>/audio/.
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
@@ -26,8 +27,8 @@ import path from "node:path";
 const BASE = "https://mixkit.co";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)";
 const RAIZ = process.cwd();
-const BUSQUEDA = path.join(RAIZ, "public/datos/mixkit-busqueda.json");
-const REGISTRO = path.join(RAIZ, "public/audio/LICENCIAS-mixkit.json");
+const BUSQUEDA = path.join(RAIZ, "tmp/mixkit-busqueda.json");
+const REGISTRO = path.join(RAIZ, "public/biblioteca/LICENCIAS-mixkit.json");
 const LICENCIA = {
   musica: "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
   sfx: "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
@@ -64,7 +65,14 @@ const urlBusqueda = (consulta) => {
   return `${BASE}/${seccion}/discover/${v}/`;
 };
 
-const texto = (html) => html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+const texto = (html) =>
+  html
+    .replace(/<[^>]+>/g, "")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/\s+/g, " ")
+    .trim();
 
 async function buscar(consulta) {
   if (!consulta) throw new Error("Falta el término de búsqueda.");
@@ -115,7 +123,7 @@ async function bajar(id) {
     : `https://assets.mixkit.co/music/${id}/${id}.mp3`;
   const previa = leerJson(BUSQUEDA, { items: [] }).items.find((i) => i.id === id);
   const nombre = `mixkit-${id}${previa?.titulo ? `-${slug(previa.titulo)}` : ""}${esSfx ? ".wav" : ".mp3"}`;
-  const carpeta = path.join(RAIZ, esSfx ? "public/audio/sfx/mixkit" : "public/audio/musica/mixkit");
+  const carpeta = path.join(RAIZ, esSfx ? "public/biblioteca/sfx/mixkit" : "public/biblioteca/musica/mixkit");
   const destino = path.join(carpeta, nombre);
 
   if (fs.existsSync(destino)) {

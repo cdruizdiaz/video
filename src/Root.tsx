@@ -1,64 +1,28 @@
 import "./index.css";
-import { Composition } from "remotion";
-import { HelloWorld } from "./HelloWorld";
-import { Logo } from "./HelloWorld/Logo";
-import { duracionVersion, HistoriaRastro } from "./Rastro/HistoriaRastro";
+import { Composition, Folder } from "remotion";
+import { TRABAJOS } from "./trabajos";
 
-// Each <Composition> is an entry in the sidebar!
-
+// Cada trabajo aparece en Remotion Studio como una carpeta con sus composiciones.
+// Los nombres de carpeta solo admiten letras, números y guiones: "_" se reemplaza por "-".
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      <Composition
-        id="HistoriaRastro"
-        component={HistoriaRastro}
-        durationInFrames={duracionVersion("30s")}
-        fps={30}
-        width={1080}
-        height={1920}
-        defaultProps={{ version: "30s" as const }}
-      />
-      <Composition
-        id="HistoriaRastro15"
-        component={HistoriaRastro}
-        durationInFrames={duracionVersion("15s")}
-        fps={30}
-        width={1080}
-        height={1920}
-        defaultProps={{ version: "15s" as const }}
-      />
-      <Composition
-        // You can take the "id" to render a video:
-        // npx remotion render HelloWorld
-        id="HelloWorld"
-        component={HelloWorld}
-        durationInFrames={150}
-        fps={30}
-        width={1920}
-        height={1080}
-        // You can override these props for each render:
-        // https://www.remotion.dev/docs/parametrized-rendering
-        defaultProps={{
-          titleText: "Welcome to Remotion",
-          titleColor: "#000000",
-          logoColor1: "#91EAE4",
-          logoColor2: "#86A8E7",
-        }}
-      />
-
-      {/* Mount any React component to make it show up in the sidebar and work on it individually! */}
-      <Composition
-        id="OnlyLogo"
-        component={Logo}
-        durationInFrames={150}
-        fps={30}
-        width={1920}
-        height={1080}
-        defaultProps={{
-          logoColor1: "#91dAE2",
-          logoColor2: "#86A8E7",
-        }}
-      />
+      {TRABAJOS.map((trabajo) => (
+        <Folder key={trabajo.id} name={trabajo.id.replace(/_/g, "-")}>
+          {trabajo.composiciones.map((c) => (
+            <Composition
+              key={c.id}
+              id={c.id}
+              component={c.component}
+              durationInFrames={c.durationInFrames}
+              fps={c.fps ?? 30}
+              width={c.width ?? 1080}
+              height={c.height ?? 1920}
+              defaultProps={c.defaultProps}
+            />
+          ))}
+        </Folder>
+      ))}
     </>
   );
 };

@@ -10,5 +10,7 @@
   "python": "C:/Videos/_herramientas/.venv/Scripts/python.exe",
   "deepFilter": "C:/Videos/_herramientas/.venv/Scripts/deepFilter.exe",
   "modeloCaras": "C:/Videos/_herramientas/modelos-mediapipe/blaze_face_short_range.tflite",
-  "carpetaLuts": "C:/Videos/_herramientas/luts"
+  "carpetaLuts": "C:/Videos/_herramientas/luts",
+  "carpetaCrudos": "C:/Videos/crudos",
+  "carpetaArchivo": "C:/Videos/archivo"
 }

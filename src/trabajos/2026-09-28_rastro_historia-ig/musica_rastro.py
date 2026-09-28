@@ -5,7 +5,8 @@ Dos versiones, alineadas con los cortes del video (1 pulso = 0,5 s = 15 frames):
   30 s: intro 0-4 s, ritmo desde 4 s, escena oscura 18-23 s sin kick, fade desde 26,5 s
   15 s: intro 0-2,5 s, ritmo desde 2,5 s, escena oscura 9-11 s sin kick, fade desde 12,5 s
 
-Uso: python scripts/musica_rastro.py <salida.wav> [30|15]
+Uso: python src/trabajos/2026-09-28_rastro_historia-ig/musica_rastro.py <salida.wav> [30|15]
+     (luego normalizar con ffmpeg loudnorm=I=-16 a public/trabajos/2026-09-28_rastro_historia-ig/audio/rastro-base.wav)
 """
 import sys
 import wave

@@ -3,18 +3,26 @@ dist
 .DS_Store
 .env
 
-# Ignore the output video from Git but not videos you import into src/.
+# Renders (out/<ID>/revision y out/<ID>/final): no se versionan
 out
 
-# Material crudo pesado (videos y audio) — no se versiona
-# (se conservan los .gitkeep para que las carpetas existan al clonar)
-public/video/*
-!public/video/.gitkeep
-public/audio/**/*.*
-!public/audio/**/.gitkeep
-# el registro de licencias de Mixkit sí se versiona
-!public/audio/LICENCIAS-mixkit.json
-public/datos/mixkit-busqueda.json
+# Temporales (búsquedas de Mixkit, pruebas)
+tmp/
+
+# Configuración local de Claude Code (permisos de esta PC)
+.claude/settings.local.json
+
+# ---- public/ ----
+# Trabajos: se versionan los datos (JSON) y los .gitkeep; NO los crudos, audios ni imágenes pesadas
+public/trabajos/*/crudos/*
+public/trabajos/*/audio/*
+public/trabajos/*/img/*
+!public/trabajos/*/*/.gitkeep
+
+# Biblioteca compartida (Mixkit): no se versionan los audios, sí el registro de licencias
+public/biblioteca/**/*.*
+!public/biblioteca/**/.gitkeep
+!public/biblioteca/LICENCIAS-mixkit.json
 
 # Herramientas y archivos temporales pesados
 .venv/

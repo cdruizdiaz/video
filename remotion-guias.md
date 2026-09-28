@@ -18,7 +18,7 @@ Claude Code lee este archivo automáticamente al inicio de cada sesión (y sobre
 - Siempre `extrapolateLeft/Right: 'clamp'` en `interpolate`.
 - Para verificar: `npx remotion still src/index.ts <Composicion> out/check.png --frame=<N>`.
 - NUNCA hagas un render completo del video salvo que te lo pida explícitamente.
-- Material crudo en `public/` (video/, audio/, img/, fonts/). Referéncialo con `staticFile("video/x.mp4")`.
+- Material en `public/trabajos/<ID>/` (crudos/, audio/, img/, datos/). Referéncialo con `staticFile("trabajos/<ID>/crudos/x.mp4")`.
 - NUNCA abras ni leas archivos binarios de `public/` (videos, audio, imágenes): usa solo sus nombres.
 ```
 
@@ -48,12 +48,13 @@ Se integra con el script `scripts/mixkit.mjs` (copia maestra en `C:\Videos\_herr
 ```bash
 node scripts/mixkit.mjs buscar mood:uplifting        # también genero:corporate, tag:motivational o texto libre
 node scripts/mixkit.mjs buscar --sfx whoosh          # efectos de sonido
-node scripts/mixkit.mjs bajar 1167                   # descarga UN tema → public/audio/musica/mixkit/
-node scripts/mixkit.mjs bajar 1492 --sfx             # descarga UN efecto → public/audio/sfx/mixkit/
+node scripts/mixkit.mjs bajar 1167                   # descarga UN tema → public/biblioteca/musica/mixkit/
+node scripts/mixkit.mjs bajar 1492 --sfx             # descarga UN efecto → public/biblioteca/sfx/mixkit/
 ```
 
-- Los resultados quedan en `public/datos/mixkit-busqueda.json`: Claude lee ese JSON (texto barato), no el HTML del sitio.
-- Cada descarga se anota en `public/audio/LICENCIAS-mixkit.json` (título, autor, fuente, licencia y fecha). Ese archivo **sí** se versiona en git.
+- Los resultados quedan en `tmp/mixkit-busqueda.json`: Claude lee ese JSON (texto barato), no el HTML del sitio.
+- Lo bajado queda en la **biblioteca compartida** (`public/biblioteca/`) para reutilizarlo; para un trabajo se prepara una copia recortada y normalizada en `public/trabajos/<ID>/audio/`.
+- Cada descarga se anota en `public/biblioteca/LICENCIAS-mixkit.json` (título, autor, fuente, licencia y fecha). Ese archivo **sí** se versiona en git.
 - ⚠️ Los términos de Mixkit **prohíben descargas masivas con scripts**. El script solo permite 1 búsqueda o 1 descarga por ejecución, siempre de temas elegidos.
 - Pedido típico: *"buscá en Mixkit 3 opciones de música alegre y corporativa de menos de 2 minutos para la historia; proponémelas antes de bajar"*.
 
@@ -75,47 +76,67 @@ Todo pedido de video se resuelve primero con la suite instalada en este proyecto
 | Limpiar ruido de voz | DeepFilterNet |
 | Transcribir, tiempos por palabra | whisper.cpp |
 | Silencios y muletillas | whisper.cpp (huecos entre palabras) → Remotion corta |
-| Elegir fragmentos | leer la transcripción (texto, nunca el video) → `public/datos/clips.json` |
-| Posición del sujeto para 9:16 | MediaPipe → `public/datos/encuadre.json` |
+| Elegir fragmentos | leer la transcripción (texto, nunca el video) → `public/trabajos/<ID>/datos/clips.json` |
+| Posición del sujeto para 9:16 | MediaPipe → `public/trabajos/<ID>/datos/encuadre.json` |
 | Reencuadre, subtítulos, títulos, gráficos, transiciones, ducking, render | Remotion |
 | Tipografías | `@remotion/google-fonts` |
-| Música de fondo | 1º Mixkit (`scripts/mixkit.mjs`); 2º música compuesta por código; siempre en `public/audio/musica/` |
-| Efectos de sonido (whoosh, click, pop, transiciones) | Mixkit `--sfx` → `public/audio/sfx/mixkit/` |
+| Música de fondo | 1º Mixkit (`scripts/mixkit.mjs` → biblioteca → preparada en `public/trabajos/<ID>/audio/`); 2º música compuesta por código |
+| Efectos de sonido (whoosh, click, pop, transiciones) | Mixkit `--sfx` → `public/biblioteca/sfx/mixkit/` |
 | Recortar música a la duración del video, fundidos | Remotion `<Audio trimBefore volume>` o ffmpeg `atrim`/`afade` + `loudnorm` |
 | Voz IA, avatar, doblaje, música generada, stock | ChatCut (preguntar antes: consume créditos) |
 | Duda entre dos opciones | la más rápida y barata en tokens; si afecta la calidad final, preguntar |
 ```
 
-### Carpeta para el material crudo: `public/`
-Remotion compone el video en el navegador, que **no puede acceder a rutas absolutas del disco** (`C:\Videos\...`). Todo el material debe estar dentro de `public/` del proyecto:
+### Organización por trabajos: `public/`, `out/` y `src/`
+Remotion compone el video en el navegador, que **no puede acceder a rutas absolutas del disco** (`C:\Videos\...`): todo lo que usa el video va dentro de `public/`. Para repetir trabajos parecidos sin mezclar material, cada pedido es un **trabajo** con ID `AAAA-MM-DD_cliente_pieza`, y ese ID se repite en todas las carpetas:
 
 ```
-mi-proyecto/public/
-├── video/      ← clips grabados (.mp4, .webm)
-├── audio/      ← música, voz, efectos
-├── img/        ← logos, fotos, capturas
-└── fonts/      ← tipografías propias
+C:\Videos\crudos\<ID>\          ← originales (4K, etc.), FUERA del proyecto, nunca se tocan
+C:\Videos\archivo\<ID>\         ← material de trabajos cerrados
+
+public/
+├── marcas/<cliente>/           ← kit de marca: logo, fotos institucionales, tipografías (se reutiliza)
+├── biblioteca/                 ← música y efectos de Mixkit ya bajados (se reutiliza)
+└── trabajos/<ID>/
+    ├── crudos/                 ← proxies livianos (1080p, 30 fps) hechos con ffmpeg
+    ├── audio/                  ← música preparada, voz limpia, efectos
+    ├── img/                    ← imágenes propias del trabajo
+    └── datos/                  ← transcripcion.json, clips.json, encuadre.json
+
+out/<ID>/
+├── revision/                   ← hojas de contacto, stills, borradores rápidos
+└── final/                      ← entregas: <pieza>_<formato>_v<N>.mp4 (nunca se sobrescriben)
+
+src/
+├── marcas/<cliente>/marca.ts   ← colores, tipografía, curvas, logo
+├── plantillas/                 ← HistoriaMarca, … + comunes/piezas.tsx
+└── trabajos/<ID>/              ← TRABAJO.md (brief, decisiones, entregas) + composiciones.ts
 ```
 
 En el código se usa siempre `staticFile()` con ruta relativa a `public/`:
 ```tsx
-import { OffthreadVideo, Img, Audio, staticFile } from "remotion";
-
-<OffthreadVideo src={staticFile("video/toma1.mp4")} />
-<Img src={staticFile("img/logo.png")} />
-<Audio src={staticFile("audio/musica.mp3")} />
+<OffthreadVideo src={staticFile("trabajos/2026-10-02_rastro_clips-charla/crudos/charla.mp4")} />
+<Img src={staticFile("marcas/rastro/logo.png")} />
 ```
 
-* **Material muy pesado** (tomas largas, 4K): guarda los originales fuera del proyecto y copia a `public/` solo los fragmentos que vas a usar, recortados o en menor resolución. Studio irá más fluido y el render será más rápido.
-* **Al pedirle algo a Claude**, nombra el archivo exacto ("usa `public/video/toma1.mp4` desde el segundo 3") en lugar de "revisa la carpeta de videos".
+- **Comandos de Claude Code** (en `.claude/commands/`): `/nuevo-trabajo <cliente> <pieza> [crudos] [brief]` crea todo lo anterior, la ficha `TRABAJO.md` y los proxies; `/cerrar-trabajo <ID>` verifica las entregas, completa la ficha y archiva el material pesado.
+- ⚠️ **Remotion copia TODO `public/` en cada render**: si se acumulan crudos de muchos trabajos, cada render se vuelve más lento. Por eso los originales viven fuera del proyecto y los trabajos cerrados se archivan.
+- **Trabajos repetidos:** se reutiliza la plantilla y solo cambian los datos (textos, imágenes, duraciones, música). Ver `src/trabajos/2026-09-28_rastro_historia-ig/composiciones.ts` como ejemplo.
+- **Al pedirle algo a Claude**, nombrá el trabajo y el archivo exacto ("en `2026-10-02_rastro_clips-charla`, usá `crudos/charla.mp4` desde el segundo 3").
 
 ### `.gitignore`: no versionar el material pesado
-Añade al final del `.gitignore` del proyecto (el que genera Remotion ya ignora `node_modules` y `out`):
+Se versionan el código, los datos JSON, las marcas y el registro de licencias; no los crudos, audios ni renders:
 
 ```gitignore
-# Material crudo pesado (videos y audio) — no se versiona
-public/video/
-public/audio/
+out
+tmp/
+public/trabajos/*/crudos/*
+public/trabajos/*/audio/*
+public/trabajos/*/img/*
+!public/trabajos/*/*/.gitkeep
+public/biblioteca/**/*.*
+!public/biblioteca/**/.gitkeep
+!public/biblioteca/LICENCIAS-mixkit.json
 ```
 
 Si necesitas versionar esos archivos, usa **Git LFS** en lugar de subirlos directamente al repositorio.
