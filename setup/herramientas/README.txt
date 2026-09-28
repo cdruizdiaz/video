@@ -5,14 +5,24 @@ las referencia desde scripts/herramientas.json).
 
 ffmpeg (instalado a nivel de sistema, fuera de esta carpeta)
 -----------------------------------------------------------
-Gyan.FFmpeg 9.0.2 full build (winget install --id Gyan.FFmpeg -e), agregado el 2026-09-28.
-  C:\Users\CLAUDIO\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\
+Gyan.FFmpeg full build (winget install --id Gyan.FFmpeg -e).
+  Acceso fijo: C:\Videos\_herramientas\ffmpeg  (junction -> %LOCALAPPDATA%\Microsoft\WinGet\Packages\Gyan.FFmpeg_*\ffmpeg-<versión>-full_build)
+  Los proyectos usan C:/Videos/_herramientas/ffmpeg/bin/ffmpeg.exe, igual en todas las PC.
   - PowerShell/cmd: "ffmpeg" y "ffprobe" funcionan directo (alias de winget).
-  - Git Bash NO ve esos alias: usar la ruta completa (está en scripts/herramientas.json de cada proyecto).
+  - Git Bash NO ve esos alias: usar la ruta del junction (está en scripts/herramientas.json de cada proyecto).
   - Incluye ebur128, loudnorm, lut3d, silencedetect, sidechaincompress, xfade, drawtext, subtitles, arnndn,
-    libx264, libx265, SVT-AV1 e Intel Quick Sync (h264_qsv / hevc_qsv).
-  - Medido: 30 s de video 1080x1920 -> h264_qsv 13 s vs libx264 medium 59 s.
-  - Actualizar: winget upgrade --id Gyan.FFmpeg  (cambia la carpeta de versión: actualizar herramientas.json)
+    libx264, libx265, SVT-AV1, Intel Quick Sync (h264_qsv) y AMD AMF (h264_amf) según el hardware.
+  - Medido (30 s de video 1080x1920):
+      Intel i3-10110U: h264_qsv 13 s vs libx264 medium 59 s  -> borradores con h264_qsv
+      AMD Ryzen 7 5800HS: h264_amf 3,8 s, libx264 veryfast 3,6 s -> borradores con libx264 veryfast
+  - Actualizar: winget upgrade --id Gyan.FFmpeg  (cambia la carpeta de versión: rehacer el junction)
+      cmd /c rmdir C:\Videos\_herramientas\ffmpeg
+      New-Item -ItemType Junction -Path C:\Videos\_herramientas\ffmpeg -Target <nueva carpeta ffmpeg-X-full_build>
+    y anotar la versión nueva en equipo.json.
+
+equipo.json (datos propios de ESTA PC; los proyectos lo leen, no se versiona)
+------------------------------------------------------------------------------
+cpu, ffmpegVersion, codecBorrador (códec para proxies/borradores), hilosWhisper, whisperVelocidad.
 
 Contenido
 ---------

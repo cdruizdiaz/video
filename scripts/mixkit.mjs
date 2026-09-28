@@ -121,10 +121,12 @@ async function bajar(id) {
   const url = esSfx
     ? `https://assets.mixkit.co/active_storage/sfx/${id}/${id}.wav`
     : `https://assets.mixkit.co/music/${id}/${id}.mp3`;
-  const previa = leerJson(BUSQUEDA, { items: [] }).items.find((i) => i.id === id);
+  // Si ya está en el registro (re-descarga en otra PC), se respeta su nombre y no se duplica la entrada.
+  const registrado = leerJson(REGISTRO, []).find((r) => r.id === id && r.tipo === tipo);
+  const previa = registrado ?? leerJson(BUSQUEDA, { items: [] }).items.find((i) => i.id === id);
   const nombre = `mixkit-${id}${previa?.titulo ? `-${slug(previa.titulo)}` : ""}${esSfx ? ".wav" : ".mp3"}`;
   const carpeta = path.join(RAIZ, esSfx ? "public/biblioteca/sfx/mixkit" : "public/biblioteca/musica/mixkit");
-  const destino = path.join(carpeta, nombre);
+  const destino = registrado ? path.join(RAIZ, registrado.archivo) : path.join(carpeta, nombre);
 
   if (fs.existsSync(destino)) {
     console.log(`Ya estaba descargado: ${path.relative(RAIZ, destino)}`);
@@ -147,6 +149,10 @@ async function bajar(id) {
     /* ffprobe no disponible: se omite la duración */
   }
 
+  if (registrado) {
+    console.log(`Descargado de nuevo: ${path.relative(RAIZ, destino)} (licencia ya registrada)`);
+    return;
+  }
   const registro = leerJson(REGISTRO, []);
   registro.push({
     archivo: path.relative(RAIZ, destino).replaceAll("\\", "/"),

@@ -38,7 +38,8 @@ Reglas:
 ## Archivos
 - Todo lo que usa Remotion va dentro de `public/` y se referencia con `staticFile("trabajos/<ID>/…")`, `staticFile("marcas/<cliente>/…")`, etc.
 - NUNCA abrir ni leer binarios de `public/` (videos, audio, imágenes): usar solo sus nombres.
-- Rutas de las herramientas externas y de las carpetas de crudos/archivo: leer `scripts/herramientas.json`.
+- Rutas de las herramientas externas y de las carpetas de crudos/archivo: leer `scripts/herramientas.json` (igual en todas las PC: todo cuelga de `C:/Videos/`).
+- Datos propios de cada PC (códec de borradores, hilos de Whisper, rendimiento): leer `C:/Videos/_herramientas/equipo.json` (fuera del repo).
 
 ## Código
 - Valores de animación como constantes al inicio de cada archivo.
@@ -50,13 +51,14 @@ Reglas:
 - Audio final normalizado a -14 LUFS (`loudnorm`) y verificado con `ebur128`.
 
 ## Herramientas
-- ffmpeg: build **completo** del sistema (Gyan.FFmpeg 9.0.2 full, instalado con winget). Rutas en `scripts/herramientas.json` (`ffmpeg`, `ffprobe`).
-  - PowerShell: `ffmpeg` / `ffprobe` funcionan directo. **Git Bash no ve los alias de winget**: usar la ruta completa de `herramientas.json` o anteponer su carpeta al PATH.
+- ffmpeg: build **completo** del sistema (Gyan.FFmpeg full, instalado con winget; versión en `equipo.json`). Se usa por el acceso fijo `C:/Videos/_herramientas/ffmpeg/bin/` (junction a la carpeta de winget), así la ruta de `herramientas.json` (`ffmpeg`, `ffprobe`) no depende del usuario ni de la versión.
+  - PowerShell: `ffmpeg` / `ffprobe` funcionan directo. **Git Bash no ve los alias de winget**: usar la ruta de `herramientas.json` o anteponer su carpeta al PATH.
+  - Tras `winget upgrade --id Gyan.FFmpeg` la carpeta de winget cambia: rehacer el junction (ver `C:/Videos/_herramientas/README.txt`).
   - Tiene todos los filtros: `ebur128` (medir LUFS), `loudnorm`, `lut3d`, `silencedetect`, `sidechaincompress`, `xfade`, `drawtext`, `subtitles`, `arnndn`, `filter_complex`.
-  - Proxies y borradores: `-c:v h264_qsv -global_quality 23` (Intel Quick Sync, ~4,5x más rápido que libx264). Entregas finales: `-c:v libx264 -crf 18 -preset slow`.
+  - Proxies y borradores: el códec de `codecBorrador` en `equipo.json` (depende de la PC: `h264_qsv -global_quality 23` en la notebook Intel con Quick Sync; `libx264 -preset veryfast -crf 20` en la PC AMD Ryzen de 16 hilos, igual de rápido que AMF y con archivos más chicos). Entregas finales: `-c:v libx264 -crf 18 -preset slow`.
   - Medir volumen: `ffmpeg -i x.wav -af ebur128=peak=true -f null -`. Normalizar: `-af loudnorm=I=-14:TP=-1.5:LRA=11`.
   - `npx remotion ffmpeg` queda solo como respaldo: le faltan filtros (`ebur128`) y rompe los `filter_complex` desde Git Bash.
-- Whisper: modelo `large-v3-turbo`, idioma `es`, con marcas de tiempo por palabra (`tokenLevelTimestamps: true`). Entrada: WAV 16 kHz mono. Pasar `additionalArgs: [["-t", "4"]]` (usa los 4 hilos del CPU). Es lento (~10x el tiempo real en este equipo): correrlo en segundo plano.
+- Whisper: modelo `large-v3-turbo`, idioma `es`, con marcas de tiempo por palabra (`tokenLevelTimestamps: true`). Entrada: WAV 16 kHz mono. Pasar `additionalArgs: [["-t", "<hilosWhisper>"]]` (de `equipo.json`: todos los hilos del CPU). Velocidad según la PC: ~10x el tiempo real con 4 hilos (i3), ~1x con 16 hilos (Ryzen 7). Si el audio es largo, correrlo en segundo plano.
   - Nota: el ejecutable está en `build/bin/whisper-cli.exe` (se reubicó desde `Release/` del zip oficial para que `@remotion/install-whisper-cpp` lo encuentre).
 - DeepFilterNet: `deepFilter.exe <entrada.wav> -o <carpeta>` (Python 3.11 del `.venv` compartido).
 - MediaPipe: Tasks API (`FaceDetector`) con el modelo `blaze_face_short_range.tflite`.
@@ -72,7 +74,7 @@ Reglas:
 | Tarea | Herramienta |
 |---|---|
 | Convertir formato, fps constante, cortar sin gráficos | ffmpeg |
-| Proxies / borradores rápidos | ffmpeg `h264_qsv` |
+| Proxies / borradores rápidos | ffmpeg con `codecBorrador` de `equipo.json` |
 | Aplicar color (LUT) | ffmpeg `lut3d` |
 | Normalizar volumen (-14 LUFS) / medirlo | ffmpeg `loudnorm` / `ebur128` |
 | Hojas de contacto, revisar frames | ffmpeg `filter_complex` (tile/hstack) o Pillow del `.venv` |

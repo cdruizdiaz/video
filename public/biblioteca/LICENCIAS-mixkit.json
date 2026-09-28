@@ -30,5 +30,15 @@
     "fuente": "https://assets.mixkit.co/music/801/801.mp3",
     "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
     "descargado": "2026-09-28"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-1114-game-click.wav",
+    "id": "1114",
+    "tipo": "sfx",
+    "titulo": "Game click",
+    "duracionSeg": 1.1,
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/1114/1114.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-09-28"
   }
 ]

@@ -16,7 +16,7 @@ Proyecto de video programático con [Remotion](https://www.remotion.dev/), pensa
    - ffmpeg completo (winget, Gyan.FFmpeg);
    - whisper.cpp + modelo `large-v3-turbo` (~1,6 GB);
    - Python 3.11 con DeepFilterNet y MediaPipe (versiones fijadas en `setup/herramientas/requirements.txt`);
-   - reescribe `scripts/herramientas.json` con las rutas de esa PC;
+   - crea el acceso fijo `C:/Videos/_herramientas/ffmpeg` y el archivo `equipo.json` con los datos de esa PC (`scripts/herramientas.json` es igual en todas las PC y no se toca);
    - regenera la música y vuelve a bajar los temas de Mixkit (no se versionan).
 4. **Paso manual opcional:** instalar [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) (gratis) para crear el LUT de color.
 
@@ -67,7 +67,7 @@ src/marcas/<cliente>/          colores, tipografía, curvas y logo de cada marca
 src/plantillas/                plantillas reutilizables (HistoriaMarca, …) + piezas comunes
 src/trabajos/<ID>/             TRABAJO.md (brief, decisiones, entregas) + composiciones.ts
 out/<ID>/revision|final/       renders (no se versiona); finales como <pieza>_<formato>_v<N>.mp4
-scripts/                       mixkit.mjs, herramientas.json (rutas de la PC)
+scripts/                       mixkit.mjs, herramientas.json (rutas, iguales en todas las PC)
 setup/                         prompt_instalacion.txt + herramientas/
 .claude/commands/              /nuevo-trabajo, /cerrar-trabajo, /guion, /aplicar-guion
 ```

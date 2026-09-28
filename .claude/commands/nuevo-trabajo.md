@@ -21,7 +21,7 @@ Seguí la estructura de trabajos de CLAUDE.md. Pasos:
 
 5. **Crudos** (solo si me pasaste una carpeta con material):
    - Copiá los originales a `<carpetaCrudos>/<ID>/` (no los muevas: copiá y verificá tamaños).
-   - Generá proxies en `public/trabajos/<ID>/crudos/` con el ffmpeg completo (ruta en `herramientas.json`): 1080p del lado corto, 30 fps constantes, `-c:v h264_qsv -global_quality 23 -g 30`, audio AAC 48 kHz. Si Quick Sync falla, usá `libx264 -preset veryfast -crf 20`. Corrélo en segundo plano si son varios o largos.
+   - Generá proxies en `public/trabajos/<ID>/crudos/` con el ffmpeg completo (ruta en `herramientas.json`): 1080p del lado corto, 30 fps constantes, el códec de `codecBorrador` (en `C:/Videos/_herramientas/equipo.json`) + `-g 30`, audio AAC 48 kHz. Si ese códec falla, usá `libx264 -preset veryfast -crf 20`. Corrélo en segundo plano si son varios o largos.
    - Listame cada crudo con duración, resolución y fps (ffprobe). No abras ni leas los videos.
 
 6. **Registro en Remotion.** No crees la composición todavía si el brief no está claro. Cuando lo esté:
