@@ -22,6 +22,28 @@ Proyecto de video programático con [Remotion](https://www.remotion.dev/), pensa
 
 Las herramientas pesadas se instalan una sola vez por PC en `C:\Videos\_herramientas` y las comparten todos los proyectos (~3 GB).
 
+### PC donde la suite ya estaba instalada (antes del commit `db5fe60`)
+
+Desde ese commit, `scripts/herramientas.json` usa rutas iguales en todas las PC. En la PC original, **después de hacer `git pull`, hay que crear una sola vez el acceso fijo a ffmpeg y el archivo `equipo.json`**. Si no, los scripts no van a encontrar ffmpeg.
+
+1. Acceso fijo a ffmpeg (PowerShell, no requiere admin):
+   ```powershell
+   New-Item -ItemType Junction -Path C:\Videos\_herramientas\ffmpeg -Target (Split-Path (Split-Path (Get-Command ffmpeg).Source))
+   C:\Videos\_herramientas\ffmpeg\bin\ffmpeg.exe -version
+   ```
+2. Crear `C:\Videos\_herramientas\equipo.json` con los datos de esa PC. Ejemplo para la notebook Intel i3 (4 hilos, con Quick Sync):
+   ```json
+   {
+     "cpu": "Intel i3-10110U (4 hilos)",
+     "ffmpegVersion": "9.0.2-full_build",
+     "codecBorrador": "-c:v h264_qsv -global_quality 23",
+     "hilosWhisper": 4,
+     "whisperVelocidad": "~10x el tiempo real"
+   }
+   ```
+
+Otra opción es volver a correr `setup/prompt_instalacion.txt`: detecta lo que ya está instalado y solo hace estos dos pasos.
+
 ## Uso
 
 Cada pedido es un **trabajo** con ID `AAAA-MM-DD_cliente_pieza`. En Claude Code:
