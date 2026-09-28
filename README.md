@@ -32,6 +32,14 @@ Cada pedido es un **trabajo** con ID `AAAA-MM-DD_cliente_pieza`. En Claude Code:
 /cerrar-trabajo 2026-10-02_rastro_clips-charla
 ```
 
+**Guion audiovisual con tiempos** (cada pieza tiene uno en `src/trabajos/<ID>/guion_<pieza>.md`):
+
+```
+/guion 2026-09-28_rastro_historia-ig          → genera o describe el guion (mismo formato siempre)
+... editás el guion (en el archivo o copiándolo) ...
+/aplicar-guion 2026-09-28_rastro_historia-ig  → aplica solo lo que cambiaste y renderiza una versión _vN nueva
+```
+
 Comandos directos:
 
 ```bash
@@ -61,7 +69,7 @@ src/trabajos/<ID>/             TRABAJO.md (brief, decisiones, entregas) + compos
 out/<ID>/revision|final/       renders (no se versiona); finales como <pieza>_<formato>_v<N>.mp4
 scripts/                       mixkit.mjs, herramientas.json (rutas de la PC)
 setup/                         prompt_instalacion.txt + herramientas/
-.claude/commands/              /nuevo-trabajo y /cerrar-trabajo
+.claude/commands/              /nuevo-trabajo, /cerrar-trabajo, /guion, /aplicar-guion
 ```
 
 Originales fuera del proyecto en `C:\Videos\crudos\<ID>\`; trabajos cerrados en `C:\Videos\archivo\<ID>\`.

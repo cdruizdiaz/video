@@ -17,7 +17,7 @@ Cada pedido es un **trabajo** con ID `AAAA-MM-DD_cliente_pieza` (minúsculas, si
 | `public/trabajos/<ID>/audio/` | Música preparada para este trabajo, voz limpia, efectos elegidos |
 | `public/trabajos/<ID>/img/` | Imágenes propias de este trabajo |
 | `public/trabajos/<ID>/datos/` | `transcripcion.json`, `clips.json`, `encuadre.json`… (se versionan) |
-| `src/trabajos/<ID>/` | `TRABAJO.md` (brief, decisiones, entregas), `composiciones.ts`, scripts propios del trabajo |
+| `src/trabajos/<ID>/` | `TRABAJO.md` (brief, decisiones, entregas), `guion_<pieza>.md` (guion con tiempos), `composiciones.ts`, scripts propios del trabajo |
 | `out/<ID>/revision/` | Hojas de contacto, stills, borradores rápidos |
 | `out/<ID>/final/` | Entregas: `<pieza>_<formato>_v<N>.mp4` (p. ej. `clip-01_9x16_v2.mp4`) |
 
@@ -28,6 +28,7 @@ Compartido entre trabajos:
 
 Reglas:
 - Comandos: **`/nuevo-trabajo <cliente> <pieza> [crudos] [brief]`** abre un trabajo; **`/cerrar-trabajo <ID>`** lo cierra y archiva.
+- **Guion audiovisual = fuente de verdad** de cada pieza: `src/trabajos/<ID>/guion_<pieza>.md` (formato en `src/trabajos/_plantilla/GUION.md`). **`/guion <ID|descripción>`** lo genera; cuando el usuario lo edita o pega una versión nueva, **`/aplicar-guion <ID>`** aplica SOLO lo que cambió (vía `git diff` del guion) y renderiza una `_vN` nueva. Si se cambia el video por otro pedido, actualizar también el guion para que siga describiendo el video real.
 - Si el pedido del usuario no nombra un trabajo, preguntar si es uno nuevo o la continuación de uno existente.
 - **Nunca sobrescribir un archivo de `out/<ID>/final/`**: cada cambio es una versión nueva `_vN+1`. Anotar cada entrega en `TRABAJO.md`.
 - Un trabajo parecido a otro anterior se hace reutilizando su plantilla y cambiando solo los datos (textos, imágenes, duraciones, música).

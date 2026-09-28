@@ -22,6 +22,9 @@
 - **Proxies y material de trabajo:** `public/trabajos/{{ID}}/` (crudos/, audio/, img/, datos/)
 - **Marca:** `public/marcas/{{marca}}/`
 
+## Guiones
+- `guion_<pieza>.md` (generar con `/guion {{ID}}`; aplicar cambios con `/aplicar-guion {{ID}}`)
+
 ## Decisiones
 - **Plantilla:**
 - **Música:** (tema, fuente, id, tramo usado, LUFS; licencia en `public/biblioteca/LICENCIAS-mixkit.json`)

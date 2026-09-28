@@ -21,6 +21,9 @@
 - Imágenes: `public/marcas/rastro/` (portada, equipo, piezas del sitio).
 - Audio: `public/trabajos/2026-09-28_rastro_historia-ig/audio/`.
 
+## Guiones
+- `guion_historia-30s.md` (guion original del cliente) y `guion_historia-15s.md` (misma estructura, tiempos comprimidos y música de Mixkit). Para cambiar el video: editar el guion y usar `/aplicar-guion 2026-09-28_rastro_historia-ig`.
+
 ## Decisiones
 - **Plantilla:** `HistoriaMarca` (escenas portada → equipo → 3 piezas → contacto). Contenido en `composiciones.ts`.
 - **Composiciones:** `rastro-historia-ig-30s` y `rastro-historia-ig-15s` (misma escena, `ritmo` 0,45 en la de 15 s).
