@@ -2,12 +2,31 @@ import "./index.css";
 import { Composition } from "remotion";
 import { HelloWorld } from "./HelloWorld";
 import { Logo } from "./HelloWorld/Logo";
+import { duracionVersion, HistoriaRastro } from "./Rastro/HistoriaRastro";
 
 // Each <Composition> is an entry in the sidebar!
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="HistoriaRastro"
+        component={HistoriaRastro}
+        durationInFrames={duracionVersion("30s")}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ version: "30s" as const }}
+      />
+      <Composition
+        id="HistoriaRastro15"
+        component={HistoriaRastro}
+        durationInFrames={duracionVersion("15s")}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ version: "15s" as const }}
+      />
       <Composition
         // You can take the "id" to render a video:
         // npx remotion render HelloWorld

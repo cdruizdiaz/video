@@ -5,3 +5,19 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# Material crudo pesado (videos y audio) — no se versiona
+# (se conservan los .gitkeep para que las carpetas existan al clonar)
+public/video/*
+!public/video/.gitkeep
+public/audio/**/*.*
+!public/audio/**/.gitkeep
+# el registro de licencias de Mixkit sí se versiona
+!public/audio/LICENCIAS-mixkit.json
+public/datos/mixkit-busqueda.json
+
+# Herramientas y archivos temporales pesados
+.venv/
+*.wav
+whisper.cpp/
+modelos-whisper/

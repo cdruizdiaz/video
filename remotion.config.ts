@@ -8,5 +8,6 @@ import { enableTailwind } from '@remotion/tailwind-v4';
 
 Config.setRspack(true);
 Config.setVideoImageFormat("jpeg");
+Config.setJpegQuality(95);
 Config.setOverwriteOutput(true);
 Config.overrideBundlerConfig(enableTailwind);

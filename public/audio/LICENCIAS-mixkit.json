@@ -1,0 +1,23 @@
+[
+  {
+    "archivo": "public/audio/sfx/mixkit/mixkit-1492-cinematic-whoosh-fast-transition.wav",
+    "id": "1492",
+    "tipo": "sfx",
+    "titulo": "Cinematic whoosh fast transition",
+    "duracionSeg": 1.3,
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/1492/1492.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-09-28"
+  },
+  {
+    "archivo": "public/audio/musica/mixkit/mixkit-1167-close-up.mp3",
+    "id": "1167",
+    "tipo": "musica",
+    "titulo": "Close Up",
+    "autor": "Michael Ramir C.",
+    "duracionSeg": 95.1,
+    "fuente": "https://assets.mixkit.co/music/1167/1167.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-09-28"
+  }
+]

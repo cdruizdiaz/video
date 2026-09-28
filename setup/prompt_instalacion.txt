@@ -1,0 +1,160 @@
+Necesito que instales y dejes verificada mi suite de producción de video en este proyecto. Trabaja de forma autónoma siguiendo los pasos en orden, pero respeta las REGLAS.
+
+(Este prompt vive en el repo github.com/cdruizdiaz/video, en setup/prompt_instalacion.txt. Los archivos de apoyo están en setup/herramientas/.)
+
+=== CONTEXTO ===
+- Windows 11, sin GPU NVIDIA (todo corre en CPU; el procesador Intel puede tener Quick Sync).
+- El directorio de trabajo actual es un proyecto Remotion (si no existe package.json con "remotion", DETENTE y avísame).
+- Suite: Remotion + ffmpeg COMPLETO (del sistema) + whisper.cpp + MediaPipe + DeepFilterNet + Google Fonts + Mixkit (música y efectos gratis, vía script). DaVinci Resolve es manual (no lo instales).
+- Herramientas pesadas COMPARTIDAS entre proyectos en: C:\Videos\_herramientas
+  (si ya existen y funcionan, NO las reinstales: reutilízalas. Lee C:\Videos\_herramientas\README.txt si existe).
+
+=== REGLAS ===
+1. Idempotente: antes de cada paso comprueba si ya está hecho; si lo está, sáltalo e indícalo.
+2. No pegues logs largos: resume. Si algo falla, muéstrame solo las líneas de error relevantes.
+3. Pídeme confirmación ANTES de instalar software a nivel de sistema (winget, instaladores .exe).
+4. No crees componentes, composiciones ni pipelines de edición: SOLO instalación, estructura y verificación.
+5. No hagas renders de video.
+6. Si una versión da problemas de compatibilidad, resuélvelo fijando versiones y anota en el informe final qué versiones quedaron.
+7. No uses `python3` ni `python` sueltos en Git Bash (pueden abrir el atajo de Microsoft Store y colgarse): usa `py -3.11` o el python.exe del .venv.
+
+=== PASO PREVIO: dependencias del proyecto ===
+- Si no existe node_modules, ejecuta `npm install` (Node 22 o superior; si falta Node, pídeme permiso para `winget install OpenJS.NodeJS.LTS`).
+
+=== PASO 0: ffmpeg completo (sistema) ===
+- Comprueba si ya existe: en PowerShell `Get-Command ffmpeg` y `ffmpeg -version`.
+- Si no existe, pídeme permiso e instálalo con: winget install --id Gyan.FFmpeg -e --silent --accept-package-agreements --accept-source-agreements
+- Localiza la carpeta bin real (normalmente %LOCALAPPDATA%\Microsoft\WinGet\Packages\Gyan.FFmpeg_*\ffmpeg-<versión>-full_build\bin).
+  IMPORTANTE: Git Bash NO ve los alias que crea winget; usa siempre la ruta completa desde Git Bash.
+- Verifica que tenga los filtros: ebur128, loudnorm, lut3d, silencedetect, sidechaincompress, xfade, drawtext, subtitles (ffmpeg -filters).
+- Verifica si hay Intel Quick Sync: codifica 2 s de video de prueba (ffmpeg -f lavfi -i testsrc2=size=1080x1920:rate=30 -t 2) con -c:v h264_qsv. Si falla, anota que no hay QSV y que se usará libx264.
+- `npx remotion ffmpeg` queda solo como respaldo (le falta ebur128 y rompe filter_complex desde Git Bash).
+
+=== PASO 1: Herramientas compartidas (C:\Videos\_herramientas) ===
+Estructura:
+  C:\Videos\_herramientas\
+    whisper.cpp\          ejecutable de whisper.cpp
+    modelos-whisper\      modelos
+    modelos-mediapipe\    modelo de detección de caras
+    .venv\                entorno Python
+    luts\                 LUTs .cube (vacía, con un README.txt)
+    README.txt            qué hay aquí, versiones y cómo se usa
+
+1a. whisper.cpp
+   - Copia setup/herramientas/instalar-whisper.mjs a C:\Videos\_herramientas\ (si no existe) y ejecútalo desde la raíz del proyecto: `node C:/Videos/_herramientas/instalar-whisper.mjs`. Usa @remotion/install-whisper-cpp (en la versión EXACTA de remotion):
+     installWhisperCpp({ to: 'C:/Videos/_herramientas/whisper.cpp', version: <ver> })
+   - Versión probada que funciona: 1.9.2 (compatible con large-v3-turbo). Si hay una más nueva en github.com/ggml-org/whisper.cpp/releases con el asset whisper-bin-x64.zip, puedes probarla; si falla, vuelve a 1.9.2.
+   - PROBLEMA CONOCIDO: el zip oficial de Windows trae los ejecutables en "Release\", pero Remotion (versiones >= 1.7.4) los busca en "build\bin\whisper-cli.exe". Después de instalar, renombra Release\ a build\bin\.
+   - `getWhisperExecutablePath` NO se exporta desde el paquete: arma la ruta a mano (build/bin/whisper-cli.exe).
+   - Descarga el modelo large-v3-turbo con downloadWhisperModel({ model: 'large-v3-turbo', folder: 'C:/Videos/_herramientas/modelos-whisper' }). Pesa ~1,6 GB: muéstrame el progreso de forma resumida (cada 10 %).
+
+1b. Python 3.11
+   - Comprueba si existe (`py -3.11 --version`). Si no, pídeme permiso para instalarlo con `winget install --id Python.Python.3.11 -e --scope user`. (Convive con otras versiones de Python.)
+   - Crea el entorno: py -3.11 -m venv C:\Videos\_herramientas\.venv
+
+1c. DeepFilterNet + MediaPipe (dentro del .venv)
+   - Instala todo de una vez con: C:\Videos\_herramientas\.venv\Scripts\python.exe -m pip install -r setup/herramientas/requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+   - Versiones probadas que funcionan juntas (ya fijadas en ese requirements.txt):
+     torch==2.0.1 y torchaudio==2.0.2 (CPU, desde https://download.pytorch.org/whl/cpu),
+     deepfilternet 0.5.6, mediapipe 1.0.1, numpy 1.26.4 (numpy<2), soundfile.
+   - IMPORTANTE: instala `soundfile`; sin él, torchaudio en Windows no tiene backend de audio y DeepFilterNet no puede leer WAV.
+   - Descarga el modelo de caras de MediaPipe (Tasks API) a modelos-mediapipe\:
+     https://storage.googleapis.com/mediapipe-models/face_detector/blaze_face_short_range/float16/latest/blaze_face_short_range.tflite
+   - Genera C:\Videos\_herramientas\requirements.txt con `pip freeze`.
+
+1d. luts\README.txt: copia setup/herramientas/luts-README.txt. Explica que aquí van los .cube exportados desde DaVinci Resolve (versión gratuita) y que se aplican con: ffmpeg -vf lut3d=archivo.cube
+
+1e. Mixkit: el script ya está en scripts/mixkit.mjs del repo. Copia una copia maestra a C:\Videos\_herramientas\mixkit.mjs (si no existe). No requiere dependencias: usa fetch de Node y ffprobe.
+
+1f. README.txt en C:\Videos\_herramientas: parte de setup/herramientas/README.txt y actualízalo con contenido, versiones, ruta de ffmpeg, cómo usar cada herramienta y el rendimiento medido en la verificación.
+
+=== PASO 2: Proyecto actual ===
+2a. Dependencias Node, todas en la MISMA versión exacta que "remotion" en package.json (npm i --save-exact):
+    @remotion/install-whisper-cpp @remotion/captions @remotion/google-fonts @remotion/transitions @remotion/media-utils
+    Luego ejecuta `npx remotion versions` y confirma que no hay versiones mezcladas.
+
+2b. Carpetas (con un .gitkeep en cada una):
+    public/video  public/audio  public/audio/musica  public/audio/sfx  public/img  public/fonts  public/datos  scripts
+    (scripts/mixkit.mjs ya viene en el repo.)
+
+2c. .gitignore: agrega (sin duplicar lo que ya exista), conservando los .gitkeep:
+    public/video/*
+    !public/video/.gitkeep
+    public/audio/**/*.*
+    !public/audio/**/.gitkeep
+    !public/audio/LICENCIAS-mixkit.json
+    public/datos/mixkit-busqueda.json
+    .venv/
+    *.wav
+    whisper.cpp/
+    modelos-whisper/
+
+2d. remotion.config.ts: agrega Config.setJpegQuality(95) (conserva la configuración existente).
+
+2e. scripts/herramientas.json con las rutas absolutas DE ESTA PC (con barras /). El del repo tiene las rutas de la PC original: reescríbelo con las rutas reales de esta instalación:
+    ffmpeg, ffprobe, ffmpegVersion, whisperPath, whisperExe, whisperVersion, modeloWhisper ("large-v3-turbo"),
+    carpetaModelosWhisper, python (python.exe del .venv), deepFilter (deepFilter.exe del .venv), modeloCaras, carpetaLuts
+
+2f. CLAUDE.md: el repo ya trae uno completo. Solo verifica que tenga estas secciones (si falta algo, agrégalo sin borrar lo que hay):
+    ## Regla principal
+    Todo pedido de video se resuelve primero con la suite instalada (Remotion, ffmpeg, whisper.cpp, DeepFilterNet, MediaPipe, Google Fonts, Mixkit), eligiendo la herramienta según la tabla "Qué herramienta usar". Remotion es el eje de la composición, pero no la única opción. Servicios externos (ChatCut, IA generativa) solo si la suite no puede hacerlo, y preguntando antes.
+    ## Formatos / Archivos / Código / Render
+    - Composición principal: 30 fps. Formatos: 1920x1080 (16:9) y 1080x1920 (9:16).
+    - Material crudo en public/ (video/, audio/, img/, fonts/); datos JSON en public/datos/. Usar siempre staticFile().
+    - NUNCA abrir ni leer binarios de public/ (videos, audio, imágenes): usar solo sus nombres.
+    - NUNCA hacer un render completo salvo pedido explícito. Para verificar: npx remotion still ... --frame=N, o una secuencia a --scale=0.25 y una hoja de contactos.
+    - Valores de animación como constantes al inicio de cada archivo. interpolate siempre con clamp.
+    - Render final: --crf 18. Audio final normalizado a -14 LUFS (loudnorm) y verificado con ebur128.
+    - Tailwind vuelve block a las <img>: para centrarlas usar flex, no textAlign.
+    ## Herramientas
+    - ffmpeg completo del sistema; rutas en scripts/herramientas.json; en Git Bash usar la ruta completa.
+      Proxies/borradores con h264_qsv (si hay Quick Sync); entregas con libx264 -crf 18.
+    - Whisper: large-v3-turbo, idioma es, tokenLevelTimestamps: true, WAV 16 kHz mono, additionalArgs [["-t", "<hilos>"]]. Correrlo en segundo plano (es lento en CPU).
+    - DeepFilterNet: deepFilter.exe <entrada.wav> -o <carpeta>.
+    - MediaPipe: Tasks API (FaceDetector) con blaze_face_short_range.tflite.
+    - Color: LUTs .cube en C:/Videos/_herramientas/luts, con -vf lut3d=archivo.cube.
+    - Mixkit: node scripts/mixkit.mjs buscar <términos | mood:x | genero:x | tag:x> [--sfx]  y  bajar <id> [--sfx].
+      Leer public/datos/mixkit-busqueda.json y proponer 2-3 opciones antes de bajar. Descargas en public/audio/musica/mixkit/ y public/audio/sfx/mixkit/; licencias en public/audio/LICENCIAS-mixkit.json.
+      Los términos de Mixkit PROHÍBEN descargas masivas con scripts: 1 búsqueda o 1 descarga por ejecución, nunca en bucle.
+    ## Qué herramienta usar (tabla)
+    | Convertir formato, fps constante, cortar sin gráficos | ffmpeg |
+    | Proxies / borradores rápidos | ffmpeg h264_qsv |
+    | Aplicar color (LUT) | ffmpeg lut3d |
+    | Normalizar / medir volumen | ffmpeg loudnorm / ebur128 |
+    | Hojas de contacto, revisar frames | ffmpeg filter_complex o Pillow del .venv |
+    | Limpiar ruido de voz | DeepFilterNet |
+    | Transcribir, tiempos por palabra | whisper.cpp |
+    | Silencios y muletillas | whisper.cpp (huecos entre palabras) → Remotion corta |
+    | Elegir fragmentos | leer la transcripción (texto, nunca el video) → public/datos/clips.json |
+    | Posición del sujeto para 9:16 | MediaPipe → public/datos/encuadre.json |
+    | Reencuadre, subtítulos, títulos, gráficos, transiciones, ducking, render | Remotion |
+    | Tipografías | @remotion/google-fonts |
+    | Música de fondo | 1º Mixkit (scripts/mixkit.mjs); 2º compuesta por código; siempre en public/audio/musica/ |
+    | Efectos de sonido (whoosh, click, pop, transiciones) | Mixkit --sfx → public/audio/sfx/mixkit/ |
+    | Recortar música a la duración del video, fundidos | Remotion <Audio trimBefore volume> o ffmpeg atrim/afade + loudnorm |
+    | Voz IA, avatar, doblaje, música generada, stock | ChatCut (preguntar antes: consume créditos) |
+    | Duda entre dos opciones | la más rápida y barata en tokens; si afecta la calidad final, preguntar |
+    ## Música
+    - Fuente principal: Mixkit (uso comercial, sin atribución obligatoria; no revender el tema suelto ni reclamarlo como propio). Alternativa: compuesta por código. Otras fuentes: revisar si exigen atribución.
+    - Música sola a -14 LUFS; bajo una voz, 12-18 dB por debajo. Verificar con ebur128.
+
+=== PASO 3: Verificación (obligatoria) ===
+Crea los archivos de prueba en una carpeta temporal (NO en public/) y bórralos al final.
+3a. ffmpeg: primera línea de `ffmpeg -version` (con la ruta completa) + resultado de la prueba de Quick Sync del paso 0.
+3b. Audio de prueba: genera ~10 s de voz en español con la síntesis de voz de Windows (System.Speech, PowerShell; busca una voz es-*) diciendo una frase con un par de pausas y un "eh". Conviértelo a WAV 16 kHz mono con ffmpeg.
+3c. whisper.cpp: transcríbelo con large-v3-turbo, idioma "es", tokenLevelTimestamps: true, additionalArgs con todos los hilos del CPU, y convierte el resultado con toCaptions. Muéstrame el texto y 3 palabras con sus tiempos. Indica cuánto tardó y la relación con la duración del audio.
+3d. DeepFilterNet: procesa el mismo WAV con deepFilter.exe del .venv y confirma que se generó el archivo de salida.
+3e. MediaPipe: script Python que cargue blaze_face_short_range.tflite con FaceDetector (Tasks API) y lo ejecute sobre una imagen cualquiera (puede no detectar caras: basta con que cargue y corra sin error).
+3f. Volumen: mide el WAV de prueba con ffmpeg -af ebur128 y muestra el valor I (LUFS).
+3g. Mixkit: `node scripts/mixkit.mjs buscar --sfx click` debe listar resultados. Luego `node scripts/mixkit.mjs bajar <un id de esa lista> --sfx` (UNA sola descarga) y confirma que aparece en public/audio/LICENCIAS-mixkit.json con su duración.
+3h. Proyecto: `npx tsc --noEmit` sin errores.
+
+=== PASO 4: recursos que no se versionan ===
+- Música de las historias de RASTRO: regénerala con
+    C:\Videos\_herramientas\.venv\Scripts\python.exe scripts/musica_rastro.py public/audio/musica/raw.wav 30  (y luego con 15)
+  y normalízala con ffmpeg -af loudnorm=I=-16:TP=-1.5:LRA=11 -ar 48000 a public/audio/musica/rastro-base.wav y rastro-base-15s.wav. Borra los raw.
+- Temas de Mixkit: están listados en public/audio/LICENCIAS-mixkit.json; vuelve a bajarlos de a UNO con `node scripts/mixkit.mjs bajar <id> [--sfx]` (sin bucles: pregúntame si son muchos).
+
+=== INFORME FINAL ===
+Una tabla con: componente | versión instalada | ubicación | verificación (✅/❌) | notas.
+Luego, en máximo 6 líneas: rendimiento medido (Whisper y Quick Sync), pasos manuales pendientes (instalar DaVinci Resolve gratis desde blackmagicdesign.com y exportar mi LUT a C:\Videos\_herramientas\luts) y el espacio en disco total que ocupa C:\Videos\_herramientas.

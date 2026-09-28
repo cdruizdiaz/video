@@ -1,0 +1,14 @@
+{
+  "ffmpeg": "C:/Users/CLAUDIO/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.2-full_build/bin/ffmpeg.exe",
+  "ffprobe": "C:/Users/CLAUDIO/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.2-full_build/bin/ffprobe.exe",
+  "ffmpegVersion": "9.0.2-full_build",
+  "whisperPath": "C:/Videos/_herramientas/whisper.cpp",
+  "whisperExe": "C:/Videos/_herramientas/whisper.cpp/build/bin/whisper-cli.exe",
+  "whisperVersion": "1.9.2",
+  "modeloWhisper": "large-v3-turbo",
+  "carpetaModelosWhisper": "C:/Videos/_herramientas/modelos-whisper",
+  "python": "C:/Videos/_herramientas/.venv/Scripts/python.exe",
+  "deepFilter": "C:/Videos/_herramientas/.venv/Scripts/deepFilter.exe",
+  "modeloCaras": "C:/Videos/_herramientas/modelos-mediapipe/blaze_face_short_range.tflite",
+  "carpetaLuts": "C:/Videos/_herramientas/luts"
+}
