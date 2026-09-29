@@ -116,11 +116,13 @@ Espacio usado en `C:\Videos\_herramientas`: 2,9 GB. Los detalles están en `C:\V
 
 ## 6. Pendientes / próximos pasos
 
-- [ ] Decidir el modelo de Whisper: mantener `large-v3-turbo` (máxima calidad, lento) o probar `small` (más rápido). Se puede medir en esta PC.
+- [x] Modelo de Whisper (2026-09-29): `large-v3-turbo-q8_0` (cuantizado): mismo texto y tiempos que el f16, ~25 % más rápido. Además `scripts/transcribir.mjs` salta los silencios con ffmpeg y devuelve cada palabra a su tiempo real (el `--vad` de whisper-cli desfasa los tiempos por palabra). En la i3: de ~8-10x a ~2,8x el tiempo real en voz con pausas. q5_0 resultó más lento que q8_0 en CPU.
 - [ ] Instalar DaVinci Resolve (gratis), crear el LUT de la cámara y guardarlo en `C:\Videos\_herramientas\luts\`.
 - [x] Fuente de música con licencia: Mixkit integrado (2026-09-28). De prueba se bajaron "Close Up" (id 1167, corporativo positivo, 1:35) y el efecto "Cinematic whoosh fast transition" (id 1492).
-- [ ] Montar el flujo "crudo 16:9 → clips 9:16": transcribir → quitar silencios y muletillas → elegir fragmentos → reencuadre con MediaPipe → subtítulos → render.
-- [ ] Evaluar si conviene una GPU NVIDIA (es la inversión con más impacto en velocidad).
+- [ ] Montar el flujo "crudo 16:9 → clips 9:16": transcribir (`scripts/transcribir.mjs`) → quitar silencios y muletillas → elegir fragmentos (`hoja_fragmentos.py`) → reencuadre con MediaPipe → subtítulos → render.
+- [x] GPU: ninguna notebook tiene NVIDIA (2026-09-29). Se descartan CUDA y Vulkan (sobre gráficos integrados la mejora es chica y habría que compilar). Si algún día se compra una PC con NVIDIA, es la inversión con más impacto: bajar el zip `whisper-cublas-*` en esa PC.
+- [x] Mejoras del 2026-09-29 (rama `mejoras`): sha256 en la biblioteca de Mixkit (`mixkit.mjs verificar`), `/estado`, `scripts/hoja_fragmentos.py` (mirar los candidatos antes de proponerlos), `scripts/verificar-suite.mjs` (prueba funcional, incluida DeepFilterNet con ruido).
+- [x] Respaldo de `public/biblioteca/`: decidido (2026-09-29) que queda solo en la PC que bajó cada tema, sin copia externa. Lo que usa cada trabajo lo copia `/cerrar-trabajo` a `C:/Videos/archivo/<ID>/biblioteca/`, y el sha256 del registro permite comprobar una re-descarga.
 
 ---
 

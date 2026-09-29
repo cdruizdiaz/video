@@ -4,7 +4,7 @@
   "whisperPath": "C:/Videos/_herramientas/whisper.cpp",
   "whisperExe": "C:/Videos/_herramientas/whisper.cpp/build/bin/whisper-cli.exe",
   "whisperVersion": "1.9.2",
-  "modeloWhisper": "large-v3-turbo",
+  "modeloWhisper": "large-v3-turbo-q8_0",
   "carpetaModelosWhisper": "C:/Videos/_herramientas/modelos-whisper",
   "python": "C:/Videos/_herramientas/.venv/Scripts/python.exe",
   "deepFilter": "C:/Videos/_herramientas/.venv/Scripts/deepFilter.exe",

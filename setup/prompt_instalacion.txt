@@ -49,10 +49,11 @@ Estructura:
 1a. whisper.cpp
    - Copia setup/herramientas/instalar-whisper.mjs a C:\Videos\_herramientas\ (si no existe) y ejecútalo desde la raíz del proyecto: `node C:/Videos/_herramientas/instalar-whisper.mjs`. Usa @remotion/install-whisper-cpp (en la versión EXACTA de remotion):
      installWhisperCpp({ to: 'C:/Videos/_herramientas/whisper.cpp', version: <ver> })
-   - Versión probada que funciona: 1.9.2 (compatible con large-v3-turbo). Si hay una más nueva en github.com/ggml-org/whisper.cpp/releases con el asset whisper-bin-x64.zip, puedes probarla; si falla, vuelve a 1.9.2.
+   - Versión probada que funciona: 1.9.2 (compatible con large-v3-turbo-q8_0). Si hay una más nueva en github.com/ggml-org/whisper.cpp/releases con el asset whisper-bin-x64.zip, puedes probarla; si falla, vuelve a 1.9.2.
    - PROBLEMA CONOCIDO: el zip oficial de Windows trae los ejecutables en "Release\", pero Remotion (versiones >= 1.7.4) los busca en "build\bin\whisper-cli.exe". Después de instalar, renombra Release\ a build\bin\.
    - `getWhisperExecutablePath` NO se exporta desde el paquete: arma la ruta a mano (build/bin/whisper-cli.exe).
-   - Descarga el modelo large-v3-turbo con downloadWhisperModel({ model: 'large-v3-turbo', folder: 'C:/Videos/_herramientas/modelos-whisper' }). Pesa ~1,6 GB: muéstrame el progreso de forma resumida (cada 10 %).
+   - El script baja el modelo large-v3-turbo-q8_0 (~870 MB) de Hugging Face (huggingface.co/ggerganov/whisper.cpp), porque downloadWhisperModel no ofrece modelos cuantizados. Mismo texto y tiempos que el f16 (1,6 GB) y ~25 % más rápido en CPU. Muéstrame el progreso resumido (cada 10 %).
+   - NO uses el --vad de whisper-cli: deja los tiempos por palabra desfasados. Los silencios los salta scripts/transcribir.mjs.
 
 1b. Python 3.11
    - Comprueba si existe (`py -3.11 --version`). Si no, pídeme permiso para instalarlo con `winget install --id Python.Python.3.11 -e --scope user`. (Convive con otras versiones de Python.)
@@ -104,13 +105,14 @@ Estructura:
 === PASO 3: Verificación (obligatoria) ===
 Crea los archivos de prueba en una carpeta temporal (tmp/, NO en public/) y bórralos al final.
 3a. ffmpeg: primera línea de `ffmpeg -version` (con la ruta del junction) + tiempos de la prueba de códecs del paso 0.
-3b. Audio de prueba: genera ~10 s de voz en español con la síntesis de voz de Windows (System.Speech, PowerShell; busca una voz es-*) diciendo una frase con un par de pausas y un "eh". Conviértelo a WAV 16 kHz mono con ffmpeg.
-3c. whisper.cpp: transcríbelo con large-v3-turbo, idioma "es", tokenLevelTimestamps: true, additionalArgs con todos los hilos del CPU (hilosWhisper de equipo.json), y convierte el resultado con toCaptions. Muéstrame el texto y 3 palabras con sus tiempos. Indica cuánto tardó y la relación con la duración del audio.
-3d. DeepFilterNet: procesa el mismo WAV con deepFilter.exe del .venv y confirma que se generó el archivo de salida.
-3e. MediaPipe: script Python que cargue blaze_face_short_range.tflite con FaceDetector (Tasks API) y lo ejecute sobre una imagen cualquiera (puede no detectar caras: basta con que cargue y corra sin error).
-3f. Volumen: mide el WAV de prueba con ffmpeg -af ebur128 y muestra el valor I (LUFS).
-3g. Mixkit: `node scripts/mixkit.mjs buscar --sfx click` debe listar resultados (quedan en tmp/mixkit-busqueda.json). Luego `node scripts/mixkit.mjs bajar <un id de esa lista> --sfx` (UNA sola descarga) y confirma que aparece en public/biblioteca/LICENCIAS-mixkit.json con su duración.
-3h. Proyecto: `npx tsc --noEmit` sin errores y `npx remotion compositions src/index.ts` lista las composiciones de cada trabajo.
+3b. Suite completa: `node scripts/verificar-suite.mjs`. Prueba que cada herramienta FUNCIONE, no solo que exista:
+    ffmpeg con todos los filtros, Whisper (voz sintética de Windows), DeepFilterNet (voz + ruido:
+    falla si la salida queda en silencio o si no baja el ruido al menos 10 dB, que es lo que pasa cuando se rompe PyTorch),
+    MediaPipe, biblioteca de Mixkit (sha256), TypeScript y composiciones de Remotion. Muéstrame su tabla.
+3c. Velocidad de Whisper: genera ~60 s de voz en español con pausas (System.Speech, en tmp/) y transcríbela con
+    `node scripts/transcribir.mjs tmp/voz60.wav tmp/voz60.json`. La relación "x el tiempo real" que imprime va a
+    whisperVelocidad en equipo.json (el audio de 3b es muy corto: ahí manda la carga del modelo).
+3d. Mixkit (con red): `node scripts/mixkit.mjs buscar --sfx click` debe listar resultados (quedan en tmp/mixkit-busqueda.json). Luego `node scripts/mixkit.mjs bajar <un id de esa lista> --sfx` (UNA sola descarga) y confirma que aparece en public/biblioteca/LICENCIAS-mixkit.json con su duración.
 
 === PASO 4: recursos que no se versionan ===
 - Temas de Mixkit de la biblioteca: están listados en public/biblioteca/LICENCIAS-mixkit.json; vuelve a bajarlos de a UNO con `node scripts/mixkit.mjs bajar <id> [--sfx]` (sin bucles: pregúntame si son muchos).
