@@ -1,0 +1,16 @@
+{
+  "descripcion": "Montaje del video de 40 s. Tiempos en ms del clip fuente (proxy). Cortes elegidos con la transcripción DTW y verificados con el contorno de energía del audio. gananciaDb lleva cada toma a -18,3 LUFS (la más baja); el mix final se normaliza a -14 LUFS.",
+  "tomas": [
+    { "clip": "IMG_2819", "desdeMs": 640, "hastaMs": 4100, "gananciaDb": -4.0, "nota": "¿Qué hace realmente un agente de IA en 2026?" },
+    { "clip": "IMG_2822", "desdeMs": 850, "hastaMs": 4780, "gananciaDb": -4.8, "nota": "La mayoría usa IA para generar textos, respuestas, imágenes." },
+    { "clip": "IMG_2826", "desdeMs": 500, "hastaMs": 6800, "gananciaDb": -4.7, "nota": "Pero un agente de IA puede resolver consultas, puede buscar información, ejecutar tareas y actualizar sistemas." },
+    { "clip": "IMG_2834", "desdeMs": 670, "hastaMs": 5250, "gananciaDb": -2.5, "nota": "Definimos qué tiene que hacer, cómo tiene que responder y cuándo tiene que pedir ayuda." },
+    { "clip": "IMG_2833", "desdeMs": 200, "hastaMs": 5720, "gananciaDb": 0, "nota": "Después lo conectamos con la información que necesita: clientes, productos, stock, historial." },
+    { "clip": "IMG_2835", "desdeMs": 0, "hastaMs": 3500, "gananciaDb": -3.0, "nota": "Y lo integramos con las herramientas que tu empresa ya usa," },
+    { "clip": "IMG_2835", "desdeMs": 3900, "hastaMs": 5660, "gananciaDb": -3.0, "zoom": 1.12, "nota": "como Odoo, Tango, (pausa acortada)" },
+    { "clip": "IMG_2835", "desdeMs": 6950, "hastaMs": 7980, "gananciaDb": -3.0, "nota": "y WhatsApp. (sin 'tu correo electrónico')" },
+    { "clip": "IMG_2836", "desdeMs": 300, "hastaMs": 5330, "gananciaDb": -3.7, "nota": "Así, el agente puede atender, vender, resolver tareas y derivar a una persona" },
+    { "clip": "IMG_2836", "desdeMs": 6130, "hastaMs": 6950, "gananciaDb": -3.7, "zoom": 1.12, "nota": "cuando hace falta. (sin 'solamente')" },
+    { "clip": "IMG_2839", "desdeMs": 950, "hastaMs": 5980, "gananciaDb": -2.1, "nota": "En Volto conectamos agentes de IA con los procesos de tu empresa. Seguinos para ver cómo." }
+  ]
+}

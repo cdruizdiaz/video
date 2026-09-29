@@ -40,5 +40,16 @@
     "fuente": "https://assets.mixkit.co/active_storage/sfx/1114/1114.wav",
     "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
     "descargado": "2026-09-28"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-175-digital-clouds.mp3",
+    "id": "175",
+    "tipo": "musica",
+    "titulo": "Digital Clouds",
+    "autor": "Alejandro Magaña (A. M.)",
+    "duracionSeg": 101,
+    "fuente": "https://assets.mixkit.co/music/175/175.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-09-28"
   }
 ]

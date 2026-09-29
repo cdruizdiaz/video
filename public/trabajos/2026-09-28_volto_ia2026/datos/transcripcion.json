@@ -1,0 +1,583 @@
+{
+  "IMG_2819": [
+    {
+      "text": "¿Qué",
+      "startMs": 764,
+      "endMs": 940
+    },
+    {
+      "text": "hace",
+      "startMs": 940,
+      "endMs": 1220
+    },
+    {
+      "text": "realmente",
+      "startMs": 1220,
+      "endMs": 2200
+    },
+    {
+      "text": "un",
+      "startMs": 2200,
+      "endMs": 2660
+    },
+    {
+      "text": "agente",
+      "startMs": 2660,
+      "endMs": 2960
+    },
+    {
+      "text": "de",
+      "startMs": 2960,
+      "endMs": 3120
+    },
+    {
+      "text": "IA",
+      "startMs": 3120,
+      "endMs": 3240
+    },
+    {
+      "text": "en",
+      "startMs": 3240,
+      "endMs": 3340
+    },
+    {
+      "text": "2026?",
+      "startMs": 3340,
+      "endMs": 3940
+    }
+  ],
+  "IMG_2822": [
+    {
+      "text": "La",
+      "startMs": 971,
+      "endMs": 1080
+    },
+    {
+      "text": "mayoría",
+      "startMs": 1080,
+      "endMs": 1500
+    },
+    {
+      "text": "usa",
+      "startMs": 1500,
+      "endMs": 2080
+    },
+    {
+      "text": "IA",
+      "startMs": 2080,
+      "endMs": 2240
+    },
+    {
+      "text": "para",
+      "startMs": 2240,
+      "endMs": 2440
+    },
+    {
+      "text": "generar",
+      "startMs": 2440,
+      "endMs": 2780
+    },
+    {
+      "text": "textos,",
+      "startMs": 2780,
+      "endMs": 3220
+    },
+    {
+      "text": "respuestas,",
+      "startMs": 3220,
+      "endMs": 3920
+    },
+    {
+      "text": "imágenes.",
+      "startMs": 3920,
+      "endMs": 4600
+    }
+  ],
+  "IMG_2826": [
+    {
+      "text": "Pero",
+      "startMs": 619,
+      "endMs": 720
+    },
+    {
+      "text": "un",
+      "startMs": 720,
+      "endMs": 860
+    },
+    {
+      "text": "agente",
+      "startMs": 860,
+      "endMs": 1160
+    },
+    {
+      "text": "de",
+      "startMs": 1160,
+      "endMs": 1320
+    },
+    {
+      "text": "IA",
+      "startMs": 1320,
+      "endMs": 1500
+    },
+    {
+      "text": "puede",
+      "startMs": 1914,
+      "endMs": 2120
+    },
+    {
+      "text": "resolver",
+      "startMs": 2120,
+      "endMs": 2420
+    },
+    {
+      "text": "consultas,",
+      "startMs": 2420,
+      "endMs": 3120
+    },
+    {
+      "text": "puede",
+      "startMs": 3341,
+      "endMs": 3480
+    },
+    {
+      "text": "buscar",
+      "startMs": 3480,
+      "endMs": 3680
+    },
+    {
+      "text": "información,",
+      "startMs": 3680,
+      "endMs": 4220
+    },
+    {
+      "text": "ejecutar",
+      "startMs": 4736,
+      "endMs": 5180
+    },
+    {
+      "text": "tareas",
+      "startMs": 5180,
+      "endMs": 5680
+    },
+    {
+      "text": "y",
+      "startMs": 5680,
+      "endMs": 5940
+    },
+    {
+      "text": "actualizar",
+      "startMs": 5940,
+      "endMs": 6320
+    },
+    {
+      "text": "sistemas.",
+      "startMs": 6320,
+      "endMs": 6640
+    }
+  ],
+  "IMG_2833": [
+    {
+      "text": "Después",
+      "startMs": 322,
+      "endMs": 740
+    },
+    {
+      "text": "lo",
+      "startMs": 740,
+      "endMs": 1240
+    },
+    {
+      "text": "conectamos",
+      "startMs": 1240,
+      "endMs": 1620
+    },
+    {
+      "text": "con",
+      "startMs": 1620,
+      "endMs": 1740
+    },
+    {
+      "text": "la",
+      "startMs": 1740,
+      "endMs": 1840
+    },
+    {
+      "text": "información",
+      "startMs": 1840,
+      "endMs": 2120
+    },
+    {
+      "text": "que",
+      "startMs": 2120,
+      "endMs": 2300
+    },
+    {
+      "text": "necesita:",
+      "startMs": 2300,
+      "endMs": 2740
+    },
+    {
+      "text": "clientes,",
+      "startMs": 3114,
+      "endMs": 3720
+    },
+    {
+      "text": "productos,",
+      "startMs": 3720,
+      "endMs": 4260
+    },
+    {
+      "text": "stock,",
+      "startMs": 4260,
+      "endMs": 4820
+    },
+    {
+      "text": "historial.",
+      "startMs": 4820,
+      "endMs": 5580
+    }
+  ],
+  "IMG_2834": [
+    {
+      "text": "Definimos",
+      "startMs": 787,
+      "endMs": 1400
+    },
+    {
+      "text": "qué",
+      "startMs": 1400,
+      "endMs": 1740
+    },
+    {
+      "text": "tiene",
+      "startMs": 1740,
+      "endMs": 1940
+    },
+    {
+      "text": "que",
+      "startMs": 1940,
+      "endMs": 2060
+    },
+    {
+      "text": "hacer,",
+      "startMs": 2060,
+      "endMs": 2320
+    },
+    {
+      "text": "cómo",
+      "startMs": 2320,
+      "endMs": 2860
+    },
+    {
+      "text": "tiene",
+      "startMs": 2860,
+      "endMs": 3060
+    },
+    {
+      "text": "que",
+      "startMs": 3060,
+      "endMs": 3200
+    },
+    {
+      "text": "responder",
+      "startMs": 3200,
+      "endMs": 3600
+    },
+    {
+      "text": "y",
+      "startMs": 3600,
+      "endMs": 4120
+    },
+    {
+      "text": "cuándo",
+      "startMs": 4120,
+      "endMs": 4340
+    },
+    {
+      "text": "tiene",
+      "startMs": 4340,
+      "endMs": 4500
+    },
+    {
+      "text": "que",
+      "startMs": 4500,
+      "endMs": 4620
+    },
+    {
+      "text": "pedir",
+      "startMs": 4620,
+      "endMs": 4800
+    },
+    {
+      "text": "ayuda.",
+      "startMs": 4800,
+      "endMs": 5100
+    }
+  ],
+  "IMG_2835": [
+    {
+      "text": "Y",
+      "startMs": 10,
+      "endMs": 460
+    },
+    {
+      "text": "lo",
+      "startMs": 460,
+      "endMs": 580
+    },
+    {
+      "text": "integramos",
+      "startMs": 580,
+      "endMs": 1160
+    },
+    {
+      "text": "con",
+      "startMs": 1160,
+      "endMs": 1520
+    },
+    {
+      "text": "las",
+      "startMs": 1520,
+      "endMs": 1640
+    },
+    {
+      "text": "herramientas",
+      "startMs": 1640,
+      "endMs": 2020
+    },
+    {
+      "text": "que",
+      "startMs": 2020,
+      "endMs": 2100
+    },
+    {
+      "text": "tu",
+      "startMs": 2100,
+      "endMs": 2220
+    },
+    {
+      "text": "empresa",
+      "startMs": 2220,
+      "endMs": 2520
+    },
+    {
+      "text": "ya",
+      "startMs": 2520,
+      "endMs": 3020
+    },
+    {
+      "text": "usa,",
+      "startMs": 3020,
+      "endMs": 3360
+    },
+    {
+      "text": "como",
+      "startMs": 4010,
+      "endMs": 4180
+    },
+    {
+      "text": "Odoo,",
+      "startMs": 4180,
+      "endMs": 4720
+    },
+    {
+      "text": "Tango,",
+      "startMs": 4720,
+      "endMs": 5480
+    },
+    {
+      "text": "tu",
+      "startMs": 5480,
+      "endMs": 6020
+    },
+    {
+      "text": "correo",
+      "startMs": 6020,
+      "endMs": 6320
+    },
+    {
+      "text": "electrónico",
+      "startMs": 6320,
+      "endMs": 6840
+    },
+    {
+      "text": "y",
+      "startMs": 6840,
+      "endMs": 7380
+    },
+    {
+      "text": "WhatsApp.",
+      "startMs": 7380,
+      "endMs": 7620
+    }
+  ],
+  "IMG_2836": [
+    {
+      "text": "Así,",
+      "startMs": 419,
+      "endMs": 660
+    },
+    {
+      "text": "el",
+      "startMs": 660,
+      "endMs": 1020
+    },
+    {
+      "text": "agente",
+      "startMs": 1020,
+      "endMs": 1220
+    },
+    {
+      "text": "puede",
+      "startMs": 1220,
+      "endMs": 1600
+    },
+    {
+      "text": "atender,",
+      "startMs": 1600,
+      "endMs": 2220
+    },
+    {
+      "text": "vender,",
+      "startMs": 2220,
+      "endMs": 2780
+    },
+    {
+      "text": "resolver",
+      "startMs": 2780,
+      "endMs": 3520
+    },
+    {
+      "text": "tareas",
+      "startMs": 3520,
+      "endMs": 4100
+    },
+    {
+      "text": "y",
+      "startMs": 4100,
+      "endMs": 4400
+    },
+    {
+      "text": "derivar",
+      "startMs": 4400,
+      "endMs": 4720
+    },
+    {
+      "text": "a",
+      "startMs": 4720,
+      "endMs": 4800
+    },
+    {
+      "text": "una",
+      "startMs": 4800,
+      "endMs": 4860
+    },
+    {
+      "text": "persona",
+      "startMs": 4860,
+      "endMs": 5240
+    },
+    {
+      "text": "solamente",
+      "startMs": 5240,
+      "endMs": 6040
+    },
+    {
+      "text": "cuando",
+      "startMs": 6040,
+      "endMs": 6380
+    },
+    {
+      "text": "hace",
+      "startMs": 6380,
+      "endMs": 6540
+    },
+    {
+      "text": "falta.",
+      "startMs": 6540,
+      "endMs": 6800
+    }
+  ],
+  "IMG_2839": [
+    {
+      "text": "En",
+      "startMs": 1021,
+      "endMs": 1120
+    },
+    {
+      "text": "Volto",
+      "startMs": 1120,
+      "endMs": 1480
+    },
+    {
+      "text": "conectamos",
+      "startMs": 1480,
+      "endMs": 2160
+    },
+    {
+      "text": "agentes",
+      "startMs": 2160,
+      "endMs": 2600
+    },
+    {
+      "text": "de",
+      "startMs": 2600,
+      "endMs": 2740
+    },
+    {
+      "text": "IA",
+      "startMs": 2740,
+      "endMs": 2960
+    },
+    {
+      "text": "con",
+      "startMs": 2960,
+      "endMs": 3360
+    },
+    {
+      "text": "los",
+      "startMs": 3360,
+      "endMs": 3500
+    },
+    {
+      "text": "procesos",
+      "startMs": 3500,
+      "endMs": 3880
+    },
+    {
+      "text": "de",
+      "startMs": 3880,
+      "endMs": 3980
+    },
+    {
+      "text": "tu",
+      "startMs": 3980,
+      "endMs": 4080
+    },
+    {
+      "text": "empresa.",
+      "startMs": 4080,
+      "endMs": 4400
+    },
+    {
+      "text": "Seguinos",
+      "startMs": 4830,
+      "endMs": 5220
+    },
+    {
+      "text": "para",
+      "startMs": 5220,
+      "endMs": 5380
+    },
+    {
+      "text": "ver",
+      "startMs": 5380,
+      "endMs": 5520
+    },
+    {
+      "text": "cómo.",
+      "startMs": 5520,
+      "endMs": 5700
+    }
+  ]
+}

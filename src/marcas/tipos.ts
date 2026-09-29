@@ -3,12 +3,16 @@ export type Marca = {
   id: string;
   firma: string; // p. ej. "RASTRO®", va en los pies de escena
   fuente: string; // fontFamily ya cargada
+  fuenteTitulos?: string; // si la marca usa otra para títulos (por defecto, fuente)
+  fuenteManuscrita?: string; // acentos escritos a mano, si la marca los usa
   colores: {
     fondo: string; // fondo claro principal
     tinta: string; // texto sobre fondo claro
     tintaSuave: string; // texto secundario
     oscuro: string; // fondo de escenas oscuras
     claro: string; // texto sobre fondo oscuro
+    acento?: string; // color de énfasis (palabras destacadas, detalles)
+    acentoSuave?: string; // énfasis secundario
   };
   ease: (t: number) => number;
   margen: number; // margen lateral en px (lienzo 1080 de ancho)
