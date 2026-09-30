@@ -20,6 +20,7 @@ Cada pedido es un **trabajo** con ID `AAAA-MM-DD_cliente_pieza` (minúsculas, si
 | `src/trabajos/<ID>/` | `TRABAJO.md` (brief, decisiones, entregas), `guion_<pieza>.md` (guion con tiempos), `composiciones.ts`, scripts propios del trabajo |
 | `out/<ID>/revision/` | Hojas de contacto, stills, borradores rápidos |
 | `out/<ID>/final/` | Entregas: `<pieza>_<formato>_v<N>.mp4` (p. ej. `clip-01_9x16_v2.mp4`) |
+| `out/<ID>/premiere/` | Exportación a Premiere: `<pieza>_<formato>_v<N>.xml`, capa `graficos_<huella>.mov`, `medios/` |
 
 Compartido entre trabajos:
 - `public/marcas/<cliente>/` + `src/marcas/<cliente>/marca.ts`: kit de marca (logo, fotos institucionales, colores, tipografía, curvas).
@@ -27,7 +28,7 @@ Compartido entre trabajos:
 - `src/plantillas/`: plantillas reutilizables (`HistoriaMarca`, …) + `comunes/piezas.tsx`.
 
 Reglas:
-- Comandos: **`/nuevo-trabajo <cliente> <pieza> [crudos] [brief]`** abre un trabajo; **`/cerrar-trabajo <ID>`** lo cierra y archiva. **`/estado [todos]`** lista los trabajos abiertos con su última entrega y lo que falta (`node scripts/estado.mjs`).
+- Comandos: **`/nuevo-trabajo <cliente> <pieza> [crudos] [brief]`** abre un trabajo; **`/cerrar-trabajo <ID>`** lo cierra y archiva. **`/estado [todos]`** lista los trabajos abiertos con su última entrega y lo que falta (`node scripts/estado.mjs`). **`/a-premiere <ID>`** exporta la última versión a Premiere.
 - **Guion audiovisual = fuente de verdad** de cada pieza: `src/trabajos/<ID>/guion_<pieza>.md` (formato en `src/trabajos/_plantilla/GUION.md`). **`/guion <ID|descripción>`** lo genera; cuando el usuario lo edita o pega una versión nueva, **`/aplicar-guion <ID>`** aplica SOLO lo que cambió (vía `git diff` del guion) y renderiza una `_vN` nueva. Si se cambia el video por otro pedido, actualizar también el guion para que siga describiendo el video real.
 - Si el pedido del usuario no nombra un trabajo, preguntar si es uno nuevo o la continuación de uno existente.
 - **Nunca sobrescribir un archivo de `out/<ID>/final/`**: cada cambio es una versión nueva `_vN+1`. Anotar cada entrega en `TRABAJO.md`.
@@ -49,6 +50,7 @@ Reglas:
 - NUNCA hacer un render completo salvo pedido explícito. Para verificar: `npx remotion still src/index.ts <comp> out/<ID>/revision/f<N>.png --frame=N`, o una secuencia a `--scale=0.25` y una hoja de contactos en `out/<ID>/revision/`.
 - Render final: `npx remotion render src/index.ts <comp> out/<ID>/final/<pieza>_<formato>_v<N>.mp4 --crf=18`.
 - Audio final normalizado a -14 LUFS (`loudnorm`) y verificado con `ebur128`.
+- Premiere: después de cada render final, si la composición tiene `premiere` en `composiciones.ts`, correr **`/a-premiere <ID>`** (`node scripts/a-premiere.mjs <ID>`, en segundo plano). Genera el XML de esa `_vN` (cortes con los originales, reencuadre como keyframes, audio con niveles y fundidos) y la capa de gráficos con transparencia, que solo se vuelve a renderizar si cambió (huella de los datos gráficos + código de `src/plantillas/`). Plantillas con exportación: `MontajeMusical`. Para agregarla a otra: `src/plantillas/<X>/premiere.ts` con el formato de `src/plantillas/comunes/premiere.ts` y opción `soloGraficos` en la plantilla.
 
 ## Herramientas
 - ffmpeg: build **completo** del sistema (Gyan.FFmpeg full, instalado con winget; versión en `equipo.json`). Se usa por el acceso fijo `C:/Videos/_herramientas/ffmpeg/bin/` (junction a la carpeta de winget), así la ruta de `herramientas.json` (`ffmpeg`, `ffprobe`) no depende del usuario ni de la versión.
@@ -89,6 +91,7 @@ Reglas:
 | Verificar que la suite funcione (tras instalar o actualizar) | `node scripts/verificar-suite.mjs [--rapido]` |
 | Posición del sujeto para 9:16 | MediaPipe → `public/trabajos/<ID>/datos/encuadre.json` |
 | Reencuadre, subtítulos, títulos, gráficos, transiciones, ducking, render | Remotion (plantillas de `src/plantillas/`) |
+| Pasar la edición a Adobe Premiere | `/a-premiere` (`scripts/a-premiere.mjs`: XML de Final Cut 7 + capa ProRes 4444) |
 | Tipografías | `@remotion/google-fonts` |
 | Música de fondo | 1º Mixkit (`scripts/mixkit.mjs` → biblioteca → preparada en `public/trabajos/<ID>/audio/`); 2º música compuesta por código |
 | Efectos de sonido (whoosh, click, pop, transiciones) | Mixkit `--sfx` → `public/biblioteca/sfx/mixkit/` |

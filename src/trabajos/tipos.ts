@@ -1,4 +1,5 @@
 import type React from "react";
+import type { LineaPremiere } from "../plantillas/comunes/premiere";
 
 // Una composición de un trabajo, tal como se registra en Remotion Studio.
 export type ComposicionTrabajo = {
@@ -11,6 +12,9 @@ export type ComposicionTrabajo = {
   width?: number; // por defecto 1080
   height?: number; // por defecto 1920
   fps?: number; // por defecto 30
+  // Exportación a Premiere (/a-premiere): la función de la plantilla que arma la línea de tiempo
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  premiere?: (props: any) => LineaPremiere;
 };
 
 export type Trabajo = {
