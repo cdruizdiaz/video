@@ -1,0 +1,15 @@
+Trabajo 2026-09-30_lucia_lucia70: cerrado y archivado el 2026-09-30.
+
+El material pesado se movio a:
+  C:/Videos/archivo/2026-09-30_lucia_lucia70/
+    public/crudos/   proxy 1440x1080 30 fps (lucia-70-anos.mp4)
+    public/audio/    (vacia)
+    public/img/      (vacia)
+    final/           copia de la entrega (out/2026-09-30_lucia_lucia70/final/)
+
+No uso material de Mixkit. Aca queda solo datos/ (JSON chicos, versionados).
+Originales sin tocar: C:/Videos/crudos/2026-09-30_lucia_lucia70/
+Ficha y codigo: src/trabajos/2026-09-30_lucia_lucia70/ (ver TRABAJO.md, "Como rehacerlo").
+
+Para restaurar (desde la raiz del proyecto, Git Bash):
+  cp -r "C:/Videos/archivo/2026-09-30_lucia_lucia70/public/." "public/trabajos/2026-09-30_lucia_lucia70/"
