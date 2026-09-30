@@ -20,6 +20,7 @@ Cada pedido es un **trabajo** con ID `AAAA-MM-DD_cliente_pieza` (minúsculas, si
 | `src/trabajos/<ID>/` | `TRABAJO.md` (brief, decisiones, entregas), `guion_<pieza>.md` (guion con tiempos), `composiciones.ts`, scripts propios del trabajo |
 | `out/<ID>/revision/` | Hojas de contacto, stills, borradores rápidos |
 | `out/<ID>/final/` | Entregas: `<pieza>_<formato>_v<N>.mp4` (p. ej. `clip-01_9x16_v2.mp4`) |
+| `out/<ID>/premiere/` | Exportación a Premiere: `<pieza>_<formato>_v<N>.xml`, capa `graficos_<huella>.mov`, `medios/` |
 
 Compartido entre trabajos:
 - `public/marcas/<cliente>/` + `src/marcas/<cliente>/marca.ts`: kit de marca (logo, fotos institucionales, colores, tipografía, curvas).
@@ -27,7 +28,7 @@ Compartido entre trabajos:
 - `src/plantillas/`: plantillas reutilizables (`HistoriaMarca`, …) + `comunes/piezas.tsx`.
 
 Reglas:
-- Comandos: **`/nuevo-trabajo <cliente> <pieza> [crudos] [brief]`** abre un trabajo; **`/cerrar-trabajo <ID>`** lo cierra y archiva.
+- Comandos: **`/nuevo-trabajo <cliente> <pieza> [crudos] [brief]`** abre un trabajo; **`/cerrar-trabajo <ID>`** lo cierra y archiva. **`/estado [todos]`** lista los trabajos abiertos con su última entrega y lo que falta (`node scripts/estado.mjs`). **`/a-premiere <ID>`** exporta la última versión a Premiere.
 - **Guion audiovisual = fuente de verdad** de cada pieza: `src/trabajos/<ID>/guion_<pieza>.md` (formato en `src/trabajos/_plantilla/GUION.md`). **`/guion <ID|descripción>`** lo genera; cuando el usuario lo edita o pega una versión nueva, **`/aplicar-guion <ID>`** aplica SOLO lo que cambió (vía `git diff` del guion) y renderiza una `_vN` nueva. Si se cambia el video por otro pedido, actualizar también el guion para que siga describiendo el video real.
 - Si el pedido del usuario no nombra un trabajo, preguntar si es uno nuevo o la continuación de uno existente.
 - **Nunca sobrescribir un archivo de `out/<ID>/final/`**: cada cambio es una versión nueva `_vN+1`. Anotar cada entrega en `TRABAJO.md`.
@@ -49,6 +50,7 @@ Reglas:
 - NUNCA hacer un render completo salvo pedido explícito. Para verificar: `npx remotion still src/index.ts <comp> out/<ID>/revision/f<N>.png --frame=N`, o una secuencia a `--scale=0.25` y una hoja de contactos en `out/<ID>/revision/`.
 - Render final: `npx remotion render src/index.ts <comp> out/<ID>/final/<pieza>_<formato>_v<N>.mp4 --crf=18`.
 - Audio final normalizado a -14 LUFS (`loudnorm`) y verificado con `ebur128`.
+- Premiere: después de cada render final, si la composición tiene `premiere` en `composiciones.ts`, correr **`/a-premiere <ID>`** (`node scripts/a-premiere.mjs <ID>`, en segundo plano). Genera el XML de esa `_vN` (cortes con los originales, reencuadre como keyframes, audio con niveles y fundidos) y la capa de gráficos con transparencia, que solo se vuelve a renderizar si cambió (huella de los datos gráficos + código de `src/plantillas/`). Plantillas con exportación: `MontajeMusical`. Para agregarla a otra: `src/plantillas/<X>/premiere.ts` con el formato de `src/plantillas/comunes/premiere.ts` y opción `soloGraficos` en la plantilla.
 
 ## Herramientas
 - ffmpeg: build **completo** del sistema (Gyan.FFmpeg full, instalado con winget; versión en `equipo.json`). Se usa por el acceso fijo `C:/Videos/_herramientas/ffmpeg/bin/` (junction a la carpeta de winget), así la ruta de `herramientas.json` (`ffmpeg`, `ffprobe`) no depende del usuario ni de la versión.
@@ -58,14 +60,18 @@ Reglas:
   - Proxies y borradores: el códec de `codecBorrador` en `equipo.json` (depende de la PC: `h264_qsv -global_quality 23` en la notebook Intel con Quick Sync; `libx264 -preset veryfast -crf 20` en la PC AMD Ryzen de 16 hilos, igual de rápido que AMF y con archivos más chicos). Entregas finales: `-c:v libx264 -crf 18 -preset slow`.
   - Medir volumen: `ffmpeg -i x.wav -af ebur128=peak=true -f null -`. Normalizar: `-af loudnorm=I=-14:TP=-1.5:LRA=11`.
   - `npx remotion ffmpeg` queda solo como respaldo: le faltan filtros (`ebur128`) y rompe los `filter_complex` desde Git Bash.
-- Whisper: modelo `large-v3-turbo`, idioma `es`, con marcas de tiempo por palabra (`tokenLevelTimestamps: true`). Entrada: WAV 16 kHz mono. Pasar `additionalArgs: [["-t", "<hilosWhisper>"]]` (de `equipo.json`: todos los hilos del CPU). Velocidad según la PC: ~10x el tiempo real con 4 hilos (i3), ~1x con 16 hilos (Ryzen 7). Si el audio es largo, correrlo en segundo plano.
+- Whisper: **`node scripts/transcribir.mjs <audio|video> <salida.json> [--prompt "Odoo, Tango"]`**. Usa el modelo `modeloWhisper` de `herramientas.json` (`large-v3-turbo-q8_0`), idioma `es`, tiempos por palabra con DTW y todos los hilos (`hilosWhisper` de `equipo.json`). Salta los silencios largos con ffmpeg y devuelve cada palabra a su tiempo real: en crudos con pausas tarda la mitad. Velocidad: ~2,8x el tiempo real en la i3 con pausas (antes ~10x); en la Ryzen 7, menos de 1x. Si el audio es largo, correrlo en segundo plano.
+  - NO usar el `--vad` de whisper-cli: los tiempos por palabra quedan en la línea de tiempo sin silencios (desfasados).
+  - Whisper omite muletillas ("eh", "este"): para detectarlas, mirar los huecos entre palabras, no el texto.
+  - No hay GPU NVIDIA en ninguna notebook (2026-09-29): whisper.cpp corre en CPU con el binario oficial.
   - Nota: el ejecutable está en `build/bin/whisper-cli.exe` (se reubicó desde `Release/` del zip oficial para que `@remotion/install-whisper-cpp` lo encuentre).
 - DeepFilterNet: `deepFilter.exe <entrada.wav> -o <carpeta>` (Python 3.11 del `.venv` compartido).
 - MediaPipe: Tasks API (`FaceDetector`) con el modelo `blaze_face_short_range.tflite`.
 - Color: LUTs `.cube` en `C:/Videos/_herramientas/luts`, aplicar con `-vf lut3d=archivo.cube`.
 - Mixkit (música y efectos gratis, de Envato): `node scripts/mixkit.mjs`.
   - Buscar: `buscar <términos>` · `buscar mood:<estado>` · `buscar genero:<género>` · `buscar tag:<etiqueta>` · `buscar --sfx <términos>`. Leer `tmp/mixkit-busqueda.json` (id, título, autor, etiquetas, duración) y proponer 2-3 opciones con su razón antes de bajar.
-  - Descargar: `bajar <id>` (música → `public/biblioteca/musica/mixkit/`) o `bajar <id> --sfx` (efectos → `public/biblioteca/sfx/mixkit/`). Registra la licencia en `public/biblioteca/LICENCIAS-mixkit.json`.
+  - Descargar: `bajar <id>` (música → `public/biblioteca/musica/mixkit/`) o `bajar <id> --sfx` (efectos → `public/biblioteca/sfx/mixkit/`). Registra la licencia y el `sha256` en `public/biblioteca/LICENCIAS-mixkit.json`; una re-descarga compara el hash y avisa si Mixkit cambió el archivo.
+  - Verificar la biblioteca local contra los hashes (sin red): `node scripts/mixkit.mjs verificar`.
   - Para usar un tema en un trabajo: recortarlo, darle fundidos y normalizarlo con ffmpeg a `public/trabajos/<ID>/audio/` (ejemplo: `src/trabajos/2026-09-28_rastro_historia-ig/preparar_musica_15s.sh`).
   - Los términos de Mixkit PROHÍBEN descargas masivas con scripts: solo 1 búsqueda o 1 descarga por ejecución, de temas elegidos; nunca bajar en lote ni en bucle.
   - Estados de ánimo útiles (mood:): uplifting, happy, relaxing, dreamy, epic, energetic, romantic, sad. Géneros (genero:): corporate, ambient, hip-hop, jazz, funk, pop, rock, electronica, cinematic, lofi.
@@ -81,9 +87,11 @@ Reglas:
 | Limpiar ruido de voz | DeepFilterNet |
 | Transcribir, tiempos por palabra | whisper.cpp |
 | Silencios y muletillas | whisper.cpp (huecos entre palabras) → Remotion corta |
-| Elegir fragmentos | leer la transcripción (texto, nunca el video) → `public/trabajos/<ID>/datos/clips.json` |
+| Elegir fragmentos | leer la transcripción (texto, nunca el video) → candidatos en `public/trabajos/<ID>/datos/candidatos.json` → **`scripts/hoja_fragmentos.py <ID>`** (Python del `.venv`): alertas de desenfoque, brillo y caras + hoja en `out/<ID>/revision/`; descartar los que tengan alertas y recién ahí proponer → `clips.json` |
+| Verificar que la suite funcione (tras instalar o actualizar) | `node scripts/verificar-suite.mjs [--rapido]` |
 | Posición del sujeto para 9:16 | MediaPipe → `public/trabajos/<ID>/datos/encuadre.json` |
 | Reencuadre, subtítulos, títulos, gráficos, transiciones, ducking, render | Remotion (plantillas de `src/plantillas/`) |
+| Pasar la edición a Adobe Premiere | `/a-premiere` (`scripts/a-premiere.mjs`: XML de Final Cut 7 + capa ProRes 4444) |
 | Tipografías | `@remotion/google-fonts` |
 | Música de fondo | 1º Mixkit (`scripts/mixkit.mjs` → biblioteca → preparada en `public/trabajos/<ID>/audio/`); 2º música compuesta por código |
 | Efectos de sonido (whoosh, click, pop, transiciones) | Mixkit `--sfx` → `public/biblioteca/sfx/mixkit/` |

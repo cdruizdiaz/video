@@ -27,7 +27,7 @@
 
 ## Decisiones
 - **Plantilla:**
-- **Música:** (tema, fuente, id, tramo usado, LUFS; licencia en `public/biblioteca/LICENCIAS-mixkit.json`)
+- **Música:** (tema, fuente, id, sha256 del original — primeros 12 caracteres, de `public/biblioteca/LICENCIAS-mixkit.json` —, tramo usado, LUFS)
 - **Otras:**
 
 ## Entregas

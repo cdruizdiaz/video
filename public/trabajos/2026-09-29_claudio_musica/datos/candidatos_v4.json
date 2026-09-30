@@ -1,0 +1,36 @@
+{
+ "tomas": [
+  {
+   "clip": "wa_111351",
+   "desdeMs": 3150,
+   "hastaMs": 6700,
+   "sujeto": "uno",
+   "zoomMax": 1.15,
+   "nota": "hombre con gorra y ukelele, se ríe (WhatsApp, 368×576)"
+  },
+  {
+   "clip": "wa_111300",
+   "desdeMs": 15550,
+   "hastaMs": 18700,
+   "sujeto": "uno",
+   "zoomMax": 1.1,
+   "nota": "chica de pelo rizado con guitarra, muy expresiva (WhatsApp, 480×848)"
+  },
+  {
+   "clip": "wa_111602",
+   "desdeMs": 14900,
+   "hastaMs": 18800,
+   "sujeto": "uno",
+   "zoomMax": 1.15,
+   "nota": "chico canta con micrófono en el living (WhatsApp, 464×832)"
+  },
+  {
+   "clip": "wa_111505",
+   "desdeMs": 4500,
+   "hastaMs": 7550,
+   "sujeto": "uno",
+   "zoomMax": 1.1,
+   "nota": "chica canta al micrófono con guitarra (WhatsApp, 480×1068)"
+  }
+ ]
+}
