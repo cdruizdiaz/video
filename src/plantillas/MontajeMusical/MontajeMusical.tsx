@@ -96,6 +96,7 @@ export type MontajeMusicalProps = {
   tomas: TomaMusical[];
   titulo: [string, string]; // dos renglones de la apertura
   cierre: { texto: string; subtexto?: string; duracion: number }; // duracion en frames, sobre la última toma
+  filtroVideo?: string; // filtro CSS sobre el video, p. ej. "brightness(1.2)" para material a contraluz
   whoosh?: string; // efecto en cada corte (dentro de public/)
   whooshDb?: number;
   estilo: EstiloMontaje;
@@ -104,13 +105,15 @@ export type MontajeMusicalProps = {
 };
 
 // ---------- Piezas ----------
-const TomaVideo: React.FC<{ t: TomaMusical; src: string; dura: number }> = ({
-  t,
-  src,
-  dura,
-}) => {
+const TomaVideo: React.FC<{
+  t: TomaMusical;
+  src: string;
+  dura: number;
+  filtro?: string;
+}> = ({ t, src, dura, filtro }) => {
   const frame = useCurrentFrame();
   const { z, izq, arriba } = encuadreEn(t, frame, dura);
+  const ancho = t.anchoFuente ?? ANCHO;
 
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
@@ -122,11 +125,13 @@ const TomaVideo: React.FC<{ t: TomaMusical; src: string; dura: number }> = ({
           position: "absolute",
           left: 0,
           top: 0,
-          width: ANCHO,
+          width: ancho,
           height: ALTO,
+          maxWidth: "none",
           objectFit: "cover",
+          filter: filtro,
           transformOrigin: "0 0",
-          transform: `translate(${-izq * ANCHO * z}px, ${-arriba * ALTO * z}px) scale(${z})`,
+          transform: `translate(${-izq * ancho * z}px, ${-arriba * ALTO * z}px) scale(${z})`,
         }}
       />
     </AbsoluteFill>
@@ -561,7 +566,12 @@ export const MontajeMusical: React.FC<MontajeMusicalProps> = (p) => {
                   durationInFrames={dura}
                   name={`${t.clip} ${t.desdeMs}-${t.hastaMs}`}
                 >
-                  <TomaVideo t={t} src={src} dura={dura} />
+                  <TomaVideo
+                    t={t}
+                    src={src}
+                    dura={dura}
+                    filtro={p.filtroVideo}
+                  />
                 </Sequence>
                 <Sequence
                   from={ini[i] - antes}

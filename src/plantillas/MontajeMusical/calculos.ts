@@ -25,6 +25,10 @@ export type TomaMusical = {
   gananciaDb?: number;
   etiqueta?: string; // p. ej. "2022"; se muestra al empezar la toma
   encuadre?: { zoom: number; puntos: PuntoEncuadre[] };
+  // Ancho (px de salida) del video escalado a ALTO. Por defecto ANCHO: el video se recorta a 9:16 por el
+  // centro y cx/cy son fracciones de ese recorte. Con un video más ancho (4:3 → 2560) el encuadre puede
+  // recorrerlo entero y cx/cy son fracciones del cuadro completo.
+  anchoFuente?: number;
 };
 
 // ---------- Tiempos ----------
@@ -91,7 +95,8 @@ export const encuadreEn = (t: TomaMusical, frame: number, dura: number) => {
 
   // sin salirse del cuadro
   const visible = 1 / z;
-  const izq = Math.min(Math.max(cx - 0.5 * visible, 0), 1 - visible);
+  const visibleX = (ANCHO / (t.anchoFuente ?? ANCHO)) * visible;
+  const izq = Math.min(Math.max(cx - 0.5 * visibleX, 0), 1 - visibleX);
   const arriba = Math.min(Math.max(cy - ANCLA_Y * visible, 0), 1 - visible);
   return { z, izq, arriba };
 };

@@ -1,0 +1,36 @@
+{
+ "tomas": [
+  {
+   "clip": "lucia-70-anos",
+   "desdeMs": 307000,
+   "hastaMs": 310600,
+   "zoom": 1.15,
+   "nota": "plano abierto: la niña de remera roja con la guitarra, globos y puerta (título encima)",
+   "gananciaDb": 0
+  },
+  {
+   "clip": "lucia-70-anos",
+   "desdeMs": 310600,
+   "hastaMs": 314400,
+   "zoom": 1.45,
+   "nota": "plano medio: la cámara original se acerca; ella toca y canta",
+   "gananciaDb": 0
+  },
+  {
+   "clip": "lucia-70-anos",
+   "desdeMs": 314400,
+   "hastaMs": 318400,
+   "zoom": 1.6,
+   "nota": "primer plano: cara, remera y guitarra (el tramo donde el original la tiene más grande)",
+   "gananciaDb": 0
+  },
+  {
+   "clip": "lucia-70-anos",
+   "desdeMs": 318400,
+   "hastaMs": 322000,
+   "zoom": 1.5,
+   "nota": "primer plano de cierre (frase final encima)",
+   "gananciaDb": 0
+  }
+ ]
+}

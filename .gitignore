@@ -29,3 +29,6 @@ public/biblioteca/**/*.*
 *.wav
 whisper.cpp/
 modelos-whisper/
+
+# Python
+__pycache__/
