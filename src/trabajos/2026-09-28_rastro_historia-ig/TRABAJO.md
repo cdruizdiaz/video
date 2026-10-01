@@ -22,7 +22,7 @@
 - Audio: `public/trabajos/2026-09-28_rastro_historia-ig/audio/`.
 
 ## Guiones
-- `guion_historia-30s.md` (guion original del cliente) y `guion_historia-15s.md` (misma estructura, tiempos comprimidos y música de Mixkit). Para cambiar el video: editar el guion y usar `/aplicar-guion 2026-09-28_rastro_historia-ig`.
+- `guion_historia-30s.md` (guion original del cliente) y `guion_historia-15s.md` (misma estructura, tiempos comprimidos y música de Mixkit). `guion_servicios-15s.md`: propuesta de historia de servicios de 15 s (sin composición todavía). Para cambiar el video: editar el guion y usar `/aplicar-guion 2026-09-28_rastro_historia-ig`.
 
 ## Decisiones
 - **Plantilla:** `HistoriaMarca` (escenas portada → equipo → 3 piezas → contacto). Contenido en `composiciones.ts`.
