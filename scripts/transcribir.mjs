@@ -12,6 +12,7 @@
 //     --silencio-min 0.8   pausa mínima en segundos para recortarla (default 0.8)
 //     --modelo <nombre>    modelo de Whisper (default: modeloWhisper de herramientas.json)
 //     --prompt "<texto>"   vocabulario/contexto para Whisper (nombres propios: "Odoo, Tango, Volto")
+//     --idioma en          idioma del audio (default es)
 //
 // Salida (JSON): { archivo, modelo, duracionMs, vad, segmentos: [{desdeMs, hastaMs, texto}],
 //                  tokens: [{text, fromMs, toMs, dtwMs, p}] }  ← mismo formato de tokens que el trabajo Volto.
@@ -40,6 +41,7 @@ const UMBRAL = Number(opcion("--umbral", -35));
 const SILENCIO_MIN = Number(opcion("--silencio-min", 0.8));
 const MODELO = opcion("--modelo", herr.modeloWhisper);
 const PROMPT = opcion("--prompt", null);
+const IDIOMA = opcion("--idioma", "es");
 const MARGEN = 0.25; // s de aire que se deja a cada lado de la voz
 const SEPARACION = 0.3; // s de silencio entre tramos de voz en el audio compactado
 const MIN_AHORRO = 0.1; // si los silencios son menos del 10 %, no vale la pena compactar
@@ -120,7 +122,7 @@ const aOriginal = (ms, lado = "fin") => {
 const archivoModelo = path.join(herr.carpetaModelosWhisper, `ggml-${MODELO}.bin`);
 const presetDtw = MODELO.replace(/-q\d_\d$/, "").replaceAll("-", ".");
 const t0 = Date.now();
-const wa = ["-m", archivoModelo, "-f", audioWhisper, "-l", "es", "-t", String(equipo.hilosWhisper),
+const wa = ["-m", archivoModelo, "-f", audioWhisper, "-l", IDIOMA, "-t", String(equipo.hilosWhisper),
   "--dtw", presetDtw, "-nfa", "-ojf", "-of", `${base}_whisper`, "-np"];
 if (PROMPT) wa.push("--prompt", PROMPT);
 correr(herr.whisperExe, wa);

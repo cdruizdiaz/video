@@ -138,7 +138,34 @@ paso("Mixkit (biblioteca)", () => {
   return ultima;
 });
 
+// ---- Rig de personajes (scripts/rig/, src/rig/) ----
+paso("Rig: extractor", () => {
+  // Bloomie (.ai sin capas): tiene que salir igual que el de la biblioteca (vistas, caras, visemas, escoba)
+  const ref = JSON.parse(fs.readFileSync(path.join(RAIZ, "public/personajes/bloomie/piezas.json"), "utf8"));
+  existe(ref.fuente);
+  const dir = path.join(TMP, "rig");
+  correr(herr.python, ["scripts/rig/extraer_rig.py", ref.fuente, "bloomie", "--salida", path.join(dir, "pub"), "--revision", path.join(dir, "rev"), "--sin-copia"]);
+  const d = JSON.parse(fs.readFileSync(path.join(dir, "pub/piezas.json"), "utf8"));
+  const resumen = (x) => [Object.keys(x.vistas).join("/"), Object.keys(x.rostros).length, Object.keys(x.visemas).length, Object.values(x.vistas).map((v) => v.piezas.length).join("+")].join(" · ");
+  if (resumen(d) !== resumen(ref)) throw new Error(`Bloomie cambió: ${resumen(d)} (esperaba ${resumen(ref)})`);
+  return `Bloomie: ${resumen(d)} (vistas · caras · visemas · piezas)`;
+});
+paso("Rig: capas con nombre", () => {
+  const out = correr(herr.python, ["scripts/rig/prueba_capas.py"]);
+  return `${out.split("\n").filter((l) => l.startsWith("ok")).length} pruebas · .ai sintético con capas`;
+});
+paso("Rig: lip sync y poses", () => {
+  const out = correr("node", ["--experimental-strip-types", "--no-warnings", "scripts/rig/probar_rig.mjs"]);
+  return `${out.split("\n").filter((l) => l.startsWith("ok")).length} pruebas`;
+});
+
 if (!rapido) {
+  paso("Rig: render", () => {
+    const png = path.join(TMP, "rig-muestrario.png");
+    execFileSync("npx", ["remotion", "still", "src/index.ts", "personaje-bloomie-muestrario", `"${png}"`, "--frame=250", "--scale=0.25", "--log=error"], { shell: true, stdio: "pipe" });
+    existe(png);
+    return "muestrario de Bloomie (props validadas con zod)";
+  });
   paso("TypeScript", () => {
     execFileSync("npx", ["tsc", "--noEmit"], { shell: true, stdio: "pipe" });
     return "sin errores";
