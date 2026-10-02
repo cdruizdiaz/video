@@ -10,8 +10,16 @@ const completo: BloomieCreatorsProps = {
   bajaVideo: 0.45, // el audio original baja ≈ 7 dB mientras habla Bloomie
 };
 const alfa: BloomieCreatorsProps = { ...completo, soloPersonaje: true };
+// Versión 2,5D (volumen de luz, giros ¾, sombra proyectada, entrada en perspectiva, globos y sticker con profundidad)
+const completo25d: BloomieCreatorsProps = { ...completo, modo25d: true };
+const alfa25d: BloomieCreatorsProps = { ...alfa, modo25d: true };
+// Versión 3D (borrador): modelo 3D construido por código + sombra real; render con --gl=angle
+const completo3d: BloomieCreatorsProps = { ...completo, modo3d: true };
 
 export const composiciones: ComposicionTrabajo[] = [
   { id: "rastro-bloomie-creators-10s", component: BloomieCreators, durationInFrames: DURACION, defaultProps: completo, salida: "bloomie-creators_9x16" },
   { id: "rastro-bloomie-creators-alfa", component: BloomieCreators, durationInFrames: DURACION, defaultProps: alfa, salida: "bloomie-creators-alfa_9x16" },
+  { id: "rastro-bloomie-creators-25d", component: BloomieCreators, durationInFrames: DURACION, defaultProps: completo25d, salida: "bloomie-creators-25d_9x16" },
+  { id: "rastro-bloomie-creators-3d", component: BloomieCreators, durationInFrames: DURACION, defaultProps: completo3d, salida: "bloomie-creators-3d_9x16" },
+  { id: "rastro-bloomie-creators-25d-alfa", component: BloomieCreators, durationInFrames: DURACION, defaultProps: alfa25d, salida: "bloomie-creators-25d-alfa_9x16" },
 ];

@@ -117,7 +117,20 @@
    "rostro": {
     "hueso": "cabeza"
    },
-   "mano": "mano_der"
+   "mano": "mano_der",
+   "profundidad": {
+    "pie_izq": 0.15,
+    "pie_der": 0.15,
+    "mano_izq": 0.1,
+    "mano_der": 0.1,
+    "cuerpo": 0.25,
+    "petalo_sup": -0.25,
+    "petalo_der": -0.55,
+    "petalo_inf_der": -0.55,
+    "petalo_sup_izq": -0.55,
+    "petalo_inf_izq": -0.55,
+    "cabeza": 0.45
+   }
   },
   "perfil": {
    "huesos": [

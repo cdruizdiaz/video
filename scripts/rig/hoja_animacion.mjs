@@ -2,7 +2,8 @@
 // Empaqueta el proyecto una vez, renderiza los frames pedidos a escala reducida con la API de Remotion y los arma
 // en una grilla con Pillow (Python del .venv), cada uno con su número de frame.
 // Uso: node scripts/rig/hoja_animacion.mjs <composición> <salida.png> [--frames 0,10,20 | --cada 15]
-//        [--desde 0] [--hasta N] [--columnas 6] [--escala 0.25] [--fondo "#e9e4dc"] [--props '{"…"}']
+//        [--desde 0] [--hasta N] [--columnas 6] [--escala 0.25] [--fondo "#e9e4dc"] [--props '{"…"}'] [--gl angle]
+// (--gl angle para composiciones 3D con Three.js)
 // Las composiciones con transparencia se componen sobre --fondo.
 import { bundle } from "@remotion/bundler";
 import { openBrowser, renderStill, selectComposition } from "@remotion/renderer";
@@ -28,6 +29,7 @@ const escala = Number(opc("escala", "0.25"));
 const columnas = Number(opc("columnas", "6"));
 const fondo = opc("fondo", "#e9e4dc");
 const props = opc("props") ? JSON.parse(opc("props")) : undefined;
+const chromiumOptions = opc("gl") ? { gl: opc("gl") } : {};
 
 const serveUrl = await bundle({ entryPoint: join(RAIZ, "src/index.ts"), onProgress: () => undefined });
 const composition = await selectComposition({ serveUrl, id: comp, inputProps: props });
@@ -44,12 +46,12 @@ frames = frames.filter((f) => f < composition.durationInFrames);
 
 const tmp = join(RAIZ, "tmp", `hoja-${process.pid}`);
 mkdirSync(tmp, { recursive: true });
-const navegador = await openBrowser("chrome");
+const navegador = await openBrowser("chrome", { chromiumOptions });
 try {
   const archivos = [];
   for (const f of frames) {
     const nombre = `f${String(f).padStart(5, "0")}.png`;
-    await renderStill({ composition, serveUrl, frame: f, output: join(tmp, nombre), scale: escala, imageFormat: "png", inputProps: props, puppeteerInstance: navegador });
+    await renderStill({ composition, serveUrl, frame: f, output: join(tmp, nombre), scale: escala, imageFormat: "png", inputProps: props, puppeteerInstance: navegador, chromiumOptions });
     archivos.push(nombre);
   }
   // Grilla con Pillow: cada frame sobre el fondo, con su número

@@ -4,6 +4,7 @@
 import { type PersonajeRigProps, PersonajeRig, zPersonajeRig } from "../plantillas/PersonajeRig/PersonajeRig";
 import { duracionPistas } from "../plantillas/PersonajeRig/calculos";
 import { EditorRig, propsEditor, zEditorRig } from "../rig/EditorRig";
+import { DURACION_3D, Muestra3D } from "./bloomie/Muestra3D";
 import { cargarPersonaje, NOMBRES_PERSONAJES, vistasDe } from "../rig/personajes";
 import type { ComposicionTrabajo } from "../trabajos/tipos";
 
@@ -72,7 +73,23 @@ export const muestrario = (nombre: string): PersonajeRigProps => {
   };
 };
 
-export const COMPOSICIONES_PERSONAJES: ComposicionTrabajo[] = NOMBRES_PERSONAJES.flatMap((nombre) => {
+// Muestra 2,5D: giro ¾ a cada lado (yaw por profundidades) sin y con volumen de luz
+export const LUZ_DEMO = { angulo: -135, intensidad: 1 }; // luz de arriba a la izquierda
+export const muestra25d = (nombre: string, conLuz: boolean): PersonajeRigProps => {
+  const base = muestrario(nombre);
+  return {
+    ...base,
+    luz: conLuz ? LUZ_DEMO : null,
+    pistas: [
+      { tipo: "respirar" },
+      { tipo: "yaw", inicio: 0, fin: 30, valor: -0.8, duracion: 30, entrada: 10 },
+      { tipo: "yaw", inicio: 30, fin: 60, valor: 0.8, duracion: 30, entrada: 10 },
+      { tipo: "pose", inicio: 89, fin: 90, pose: { huesos: {}, dura: 1 } },
+    ],
+  };
+};
+
+export const COMPOSICIONES_PERSONAJES: ComposicionTrabajo[] = NOMBRES_PERSONAJES.flatMap((nombre): ComposicionTrabajo[] => {
   const p = cargarPersonaje(nombre);
   const m = muestrario(nombre);
   return [
@@ -87,6 +104,16 @@ export const COMPOSICIONES_PERSONAJES: ComposicionTrabajo[] = NOMBRES_PERSONAJES
       salida: `editor-${v}`,
     })),
     {
+      id: `personaje-${nombre}-muestra-25d`,
+      component: PersonajeRig,
+      durationInFrames: 90,
+      defaultProps: muestra25d(nombre, true),
+      schema: zPersonajeRig,
+      width: LADO,
+      height: LADO,
+      salida: "muestra-25d_1x1",
+    },
+    {
       id: `personaje-${nombre}-muestrario`,
       component: PersonajeRig,
       durationInFrames: duracionPistas(m),
@@ -97,4 +124,14 @@ export const COMPOSICIONES_PERSONAJES: ComposicionTrabajo[] = NOMBRES_PERSONAJES
       salida: "muestrario_1x1",
     },
   ];
-});
+}).concat([
+  {
+    id: "personaje-bloomie-3d",
+    component: Muestra3D,
+    durationInFrames: DURACION_3D,
+    defaultProps: {},
+    width: 1080,
+    height: 1080,
+    salida: "muestra-3d_1x1",
+  },
+]);

@@ -17,7 +17,7 @@ Seguí la estructura de trabajos de CLAUDE.md. Pasos:
    - `src/trabajos/<ID>/`
    - Originales: `<carpetaCrudos>/<ID>/` (ruta en `scripts/herramientas.json`), fuera del proyecto.
 
-4. **Ficha.** Copiá `src/trabajos/_plantilla/TRABAJO.md` a `src/trabajos/<ID>/TRABAJO.md` y completá los campos `{{...}}`. Pasá al brief todo lo que te di; lo que falte dejalo marcado para completar.
+4. **Ficha.** Copiá `src/trabajos/_plantilla/TRABAJO.md` a `src/trabajos/<ID>/TRABAJO.md` y completá los campos `{{...}}`. Pasá al brief todo lo que te di; lo que falte dejalo marcado para completar. Si el trabajo lleva un personaje animado y el brief no dice el **modo de animación** (plano, 2,5D o 3D), preguntámelo; en 2,5D/3D sobre material real, anotá también la dirección de la luz de la escena (medida en un recorte chico).
 
 5. **Crudos** (solo si me pasaste una carpeta con material):
    - Copiá los originales a `<carpetaCrudos>/<ID>/` (no los muevas: copiá y verificá tamaños).

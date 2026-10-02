@@ -59,6 +59,18 @@ Reglas:
 - Lip sync: transcripción de Whisper → pista `hablar` (reglas de letras es/en, sin herramientas extra).
 - Exportar: `node scripts/rig/exportar.mjs <comp> <ID> <pieza_formato> [--mov] [--png] [--mp4]` (ProRes 4444 con alfa para Premiere/CapCut, secuencia PNG, o MP4 con fondo); versiona `_vN` y anota en `TRABAJO.md`.
 - Revisar animaciones: `node scripts/rig/hoja_animacion.mjs <comp> <salida.png> --cada N` (hoja de contactos chica).
+- **Modo de animación** (se define al abrir el trabajo, como el formato; queda en el brief de `TRABAJO.md`): **plano** (2D, por defecto), **2,5D** o **3D** (Three.js: `@remotion/three`; Bloomie 3D construido por código en `src/personajes/bloomie/Bloomie3D.tsx`; render con `--gl=angle`, lento sin GPU: solo si se pide y avisando el tiempo de render).
+- **Receta 2,5D** (sin software extra; detalle en `src/rig/README.md` → 2,5D):
+  1. Si hay material real, medir primero la **dirección de la luz** con un recorte chico de la escena (sombras de muebles, lado iluminado de las caras) y anotarla en el brief.
+  2. Volumen: `luz` por pieza con ese ángulo (intensidad ~0,85). Giros: `yaw` hasta **±0,65** (más se nota que es plano); para mirar a alguien, `yaw` + `mirada`.
+  3. Integración: sombra de contacto + sombra proyectada (silueta achatada hacia el lado contrario a la luz) y entrada en perspectiva (más chico y más arriba en el piso cuanto más lejos).
+  4. Gráficos: globos con `giro3d` y stickers con `volumen`.
+  5. Sobre **video real**: no se mueve la cámara ni se hace zoom (no se modifica el video): la profundidad la pone el personaje.
+  6. Revisar con una hoja de cuadros clave antes del borrador; comparar con la muestra `personaje-<nombre>-muestra-25d`.
+- **Globos de diálogo** (`src/plantillas/comunes/historieta.tsx`), reglas aprendidas:
+  - Un globo termina de irse **antes** de que aparezca el siguiente (calcular `queda` por frase con `duracionGlobo`); si dos frases van pegadas y no da el tiempo, se separan las frases, nunca se encima un globo con otro.
+  - La colita apunta a la boca sin cruzar ojos ni cara: el globo va a la altura de la boca, del lado libre.
+  - Nunca tapar caras, la cámara ni lo que las personas estén armando: verificarlo en la hoja de cuadros clave (incluidos los cuadros de cambio de globo).
 - Si se pide "una secuencia de N posiciones" de un personaje de la biblioteca: escribir las poses clave en JSON (no pedir imágenes a una IA); para usarla como sprites, composición de N cuadros + `--png`.
 
 ## Herramientas
@@ -103,6 +115,8 @@ Reglas:
 | Reencuadre, subtítulos, títulos, gráficos, transiciones, ducking, render | Remotion (plantillas de `src/plantillas/`) |
 | Pasar la edición a Adobe Premiere | `/a-premiere` (`scripts/a-premiere.mjs`: XML de Final Cut 7 + capa ProRes 4444) |
 | Animar un personaje (moverlo, hablar, secuencias de poses) | rig vectorial: `src/rig/` + plantilla `PersonajeRig`; personaje nuevo con `/rig-personaje` |
+| Animación 2,5D (volumen, giros ¾, sombras, perspectiva) | rig + `luz` / `yaw` / sombra proyectada / `giro3d` (receta en "Personajes animados" y `src/rig/README.md`) |
+| Animación 3D | `@remotion/three` + modelo por código (`Bloomie3D.tsx`) o `.glb` de un modelador; render `--gl=angle` (lento: preguntar antes) |
 | Separar las piezas de un personaje del `.ai` | `scripts/rig/extraer_rig.py` (PyMuPDF) |
 | Personaje con transparencia para CapCut / Premiere | `scripts/rig/exportar.mjs --mov` (ProRes 4444) o `--png` |
 | Tipografías | `@remotion/google-fonts` |

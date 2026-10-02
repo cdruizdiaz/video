@@ -11,6 +11,8 @@
 ## Brief
 - **Objetivo:**
 - **Formato(s):** 9:16 1080×1920 · 30 fps
+- **Modo de animación:** plano | 2,5D | 3D (si hay personajes animados; ver CLAUDE.md → Personajes animados)
+- **Luz de la escena:** (si hay material real: de dónde viene, medida en un recorte; la usan el volumen y las sombras en 2,5D/3D)
 - **Duración:**
 - **Tono / estilo:**
 - **Textos obligatorios:**

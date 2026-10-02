@@ -60,7 +60,8 @@ export const GloboHistorieta: React.FC<{
   letraPorLetra?: boolean; // las palabras largas (estiradas al decirlas) se escriben de a una letra mientras duran
   temblor?: number; // px de temblor del globo (ruego, susto…)
   queda?: number; // frames que se queda después de la última palabra (por defecto GLOBO.queda)
-}> = ({ palabras, f, fps, x, y, cola, fuente, tamano = 64, anchoMax = 820, fondo = "#ffffff", letraPorLetra = false, temblor = 0, queda }) => {
+  giro3d?: number; // grados de giro en perspectiva con que entra (2,5D); 0 = entra plano
+}> = ({ palabras, f, fps, x, y, cola, fuente, tamano = 64, anchoMax = 820, fondo = "#ffffff", letraPorLetra = false, temblor = 0, queda, giro3d = 0 }) => {
   const dur = duracionGlobo(palabras, fps, queda);
   const local = f + GLOBO.antes;
   if (local < 0 || local > dur) return null;
@@ -110,7 +111,7 @@ export const GloboHistorieta: React.FC<{
   const cola1 = `M${b1[0]} ${b1[1]}L${punta[0]} ${punta[1]}L${b2[0]} ${b2[1]}`;
   let n = 0;
   return (
-    <g transform={`translate(${x + sac(1)} ${y + sac(2)}) scale(${esc})`}>
+    <g transform={`translate(${x + sac(1)} ${y + sac(2)}) ${perspectiva(giro3d * (1 - Math.min(1, pop)), cola[0] > x ? 1 : -1)} scale(${esc})`}>
       {/* Sombra */}
       <g transform={`translate(${GLOBO.sombra} ${GLOBO.sombra})`} opacity={0.25}>
         <path d={`${cola1}Z`} fill={TINTA} />
@@ -161,6 +162,13 @@ export const GloboHistorieta: React.FC<{
   );
 };
 
+// Giro en perspectiva aproximado en 2D (rotateY): se angosta y el borde lejano se inclina
+const perspectiva = (grados: number, lado: number) => {
+  if (!grados) return "";
+  const r = (grados * Math.PI) / 180;
+  return `matrix(${Math.cos(r).toFixed(4)} ${(lado * Math.sin(r) * 0.18).toFixed(4)} 0 1 0 0)`;
+};
+
 const LETRAS_DESDE_MS = 450; // palabras que duran más que esto se escriben letra por letra (con letraPorLetra)
 
 // ---------- Sticker de onomatopeya ----------
@@ -178,7 +186,8 @@ export const StickerOnomatopeya: React.FC<{
   tamano?: number;
   rot?: number;
   colores?: { fondo: string; borde: string; letra: string };
-}> = ({ texto, f, fps, x, y, fuente, tamano = 120, rot = -10, colores = { fondo: "#ffd23f", borde: "#c0261f", letra: "#c0261f" } }) => {
+  volumen?: number; // capas de extrusión (2,5D): 0 = plano
+}> = ({ texto, f, fps, x, y, fuente, tamano = 120, rot = -10, colores = { fondo: "#ffd23f", borde: "#c0261f", letra: "#c0261f" }, volumen = 0 }) => {
   const dur = duracionSticker();
   if (f < 0 || f > dur) return null;
   const pop = spring({ frame: f, fps, config: { damping: 7, stiffness: 220, mass: 0.5 } });
@@ -193,7 +202,16 @@ export const StickerOnomatopeya: React.FC<{
   });
   return (
     <g transform={`translate(${x + tiembla} ${y}) rotate(${rot}) scale(${pop * salida})`}>
+      {/* Extrusión: copias oscuras corridas hacia abajo a la derecha (detrás) */}
+      {Array.from({ length: volumen }, (_, k) => volumen - k).map((k) => (
+        <path key={k} d={`M${puntos.join("L")}Z`} transform={`translate(${k * 1.6} ${k * 2.2})`} fill={colores.borde} stroke={colores.borde} strokeWidth={10} strokeLinejoin="round" />
+      ))}
       <path d={`M${puntos.join("L")}Z`} fill={colores.fondo} stroke={colores.borde} strokeWidth={10} strokeLinejoin="round" />
+      {Array.from({ length: Math.ceil(volumen / 2) }, (_, k) => Math.ceil(volumen / 2) - k).map((k) => (
+        <text key={k} x={k * 1.4} y={tamano * 0.36 + k * 1.8} textAnchor="middle" fontFamily={fuente} fontWeight={700} fontSize={tamano} fill="#7a1410">
+          {texto}
+        </text>
+      ))}
       <text
         x={0}
         y={tamano * 0.36}

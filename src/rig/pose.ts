@@ -19,6 +19,7 @@ export type Pose = {
   disfrazY: number; // corrimiento vertical del disfraz (puntos; + = hacia abajo, p. ej. gorro que tapa los ojos)
   mirada: [number, number]; // hacia dónde miran las pupilas (-1…1 en x e y; 0, 0 = al frente)
   ojos: number; // tamaño de los ojos (1 normal; 1,3 = "ojos de cachorro")
+  yaw: number; // giro 2,5D hacia un costado (-1 izquierda … 0 frente … 1 derecha): parallax por profundidad de pieza
 };
 
 export type PoseParcial = Partial<Omit<Pose, "huesos" | "accesorios" | "orden" | "mirada">> & {
@@ -43,6 +44,7 @@ export const poseInicial = (vista = "frente", expresion = "base"): Pose => ({
   disfrazY: 0,
   mirada: [0, 0],
   ojos: 1,
+  yaw: 0,
 });
 
 export const sumarMov = (a: Mov | undefined, b: Mov): Mov => ({
@@ -74,6 +76,7 @@ export const combinar = (base: Pose, ...capas: (PoseParcial | null | undefined |
     if (c.disfrazY !== undefined) p.disfrazY += c.disfrazY;
     if (c.mirada) p.mirada = [p.mirada[0] + c.mirada[0], p.mirada[1] + c.mirada[1]];
     if (c.ojos !== undefined) p.ojos *= c.ojos;
+    if (c.yaw !== undefined) p.yaw += c.yaw;
     for (const [k, m] of Object.entries(c.huesos ?? {})) p.huesos[k] = sumarMov(p.huesos[k], m);
     for (const [k, a] of Object.entries(c.accesorios ?? {})) {
       if (a === null) delete p.accesorios[k];

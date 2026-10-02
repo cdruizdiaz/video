@@ -21,6 +21,7 @@ export const zPoseClave = z.object({
   disfrazY: z.number().optional(),
   mirada: z.array(z.number()).length(2).optional(), // pupilas: -1…1 en x e y
   ojos: z.number().optional(), // tamaño de los ojos (1 normal)
+  yaw: z.number().optional(), // giro 2,5D (-1…1)
   nota: z.string().optional(), // descripción libre de la pose (para el que la lee)
 });
 export type PoseClave = z.infer<typeof zPoseClave>;
@@ -83,9 +84,12 @@ export const poseSecuencia = (sec: Secuencia, t: number): PoseParcial => {
     parcial.accesorios = acc;
   }
   // Parpadeo y guiño también se interpolan
-  const num = (k: "parpado" | "guino") => (b[k] !== undefined || c[k] !== undefined ? (b[k] ?? 0) + ((c[k] ?? 0) - (b[k] ?? 0)) * local : undefined);
+  const num = (k: "parpado" | "guino" | "yaw", neutro = 0) =>
+    b[k] !== undefined || c[k] !== undefined ? (b[k] ?? neutro) + ((c[k] ?? neutro) - (b[k] ?? neutro)) * local : undefined;
   parcial.parpado = num("parpado");
   parcial.guino = num("guino");
+  parcial.yaw = num("yaw");
+  if (b.ojos !== undefined || c.ojos !== undefined) parcial.ojos = (b.ojos ?? 1) + ((c.ojos ?? 1) - (b.ojos ?? 1)) * local;
   return parcial;
 };
 
@@ -103,5 +107,6 @@ const aParcial = (p: PoseClave, huesos: Record<string, Mov>): PoseParcial => {
   if (p.disfrazY !== undefined) r.disfrazY = p.disfrazY;
   if (p.mirada) r.mirada = [p.mirada[0], p.mirada[1]];
   if (p.ojos !== undefined) r.ojos = p.ojos;
+  if (p.yaw !== undefined) r.yaw = p.yaw;
   return r;
 };

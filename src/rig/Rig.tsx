@@ -17,6 +17,17 @@ const LINEA_OJO = 0.11; // grosor de la línea del ojo cerrado (fracción del an
 const CURVA_OJO = 0.2; // cuánto baja el centro de la línea del ojo cerrado (fracción del alto)
 const BOCA_PERFIL = 1.3; // tamaño de los visemas de perfil respecto de la boca dibujada de perfil
 const MIRADA = 0.18; // cuánto se corren las pupilas con mirada = 1 (fracción del ancho / alto del ojo)
+// ---------- 2,5D ----------
+// Giro por profundidades: con yaw, cada pieza se corre en x según su profundidad (parallax) y el rostro se angosta
+const YAW_CORRIMIENTO = 0.16; // corrimiento máximo (fracción del ancho de la cabeza) de una pieza de profundidad 1
+const YAW_ANGOSTA = 0.14; // cuánto se angosta el rostro con yaw = 1
+const PROFUNDIDAD_ROL: Record<string, number> = { cabeza: 0.45, cuerpo: 0.25, corona: -0.55, mano: 0.1, pie: 0.15, detalle: 0.3, brazo: 0.1, antebrazo: 0.15, pierna: 0.1 };
+const PROFUNDIDAD_ROSTRO = 1;
+// Luz: degradé de luz (screen) y de sombra (multiply) sobre cada pieza, recortado a su forma
+export type Luz = { angulo: number; intensidad: number; sombra?: string }; // angulo: de dónde viene la luz (grados, 0 = derecha, -90 = arriba)
+const LUZ_CLARA = 0.38; // opacidad máxima del brillo con intensidad 1
+const LUZ_OSCURA = 0.34; // opacidad máxima de la sombra con intensidad 1
+
 const BRILLO_DESDE = 1.12; // con los ojos agrandados más que esto aparecen brillos de "ojos de cachorro"
 const BRILLOS = [
   { x: -0.16, y: -0.2, r: 0.13 },
@@ -59,8 +70,49 @@ const Trazos: React.FC<{ trazos: Trazo[]; id: string }> = ({ trazos, id }) => (
   </>
 );
 
-const PiezaSvg: React.FC<{ pieza: Pieza; id: string }> = ({ pieza, id }) => {
-  if (!pieza.clip) return <Trazos trazos={pieza.trazos} id={id} />;
+// Volumen: brillo del lado de la luz y sombra del otro, recortados a la forma rellena de la pieza
+const Volumen: React.FC<{ pieza: Pieza; id: string; luz: Luz }> = ({ pieza, id, luz }) => {
+  const formas = pieza.trazos.filter((t) => t.fill && (t.op ?? 1) > 0.9 && !t.clip);
+  if (!formas.length) return null;
+  const [x0, y0, x1, y1] = pieza.caja;
+  const r = (luz.angulo * Math.PI) / 180;
+  // El degradé va del lado de la luz (luz.angulo) al opuesto, en la caja de la pieza
+  const g = { x1: 0.5 + 0.5 * Math.cos(r), y1: 0.5 + 0.5 * Math.sin(r), x2: 0.5 - 0.5 * Math.cos(r), y2: 0.5 - 0.5 * Math.sin(r) };
+  const sombra = luz.sombra ?? "#4a1e05";
+  return (
+    <>
+      <defs>
+        <clipPath id={`${id}-vc`}>
+          {formas.map((t, i) => (
+            <path key={i} d={t.d} clipRule={t.evenodd ? "evenodd" : undefined} />
+          ))}
+        </clipPath>
+        <linearGradient id={`${id}-vl`} {...g}>
+          <stop offset="0" stopColor="#ffffff" stopOpacity={LUZ_CLARA * luz.intensidad} />
+          <stop offset="0.5" stopColor="#ffffff" stopOpacity={0} />
+        </linearGradient>
+        <linearGradient id={`${id}-vs`} {...g}>
+          <stop offset="0.45" stopColor={sombra} stopOpacity={0} />
+          <stop offset="1" stopColor={sombra} stopOpacity={LUZ_OSCURA * luz.intensidad} />
+        </linearGradient>
+      </defs>
+      <g clipPath={`url(#${id}-vc)`}>
+        <rect x={x0} y={y0} width={x1 - x0} height={y1 - y0} fill={`url(#${id}-vl)`} style={{ mixBlendMode: "screen" }} />
+        <rect x={x0} y={y0} width={x1 - x0} height={y1 - y0} fill={`url(#${id}-vs)`} style={{ mixBlendMode: "multiply" }} />
+      </g>
+    </>
+  );
+};
+
+const PiezaSvg: React.FC<{ pieza: Pieza; id: string; luz?: Luz }> = ({ pieza, id, luz }) => {
+  const volumen = luz ? <Volumen pieza={pieza} id={id} luz={luz} /> : null;
+  if (!pieza.clip)
+    return (
+      <>
+        <Trazos trazos={pieza.trazos} id={id} />
+        {volumen}
+      </>
+    );
   return (
     <>
       <clipPath id={`${id}-p`}>
@@ -68,6 +120,7 @@ const PiezaSvg: React.FC<{ pieza: Pieza; id: string }> = ({ pieza, id }) => {
       </clipPath>
       <g clipPath={`url(#${id}-p)`}>
         <Trazos trazos={pieza.trazos} id={id} />
+        {volumen}
       </g>
     </>
   );
@@ -205,9 +258,11 @@ export type PersonajeRigProps = {
   pose: Pose;
   piezasOcultas?: string[]; // para el editor
   rig?: Rig; // rig en edición (el editor del Studio); por defecto, el de la biblioteca
+  luz?: Luz; // volumen 2,5D (brillo y sombra por pieza)
+  silueta?: boolean; // solo la forma (para sombras proyectadas): sin rostro ni volumen
 };
 
-export const PersonajeRig: React.FC<PersonajeRigProps> = ({ personaje, pose, piezasOcultas, rig }) => {
+export const PersonajeRig: React.FC<PersonajeRigProps> = ({ personaje, pose, piezasOcultas, rig, luz, silueta = false }) => {
   const uid = limpiarId(useId());
   const cargado = cargarPersonaje(personaje);
   const p = rig ? { ...cargado, rig } : cargado;
@@ -232,18 +287,34 @@ export const PersonajeRig: React.FC<PersonajeRigProps> = ({ personaje, pose, pie
   type Capa = { z: number; nodo: React.ReactNode };
   const capas: Capa[] = [];
   const ocultas = new Set(piezasOcultas ?? []);
+  // Giro 2,5D: corrimiento en x por profundidad (en coordenadas del personaje), solo de frente
+  const anchoCabeza = dv.cabeza ? dv.cabeza.caja[2] - dv.cabeza.caja[0] : dv.caja[2] - dv.caja[0];
+  const yaw = vista === "frente" ? Math.max(-1, Math.min(1, pose.yaw)) : 0;
+  const corrimiento = (prof: number) => yaw * prof * YAW_CORRIMIENTO * anchoCabeza;
+  const profundidad = (pz: Pieza) => rv.profundidad?.[pz.id] ?? (pz.id.startsWith("petalo_sup") ? -0.25 : PROFUNDIDAD_ROL[pz.rol] ?? 0);
+  // El rostro se corre más que la cabeza (está adelante) y se angosta un poco
+  const rostroGirado = (mr: Matriz): Matriz => {
+    if (!dv.cabeza || !yaw) return mr;
+    const cx = (dv.cabeza.caja[0] + dv.cabeza.caja[2]) / 2;
+    const sx = 1 - Math.abs(yaw) * YAW_ANGOSTA;
+    let m = trasladar(cx + corrimiento(PROFUNDIDAD_ROSTRO), 0);
+    m = multiplicar(m, escalar(sx, 1));
+    m = multiplicar(m, trasladar(-cx, 0));
+    return multiplicar(m, mr);
+  };
   dv.piezas.forEach((pz, i) => {
     if (ocultas.has(pz.id)) return;
     const z = pose.orden[pz.id] ?? rv.orden?.[pz.id] ?? pz.z;
-    const m = deHueso(rv.piezas[pz.id]);
+    const m0 = deHueso(rv.piezas[pz.id]);
+    const m = yaw ? multiplicar(trasladar(corrimiento(profundidad(pz)), 0), m0) : m0;
     const id = `${uid}-${i}`;
     capas.push({
       z,
       nodo: (
         <g key={pz.id} transform={matrizSvg(m)}>
-          <PiezaSvg pieza={pz} id={id} />
-          {pz.id === cabezaId && rostro && (
-            <g transform={matrizSvg(multiplicar(invertir(m), deHueso(rv.rostro.hueso)))}>
+          <PiezaSvg pieza={pz} id={id} luz={silueta ? undefined : luz} />
+          {pz.id === cabezaId && rostro && !silueta && (
+            <g transform={matrizSvg(multiplicar(invertir(m), rostroGirado(deHueso(rv.rostro.hueso))))}>
               <RostroSvg
                 r={rostro}
                 pose={pose}
@@ -281,6 +352,29 @@ export const PersonajeRig: React.FC<PersonajeRigProps> = ({ personaje, pose, pie
   capas.sort((a, b) => a.z - b.z);
   const sx = (pose.espejo ? -1 : 1) * pose.giro;
   return <g transform={sx !== 1 ? `scale(${sx} 1)` : undefined}>{capas.map((c) => c.nodo)}</g>;
+};
+
+// Solo la cara (rostro de la expresión, con parpadeo, mirada, bocas, disfraz), en coordenadas de la vista de frente:
+// para dibujarla sobre otra cosa (p. ej. la cabeza de un modelo 3D)
+export const RostroPersonaje: React.FC<{ personaje: string; pose: Pose }> = ({ personaje, pose }) => {
+  const uid = limpiarId(useId());
+  const p = cargarPersonaje(personaje);
+  const dv = p.piezas.vistas.frente;
+  const rostro = p.piezas.rostros[pose.expresion] ?? p.piezas.rostros.base ?? dv?.rostro;
+  if (!dv || !rostro) return null;
+  const cabeza = dv.piezas.find((x) => x.id === dv.cabeza?.id);
+  const colorCabeza = cabeza?.trazos.find((t) => t.fill && (t.op ?? 1) > 0.9)?.fill ?? "#000000";
+  return (
+    <RostroSvg
+      r={rostro}
+      pose={pose}
+      visemas={p.piezas.visemas}
+      escalaBoca={1}
+      colorCabeza={colorCabeza}
+      id={`${uid}-r`}
+      disfraz={pose.disfraz ? p.piezas.rostros[pose.disfraz] : undefined}
+    />
+  );
 };
 
 // Inversa de una matriz afín (para dibujar el rostro con su hueso dentro del grupo de la cabeza)

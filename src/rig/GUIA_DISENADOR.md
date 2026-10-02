@@ -43,6 +43,17 @@ Todo lo del mínimo, más:
 4. **Brazos y piernas en dos tramos** (brazo + antebrazo, pierna + pie) si el personaje los tiene: se doblan en el codo y la rodilla.
 5. **Vista ¾** (opcional): giros más suaves entre frente y perfil.
 
+## Para 2,5D (volumen y giros)
+
+Lo mínimo ya se puede animar en 2,5D (el giro ¾ y la luz se simulan por código), pero esto lo mejora mucho:
+
+1. **Vista ¾** (frente girado hacia cada lado, o hacia uno y se espeja): es lo que más suma; los giros dejan de ser simulados.
+2. **Pupilas en su propia capa** (`pupila_izq`, `pupila_der`), separadas del blanco del ojo, con su **brillo** aparte: la mirada y los "ojos de cachorro" quedan más naturales.
+3. **Sombras y brillos de cada pieza en capas aparte** (`sombra_cabeza`, `brillo_cabeza`, `sombra_cuerpo`…), en vez de pegados a la pieza: así se puede mover la luz según la escena.
+4. **Accesorios y disfraces sueltos**, cada uno en su capa (`tocado_gorro`, `accesorio_escoba`, `nariz_reno`…), no unidos a los anteojos ni a la cara.
+5. **Algunas expresiones de perfil** (feliz, triste, enojado): hoy el perfil tiene una sola cara.
+6. **Manos con más forma** (tipo mitón) si se van a saludar o juntar.
+
 ## Qué no hacer
 
 - No expandir apariencia ni rasterizar: todo vectorial (trazados con relleno).

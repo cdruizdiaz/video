@@ -166,6 +166,13 @@ if (!rapido) {
     existe(png);
     return "muestrario de Bloomie (props validadas con zod)";
   });
+  paso("Rig: 3D (WebGL)", () => {
+    const png = path.join(TMP, "rig-3d.png");
+    const t0 = Date.now();
+    execFileSync("npx", ["remotion", "still", "src/index.ts", "personaje-bloomie-3d", `"${png}"`, "--frame=20", "--scale=0.25", "--gl=angle", "--log=error"], { shell: true, stdio: "pipe" });
+    existe(png);
+    return `Bloomie 3D con Three.js (--gl=angle) · ${((Date.now() - t0) / 1000).toFixed(0)} s un cuadro`;
+  });
   paso("TypeScript", () => {
     execFileSync("npx", ["tsc", "--noEmit"], { shell: true, stdio: "pipe" });
     return "sin errores";

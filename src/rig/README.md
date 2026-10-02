@@ -104,6 +104,30 @@ Un JSON en `public/trabajos/<ID>/datos/` validado con `zSecuencia` (`secuencia.t
 
 `node scripts/transcribir.mjs voz.wav public/trabajos/<ID>/datos/voz.json` (Whisper, tiempos por palabra) → pista `hablar` con esa transcripción. Las palabras se convierten en bocas con reglas de letras para español e inglés (`lipsync.ts`), repartidas en el tiempo de cada palabra (las vocales duran más) y con la boca en reposo en las pausas. Bocas: `A` M/B/P · `B` consonantes · `C` E/I · `D` A · `E` O · `F` U/W; `X` = la boca de la expresión. Se dibujan sobre la boca de la cara activa.
 
+### Globos de diálogo (reglas)
+
+- Un globo termina de irse antes de que aparezca el siguiente: `queda` por frase = mínimo entre 24 cuadros y lo que deja el hueco hasta la frase siguiente (`duracionGlobo(palabras, fps, 0)` da pop + palabras + salida). Si no alcanza, separar las frases (pausa), nunca encimar globos.
+- La colita apunta a la boca (`puntoPersonaje(..., "boca")` o la cara 3D) y no debe cruzar ojos: ubicar el globo a la altura de la boca, del lado libre.
+- Nada de tapar caras, cámaras ni lo que se esté armando en la escena: revisar los cuadros de cambio de globo en la hoja de cuadros clave.
+- Palabras estiradas ("PLEEEASE"): `letraPorLetra`; ruego o susto: `temblor`.
+
+### 2,5D (sin modelo 3D)
+
+- **Giro ¾ por profundidad:** pista `yaw` (-1…1) o `yaw` en una pose clave. Cada pieza se corre según su profundidad (`rig.vistas.frente.profundidad`, o por rol: rostro +1, cabeza +0,45, cuerpo +0,25, pétalos/pelo -0,55) y el rostro se angosta: parece girar sin una vista ¾ dibujada.
+- **Volumen con luz:** prop `luz: { angulo, intensidad }` del personaje (`angulo` = de dónde viene la luz: -90 arriba, -135 arriba a la izquierda). Cada pieza recibe un degradé de luz y de sombra recortado a su forma.
+- **Sombra proyectada:** dibujar el personaje con `silueta` dentro de una transformación que lo achata sobre el piso y un filtro que lo oscurece y desenfoca (ejemplo en `src/trabajos/2026-10-02_rastro_bloomie-creators/BloomieCreators.tsx`).
+- **Globos y stickers con profundidad:** `giro3d` en `GloboHistorieta` y `volumen` en `StickerOnomatopeya`.
+- Muestra: composición `personaje-<nombre>-muestra-25d`.
+- Profundidades de Bloomie: explícitas en `public/personajes/bloomie/rig.json` → `vistas.frente.profundidad` (se pueden ajustar ahí; el editor del Studio las conserva al guardar).
+- Valores probados: luz de la escena con `intensidad` 0,85; `yaw` ±0,65 como máximo; sombra proyectada inclinada -0,6 y achatada 0,3, opacidad 0,5, desenfoque 8 (ver `BloomieCreators.tsx`).
+
+### 3D (Three.js, sin modelo de diseñador)
+
+- Dependencias: `@remotion/three`, `three`, `@react-three/fiber` (instaladas). Render y stills con **`--gl=angle`** (sin placa NVIDIA: lento, ~18 s por cuadro 1080×1920 en la notebook i3); `hoja_animacion.mjs` y `exportar.mjs` aceptan `--gl angle`.
+- Bloomie 3D: `src/personajes/bloomie/Bloomie3D.tsx` construye el modelo por código desde piezas.json (volúmenes elipsoidales + pétalos extruidos de los contornos del .ai + contorno) y lo mueve con los huesos del rig. `EscenaBloomie3D` arma el canvas (cámara ortográfica en px, luz, piso que recibe la sombra) y `caraEnEscena` da la transformación para dibujar la cara 2D (`RostroPersonaje`) sobre la cabeza girada.
+- Muestra: composición `personaje-bloomie-3d` (gira, saluda y habla); ejemplo sobre video: `rastro-bloomie-creators-3d`.
+- Para otro personaje: copiar Bloomie3D.tsx y ajustar las formas (o, mejor, pedir un modelo `.glb` a un modelador 3D y cargarlo con Three).
+
 ## 4. Exportar
 
 ```

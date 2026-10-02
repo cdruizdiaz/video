@@ -35,6 +35,13 @@ export const zPista = z.discriminatedUnion("tipo", [
   z.object({ tipo: z.literal("pose"), ...tiempo, pose: zPoseClave }),
   z.object({ tipo: z.literal("disfraz"), ...tiempo, nombre: z.string().nullable(), y: z.number().default(0) }),
   z.object({
+    tipo: z.literal("yaw"),
+    ...tiempo,
+    valor: z.number(), // giro 2,5D: -1 (hacia la izquierda de la pantalla) … 1 (derecha)
+    duracion: z.number().optional(), // si se da, vuelve al frente al final
+    entrada: z.number().default(8),
+  }),
+  z.object({
     tipo: z.literal("ojos"),
     ...tiempo,
     escala: z.number(), // 1,3 = ojos de cachorro
@@ -87,6 +94,7 @@ export const zPersonajeRig = z.object({
   pasos: z.number().int().min(1).default(1), // 2 = cambia de pose cada 2 frames (look de recorte)
   fondo: z.string().nullable().default(null), // null = transparente
   sombra: z.boolean().default(false), // sombra en el piso
+  luz: z.object({ angulo: z.number(), intensidad: z.number(), sombra: z.string().optional() }).nullable().default(null), // volumen 2,5D
   audio: z.object({ archivo: z.string(), desde: z.number().default(0), volumen: z.number().default(1) }).nullable().default(null),
   pistas: z.array(zPista),
 });
@@ -168,6 +176,13 @@ export const poseEn = (entrada: PersonajeRigProps, f0: number, fps: number): Pos
       case "disfraz":
         c = { disfraz: p.nombre, disfrazY: p.y };
         break;
+      case "yaw": {
+        const e = Math.max(1, p.entrada);
+        const lineal = p.duracion === undefined ? Math.min(1, local / e) : Math.max(0, Math.min(1, local / e, (p.duracion - local) / e));
+        const t = lineal * lineal * (3 - 2 * lineal); // suave (ease in-out)
+        c = local < (p.duracion ?? Infinity) ? { yaw: p.valor * t } : null;
+        break;
+      }
       case "ojos": {
         const e = Math.max(1, p.entrada);
         const t = p.duracion === undefined ? Math.min(1, local / e) : Math.max(0, Math.min(1, local / e, (p.duracion - local) / e));

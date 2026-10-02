@@ -109,6 +109,8 @@ export const zVistaRig = z.object({
   rostro: z.object({ hueso: z.string() }),
   mano: z.string().nullable().optional(), // mano que agarra (accesorios en la mano)
   orden: z.record(z.string(), z.number()).optional(), // cambios de orden de capas (pieza → z)
+  // Profundidad de cada pieza para el giro 2,5D (+ adelante, - atrás; el rostro es +1). Si falta, se deduce del rol.
+  profundidad: z.record(z.string(), z.number()).optional(),
 });
 export type VistaRig = z.infer<typeof zVistaRig>;
 

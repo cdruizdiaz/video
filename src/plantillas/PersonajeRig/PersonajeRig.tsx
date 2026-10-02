@@ -32,7 +32,7 @@ export const PersonajeRig: React.FC<PersonajeRigProps> = (props) => {
           />
         )}
         <EnEscena x={lugar.x} y={lugar.y} escala={lugar.escala} rot={lugar.rot}>
-          <Dibujo personaje={props.personaje} pose={pose} />
+          <Dibujo personaje={props.personaje} pose={pose} luz={props.luz ?? undefined} />
         </EnEscena>
       </svg>
       {props.audio && (

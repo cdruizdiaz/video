@@ -5,7 +5,8 @@
 // Nunca sobrescribe: busca la última versión de <pieza> en out/<ID>/final/ y exporta la _vN siguiente (o --version N
 // si no existe). Verifica el resultado (alfa, cantidad de cuadros, que nada quede cortado en el borde) y anota la
 // entrega en src/trabajos/<ID>/TRABAJO.md.
-// Uso: node scripts/rig/exportar.mjs <composición> <ID> <pieza_formato> [--mov] [--png] [--mp4] [--nota "cambios"]
+// Uso: node scripts/rig/exportar.mjs <composición> <ID> <pieza_formato> [--mov] [--png] [--mp4] [--nota "cambios"] [--gl angle]
+// (--gl angle para composiciones 3D con Three.js)
 import { bundle } from "@remotion/bundler";
 import { renderFrames, renderMedia, selectComposition } from "@remotion/renderer";
 import { execFileSync } from "node:child_process";
@@ -24,6 +25,7 @@ if (!comp || !id || !pieza) {
 const tiene = (f) => args.includes(`--${f}`);
 const opc = (n) => (args.indexOf(`--${n}`) >= 0 ? args[args.indexOf(`--${n}`) + 1] : undefined);
 const formatos = ["mov", "png", "mp4"].filter(tiene);
+const chromiumOptions = opc("gl") ? { gl: opc("gl") } : {};
 if (!formatos.length) formatos.push("mov");
 
 const final = join(RAIZ, "out", id, "final");
@@ -54,20 +56,20 @@ const ffprobe = (archivo, campos) =>
 for (const f of formatos) {
   if (f === "mov") {
     const salida = join(final, `${base}.mov`);
-    await renderMedia({ composition, serveUrl, codec: "prores", proResProfile: "4444", pixelFormat: "yuva444p10le", imageFormat: "png", outputLocation: salida });
+    await renderMedia({ chromiumOptions, composition, serveUrl, codec: "prores", proResProfile: "4444", pixelFormat: "yuva444p10le", imageFormat: "png", outputLocation: salida });
     const [pix, cuadros] = ffprobe(salida, "pix_fmt,nb_frames");
     if (!pix.includes("yuva")) throw new Error(`${salida}: sin canal alfa (${pix})`);
     console.log(`OK ${salida} · ${width}×${height} · ${pix} · ${cuadros} cuadros`);
     entregados.push(`${base}.mov`);
   } else if (f === "mp4") {
     const salida = join(final, `${base}.mp4`);
-    await renderMedia({ composition, serveUrl, codec: "h264", crf: 18, outputLocation: salida });
+    await renderMedia({ chromiumOptions, composition, serveUrl, codec: "h264", crf: 18, outputLocation: salida });
     console.log(`OK ${salida} · ${width}×${height}`);
     entregados.push(`${base}.mp4`);
   } else {
     const carpeta = join(final, `${base}_png`);
     mkdirSync(carpeta, { recursive: true });
-    await renderFrames({ composition, serveUrl, imageFormat: "png", outputDir: carpeta, onStart: () => undefined, onFrameUpdate: () => undefined });
+    await renderFrames({ chromiumOptions, composition, serveUrl, imageFormat: "png", outputDir: carpeta, onStart: () => undefined, onFrameUpdate: () => undefined });
     // Nombres simples: <pieza>_0001.png …
     const pngs = readdirSync(carpeta).filter((a) => a.endsWith(".png")).sort();
     pngs.forEach((a, i) => renameSync(join(carpeta, a), join(carpeta, `${pieza}_${String(i + 1).padStart(4, "0")}.png`)));
