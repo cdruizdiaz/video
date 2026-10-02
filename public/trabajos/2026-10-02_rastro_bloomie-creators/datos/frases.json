@@ -1,0 +1,212 @@
+[
+ {
+  "n": 1,
+  "texto": "Hi, I'm Bloomie.",
+  "duracionMs": 1199,
+  "archivo": "trabajos/2026-10-02_rastro_bloomie-creators/audio/frase_1.wav",
+  "palabras": [
+   {
+    "texto": "Hi,",
+    "desdeMs": 240,
+    "hastaMs": 500
+   },
+   {
+    "texto": "I'm",
+    "desdeMs": 600,
+    "hastaMs": 820
+   },
+   {
+    "texto": "Bloomie.",
+    "desdeMs": 820,
+    "hastaMs": 1199
+   }
+  ],
+  "tokens": [
+   {
+    "text": " Hi",
+    "fromMs": 240,
+    "toMs": 500
+   },
+   {
+    "text": ",",
+    "fromMs": 500,
+    "toMs": 600
+   },
+   {
+    "text": " I",
+    "fromMs": 600,
+    "toMs": 660
+   },
+   {
+    "text": "'m",
+    "fromMs": 640,
+    "toMs": 820
+   },
+   {
+    "text": " Bloom",
+    "fromMs": 820,
+    "toMs": 1020
+   },
+   {
+    "text": "ie",
+    "fromMs": 1020,
+    "toMs": 1198.6879999999999
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "texto": "These are my creators.",
+  "duracionMs": 1451,
+  "archivo": "trabajos/2026-10-02_rastro_bloomie-creators/audio/frase_2.wav",
+  "palabras": [
+   {
+    "texto": "These",
+    "desdeMs": 181,
+    "hastaMs": 341
+   },
+   {
+    "texto": "are",
+    "desdeMs": 341,
+    "hastaMs": 581
+   },
+   {
+    "texto": "my",
+    "desdeMs": 581,
+    "hastaMs": 1081
+   },
+   {
+    "texto": "creators.",
+    "desdeMs": 1081,
+    "hastaMs": 1451
+   }
+  ],
+  "tokens": [
+   {
+    "text": " These",
+    "fromMs": 181.3119999999999,
+    "toMs": 341.3119999999999
+   },
+   {
+    "text": " are",
+    "fromMs": 341.3119999999999,
+    "toMs": 581.3119999999999
+   },
+   {
+    "text": " my",
+    "fromMs": 581.3119999999999,
+    "toMs": 1081.312
+   },
+   {
+    "text": " creators",
+    "fromMs": 1081.312,
+    "toMs": 1450.604
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "texto": "They work really hard.",
+  "duracionMs": 1369,
+  "archivo": "trabajos/2026-10-02_rastro_bloomie-creators/audio/frase_3.wav",
+  "palabras": [
+   {
+    "texto": "They",
+    "desdeMs": 111,
+    "hastaMs": 371
+   },
+   {
+    "texto": "work",
+    "desdeMs": 371,
+    "hastaMs": 631
+   },
+   {
+    "texto": "really",
+    "desdeMs": 631,
+    "hastaMs": 1071
+   },
+   {
+    "texto": "hard.",
+    "desdeMs": 1071,
+    "hastaMs": 1369
+   }
+  ],
+  "tokens": [
+   {
+    "text": " They",
+    "fromMs": 110.70799999999963,
+    "toMs": 370.70799999999963
+   },
+   {
+    "text": " work",
+    "fromMs": 370.70799999999963,
+    "toMs": 630.7079999999996
+   },
+   {
+    "text": " really",
+    "fromMs": 630.7079999999996,
+    "toMs": 1070.7079999999996
+   },
+   {
+    "text": " hard",
+    "fromMs": 1070.7079999999996,
+    "toMs": 1368.5629999999999
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "texto": "HIRE THEM PLEEEEEASEEEE!",
+  "duracionMs": 2139,
+  "archivo": "trabajos/2026-10-02_rastro_bloomie-creators/audio/frase_4.wav",
+  "palabras": [
+   {
+    "texto": "HIRE",
+    "desdeMs": 202,
+    "hastaMs": 422
+   },
+   {
+    "texto": "THEM",
+    "desdeMs": 422,
+    "hastaMs": 582
+   },
+   {
+    "texto": "PLEEEEEASEEEE!",
+    "desdeMs": 1002,
+    "hastaMs": 1702
+   }
+  ],
+  "tokens": [
+   {
+    "text": " Hir",
+    "fromMs": 202.14500000000044,
+    "toMs": 262.14500000000044
+   },
+   {
+    "text": "e",
+    "fromMs": 202.14500000000044,
+    "toMs": 422.14500000000044
+   },
+   {
+    "text": " them",
+    "fromMs": 422.14500000000044,
+    "toMs": 582.1450000000004
+   },
+   {
+    "text": ",",
+    "fromMs": 582.1450000000004,
+    "toMs": 1002.1450000000004
+   },
+   {
+    "text": " please",
+    "fromMs": 1002.1450000000004,
+    "toMs": 1702.1450000000004
+   },
+   {
+    "text": "!",
+    "fromMs": 1962.1450000000004,
+    "toMs": 2138.9170000000004
+   }
+  ]
+ }
+]

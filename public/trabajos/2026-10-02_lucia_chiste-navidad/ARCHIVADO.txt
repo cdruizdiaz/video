@@ -1,0 +1,12 @@
+Trabajo 2026-10-02_lucia_chiste-navidad — cerrado y archivado el 2026-10-02.
+
+Material archivado en C:/Videos/archivo/2026-10-02_lucia_chiste-navidad/
+  public/      copia completa de esta carpeta (audio/frase_1..6.wav, audio/voz_todas.wav, audio/musica_40s.wav, datos/)
+  final/       entregas: chiste-navidad_9x16_v1.mp4 y chiste-navidad-alfa_9x16_v1.mov (ProRes 4444 con transparencia)
+  biblioteca/  originales de Mixkit usados (música 1021; efectos 1492, 395, 2151, 539, 3062, 2986) y LICENCIAS-mixkit.json
+
+Aquí quedan solo los datos (datos/frases.json, datos/voz_todas.json): los usa src/trabajos/2026-10-02_lucia_chiste-navidad/.
+
+Para restaurar: copiar C:/Videos/archivo/2026-10-02_lucia_chiste-navidad/public/ sobre esta carpeta
+(public/trabajos/2026-10-02_lucia_chiste-navidad/). O regenerar el audio con preparar_voz.sh y preparar_audio.sh
+(ver src/trabajos/2026-10-02_lucia_chiste-navidad/TRABAJO.md → Cómo rehacerlo).

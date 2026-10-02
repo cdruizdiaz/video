@@ -1,0 +1,148 @@
+{
+  "archivo": "voz_bloomie_en.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 4175,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4020,
+      "texto": "Bye, Mom! Don't forget to bake my favorite cake for when I get back from school"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bye",
+      "fromMs": 20,
+      "toMs": 260,
+      "dtwMs": 200,
+      "p": 0.811738
+    },
+    {
+      "text": ",",
+      "fromMs": 260,
+      "toMs": 430,
+      "dtwMs": 320,
+      "p": 0.792168
+    },
+    {
+      "text": " Mom",
+      "fromMs": 430,
+      "toMs": 580,
+      "dtwMs": 480,
+      "p": 0.967945
+    },
+    {
+      "text": "!",
+      "fromMs": 750,
+      "toMs": 850,
+      "dtwMs": 700,
+      "p": 0.78191
+    },
+    {
+      "text": " Don",
+      "fromMs": 850,
+      "toMs": 910,
+      "dtwMs": 860,
+      "p": 0.769954
+    },
+    {
+      "text": "'t",
+      "fromMs": 1010,
+      "toMs": 1100,
+      "dtwMs": 960,
+      "p": 0.999834
+    },
+    {
+      "text": " forget",
+      "fromMs": 1100,
+      "toMs": 1380,
+      "dtwMs": 1180,
+      "p": 0.993944
+    },
+    {
+      "text": " to",
+      "fromMs": 1400,
+      "toMs": 1510,
+      "dtwMs": 1380,
+      "p": 0.991111
+    },
+    {
+      "text": " bake",
+      "fromMs": 1510,
+      "toMs": 1720,
+      "dtwMs": 1600,
+      "p": 0.985448
+    },
+    {
+      "text": " my",
+      "fromMs": 1720,
+      "toMs": 1810,
+      "dtwMs": 1780,
+      "p": 0.972901
+    },
+    {
+      "text": " favorite",
+      "fromMs": 1920,
+      "toMs": 2240,
+      "dtwMs": 2180,
+      "p": 0.98657
+    },
+    {
+      "text": " cake",
+      "fromMs": 2240,
+      "toMs": 2490,
+      "dtwMs": 2440,
+      "p": 0.988574
+    },
+    {
+      "text": " for",
+      "fromMs": 2580,
+      "toMs": 2700,
+      "dtwMs": 2640,
+      "p": 0.602658
+    },
+    {
+      "text": " when",
+      "fromMs": 2700,
+      "toMs": 2760,
+      "dtwMs": 2780,
+      "p": 0.981889
+    },
+    {
+      "text": " I",
+      "fromMs": 2760,
+      "toMs": 2830,
+      "dtwMs": 2880,
+      "p": 0.94786
+    },
+    {
+      "text": " get",
+      "fromMs": 2830,
+      "toMs": 3010,
+      "dtwMs": 3020,
+      "p": 0.976945
+    },
+    {
+      "text": " back",
+      "fromMs": 3080,
+      "toMs": 3210,
+      "dtwMs": 3240,
+      "p": 0.99415
+    },
+    {
+      "text": " from",
+      "fromMs": 3320,
+      "toMs": 3530,
+      "dtwMs": 3420,
+      "p": 0.989494
+    },
+    {
+      "text": " school",
+      "fromMs": 3590,
+      "toMs": 3890,
+      "dtwMs": 3760,
+      "p": 0.991837
+    }
+  ]
+}

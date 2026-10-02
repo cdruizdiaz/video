@@ -1,0 +1,13 @@
+Trabajo 2026-10-01_claudio_bloomie — cerrado y archivado el 2026-10-02.
+
+Material archivado en C:/Videos/archivo/2026-10-01_claudio_bloomie/
+  public/      copia completa de esta carpeta (audio/musica_40s.wav, audio/voz_bloomie_en.wav, datos/)
+  final/       entregas: bus-40s_9x16_v1.mp4, bus-40s_9x16_v2.mp4
+  biblioteca/  originales de Mixkit usados (Happy Home 801 + 7 efectos) y LICENCIAS-mixkit.json
+
+Aquí queda solo datos/voz_bloomie_en.json (lo usa src/trabajos/2026-10-01_claudio_bloomie/).
+
+Para restaurar: copiar C:/Videos/archivo/2026-10-01_claudio_bloomie/public/ sobre esta carpeta
+(public/trabajos/2026-10-01_claudio_bloomie/). Si faltan efectos o música en public/biblioteca/, copiarlos desde
+biblioteca/ y verificar con: node scripts/mixkit.mjs verificar
+O regenerar los audios con preparar_musica.sh y preparar_voz.sh (ver TRABAJO.md → Cómo rehacerlo).

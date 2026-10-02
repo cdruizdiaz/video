@@ -1,0 +1,11 @@
+Trabajo 2026-10-01_lucia_bloomie-halloween — cerrado y archivado el 2026-10-02.
+
+Material archivado en C:/Videos/archivo/2026-10-01_lucia_bloomie-halloween/
+  final/       entregas: halloween-izq / halloween-der (volando, .mov ProRes 4444 con alfa + croma .mp4),
+               halloween-corre (.mov + croma .mp4), halloween-efectos_v1.wav y halloween-corre-efectos_v1.wav
+  biblioteca/  originales de Mixkit usados (1492 whoosh, 739 risita, 37 insecto corriendo) y LICENCIAS-mixkit.json
+  public/      copia de esta carpeta (no tenía material propio)
+
+Este trabajo no necesita restaurar nada para volver a renderizar: usa el kit public/marcas/bloomie/ y los efectos de
+public/biblioteca/sfx/mixkit/. Si faltan efectos, copiarlos desde biblioteca/ y verificar con:
+node scripts/mixkit.mjs verificar   (comandos completos en src/trabajos/2026-10-01_lucia_bloomie-halloween/TRABAJO.md)

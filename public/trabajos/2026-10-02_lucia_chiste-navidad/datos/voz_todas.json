@@ -1,0 +1,481 @@
+{
+  "archivo": "voz_todas.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 23193,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4300,
+      "texto": "This year, I want to be part of Christmas too"
+    },
+    {
+      "desdeMs": 4300,
+      "hastaMs": 8200,
+      "texto": "I'm not quite enough tummy for Father Christmas"
+    },
+    {
+      "desdeMs": 8200,
+      "hastaMs": 11800,
+      "texto": "I'm a reindeer, ready for take-off"
+    },
+    {
+      "desdeMs": 11800,
+      "hastaMs": 14800,
+      "texto": "Reindeer don't have petals"
+    },
+    {
+      "desdeMs": 14800,
+      "hastaMs": 18000,
+      "texto": "Anon, someone's missing up there"
+    },
+    {
+      "desdeMs": 18000,
+      "hastaMs": 23000,
+      "texto": "I'm not a reindeer, I'm not Father Christmas, I'm a bloomin' star"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " This",
+      "fromMs": 20,
+      "toMs": 460,
+      "dtwMs": 200,
+      "p": 0.786475
+    },
+    {
+      "text": " year",
+      "fromMs": 460,
+      "toMs": 920,
+      "dtwMs": 460,
+      "p": 0.990739
+    },
+    {
+      "text": ",",
+      "fromMs": 920,
+      "toMs": 1140,
+      "dtwMs": 680,
+      "p": 0.64647
+    },
+    {
+      "text": " I",
+      "fromMs": 1140,
+      "toMs": 1260,
+      "dtwMs": 740,
+      "p": 0.989872
+    },
+    {
+      "text": " want",
+      "fromMs": 1260,
+      "toMs": 1720,
+      "dtwMs": 940,
+      "p": 0.989704
+    },
+    {
+      "text": " to",
+      "fromMs": 1720,
+      "toMs": 1950,
+      "dtwMs": 1040,
+      "p": 0.996711
+    },
+    {
+      "text": " be",
+      "fromMs": 1950,
+      "toMs": 2180,
+      "dtwMs": 1180,
+      "p": 0.997527
+    },
+    {
+      "text": " part",
+      "fromMs": 2180,
+      "toMs": 2360,
+      "dtwMs": 1460,
+      "p": 0.984913
+    },
+    {
+      "text": " of",
+      "fromMs": 2640,
+      "toMs": 2870,
+      "dtwMs": 1620,
+      "p": 0.995439
+    },
+    {
+      "text": " Christmas",
+      "fromMs": 3910,
+      "toMs": 3910,
+      "dtwMs": 1960,
+      "p": 0.965084
+    },
+    {
+      "text": " too",
+      "fromMs": 4050,
+      "toMs": 4300,
+      "dtwMs": 2280,
+      "p": 0.863845
+    },
+    {
+      "text": " I",
+      "fromMs": 4320,
+      "toMs": 4390,
+      "dtwMs": 4100,
+      "p": 0.966112
+    },
+    {
+      "text": "'m",
+      "fromMs": 4390,
+      "toMs": 4580,
+      "dtwMs": 4140,
+      "p": 0.98891
+    },
+    {
+      "text": " not",
+      "fromMs": 4580,
+      "toMs": 4820,
+      "dtwMs": 4340,
+      "p": 0.991567
+    },
+    {
+      "text": " quite",
+      "fromMs": 4970,
+      "toMs": 5340,
+      "dtwMs": 4640,
+      "p": 0.876843
+    },
+    {
+      "text": " enough",
+      "fromMs": 5370,
+      "toMs": 5880,
+      "dtwMs": 4980,
+      "p": 0.997082
+    },
+    {
+      "text": " tummy",
+      "fromMs": 6000,
+      "toMs": 6290,
+      "dtwMs": 5280,
+      "p": 0.965419
+    },
+    {
+      "text": " for",
+      "fromMs": 6410,
+      "toMs": 6660,
+      "dtwMs": 5560,
+      "p": 0.986173
+    },
+    {
+      "text": " Father",
+      "fromMs": 7280,
+      "toMs": 7280,
+      "dtwMs": 5820,
+      "p": 0.873335
+    },
+    {
+      "text": " Christmas",
+      "fromMs": 8200,
+      "toMs": 8200,
+      "dtwMs": 6240,
+      "p": 0.994556
+    },
+    {
+      "text": " I",
+      "fromMs": 8220,
+      "toMs": 8310,
+      "dtwMs": 8200,
+      "p": 0.996917
+    },
+    {
+      "text": "'m",
+      "fromMs": 8440,
+      "toMs": 8550,
+      "dtwMs": 8300,
+      "p": 0.997796
+    },
+    {
+      "text": " a",
+      "fromMs": 8550,
+      "toMs": 8670,
+      "dtwMs": 8400,
+      "p": 0.986739
+    },
+    {
+      "text": " reindeer",
+      "fromMs": 8670,
+      "toMs": 9620,
+      "dtwMs": 8680,
+      "p": 0.988284
+    },
+    {
+      "text": ",",
+      "fromMs": 9620,
+      "toMs": 9780,
+      "dtwMs": 8980,
+      "p": 0.502924
+    },
+    {
+      "text": " ready",
+      "fromMs": 9900,
+      "toMs": 10450,
+      "dtwMs": 9180,
+      "p": 0.99383
+    },
+    {
+      "text": " for",
+      "fromMs": 10450,
+      "toMs": 10560,
+      "dtwMs": 9400,
+      "p": 0.996327
+    },
+    {
+      "text": " take",
+      "fromMs": 10810,
+      "toMs": 11290,
+      "dtwMs": 9660,
+      "p": 0.993144
+    },
+    {
+      "text": "-",
+      "fromMs": 11290,
+      "toMs": 11400,
+      "dtwMs": 9680,
+      "p": 0.92383
+    },
+    {
+      "text": "off",
+      "fromMs": 11400,
+      "toMs": 11800,
+      "dtwMs": 10000,
+      "p": 0.999415
+    },
+    {
+      "text": " Re",
+      "fromMs": 11820,
+      "toMs": 12060,
+      "dtwMs": 11840,
+      "p": 0.876963
+    },
+    {
+      "text": "indeer",
+      "fromMs": 12060,
+      "toMs": 12840,
+      "dtwMs": 12080,
+      "p": 0.721674
+    },
+    {
+      "text": " don",
+      "fromMs": 12840,
+      "toMs": 13230,
+      "dtwMs": 12300,
+      "p": 0.82367
+    },
+    {
+      "text": "'t",
+      "fromMs": 13230,
+      "toMs": 13380,
+      "dtwMs": 12420,
+      "p": 0.999674
+    },
+    {
+      "text": " have",
+      "fromMs": 13500,
+      "toMs": 14010,
+      "dtwMs": 12620,
+      "p": 0.996953
+    },
+    {
+      "text": " petals",
+      "fromMs": 14010,
+      "toMs": 14160,
+      "dtwMs": 13080,
+      "p": 0.997267
+    },
+    {
+      "text": " An",
+      "fromMs": 14820,
+      "toMs": 14910,
+      "dtwMs": 14960,
+      "p": 0.396245
+    },
+    {
+      "text": "on",
+      "fromMs": 15040,
+      "toMs": 15240,
+      "dtwMs": 15080,
+      "p": 0.895723
+    },
+    {
+      "text": ",",
+      "fromMs": 15240,
+      "toMs": 15310,
+      "dtwMs": 15200,
+      "p": 0.890459
+    },
+    {
+      "text": " someone",
+      "fromMs": 15470,
+      "toMs": 16230,
+      "dtwMs": 15380,
+      "p": 0.956032
+    },
+    {
+      "text": "'s",
+      "fromMs": 16230,
+      "toMs": 16380,
+      "dtwMs": 15560,
+      "p": 0.991628
+    },
+    {
+      "text": " missing",
+      "fromMs": 16500,
+      "toMs": 17160,
+      "dtwMs": 15800,
+      "p": 0.972502
+    },
+    {
+      "text": " up",
+      "fromMs": 17440,
+      "toMs": 17440,
+      "dtwMs": 15980,
+      "p": 0.97612
+    },
+    {
+      "text": " there",
+      "fromMs": 17440,
+      "toMs": 18000,
+      "dtwMs": 16260,
+      "p": 0.991925
+    },
+    {
+      "text": " I",
+      "fromMs": 18020,
+      "toMs": 18090,
+      "dtwMs": 18080,
+      "p": 0.994586
+    },
+    {
+      "text": "'m",
+      "fromMs": 18090,
+      "toMs": 18270,
+      "dtwMs": 18140,
+      "p": 0.998205
+    },
+    {
+      "text": " not",
+      "fromMs": 18270,
+      "toMs": 18520,
+      "dtwMs": 18320,
+      "p": 0.995928
+    },
+    {
+      "text": " a",
+      "fromMs": 18640,
+      "toMs": 18640,
+      "dtwMs": 18500,
+      "p": 0.997122
+    },
+    {
+      "text": " reindeer",
+      "fromMs": 18670,
+      "toMs": 19400,
+      "dtwMs": 18800,
+      "p": 0.999228
+    },
+    {
+      "text": ",",
+      "fromMs": 19400,
+      "toMs": 19490,
+      "dtwMs": 19300,
+      "p": 0.812509
+    },
+    {
+      "text": " I",
+      "fromMs": 19490,
+      "toMs": 19530,
+      "dtwMs": 19460,
+      "p": 0.987779
+    },
+    {
+      "text": "'m",
+      "fromMs": 19530,
+      "toMs": 19580,
+      "dtwMs": 19540,
+      "p": 0.998456
+    },
+    {
+      "text": " not",
+      "fromMs": 19700,
+      "toMs": 19760,
+      "dtwMs": 19720,
+      "p": 0.998009
+    },
+    {
+      "text": " Father",
+      "fromMs": 19760,
+      "toMs": 20000,
+      "dtwMs": 20020,
+      "p": 0.97707
+    },
+    {
+      "text": " Christmas",
+      "fromMs": 20110,
+      "toMs": 20360,
+      "dtwMs": 20360,
+      "p": 0.994305
+    },
+    {
+      "text": ",",
+      "fromMs": 20770,
+      "toMs": 20770,
+      "dtwMs": 20480,
+      "p": 0.750519
+    },
+    {
+      "text": " I",
+      "fromMs": 20770,
+      "toMs": 20900,
+      "dtwMs": 20560,
+      "p": 0.995066
+    },
+    {
+      "text": "'m",
+      "fromMs": 20900,
+      "toMs": 21170,
+      "dtwMs": 20660,
+      "p": 0.958135
+    },
+    {
+      "text": " a",
+      "fromMs": 21170,
+      "toMs": 21300,
+      "dtwMs": 20760,
+      "p": 0.994824
+    },
+    {
+      "text": " blo",
+      "fromMs": 21300,
+      "toMs": 21710,
+      "dtwMs": 20880,
+      "p": 0.719818
+    },
+    {
+      "text": "omin",
+      "fromMs": 22050,
+      "toMs": 22260,
+      "dtwMs": 21040,
+      "p": 0.996662
+    },
+    {
+      "text": "'",
+      "fromMs": 22260,
+      "toMs": 22360,
+      "dtwMs": 21180,
+      "p": 0.964229
+    },
+    {
+      "text": " star",
+      "fromMs": 22440,
+      "toMs": 22940,
+      "dtwMs": 21420,
+      "p": 0.992951
+    }
+  ]
+}
