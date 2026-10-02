@@ -3,6 +3,8 @@ import { composiciones as rastroHistoriaIg } from "./2026-09-28_rastro_historia-
 import { composiciones as voltoIa2026 } from "./2026-09-28_volto_ia2026/composiciones";
 import { composiciones as claudioMusica } from "./2026-09-29_claudio_musica/composiciones";
 import { composiciones as luciaLucia70 } from "./2026-09-30_lucia_lucia70/composiciones";
+import { composiciones as luciaBloomieCorriendo } from "./2026-10-02_lucia_bloomie-corriendo/composiciones";
+import { composiciones as luciaBloomieVolandoEscoba } from "./2026-10-02_lucia_bloomie-volando-escoba-realista/composiciones";
 import type { Trabajo } from "./tipos";
 
 export const TRABAJOS: Trabajo[] = [
@@ -10,4 +12,6 @@ export const TRABAJOS: Trabajo[] = [
   { id: "2026-09-28_volto_ia2026", composiciones: voltoIa2026 },
   { id: "2026-09-29_claudio_musica", composiciones: claudioMusica },
   { id: "2026-09-30_lucia_lucia70", composiciones: luciaLucia70 },
+  { id: "2026-10-02_lucia_bloomie-corriendo", composiciones: luciaBloomieCorriendo },
+  { id: "2026-10-02_lucia_bloomie-volando-escoba-realista", composiciones: luciaBloomieVolandoEscoba },
 ];

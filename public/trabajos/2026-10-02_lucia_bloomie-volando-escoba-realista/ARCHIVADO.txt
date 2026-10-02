@@ -1,0 +1,17 @@
+Trabajo 2026-10-02_lucia_bloomie-volando-escoba-realista: cerrado y archivado el 2026-10-02.
+
+El material pesado se movio a:
+  C:/Videos/archivo/2026-10-02_lucia_bloomie-volando-escoba-realista/
+    public/audio/    auto_doppler.wav (sonido preparado con preparar_sonido.sh)
+    public/crudos/   (vacia: no hubo video crudo)
+    public/img/      (vacia)
+    final/           copia de la entrega (out/2026-10-02_lucia_bloomie-volando-escoba-realista/final/)
+    biblioteca/      original de Mixkit 1538 Fast car drive by (sha256 bd28537a22bc)
+
+Los sprites del personaje NO se archivaron: son del kit de marca (public/marcas/bloomie/).
+Aca queda solo datos/ (JSON chicos, versionados).
+Originales sin tocar: C:/Videos/crudos/2026-10-02_lucia_bloomie-volando-escoba-realista/
+Ficha y codigo: src/trabajos/2026-10-02_lucia_bloomie-volando-escoba-realista/ (ver TRABAJO.md, "Como rehacerlo").
+
+Para restaurar (desde la raiz del proyecto, Git Bash):
+  cp -r "C:/Videos/archivo/2026-10-02_lucia_bloomie-volando-escoba-realista/public/." "public/trabajos/2026-10-02_lucia_bloomie-volando-escoba-realista/"

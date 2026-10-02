@@ -54,5 +54,115 @@
     "fuente": "https://assets.mixkit.co/music/175/175.mp3",
     "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
     "descargado": "2026-09-28"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2894-boing-hit-sound.wav",
+    "id": "2894",
+    "tipo": "sfx",
+    "titulo": "Boing hit sound",
+    "duracionSeg": 1.2,
+    "sha256": "9d0611005031292f357a89f7b7c2dfd2bf3e2e3896cbc0cb4c5d534a61fa9280",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2894/2894.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-719-car-double-horn.wav",
+    "id": "719",
+    "tipo": "sfx",
+    "titulo": "Car double horn",
+    "duracionSeg": 0.9,
+    "sha256": "15c3836597e2b820a9543a1fa671d4b2691bca46ef98f7d4ca767936b5109ed0",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/719/719.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-3033-old-bus-arrival.wav",
+    "id": "3033",
+    "tipo": "sfx",
+    "titulo": "Old bus arrival",
+    "duracionSeg": 13.4,
+    "sha256": "17f84f1c0dd18168eab9af80e969f9a14656f14c86957546a2c0f39b3f3fb115",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/3033/3033.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-3034-city-bus-departure.wav",
+    "id": "3034",
+    "tipo": "sfx",
+    "titulo": "City bus departure",
+    "duracionSeg": 12,
+    "sha256": "5100b3fb52fa415e5962d34856063d112ec902e6dffba3ac351e0fa8bf0a2696",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/3034/3034.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2709-hydraulic-bus-door.wav",
+    "id": "2709",
+    "tipo": "sfx",
+    "titulo": "Hydraulic bus door",
+    "duracionSeg": 1.7,
+    "sha256": "3b56f308ac283a5439645f815d95922266b499e45f49f3ed717935882563063f",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2709/2709.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2192-little-cute-kiss.wav",
+    "id": "2192",
+    "tipo": "sfx",
+    "titulo": "Little cute kiss",
+    "duracionSeg": 1.1,
+    "sha256": "703757df682ea29b77b07122764a5e8cf0818bfc5cf3ec5260434f37d9195096",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2192/2192.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-195-creaky-door-open.wav",
+    "id": "195",
+    "tipo": "sfx",
+    "titulo": "Creaky door open",
+    "duracionSeg": 2.7,
+    "sha256": "7ce4a2dc95f38ea8f2edb897236545695aaf8deb322f53a2e6a1f8a4ad3af14c",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/195/195.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-739-small-cartoon-character-laughing.wav",
+    "id": "739",
+    "tipo": "sfx",
+    "titulo": "Small cartoon character laughing",
+    "duracionSeg": 2.3,
+    "sha256": "7559e62e952fce46d481e280baab7cef308918b9835751d5ec7157542c7f2a79",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/739/739.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-37-cartoon-insect-running-fast.wav",
+    "id": "37",
+    "tipo": "sfx",
+    "titulo": "Cartoon insect running fast",
+    "duracionSeg": 1.6,
+    "sha256": "677a82c5aeb4f99c11178f26d72e884e530853bd5201a715a6786e55ad1062e4",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/37/37.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-1538-fast-car-drive-by.wav",
+    "id": "1538",
+    "tipo": "sfx",
+    "titulo": "Fast car drive by",
+    "duracionSeg": 3.8,
+    "sha256": "bd28537a22bcd57c78b539068c1f40f8ecb5a65bd4134800c161be39b207f21f",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/1538/1538.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-02"
   }
 ]
