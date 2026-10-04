@@ -100,3 +100,31 @@ export const encuadreEn = (t: TomaMusical, frame: number, dura: number) => {
   const arriba = Math.min(Math.max(cy - ANCLA_Y * visible, 0), 1 - visible);
   return { z, izq, arriba };
 };
+
+// ---------- Cortes al ritmo ----------
+// Ajusta el final de cada toma (hastaMs) para que el corte caiga en el pulso más cercano de la música
+// (pulsos.json de scripts/pulsos.py: usar `compases` para cortes cada compás o `pulsos` para cada golpe).
+// Se aplica a los datos antes de pasarlos a la composición, así Remotion y la exportación a Premiere coinciden.
+// `musicaDesdeMs`: en qué momento de la música arranca el montaje (si se usa con trimBefore).
+export const MIN_TOMA_MS = 700; // ninguna toma queda más corta que esto
+export const ajustarAlPulso = (
+  tomas: TomaMusical[],
+  pulsosSeg: number[],
+  o: { musicaDesdeMs?: number; toleranciaMs?: number } = {},
+): TomaMusical[] => {
+  const tolerancia = o.toleranciaMs ?? 400;
+  const marcas = pulsosSeg.map((s) => s * 1000 - (o.musicaDesdeMs ?? 0)).filter((ms) => ms > 0);
+  let acc = 0; // ms del montaje donde empieza la toma actual
+  return tomas.map((t, i) => {
+    const dura = t.hastaMs - t.desdeMs;
+    const corte = acc + dura;
+    const ultima = i === tomas.length - 1;
+    const cercano = marcas.reduce((m, x) => (Math.abs(x - corte) < Math.abs(m - corte) ? x : m), Infinity);
+    const nuevaDura = !ultima && Math.abs(cercano - corte) <= tolerancia && cercano - acc >= MIN_TOMA_MS ? cercano - acc : dura;
+    // redondeado a frames enteros para que no se acumule error
+    const frames = Math.round((nuevaDura / 1000) * FPS);
+    const ms = (frames / FPS) * 1000;
+    acc += ms;
+    return { ...t, hastaMs: t.desdeMs + ms };
+  });
+};

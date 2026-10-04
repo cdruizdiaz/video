@@ -13,5 +13,10 @@
   "carpetaCrudos": "C:/Videos/crudos",
   "carpetaArchivo": "C:/Videos/archivo",
   "carpetaPersonajes": "C:/Videos/personajes",
-  "equipo": "C:/Videos/_herramientas/equipo.json"
+  "equipo": "C:/Videos/_herramientas/equipo.json",
+  "carpetaPiper": "C:/Videos/_herramientas/modelos-piper",
+  "vozPiperEs": "es_AR-daniela-high",
+  "rhubarb": "C:/Videos/_herramientas/rhubarb/rhubarb.exe",
+  "rife": "C:/Videos/_herramientas/rife/rife-ncnn-vulkan.exe",
+  "realesrgan": "C:/Videos/_herramientas/realesrgan/realesrgan-ncnn-vulkan.exe"
 }

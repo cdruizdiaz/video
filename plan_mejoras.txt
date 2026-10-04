@@ -233,7 +233,7 @@ Riesgos y decisiones pendientes
 ------------------------------------------------------------------
 Estado
 ------------------------------------------------------------------
-F0 HECHA (2026-10-04) · F1 pendiente · F2 pendiente · F3 pendiente · F4 pendiente · F5 pendiente · F6 pendiente
+F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 pendiente · F3 pendiente · F4 pendiente · F5 pendiente · F6 pendiente
 
 F0 — Orden y base  [HECHA 2026-10-04]
   [x] 0.1 Pendientes commiteados (517ca6d). main es ancestro de la rama: merge fast-forward al cerrar cada fase.
@@ -245,3 +245,18 @@ F0 — Orden y base  [HECHA 2026-10-04]
           disfraz/expresión/vista; 25 s de borrador para 718 cuadros en la i3. Limitación: necesita los audios de la
           composición en public/ (no sirve para trabajos archivados sin restaurarlos).
   [x] 0.4 verificar-suite: paso(…, { opcional: true }) + requiere() → ⚪ "no instalado" sin error; paso "Tests (vitest)".
+
+F1 — Herramientas locales rápidas  [HECHA 2026-10-04]
+  [x] 1.1 Voces es_AR-daniela-high y es_MX-claude-high + scripts/voz.mjs (Piper → recorte → -14 LUFS medido con
+          ebur128 y ganancia+limitador, porque loudnorm dejaba las frases cortas en -16/-17 → tiempos con Whisper).
+          Hallazgos: Piper leía "¡" y "¿" como sílabas ("asicufejo") → se sacan; acentúa mal algún voseo ("alcanzás").
+  [x] 1.2 Rhubarb 1.14.0 en _herramientas/rhubarb + scripts/lipsync_rhubarb.mjs (reconocedor phonetic, formas G/H/X).
+          4 s de voz en ~2 s. Integración con el rig → F2.2.
+  [x] 1.3 RIFE 20221029 (rife-v4.6) + scripts/camara_lenta.mjs: 1 s de crudo (claudio_musica) ×4 a media resolución
+          en 37 s (0,31 s/cuadro, Intel UHD por Vulkan); movimiento intermedio fluido en la hoja de control.
+  [x] 1.4 Real-ESRGAN 0.2.5.0 + scripts/subir_resolucion.mjs: foto 270×480 → 1080×1920 (x4plus) en 44 s, pelo y tela
+          nítidos; video 360p → 720p a ~2,2 s/cuadro (animevideov3). Solo para tramos cortos en la i3.
+  [x] 1.5 librosa en el .venv + scripts/pulsos.py (bpm, pulsos, compases, golpes, energía): Mixkit 801 → 143,6 bpm.
+          En vez de una opción dentro de MontajeMusical, función pura ajustarAlPulso(tomas, compases) en calculos.ts
+          (se aplica a los datos → Remotion y la exportación a Premiere coinciden) + 5 tests.
+  [x] verificar-suite: 5 chequeos opcionales nuevos, todos ✅. requirements.txt regenerado (faltaba piper-tts).

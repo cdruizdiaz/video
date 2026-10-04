@@ -140,6 +140,57 @@ print(len(d.detect(mp.Image.create_from_file(r"${img}")).detections), mp.__versi
   return `mediapipe ${ver} · carga y detecta (${caras} caras en la imagen de prueba)`;
 });
 
+// ---- Herramientas de la fase 1 del plan de mejoras (opcionales) ----
+paso("Piper (español)", () => {
+  requiere(path.join(herr.carpetaPiper ?? "", `${herr.vozPiperEs}.onnx`));
+  const wav = path.join(TMP, "piper_es.wav");
+  const out = correr("node", ["scripts/voz.mjs", "Hola, esto es una prueba.", wav, "--sin-tiempos"]);
+  return out.trim().split("\n")[0].replace(/^OK .*?\.wav · /, "");
+}, { opcional: true });
+paso("Rhubarb (lip sync)", () => {
+  requiere(herr.rhubarb);
+  const json = path.join(TMP, "rhubarb.json");
+  correr("node", ["scripts/lipsync_rhubarb.mjs", VOZ, json]);
+  const n = JSON.parse(fs.readFileSync(json, "utf8")).mouthCues.length;
+  if (n < 10) throw new Error(`Muy pocas bocas (${n})`);
+  return `${n} bocas para la voz de prueba`;
+}, { opcional: true });
+paso("RIFE (interpolación)", () => {
+  requiere(herr.rife);
+  const d = path.join(TMP, "rife");
+  fs.rmSync(d, { recursive: true, force: true });
+  fs.mkdirSync(d);
+  correr(herr.ffmpeg, ["-v", "error", "-f", "lavfi", "-i", "testsrc2=s=256x144:r=30", "-frames:v", "2", path.join(d, "%d.png")]);
+  correr(herr.rife, ["-0", path.join(d, "1.png"), "-1", path.join(d, "2.png"), "-o", path.join(d, "medio.png"), "-m", "rife-v4.6"], { cwd: path.dirname(herr.rife) });
+  existe(path.join(d, "medio.png"));
+  return "cuadro intermedio con rife-v4.6 (Vulkan)";
+}, { opcional: true });
+paso("Real-ESRGAN", () => {
+  requiere(herr.realesrgan);
+  const i = path.join(TMP, "esrgan_in.png");
+  const o = path.join(TMP, "esrgan_out.png");
+  correr(herr.ffmpeg, ["-v", "error", "-y", "-f", "lavfi", "-i", "testsrc2=s=64x64", "-frames:v", "1", i]);
+  correr(herr.realesrgan, ["-i", i, "-o", o, "-n", "realesr-animevideov3-x2", "-s", "2"], { cwd: path.dirname(herr.realesrgan) });
+  const dims = correr(herr.ffprobe, ["-v", "error", "-show_entries", "stream=width,height", "-of", "csv=p=0", o]).trim();
+  if (dims !== "128,128") throw new Error(`Salida ${dims}, esperaba 128,128`);
+  return "64 → 128 px (realesr-animevideov3-x2)";
+}, { opcional: true });
+paso("librosa (pulsos)", () => {
+  // Clics a 120 bpm durante 12 s: tiene que encontrar ~120 bpm
+  const clic = path.join(TMP, "clic120.wav");
+  correr(herr.ffmpeg, ["-v", "error", "-y", "-f", "lavfi", "-i", "aevalsrc='if(lt(mod(t\\,0.5)\\,0.03)\\,sin(2*PI*1000*t)\\,0)':s=22050:d=12", clic]);
+  const json = path.join(TMP, "pulsos.json");
+  try {
+    correr(herr.python, ["scripts/pulsos.py", clic, json]);
+  } catch (e) {
+    if (/No module named 'librosa'/.test(e.message)) throw new NoInstalado("no instalado (pip install librosa en el .venv)");
+    throw e;
+  }
+  const { bpm } = JSON.parse(fs.readFileSync(json, "utf8"));
+  if (Math.abs(bpm - 120) > 3) throw new Error(`Detectó ${bpm} bpm en un clic de 120`);
+  return `${bpm} bpm en un clic de 120`;
+}, { opcional: true });
+
 paso("Mixkit (biblioteca)", () => {
   const r = spawnSync("node", ["scripts/mixkit.mjs", "verificar"], { encoding: "utf8" });
   const ultima = r.stdout.trim().split("\n").at(-1);

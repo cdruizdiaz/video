@@ -89,6 +89,11 @@ Reglas:
   - No hay GPU NVIDIA en ninguna notebook (2026-09-29): whisper.cpp corre en CPU con el binario oficial.
   - Nota: el ejecutable está en `build/bin/whisper-cli.exe` (se reubicó desde `Release/` del zip oficial para que `@remotion/install-whisper-cpp` lo encuentre).
 - Piper TTS (voz sintética local, gratis, sin internet): `python -m piper -m C:/Videos/_herramientas/modelos-piper/<voz>.onnx -f salida.wav` (texto por stdin; Python del `.venv`). Voces bajadas: `en_US-hfc_female-medium`, `en_US-amy-medium`, `en_US-kristin-medium`; otras con `python -m piper.download_voices --data-dir C:/Videos/_herramientas/modelos-piper <voz>`. Voz de nene: subir el tono con ffmpeg `rubberband=pitch=1.35:formant=shifted`. Ejemplo: `src/trabajos/2026-10-01_claudio_bloomie/preparar_voz.sh` (voz + Whisper `--idioma en` para sincronizar boca y texto).
+  - **Atajo: `node scripts/voz.mjs "texto" <salida.wav> [--voz es_MX-claude-high] [--nene] [--velocidad 1.1]`** → Piper + recorte de silencios + -14 LUFS (medido con ebur128) + tiempos por palabra con Whisper en `<salida>.json`. Voces en español: `es_AR-daniela-high` (default, `vozPiperEs`), `es_MX-claude-high`. Piper no lee bien `¡¿` (el script los saca) y a veces acentúa mal el voseo ("alcanzás"): escuchar y, si hace falta, reescribir la palabra.
+- Rhubarb Lip Sync (`rhubarb` en `herramientas.json`): **`node scripts/lipsync_rhubarb.mjs <audio> <salida.json> [--texto "frase"|archivo] [--ingles]`** → bocas A–H/X desde el sonido (reconocedor `phonetic`, sirve para español). ~2 s para 4 s de voz.
+- RIFE (`rife`, Vulkan): **`node scripts/camara_lenta.mjs <video> <salida> --factor 2|4 [--desde s --hasta s] [--modo lento|fluido] [--escala 0.5]`** inventa cuadros intermedios (cámara lenta suave o 30→60 fps). Lento en la i3 (~1,2 s por cuadro 1080p): recortar al tramo que se usa.
+- Real-ESRGAN (`realesrgan`, Vulkan): **`node scripts/subir_resolucion.mjs <imagen|video> <salida> [--x 2|4] [--anime] [--ancho 1920]`** para fotos viejas, logos chicos o 720p. Video ~2 s por cuadro en la i3: solo tramos cortos.
+- Pulsos de la música (librosa del `.venv`): **`python scripts/pulsos.py <audio> public/trabajos/<ID>/datos/pulsos.json`** → bpm, `pulsos`, `compases`, `golpes`, `energia`. Para cortar al ritmo en `MontajeMusical`: `ajustarAlPulso(tomas, pulsos.compases)` de `calculos.ts` en `composiciones.ts` (también vale para Premiere).
 - DeepFilterNet: `deepFilter.exe <entrada.wav> -o <carpeta>` (Python 3.11 del `.venv` compartido).
 - MediaPipe: Tasks API (`FaceDetector`) con el modelo `blaze_face_short_range.tflite`.
 - Color: LUTs `.cube` en `C:/Videos/_herramientas/luts`, aplicar con `-vf lut3d=archivo.cube`.
@@ -104,6 +109,9 @@ Reglas:
 | Tarea | Herramienta |
 |---|---|
 | Convertir formato, fps constante, cortar sin gráficos | ffmpeg |
+| Cámara lenta suave / subir fps | RIFE (`scripts/camara_lenta.mjs`) |
+| Subir resolución (fotos viejas, logos chicos, 720p) | Real-ESRGAN (`scripts/subir_resolucion.mjs`) |
+| Cortes o animaciones al ritmo de la música | librosa (`scripts/pulsos.py`) → `ajustarAlPulso` |
 | Proxies / borradores rápidos | ffmpeg con `codecBorrador` de `equipo.json` |
 | Aplicar color (LUT) | ffmpeg `lut3d` |
 | Normalizar volumen (-14 LUFS) / medirlo | ffmpeg `loudnorm` / `ebur128` |
@@ -125,7 +133,7 @@ Reglas:
 | Música de fondo | 1º Mixkit (`scripts/mixkit.mjs` → biblioteca → preparada en `public/trabajos/<ID>/audio/`); 2º música compuesta por código |
 | Efectos de sonido (whoosh, click, pop, transiciones) | Mixkit `--sfx` → `public/biblioteca/sfx/mixkit/` |
 | Recortar música a la duración del video, fundidos | Remotion `<Audio trimBefore volume>` o ffmpeg `atrim`/`afade` + `loudnorm` |
-| Voz de personaje / locución sintética | Piper TTS local (1º); ChatCut si hace falta más naturalidad (preguntar antes: consume créditos) |
+| Voz de personaje / locución sintética | Piper TTS local con `scripts/voz.mjs` (1º, español rioplatense incluido); ChatCut si hace falta más naturalidad (preguntar antes: consume créditos) |
 | Sprites o poses de un personaje con IA generativa | solo si el rig no puede (pose imposible con piezas rígidas); preguntar antes |
 | Avatar, doblaje, música generada, stock | ChatCut (preguntar antes: consume créditos) |
 | Duda entre dos opciones | la más rápida y barata en tokens; si afecta la calidad final, preguntar |
