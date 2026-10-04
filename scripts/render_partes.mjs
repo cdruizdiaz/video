@@ -15,6 +15,8 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { bundle } from "@remotion/bundler";
+import { selectComposition } from "@remotion/renderer";
 import { hacerTarea, tomarTarea } from "./trabajador.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -37,12 +39,9 @@ const commit = execFileSync("git", ["rev-parse", "HEAD"], { cwd: RAIZ, encoding:
 const sucio = execFileSync("git", ["status", "--porcelain", "--", "src", "scripts"], { cwd: RAIZ, encoding: "utf8" }).trim();
 if (cola && sucio) console.warn("⚠ Hay cambios sin commitear en src/ o scripts/: la otra PC renderizaría otra cosa. Commitear antes de repartir.");
 
-// Duración de la composición (sin abrir el navegador para cada parte)
-const info = JSON.parse(
-  execFileSync("npx", ["remotion", "compositions", "src/index.ts", "--json", "--log=error"], { cwd: RAIZ, encoding: "utf8", shell: true, maxBuffer: 64 * 1024 * 1024 }),
-).find((c) => c.id === comp);
-if (!info) throw new Error(`No existe la composición ${comp}`);
-const total = info.durationInFrames;
+// Duración de la composición
+const serveUrl = await bundle({ entryPoint: path.join(RAIZ, "src/index.ts"), onProgress: () => undefined });
+const total = (await selectComposition({ serveUrl, id: comp })).durationInFrames;
 const id = crypto.createHash("sha1").update(`${comp}|${commit}|${total}|${crf}|${partes}`).digest("hex").slice(0, 10);
 const carpeta = cola ?? path.join(RAIZ, "tmp", "partes");
 const dir = path.join(carpeta, `${comp}_${id}`);
@@ -65,9 +64,9 @@ console.log(`${comp}: ${total} cuadros en ${partes} partes → ${dir}${cola ? " 
 // Esta PC también trabaja: toma tareas libres hasta que no quede ninguna
 let propias = 0;
 for (;;) {
-  const t = tomarTarea(dir, os.hostname());
+  const t = tomarTarea(dir, (process.env.PC_NOMBRE ?? os.hostname()));
   if (!t) break;
-  hacerTarea(t, os.hostname());
+  hacerTarea(t, (process.env.PC_NOMBRE ?? os.hostname()));
   propias++;
 }
 // Esperar las que tomaron otras PC
@@ -92,7 +91,7 @@ execFileSync(herr.ffmpeg, ["-y", "-v", "error", "-f", "concat", "-safe", "0", "-
 
 // Verificación: cuadros y duración
 const cuadros = Number(
-  execFileSync(herr.ffprobe, ["-v", "error", "-count_packets", "-select_streams", "v:0", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", salida], { encoding: "utf8" }).trim(),
+  execFileSync(herr.ffprobe, ["-v", "error", "-count_packets", "-select_streams", "v:0", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", salida], { encoding: "utf8" }).trim().split(",")[0],
 );
 if (cuadros !== total) throw new Error(`La unión tiene ${cuadros} cuadros y la composición ${total}`);
 const quien = tareas.map((t) => (fs.readFileSync(`${t.salida}.ok`, "utf8").trim() || "?")).join(", ");

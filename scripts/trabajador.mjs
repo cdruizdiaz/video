@@ -60,7 +60,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     process.exit(1);
   }
   const cola = path.resolve(args[i + 1]);
-  const pc = os.hostname();
+  const pc = process.env.PC_NOMBRE ?? os.hostname(); // PC_NOMBRE: para distinguir dos trabajadores en la misma PC (pruebas)
   console.log(`Trabajador ${pc} mirando ${cola} (Ctrl+C para terminar)`);
   for (;;) {
     const t = fs.existsSync(cola) ? tomarTarea(cola, pc) : null;
