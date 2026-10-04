@@ -239,6 +239,17 @@ paso("Seguimiento (OpenCV)", () => {
   return `${d.cuadros} cuadros seguidos`;
 }, { opcional: true });
 
+// ---- Fase 4: logo vectorizado para Logo3D ----
+paso("Vectorizar logo", () => {
+  const png = path.join(TMP, "logo.png");
+  // "A" negra sobre blanco: 1 pieza y 1 agujero
+  correr(herr.ffmpeg, ["-v", "error", "-y", "-f", "lavfi", "-i", "color=white:s=200x200", "-vf",
+    "drawbox=x=40:y=40:w=120:h=120:c=black:t=fill,drawbox=x=80:y=80:w=40:h=40:c=white:t=fill", "-frames:v", "1", png]);
+  const out = correr(herr.python, ["scripts/vectorizar_logo.py", png, path.join(TMP, "logo.svg")]);
+  if (!/1 piezas, 1 agujeros/.test(out)) throw new Error(out.trim());
+  return "cuadrado con agujero → 1 pieza, 1 agujero";
+});
+
 paso("Mixkit (biblioteca)", () => {
   const r = spawnSync("node", ["scripts/mixkit.mjs", "verificar"], { encoding: "utf8" });
   const ultima = r.stdout.trim().split("\n").at(-1);

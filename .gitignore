@@ -32,3 +32,7 @@ modelos-whisper/
 
 # Python
 __pycache__/
+
+# Capas 3D renderizadas en caché (scripts/capa3d.mjs): se regeneran
+public/trabajos/*/cache3d/
+!public/biblioteca/**/LICENCIAS.md

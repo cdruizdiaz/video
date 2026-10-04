@@ -143,10 +143,13 @@ MediaPipe saca el cuerpo y la cara cuadro a cuadro y lo pasa a los huesos del pe
 
 ### 3D (Three.js, sin modelo de diseñador)
 
-- Dependencias: `@remotion/three`, `three`, `@react-three/fiber` (instaladas). Render y stills con **`--gl=angle`** (sin placa NVIDIA: lento, ~18 s por cuadro 1080×1920 en la notebook i3); `hoja_animacion.mjs` y `exportar.mjs` aceptan `--gl angle`.
+- Dependencias: `@remotion/three`, `three`, `@react-three/fiber` (instaladas). Render y stills con **`--gl=angle`** (ANGLE usa la gráfica integrada por D3D11: ~0,1–0,25 s por cuadro 1080×1920 en la i3, medido el 2026-10-04); `hoja_animacion.mjs`, `revisar.mjs` y `exportar.mjs` aceptan `--gl angle`.
+- `EscenaBloomie3D`: `estilo: "toon"` (3 tonos planos, más parecido al 2D), `recortar` (lienzo solo alrededor del personaje: igual imagen, para PCs donde WebGL va por software) y `saltoMax`.
+- Capa en caché: una composición solo-3D transparente → `node scripts/capa3d.mjs <comp> <ID>` → `datos/cache3d.json` → la final la monta con `<OffthreadVideo transparent>` (ejemplo: `src/trabajos/2026-10-04_claudio_prueba-3d/`). Se re-renderiza sola si cambian las props, el código del rig/personajes/trabajo o piezas/rig.json.
+- Cámaras de `ThreeCanvas`: pasar siempre `rotation: [0, 0, 0]` con `position`; si no, R3F la apunta al origen y la escena sale torcida y corrida.
 - Bloomie 3D: `src/personajes/bloomie/Bloomie3D.tsx` construye el modelo por código desde piezas.json (volúmenes elipsoidales + pétalos extruidos de los contornos del .ai + contorno) y lo mueve con los huesos del rig. `EscenaBloomie3D` arma el canvas (cámara ortográfica en px, luz, piso que recibe la sombra) y `caraEnEscena` da la transformación para dibujar la cara 2D (`RostroPersonaje`) sobre la cabeza girada.
 - Muestra: composición `personaje-bloomie-3d` (gira, saluda y habla); ejemplo sobre video: `rastro-bloomie-creators-3d`.
-- Para otro personaje: copiar Bloomie3D.tsx y ajustar las formas (o, mejor, pedir un modelo `.glb` a un modelador 3D y cargarlo con Three).
+- Para otro personaje: copiar Bloomie3D.tsx y ajustar las formas, o (mejor) un `.glb` con huesos y animaciones (de un modelador, de Blender o de una biblioteca libre) con `Modelo3D` (`src/plantillas/comunes/`): `clips: [{ nombre: "Wave", desde: 30, hasta: 75 }, …]` con fundidos. Biblioteca: `public/biblioteca/modelos3d/` (licencias en `LICENCIAS.md` de esa carpeta).
 
 ## 4. Exportar
 

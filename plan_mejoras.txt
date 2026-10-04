@@ -233,7 +233,7 @@ Riesgos y decisiones pendientes
 ------------------------------------------------------------------
 Estado
 ------------------------------------------------------------------
-F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 HECHA (2026-10-04, sin el 2.4 opcional) · F3 HECHA (2026-10-04) · F4 pendiente · F5 pendiente · F6 pendiente
+F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 HECHA (2026-10-04, sin el 2.4 opcional) · F3 HECHA (2026-10-04) · F4 HECHA (2026-10-04) · F5 pendiente · F6 pendiente
 
 F0 — Orden y base  [HECHA 2026-10-04]
   [x] 0.1 Pendientes commiteados (517ca6d). main es ancestro de la rama: merge fast-forward al cerrar cada fase.
@@ -292,3 +292,20 @@ F3 — Integración con video real (2,5D)  [HECHA 2026-10-04]  (trabajo de prueb
           de PersonajeRig (lugarEn, 3 tests). Prueba: lucia70 7–13 s, la cámara se corre ~270 px y Bloomie sigue en el
           piso. CLAUDE.md: la regla 5 de la receta 2,5D suma "si la cámara se mueve, usar seguimiento" y la 5b (detrás).
   [x] verificar-suite: 3 chequeos opcionales (recorte, profundidad, seguimiento). 44 tests.
+
+F4 — 3D dentro de Remotion  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10-04_claudio_prueba-3d)
+  [x] 4.1 EscenaBloomie3D: recortar (lienzo de tamaño fijo alrededor del personaje, escena en coordenadas del lienzo
+          porque R3F lee la cámara una sola vez) + scripts/capa3d.mjs (huella de props + código + piezas/rig.json →
+          webm VP9 con alfa en cache3d/, reuso verificado, datos/cache3d.json). HALLAZGO: la nota "18 s por cuadro"
+          estaba vieja: ANGLE usa la Intel UHD por D3D11 → ~0,09 s/cuadro; el recorte no acelera acá (misma imagen)
+          y la final desde caché tarda igual que en vivo. Queda para escenas pesadas / PCs sin WebGL rápido.
+  [x] 4.2 estilo "toon" (MeshToonMaterial con rampa de 3 tonos) en Bloomie3D / EscenaBloomie3D.
+  [x] 4.3 Plantilla Logo3D (zod): contorno SVG extruido con bisel, frente con textura del PNG (UV = coordenadas del
+          SVG), animaciones giro / caída / armado por piezas, brillo que cruza y texto con la fuente de la marca.
+          Los kits solo tienen PNG → scripts/vectorizar_logo.py (OpenCV, piezas + agujeros, evenodd). Probado con
+          Volto (armado) y Rastro (giro, 16:9). Arreglo: escala de cámara en perspectiva (px por unidad en z = 0).
+  [x] 4.4 Modelo3D (src/plantillas/comunes): .glb con GLTFLoader + SkeletonUtils + AnimationMixer sincronizado
+          al cuadro, clips por nombre con fundidos, escala por altura en px y base en los pies (Box3 precisa). Sin
+          @react-three/drei (no hizo falta). Biblioteca public/biblioteca/modelos3d/ + LICENCIAS.md (RobotExpressive
+          CC0). Arreglo: rotation [0,0,0] en la cámara (R3F la apuntaba al origen).
+  [x] verificar-suite: "Vectorizar logo". equipo.json: webglVelocidad.

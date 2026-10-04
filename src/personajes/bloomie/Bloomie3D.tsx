@@ -13,18 +13,69 @@ import { matricesMundo, type Matriz, type Pose } from "../../rig/pose";
 import { cargarPersonaje } from "../../rig/personajes";
 
 // ---------- Forma (puntos del .ai) ----------
-const COLORES = { cabeza: "#ef913c", petalo: "#dc7b26", cuerpo: "#ef913c", pie: "#ea8021", mano: "#ef913c", contorno: "#a8650a" };
+const COLORES = {
+  cabeza: "#ef913c",
+  petalo: "#dc7b26",
+  cuerpo: "#ef913c",
+  pie: "#ea8021",
+  mano: "#ef913c",
+  contorno: "#a8650a",
+};
 const PROF = { cabeza: 0.72, cuerpo: 0.78 }; // radio en z como fracción del radio en x
 const PETALO = { grosor: 16, bisel: 9, atras: -42, inclina: 0.42 }; // pt · pt · z detrás del centro de la cabeza · rad
 const CONTORNO = 3.2; // pt de contorno
 const MATERIAL = { rugosidad: 0.62, metal: 0 };
+// Sombreado "toon" (dibujo animado): 3 tonos planos en vez del degradé, combina mejor con el estilo 2D
+const TOON_TONOS = [110, 190, 255]; // brillo de cada banda (0–255): sombra, medio tono, luz
+export type Estilo3D = "suave" | "toon";
+const EstiloContexto = React.createContext<Estilo3D>("suave");
+let rampaToon: THREE.DataTexture | null = null;
+const rampa = () => {
+  if (!rampaToon) {
+    const datos = new Uint8Array(TOON_TONOS.flatMap((v) => [v, v, v, 255]));
+    rampaToon = new THREE.DataTexture(
+      datos,
+      TOON_TONOS.length,
+      1,
+      THREE.RGBAFormat,
+    );
+    rampaToon.minFilter = THREE.NearestFilter;
+    rampaToon.magFilter = THREE.NearestFilter;
+    rampaToon.generateMipmaps = false;
+    rampaToon.needsUpdate = true;
+  }
+  return rampaToon;
+};
 export const CARA_Z = 0.86; // la cara va sobre la cabeza, a esta fracción del radio en z
 
 type Elipsoide = { c: [number, number, number]; r: [number, number, number] };
 
-const m4 = (m: Matriz) => new THREE.Matrix4().set(m[0], m[2], 0, m[4], m[1], m[3], 0, m[5], 0, 0, 1, 0, 0, 0, 0, 1);
+const m4 = (m: Matriz) =>
+  new THREE.Matrix4().set(
+    m[0],
+    m[2],
+    0,
+    m[4],
+    m[1],
+    m[3],
+    0,
+    m[5],
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+  );
 
-const caja2 = (c: number[]) => ({ cx: (c[0] + c[2]) / 2, cy: (c[1] + c[3]) / 2, rx: (c[2] - c[0]) / 2, ry: (c[3] - c[1]) / 2 });
+const caja2 = (c: number[]) => ({
+  cx: (c[0] + c[2]) / 2,
+  cy: (c[1] + c[3]) / 2,
+  rx: (c[2] - c[0]) / 2,
+  ry: (c[3] - c[1]) / 2,
+});
 
 // Datos del modelo a partir de piezas.json y rig.json (una sola vez)
 const modelo = (() => {
@@ -33,15 +84,25 @@ const modelo = (() => {
   const pieza = (id: string) => v.piezas.find((x) => x.id === id);
   const cab = caja2(v.cabeza!.caja);
   const cue = caja2(pieza("cuerpo")!.caja);
-  const cabeza: Elipsoide = { c: [cab.cx, cab.cy, 0], r: [cab.rx * 0.98, cab.ry * 0.98, cab.rx * PROF.cabeza] };
-  const cuerpo: Elipsoide = { c: [cue.cx, cue.cy + 6, -8], r: [cue.rx * 0.82, cue.ry * 1.05, cue.rx * PROF.cuerpo] };
+  const cabeza: Elipsoide = {
+    c: [cab.cx, cab.cy, 0],
+    r: [cab.rx * 0.98, cab.ry * 0.98, cab.rx * PROF.cabeza],
+  };
+  const cuerpo: Elipsoide = {
+    c: [cue.cx, cue.cy + 6, -8],
+    r: [cue.rx * 0.82, cue.ry * 1.05, cue.rx * PROF.cuerpo],
+  };
   // Pétalos: el contorno del relleno principal, extruido
   const loader = new SVGLoader();
   const petalos = v.piezas
     .filter((x) => x.rol === "corona")
     .map((x) => {
       const t = x.trazos.find((tr) => tr.fill && (tr.op ?? 1) > 0.9)!;
-      const shapes = loader.parse(`<svg xmlns="http://www.w3.org/2000/svg"><path d="${t.d}"/></svg>`).paths.flatMap((pa) => pa.toShapes());
+      const shapes = loader
+        .parse(
+          `<svg xmlns="http://www.w3.org/2000/svg"><path d="${t.d}"/></svg>`,
+        )
+        .paths.flatMap((pa) => pa.toShapes());
       const geo = new THREE.ExtrudeGeometry(shapes, {
         depth: PETALO.grosor,
         bevelEnabled: true,
@@ -86,9 +147,21 @@ export const CABEZA_3D = modelo.cabeza;
 // ---------- Mallas ----------
 const esfera = new THREE.SphereGeometry(1, 48, 32);
 
-const Material: React.FC<{ color: string }> = ({ color }) => (
-  <meshStandardMaterial color={color} roughness={MATERIAL.rugosidad} metalness={MATERIAL.metal} side={THREE.DoubleSide} />
-);
+const Material: React.FC<{ color: string }> = ({ color }) =>
+  React.useContext(EstiloContexto) === "toon" ? (
+    <meshToonMaterial
+      color={color}
+      gradientMap={rampa()}
+      side={THREE.DoubleSide}
+    />
+  ) : (
+    <meshStandardMaterial
+      color={color}
+      roughness={MATERIAL.rugosidad}
+      metalness={MATERIAL.metal}
+      side={THREE.DoubleSide}
+    />
+  );
 
 // Elipsoide con contorno (casco invertido: la misma forma un poco más grande, de color oscuro y del lado de atrás)
 const Volumen: React.FC<{ e: Elipsoide; color: string }> = ({ e, color }) => (
@@ -96,13 +169,20 @@ const Volumen: React.FC<{ e: Elipsoide; color: string }> = ({ e, color }) => (
     <mesh geometry={esfera} scale={e.r} castShadow>
       <Material color={color} />
     </mesh>
-    <mesh geometry={esfera} scale={e.r.map((r) => r + CONTORNO) as [number, number, number]}>
+    <mesh
+      geometry={esfera}
+      scale={e.r.map((r) => r + CONTORNO) as [number, number, number]}
+    >
       <meshBasicMaterial color={COLORES.contorno} side={THREE.BackSide} />
     </mesh>
   </group>
 );
 
-const Petalo: React.FC<{ geo: THREE.ExtrudeGeometry; centro: [number, number]; pivote: number[] }> = ({ geo, centro, pivote }) => {
+const Petalo: React.FC<{
+  geo: THREE.ExtrudeGeometry;
+  centro: [number, number];
+  pivote: number[];
+}> = ({ geo, centro, pivote }) => {
   // Se inclina hacia atrás alrededor de su raíz (eje perpendicular a la dirección cabeza → pétalo)
   const q = useMemo(() => {
     const ux = centro[0] - modelo.cabeza.c[0];
@@ -126,7 +206,10 @@ const Petalo: React.FC<{ geo: THREE.ExtrudeGeometry; centro: [number, number]; p
 };
 
 // Un hueso del rig 2D como grupo 3D (matriz de mundo del hueso)
-const Hueso: React.FC<{ m?: Matriz; children: React.ReactNode }> = ({ m, children }) => {
+const Hueso: React.FC<{ m?: Matriz; children: React.ReactNode }> = ({
+  m,
+  children,
+}) => {
   const mat = useMemo(() => (m ? m4(m) : new THREE.Matrix4()), [m]);
   return (
     <group matrixAutoUpdate={false} matrix={mat}>
@@ -136,45 +219,71 @@ const Hueso: React.FC<{ m?: Matriz; children: React.ReactNode }> = ({ m, childre
 };
 
 // Bloomie 3D con la pose del rig (vista de frente) y girado `rotY` radianes alrededor del eje vertical
-export const Bloomie3D: React.FC<{ pose: Pose; rotY: number; escala: number }> = ({ pose, rotY, escala }) => {
+export const Bloomie3D: React.FC<{
+  pose: Pose;
+  rotY: number;
+  escala: number;
+  estilo?: Estilo3D;
+}> = ({ pose, rotY, escala, estilo = "suave" }) => {
   const mundo = matricesMundo(modelo.rig, { ...pose, vista: "frente" });
   const huesoDe = (pieza: string) => mundo[modelo.rig.piezas[pieza] ?? "raiz"];
   return (
-    <group rotation={[0, rotY, 0]} scale={[escala, -escala, escala]}>
-      <Hueso m={huesoDe("cuerpo")}>
-        <Volumen e={modelo.cuerpo} color={COLORES.cuerpo} />
-      </Hueso>
-      {modelo.pies.map((p) => (
-        <Hueso key={p.id} m={huesoDe(p.id)}>
-          <Volumen e={{ c: [p.c[0], p.c[1], 6], r: [20, 15, 25] }} color={COLORES.pie} />
+    <EstiloContexto.Provider value={estilo}>
+      <group rotation={[0, rotY, 0]} scale={[escala, -escala, escala]}>
+        <Hueso m={huesoDe("cuerpo")}>
+          <Volumen e={modelo.cuerpo} color={COLORES.cuerpo} />
         </Hueso>
-      ))}
-      {modelo.manos.map((m) => (
-        <Hueso key={m.id} m={huesoDe(m.id)}>
-          <Volumen e={{ c: [m.c[0], m.c[1], 14], r: [15, 22, 15] }} color={COLORES.mano} />
-        </Hueso>
-      ))}
-      <Hueso m={huesoDe("cabeza")}>
-        <Volumen e={modelo.cabeza} color={COLORES.cabeza} />
-      </Hueso>
-      {modelo.petalos.map((pt) => {
-        const hueso = modelo.rig.huesos.find((h) => h.id === modelo.rig.piezas[pt.id]);
-        return (
-          <Hueso key={pt.id} m={mundo[modelo.rig.piezas[pt.id]]}>
-            <Petalo geo={pt.geo} centro={pt.centro} pivote={hueso?.pivote ?? pt.centro} />
+        {modelo.pies.map((p) => (
+          <Hueso key={p.id} m={huesoDe(p.id)}>
+            <Volumen
+              e={{ c: [p.c[0], p.c[1], 6], r: [20, 15, 25] }}
+              color={COLORES.pie}
+            />
           </Hueso>
-        );
-      })}
-    </group>
+        ))}
+        {modelo.manos.map((m) => (
+          <Hueso key={m.id} m={huesoDe(m.id)}>
+            <Volumen
+              e={{ c: [m.c[0], m.c[1], 14], r: [15, 22, 15] }}
+              color={COLORES.mano}
+            />
+          </Hueso>
+        ))}
+        <Hueso m={huesoDe("cabeza")}>
+          <Volumen e={modelo.cabeza} color={COLORES.cabeza} />
+        </Hueso>
+        {modelo.petalos.map((pt) => {
+          const hueso = modelo.rig.huesos.find(
+            (h) => h.id === modelo.rig.piezas[pt.id],
+          );
+          return (
+            <Hueso key={pt.id} m={mundo[modelo.rig.piezas[pt.id]]}>
+              <Petalo
+                geo={pt.geo}
+                centro={pt.centro}
+                pivote={hueso?.pivote ?? pt.centro}
+              />
+            </Hueso>
+          );
+        })}
+      </group>
+    </EstiloContexto.Provider>
   );
 };
-
 
 // ---------- Escena 3D lista para usar ----------
 // Canvas transparente del tamaño del cuadro, cámara ortográfica en píxeles (x a la derecha, y hacia abajo como en
 // SVG), luz de arriba a la izquierda y un plano de piso invisible que solo recibe la sombra. Render con --gl=angle.
-const LUZ_3D = { pos: [-650, 900, 1000] as [number, number, number], intensidad: 1.3, ambiente: 1.05, cielo: 0.35 };
+const LUZ_3D = {
+  pos: [-650, 900, 1000] as [number, number, number],
+  intensidad: 1.3,
+  ambiente: 1.05,
+  cielo: 0.35,
+};
 const SOMBRA_3D = { opacidad: 0.4, inclina: 0.35 }; // el plano del piso se inclina hacia cámara (rad)
+// Lienzo recortado (recortar): caja alrededor de los pies, en pt del personaje (se multiplica por la escala).
+// WebGL sin placa dedicada cuesta por píxel: un lienzo del tamaño del personaje rinde varias veces más.
+const CAJA_3D = { ancho: 560, arriba: 470, abajo: 110 };
 
 export const EscenaBloomie3D: React.FC<{
   pose: Pose;
@@ -185,21 +294,52 @@ export const EscenaBloomie3D: React.FC<{
   ancho: number;
   alto: number;
   sombra?: number; // opacidad de la sombra en el piso
-}> = ({ pose, rotY, x, yPies, escala, ancho, alto, sombra = SOMBRA_3D.opacidad }) => {
+  recortar?: boolean | { ancho: number; arriba: number; abajo: number }; // lienzo solo alrededor del personaje
+  saltoMax?: number; // pt que puede subir (saltos): agranda la caja hacia arriba
+  estilo?: Estilo3D; // "toon" = 3 tonos planos (dibujo animado)
+}> = ({
+  pose,
+  rotY,
+  x,
+  yPies,
+  escala,
+  ancho,
+  alto,
+  sombra = SOMBRA_3D.opacidad,
+  recortar = false,
+  saltoMax = 0,
+  estilo = "suave",
+}) => {
   const objetivo = useMemo(() => new THREE.Object3D(), []);
+  // Lienzo: todo el cuadro o una caja de tamaño fijo que acompaña a los pies (el tamaño no cambia entre cuadros
+  // para no recrear el contexto WebGL; se mueve con left/top y la escena se dibuja en coordenadas del lienzo:
+  // la cámara del Canvas solo se lee al crearlo)
+  const c = recortar === true ? CAJA_3D : recortar || null;
+  const w = c ? Math.ceil((c.ancho * escala) / 2) * 2 : ancho;
+  const h = c
+    ? Math.ceil(((c.arriba + saltoMax + c.abajo) * escala) / 2) * 2
+    : alto;
+  const izq = c ? Math.round(x - w / 2) : 0;
+  const arriba = c ? Math.round(yPies - (c.arriba + saltoMax) * escala) : 0;
   return (
     <ThreeCanvas
-      width={ancho}
-      height={alto}
+      width={w}
+      height={h}
       orthographic
       flat // sin mapeo de tonos: respeta los colores de Bloomie
       shadows="soft"
-      camera={{ position: [ancho / 2, -alto / 2, 2000], rotation: [0, 0, 0], zoom: 1, near: 1, far: 6000 }}
-      style={{ position: "absolute", left: 0, top: 0 }}
+      camera={{
+        position: [w / 2, -h / 2, 2000],
+        rotation: [0, 0, 0],
+        zoom: 1,
+        near: 1,
+        far: 6000,
+      }}
+      style={{ position: "absolute", left: izq, top: arriba }}
     >
       <ambientLight intensity={LUZ_3D.ambiente} />
       <hemisphereLight args={["#fff4e0", "#6b4a3a", LUZ_3D.cielo]} />
-      <group position={[x, -yPies, 0]}>
+      <group position={[x - izq, -(yPies - arriba), 0]}>
         <primitive object={objetivo} />
         <directionalLight
           position={LUZ_3D.pos}
@@ -219,7 +359,7 @@ export const EscenaBloomie3D: React.FC<{
           <planeGeometry args={[1600, 1600]} />
           <shadowMaterial opacity={sombra} />
         </mesh>
-        <Bloomie3D pose={pose} rotY={rotY} escala={escala} />
+        <Bloomie3D pose={pose} rotY={rotY} escala={escala} estilo={estilo} />
       </group>
     </ThreeCanvas>
   );
