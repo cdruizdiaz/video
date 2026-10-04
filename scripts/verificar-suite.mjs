@@ -250,6 +250,28 @@ paso("Vectorizar logo", () => {
   return "cuadrado con agujero → 1 pieza, 1 agujero";
 });
 
+// ---- Fase 5: Blender ----
+paso("Blender", () => {
+  requiere(herr.blender);
+  const ver = correr(herr.blender, ["-b", "--factory-startup", "--version"]).split("\n")[0].trim();
+  // Render mínimo con Eevee: un cubo de 64 px con fondo transparente
+  const png = path.join(TMP, "blender.png");
+  const py = `import bpy
+sc = bpy.context.scene
+motores = [e.identifier for e in bpy.types.RenderSettings.bl_rna.properties["engine"].enum_items]
+sc.render.engine = "BLENDER_EEVEE_NEXT" if "BLENDER_EEVEE_NEXT" in motores else "BLENDER_EEVEE"
+sc.render.resolution_x = sc.render.resolution_y = 64
+sc.render.film_transparent = True
+sc.render.filepath = r"${png}"
+bpy.ops.render.render(write_still=True)`;
+  const script = path.join(TMP, "blender_prueba.py");
+  fs.writeFileSync(script, py);
+  correr(herr.blender, ["-b", "--factory-startup", "--python-exit-code", "1", "-P", script]);
+  existe(png);
+  const blend = path.join(herr.carpetaPersonajes, "bloomie", "bloomie_3d.blend");
+  return `${ver} · Eevee renderiza${fs.existsSync(blend) ? " · Bloomie 3D armado" : ""}`;
+}, { opcional: true });
+
 paso("Mixkit (biblioteca)", () => {
   const r = spawnSync("node", ["scripts/mixkit.mjs", "verificar"], { encoding: "utf8" });
   const ultima = r.stdout.trim().split("\n").at(-1);

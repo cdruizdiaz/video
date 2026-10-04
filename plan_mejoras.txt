@@ -233,7 +233,7 @@ Riesgos y decisiones pendientes
 ------------------------------------------------------------------
 Estado
 ------------------------------------------------------------------
-F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 HECHA (2026-10-04, sin el 2.4 opcional) · F3 HECHA (2026-10-04) · F4 HECHA (2026-10-04) · F5 pendiente · F6 pendiente
+F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 HECHA (2026-10-04, sin el 2.4 opcional) · F3 HECHA (2026-10-04) · F4 HECHA (2026-10-04) · F5 HECHA (2026-10-04) · F6 pendiente
 
 F0 — Orden y base  [HECHA 2026-10-04]
   [x] 0.1 Pendientes commiteados (517ca6d). main es ancestro de la rama: merge fast-forward al cerrar cada fase.
@@ -309,3 +309,22 @@ F4 — 3D dentro de Remotion  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10-04
           @react-three/drei (no hizo falta). Biblioteca public/biblioteca/modelos3d/ + LICENCIAS.md (RobotExpressive
           CC0). Arreglo: rotation [0,0,0] en la cámara (R3F la apuntaba al origen).
   [x] verificar-suite: "Vectorizar logo". equipo.json: webglVelocidad.
+
+F5 — Blender sin interfaz  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10-04_claudio_prueba-blender)
+  [x] 5.1 Blender 5.2.2 LTS PORTABLE en _herramientas/blender (cambio respecto del plan: el MSI de winget quedó
+          esperando permisos de administrador; el zip no los necesita y la ruta fija sirve igual en las dos PC).
+          Eevee funciona en modo -b con la Intel UHD. Chequeo opcional "Blender" en verificar-suite.
+  [x] 5.2 scripts/blender/: render.py (Eevee, fondo transparente, cámara ortográfica en px, sol desde el ángulo de
+          pantalla, estilo toon, cara animada) + render.mjs (orquesta y guarda la capa con huella en cache3d/).
+          En vez de una "escena.json" genérica con modelo/cámara/luz libres, se armó el flujo concreto del rig.
+  [x] 5.3 personaje_desde_rig.py: mismos huesos y pivotes que rig.json, piezas pegadas a su hueso, contorno toon,
+          cara como calcomanía (shrinkwrap) con textura de CaraTextura → .blend + .glb (carga en Remotion con
+          Modelo3D: probado). Las poses no se convierten a "acciones" con interpolación propia: poses.ts evalúa el
+          motor TS cuadro a cuadro (vite-node) y Blender aplica cada cuadro → anima idéntico al 2D (incluye mocap,
+          trayectos, saltos). Arreglos de las pruebas: material negro del importador SVG, sombra de la calcomanía,
+          secuencia de cara corrida un cuadro, rutas relativas de Blender, --python-exit-code.
+  [x] 5.4 render.mjs: 130 cuadros 1080×1920 en ~4 min en la i3 (Blender 1,5–2 s/cuadro).
+  [x] 5.5 Comando /personaje-3d (.claude/commands/personaje-3d.md) + scripts/blender/hoja_giro.mjs (8 ángulos en 29 s).
+  [x] Criterio de cierre: composición claudio-prueba-blender-video — Bloomie de Blender (sol a 135°, como las
+      sombras del pasto) camina 110 cuadros sobre el video del guitarrista y pasa DETRÁS del teclado, del hombre que
+      cruza y del guitarrista (recorte por profundidad de F3). 3 min de render en la i3.

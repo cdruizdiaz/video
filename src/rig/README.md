@@ -141,6 +141,20 @@ MediaPipe saca el cuerpo y la cara cuadro a cuadro y lo pasa a los huesos del pe
 - Profundidades de Bloomie: explícitas en `public/personajes/bloomie/rig.json` → `vistas.frente.profundidad` (se pueden ajustar ahí; el editor del Studio las conserva al guardar).
 - Valores probados: luz de la escena con `intensidad` 0,85; `yaw` ±0,65 como máximo; sombra proyectada inclinada -0,6 y achatada 0,3, opacidad 0,5, desenfoque 8 (ver `BloomieCreators.tsx`).
 
+### 3D con Blender (escenas pesadas, más calidad; comando `/personaje-3d`)
+
+```
+blender -b --factory-startup --python-exit-code 1 -P scripts/blender/personaje_desde_rig.py -- <nombre> --cara cara.png
+node scripts/blender/hoja_giro.mjs <nombre>                         # out/personajes/<nombre>/giro_3d.png
+node scripts/blender/render.mjs <ID> <capa> datos/animacion.json <duración> --cara <comp-cara> [--rotY 0.35] [--estilo toon]
+```
+
+- Blender 5.2 LTS portable en `C:/Videos/_herramientas/blender/` (`blender` en `herramientas.json`; sin instalador ni permisos de administrador).
+- **Modelo** (`personaje_desde_rig.py`): los mismos huesos y pivotes que `rig.json` (roll 0, apuntando hacia arriba); cabeza/cuerpo elipsoides, manos/pies elipsoides chicos, el resto el contorno de la pieza extruido con bisel (la corona inclinada hacia atrás); contorno de dibujo animado (Solidify invertido); cara = calcomanía (grilla con shrinkwrap sobre la cabeza) con textura. Guarda `C:/Videos/personajes/<nombre>/<nombre>_3d.blend` y `public/personajes/<nombre>/<nombre>.glb` (sirve para `Modelo3D` en Remotion).
+- **Animación = el rig 2D**: `scripts/blender/poses.ts` (con `npx vite-node`) evalúa las pistas de un `animacion.json` (PersonajeRigProps) cuadro a cuadro con el mismo motor de Remotion, y `render.py` las aplica a los huesos (rot del rig → giro sobre −Z local; x, y → location; los trayectos mueven la cámara). La **cara** es una secuencia PNG de la composición `CaraTextura` (`src/rig/CaraTextura.tsx`): expresiones, parpadeo, mirada y lip sync del 2D sobre la cabeza 3D.
+- **Render** (`render.mjs`): Eevee con fondo transparente, cámara ortográfica en px (1 pt = `escala` px, pies en `x, y`), sol desde el ángulo de pantalla `--luz` (como la receta 2,5D), `--estilo toon` (3 tonos). Capa VP9 con alfa en `cache3d/` con huella (se reusa). ~1,5–2 s por cuadro 1080×1920 en la i3 (+20 s de arranque). Eevee no tiene "atrapa sombras": la sombra de contacto la pone Remotion (ejemplo `src/trabajos/2026-10-04_claudio_prueba-blender/Final.tsx`).
+- Rutas: Blender toma las rutas relativas desde el .blend → los scripts usan rutas absolutas. `--python-exit-code 1` para que un error de Python corte el proceso.
+
 ### 3D (Three.js, sin modelo de diseñador)
 
 - Dependencias: `@remotion/three`, `three`, `@react-three/fiber` (instaladas). Render y stills con **`--gl=angle`** (ANGLE usa la gráfica integrada por D3D11: ~0,1–0,25 s por cuadro 1080×1920 en la i3, medido el 2026-10-04); `hoja_animacion.mjs`, `revisar.mjs` y `exportar.mjs` aceptan `--gl angle`.

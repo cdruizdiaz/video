@@ -1,0 +1,15 @@
+{
+  "personaje": "bloomie",
+  "expresion": "feliz",
+  "x": 540,
+  "y": 1500,
+  "escala": 1.5,
+  "pistas": [
+    { "tipo": "respirar" },
+    { "tipo": "parpadear", "semilla": 3 },
+    { "tipo": "caminar", "fin": 50 },
+    { "tipo": "trayecto", "de": [300, 1500], "a": [700, 1500], "duracion": 50, "suave": true },
+    { "tipo": "saltar", "inicio": 55, "duracion": 30, "altura": 80 },
+    { "tipo": "saludar", "inicio": 90, "duracion": 40 }
+  ]
+}

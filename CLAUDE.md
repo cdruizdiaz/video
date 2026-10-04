@@ -29,7 +29,7 @@ Compartido entre trabajos:
 - `public/personajes/<nombre>/` + `src/personajes/`: biblioteca de personajes animables con rig (piezas, rig, correcciones); el `.ai` original en `carpetaPersonajes` (`C:/Videos/personajes/`). Ver `src/rig/README.md`.
 
 Reglas:
-- Comandos: **`/nuevo-trabajo <cliente> <pieza> [crudos] [brief]`** abre un trabajo; **`/cerrar-trabajo <ID>`** lo cierra y archiva. **`/estado [todos]`** lista los trabajos abiertos con su última entrega y lo que falta (`node scripts/estado.mjs`). **`/a-premiere <ID>`** exporta la última versión a Premiere. **`/rig-personaje <archivo.ai> <nombre>`** suma un personaje a la biblioteca de rigs.
+- Comandos: **`/nuevo-trabajo <cliente> <pieza> [crudos] [brief]`** abre un trabajo; **`/cerrar-trabajo <ID>`** lo cierra y archiva. **`/estado [todos]`** lista los trabajos abiertos con su última entrega y lo que falta (`node scripts/estado.mjs`). **`/a-premiere <ID>`** exporta la última versión a Premiere. **`/rig-personaje <archivo.ai> <nombre>`** suma un personaje a la biblioteca de rigs; **`/personaje-3d <nombre>`** arma su modelo 3D en Blender (mismos huesos y poses).
 - **Guion audiovisual = fuente de verdad** de cada pieza: `src/trabajos/<ID>/guion_<pieza>.md` (formato en `src/trabajos/_plantilla/GUION.md`). **`/guion <ID|descripción>`** lo genera; cuando el usuario lo edita o pega una versión nueva, **`/aplicar-guion <ID>`** aplica SOLO lo que cambió (vía `git diff` del guion) y renderiza una `_vN` nueva. Si se cambia el video por otro pedido, actualizar también el guion para que siga describiendo el video real.
 - Si el pedido del usuario no nombra un trabajo, preguntar si es uno nuevo o la continuación de uno existente.
 - **Nunca sobrescribir un archivo de `out/<ID>/final/`**: cada cambio es una versión nueva `_vN+1`. Anotar cada entrega en `TRABAJO.md`.
@@ -91,6 +91,7 @@ Reglas:
   - Whisper omite muletillas ("eh", "este"): para detectarlas, mirar los huecos entre palabras, no el texto.
   - No hay GPU NVIDIA en ninguna notebook (2026-09-29): whisper.cpp corre en CPU con el binario oficial.
   - Nota: el ejecutable está en `build/bin/whisper-cli.exe` (se reubicó desde `Release/` del zip oficial para que `@remotion/install-whisper-cpp` lo encuentre).
+- Blender 5.2 LTS portable (`blender` de `herramientas.json`, en `C:/Videos/_herramientas/blender/`): siempre `-b --factory-startup --python-exit-code 1 -P <script> -- <args>`. Scripts en `scripts/blender/` (modelo desde el rig, poses, render Eevee, hoja de giro). Eevee ~1,5–2 s por cuadro 1080×1920 en la i3.
 - Piper TTS (voz sintética local, gratis, sin internet): `python -m piper -m C:/Videos/_herramientas/modelos-piper/<voz>.onnx -f salida.wav` (texto por stdin; Python del `.venv`). Voces bajadas: `en_US-hfc_female-medium`, `en_US-amy-medium`, `en_US-kristin-medium`; otras con `python -m piper.download_voices --data-dir C:/Videos/_herramientas/modelos-piper <voz>`. Voz de nene: subir el tono con ffmpeg `rubberband=pitch=1.35:formant=shifted`. Ejemplo: `src/trabajos/2026-10-01_claudio_bloomie/preparar_voz.sh` (voz + Whisper `--idioma en` para sincronizar boca y texto).
   - **Atajo: `node scripts/voz.mjs "texto" <salida.wav> [--voz es_MX-claude-high] [--nene] [--velocidad 1.1]`** → Piper + recorte de silencios + -14 LUFS (medido con ebur128) + tiempos por palabra con Whisper en `<salida>.json`. Voces en español: `es_AR-daniela-high` (default, `vozPiperEs`), `es_MX-claude-high`. Piper no lee bien `¡¿` (el script los saca) y a veces acentúa mal el voseo ("alcanzás"): escuchar y, si hace falta, reescribir la palabra.
 - Rhubarb Lip Sync (`rhubarb` en `herramientas.json`): **`node scripts/lipsync_rhubarb.mjs <audio> <salida.json> [--texto "frase"|archivo] [--ingles]`** → bocas A–H/X desde el sonido (reconocedor `phonetic`, sirve para español). ~2 s para 4 s de voz.
@@ -137,6 +138,7 @@ Reglas:
 | Que el personaje copie los movimientos de una persona filmada | `scripts/rig/mocap.py` (MediaPipe) → pista `secuencia` |
 | Boca del personaje sincronizada con una voz | Rhubarb (`scripts/lipsync_rhubarb.mjs` o `scripts/voz.mjs`) → pista `hablar` con `rhubarb` |
 | Animación 2,5D (volumen, giros ¾, sombras, perspectiva) | rig + `luz` / `yaw` / sombra proyectada / `giro3d` (receta en "Personajes animados" y `src/rig/README.md`) |
+| Personaje 3D de calidad (escena pesada, luz real) | Blender portable: `/personaje-3d` → `scripts/blender/render.mjs` (mismas pistas que el 2D, cara del rig como textura) → capa con alfa |
 | Animación 3D | `@remotion/three` + modelo por código (`Bloomie3D.tsx`) o `.glb` animado (`src/plantillas/comunes/Modelo3D.tsx`: clips por nombre, sincronizados con el cuadro); render `--gl=angle` |
 | Logo de marca en 3D (entrada / cierre) | `scripts/vectorizar_logo.py logo.png logo.svg` → plantilla `Logo3D` (giro, caída o armado por piezas; textura del PNG al frente) |
 | Capa 3D que se reusa entre renders | `scripts/capa3d.mjs` (caché por huella) |

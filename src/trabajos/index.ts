@@ -14,6 +14,7 @@ import { composiciones as luciaBloomieVolandoEscoba } from "./2026-10-02_lucia_b
 import { composiciones as claudioPruebaMocap } from "./2026-10-04_claudio_prueba-mocap/composiciones";
 import { composiciones as claudioPrueba25dVideo } from "./2026-10-04_claudio_prueba-25d-video/composiciones";
 import { composiciones as claudioPrueba3d } from "./2026-10-04_claudio_prueba-3d/composiciones";
+import { composiciones as claudioPruebaBlender } from "./2026-10-04_claudio_prueba-blender/composiciones";
 import type { Trabajo } from "./tipos";
 
 export const TRABAJOS: Trabajo[] = [
@@ -32,4 +33,5 @@ export const TRABAJOS: Trabajo[] = [
   { id: "2026-10-04_claudio_prueba-mocap", composiciones: claudioPruebaMocap },
   { id: "2026-10-04_claudio_prueba-25d-video", composiciones: claudioPrueba25dVideo },
   { id: "2026-10-04_claudio_prueba-3d", composiciones: claudioPrueba3d },
+  { id: "2026-10-04_claudio_prueba-blender", composiciones: claudioPruebaBlender },
 ];
