@@ -210,6 +210,35 @@ vision.FaceLandmarker.create_from_options(vision.FaceLandmarkerOptions(base_opti
   return `${JSON.parse(fs.readFileSync(json, "utf8")).poses.length} poses en 2 s · ${det[0]}`;
 }, { opcional: true });
 
+// ---- Fase 3: video real 2,5D (recorte, profundidad, seguimiento) ----
+// Imagen de prueba: cuadro sintético con un objeto que se mueve (testsrc2) → video de 1 s
+const VIDEO_PRUEBA = path.join(TMP, "movil.mp4");
+const videoPrueba = () => {
+  if (!fs.existsSync(VIDEO_PRUEBA))
+    correr(herr.ffmpeg, ["-v", "error", "-y", "-f", "lavfi", "-i", "testsrc2=s=480x270:r=30:d=1", "-pix_fmt", "yuv420p", VIDEO_PRUEBA]);
+  return VIDEO_PRUEBA;
+};
+paso("Recorte de personas", () => {
+  requiere(path.join(path.dirname(herr.modeloCaras), "selfie_multiclass_256x256.tflite"));
+  const out = correr(herr.python, ["scripts/mascaras.py", videoPrueba(), path.join(TMP, "persona.webm")]);
+  return out.trim().split("\n").at(-1).replace(/^OK .*?\.webm · /, "");
+}, { opcional: true });
+paso("Profundidad (ONNX)", () => {
+  requiere(herr.modeloProfundidad);
+  const png = path.join(TMP, "prof.png");
+  correr(herr.ffmpeg, ["-v", "error", "-y", "-f", "lavfi", "-i", "testsrc2=s=480x270", "-frames:v", "1", path.join(TMP, "prof_in.png")]);
+  const out = correr(herr.python, ["scripts/profundidad.py", path.join(TMP, "prof_in.png"), png]);
+  existe(png);
+  return `Depth Anything V2 Small · ${out.trim().split("\n").at(-1).split(" · ").at(-1)} una imagen`;
+}, { opcional: true });
+paso("Seguimiento (OpenCV)", () => {
+  const json = path.join(TMP, "seguimiento.json");
+  correr(herr.python, ["scripts/seguimiento.py", videoPrueba(), json, "--punto", "240,135"]);
+  const d = JSON.parse(fs.readFileSync(json, "utf8"));
+  if (d.cuadros < 25) throw new Error(`Solo ${d.cuadros} cuadros`);
+  return `${d.cuadros} cuadros seguidos`;
+}, { opcional: true });
+
 paso("Mixkit (biblioteca)", () => {
   const r = spawnSync("node", ["scripts/mixkit.mjs", "verificar"], { encoding: "utf8" });
   const ultima = r.stdout.trim().split("\n").at(-1);

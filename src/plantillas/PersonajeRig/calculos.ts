@@ -100,6 +100,18 @@ export const zPersonajeRig = z.object({
   audio: z.object({ archivo: z.string(), desde: z.number().default(0), volumen: z.number().default(1) }).nullable().default(null),
   // Efectos de sonido automáticos (src/rig/sonidos.ts): saltos, cambios de cara/disfraz, giros. Número = volumen.
   sonidos: z.union([z.boolean(), z.number()]).default(false),
+  // Anclado a la escena con cámara en mano (scripts/seguimiento.py): el personaje sigue al punto seguido.
+  // factor = px de la composición por px del video; desde = frame de la composición donde empieza el tramo seguido.
+  seguimiento: z
+    .object({
+      puntos: z.array(z.array(z.number())),
+      escala: z.array(z.number()).optional(),
+      rot: z.array(z.number()).optional(),
+      factor: z.number().default(1),
+      desde: z.number().default(0),
+    })
+    .nullable()
+    .default(null),
   pistas: z.array(zPista),
 });
 export type PersonajeRigProps = z.input<typeof zPersonajeRig>;
@@ -243,7 +255,18 @@ export const lugarEn = (entrada: PersonajeRigProps, f: number) => {
     x = t.de[0] + (t.a[0] - t.de[0]) * s;
     y = t.de[1] + (t.a[1] - t.de[1]) * s - t.arco * 4 * s * (1 - s);
   }
-  return { x, y, escala: props.escala, rot: props.rot };
+  let escala = props.escala;
+  let rot = props.rot;
+  const seg = props.seguimiento;
+  if (seg && seg.puntos.length) {
+    // Lo que se movió el punto seguido desde el primer cuadro (la cámara se corrió, se acercó o giró)
+    const k = Math.min(seg.puntos.length - 1, Math.max(0, Math.round(f - seg.desde)));
+    x += (seg.puntos[k][0] - seg.puntos[0][0]) * seg.factor;
+    y += (seg.puntos[k][1] - seg.puntos[0][1]) * seg.factor;
+    if (seg.escala) escala *= seg.escala[k] / seg.escala[0];
+    if (seg.rot) rot += seg.rot[k] - seg.rot[0];
+  }
+  return { x, y, escala, rot };
 };
 
 export const duracionPistas = (props: PersonajeRigProps, minimo = 30) =>

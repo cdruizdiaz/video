@@ -18,5 +18,6 @@
   "vozPiperEs": "es_AR-daniela-high",
   "rhubarb": "C:/Videos/_herramientas/rhubarb/rhubarb.exe",
   "rife": "C:/Videos/_herramientas/rife/rife-ncnn-vulkan.exe",
-  "realesrgan": "C:/Videos/_herramientas/realesrgan/realesrgan-ncnn-vulkan.exe"
+  "realesrgan": "C:/Videos/_herramientas/realesrgan/realesrgan-ncnn-vulkan.exe",
+  "modeloProfundidad": "C:/Videos/_herramientas/modelos-profundidad/depth_anything_v2_small.onnx"
 }

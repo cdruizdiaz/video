@@ -69,7 +69,8 @@ Reglas:
   2. Volumen: `luz` por pieza con ese ángulo (intensidad ~0,85). Giros: `yaw` hasta **±0,65** (más se nota que es plano); para mirar a alguien, `yaw` + `mirada`.
   3. Integración: sombra de contacto + sombra proyectada (silueta achatada hacia el lado contrario a la luz) y entrada en perspectiva (más chico y más arriba en el piso cuanto más lejos).
   4. Gráficos: globos con `giro3d` y stickers con `volumen`.
-  5. Sobre **video real**: no se mueve la cámara ni se hace zoom (no se modifica el video): la profundidad la pone el personaje.
+  5. Sobre **video real**: no se mueve la cámara ni se hace zoom (no se modifica el video): la profundidad la pone el personaje. **Si la cámara del video se mueve** (en mano), anclar el personaje con seguimiento: `python scripts/seguimiento.py <video> datos/seguimiento.json --punto x,y` (x,y = donde pisa) → prop `seguimiento` de PersonajeRig.
+  5b. **Detrás de cosas o personas:** `python scripts/mascaras.py <video> crudos/<n>_persona.webm` (recorte de personas) o `python scripts/profundidad.py <video> revision/prof.mp4 --recorte crudos/<n>_cerca.webm --punto x,y` (todo lo más cercano que donde pisa el personaje) → `DetrasDePersona` (`src/plantillas/comunes/`): fondo, personaje/texto, y el recorte encima.
   6. Revisar con una hoja de cuadros clave antes del borrador; comparar con la muestra `personaje-<nombre>-muestra-25d`.
 - **Globos de diálogo** (`src/plantillas/comunes/historieta.tsx`), reglas aprendidas:
   - Un globo termina de irse **antes** de que aparezca el siguiente (calcular `queda` por frase con `duracionGlobo`); si dos frases van pegadas y no da el tiempo, se separan las frases, nunca se encima un globo con otro.
@@ -97,7 +98,9 @@ Reglas:
 - Real-ESRGAN (`realesrgan`, Vulkan): **`node scripts/subir_resolucion.mjs <imagen|video> <salida> [--x 2|4] [--anime] [--ancho 1920]`** para fotos viejas, logos chicos o 720p. Video ~2 s por cuadro en la i3: solo tramos cortos.
 - Pulsos de la música (librosa del `.venv`): **`python scripts/pulsos.py <audio> public/trabajos/<ID>/datos/pulsos.json`** → bpm, `pulsos`, `compases`, `golpes`, `energia`. Para cortar al ritmo en `MontajeMusical`: `ajustarAlPulso(tomas, pulsos.compases)` de `calculos.ts` en `composiciones.ts` (también vale para Premiere).
 - DeepFilterNet: `deepFilter.exe <entrada.wav> -o <carpeta>` (Python 3.11 del `.venv` compartido).
-- MediaPipe: Tasks API (`FaceDetector`) con el modelo `blaze_face_short_range.tflite`.
+- MediaPipe: Tasks API (`FaceDetector`) con el modelo `blaze_face_short_range.tflite`; además `pose_landmarker_full.task`, `face_landmarker.task` (mocap) y `selfie_multiclass_256x256.tflite` (recorte de personas: `scripts/mascaras.py`, ~0,2 s/cuadro; las piernas oscuras sobre fondo oscuro salen irregulares).
+- Profundidad: Depth Anything V2 **Small** (`modeloProfundidad`, onnxruntime en CPU, Apache-2.0; las variantes Base/Large NO son de uso comercial): `python scripts/profundidad.py <imagen|video> <salida> [--cada 3] [--recorte x.webm --punto x,y]`. ~3–4 s por cuadro 1080×1920 en la i3: usar `--cada` y tramos cortos. Fotos con movimiento 2,5D: mapa de la foto → `FotoProfundidad` (`src/plantillas/comunes/`).
+- Seguimiento de cámara (OpenCV): `python scripts/seguimiento.py <video> <salida.json> --punto x,y [--caja 240]` (sin `--caja`: movimiento de la cámara; con `--caja`: un objeto). 6 s en ~2 s.
 - Color: LUTs `.cube` en `C:/Videos/_herramientas/luts`, aplicar con `-vf lut3d=archivo.cube`.
 - Mixkit (música y efectos gratis, de Envato): `node scripts/mixkit.mjs`.
   - Buscar: `buscar <términos>` · `buscar mood:<estado>` · `buscar genero:<género>` · `buscar tag:<etiqueta>` · `buscar --sfx <términos>`. Leer `tmp/mixkit-busqueda.json` (id, título, autor, etiquetas, duración) y proponer 2-3 opciones con su razón antes de bajar.
@@ -124,6 +127,10 @@ Reglas:
 | Elegir fragmentos | leer la transcripción (texto, nunca el video) → candidatos en `public/trabajos/<ID>/datos/candidatos.json` → **`scripts/hoja_fragmentos.py <ID>`** (Python del `.venv`): alertas de desenfoque, brillo y caras + hoja en `out/<ID>/revision/`; descartar los que tengan alertas y recién ahí proponer → `clips.json` |
 | Verificar que la suite funcione (tras instalar o actualizar) | `node scripts/verificar-suite.mjs [--rapido]` |
 | Posición del sujeto para 9:16 | MediaPipe → `public/trabajos/<ID>/datos/encuadre.json` |
+| Texto / personaje detrás de una persona | `scripts/mascaras.py` → `DetrasDePersona` |
+| Personaje detrás de objetos del video (oclusión) | `scripts/profundidad.py --recorte --punto` → `DetrasDePersona` |
+| Foto fija con movimiento de cámara 2,5D | `scripts/profundidad.py foto.jpg foto_prof.png` → `FotoProfundidad` |
+| Personaje anclado a la escena con cámara en mano | `scripts/seguimiento.py` → prop `seguimiento` de PersonajeRig |
 | Reencuadre, subtítulos, títulos, gráficos, transiciones, ducking, render | Remotion (plantillas de `src/plantillas/`) |
 | Pasar la edición a Adobe Premiere | `/a-premiere` (`scripts/a-premiere.mjs`: XML de Final Cut 7 + capa ProRes 4444) |
 | Animar un personaje (moverlo, hablar, secuencias de poses) | rig vectorial: `src/rig/` + plantilla `PersonajeRig`; personaje nuevo con `/rig-personaje` |

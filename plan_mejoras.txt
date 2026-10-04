@@ -233,7 +233,7 @@ Riesgos y decisiones pendientes
 ------------------------------------------------------------------
 Estado
 ------------------------------------------------------------------
-F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 HECHA (2026-10-04, sin el 2.4 opcional) · F3 pendiente · F4 pendiente · F5 pendiente · F6 pendiente
+F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 HECHA (2026-10-04, sin el 2.4 opcional) · F3 HECHA (2026-10-04) · F4 pendiente · F5 pendiente · F6 pendiente
 
 F0 — Orden y base  [HECHA 2026-10-04]
   [x] 0.1 Pendientes commiteados (517ca6d). main es ancestro de la rama: merge fast-forward al cerrar cada fase.
@@ -278,3 +278,17 @@ F2 — Animación de personajes  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10
           efectos caen en los cuadros esperados.
   [ ] 2.4 Editor visual de poses clave: NO se hizo (era opcional "si 2.1 no alcanza"; el mocap + JSON editable alcanza).
   [x] verificar-suite: chequeo opcional "Mocap (MediaPipe)". 41 tests. Lint limpio.
+
+F3 — Integración con video real (2,5D)  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10-04_claudio_prueba-25d-video)
+  [x] 3.1 scripts/mascaras.py (selfie_multiclass, confianza suave + borde + suavizado temporal) → webm VP9 con alfa
+          + src/plantillas/comunes/DetrasDePersona.tsx. Prueba: "CANTÁ" y Bloomie detrás del nene. Hallazgo: los
+          OffthreadVideo tienen que ir cada uno en su AbsoluteFill (si no, el segundo queda debajo del primero, fuera
+          de cuadro). Límite: piernas oscuras sobre sillón oscuro salen irregulares.
+  [x] 3.2 scripts/profundidad.py (Depth Anything V2 Small ONNX + onnxruntime CPU; normalización global p2–p98 sin
+          parpadeo; --cada N con interpolación; --recorte/--punto para oclusión) + FotoProfundidad.tsx (feDisplacementMap,
+          el fondo y lo cercano se corren en sentidos opuestos: medido +24/−22 px). Prueba: Bloomie camina detrás del
+          guitarrista y del teclado. Margen bajado a 0,01 (con 0,04 lo tapaban mal). 3–4 s/cuadro a 1080×1920 en la i3.
+  [x] 3.3 scripts/seguimiento.py (LK + similitud RANSAC; global por defecto, --caja para objetos) + prop seguimiento
+          de PersonajeRig (lugarEn, 3 tests). Prueba: lucia70 7–13 s, la cámara se corre ~270 px y Bloomie sigue en el
+          piso. CLAUDE.md: la regla 5 de la receta 2,5D suma "si la cámara se mueve, usar seguimiento" y la 5b (detrás).
+  [x] verificar-suite: 3 chequeos opcionales (recorte, profundidad, seguimiento). 44 tests.
