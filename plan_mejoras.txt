@@ -233,4 +233,15 @@ Riesgos y decisiones pendientes
 ------------------------------------------------------------------
 Estado
 ------------------------------------------------------------------
-F0 pendiente · F1 pendiente · F2 pendiente · F3 pendiente · F4 pendiente · F5 pendiente · F6 pendiente
+F0 HECHA (2026-10-04) · F1 pendiente · F2 pendiente · F3 pendiente · F4 pendiente · F5 pendiente · F6 pendiente
+
+F0 — Orden y base  [HECHA 2026-10-04]
+  [x] 0.1 Pendientes commiteados (517ca6d). main es ancestro de la rama: merge fast-forward al cerrar cada fase.
+  [x] 0.2 vitest + `npm test`: 29 pruebas en src/rig/__tests__/ (pose, secuencia, lipsync, duracionGlobo).
+          Además `npm run lint` quedó limpio (había 7 errores viejos: volume constantes → callback, variable sin usar,
+          globals de Node en .mjs vía eslint.config.mjs).
+  [x] 0.3 scripts/revisar.mjs: borrador mudo a 0.25 + score de escena de ffmpeg; umbral adaptativo (percentil 95 de la
+          propia composición, mínimo 0,012) y picos locales → en personaje-bloomie-muestrario detectó los 12 cambios de
+          disfraz/expresión/vista; 25 s de borrador para 718 cuadros en la i3. Limitación: necesita los audios de la
+          composición en public/ (no sirve para trabajos archivados sin restaurarlos).
+  [x] 0.4 verificar-suite: paso(…, { opcional: true }) + requiere() → ⚪ "no instalado" sin error; paso "Tests (vitest)".

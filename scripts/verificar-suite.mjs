@@ -16,14 +16,23 @@ fs.mkdirSync(TMP, { recursive: true });
 const FRASE = "Hola, esto es una prueba de la suite de video. Seguinos para ver cómo.";
 const PALABRAS_CLAVE = ["prueba", "suite", "video"];
 
+// Cada chequeo es un paso(). Las herramientas opcionales (las del plan de mejoras, que no hacen falta para los
+// trabajos de siempre) van con { opcional: true }: si no están instaladas se informan con ⚪ sin dar error.
+// Para sumar una herramienta: un paso() más, con requiere() para lo que tiene que existir en disco.
 const resultados = [];
-const paso = (nombre, fn) => {
+class NoInstalado extends Error {}
+const requiere = (...rutas) => {
+  for (const r of rutas) if (!r || !fs.existsSync(r)) throw new NoInstalado(`no instalado (${r ?? "falta la ruta en herramientas.json"})`);
+};
+const paso = (nombre, fn, { opcional = false } = {}) => {
   const t0 = Date.now();
+  const seg = () => (Date.now() - t0) / 1000;
   try {
     const nota = fn() ?? "";
-    resultados.push({ nombre, ok: true, nota, seg: (Date.now() - t0) / 1000 });
+    resultados.push({ nombre, estado: "ok", nota, seg: seg() });
   } catch (e) {
-    resultados.push({ nombre, ok: false, nota: String(e.message ?? e).split("\n")[0], seg: (Date.now() - t0) / 1000 });
+    const nota = String(e.message ?? e).split("\n")[0];
+    resultados.push({ nombre, estado: opcional && e instanceof NoInstalado ? "falta" : "error", nota, seg: seg() });
   }
 };
 const correr = (exe, args, opts = {}) => {
@@ -154,6 +163,11 @@ paso("Rig: capas con nombre", () => {
   const out = correr(herr.python, ["scripts/rig/prueba_capas.py"]);
   return `${out.split("\n").filter((l) => l.startsWith("ok")).length} pruebas · .ai sintético con capas`;
 });
+paso("Tests (vitest)", () => {
+  const out = correr("npx", ["vitest", "run"], { shell: true });
+  const m = out.replace(/\x1b\[[0-9;]*m/g, "").match(/Tests\s+(\d+) passed/);
+  return `${m ? m[1] : "?"} pruebas (src/**/__tests__)`;
+});
 paso("Rig: lip sync y poses", () => {
   const out = correr("node", ["--experimental-strip-types", "--no-warnings", "scripts/rig/probar_rig.mjs"]);
   return `${out.split("\n").filter((l) => l.startsWith("ok")).length} pruebas`;
@@ -184,8 +198,10 @@ if (!rapido) {
 }
 
 console.log("\nVerificación de la suite");
+const ICONO = { ok: "✅", error: "❌", falta: "⚪" };
 for (const r of resultados)
-  console.log(`${r.ok ? "✅" : "❌"} ${r.nombre.padEnd(20)} ${r.seg.toFixed(0).padStart(3)} s  ${r.nota}`);
-const fallas = resultados.filter((r) => !r.ok).length;
-console.log(fallas ? `\n${fallas} con problemas.` : "\nTodo OK.");
+  console.log(`${ICONO[r.estado]} ${r.nombre.padEnd(20)} ${r.seg.toFixed(0).padStart(3)} s  ${r.nota}`);
+const fallas = resultados.filter((r) => r.estado === "error").length;
+const faltan = resultados.filter((r) => r.estado === "falta").length;
+console.log((fallas ? `\n${fallas} con problemas.` : "\nTodo OK.") + (faltan ? ` ${faltan} opcionales sin instalar (⚪).` : ""));
 process.exit(fallas ? 1 : 0);

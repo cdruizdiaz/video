@@ -159,7 +159,7 @@ export const AparicionBloomie: React.FC<AparicionBloomieProps> = ({ lado, cara, 
       </svg>
       {efectos.map((e, i) => (
         <Sequence key={i} from={e.desde} layout="none">
-          <Audio src={staticFile(e.archivo)} volume={e.volumen} />
+          <Audio src={staticFile(e.archivo)} volume={() => e.volumen} />
         </Sequence>
       ))}
     </AbsoluteFill>

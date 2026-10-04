@@ -46,9 +46,11 @@ Reglas:
 ## Código
 - Valores de animación como constantes al inicio de cada archivo.
 - `interpolate` siempre con `extrapolateLeft/Right: 'clamp'`.
+- Tests: `npm test` (vitest, `src/**/__tests__/`). Al tocar `src/rig/` o funciones puras de plantillas, sumar o ajustar sus tests; `npm run lint` (eslint + tsc) tiene que quedar limpio.
 
 ## Render
 - NUNCA hacer un render completo salvo pedido explícito. Para verificar: `npx remotion still src/index.ts <comp> out/<ID>/revision/f<N>.png --frame=N`, o una secuencia a `--scale=0.25` y una hoja de contactos en `out/<ID>/revision/`.
+- **Revisión automática:** `node scripts/revisar.mjs <comp> [ID] [--desde N --hasta M] [--gl angle]` renderiza un borrador mudo chico, detecta los cuadros donde algo cambia de golpe (cortes, globos, poses, disfraces) y arma `out/<ID>/revision/revisar_<comp>.png` (en rojo los cambios bruscos). Usarlo después de cada cambio visible en vez de elegir cuadros a mano. Necesita que estén los audios/crudos de la composición en `public/`.
 - Render final: `npx remotion render src/index.ts <comp> out/<ID>/final/<pieza>_<formato>_v<N>.mp4 --crf=18`.
 - Audio final normalizado a -14 LUFS (`loudnorm`) y verificado con `ebur128`.
 - Premiere: después de cada render final, si la composición tiene `premiere` en `composiciones.ts`, correr **`/a-premiere <ID>`** (`node scripts/a-premiere.mjs <ID>`, en segundo plano). Genera el XML de esa `_vN` (cortes con los originales, reencuadre como keyframes, audio con niveles y fundidos) y la capa de gráficos con transparencia, que solo se vuelve a renderizar si cambió (huella de los datos gráficos + código de `src/plantillas/`). Plantillas con exportación: `MontajeMusical`. Para agregarla a otra: `src/plantillas/<X>/premiere.ts` con el formato de `src/plantillas/comunes/premiere.ts` y opción `soloGraficos` en la plantilla.

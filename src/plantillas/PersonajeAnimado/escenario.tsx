@@ -236,7 +236,7 @@ export const Autobus: React.FC<{
       <rect x={128 - abre} y={68} width={57} height={h - 82} rx={8} fill={COLORES.vidrio} stroke="#8a8f9a" strokeWidth={4} />
       <rect x={185 + abre} y={68} width={57} height={h - 82} rx={8} fill={COLORES.vidrio} stroke="#8a8f9a" strokeWidth={4} />
       {/* ventanas */}
-      {ventanas.map((x, i) => (
+      {ventanas.map((x) => (
         <rect key={x} x={x} y={va} width={vw} height={vb - va} rx={14} fill={COLORES.vidrio} stroke={COLORES.amarilloOscuro} strokeWidth={TRAZO} />
       ))}
       {ventana && <g clipPath={`url(#${idRecorte})`}>{ventana}</g>}

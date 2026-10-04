@@ -1,4 +1,3 @@
-/* global console */
 // Corta la transcripción de voz_todas.wav (todas las frases separadas por silencios) en una entrada por frase,
 // con los tokens de Whisper en tiempos relativos al inicio de cada frase_N.wav (para el lip sync) y las palabras
 // del guion con su tiempo (para los globos: se muestra el texto del guion, no el que escuchó Whisper). Salida: public/trabajos/<ID>/datos/frases.json

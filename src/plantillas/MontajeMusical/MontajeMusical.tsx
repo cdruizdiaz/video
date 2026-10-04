@@ -632,7 +632,7 @@ export const MontajeMusical: React.FC<MontajeMusicalProps> = (p) => {
                   >
                     <Audio
                       src={staticFile(p.whoosh)}
-                      volume={dbAVolumen(p.whooshDb ?? WHOOSH_DB)}
+                      volume={() => dbAVolumen(p.whooshDb ?? WHOOSH_DB)}
                     />
                   </Sequence>
                 ) : null}
