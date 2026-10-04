@@ -233,7 +233,7 @@ Riesgos y decisiones pendientes
 ------------------------------------------------------------------
 Estado
 ------------------------------------------------------------------
-F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 HECHA (2026-10-04, sin el 2.4 opcional) · F3 HECHA (2026-10-04) · F4 HECHA (2026-10-04) · F5 HECHA (2026-10-04) · F6 pendiente
+F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 HECHA (2026-10-04, sin el 2.4 opcional) · F3 HECHA (2026-10-04) · F4 HECHA (2026-10-04) · F5 HECHA (2026-10-04) · F6 HECHA en una PC (2026-10-04; falta probar entre las dos PC)
 
 F0 — Orden y base  [HECHA 2026-10-04]
   [x] 0.1 Pendientes commiteados (517ca6d). main es ancestro de la rama: merge fast-forward al cerrar cada fase.
@@ -328,3 +328,16 @@ F5 — Blender sin interfaz  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10-04_
   [x] Criterio de cierre: composición claudio-prueba-blender-video — Bloomie de Blender (sol a 135°, como las
       sombras del pasto) camina 110 cuadros sobre el video del guitarrista y pasa DETRÁS del teclado, del hombre que
       cruza y del guitarrista (recorte por profundidad de F3). 3 min de render en la i3.
+
+F6 — Render distribuido  [HECHA 2026-10-04 en una sola PC]
+  [x] 6.1 scripts/render_partes.mjs: tramos parejos (--frames), h264 crf 18 mudo por parte, audio entero aparte,
+          unión con concat sin recodificar + verificación de cuadros. Retoma: las partes hechas (.ok) no se rehacen.
+          Prueba: claudio-prueba-mocap-habla en 3 partes = render entero (PSNR 52,8 dB, -14,3 vs -14,2 LUFS).
+  [x] 6.2 Cola en carpeta (--cola, carpetaCola en herramientas.json) + scripts/trabajador.mjs: toma atómica por
+          renombre (.json → .json.<PC>), commit en la tarea (se niega si no coincide), reintento por fallas
+          transitorias, error legible en <parte>.error. PC_NOMBRE para simular varias PC. Test de la toma atómica.
+  [x] 6.3 Prueba con dos procesos a la vez ("NOTEBOOK" y "RYZEN-simulada"): claudio-prueba-mocap-guitarra (300
+          cuadros con video) en 4 partes, unión verificada, PSNR 43,7 dB contra el render entero.
+          Hallazgo: la primera vez fallaron las 2 partes que arrancaron juntas (choque transitorio al empaquetar) → 2 intentos.
+  [ ] Falta: probarlo de verdad entre la notebook y la Ryzen (compartir C:/Videos/cola en red). Desde esta sesión
+      solo hay acceso a una PC. Pasos en C:/Videos/_herramientas/README.txt → "Render repartido entre PCs".

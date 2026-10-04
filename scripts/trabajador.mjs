@@ -11,6 +11,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const INTENTOS = 2;
 
 // Toma la primera tarea libre de una carpeta de partes (o de cualquier subcarpeta de la cola)
 export const tomarTarea = (carpeta, pc) => {
@@ -41,9 +42,20 @@ export const hacerTarea = (t, pc) => {
   const t0 = Date.now();
   const a = ["remotion", "render", "src/index.ts", t.comp, `"${t.salida}"`, `--frames=${t.desde}-${t.hasta}`, "--codec=h264", `--crf=${t.crf}`, "--muted", "--log=error"];
   if (t.gl) a.push(`--gl=${t.gl}`);
-  const r = spawnSync("npx", a, { cwd: RAIZ, shell: true, encoding: "utf8" });
+  // Hasta 2 intentos: dos renders que arrancan juntos en la misma PC a veces chocan al empaquetar (falla transitoria)
+  let r;
+  for (let intento = 1; intento <= INTENTOS; intento++) {
+    r = spawnSync("npx", a, { cwd: RAIZ, shell: true, encoding: "utf8" });
+    if (r.status === 0) break;
+  }
   if (r.status !== 0) {
-    fs.writeFileSync(t.salida.replace(/\.mp4$/, ".error"), `${pc}: ${(r.stderr || r.stdout).trim().split("\n").slice(-3).join(" ")}`);
+    // el mensaje útil, sin colores ni la pila de llamadas
+    const lineas = `${r.stderr}\n${r.stdout}`
+      .replace(/\x1b\[[0-9;]*m/g, "")
+      .split("\n")
+      .map((l) => l.trim())
+      .filter((l) => l && !l.startsWith("at "));
+    fs.writeFileSync(t.salida.replace(/\.mp4$/, ".error"), `${pc}: ${lineas.slice(-6).join(" | ")}`);
     throw new Error(`Falló ${t.nombre} en ${pc}`);
   }
   fs.writeFileSync(`${t.salida}.ok`, `${t.nombre}@${pc} ${((Date.now() - t0) / 1000).toFixed(0)} s`);

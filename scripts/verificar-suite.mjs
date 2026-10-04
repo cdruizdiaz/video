@@ -298,7 +298,7 @@ paso("Rig: capas con nombre", () => {
 paso("Tests (vitest)", () => {
   const out = correr("npx", ["vitest", "run"], { shell: true });
   const m = out.replace(/\x1b\[[0-9;]*m/g, "").match(/Tests\s+(\d+) passed/);
-  return `${m ? m[1] : "?"} pruebas (src/**/__tests__)`;
+  return `${m ? m[1] : "?"} pruebas (__tests__ de src y scripts)`;
 });
 paso("Rig: lip sync y poses", () => {
   const out = correr("node", ["--experimental-strip-types", "--no-warnings", "scripts/rig/probar_rig.mjs"]);
