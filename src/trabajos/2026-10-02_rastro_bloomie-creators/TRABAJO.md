@@ -4,9 +4,9 @@
 |---|---|
 | Cliente / marca | RASTRO (`src/marcas/rastro`) · personaje Bloomie (biblioteca `personajes/bloomie`) |
 | Pieza | bloomie-creators (Bloomie presenta a las creadoras de RASTRO sobre un video real) |
-| Estado | ⏸️ Prueba de concepto (2026-10-02): borrador aprobado para mostrar al equipo; sin versión final |
+| Estado | 🟢 Cerrado como prueba de concepto (sin versión final) |
 | Abierto | 2026-10-02 |
-| Cerrado | — |
+| Cerrado | 2026-10-02 |
 
 ## Brief
 - **Objetivo:** sumar a Bloomie, animado con el rig de personajes, encima de un video real filmado por el equipo de RASTRO. Bloomie entra caminando, saluda ("Hi, I'm Bloomie."), mira a las creadoras con admiración y pide que las contraten ("These are my creators. They work really hard. HIRE THEM PLEEEEEASEEEE!"); termina con una carcajada exagerada.
@@ -38,7 +38,8 @@
 - **Tiempos (frames, desde la v2 de los borradores):** camina 0–40, gira 40–50, frases en 54, 110, 156 y 209 ("please" estirado desde 235), mira a las creadoras 90–108, carcajada 270–300.
 - **Voz:** Piper `en_GB-jenny_dioco-medium` ×1,35 (`preparar_voz.sh` + `separar_frases.mjs` → `datos/frases.json`). El "please" del ruego: Piper con `--length-scale 4.5` (~1,6 s; Whisper lo entiende); escribir "pleeeease" hacía deletrear las letras y estirarlo con rubberband sonaba artificial. Vibrato leve en esa frase.
 - **Rig (mejoras generales):** ojos agrandados (`ojos`, pista `ojos`) con brillos de "ojos de cachorro"; globo con `letraPorLetra` (palabras estiradas) y `temblor`; `queda` configurable. Primer plano de las caras nuevas: `revision/caras_nuevas.png`, `suplica.png`.
-- **Música:** — (audio original del video, baja ≈ 7 dB mientras habla Bloomie). **Risa:** Mixkit 739 "Small cartoon character laughing" (ya estaba en la biblioteca).
+- **Música:** — (audio original del video, baja ≈ 7 dB mientras habla Bloomie). **Risa:** Mixkit 739 "Small cartoon character laughing" (sha256 `7559e62e952f`; licencia libre de Mixkit: uso comercial, sin atribución; original archivado en `C:/Videos/archivo/2026-10-02_rastro_bloomie-creators/biblioteca/`).
+- **LUFS medidos al cerrar:** los cuatro borradores -19,5 LUFS (sin normalizar: la versión final se llevaría a -14).
 - **Borrador:** `out/2026-10-02_rastro_bloomie-creators/revision/borrador_v1.mp4` (540×960, crf 26, 10 s, -19,5 LUFS sin normalizar) para mostrar al equipo.
 - **Versión 2,5D (2026-10-02, prueba de concepto):** composiciones `rastro-bloomie-creators-25d` y `-25d-alfa` (`modo25d`). Los recursos que daría el diseñador se generaron por código: giro ¾ por profundidad de pieza (`yaw`: el rostro se corre y se angosta, los pétalos de atrás van al revés), volumen de luz por pieza (degradé de luz en `screen` y de sombra en `multiply`, recortados a la forma; luz de arriba a la izquierda como en el video, `angulo -140`), sombra proyectada (silueta del rig achatada e inclinada hacia atrás a la derecha, desenfocada), entrada en perspectiva (llega desde y 1790 a ×0,84 y crece hasta su lugar), globos que entran con giro en perspectiva y sticker extruido. Muestras: `revision/recursos_25d.png` (plano vs 2,5D), `cuadros_clave_25d.png`, `detalle_25d.png`, `detalle_sombra.png`. Borrador: `revision/borrador_25d_v1.mp4` (540×960). **v2 (2026-10-02):** los globos ya no se pisan: cada uno termina de irse antes de que aparezca el siguiente (`QUEDA` calculado por frase) y se separaron las frases 2–4 (mirada 90–108, frase 2 en 110, pausa de 11 cuadros antes de "Hire them"; carcajada de 1 s): `revision/borrador_25d_v2.mp4`.
 - **Versión 3D (2026-10-02, borrador):** composición `rastro-bloomie-creators-3d` (`modo3d`). Se instaló `@remotion/three` 4.0.529 + `three` 0.186 + `@react-three/fiber` 9 (npm, una vez). Bloomie 3D construido por código (`src/personajes/bloomie/Bloomie3D.tsx`): cabeza y cuerpo elipsoidales con las medidas de piezas.json, pétalos extruidos desde sus contornos del .ai (bisel redondeado, inclinados hacia atrás), manos y pies redondeados, contorno de casco invertido; se mueve con los huesos del rig 2D. La cara (expresiones, ojos de cachorro, lip sync, anteojos) es la 2D del rig apoyada sobre la cabeza 3D y girando con ella. Gira de verdad: entra de perfil (rotY π/2), pasa por ¾ y queda de frente; gira el cuerpo hacia las creadoras; se balancea al reírse. Cámara ortográfica en píxeles, luz de arriba a la izquierda, sombra real sobre un plano de piso invisible (`ShadowMaterial`). Render con `--gl=angle`: ~18 s por cuadro completo, borrador a media resolución en ~8 min. Cuadros: `revision/cuadros_clave_3d.png`. Borrador: `revision/borrador_3d_v1.mp4` (540×960).
@@ -46,8 +47,14 @@
 ## Entregas
 | Archivo (`out/2026-10-02_rastro_bloomie-creators/final/`) | Fecha | Cambios respecto de la versión anterior |
 |---|---|---|
+| — (sin versión final: prueba de concepto) | | Los borradores de revisión quedaron archivados en `C:/Videos/archivo/2026-10-02_rastro_bloomie-creators/borradores/`: |
+| `borrador_v1.mp4` | 2026-10-02 | Plano (2D), 540×960, 10 s |
+| `borrador_25d_v1.mp4` | 2026-10-02 | 2,5D: volumen de luz, giros ¾, sombra proyectada, entrada en perspectiva, globos y sticker con profundidad |
+| `borrador_25d_v2.mp4` | 2026-10-02 | 2,5D: los globos ya no se pisan (frases 2–4 separadas) |
+| `borrador_3d_v1.mp4` | 2026-10-02 | 3D: Bloomie construido por código con Three.js, sombra real (con los tiempos de la v1) |
 
 ## Cómo rehacerlo
+0. Restaurar el material: copiar `C:/Videos/archivo/2026-10-02_rastro_bloomie-creators/public/` sobre `public/trabajos/2026-10-02_rastro_bloomie-creators/` (tramo, proxy y audios; `datos/` queda en el repo). Originales en `C:/Videos/crudos/2026-10-02_rastro_bloomie-creators/`.
 1. Proxy: `ffmpeg -i C:/Videos/crudos/2026-10-02_rastro_bloomie-creators/IMG_6838.MOV -map 0:v:0 -map 0:a:0 -vf "scale=1080:1920:flags=lanczos,fps=30" -c:v h264_qsv -global_quality 23 -g 30 -c:a aac -b:a 192k -ar 48000 public/trabajos/2026-10-02_rastro_bloomie-creators/crudos/IMG_6838_proxy.mp4`
 2. Voz: `bash src/trabajos/2026-10-02_rastro_bloomie-creators/preparar_voz.sh`. Tramo: `ffmpeg -ss 61 -i IMG_6838.MOV -t 10 -vf "scale=1080:1920:flags=lanczos,fps=30" -c:v libx264 -preset slow -crf 14 -c:a pcm_s16le crudos/tramo_61-71.mov`.
 3. Para hacer la versión final (no se hizo): render de `rastro-bloomie-creators-10s` (`--crf=18`) y `rastro-bloomie-creators-alfa` (`--codec=prores --prores-profile=4444 --pixel-format=yuva444p10le --image-format=png`), mezcla a -14 LUFS con `loudnorm` en dos pasadas y muxeo en las dos (igual que en 2026-10-02_lucia_chiste-navidad).

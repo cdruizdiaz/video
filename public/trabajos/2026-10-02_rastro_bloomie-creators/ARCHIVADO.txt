@@ -1,0 +1,13 @@
+Trabajo 2026-10-02_rastro_bloomie-creators — cerrado como prueba de concepto (sin versión final) el 2026-10-02.
+
+Material archivado en C:/Videos/archivo/2026-10-02_rastro_bloomie-creators/
+  public/      copia completa de esta carpeta (crudos/IMG_6838_proxy.mp4, crudos/tramo_61-71.mov, audio/frase_1..4.wav,
+               audio/voz_todas.wav, datos/)
+  borradores/  borrador_v1.mp4 (plano), borrador_25d_v1.mp4, borrador_25d_v2.mp4 (2,5D), borrador_3d_v1.mp4 (3D)
+  biblioteca/  original de Mixkit usado (739, risa) y LICENCIAS-mixkit.json
+Originales (sin tocar): C:/Videos/crudos/2026-10-02_rastro_bloomie-creators/ (IMG_6838.MOV, referencia_zona.jpeg)
+
+Aquí quedan solo los datos (datos/frases.json, datos/voz_todas.json): los usa src/trabajos/2026-10-02_rastro_bloomie-creators/.
+
+Para retomarlo: copiar C:/Videos/archivo/2026-10-02_rastro_bloomie-creators/public/ sobre esta carpeta
+(public/trabajos/2026-10-02_rastro_bloomie-creators/). Comandos en TRABAJO.md → Cómo rehacerlo.

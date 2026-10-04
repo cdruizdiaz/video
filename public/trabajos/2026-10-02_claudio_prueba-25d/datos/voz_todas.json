@@ -1,0 +1,99 @@
+{
+  "archivo": "voz_todas.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 4275,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2680,
+      "texto": "I've got to get strong for my social media debut!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " I",
+      "fromMs": 10,
+      "toMs": 60,
+      "dtwMs": 100,
+      "p": 0.768423
+    },
+    {
+      "text": "'ve",
+      "fromMs": 60,
+      "toMs": 260,
+      "dtwMs": 140,
+      "p": 0.972231
+    },
+    {
+      "text": " got",
+      "fromMs": 260,
+      "toMs": 460,
+      "dtwMs": 300,
+      "p": 0.992896
+    },
+    {
+      "text": " to",
+      "fromMs": 460,
+      "toMs": 590,
+      "dtwMs": 460,
+      "p": 0.997893
+    },
+    {
+      "text": " get",
+      "fromMs": 590,
+      "toMs": 790,
+      "dtwMs": 620,
+      "p": 0.996111
+    },
+    {
+      "text": " strong",
+      "fromMs": 790,
+      "toMs": 1190,
+      "dtwMs": 940,
+      "p": 0.992065
+    },
+    {
+      "text": " for",
+      "fromMs": 1190,
+      "toMs": 1310,
+      "dtwMs": 1160,
+      "p": 0.992979
+    },
+    {
+      "text": " my",
+      "fromMs": 1420,
+      "toMs": 1520,
+      "dtwMs": 1300,
+      "p": 0.99886
+    },
+    {
+      "text": " social",
+      "fromMs": 1520,
+      "toMs": 1900,
+      "dtwMs": 1640,
+      "p": 0.987326
+    },
+    {
+      "text": " media",
+      "fromMs": 1920,
+      "toMs": 2250,
+      "dtwMs": 2000,
+      "p": 0.989193
+    },
+    {
+      "text": " debut",
+      "fromMs": 2250,
+      "toMs": 2590,
+      "dtwMs": 2500,
+      "p": 0.997097
+    },
+    {
+      "text": "!",
+      "fromMs": 2680,
+      "toMs": 2680,
+      "dtwMs": 2660,
+      "p": 0.70061
+    }
+  ]
+}

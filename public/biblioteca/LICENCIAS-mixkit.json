@@ -225,5 +225,15 @@
     "fuente": "https://assets.mixkit.co/active_storage/sfx/2986/2986.wav",
     "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
     "descargado": "2026-10-02"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2116.wav",
+    "id": "2116",
+    "tipo": "sfx",
+    "duracionSeg": 1.9,
+    "sha256": "0b7a020316d3a625bfaea411363ec97daac7600bfab4c96548f2ca2afcbb9edc",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2116/2116.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-02"
   }
 ]
