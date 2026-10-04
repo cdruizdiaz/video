@@ -6,7 +6,9 @@
 //   --velocidad 1              >1 más rápido (Piper usa length-scale = 1/velocidad)
 //   --nene [1.35]              sube el tono con rubberband (formantes desplazados)
 //   --sin-tiempos              no transcribe (solo el .wav)
-// Salida: <salida.wav> (48 kHz mono, -14 LUFS) y, salvo --sin-tiempos, <salida>.json con el formato de transcribir.mjs.
+//   --datos <carpeta>          dónde van los JSON (default: junto al .wav; en un trabajo: public/trabajos/<ID>/datos)
+// Salida: <salida.wav> (48 kHz mono, -14 LUFS) y, salvo --sin-tiempos, <nombre>.json (Whisper, formato de
+// transcribir.mjs: globos y subtítulos) y <nombre>_rhubarb.json (bocas para la pista hablar con `rhubarb`).
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
@@ -73,11 +75,19 @@ try {
   const dur = Number(correr(herr.ffprobe, ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", salida]));
   console.log(`OK ${salida} · ${voz}${nene ? ` · tono ${tono}` : ""} · ${dur.toFixed(2)} s · ${lufs}`);
   if (!opc("sin-tiempos", false)) {
-    const json = salida.replace(/\.wav$/i, "") + ".json";
+    const datos = opc("datos", path.dirname(salida));
+    const base = path.join(datos, path.basename(salida).replace(/\.wav$/i, ""));
+    fs.mkdirSync(datos, { recursive: true });
+    const json = `${base}.json`;
     // Prompt = el propio texto: Whisper respeta la ortografía y los nombres propios
     correr("node", ["scripts/transcribir.mjs", salida, json, "--idioma", idioma, "--sin-vad", "--prompt", texto.slice(0, 220)]);
     const tr = JSON.parse(fs.readFileSync(json, "utf8"));
     console.log(`   tiempos → ${json} (${tr.tokens.length} tokens: "${tr.segmentos.map((s) => s.texto).join(" ").trim()}")`);
+    // Bocas desde el sonido (pista hablar con `rhubarb`: articula mejor que las reglas por letras)
+    if (fs.existsSync(herr.rhubarb ?? "")) {
+      correr("node", ["scripts/lipsync_rhubarb.mjs", salida, `${base}_rhubarb.json`, "--texto", texto]);
+      console.log(`   bocas  → ${base}_rhubarb.json`);
+    }
   }
 } finally {
   fs.rmSync(tmp, { recursive: true, force: true });

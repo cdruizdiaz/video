@@ -233,7 +233,7 @@ Riesgos y decisiones pendientes
 ------------------------------------------------------------------
 Estado
 ------------------------------------------------------------------
-F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 pendiente · F3 pendiente · F4 pendiente · F5 pendiente · F6 pendiente
+F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 HECHA (2026-10-04, sin el 2.4 opcional) · F3 pendiente · F4 pendiente · F5 pendiente · F6 pendiente
 
 F0 — Orden y base  [HECHA 2026-10-04]
   [x] 0.1 Pendientes commiteados (517ca6d). main es ancestro de la rama: merge fast-forward al cerrar cada fase.
@@ -260,3 +260,21 @@ F1 — Herramientas locales rápidas  [HECHA 2026-10-04]
           En vez de una opción dentro de MontajeMusical, función pura ajustarAlPulso(tomas, compases) en calculos.ts
           (se aplica a los datos → Remotion y la exportación a Premiere coinciden) + 5 tests.
   [x] verificar-suite: 5 chequeos opcionales nuevos, todos ✅. requirements.txt regenerado (faltaba piper-tts).
+
+F2 — Animación de personajes  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10-04_claudio_prueba-mocap)
+  [x] 2.1 scripts/rig/mocap.py: MediaPipe Pose + Face Landmarker (modelos bajados a modelos-mediapipe/) → cuerpo,
+          cabeza, brazos, pies, raíz, párpados/guiño, mirada, yaw 2,5D, boca (visemas desde blendshapes) y caras
+          (feliz/enojado/triste) → secuencia JSON lineal reducida a poses clave. Cambios respecto del plan: suavizado
+          gaussiano centrado en vez de One Euro (el video ya está grabado: sin retraso); límites por defecto en el
+          script en vez de "limites" en rig.json. Pruebas: guitarrista de cuerpo entero (300/300 cuerpo y cara, 84
+          poses) y nene cantando en primer plano (cara 209/300: la cámara se va a otras personas). Arreglos que
+          salieron de las pruebas: normalizar por la mediana del tronco (temblor), pies relativos entre sí, cara en
+          un recorte alrededor de la cabeza con respaldo en el cuadro entero, raíz y pies solo con cuerpo entero.
+  [x] 2.2 Rhubarb en el rig: visemasRhubarb() en lipsync.ts + pista hablar con "rhubarb"; voz.mjs genera
+          <nombre>_rhubarb.json (--datos). Con la misma voz: Rhubarb cierra en M/B/P y sigue el ritmo; las reglas por
+          letras dejaban una "O" larga en "soy Bloomie" (tiempos gruesos de Whisper) → Rhubarb pasa a ser la preferida.
+  [x] 2.3 src/rig/sonidos.ts (efectosDePistas, 5 tests) + sonidos: true en PersonajeRig. Pop de Mixkit 731 bajado
+          (1 búsqueda + 1 descarga). Verificado con silencedetect sobre el audio de la composición de prueba: los
+          efectos caen en los cuadros esperados.
+  [ ] 2.4 Editor visual de poses clave: NO se hizo (era opcional "si 2.1 no alcanza"; el mocap + JSON editable alcanza).
+  [x] verificar-suite: chequeo opcional "Mocap (MediaPipe)". 41 tests. Lint limpio.

@@ -235,5 +235,16 @@
     "fuente": "https://assets.mixkit.co/active_storage/sfx/2116/2116.wav",
     "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
     "descargado": "2026-10-02"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-731-cartoon-bubble-pop.wav",
+    "id": "731",
+    "tipo": "sfx",
+    "titulo": "Cartoon bubble pop",
+    "duracionSeg": 0.5,
+    "sha256": "7e540b926df4fbfc2bc78212e2178c4790d6aa83551b1abd937152086bfb0c62",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/731/731.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-04"
   }
 ]

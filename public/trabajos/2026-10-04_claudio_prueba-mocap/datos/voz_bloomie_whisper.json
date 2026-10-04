@@ -1,0 +1,190 @@
+{
+  "archivo": "voz_bloomie.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 4344,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4200,
+      "texto": "Hola, soy Bloomie. Hoy vamos a plantar una semilla en el jardin, me ayudate IDS."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 30,
+      "toMs": 210,
+      "dtwMs": 200,
+      "p": 0.650751
+    },
+    {
+      "text": ",",
+      "fromMs": 210,
+      "toMs": 230,
+      "dtwMs": 460,
+      "p": 0.644889
+    },
+    {
+      "text": " soy",
+      "fromMs": 430,
+      "toMs": 460,
+      "dtwMs": 580,
+      "p": 0.973194
+    },
+    {
+      "text": " Bloom",
+      "fromMs": 460,
+      "toMs": 720,
+      "dtwMs": 840,
+      "p": 0.984888
+    },
+    {
+      "text": "ie",
+      "fromMs": 720,
+      "toMs": 820,
+      "dtwMs": 1000,
+      "p": 0.999285
+    },
+    {
+      "text": ".",
+      "fromMs": 820,
+      "toMs": 990,
+      "dtwMs": 1120,
+      "p": 0.87059
+    },
+    {
+      "text": " Hoy",
+      "fromMs": 1180,
+      "toMs": 1180,
+      "dtwMs": 1280,
+      "p": 0.932325
+    },
+    {
+      "text": " vamos",
+      "fromMs": 1200,
+      "toMs": 1500,
+      "dtwMs": 1480,
+      "p": 0.9935
+    },
+    {
+      "text": " a",
+      "fromMs": 1500,
+      "toMs": 1550,
+      "dtwMs": 1640,
+      "p": 0.981427
+    },
+    {
+      "text": " plant",
+      "fromMs": 1550,
+      "toMs": 1830,
+      "dtwMs": 1860,
+      "p": 0.996109
+    },
+    {
+      "text": "ar",
+      "fromMs": 1890,
+      "toMs": 1990,
+      "dtwMs": 1980,
+      "p": 0.998917
+    },
+    {
+      "text": " una",
+      "fromMs": 1990,
+      "toMs": 2140,
+      "dtwMs": 2120,
+      "p": 0.992907
+    },
+    {
+      "text": " sem",
+      "fromMs": 2190,
+      "toMs": 2370,
+      "dtwMs": 2360,
+      "p": 0.931296
+    },
+    {
+      "text": "illa",
+      "fromMs": 2370,
+      "toMs": 2620,
+      "dtwMs": 2520,
+      "p": 0.997872
+    },
+    {
+      "text": " en",
+      "fromMs": 2620,
+      "toMs": 2730,
+      "dtwMs": 2640,
+      "p": 0.989006
+    },
+    {
+      "text": " el",
+      "fromMs": 2770,
+      "toMs": 2860,
+      "dtwMs": 2720,
+      "p": 0.994272
+    },
+    {
+      "text": " jard",
+      "fromMs": 2860,
+      "toMs": 3110,
+      "dtwMs": 2960,
+      "p": 0.989155
+    },
+    {
+      "text": "in",
+      "fromMs": 3110,
+      "toMs": 3160,
+      "dtwMs": 3120,
+      "p": 0.459005
+    },
+    {
+      "text": ",",
+      "fromMs": 3320,
+      "toMs": 3350,
+      "dtwMs": 3280,
+      "p": 0.796728
+    },
+    {
+      "text": " me",
+      "fromMs": 3350,
+      "toMs": 3470,
+      "dtwMs": 3400,
+      "p": 0.972672
+    },
+    {
+      "text": " ayud",
+      "fromMs": 3470,
+      "toMs": 3640,
+      "dtwMs": 3540,
+      "p": 0.729911
+    },
+    {
+      "text": "ate",
+      "fromMs": 3730,
+      "toMs": 3910,
+      "dtwMs": 3700,
+      "p": 0.592069
+    },
+    {
+      "text": " ID",
+      "fromMs": 3910,
+      "toMs": 4030,
+      "dtwMs": 3900,
+      "p": 0.23736
+    },
+    {
+      "text": "S",
+      "fromMs": 4030,
+      "toMs": 4170,
+      "dtwMs": 4100,
+      "p": 0.839219
+    },
+    {
+      "text": ".",
+      "fromMs": 4200,
+      "toMs": 4200,
+      "dtwMs": 4180,
+      "p": 0.789634
+    }
+  ]
+}

@@ -191,6 +191,25 @@ paso("librosa (pulsos)", () => {
   return `${bpm} bpm en un clic de 120`;
 }, { opcional: true });
 
+// ---- Fase 2: mocap (MediaPipe Pose + Face Landmarker) ----
+paso("Mocap (MediaPipe)", () => {
+  const modelos = path.dirname(herr.modeloCaras);
+  requiere(path.join(modelos, "pose_landmarker_full.task"), path.join(modelos, "face_landmarker.task"));
+  // Sin video de prueba con personas: se usa el proxy del trabajo de prueba si está; si no, solo carga los modelos
+  const video = path.join(RAIZ, "public/trabajos/2026-10-04_claudio_prueba-mocap/crudos/guitarra.mp4");
+  if (!fs.existsSync(video)) {
+    correr(herr.python, ["-c", `from mediapipe.tasks.python import BaseOptions, vision
+vision.PoseLandmarker.create_from_options(vision.PoseLandmarkerOptions(base_options=BaseOptions(model_asset_path=r"${path.join(modelos, "pose_landmarker_full.task")}")))
+vision.FaceLandmarker.create_from_options(vision.FaceLandmarkerOptions(base_options=BaseOptions(model_asset_path=r"${path.join(modelos, "face_landmarker.task")}")))`]);
+    return "modelos cargan (sin video de prueba)";
+  }
+  const json = path.join(TMP, "mocap.json");
+  const out = correr(herr.python, ["scripts/rig/mocap.py", video, "bloomie", json, "--hasta", "2"]);
+  const det = out.match(/cuerpo (\d+)\/(\d+) · cara (\d+)\/\d+/);
+  if (!det || Number(det[1]) < Number(det[2]) * 0.9) throw new Error(`Detectó poco cuerpo: ${det?.[0]}`);
+  return `${JSON.parse(fs.readFileSync(json, "utf8")).poses.length} poses en 2 s · ${det[0]}`;
+}, { opcional: true });
+
 paso("Mixkit (biblioteca)", () => {
   const r = spawnSync("node", ["scripts/mixkit.mjs", "verificar"], { encoding: "utf8" });
   const ultima = r.stdout.trim().split("\n").at(-1);

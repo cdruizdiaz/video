@@ -145,6 +145,26 @@ export const visemas = (
   return salida;
 };
 
+// ---------- Rhubarb Lip Sync (scripts/lipsync_rhubarb.mjs): bocas desde el sonido ----------
+// Rhubarb escucha el audio (pausas, sílabas comidas, ritmo real): más fiel que las reglas por letras.
+// Sus formas extendidas se llevan a las 6 del rig: G (F/V, dientes sobre el labio) → B; H (L, lengua) → C.
+export type MouthCue = { start: number; end: number; value: string };
+export type DatosRhubarb = { mouthCues: MouthCue[] };
+const DE_RHUBARB: Record<string, string> = { A: "A", B: "B", C: "C", D: "D", E: "E", F: "F", G: "B", H: "C", X: "X" };
+
+export const visemasRhubarb = (r: DatosRhubarb, o: { fps: number; desde?: number; adelanto?: number }): TramoVisema[] => {
+  const base = o.desde ?? 0;
+  const adelanto = o.adelanto ?? 1;
+  const salida: TramoVisema[] = [];
+  for (const m of r.mouthCues) {
+    const t = { desde: base + m.start * o.fps - adelanto, hasta: base + m.end * o.fps - adelanto, v: DE_RHUBARB[m.value] ?? "B" };
+    const ult = salida[salida.length - 1];
+    if (ult && ult.v === t.v) ult.hasta = t.hasta;
+    else salida.push(t);
+  }
+  return salida;
+};
+
 export const visemaEn = (tramos: TramoVisema[], f: number): string | null => {
   const t = tramos.find((x) => f >= x.desde && f < x.hasta);
   return t && t.v !== "X" ? t.v : null;

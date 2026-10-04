@@ -11,6 +11,7 @@ import { composiciones as luciaChisteNavidad } from "./2026-10-02_lucia_chiste-n
 import { composiciones as rastroBloomieCreators } from "./2026-10-02_rastro_bloomie-creators/composiciones";
 import { composiciones as claudioPrueba25d } from "./2026-10-02_claudio_prueba-25d/composiciones";
 import { composiciones as luciaBloomieVolandoEscoba } from "./2026-10-02_lucia_bloomie-volando-escoba-realista/composiciones";
+import { composiciones as claudioPruebaMocap } from "./2026-10-04_claudio_prueba-mocap/composiciones";
 import type { Trabajo } from "./tipos";
 
 export const TRABAJOS: Trabajo[] = [
@@ -26,4 +27,5 @@ export const TRABAJOS: Trabajo[] = [
   { id: "2026-10-02_lucia_chiste-navidad", composiciones: luciaChisteNavidad },
   { id: "2026-10-02_rastro_bloomie-creators", composiciones: rastroBloomieCreators },
   { id: "2026-10-02_claudio_prueba-25d", composiciones: claudioPrueba25d },
+  { id: "2026-10-04_claudio_prueba-mocap", composiciones: claudioPruebaMocap },
 ];

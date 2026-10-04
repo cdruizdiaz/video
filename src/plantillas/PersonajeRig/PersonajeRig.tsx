@@ -6,6 +6,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { EnEscena, PersonajeRig as Dibujo } from "../../rig/Rig";
+import { efectosDePistas } from "../../rig/sonidos";
 import { lugarEn, poseEn, type PersonajeRigProps } from "./calculos";
 
 export { zPersonajeRig, type PersonajeRigProps } from "./calculos";
@@ -35,6 +36,13 @@ export const PersonajeRig: React.FC<PersonajeRigProps> = (props) => {
           <Dibujo personaje={props.personaje} pose={pose} luz={props.luz ?? undefined} />
         </EnEscena>
       </svg>
+      {props.sonidos !== undefined &&
+        props.sonidos !== false &&
+        efectosDePistas(props.pistas, { volumen: props.sonidos === true ? 1 : props.sonidos }).map((e, i) => (
+          <Sequence key={`sfx-${i}`} from={e.desde} layout="none" name={`sfx ${e.tipo}`}>
+            <Audio src={staticFile(e.archivo)} volume={() => e.volumen} />
+          </Sequence>
+        ))}
       {props.audio && (
         <Sequence from={props.audio.desde ?? 0} layout="none">
           <Audio src={staticFile(props.audio.archivo)} volume={() => props.audio?.volumen ?? 1} />

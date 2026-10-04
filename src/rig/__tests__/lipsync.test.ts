@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { duracionGlobo } from "../../plantillas/comunes/historieta";
-import { bocasDePalabra, hablar, palabras, visemaEn, visemas } from "../lipsync";
+import { bocasDePalabra, hablar, palabras, visemaEn, visemas, visemasRhubarb } from "../lipsync";
 
 const tr = {
   tokens: [
@@ -60,5 +60,24 @@ describe("visemas", () => {
 describe("duracionGlobo", () => {
   it("antes + última palabra + queda + salida", () => {
     expect(duracionGlobo([{ texto: "hola", desdeMs: 0, hastaMs: 1000 }], 30, 24)).toBe(4 + 30 + 24 + 6);
+  });
+});
+
+describe("visemasRhubarb", () => {
+  const r = { mouthCues: [
+    { start: 0, end: 0.1, value: "X" },
+    { start: 0.1, end: 0.2, value: "G" },
+    { start: 0.2, end: 0.3, value: "B" },
+    { start: 0.3, end: 0.5, value: "H" },
+    { start: 0.5, end: 0.6, value: "X" },
+  ] };
+  const t = visemasRhubarb(r, { fps: 30, adelanto: 0 });
+  it("lleva G y H a las bocas del rig y une las iguales seguidas", () => {
+    expect(t.map((x) => x.v)).toEqual(["X", "B", "C", "X"]);
+    expect(t[1]).toMatchObject({ desde: 3, hasta: 9 });
+  });
+  it("visemaEn da null en reposo", () => {
+    expect(visemaEn(t, 1)).toBeNull();
+    expect(visemaEn(t, 10)).toBe("C");
   });
 });

@@ -104,6 +104,26 @@ Un JSON en `public/trabajos/<ID>/datos/` validado con `zSecuencia` (`secuencia.t
 
 `node scripts/transcribir.mjs voz.wav public/trabajos/<ID>/datos/voz.json` (Whisper, tiempos por palabra) → pista `hablar` con esa transcripción. Las palabras se convierten en bocas con reglas de letras para español e inglés (`lipsync.ts`), repartidas en el tiempo de cada palabra (las vocales duran más) y con la boca en reposo en las pausas. Bocas: `A` M/B/P · `B` consonantes · `C` E/I · `D` A · `E` O · `F` U/W; `X` = la boca de la expresión. Se dibujan sobre la boca de la cara activa.
 
+**Mejor: Rhubarb (bocas desde el sonido).** `node scripts/voz.mjs "texto" public/trabajos/<ID>/audio/voz.wav --datos public/trabajos/<ID>/datos` deja la voz, la transcripción de Whisper (para globos y subtítulos) y `voz_rhubarb.json`; con una voz grabada: `node scripts/lipsync_rhubarb.mjs voz.wav datos/voz_rhubarb.json --texto "lo que dice"`. Pista: `{ tipo: "hablar", rhubarb: vozRhubarb }` (en lugar de `transcripcion`). Rhubarb cierra la boca en M/B/P y sigue el ritmo real; las reglas por letras reparten la palabra pareja y, cuando Whisper da tiempos gruesos, dejan una vocal abierta larga (comparación: composición `claudio-prueba-mocap-habla`). Formas extra de Rhubarb: G (F/V) → B, H (L) → C.
+
+### Captura de movimiento (mocap) desde un video
+
+```
+python scripts/rig/mocap.py <video> <personaje> public/trabajos/<ID>/datos/mocap.json [--desde s --hasta s] [--espejo] [--control out/<ID>/revision/control.png]
+```
+
+MediaPipe saca el cuerpo y la cara cuadro a cuadro y lo pasa a los huesos del personaje (vista frente): `cuerpo` (inclinación), `cabeza` (giro lateral, de la línea de los ojos), `mano_*`/`brazo_*` (ángulo hombro→muñeca; reposo = colgando), `pie_*` (cuánto sube cada pie respecto del otro), `raiz` (desplazamiento y saltos), `parpado`/`guino`, `mirada`, `yaw` 2,5D (giro de la cara, hasta ±0,65), `visema` (mandíbula y labios: canta o habla sin audio) y `expresion` (feliz / enojado / triste si el personaje las tiene). Suavizado gaussiano centrado (sin retraso) y reducción a poses clave con interpolación lineal (≈1 pose cada 3 cuadros, editable a mano). Se usa como `{ tipo: "secuencia", secuencia, duracion: datos.duracionCuadros, veces: 1 }` (ejemplo: `src/trabajos/2026-10-04_claudio_prueba-mocap/`).
+
+- Grabar **de frente**, buena luz; cuerpo entero si se quieren mover pies y raíz (con la cadera cortada solo se mueven tronco, brazos y cara).
+- Por defecto el lado izquierdo de la pantalla del actor mueve el lado izquierdo de la pantalla del personaje (como un espejo); `--espejo` lo invierte.
+- Anteojos de sol o la cara de perfil: la mirada y los párpados salen mal → `--sin-cara` o corregir esas claves.
+- La cara se busca en un recorte alrededor de la cabeza (planos generales) y, si falla, en el cuadro entero (primeros planos).
+- Modelos: `pose_landmarker_full.task` y `face_landmarker.task` en `C:/Videos/_herramientas/modelos-mediapipe/`. 10 s de video ≈ 15 s en la i3.
+
+### Efectos de sonido automáticos
+
+`sonidos: true` (o un número = volumen) en PersonajeRig suma efectos de la biblioteca de Mixkit según las pistas: whoosh al despegar y boing al aterrizar en `saltar`, pop al cambiar de `expresion` o ponerse un `disfraz`, whoosh suave al `girar`; en las `secuencia` (mocap incluido) detecta cambios de cara y saltos de la raíz. Lista y volúmenes en `src/rig/sonidos.ts` (`efectosDePistas`, función pura: se puede llamar desde un trabajo y editar la lista).
+
 ### Globos de diálogo (reglas)
 
 - Un globo termina de irse antes de que aparezca el siguiente: `queda` por frase = mínimo entre 24 cuadros y lo que deja el hueco hasta la frase siguiente (`duracionGlobo(palabras, fps, 0)` da pop + palabras + salida). Si no alcanza, separar las frases (pausa), nunca encimar globos.

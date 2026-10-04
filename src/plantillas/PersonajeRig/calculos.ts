@@ -2,7 +2,7 @@
 // cuadro y caja que ocupa el personaje en toda la animación (para recortar el lienzo al exportar con transparencia).
 import { z } from "zod";
 import * as A from "../../rig/animaciones";
-import { hablar, visemas } from "../../rig/lipsync";
+import { hablar, type TramoVisema, visemas, visemasRhubarb } from "../../rig/lipsync";
 import { aplicar, combinar, matricesMundo, poseInicial, type Pose, type PoseParcial } from "../../rig/pose";
 import { cargarPersonaje } from "../../rig/personajes";
 import { poseSecuencia, zPoseClave, zSecuencia } from "../../rig/secuencia";
@@ -66,7 +66,9 @@ export const zPista = z.discriminatedUnion("tipo", [
   z.object({
     tipo: z.literal("hablar"),
     ...tiempo,
-    transcripcion: z.object({ tokens: z.array(zToken) }),
+    // Una de las dos: transcripción de Whisper (reglas por letras) o bocas de Rhubarb (desde el sonido, preferida)
+    transcripcion: z.object({ tokens: z.array(zToken) }).optional(),
+    rhubarb: z.object({ mouthCues: z.array(z.object({ start: z.number(), end: z.number(), value: z.string() })) }).optional(),
     idioma: z.enum(["es", "en"]).default("es"),
     intensidad: z.number().optional(),
   }),
@@ -96,6 +98,8 @@ export const zPersonajeRig = z.object({
   sombra: z.boolean().default(false), // sombra en el piso
   luz: z.object({ angulo: z.number(), intensidad: z.number(), sombra: z.string().optional() }).nullable().default(null), // volumen 2,5D
   audio: z.object({ archivo: z.string(), desde: z.number().default(0), volumen: z.number().default(1) }).nullable().default(null),
+  // Efectos de sonido automáticos (src/rig/sonidos.ts): saltos, cambios de cara/disfraz, giros. Número = volumen.
+  sonidos: z.union([z.boolean(), z.number()]).default(false),
   pistas: z.array(zPista),
 });
 export type PersonajeRigProps = z.input<typeof zPersonajeRig>;
@@ -111,12 +115,14 @@ const parsear = (e: PersonajeRigProps): Props => {
   }
   return p;
 };
-const cacheVisemas = new WeakMap<object, ReturnType<typeof visemas>>();
-const visemasDe = (tr: { tokens: { text: string; fromMs: number; toMs: number }[] }, fps: number, idioma: "es" | "en") => {
-  let v = cacheVisemas.get(tr);
+const cacheVisemas = new WeakMap<object, TramoVisema[]>();
+const visemasDe = (p: Extract<Pista, { tipo: "hablar" }>, fps: number): TramoVisema[] => {
+  const fuente = p.rhubarb ?? p.transcripcion;
+  if (!fuente) return [];
+  let v = cacheVisemas.get(fuente);
   if (!v) {
-    v = visemas(tr, { fps, idioma });
-    cacheVisemas.set(tr, v);
+    v = p.rhubarb ? visemasRhubarb(p.rhubarb, { fps }) : visemas(p.transcripcion!, { fps, idioma: p.idioma });
+    cacheVisemas.set(fuente, v);
   }
   return v;
 };
@@ -210,7 +216,7 @@ export const poseEn = (entrada: PersonajeRigProps, f0: number, fps: number): Pos
         break;
       }
       case "hablar":
-        c = hablar(local, visemasDe(p.transcripcion, fps, p.idioma), p);
+        c = hablar(local, visemasDe(p, fps), p);
         break;
       default:
         c = null;

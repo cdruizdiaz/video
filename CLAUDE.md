@@ -58,7 +58,9 @@ Reglas:
 ## Personajes animados (rig vectorial)
 - Animar un personaje = **rig por piezas** (`src/rig/`, plantilla `PersonajeRig`), no sprites de IA: el personaje se arma con las piezas vectoriales de su `.ai` y se anima con pistas (respirar, parpadear, expresión, hablar, saludar, saltar, caminar, correr, girar, temblor, vaivén, trayecto) y **secuencias de poses clave en JSON** (`public/trabajos/<ID>/datos/`). Todo en `src/rig/README.md`.
 - Personaje nuevo: `/rig-personaje`. Revisar con las hojas chicas de `out/personajes/<nombre>/` (nunca abrir el `.ai`); corregir con `src/personajes/<nombre>/mapa.json`; ajustar pivotes en el Studio (`personaje-<nombre>-editor-<vista>` → "Guardar en rig.json").
-- Lip sync: transcripción de Whisper → pista `hablar` (reglas de letras es/en, sin herramientas extra).
+- Lip sync: **Rhubarb** (bocas desde el sonido) → pista `hablar` con `rhubarb`; `scripts/voz.mjs ... --datos public/trabajos/<ID>/datos` ya lo genera junto con la transcripción. Respaldo: transcripción de Whisper → `hablar` con `transcripcion` (reglas de letras es/en).
+- **Mocap:** para que un personaje copie a una persona (gestos, cantar, bailar en el lugar), grabarla de frente y `python scripts/rig/mocap.py <video> <personaje> public/trabajos/<ID>/datos/mocap.json --control out/<ID>/revision/control.png` → pista `secuencia` (cuerpo, brazos, cabeza, ojos, mirada, giro 2,5D, boca y caras). Revisar con la hoja de control y `revisar.mjs`. Detalle en `src/rig/README.md` → Captura de movimiento.
+- Efectos de sonido del personaje: `sonidos: true` en PersonajeRig (saltos, cambios de cara/disfraz, giros; `src/rig/sonidos.ts`).
 - Exportar: `node scripts/rig/exportar.mjs <comp> <ID> <pieza_formato> [--mov] [--png] [--mp4]` (ProRes 4444 con alfa para Premiere/CapCut, secuencia PNG, o MP4 con fondo); versiona `_vN` y anota en `TRABAJO.md`.
 - Revisar animaciones: `node scripts/rig/hoja_animacion.mjs <comp> <salida.png> --cada N` (hoja de contactos chica).
 - **Modo de animación** (se define al abrir el trabajo, como el formato; queda en el brief de `TRABAJO.md`): **plano** (2D, por defecto), **2,5D** o **3D** (Three.js: `@remotion/three`; Bloomie 3D construido por código en `src/personajes/bloomie/Bloomie3D.tsx`; render con `--gl=angle`, lento sin GPU: solo si se pide y avisando el tiempo de render).
@@ -125,6 +127,8 @@ Reglas:
 | Reencuadre, subtítulos, títulos, gráficos, transiciones, ducking, render | Remotion (plantillas de `src/plantillas/`) |
 | Pasar la edición a Adobe Premiere | `/a-premiere` (`scripts/a-premiere.mjs`: XML de Final Cut 7 + capa ProRes 4444) |
 | Animar un personaje (moverlo, hablar, secuencias de poses) | rig vectorial: `src/rig/` + plantilla `PersonajeRig`; personaje nuevo con `/rig-personaje` |
+| Que el personaje copie los movimientos de una persona filmada | `scripts/rig/mocap.py` (MediaPipe) → pista `secuencia` |
+| Boca del personaje sincronizada con una voz | Rhubarb (`scripts/lipsync_rhubarb.mjs` o `scripts/voz.mjs`) → pista `hablar` con `rhubarb` |
 | Animación 2,5D (volumen, giros ¾, sombras, perspectiva) | rig + `luz` / `yaw` / sombra proyectada / `giro3d` (receta en "Personajes animados" y `src/rig/README.md`) |
 | Animación 3D | `@remotion/three` + modelo por código (`Bloomie3D.tsx`) o `.glb` de un modelador; render `--gl=angle` (lento: preguntar antes) |
 | Separar las piezas de un personaje del `.ai` | `scripts/rig/extraer_rig.py` (PyMuPDF) |
