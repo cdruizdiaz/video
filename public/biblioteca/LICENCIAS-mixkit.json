@@ -7,7 +7,8 @@
     "duracionSeg": 1.3,
     "fuente": "https://assets.mixkit.co/active_storage/sfx/1492/1492.wav",
     "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
-    "descargado": "2026-09-28"
+    "descargado": "2026-09-28",
+    "sha256": "02b8cd40b3761288d54f4d6706983a2f8c110182b669ae2cdf9aab02935a4e7a"
   },
   {
     "archivo": "public/biblioteca/musica/mixkit/mixkit-1167-close-up.mp3",
@@ -18,7 +19,8 @@
     "duracionSeg": 95.1,
     "fuente": "https://assets.mixkit.co/music/1167/1167.mp3",
     "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
-    "descargado": "2026-09-28"
+    "descargado": "2026-09-28",
+    "sha256": "a7f05a29d07a84d38072ccd2b35204bca812db86e75b2a837e71cc144d3e739b"
   },
   {
     "archivo": "public/biblioteca/musica/mixkit/mixkit-801-happy-home.mp3",
@@ -29,7 +31,8 @@
     "duracionSeg": 110,
     "fuente": "https://assets.mixkit.co/music/801/801.mp3",
     "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
-    "descargado": "2026-09-28"
+    "descargado": "2026-09-28",
+    "sha256": "76b82159ba1d6821a5ac9465e8ff19007446c1b657dfe53b5917fc8896b3bf21"
   },
   {
     "archivo": "public/biblioteca/sfx/mixkit/mixkit-1114-game-click.wav",
@@ -51,5 +54,209 @@
     "fuente": "https://assets.mixkit.co/music/175/175.mp3",
     "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
     "descargado": "2026-09-28"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2894-boing-hit-sound.wav",
+    "id": "2894",
+    "tipo": "sfx",
+    "titulo": "Boing hit sound",
+    "duracionSeg": 1.2,
+    "sha256": "9d0611005031292f357a89f7b7c2dfd2bf3e2e3896cbc0cb4c5d534a61fa9280",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2894/2894.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-719-car-double-horn.wav",
+    "id": "719",
+    "tipo": "sfx",
+    "titulo": "Car double horn",
+    "duracionSeg": 0.9,
+    "sha256": "15c3836597e2b820a9543a1fa671d4b2691bca46ef98f7d4ca767936b5109ed0",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/719/719.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-3033-old-bus-arrival.wav",
+    "id": "3033",
+    "tipo": "sfx",
+    "titulo": "Old bus arrival",
+    "duracionSeg": 13.4,
+    "sha256": "17f84f1c0dd18168eab9af80e969f9a14656f14c86957546a2c0f39b3f3fb115",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/3033/3033.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-3034-city-bus-departure.wav",
+    "id": "3034",
+    "tipo": "sfx",
+    "titulo": "City bus departure",
+    "duracionSeg": 12,
+    "sha256": "5100b3fb52fa415e5962d34856063d112ec902e6dffba3ac351e0fa8bf0a2696",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/3034/3034.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2709-hydraulic-bus-door.wav",
+    "id": "2709",
+    "tipo": "sfx",
+    "titulo": "Hydraulic bus door",
+    "duracionSeg": 1.7,
+    "sha256": "3b56f308ac283a5439645f815d95922266b499e45f49f3ed717935882563063f",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2709/2709.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2192-little-cute-kiss.wav",
+    "id": "2192",
+    "tipo": "sfx",
+    "titulo": "Little cute kiss",
+    "duracionSeg": 1.1,
+    "sha256": "703757df682ea29b77b07122764a5e8cf0818bfc5cf3ec5260434f37d9195096",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2192/2192.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-195-creaky-door-open.wav",
+    "id": "195",
+    "tipo": "sfx",
+    "titulo": "Creaky door open",
+    "duracionSeg": 2.7,
+    "sha256": "7ce4a2dc95f38ea8f2edb897236545695aaf8deb322f53a2e6a1f8a4ad3af14c",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/195/195.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-739-small-cartoon-character-laughing.wav",
+    "id": "739",
+    "tipo": "sfx",
+    "titulo": "Small cartoon character laughing",
+    "duracionSeg": 2.3,
+    "sha256": "7559e62e952fce46d481e280baab7cef308918b9835751d5ec7157542c7f2a79",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/739/739.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-37-cartoon-insect-running-fast.wav",
+    "id": "37",
+    "tipo": "sfx",
+    "titulo": "Cartoon insect running fast",
+    "duracionSeg": 1.6,
+    "sha256": "677a82c5aeb4f99c11178f26d72e884e530853bd5201a715a6786e55ad1062e4",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/37/37.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-01"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-1538-fast-car-drive-by.wav",
+    "id": "1538",
+    "tipo": "sfx",
+    "titulo": "Fast car drive by",
+    "duracionSeg": 3.8,
+    "sha256": "bd28537a22bcd57c78b539068c1f40f8ecb5a65bd4134800c161be39b207f21f",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/1538/1538.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-02"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-1021.mp3",
+    "id": "1021",
+    "tipo": "musica",
+    "duracionSeg": 68.3,
+    "sha256": "80fe588695203f1b75da4f9d99852d4c6b36fcbb3f796e5b23ec9614bcff4f6f",
+    "fuente": "https://assets.mixkit.co/music/1021/1021.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-02"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-395.wav",
+    "id": "395",
+    "tipo": "sfx",
+    "duracionSeg": 2.7,
+    "sha256": "e7d5268140d14b538ed55faa66a812e3a4aa65e1dd3d3f46266c1d5fb124d457",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/395/395.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-02"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2151.wav",
+    "id": "2151",
+    "tipo": "sfx",
+    "duracionSeg": 0.5,
+    "sha256": "d77ec3d56eabab9b0d5cf8e33bb17b098e15116b9cf33f49d720cfe889f3cf42",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2151/2151.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-02"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-539-footsteps-on-the-snow.wav",
+    "id": "539",
+    "tipo": "sfx",
+    "titulo": "Footsteps on the snow",
+    "duracionSeg": 10.1,
+    "sha256": "61a47a33b151b4bf9601431b7298e5ef4f6636697af465e4e7557dd78e8c893f",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/539/539.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-02"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-3062.wav",
+    "id": "3062",
+    "tipo": "sfx",
+    "duracionSeg": 2.5,
+    "sha256": "6b7938d7c408bb2c413945cee4219f8edf5014d49ccf2020659f954ef7a699ce",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/3062/3062.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-02"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2986.wav",
+    "id": "2986",
+    "tipo": "sfx",
+    "duracionSeg": 4,
+    "sha256": "490ec437ca002176844e4a9f90bac6f286fe2a4af31c3b708a234079823355ae",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2986/2986.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-02"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2116.wav",
+    "id": "2116",
+    "tipo": "sfx",
+    "duracionSeg": 1.9,
+    "sha256": "0b7a020316d3a625bfaea411363ec97daac7600bfab4c96548f2ca2afcbb9edc",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2116/2116.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-02"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-731-cartoon-bubble-pop.wav",
+    "id": "731",
+    "tipo": "sfx",
+    "titulo": "Cartoon bubble pop",
+    "duracionSeg": 0.5,
+    "sha256": "7e540b926df4fbfc2bc78212e2178c4790d6aa83551b1abd937152086bfb0c62",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/731/731.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-04"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-49-rock-the-game.mp3",
+    "id": "49",
+    "tipo": "musica",
+    "titulo": "Rock the Game",
+    "autor": "Ahjay Stelino",
+    "duracionSeg": 102.4,
+    "sha256": "6ee768f33c21b7d4abface5f49af9ef2d14c7652692120399892fa5a7ea1a46d",
+    "fuente": "https://assets.mixkit.co/music/49/49.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-05"
   }
 ]

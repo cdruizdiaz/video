@@ -1,0 +1,291 @@
+{
+ "version": 1,
+ "personaje": "bloomie",
+ "vistas": {
+  "frente": {
+   "huesos": [
+    {
+     "id": "raiz",
+     "padre": null,
+     "pivote": [
+      0,
+      0
+     ]
+    },
+    {
+     "id": "cuerpo",
+     "padre": "raiz",
+     "pivote": [
+      -0.2,
+      -34.2
+     ]
+    },
+    {
+     "id": "cabeza",
+     "padre": "cuerpo",
+     "pivote": [
+      -0.1,
+      -112.6
+     ]
+    },
+    {
+     "id": "pie_izq",
+     "padre": "raiz",
+     "pivote": [
+      -24.1,
+      -36.4
+     ]
+    },
+    {
+     "id": "pie_der",
+     "padre": "raiz",
+     "pivote": [
+      24.1,
+      -36.4
+     ]
+    },
+    {
+     "id": "mano_izq",
+     "padre": "cuerpo",
+     "pivote": [
+      -86.4,
+      -103.9
+     ]
+    },
+    {
+     "id": "mano_der",
+     "padre": "cuerpo",
+     "pivote": [
+      85.9,
+      -103.9
+     ]
+    },
+    {
+     "id": "petalo_sup",
+     "padre": "cabeza",
+     "pivote": [
+      8.6,
+      -279.1
+     ]
+    },
+    {
+     "id": "petalo_der",
+     "padre": "cabeza",
+     "pivote": [
+      91,
+      -235.2
+     ]
+    },
+    {
+     "id": "petalo_inf_der",
+     "padre": "cabeza",
+     "pivote": [
+      49,
+      -126.9
+     ]
+    },
+    {
+     "id": "petalo_sup_izq",
+     "padre": "cabeza",
+     "pivote": [
+      -86.7,
+      -241.4
+     ]
+    },
+    {
+     "id": "petalo_inf_izq",
+     "padre": "cabeza",
+     "pivote": [
+      -58.3,
+      -131.5
+     ]
+    }
+   ],
+   "piezas": {
+    "pie_izq": "pie_izq",
+    "pie_der": "pie_der",
+    "mano_izq": "mano_izq",
+    "mano_der": "mano_der",
+    "cuerpo": "cuerpo",
+    "petalo_sup": "petalo_sup",
+    "petalo_der": "petalo_der",
+    "petalo_inf_der": "petalo_inf_der",
+    "petalo_sup_izq": "petalo_sup_izq",
+    "petalo_inf_izq": "petalo_inf_izq",
+    "cabeza": "cabeza"
+   },
+   "rostro": {
+    "hueso": "cabeza"
+   },
+   "mano": "mano_der",
+   "profundidad": {
+    "pie_izq": 0.15,
+    "pie_der": 0.15,
+    "mano_izq": 0.1,
+    "mano_der": 0.1,
+    "cuerpo": 0.25,
+    "petalo_sup": -0.25,
+    "petalo_der": -0.55,
+    "petalo_inf_der": -0.55,
+    "petalo_sup_izq": -0.55,
+    "petalo_inf_izq": -0.55,
+    "cabeza": 0.45
+   }
+  },
+  "perfil": {
+   "huesos": [
+    {
+     "id": "raiz",
+     "padre": null,
+     "pivote": [
+      0,
+      0
+     ]
+    },
+    {
+     "id": "cuerpo",
+     "padre": "raiz",
+     "pivote": [
+      3.7,
+      -31.6
+     ]
+    },
+    {
+     "id": "cabeza",
+     "padre": "cuerpo",
+     "pivote": [
+      46.2,
+      -133.7
+     ]
+    },
+    {
+     "id": "mano_atras",
+     "padre": "cuerpo",
+     "pivote": [
+      20.8,
+      -100.1
+     ]
+    },
+    {
+     "id": "pie_atras",
+     "padre": "raiz",
+     "pivote": [
+      -19.6,
+      -21.9
+     ]
+    },
+    {
+     "id": "pie",
+     "padre": "raiz",
+     "pivote": [
+      0,
+      -21.9
+     ]
+    },
+    {
+     "id": "mano",
+     "padre": "cuerpo",
+     "pivote": [
+      8.9,
+      -100.1
+     ]
+    },
+    {
+     "id": "petalo_izq",
+     "padre": "cabeza",
+     "pivote": [
+      -6.5,
+      -219.5
+     ]
+    }
+   ],
+   "piezas": {
+    "mano_atras": "mano_atras",
+    "pie_atras": "pie_atras",
+    "pie": "pie",
+    "cuerpo": "cuerpo",
+    "hoja": "cuerpo",
+    "mano": "mano",
+    "cabeza": "cabeza",
+    "petalo_izq": "petalo_izq"
+   },
+   "rostro": {
+    "hueso": "cabeza"
+   },
+   "mano": "mano"
+  },
+  "espalda": {
+   "huesos": [
+    {
+     "id": "raiz",
+     "padre": null,
+     "pivote": [
+      0,
+      0
+     ]
+    },
+    {
+     "id": "cuerpo",
+     "padre": "raiz",
+     "pivote": [
+      -2.2,
+      -34.2
+     ]
+    },
+    {
+     "id": "cabeza",
+     "padre": "cuerpo",
+     "pivote": [
+      -1.4,
+      -82.4
+     ]
+    },
+    {
+     "id": "pie_izq",
+     "padre": "raiz",
+     "pivote": [
+      -24.1,
+      -36.4
+     ]
+    },
+    {
+     "id": "pie_der",
+     "padre": "raiz",
+     "pivote": [
+      24.1,
+      -36.4
+     ]
+    },
+    {
+     "id": "mano_izq",
+     "padre": "cuerpo",
+     "pivote": [
+      -89.6,
+      -103.9
+     ]
+    },
+    {
+     "id": "mano_der",
+     "padre": "cuerpo",
+     "pivote": [
+      85.2,
+      -103.9
+     ]
+    }
+   ],
+   "piezas": {
+    "pie_izq": "pie_izq",
+    "pie_der": "pie_der",
+    "mano_izq": "mano_izq",
+    "mano_der": "mano_der",
+    "cuerpo": "cuerpo",
+    "cola": "cuerpo",
+    "cabeza": "cabeza"
+   },
+   "rostro": {
+    "hueso": "cabeza"
+   },
+   "mano": "mano_der"
+  }
+ }
+}

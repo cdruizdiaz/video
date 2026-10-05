@@ -15,12 +15,15 @@
 //   node scripts/mixkit.mjs buscar tag:<etiqueta>        p. ej. tag:motivational
 //   node scripts/mixkit.mjs buscar --sfx <términos>      efectos de sonido (whoosh, click, pop...)
 //   node scripts/mixkit.mjs bajar <id> [--sfx]           descarga UN tema/efecto
+//   node scripts/mixkit.mjs verificar                    compara los archivos locales con su sha256 (sin red)
 //
 // Resultados de búsqueda: tmp/mixkit-busqueda.json (leer este JSON, no el HTML).
 // Descargas a la biblioteca compartida: public/biblioteca/musica/mixkit/ y public/biblioteca/sfx/mixkit/,
-// con registro de licencia en public/biblioteca/LICENCIAS-mixkit.json.
+// con registro de licencia en public/biblioteca/LICENCIAS-mixkit.json (incluye el sha256 del archivo:
+// si Mixkit cambia o reemplaza un tema, la re-descarga lo detecta y avisa).
 // Para usar un tema en un trabajo, prepararlo (recorte, fundidos, loudnorm) en public/trabajos/<ID>/audio/.
 import { execFileSync } from "node:child_process";
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -54,6 +57,8 @@ const leerJson = (f, def) => {
     return def;
   }
 };
+
+const sha256 = (f) => crypto.createHash("sha256").update(fs.readFileSync(f)).digest("hex");
 
 const urlBusqueda = (consulta) => {
   const seccion = esSfx ? "free-sound-effects" : "free-stock-music";
@@ -130,6 +135,7 @@ async function bajar(id) {
 
   if (fs.existsSync(destino)) {
     console.log(`Ya estaba descargado: ${path.relative(RAIZ, destino)}`);
+    if (registrado) comprobarHash(registrado, destino);
     return;
   }
   const res = await fetch(url, { headers: { "User-Agent": UA } });
@@ -151,6 +157,7 @@ async function bajar(id) {
 
   if (registrado) {
     console.log(`Descargado de nuevo: ${path.relative(RAIZ, destino)} (licencia ya registrada)`);
+    comprobarHash(registrado, destino);
     return;
   }
   const registro = leerJson(REGISTRO, []);
@@ -161,6 +168,7 @@ async function bajar(id) {
     titulo: previa?.titulo,
     autor: previa?.autor,
     duracionSeg: duracionSeg ? Math.round(duracionSeg * 10) / 10 : undefined,
+    sha256: sha256(destino),
     fuente: url,
     licencia: LICENCIA[tipo],
     descargado: new Date().toISOString().slice(0, 10),
@@ -170,10 +178,52 @@ async function bajar(id) {
   console.log(`Licencia registrada en ${path.relative(RAIZ, REGISTRO)}`);
 }
 
+// Compara el archivo local con el sha256 registrado; si el registro no lo tenía, lo agrega.
+function comprobarHash(entrada, archivo) {
+  const actual = sha256(archivo);
+  if (!entrada.sha256) {
+    const registro = leerJson(REGISTRO, []);
+    const r = registro.find((x) => x.id === entrada.id && x.tipo === entrada.tipo);
+    r.sha256 = actual;
+    fs.writeFileSync(REGISTRO, JSON.stringify(registro, null, 2));
+    console.log(`sha256 agregado al registro: ${actual.slice(0, 12)}…`);
+    return true;
+  }
+  if (entrada.sha256 === actual) {
+    console.log(`sha256 OK (${actual.slice(0, 12)}…): es el mismo archivo que se usó en los trabajos.`);
+    return true;
+  }
+  console.error(
+    `⚠️  sha256 DISTINTO para ${entrada.archivo}: registrado ${entrada.sha256.slice(0, 12)}…, local ${actual.slice(0, 12)}…
+` +
+      "    Mixkit cambió el archivo: los trabajos que lo usan pueden no quedar iguales. Recuperalo del archivo del trabajo.",
+  );
+  return false;
+}
+
+// Sin red: revisa cada tema registrado que esté en esta PC.
+function verificar() {
+  let faltan = 0;
+  let distintos = 0;
+  for (const r of leerJson(REGISTRO, [])) {
+    const f = path.join(RAIZ, r.archivo);
+    if (!fs.existsSync(f)) {
+      faltan++;
+      console.log(`Falta: ${r.archivo} (bajar ${r.id}${r.tipo === "sfx" ? " --sfx" : ""})`);
+      continue;
+    }
+    console.log(`${r.tipo} ${r.id} ${r.titulo ?? ""}`);
+    if (!comprobarHash(r, f)) distintos++;
+  }
+  console.log(`Listo: ${faltan} faltan, ${distintos} con sha256 distinto.`);
+  if (distintos) process.exit(1);
+}
+
 try {
   if (comando === "buscar") await buscar(resto.join(" "));
   else if (comando === "bajar") await bajar(resto[0]);
-  else console.log("Uso: node scripts/mixkit.mjs buscar <términos|mood:x|genero:x|tag:x> [--sfx]  |  bajar <id> [--sfx]");
+  else if (comando === "verificar") verificar();
+  else console.log("Uso: node scripts/mixkit.mjs buscar <términos|mood:x|genero:x|tag:x> [--sfx]  |  bajar <id> [--sfx]  |  verificar");
 } catch (e) {
   console.error(`Error: ${e.message}`);
   process.exit(1);

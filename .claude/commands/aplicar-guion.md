@@ -22,6 +22,6 @@ Aplicá la versión nueva del guion al video. Datos y, si lo pegué, el guion: $
 
 4. **Revisar.** `npx tsc --noEmit`. Renderizá una secuencia a `--scale=0.25` de la composición y armá una hoja de contactos en `out/<ID>/revision/` con un frame por escena (cerca del final de cada una, con todo visible). Miralá y verificá: textos completos y sin cortes, dentro de las zonas seguras (y 250–1580), tiempos según el guion. Si algo no entra, corregilo (tamaño o corte de línea) y avisame.
 
-5. **Entregar.** Renderizá la versión final como `out/<ID>/final/<salida>_v<N+1>.mp4` (`--crf=18`, nunca sobrescribir), medí el volumen con `ebur128` y agregala a la tabla de entregas de `TRABAJO.md` con un resumen de los cambios.
+5. **Entregar.** Renderizá la versión final como `out/<ID>/final/<salida>_v<N+1>.mp4` (`--crf=18`, nunca sobrescribir), medí el volumen con `ebur128` y agregala a la tabla de entregas de `TRABAJO.md` con un resumen de los cambios. Si la composición tiene `premiere` en `composiciones.ts`, exportá también esa versión a Premiere con `node scripts/a-premiere.mjs <ID>` (en segundo plano; reutiliza la capa de gráficos si no cambió).
 
 6. **Informe.** Mostrame: la tabla de cambios aplicados, cualquier punto del guion que no se pudo seguir al pie de la letra (y por qué), la hoja de contactos y la ruta del video nuevo. Ofrecé hacer commit y push (guion + código + TRABAJO.md).

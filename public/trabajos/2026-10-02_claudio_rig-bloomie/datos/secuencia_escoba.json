@@ -1,0 +1,1257 @@
+{
+ "nombre": "escoba-frenetica",
+ "descripcion": "Bloomie de bruja volando en escoba de izquierda a derecha: 24 posiciones frenéticas (acelera, frena con latigazo, pica, se sacude, trepa y baja). Con temblor por encima. v2: escoba más grande y más inclinación de vuelo.",
+ "ciclo": true,
+ "interpolacion": "suave",
+ "poses": [
+  {
+   "nota": "arranca: se inclina hacia adelante",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 0,
+     "y": 0,
+     "rot": 14
+    },
+    "cuerpo": {
+     "sy": 1,
+     "sx": 1
+    },
+    "cabeza": {
+     "rot": -4
+    },
+    "petalo_*": {
+     "rot": -10
+    },
+    "mano_izq": {
+     "rot": -20
+    },
+    "mano_der": {
+     "rot": 20
+    },
+    "pie_izq": {
+     "rot": 10,
+     "x": -3
+    },
+    "pie_der": {
+     "rot": 10,
+     "x": -3
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 67,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "toma velocidad",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 6,
+     "y": -3,
+     "rot": 18
+    },
+    "cuerpo": {
+     "sy": 0.97,
+     "sx": 1.03
+    },
+    "cabeza": {
+     "rot": -6
+    },
+    "petalo_*": {
+     "rot": -14
+    },
+    "mano_izq": {
+     "rot": -24
+    },
+    "mano_der": {
+     "rot": 24
+    },
+    "pie_izq": {
+     "rot": 14,
+     "x": -4.2
+    },
+    "pie_der": {
+     "rot": 14,
+     "x": -4.2
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 69,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "acelera, pegado a la escoba",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 14,
+     "y": -6,
+     "rot": 22
+    },
+    "cuerpo": {
+     "sy": 0.95,
+     "sx": 1.05
+    },
+    "cabeza": {
+     "rot": -9
+    },
+    "petalo_*": {
+     "rot": -18
+    },
+    "mano_izq": {
+     "rot": -28
+    },
+    "mano_der": {
+     "rot": 28
+    },
+    "pie_izq": {
+     "rot": 20,
+     "x": -6
+    },
+    "pie_der": {
+     "rot": 20,
+     "x": -6
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 71,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "máxima velocidad, cabeza gacha",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 22,
+     "y": -4,
+     "rot": 26
+    },
+    "cuerpo": {
+     "sy": 0.93,
+     "sx": 1.0699999999999998
+    },
+    "cabeza": {
+     "rot": -12
+    },
+    "petalo_*": {
+     "rot": -24
+    },
+    "mano_izq": {
+     "rot": -30
+    },
+    "mano_der": {
+     "rot": 30
+    },
+    "pie_izq": {
+     "rot": 26,
+     "x": -7.8
+    },
+    "pie_der": {
+     "rot": 26,
+     "x": -7.8
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 73,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "frenazo: el cuerpo sigue de largo",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 16,
+     "y": 6,
+     "rot": 10
+    },
+    "cuerpo": {
+     "sy": 1.04,
+     "sx": 0.96
+    },
+    "cabeza": {
+     "rot": 6
+    },
+    "petalo_*": {
+     "rot": -6
+    },
+    "mano_izq": {
+     "rot": -10
+    },
+    "mano_der": {
+     "rot": 10
+    },
+    "pie_izq": {
+     "rot": 6,
+     "x": -1.7999999999999998
+    },
+    "pie_der": {
+     "rot": 6,
+     "x": -1.7999999999999998
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 61,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "latigazo hacia atrás, nariz de la escoba arriba",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 4,
+     "y": 10,
+     "rot": -4
+    },
+    "cuerpo": {
+     "sy": 1.08,
+     "sx": 0.9199999999999999
+    },
+    "cabeza": {
+     "rot": 14
+    },
+    "petalo_*": {
+     "rot": 6
+    },
+    "mano_izq": {
+     "rot": 6
+    },
+    "mano_der": {
+     "rot": -6
+    },
+    "pie_izq": {
+     "rot": -8,
+     "x": 2.4
+    },
+    "pie_der": {
+     "rot": -8,
+     "x": 2.4
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 53,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "se va para atrás, pétalos hacia adelante",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": -10,
+     "y": 4,
+     "rot": -8
+    },
+    "cuerpo": {
+     "sy": 1.06,
+     "sx": 0.94
+    },
+    "cabeza": {
+     "rot": 18
+    },
+    "petalo_*": {
+     "rot": 12
+    },
+    "mano_izq": {
+     "rot": 12
+    },
+    "mano_der": {
+     "rot": -12
+    },
+    "pie_izq": {
+     "rot": -14,
+     "x": 4.2
+    },
+    "pie_der": {
+     "rot": -14,
+     "x": 4.2
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 49,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "recupera",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": -18,
+     "y": -6,
+     "rot": 0
+    },
+    "cuerpo": {
+     "sy": 1,
+     "sx": 1
+    },
+    "cabeza": {
+     "rot": 8
+    },
+    "petalo_*": {
+     "rot": 4
+    },
+    "mano_izq": {
+     "rot": 0
+    },
+    "mano_der": {
+     "rot": 0
+    },
+    "pie_izq": {
+     "rot": -4,
+     "x": 1.2
+    },
+    "pie_der": {
+     "rot": -4,
+     "x": 1.2
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 59,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "pica hacia adelante",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": -12,
+     "y": -14,
+     "rot": 16
+    },
+    "cuerpo": {
+     "sy": 0.96,
+     "sx": 1.04
+    },
+    "cabeza": {
+     "rot": -6
+    },
+    "petalo_*": {
+     "rot": -12
+    },
+    "mano_izq": {
+     "rot": -18
+    },
+    "mano_der": {
+     "rot": 18
+    },
+    "pie_izq": {
+     "rot": 16,
+     "x": -4.8
+    },
+    "pie_der": {
+     "rot": 16,
+     "x": -4.8
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 75,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "picada: la escoba apunta abajo",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": -2,
+     "y": -4,
+     "rot": 28
+    },
+    "cuerpo": {
+     "sy": 0.92,
+     "sx": 1.08
+    },
+    "cabeza": {
+     "rot": -14
+    },
+    "petalo_*": {
+     "rot": -22
+    },
+    "mano_izq": {
+     "rot": -30
+    },
+    "mano_der": {
+     "rot": 30
+    },
+    "pie_izq": {
+     "rot": 28,
+     "x": -8.4
+    },
+    "pie_der": {
+     "rot": 28,
+     "x": -8.4
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 81,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "toca fondo de la picada",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 10,
+     "y": 12,
+     "rot": 32
+    },
+    "cuerpo": {
+     "sy": 0.9,
+     "sx": 1.1
+    },
+    "cabeza": {
+     "rot": -16
+    },
+    "petalo_*": {
+     "rot": -26
+    },
+    "mano_izq": {
+     "rot": -34
+    },
+    "mano_der": {
+     "rot": 34
+    },
+    "pie_izq": {
+     "rot": 32,
+     "x": -9.6
+    },
+    "pie_der": {
+     "rot": 32,
+     "x": -9.6
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 85,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "rebota",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 18,
+     "y": 16,
+     "rot": 18
+    },
+    "cuerpo": {
+     "sy": 1.05,
+     "sx": 0.95
+    },
+    "cabeza": {
+     "rot": -4
+    },
+    "petalo_*": {
+     "rot": -14
+    },
+    "mano_izq": {
+     "rot": -16
+    },
+    "mano_der": {
+     "rot": 16
+    },
+    "pie_izq": {
+     "rot": 12,
+     "x": -3.5999999999999996
+    },
+    "pie_der": {
+     "rot": 12,
+     "x": -3.5999999999999996
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 73,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "sacudón a la izquierda",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 12,
+     "y": 6,
+     "rot": -2
+    },
+    "cuerpo": {
+     "sy": 1.07,
+     "sx": 0.9299999999999999
+    },
+    "cabeza": {
+     "rot": 10
+    },
+    "petalo_*": {
+     "rot": 8
+    },
+    "mano_izq": {
+     "rot": 8
+    },
+    "mano_der": {
+     "rot": -8
+    },
+    "pie_izq": {
+     "rot": -10,
+     "x": 3
+    },
+    "pie_der": {
+     "rot": -10,
+     "x": 3
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 57,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "sacudón a la derecha",
+   "expresion": "bruja",
+   "guino": 1,
+   "huesos": {
+    "raiz": {
+     "x": 20,
+     "y": 0,
+     "rot": 18
+    },
+    "cuerpo": {
+     "sy": 0.95,
+     "sx": 1.05
+    },
+    "cabeza": {
+     "rot": -10
+    },
+    "petalo_*": {
+     "rot": -18
+    },
+    "mano_izq": {
+     "rot": -24
+    },
+    "mano_der": {
+     "rot": 24
+    },
+    "pie_izq": {
+     "rot": 18,
+     "x": -5.3999999999999995
+    },
+    "pie_der": {
+     "rot": 18,
+     "x": -5.3999999999999995
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 75,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "sacudón a la izquierda",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 10,
+     "y": -4,
+     "rot": -4
+    },
+    "cuerpo": {
+     "sy": 1.06,
+     "sx": 0.94
+    },
+    "cabeza": {
+     "rot": 12
+    },
+    "petalo_*": {
+     "rot": 10
+    },
+    "mano_izq": {
+     "rot": 10
+    },
+    "mano_der": {
+     "rot": -10
+    },
+    "pie_izq": {
+     "rot": -12,
+     "x": 3.5999999999999996
+    },
+    "pie_der": {
+     "rot": -12,
+     "x": 3.5999999999999996
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 55,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "sacudón a la derecha",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 18,
+     "y": -8,
+     "rot": 16
+    },
+    "cuerpo": {
+     "sy": 0.96,
+     "sx": 1.04
+    },
+    "cabeza": {
+     "rot": -8
+    },
+    "petalo_*": {
+     "rot": -16
+    },
+    "mano_izq": {
+     "rot": -22
+    },
+    "mano_der": {
+     "rot": 22
+    },
+    "pie_izq": {
+     "rot": 16,
+     "x": -4.8
+    },
+    "pie_der": {
+     "rot": 16,
+     "x": -4.8
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 73,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "trepa: nariz arriba",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 8,
+     "y": -18,
+     "rot": -6
+    },
+    "cuerpo": {
+     "sy": 1.06,
+     "sx": 0.94
+    },
+    "cabeza": {
+     "rot": 16
+    },
+    "petalo_*": {
+     "rot": 10
+    },
+    "mano_izq": {
+     "rot": 4
+    },
+    "mano_der": {
+     "rot": -4
+    },
+    "pie_izq": {
+     "rot": -6,
+     "x": 1.7999999999999998
+    },
+    "pie_der": {
+     "rot": -6,
+     "x": 1.7999999999999998
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 51,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "sube más, se cae hacia atrás",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 0,
+     "y": -28,
+     "rot": -12
+    },
+    "cuerpo": {
+     "sy": 1.08,
+     "sx": 0.9199999999999999
+    },
+    "cabeza": {
+     "rot": 20
+    },
+    "petalo_*": {
+     "rot": 14
+    },
+    "mano_izq": {
+     "rot": 10
+    },
+    "mano_der": {
+     "rot": -10
+    },
+    "pie_izq": {
+     "rot": -10,
+     "x": 3
+    },
+    "pie_der": {
+     "rot": -10,
+     "x": 3
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 45,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "punto más alto",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": -8,
+     "y": -30,
+     "rot": -2
+    },
+    "cuerpo": {
+     "sy": 1.02,
+     "sx": 0.98
+    },
+    "cabeza": {
+     "rot": 8
+    },
+    "petalo_*": {
+     "rot": 6
+    },
+    "mano_izq": {
+     "rot": -4
+    },
+    "mano_der": {
+     "rot": 4
+    },
+    "pie_izq": {
+     "rot": 0,
+     "x": 0
+    },
+    "pie_der": {
+     "rot": 0,
+     "x": 0
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 57,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "empieza a bajar",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": -4,
+     "y": -20,
+     "rot": 14
+    },
+    "cuerpo": {
+     "sy": 0.96,
+     "sx": 1.04
+    },
+    "cabeza": {
+     "rot": -8
+    },
+    "petalo_*": {
+     "rot": -10
+    },
+    "mano_izq": {
+     "rot": -18
+    },
+    "mano_der": {
+     "rot": 18
+    },
+    "pie_izq": {
+     "rot": 14,
+     "x": -4.2
+    },
+    "pie_der": {
+     "rot": 14,
+     "x": -4.2
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 73,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "baja rápido",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 4,
+     "y": -8,
+     "rot": 22
+    },
+    "cuerpo": {
+     "sy": 0.93,
+     "sx": 1.0699999999999998
+    },
+    "cabeza": {
+     "rot": -12
+    },
+    "petalo_*": {
+     "rot": -20
+    },
+    "mano_izq": {
+     "rot": -26
+    },
+    "mano_der": {
+     "rot": 26
+    },
+    "pie_izq": {
+     "rot": 22,
+     "x": -6.6
+    },
+    "pie_der": {
+     "rot": 22,
+     "x": -6.6
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 79,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "se endereza",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 10,
+     "y": 2,
+     "rot": 20
+    },
+    "cuerpo": {
+     "sy": 0.95,
+     "sx": 1.05
+    },
+    "cabeza": {
+     "rot": -6
+    },
+    "petalo_*": {
+     "rot": -16
+    },
+    "mano_izq": {
+     "rot": -22
+    },
+    "mano_der": {
+     "rot": 22
+    },
+    "pie_izq": {
+     "rot": 18,
+     "x": -5.3999999999999995
+    },
+    "pie_der": {
+     "rot": 18,
+     "x": -5.3999999999999995
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 73,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "tiembla por el viento",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 6,
+     "y": 4,
+     "rot": 12
+    },
+    "cuerpo": {
+     "sy": 1,
+     "sx": 1
+    },
+    "cabeza": {
+     "rot": 2
+    },
+    "petalo_*": {
+     "rot": -8
+    },
+    "mano_izq": {
+     "rot": -14
+    },
+    "mano_der": {
+     "rot": 14
+    },
+    "pie_izq": {
+     "rot": 10,
+     "x": -3
+    },
+    "pie_der": {
+     "rot": 10,
+     "x": -3
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 67,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  },
+  {
+   "nota": "vuelve a la primera",
+   "expresion": "bruja",
+   "huesos": {
+    "raiz": {
+     "x": 2,
+     "y": 2,
+     "rot": 16
+    },
+    "cuerpo": {
+     "sy": 0.98,
+     "sx": 1.02
+    },
+    "cabeza": {
+     "rot": -6
+    },
+    "petalo_*": {
+     "rot": -12
+    },
+    "mano_izq": {
+     "rot": -18
+    },
+    "mano_der": {
+     "rot": 18
+    },
+    "pie_izq": {
+     "rot": 12,
+     "x": -3.5999999999999996
+    },
+    "pie_der": {
+     "rot": 12,
+     "x": -3.5999999999999996
+    },
+    "pie_*": {
+     "y": -6
+    }
+   },
+   "accesorios": {
+    "escoba": {
+     "hueso": "raiz",
+     "x": 0,
+     "y": -40,
+     "rot": 69,
+     "escala": 1.75,
+     "z": 18.5
+    }
+   },
+   "orden": {
+    "mano_izq": 100,
+    "mano_der": 100
+   }
+  }
+ ]
+}

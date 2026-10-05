@@ -29,7 +29,7 @@ Contenido
 whisper.cpp\build\bin\whisper-cli.exe   whisper.cpp 1.9.2 (binario oficial x64, CPU)
   Nota: el zip oficial trae la carpeta "Release\"; se renombró a "build\bin\"
   porque @remotion/install-whisper-cpp (>=1.7.4) busca el ejecutable ahí.
-modelos-whisper\ggml-large-v3-turbo.bin  Modelo de transcripción (~1,6 GB)
+modelos-whisper\ggml-large-v3-turbo-q8_0.bin  Modelo de transcripción cuantizado (~870 MB; mismo resultado que el f16, más rápido)
 modelos-mediapipe\blaze_face_short_range.tflite   Detector de caras (MediaPipe Tasks)
 .venv\                                   Python 3.11.9 con:
     torch 2.0.1+cpu, torchaudio 2.0.2+cpu, soundfile  (backend de audio en Windows)
@@ -47,15 +47,18 @@ instalar-whisper.mjs                     Reinstala whisper.cpp + modelo
 Uso rápido
 ----------
 Limpiar voz:     .venv\Scripts\deepFilter.exe entrada.wav -o carpeta_salida
-Transcribir:     transcribe() de @remotion/install-whisper-cpp con
-                 whisperPath = C:/Videos/_herramientas/whisper.cpp, whisperCppVersion = "1.9.2",
-                 model = "large-v3-turbo", modelFolder = C:/Videos/_herramientas/modelos-whisper
-                 (entrada: WAV 16 kHz mono)
+Transcribir:     node scripts/transcribir.mjs <audio|video> <salida.json>   (desde mi-video)
+                 Salta los silencios con ffmpeg y devuelve cada palabra a su tiempo real (DTW).
+                 No usar el --vad de whisper-cli: desfasa los tiempos por palabra.
+Verificar todo:  node scripts/verificar-suite.mjs [--rapido]   (desde mi-video)
 Color:           npx remotion ffmpeg -i in.mp4 -vf lut3d=C:/Videos/_herramientas/luts/x.cube out.mp4
 
 Rendimiento medido (Intel i3-10110U, 4 hilos, sin GPU)
 ------------------------------------------------------
 whisper large-v3-turbo: ~118 s para 11 s de audio (~10x el tiempo real) usando "-t 4".
+Prueba del 2026-09-29 (58 s de voz con ~40 % de pausas, "-t 4", DTW):
+  f16 audio completo 464 s (8x) · f16 sin silencios 215 s (3,7x) · q8_0 sin silencios 163 s (2,8x).
+  q5_0 fue más lento que q8_0 en esta CPU. Texto y tiempos por palabra idénticos entre f16 y q8_0.
 DeepFilterNet: ~29 s para 11 s de audio (incluye la carga inicial del modelo).
 
 Reinstalar Python desde cero

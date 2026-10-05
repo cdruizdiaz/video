@@ -1,0 +1,24 @@
+{
+  "_nota": "Correcciones de la extracción automática de Bloomie.ai (ver src/rig/README.md). Números de bloque: out/personajes/bloomie/hoja_bloques.png",
+  "rostroVista": "base",
+  "prefijoCorona": "petalo",
+  "bloques": {
+    "3": "cara:normal",
+    "4": "cara:feliz",
+    "5": "cara:preocupado",
+    "6": "cara:guino",
+    "7": "cara:enojado",
+    "8": "cara:triste",
+    "9": "cara:birrete",
+    "10": "cara:enamorado",
+    "11": "cara:navidad",
+    "12": "cara:bruja",
+    "13": "cara:murcielago",
+    "14": "cara:reno"
+  },
+  "renombrar": {
+    "bruja.accesorio1": "escoba",
+    "perfil.detalle": "hoja",
+    "espalda.detalle": "cola"
+  }
+}

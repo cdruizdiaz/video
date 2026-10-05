@@ -1,0 +1,12 @@
+Trabajo 2026-09-28_rastro_historia-ig — cerrado y archivado el 2026-10-02.
+
+Material archivado en C:/Videos/archivo/2026-09-28_rastro_historia-ig/
+  public/      copia completa de esta carpeta (audio/rastro-base.wav, audio/rastro-base-15s.wav, audio/rastro-mixkit-15s.wav)
+  final/       entregas: historia-30s_9x16_v1/v2, historia-15s_9x16_v1/v2/v3 (las finales: 30s_v2 y 15s_v3, a -14 LUFS)
+  biblioteca/  original de Mixkit usado (801 Happy Home) y LICENCIAS-mixkit.json
+
+Las imágenes son del kit de marca (public/marcas/rastro/), que sigue en el proyecto.
+
+Para restaurar: copiar C:/Videos/archivo/2026-09-28_rastro_historia-ig/public/ sobre esta carpeta
+(public/trabajos/2026-09-28_rastro_historia-ig/). O regenerar los audios con musica_rastro.py y preparar_musica_15s.sh
+(ver src/trabajos/2026-09-28_rastro_historia-ig/TRABAJO.md → Cómo rehacerlo).

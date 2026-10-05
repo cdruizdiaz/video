@@ -1,0 +1,122 @@
+[
+ {
+  "n": 1,
+  "texto": "I've got to get strong for my social media debut!",
+  "duracionMs": 2775,
+  "archivo": "trabajos/2026-10-02_claudio_prueba-25d/audio/frase_1.wav",
+  "palabras": [
+   {
+    "texto": "I've",
+    "desdeMs": 100,
+    "hastaMs": 300
+   },
+   {
+    "texto": "got",
+    "desdeMs": 300,
+    "hastaMs": 460
+   },
+   {
+    "texto": "to",
+    "desdeMs": 460,
+    "hastaMs": 620
+   },
+   {
+    "texto": "get",
+    "desdeMs": 620,
+    "hastaMs": 940
+   },
+   {
+    "texto": "strong",
+    "desdeMs": 940,
+    "hastaMs": 1160
+   },
+   {
+    "texto": "for",
+    "desdeMs": 1160,
+    "hastaMs": 1300
+   },
+   {
+    "texto": "my",
+    "desdeMs": 1300,
+    "hastaMs": 1640
+   },
+   {
+    "texto": "social",
+    "desdeMs": 1640,
+    "hastaMs": 2000
+   },
+   {
+    "texto": "media",
+    "desdeMs": 2000,
+    "hastaMs": 2500
+   },
+   {
+    "texto": "debut!",
+    "desdeMs": 2500,
+    "hastaMs": 2660
+   }
+  ],
+  "tokens": [
+   {
+    "text": " I",
+    "fromMs": 100,
+    "toMs": 160
+   },
+   {
+    "text": "'ve",
+    "fromMs": 140,
+    "toMs": 300
+   },
+   {
+    "text": " got",
+    "fromMs": 300,
+    "toMs": 460
+   },
+   {
+    "text": " to",
+    "fromMs": 460,
+    "toMs": 620
+   },
+   {
+    "text": " get",
+    "fromMs": 620,
+    "toMs": 940
+   },
+   {
+    "text": " strong",
+    "fromMs": 940,
+    "toMs": 1160
+   },
+   {
+    "text": " for",
+    "fromMs": 1160,
+    "toMs": 1300
+   },
+   {
+    "text": " my",
+    "fromMs": 1300,
+    "toMs": 1640
+   },
+   {
+    "text": " social",
+    "fromMs": 1640,
+    "toMs": 2000
+   },
+   {
+    "text": " media",
+    "fromMs": 2000,
+    "toMs": 2500
+   },
+   {
+    "text": " debut",
+    "fromMs": 2500,
+    "toMs": 2660
+   },
+   {
+    "text": "!",
+    "fromMs": 2660,
+    "toMs": 2774.854
+   }
+  ]
+ }
+]

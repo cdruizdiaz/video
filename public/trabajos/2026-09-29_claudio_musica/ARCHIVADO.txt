@@ -1,0 +1,17 @@
+Trabajo 2026-09-29_claudio_musica: cerrado y archivado el 2026-09-30.
+
+El material pesado se movio a:
+  C:/Videos/archivo/2026-09-29_claudio_musica/
+    public/crudos/   proxies 1080x1920 30 fps (9 mp4)
+    public/audio/    (vacia)
+    public/img/      (vacia)
+    final/           copia de las entregas (out/2026-09-29_claudio_musica/final/)
+    biblioteca/      original de Mixkit usado (sfx 1492, whoosh)
+
+Aca queda solo datos/ (JSON chicos, versionados).
+Originales sin tocar: C:/Videos/crudos/2026-09-29_claudio_musica/
+Ficha y codigo: src/trabajos/2026-09-29_claudio_musica/ (ver TRABAJO.md, "Como rehacerlo").
+
+Para restaurar (desde la raiz del proyecto, Git Bash):
+  cp -r "C:/Videos/archivo/2026-09-29_claudio_musica/public/." "public/trabajos/2026-09-29_claudio_musica/"
+  cp "C:/Videos/archivo/2026-09-29_claudio_musica/biblioteca/sfx/mixkit/mixkit-1492-cinematic-whoosh-fast-transition.wav" public/biblioteca/sfx/mixkit/

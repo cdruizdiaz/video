@@ -1,0 +1,607 @@
+[
+ {
+  "n": 1,
+  "texto": "This year, I want to be part of Christmas too!",
+  "duracionMs": 2525,
+  "archivo": "trabajos/2026-10-02_lucia_chiste-navidad/audio/frase_1.wav",
+  "palabras": [
+   {
+    "texto": "This",
+    "desdeMs": 200,
+    "hastaMs": 460
+   },
+   {
+    "texto": "year,",
+    "desdeMs": 460,
+    "hastaMs": 680
+   },
+   {
+    "texto": "I",
+    "desdeMs": 740,
+    "hastaMs": 940
+   },
+   {
+    "texto": "want",
+    "desdeMs": 940,
+    "hastaMs": 1040
+   },
+   {
+    "texto": "to",
+    "desdeMs": 1040,
+    "hastaMs": 1180
+   },
+   {
+    "texto": "be",
+    "desdeMs": 1180,
+    "hastaMs": 1460
+   },
+   {
+    "texto": "part",
+    "desdeMs": 1460,
+    "hastaMs": 1620
+   },
+   {
+    "texto": "of",
+    "desdeMs": 1620,
+    "hastaMs": 1960
+   },
+   {
+    "texto": "Christmas",
+    "desdeMs": 1960,
+    "hastaMs": 2280
+   },
+   {
+    "texto": "too!",
+    "desdeMs": 2280,
+    "hastaMs": 2525
+   }
+  ],
+  "tokens": [
+   {
+    "text": " This",
+    "fromMs": 200,
+    "toMs": 460
+   },
+   {
+    "text": " year",
+    "fromMs": 460,
+    "toMs": 680
+   },
+   {
+    "text": ",",
+    "fromMs": 680,
+    "toMs": 740
+   },
+   {
+    "text": " I",
+    "fromMs": 740,
+    "toMs": 940
+   },
+   {
+    "text": " want",
+    "fromMs": 940,
+    "toMs": 1040
+   },
+   {
+    "text": " to",
+    "fromMs": 1040,
+    "toMs": 1180
+   },
+   {
+    "text": " be",
+    "fromMs": 1180,
+    "toMs": 1460
+   },
+   {
+    "text": " part",
+    "fromMs": 1460,
+    "toMs": 1620
+   },
+   {
+    "text": " of",
+    "fromMs": 1620,
+    "toMs": 1960
+   },
+   {
+    "text": " Christmas",
+    "fromMs": 1960,
+    "toMs": 2280
+   },
+   {
+    "text": " too",
+    "fromMs": 2280,
+    "toMs": 2525.229
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "texto": "Hmm… not quite enough tummy for Father Christmas.",
+  "duracionMs": 2603,
+  "archivo": "trabajos/2026-10-02_lucia_chiste-navidad/audio/frase_2.wav",
+  "palabras": [
+   {
+    "texto": "Hmm…",
+    "desdeMs": 75,
+    "hastaMs": 315
+   },
+   {
+    "texto": "not",
+    "desdeMs": 315,
+    "hastaMs": 615
+   },
+   {
+    "texto": "quite",
+    "desdeMs": 615,
+    "hastaMs": 955
+   },
+   {
+    "texto": "enough",
+    "desdeMs": 955,
+    "hastaMs": 1255
+   },
+   {
+    "texto": "tummy",
+    "desdeMs": 1255,
+    "hastaMs": 1535
+   },
+   {
+    "texto": "for",
+    "desdeMs": 1535,
+    "hastaMs": 1795
+   },
+   {
+    "texto": "Father",
+    "desdeMs": 1795,
+    "hastaMs": 2215
+   },
+   {
+    "texto": "Christmas.",
+    "desdeMs": 2215,
+    "hastaMs": 2603
+   }
+  ],
+  "tokens": [
+   {
+    "text": " I",
+    "fromMs": 74.77100000000019,
+    "toMs": 134.77100000000019
+   },
+   {
+    "text": "'m",
+    "fromMs": 114.77100000000019,
+    "toMs": 314.7710000000002
+   },
+   {
+    "text": " not",
+    "fromMs": 314.7710000000002,
+    "toMs": 614.7710000000002
+   },
+   {
+    "text": " quite",
+    "fromMs": 614.7710000000002,
+    "toMs": 954.7710000000002
+   },
+   {
+    "text": " enough",
+    "fromMs": 954.7710000000002,
+    "toMs": 1254.7710000000002
+   },
+   {
+    "text": " tummy",
+    "fromMs": 1254.7710000000002,
+    "toMs": 1534.7710000000002
+   },
+   {
+    "text": " for",
+    "fromMs": 1534.7710000000002,
+    "toMs": 1794.7710000000002
+   },
+   {
+    "text": " Father",
+    "fromMs": 1794.7710000000002,
+    "toMs": 2214.771
+   },
+   {
+    "text": " Christmas",
+    "fromMs": 2214.771,
+    "toMs": 2603.396
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "texto": "I'm a reindeer! Ready for take-off!",
+  "duracionMs": 2094,
+  "archivo": "trabajos/2026-10-02_lucia_chiste-navidad/audio/frase_3.wav",
+  "palabras": [
+   {
+    "texto": "I'm",
+    "desdeMs": 71,
+    "hastaMs": 271
+   },
+   {
+    "texto": "a",
+    "desdeMs": 271,
+    "hastaMs": 551
+   },
+   {
+    "texto": "reindeer!",
+    "desdeMs": 551,
+    "hastaMs": 851
+   },
+   {
+    "texto": "Ready",
+    "desdeMs": 1051,
+    "hastaMs": 1271
+   },
+   {
+    "texto": "for",
+    "desdeMs": 1271,
+    "hastaMs": 1531
+   },
+   {
+    "texto": "take-off!",
+    "desdeMs": 1531,
+    "hastaMs": 2094
+   }
+  ],
+  "tokens": [
+   {
+    "text": " I",
+    "fromMs": 71.375,
+    "toMs": 171.375
+   },
+   {
+    "text": "'m",
+    "fromMs": 171.375,
+    "toMs": 271.375
+   },
+   {
+    "text": " a",
+    "fromMs": 271.375,
+    "toMs": 551.375
+   },
+   {
+    "text": " reindeer",
+    "fromMs": 551.375,
+    "toMs": 851.375
+   },
+   {
+    "text": ",",
+    "fromMs": 851.375,
+    "toMs": 1051.375
+   },
+   {
+    "text": " ready",
+    "fromMs": 1051.375,
+    "toMs": 1271.375
+   },
+   {
+    "text": " for",
+    "fromMs": 1271.375,
+    "toMs": 1531.375
+   },
+   {
+    "text": " take",
+    "fromMs": 1531.375,
+    "toMs": 1591.375
+   },
+   {
+    "text": "-",
+    "fromMs": 1551.375,
+    "toMs": 1871.375
+   },
+   {
+    "text": "off",
+    "fromMs": 1871.375,
+    "toMs": 2094.125
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "texto": "…Reindeer don't have petals.",
+  "duracionMs": 1606,
+  "archivo": "trabajos/2026-10-02_lucia_chiste-navidad/audio/frase_4.wav",
+  "palabras": [
+   {
+    "texto": "…Reindeer",
+    "desdeMs": 117,
+    "hastaMs": 577
+   },
+   {
+    "texto": "don't",
+    "desdeMs": 577,
+    "hastaMs": 897
+   },
+   {
+    "texto": "have",
+    "desdeMs": 897,
+    "hastaMs": 1357
+   },
+   {
+    "texto": "petals.",
+    "desdeMs": 1357,
+    "hastaMs": 1606
+   }
+  ],
+  "tokens": [
+   {
+    "text": " Re",
+    "fromMs": 117.25,
+    "toMs": 357.25
+   },
+   {
+    "text": "indeer",
+    "fromMs": 357.25,
+    "toMs": 577.25
+   },
+   {
+    "text": " don",
+    "fromMs": 577.25,
+    "toMs": 697.25
+   },
+   {
+    "text": "'t",
+    "fromMs": 697.25,
+    "toMs": 897.25
+   },
+   {
+    "text": " have",
+    "fromMs": 897.25,
+    "toMs": 1357.25
+   },
+   {
+    "text": " petals",
+    "fromMs": 1357.25,
+    "toMs": 1606.2289999999998
+   }
+  ]
+ },
+ {
+  "n": 5,
+  "texto": "Hang on! Someone's missing up there!",
+  "duracionMs": 1667,
+  "archivo": "trabajos/2026-10-02_lucia_chiste-navidad/audio/frase_5.wav",
+  "palabras": [
+   {
+    "texto": "Hang",
+    "desdeMs": 131,
+    "hastaMs": 371
+   },
+   {
+    "texto": "on!",
+    "desdeMs": 551,
+    "hastaMs": 971
+   },
+   {
+    "texto": "Someone's",
+    "desdeMs": 971,
+    "hastaMs": 1151
+   },
+   {
+    "texto": "missing",
+    "desdeMs": 1151,
+    "hastaMs": 1431
+   },
+   {
+    "texto": "up",
+    "desdeMs": 1431,
+    "hastaMs": 1667
+   },
+   {
+    "texto": "there!",
+    "desdeMs": 1471,
+    "hastaMs": 1667
+   }
+  ],
+  "tokens": [
+   {
+    "text": " An",
+    "fromMs": 131.02100000000064,
+    "toMs": 251.02100000000064
+   },
+   {
+    "text": "on",
+    "fromMs": 251.02100000000064,
+    "toMs": 371.02100000000064
+   },
+   {
+    "text": ",",
+    "fromMs": 371.02100000000064,
+    "toMs": 551.0210000000006
+   },
+   {
+    "text": " someone",
+    "fromMs": 551.0210000000006,
+    "toMs": 731.0210000000006
+   },
+   {
+    "text": "'s",
+    "fromMs": 731.0210000000006,
+    "toMs": 971.0210000000006
+   },
+   {
+    "text": " missing",
+    "fromMs": 971.0210000000006,
+    "toMs": 1151.0210000000006
+   },
+   {
+    "text": " up",
+    "fromMs": 1151.0210000000006,
+    "toMs": 1431.0210000000006
+   },
+   {
+    "text": " there",
+    "fromMs": 1431.0210000000006,
+    "toMs": 1667.146
+   }
+  ]
+ },
+ {
+  "n": 6,
+  "texto": "I'm not a reindeer, I'm not Father Christmas… I'm a bloomin' star!",
+  "duracionMs": 3697,
+  "archivo": "trabajos/2026-10-02_lucia_chiste-navidad/audio/frase_6.wav",
+  "palabras": [
+   {
+    "texto": "I'm",
+    "desdeMs": 84,
+    "hastaMs": 324
+   },
+   {
+    "texto": "not",
+    "desdeMs": 324,
+    "hastaMs": 504
+   },
+   {
+    "texto": "a",
+    "desdeMs": 504,
+    "hastaMs": 804
+   },
+   {
+    "texto": "reindeer,",
+    "desdeMs": 804,
+    "hastaMs": 1304
+   },
+   {
+    "texto": "I'm",
+    "desdeMs": 1464,
+    "hastaMs": 1724
+   },
+   {
+    "texto": "not",
+    "desdeMs": 1724,
+    "hastaMs": 2024
+   },
+   {
+    "texto": "Father",
+    "desdeMs": 2024,
+    "hastaMs": 2364
+   },
+   {
+    "texto": "Christmas…",
+    "desdeMs": 2364,
+    "hastaMs": 2484
+   },
+   {
+    "texto": "I'm",
+    "desdeMs": 2564,
+    "hastaMs": 2764
+   },
+   {
+    "texto": "a",
+    "desdeMs": 2764,
+    "hastaMs": 2884
+   },
+   {
+    "texto": "bloomin'",
+    "desdeMs": 2884,
+    "hastaMs": 3184
+   },
+   {
+    "texto": "star!",
+    "desdeMs": 3424,
+    "hastaMs": 3697
+   }
+  ],
+  "tokens": [
+   {
+    "text": " I",
+    "fromMs": 83.875,
+    "toMs": 143.875
+   },
+   {
+    "text": "'m",
+    "fromMs": 143.875,
+    "toMs": 323.875
+   },
+   {
+    "text": " not",
+    "fromMs": 323.875,
+    "toMs": 503.875
+   },
+   {
+    "text": " a",
+    "fromMs": 503.875,
+    "toMs": 803.875
+   },
+   {
+    "text": " reindeer",
+    "fromMs": 803.875,
+    "toMs": 1303.875
+   },
+   {
+    "text": ",",
+    "fromMs": 1303.875,
+    "toMs": 1463.875
+   },
+   {
+    "text": " I",
+    "fromMs": 1463.875,
+    "toMs": 1543.875
+   },
+   {
+    "text": "'m",
+    "fromMs": 1543.875,
+    "toMs": 1723.875
+   },
+   {
+    "text": " not",
+    "fromMs": 1723.875,
+    "toMs": 2023.875
+   },
+   {
+    "text": " Father",
+    "fromMs": 2023.875,
+    "toMs": 2363.875
+   },
+   {
+    "text": " Christmas",
+    "fromMs": 2363.875,
+    "toMs": 2483.875
+   },
+   {
+    "text": ",",
+    "fromMs": 2483.875,
+    "toMs": 2563.875
+   },
+   {
+    "text": " I",
+    "fromMs": 2563.875,
+    "toMs": 2663.875
+   },
+   {
+    "text": "'m",
+    "fromMs": 2663.875,
+    "toMs": 2763.875
+   },
+   {
+    "text": " a",
+    "fromMs": 2763.875,
+    "toMs": 2883.875
+   },
+   {
+    "text": " blo",
+    "fromMs": 2883.875,
+    "toMs": 3043.875
+   },
+   {
+    "text": "omin",
+    "fromMs": 3043.875,
+    "toMs": 3183.875
+   },
+   {
+    "text": "'",
+    "fromMs": 3183.875,
+    "toMs": 3423.875
+   },
+   {
+    "text": " star",
+    "fromMs": 3423.875,
+    "toMs": 3697.271
+   }
+  ]
+ }
+]

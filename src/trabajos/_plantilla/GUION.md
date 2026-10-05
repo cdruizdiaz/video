@@ -5,10 +5,12 @@ Estética: {{identidad visual: colores, tipografía, estilo de títulos, márgen
 Tono: {{tono, público, mercado; voseo sí/no}}.
 Audio: {{música (fuente, carácter, entradas/salidas), voz en off sí/no, efectos}}.
 Transiciones: {{entre escenas}}. {{dentro de cada escena: cómo aparecen textos e imágenes}}.
+Modo de animación: {{plano | 2,5D | 3D}}. {{si es 2,5D/3D: dirección de la luz y qué da la profundidad (giros ¾, entrada en perspectiva, sombra proyectada)}}.
 
 Escena 1 — {{nombre}}
 Tiempo: 00:00 a 00:{{ss}}
 Imagen: {{fondo, imagen principal, movimiento de cámara/zoom, degradados}}.
+Profundidad: {{solo en 2,5D/3D: giro ¾ hacia…, se acerca desde el fondo, sombra; omitir si es plano}}.
 Elementos y textos:
 •    {{elemento}}
 •    {{texto entre comillas: “...”}}

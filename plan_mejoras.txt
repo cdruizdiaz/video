@@ -1,0 +1,343 @@
+PLAN DE MEJORAS — Suite de producción Remotion
+================================================
+Fecha: 2026-10-04 · Rama de trabajo sugerida: una rama por fase (mejoras-f0, mejoras-f1, …), merge a main al cerrar cada fase.
+
+Criterios generales (valen para todas las fases)
+- Todo local y gratis primero (regla principal de CLAUDE.md). Servicios externos solo preguntando.
+- Cada herramienta nueva:
+    1. se instala bajo C:/Videos/_herramientas/ (igual en las dos PC),
+    2. se registra su ruta en scripts/herramientas.json y, si depende de la PC, en equipo.json,
+    3. suma un chequeo en scripts/verificar-suite.mjs,
+    4. se documenta en CLAUDE.md (sección Herramientas + tabla "Qué herramienta usar").
+- Cada fase se prueba en un trabajo de prueba propio (AAAA-MM-DD_claudio_prueba-<tema>) abierto con /nuevo-trabajo y cerrado con /cerrar-trabajo.
+- Nunca render completo para verificar: stills, hojas de contacto a --scale=0.25.
+- Instalar y probar primero en la notebook i3 (la más lenta: si anda ahí, anda en la Ryzen); medir tiempos en las dos y anotarlos en equipo.json.
+- Al cerrar cada fase: commit, entrada en este archivo ("Estado") y aviso de qué cambió en el flujo.
+
+Orden de las fases y por qué
+  F0 Orden y base ............ todo lo demás se apoya en tests y revisión automática
+  F1 Herramientas rápidas .... instalaciones chicas, beneficio inmediato, bajo riesgo
+  F2 Animación de personajes . aprovecha el rig que ya existe (mayor impacto creativo)
+  F3 Video real 2,5D ......... profundidad, recorte y seguimiento (usa MediaPipe/.venv)
+  F4 3D dentro de Remotion ... abaratar el render 3D actual y sumar plantillas 3D
+  F5 Blender sin interfaz .... el salto grande de 3D (modelos y render con GPU Intel)
+  F6 Render distribuido ...... repartir renders largos entre las dos PC
+F1 y F3 pueden ir en paralelo con F2. F5 depende de F4 (caché de capas). F6 al final.
+
+
+------------------------------------------------------------------
+FASE 0 — Orden y base  (≈1 sesión)
+------------------------------------------------------------------
+Objetivo: dejar el repo limpio y con red de seguridad antes de agregar cosas.
+
+0.1 Commitear lo pendiente de la rama rig-personajes
+    - src/plantillas/comunes/objetos25d.tsx, trabajo 2026-10-02_claudio_prueba-25d,
+      ARCHIVADO.txt de rastro_bloomie-creators, LICENCIAS-mixkit.json, index.ts.
+    - Revisar el diff antes; merge a main.
+0.2 Tests de la matemática del rig
+    - Agregar vitest (devDependency) y script "test" en package.json.
+    - src/rig/__tests__/: pose.ts (matricesMundo, composición de huesos), secuencia.ts
+      (interpolación entre poses clave, bordes), lipsync.ts (letras → visemas), duracionGlobo.
+    - Criterio: npm test pasa; npm run lint pasa.
+0.3 Revisión automática de cuadros clave
+    - scripts/revisar.mjs <comp> [ID]: detecta cuadros clave (cambios de pose, globos, cortes)
+      y arma una hoja de contactos chica en out/<ID>/revision/ (reusa hoja_animacion.mjs).
+    - Documentarlo en CLAUDE.md → Render.
+0.4 verificar-suite.mjs preparado para crecer
+    - Lista de chequeos declarativa (nombre, comando, opcional/obligatorio) para sumar
+      herramientas de las fases siguientes sin tocar la lógica.
+Entregable: repo limpio, npm test, scripts/revisar.mjs.
+
+
+------------------------------------------------------------------
+FASE 1 — Herramientas locales rápidas  (≈2 sesiones)
+------------------------------------------------------------------
+1.1 Voces en español para Piper
+    - Bajar es_AR-daniela-high (y una masculina es_ES/es_MX de referencia) a modelos-piper/.
+    - Ejemplo src/plantillas/... o script scripts/voz.mjs <texto|archivo> <salida.wav> [--voz] [--nene]
+      que encadena Piper + rubberband (voz de nene) + loudnorm + Whisper para tiempos.
+    - Prueba: frase de 10 s, escuchar, medir con ebur128.
+1.2 Rhubarb Lip Sync
+    - Binario oficial Windows en C:/Videos/_herramientas/rhubarb/.
+    - scripts/lipsync_rhubarb.mjs <audio.wav> <salida.json> [--texto guion.txt]
+      → JSON de visemas con tiempos (formas A–H/X).
+    - (La integración con el rig va en F2.2.)
+1.3 RIFE (interpolación de cuadros, cámara lenta)
+    - rife-ncnn-vulkan (usa la gráfica Intel/AMD por Vulkan).
+    - scripts/camara_lenta.mjs <video> <salida> --factor 2|4 (ffmpeg extrae cuadros → RIFE → ffmpeg arma).
+    - Prueba: 3 s de crudo a 4x; comparar artefactos en hoja de contactos.
+1.4 Real-ESRGAN (subir resolución)
+    - realesrgan-ncnn-vulkan, modelos x4plus y x4plus-anime (para dibujos).
+    - scripts/subir_resolucion.mjs <imagen|video> <salida> [--anime].
+    - Uso típico: fotos viejas de clientes, logos chicos, material 720p.
+1.5 Pulsos de la música (beat detection)
+    - librosa en el .venv. scripts/pulsos.py <audio> → public/trabajos/<ID>/datos/pulsos.json
+      (tiempos de pulso, compases, picos de energía).
+    - MontajeMusical: opción "cortarAlPulso" que ajusta los cortes de clips.json al pulso más cercano.
+Criterio de cierre: verificar-suite reconoce las 5 herramientas; CLAUDE.md actualizado;
+tiempos medidos en las dos PC en equipo.json.
+
+
+------------------------------------------------------------------
+FASE 2 — Animación de personajes  (≈3–4 sesiones)
+------------------------------------------------------------------
+2.1 Captura de movimiento desde video (mocap)
+    - MediaPipe Pose Landmarker + Face Landmarker (Tasks API, modelos .task en _herramientas/modelos-mediapipe/).
+    - scripts/rig/mocap.py <video> <personaje> <salida.json> [--suavizado N] [--espejo]
+        a) extrae landmarks cuadro a cuadro (30 fps),
+        b) suaviza (filtro One Euro) para quitar temblor,
+        c) convierte a ángulos de huesos del rig (hombro, codo, cadera, rodilla, cabeza, torso),
+        d) respeta límites de cada hueso definidos en rig.json (agregar "limites" si falta),
+        e) cara: parpadeo, cejas, apertura de boca → pistas parpadear / expresión.
+      Salida en el mismo formato de poses clave de secuencia.ts (reducido a claves con
+      simplificación tipo Ramer–Douglas–Peucker para que el JSON sea editable a mano).
+    - Composición de control: video original y personaje lado a lado.
+    - Prueba: video de 10 s saludando y caminando en el lugar; hoja de cuadros clave.
+2.2 Lip sync con Rhubarb en el rig
+    - lipsync.ts: aceptar como fuente el JSON de Rhubarb (además de las reglas por letras).
+    - Tabla visema Rhubarb → bocas del personaje en mapa.json.
+    - Comparar en hoja de visemas (hoja_visemas.py) las dos fuentes con la misma frase.
+    - Dejar Rhubarb como predeterminado si se ve mejor; las reglas por letras quedan de respaldo.
+2.3 Efectos de sonido automáticos
+    - Mapa evento del rig → efecto (saltar→whoosh, aterrizar→golpe suave, aparecer→pop, globo→click)
+      en src/rig/sonidos.ts, con efectos de public/biblioteca/sfx/mixkit/.
+    - Faltantes: buscarlos con mixkit.mjs (una búsqueda/descarga por ejecución, proponer antes).
+    - Opción sonidos:true en PersonajeRig; volumen relativo a la voz (−12 dB por defecto).
+2.4 Editor visual de poses clave (opcional, si 2.1 no alcanza)
+    - Extender EditorRig.tsx: línea de tiempo con claves, arrastrar huesos en el Studio,
+      "Guardar en secuencia.json".
+Criterio de cierre: una pieza de prueba de 15 s con mocap + Rhubarb + sonidos, revisada por hoja.
+Documentar en src/rig/README.md y CLAUDE.md (Personajes animados).
+
+
+------------------------------------------------------------------
+FASE 3 — Integración con video real (2,5D creíble)  (≈3 sesiones)
+------------------------------------------------------------------
+3.1 Recorte de personas (segmentación)
+    - MediaPipe Image Segmenter (selfie_multiclass) → máscaras PNG en
+      public/trabajos/<ID>/datos/mascaras/ (o video de máscara en escala de grises).
+    - Componente comunes/DetrasDePersona.tsx: capa que va entre el fondo y la persona
+      (texto detrás de la persona, personaje detrás de alguien).
+    - Revisar bordes (pelo, manos) en hoja de contactos; suavizado de borde configurable.
+3.2 Mapa de profundidad
+    - Depth Anything V2 Small en ONNX (onnxruntime en el .venv, CPU).
+    - scripts/profundidad.py <video|imagen> <salida> [--cada N]: mapa de profundidad por cuadro
+      (o cada N cuadros + interpolación en tomas fijas).
+    - Usos:
+        a) oclusión: el personaje se oculta detrás de lo que está más cerca que su "z",
+        b) paralaje de fotos fijas: HistoriaMarca con movimiento de cámara 2,5D sobre fotos.
+    - Medir tiempo por cuadro en la i3 (si es lento: solo cuadros clave en tomas fijas).
+3.3 Seguimiento de cámara / puntos
+    - OpenCV (.venv): seguimiento de un punto o plano del piso (optical flow + homografía).
+    - scripts/seguimiento.py <video> <salida.json> --punto x,y | --piso
+    - El rig/trayecto acepta "anclado a seguimiento": el personaje queda pegado al piso
+      aunque la cámara se mueva.
+    - Actualizar la receta 2,5D de CLAUDE.md: el punto 5 ("no se mueve la cámara") pasa a
+      "si la cámara se mueve, usar seguimiento".
+Criterio de cierre: toma real de prueba con personaje que pasa detrás de un objeto y se
+mantiene anclado con cámara en mano.
+
+
+------------------------------------------------------------------
+FASE 4 — 3D dentro de Remotion  (≈2–3 sesiones)
+------------------------------------------------------------------
+4.1 Caché de capas 3D (render más barato)
+    - Renderizar solo el recuadro del personaje (cálculo de la caja a partir de la pose + margen),
+      a secuencia PNG con alfa en public/trabajos/<ID>/cache3d/<huella>/.
+    - Huella = datos de pose/animación + código de Bloomie3D (mismo criterio que la capa de
+      gráficos de a-premiere). Si no cambió, se reusa.
+    - La composición final usa la secuencia PNG (sin WebGL) → render final rápido.
+    - Medir: segundos por cuadro antes/después en la i3.
+4.2 Sombreado tipo dibujo animado
+    - MeshToonMaterial con rampa de 3 tonos + contorno actual; opción estilo:"toon"|"suave".
+    - Comparar con el 2D en hoja lado a lado.
+4.3 Plantilla Logo3D
+    - src/plantillas/Logo3D/: SVG del logo de la marca (public/marcas/<cliente>/) → extrusión
+      con SVGLoader, bisel, material con los colores de marca.ts, 3 animaciones de entrada
+      (giro, armado por piezas, caída con rebote) + brillo que pasa.
+    - Formatos 16:9 y 9:16, 3–5 s; textos con @remotion/google-fonts.
+4.4 Cargar modelos .glb
+    - Agregar @react-three/drei (useGLTF, useAnimations) para modelos con huesos y animaciones.
+    - Componente comunes/Modelo3D.tsx: carga .glb de public/, reproduce un clip por nombre
+      sincronizado con el frame de Remotion (no con el reloj), sombra de contacto.
+    - Esto prepara la entrada de F5.
+Criterio de cierre: Bloomie 3D de 5 s con caché (segundo render casi instantáneo) y un Logo3D de prueba.
+
+
+------------------------------------------------------------------
+FASE 5 — Blender sin interfaz  (≈4–5 sesiones)
+------------------------------------------------------------------
+5.1 Instalación
+    - winget install BlenderFoundation.Blender; junction fijo C:/Videos/_herramientas/blender/
+      (igual que ffmpeg) y ruta en herramientas.json.
+    - Verificar que Eevee funcione con la gráfica Intel en modo -b (si no, Cycles CPU de respaldo
+      y anotar tiempos). Chequeo en verificar-suite.
+5.2 Biblioteca de scripts de Blender (scripts/blender/)
+    - comun.py: escena base (cámara ortográfica/perspectiva, luces de 3 puntos, piso sombra,
+      fondo transparente, 30 fps, salida PNG RGBA o ProRes 4444).
+    - render_capa.py <escena.json> <salida>: escena descripta en JSON (modelo, animación,
+      cámara, luz con el ángulo medido de la toma real) → render.
+5.3 Personaje desde el rig 2D
+    - personaje_desde_rig.py <personaje>: lee piezas.json + rig.json, construye volúmenes
+      (como Bloomie3D.tsx pero con modificadores: subdivisión, bisel, solidify para contorno),
+      crea un esqueleto (armature) con los mismos huesos y pesos automáticos.
+    - Exporta public/personajes/<nombre>/<nombre>.glb (lo usa Modelo3D.tsx de F4.4).
+    - Las secuencias de poses JSON del rig se convierten en acciones de Blender
+      (poses_a_accion.py) → mismas animaciones en 2D y 3D.
+    - Para Bloomie: comparar con Bloomie3D.tsx; quedarse con el mejor como oficial.
+5.4 Flujo de render
+    - scripts/blender/render.mjs <comp|escena> <ID> [--mov|--png]: genera la escena JSON desde
+      los datos del trabajo, lanza Blender en segundo plano, deja la capa con alfa en
+      public/trabajos/<ID>/cache3d/ (misma huella que F4.1) y Remotion la compone.
+    - Versionado _vN y anotación en TRABAJO.md como exportar.mjs.
+5.5 Comando /personaje-3d <nombre>
+    - Skill en .claude/commands/: corre 5.3, arma hoja de giro (8 ángulos) en
+      out/personajes/<nombre>/ para revisión, y registra la muestra personaje-<nombre>-3d.
+Criterio de cierre: Bloomie en Blender caminando 5 s sobre video real, con sombra y luz
+coincidente, render medido en las dos PC. CLAUDE.md: "Modo 3D" pasa a recomendar Blender
+para escenas pesadas y Three.js para cosas simples.
+
+
+------------------------------------------------------------------
+FASE 6 — Render distribuido entre las dos PC  (≈2 sesiones)
+------------------------------------------------------------------
+6.1 Partir renders
+    - scripts/render_partes.mjs <comp> <ID> --partes N: divide por rango de cuadros
+      (--frames=a-b), arma la lista de trabajos y une con ffmpeg concat (sin recodificar).
+6.2 Repartir
+    - Carpeta compartida en red (C:/Videos/ en la Ryzen compartida) o git + misma ruta.
+    - La otra PC corre un "trabajador" (node scripts/trabajador.mjs) que toma partes pendientes
+      de una carpeta de cola (archivos .json) y deja el resultado.
+    - Aplica también a renders de Blender (F5) y a Whisper largos.
+6.3 Verificación
+    - Unir y comparar duración/cuadros con ffprobe; audio final siempre se mezcla en una sola PC
+      (loudnorm sobre el total, no por partes).
+Criterio de cierre: un render de 60 s repartido entre las dos PC, idéntico en duración y audio
+a uno hecho en una sola.
+
+
+------------------------------------------------------------------
+Riesgos y decisiones pendientes
+------------------------------------------------------------------
+- Eevee en modo sin ventana con gráfica Intel puede no andar → respaldo Cycles CPU (lento) o
+  render de Blender solo en la Ryzen. Se decide en F5.1 con la medición.
+- Depth Anything en CPU puede ser lento para video → limitar a tomas fijas / cuadros clave.
+- Mocap de MediaPipe falla con cuerpo parcial o de espaldas → grabar de frente, cuerpo entero,
+  buena luz (dejarlo escrito en la guía del mocap).
+- Mixamo (animaciones humanoides listas) es externo y pide cuenta de Adobe: NO se incluye;
+  preguntar si en algún momento se quiere.
+- Licencias: Rhubarb (MIT), RIFE/Real-ESRGAN ncnn (MIT/BSD), Depth Anything V2 Small
+  (Apache-2.0; las variantes Base/Large NO son de uso comercial: usar solo Small),
+  Blender (GPL, los renders son propios), voces Piper (revisar la licencia de cada voz).
+
+------------------------------------------------------------------
+Estado
+------------------------------------------------------------------
+F0 HECHA (2026-10-04) · F1 HECHA (2026-10-04) · F2 HECHA (2026-10-04, sin el 2.4 opcional) · F3 HECHA (2026-10-04) · F4 HECHA (2026-10-04) · F5 HECHA (2026-10-04) · F6 HECHA en una PC (2026-10-04; falta probar entre las dos PC)
+
+F0 — Orden y base  [HECHA 2026-10-04]
+  [x] 0.1 Pendientes commiteados (517ca6d). main es ancestro de la rama: merge fast-forward al cerrar cada fase.
+  [x] 0.2 vitest + `npm test`: 29 pruebas en src/rig/__tests__/ (pose, secuencia, lipsync, duracionGlobo).
+          Además `npm run lint` quedó limpio (había 7 errores viejos: volume constantes → callback, variable sin usar,
+          globals de Node en .mjs vía eslint.config.mjs).
+  [x] 0.3 scripts/revisar.mjs: borrador mudo a 0.25 + score de escena de ffmpeg; umbral adaptativo (percentil 95 de la
+          propia composición, mínimo 0,012) y picos locales → en personaje-bloomie-muestrario detectó los 12 cambios de
+          disfraz/expresión/vista; 25 s de borrador para 718 cuadros en la i3. Limitación: necesita los audios de la
+          composición en public/ (no sirve para trabajos archivados sin restaurarlos).
+  [x] 0.4 verificar-suite: paso(…, { opcional: true }) + requiere() → ⚪ "no instalado" sin error; paso "Tests (vitest)".
+
+F1 — Herramientas locales rápidas  [HECHA 2026-10-04]
+  [x] 1.1 Voces es_AR-daniela-high y es_MX-claude-high + scripts/voz.mjs (Piper → recorte → -14 LUFS medido con
+          ebur128 y ganancia+limitador, porque loudnorm dejaba las frases cortas en -16/-17 → tiempos con Whisper).
+          Hallazgos: Piper leía "¡" y "¿" como sílabas ("asicufejo") → se sacan; acentúa mal algún voseo ("alcanzás").
+  [x] 1.2 Rhubarb 1.14.0 en _herramientas/rhubarb + scripts/lipsync_rhubarb.mjs (reconocedor phonetic, formas G/H/X).
+          4 s de voz en ~2 s. Integración con el rig → F2.2.
+  [x] 1.3 RIFE 20221029 (rife-v4.6) + scripts/camara_lenta.mjs: 1 s de crudo (claudio_musica) ×4 a media resolución
+          en 37 s (0,31 s/cuadro, Intel UHD por Vulkan); movimiento intermedio fluido en la hoja de control.
+  [x] 1.4 Real-ESRGAN 0.2.5.0 + scripts/subir_resolucion.mjs: foto 270×480 → 1080×1920 (x4plus) en 44 s, pelo y tela
+          nítidos; video 360p → 720p a ~2,2 s/cuadro (animevideov3). Solo para tramos cortos en la i3.
+  [x] 1.5 librosa en el .venv + scripts/pulsos.py (bpm, pulsos, compases, golpes, energía): Mixkit 801 → 143,6 bpm.
+          En vez de una opción dentro de MontajeMusical, función pura ajustarAlPulso(tomas, compases) en calculos.ts
+          (se aplica a los datos → Remotion y la exportación a Premiere coinciden) + 5 tests.
+  [x] verificar-suite: 5 chequeos opcionales nuevos, todos ✅. requirements.txt regenerado (faltaba piper-tts).
+
+F2 — Animación de personajes  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10-04_claudio_prueba-mocap)
+  [x] 2.1 scripts/rig/mocap.py: MediaPipe Pose + Face Landmarker (modelos bajados a modelos-mediapipe/) → cuerpo,
+          cabeza, brazos, pies, raíz, párpados/guiño, mirada, yaw 2,5D, boca (visemas desde blendshapes) y caras
+          (feliz/enojado/triste) → secuencia JSON lineal reducida a poses clave. Cambios respecto del plan: suavizado
+          gaussiano centrado en vez de One Euro (el video ya está grabado: sin retraso); límites por defecto en el
+          script en vez de "limites" en rig.json. Pruebas: guitarrista de cuerpo entero (300/300 cuerpo y cara, 84
+          poses) y nene cantando en primer plano (cara 209/300: la cámara se va a otras personas). Arreglos que
+          salieron de las pruebas: normalizar por la mediana del tronco (temblor), pies relativos entre sí, cara en
+          un recorte alrededor de la cabeza con respaldo en el cuadro entero, raíz y pies solo con cuerpo entero.
+  [x] 2.2 Rhubarb en el rig: visemasRhubarb() en lipsync.ts + pista hablar con "rhubarb"; voz.mjs genera
+          <nombre>_rhubarb.json (--datos). Con la misma voz: Rhubarb cierra en M/B/P y sigue el ritmo; las reglas por
+          letras dejaban una "O" larga en "soy Bloomie" (tiempos gruesos de Whisper) → Rhubarb pasa a ser la preferida.
+  [x] 2.3 src/rig/sonidos.ts (efectosDePistas, 5 tests) + sonidos: true en PersonajeRig. Pop de Mixkit 731 bajado
+          (1 búsqueda + 1 descarga). Verificado con silencedetect sobre el audio de la composición de prueba: los
+          efectos caen en los cuadros esperados.
+  [ ] 2.4 Editor visual de poses clave: NO se hizo (era opcional "si 2.1 no alcanza"; el mocap + JSON editable alcanza).
+  [x] verificar-suite: chequeo opcional "Mocap (MediaPipe)". 41 tests. Lint limpio.
+
+F3 — Integración con video real (2,5D)  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10-04_claudio_prueba-25d-video)
+  [x] 3.1 scripts/mascaras.py (selfie_multiclass, confianza suave + borde + suavizado temporal) → webm VP9 con alfa
+          + src/plantillas/comunes/DetrasDePersona.tsx. Prueba: "CANTÁ" y Bloomie detrás del nene. Hallazgo: los
+          OffthreadVideo tienen que ir cada uno en su AbsoluteFill (si no, el segundo queda debajo del primero, fuera
+          de cuadro). Límite: piernas oscuras sobre sillón oscuro salen irregulares.
+  [x] 3.2 scripts/profundidad.py (Depth Anything V2 Small ONNX + onnxruntime CPU; normalización global p2–p98 sin
+          parpadeo; --cada N con interpolación; --recorte/--punto para oclusión) + FotoProfundidad.tsx (feDisplacementMap,
+          el fondo y lo cercano se corren en sentidos opuestos: medido +24/−22 px). Prueba: Bloomie camina detrás del
+          guitarrista y del teclado. Margen bajado a 0,01 (con 0,04 lo tapaban mal). 3–4 s/cuadro a 1080×1920 en la i3.
+  [x] 3.3 scripts/seguimiento.py (LK + similitud RANSAC; global por defecto, --caja para objetos) + prop seguimiento
+          de PersonajeRig (lugarEn, 3 tests). Prueba: lucia70 7–13 s, la cámara se corre ~270 px y Bloomie sigue en el
+          piso. CLAUDE.md: la regla 5 de la receta 2,5D suma "si la cámara se mueve, usar seguimiento" y la 5b (detrás).
+  [x] verificar-suite: 3 chequeos opcionales (recorte, profundidad, seguimiento). 44 tests.
+
+F4 — 3D dentro de Remotion  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10-04_claudio_prueba-3d)
+  [x] 4.1 EscenaBloomie3D: recortar (lienzo de tamaño fijo alrededor del personaje, escena en coordenadas del lienzo
+          porque R3F lee la cámara una sola vez) + scripts/capa3d.mjs (huella de props + código + piezas/rig.json →
+          webm VP9 con alfa en cache3d/, reuso verificado, datos/cache3d.json). HALLAZGO: la nota "18 s por cuadro"
+          estaba vieja: ANGLE usa la Intel UHD por D3D11 → ~0,09 s/cuadro; el recorte no acelera acá (misma imagen)
+          y la final desde caché tarda igual que en vivo. Queda para escenas pesadas / PCs sin WebGL rápido.
+  [x] 4.2 estilo "toon" (MeshToonMaterial con rampa de 3 tonos) en Bloomie3D / EscenaBloomie3D.
+  [x] 4.3 Plantilla Logo3D (zod): contorno SVG extruido con bisel, frente con textura del PNG (UV = coordenadas del
+          SVG), animaciones giro / caída / armado por piezas, brillo que cruza y texto con la fuente de la marca.
+          Los kits solo tienen PNG → scripts/vectorizar_logo.py (OpenCV, piezas + agujeros, evenodd). Probado con
+          Volto (armado) y Rastro (giro, 16:9). Arreglo: escala de cámara en perspectiva (px por unidad en z = 0).
+  [x] 4.4 Modelo3D (src/plantillas/comunes): .glb con GLTFLoader + SkeletonUtils + AnimationMixer sincronizado
+          al cuadro, clips por nombre con fundidos, escala por altura en px y base en los pies (Box3 precisa). Sin
+          @react-three/drei (no hizo falta). Biblioteca public/biblioteca/modelos3d/ + LICENCIAS.md (RobotExpressive
+          CC0). Arreglo: rotation [0,0,0] en la cámara (R3F la apuntaba al origen).
+  [x] verificar-suite: "Vectorizar logo". equipo.json: webglVelocidad.
+
+F5 — Blender sin interfaz  [HECHA 2026-10-04]  (trabajo de prueba: 2026-10-04_claudio_prueba-blender)
+  [x] 5.1 Blender 5.2.2 LTS PORTABLE en _herramientas/blender (cambio respecto del plan: el MSI de winget quedó
+          esperando permisos de administrador; el zip no los necesita y la ruta fija sirve igual en las dos PC).
+          Eevee funciona en modo -b con la Intel UHD. Chequeo opcional "Blender" en verificar-suite.
+  [x] 5.2 scripts/blender/: render.py (Eevee, fondo transparente, cámara ortográfica en px, sol desde el ángulo de
+          pantalla, estilo toon, cara animada) + render.mjs (orquesta y guarda la capa con huella en cache3d/).
+          En vez de una "escena.json" genérica con modelo/cámara/luz libres, se armó el flujo concreto del rig.
+  [x] 5.3 personaje_desde_rig.py: mismos huesos y pivotes que rig.json, piezas pegadas a su hueso, contorno toon,
+          cara como calcomanía (shrinkwrap) con textura de CaraTextura → .blend + .glb (carga en Remotion con
+          Modelo3D: probado). Las poses no se convierten a "acciones" con interpolación propia: poses.ts evalúa el
+          motor TS cuadro a cuadro (vite-node) y Blender aplica cada cuadro → anima idéntico al 2D (incluye mocap,
+          trayectos, saltos). Arreglos de las pruebas: material negro del importador SVG, sombra de la calcomanía,
+          secuencia de cara corrida un cuadro, rutas relativas de Blender, --python-exit-code.
+  [x] 5.4 render.mjs: 130 cuadros 1080×1920 en ~4 min en la i3 (Blender 1,5–2 s/cuadro).
+  [x] 5.5 Comando /personaje-3d (.claude/commands/personaje-3d.md) + scripts/blender/hoja_giro.mjs (8 ángulos en 29 s).
+  [x] Criterio de cierre: composición claudio-prueba-blender-video — Bloomie de Blender (sol a 135°, como las
+      sombras del pasto) camina 110 cuadros sobre el video del guitarrista y pasa DETRÁS del teclado, del hombre que
+      cruza y del guitarrista (recorte por profundidad de F3). 3 min de render en la i3.
+
+F6 — Render distribuido  [HECHA 2026-10-04 en una sola PC]
+  [x] 6.1 scripts/render_partes.mjs: tramos parejos (--frames), h264 crf 18 mudo por parte, audio entero aparte,
+          unión con concat sin recodificar + verificación de cuadros. Retoma: las partes hechas (.ok) no se rehacen.
+          Prueba: claudio-prueba-mocap-habla en 3 partes = render entero (PSNR 52,8 dB, -14,3 vs -14,2 LUFS).
+  [x] 6.2 Cola en carpeta (--cola, carpetaCola en herramientas.json) + scripts/trabajador.mjs: toma atómica por
+          renombre (.json → .json.<PC>), commit en la tarea (se niega si no coincide), reintento por fallas
+          transitorias, error legible en <parte>.error. PC_NOMBRE para simular varias PC. Test de la toma atómica.
+  [x] 6.3 Prueba con dos procesos a la vez ("NOTEBOOK" y "RYZEN-simulada"): claudio-prueba-mocap-guitarra (300
+          cuadros con video) en 4 partes, unión verificada, PSNR 43,7 dB contra el render entero.
+          Hallazgo: la primera vez fallaron las 2 partes que arrancaron juntas (choque transitorio al empaquetar) → 2 intentos.
+  [ ] Falta: probarlo de verdad entre la notebook y la Ryzen (compartir C:/Videos/cola en red). Desde esta sesión
+      solo hay acceso a una PC. Pasos en C:/Videos/_herramientas/README.txt → "Render repartido entre PCs".

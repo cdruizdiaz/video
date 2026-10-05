@@ -1,0 +1,11 @@
+Trabajo 2026-10-02_claudio_rig-bloomie — cerrado y archivado el 2026-10-02.
+
+Material archivado en C:/Videos/archivo/2026-10-02_claudio_rig-bloomie/
+  public/  copia completa de esta carpeta (audio/voz_bloomie_en.wav, audio/voz_bloomie_en_14lufs.wav, datos/)
+  final/   entregas: escoba-ciclo_alfa_v1/v2 (.mov + PNG), escoba-cruce_9x16_v1/v2 (.mov + PNG), habla_9x16_v1.mp4
+
+Aquí quedan solo los datos (datos/*.json), que usa src/trabajos/2026-10-02_claudio_rig-bloomie/composiciones.ts.
+
+Para restaurar: copiar C:/Videos/archivo/2026-10-02_claudio_rig-bloomie/public/ sobre esta carpeta
+(public/trabajos/2026-10-02_claudio_rig-bloomie/). Sin restaurar, se puede renderizar el ciclo y el cruce de la escoba
+(no usan audio); la composición "habla" necesita el audio.

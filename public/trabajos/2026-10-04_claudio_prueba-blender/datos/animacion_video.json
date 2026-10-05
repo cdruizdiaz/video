@@ -1,0 +1,12 @@
+{
+  "personaje": "bloomie",
+  "expresion": "feliz",
+  "x": 1180,
+  "y": 1150,
+  "escala": 0.85,
+  "pistas": [
+    { "tipo": "parpadear", "semilla": 5 },
+    { "tipo": "caminar" },
+    { "tipo": "trayecto", "de": [1180, 1150], "a": [380, 1150], "duracion": 110, "suave": false }
+  ]
+}

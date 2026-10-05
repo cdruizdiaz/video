@@ -12,12 +12,13 @@ Si no me diste el ID, listá las carpetas de `public/trabajos/` y preguntame cu�
 2. **Actualizar `src/trabajos/<ID>/TRABAJO.md`:**
    - Estado: 🟢 Cerrado, con la fecha de hoy.
    - Tabla de entregas completa (archivo, fecha, cambios).
-   - Decisiones finales (plantilla, música con su licencia, LUFS medidos).
+   - Decisiones finales (plantilla, música con su licencia, LUFS medidos). De cada tema de Mixkit usado: id y sha256 (primeros 12 caracteres, del registro `LICENCIAS-mixkit.json`; si falta, correr `node scripts/mixkit.mjs verificar` para completarlo). Así se puede comprobar que una re-descarga es el mismo archivo.
    - Sección "Cómo rehacerlo" con los comandos reales.
 
 3. **Archivar** (mostrame qué se va a mover y cuánto pesa, y pedime confirmación ANTES de mover):
    - Mové `public/trabajos/<ID>/` a `<carpetaArchivo>/<ID>/public/` (ruta en `herramientas.json`).
    - Copiá `out/<ID>/final/` a `<carpetaArchivo>/<ID>/final/`.
+   - Copiá los ORIGINALES de Mixkit que usó el trabajo (de `public/biblioteca/`) a `<carpetaArchivo>/<ID>/biblioteca/`: si Mixkit baja o cambia el tema, el trabajo se puede rehacer igual.
    - Los originales de `<carpetaCrudos>/<ID>/` no se tocan: decime cuánto ocupan por si quiero borrarlos yo.
    - Dejá en `public/trabajos/<ID>/` solo la carpeta `datos/` (JSON chicos) y un `ARCHIVADO.txt` que diga dónde está el resto y cómo restaurarlo.
    - El código (`src/trabajos/<ID>/`) queda en el repo: permite rehacer o repetir el trabajo.

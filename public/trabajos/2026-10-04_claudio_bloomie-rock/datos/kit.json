@@ -1,0 +1,78 @@
+{
+ "guitarra_frente": {
+  "apoyos": [
+   [
+    0.5029,
+    0.3995
+   ],
+   [
+    0.507,
+    0.7255
+   ]
+  ],
+  "tam": [
+   204,
+   442
+  ]
+ },
+ "guitarra_perfil": {
+  "tam": [
+   46,
+   384
+  ]
+ },
+ "correa_guitarra": {
+  "tam": [
+   328,
+   267
+  ]
+ },
+ "anteojos_rock": {
+  "tam": [
+   347,
+   154
+  ]
+ },
+ "mano_cuernos_izq": {
+  "tam": [
+   186,
+   191
+  ]
+ },
+ "mano_cuernos_der": {
+  "tam": [
+   183,
+   192
+  ]
+ },
+ "panuelo_rock": {
+  "tam": [
+   332,
+   182
+  ]
+ },
+ "cara_grito": {
+  "tam": [
+   239,
+   209
+  ]
+ },
+ "cara_lengua": {
+  "tam": [
+   236,
+   208
+  ]
+ },
+ "cara_extasis": {
+  "tam": [
+   232,
+   206
+  ]
+ },
+ "cara_rockero": {
+  "tam": [
+   237,
+   205
+  ]
+ }
+}

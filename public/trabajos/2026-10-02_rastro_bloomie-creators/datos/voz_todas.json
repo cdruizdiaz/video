@@ -1,0 +1,176 @@
+{
+  "archivo": "voz_todas.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 12157,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 10720,
+      "texto": "Hi, I'm Bloomie. These are my creators. They work really hard. Hire them, please!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hi",
+      "fromMs": 20,
+      "toMs": 230,
+      "dtwMs": 240,
+      "p": 0.937575
+    },
+    {
+      "text": ",",
+      "fromMs": 230,
+      "toMs": 260,
+      "dtwMs": 500,
+      "p": 0.907584
+    },
+    {
+      "text": " I",
+      "fromMs": 510,
+      "toMs": 570,
+      "dtwMs": 600,
+      "p": 0.990029
+    },
+    {
+      "text": "'m",
+      "fromMs": 570,
+      "toMs": 800,
+      "dtwMs": 640,
+      "p": 0.997927
+    },
+    {
+      "text": " Bloom",
+      "fromMs": 800,
+      "toMs": 1010,
+      "dtwMs": 820,
+      "p": 0.995888
+    },
+    {
+      "text": "ie",
+      "fromMs": 1380,
+      "toMs": 1610,
+      "dtwMs": 1020,
+      "p": 0.999645
+    },
+    {
+      "text": ".",
+      "fromMs": 1610,
+      "toMs": 2000,
+      "dtwMs": 1540,
+      "p": 0.940321
+    },
+    {
+      "text": " These",
+      "fromMs": 2000,
+      "toMs": 2470,
+      "dtwMs": 2880,
+      "p": 0.815929
+    },
+    {
+      "text": " are",
+      "fromMs": 2710,
+      "toMs": 2750,
+      "dtwMs": 3040,
+      "p": 0.999384
+    },
+    {
+      "text": " my",
+      "fromMs": 2750,
+      "toMs": 2940,
+      "dtwMs": 3280,
+      "p": 0.999043
+    },
+    {
+      "text": " creators",
+      "fromMs": 2940,
+      "toMs": 3690,
+      "dtwMs": 3780,
+      "p": 0.992015
+    },
+    {
+      "text": ".",
+      "fromMs": 3690,
+      "toMs": 3860,
+      "dtwMs": 4940,
+      "p": 0.975991
+    },
+    {
+      "text": " They",
+      "fromMs": 3860,
+      "toMs": 4000,
+      "dtwMs": 5760,
+      "p": 0.754338
+    },
+    {
+      "text": " work",
+      "fromMs": 4540,
+      "toMs": 5080,
+      "dtwMs": 6020,
+      "p": 0.997961
+    },
+    {
+      "text": " really",
+      "fromMs": 5660,
+      "toMs": 5900,
+      "dtwMs": 6280,
+      "p": 0.992511
+    },
+    {
+      "text": " hard",
+      "fromMs": 5900,
+      "toMs": 6440,
+      "dtwMs": 6720,
+      "p": 0.998765
+    },
+    {
+      "text": ".",
+      "fromMs": 6440,
+      "toMs": 6790,
+      "dtwMs": 8220,
+      "p": 0.961027
+    },
+    {
+      "text": " Hir",
+      "fromMs": 7480,
+      "toMs": 7480,
+      "dtwMs": 8720,
+      "p": 0.668325
+    },
+    {
+      "text": "e",
+      "fromMs": 7480,
+      "toMs": 7680,
+      "dtwMs": 8720,
+      "p": 0.636008
+    },
+    {
+      "text": " them",
+      "fromMs": 8480,
+      "toMs": 8480,
+      "dtwMs": 8940,
+      "p": 0.997926
+    },
+    {
+      "text": ",",
+      "fromMs": 8550,
+      "toMs": 8880,
+      "dtwMs": 9100,
+      "p": 0.967492
+    },
+    {
+      "text": " please",
+      "fromMs": 8880,
+      "toMs": 10060,
+      "dtwMs": 9520,
+      "p": 0.861708
+    },
+    {
+      "text": "!",
+      "fromMs": 10060,
+      "toMs": 10500,
+      "dtwMs": 10480,
+      "p": 0.904103
+    }
+  ]
+}

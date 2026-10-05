@@ -14,7 +14,7 @@ Proyecto de video programático con [Remotion](https://www.remotion.dev/), pensa
    Claude instala y verifica todo (pide permiso antes de instalar software de sistema):
    - dependencias de Node (`npm install`);
    - ffmpeg completo (winget, Gyan.FFmpeg);
-   - whisper.cpp + modelo `large-v3-turbo` (~1,6 GB);
+   - whisper.cpp + modelo `large-v3-turbo-q8_0` (~870 MB);
    - Python 3.11 con DeepFilterNet y MediaPipe (versiones fijadas en `setup/herramientas/requirements.txt`);
    - crea el acceso fijo `C:/Videos/_herramientas/ffmpeg` y el archivo `equipo.json` con los datos de esa PC (`scripts/herramientas.json` es igual en todas las PC y no se toca);
    - regenera la música y vuelve a bajar los temas de Mixkit (no se versionan).
@@ -43,6 +43,19 @@ Desde ese commit, `scripts/herramientas.json` usa rutas iguales en todas las PC.
    ```
 
 Otra opción es volver a correr `setup/prompt_instalacion.txt`: detecta lo que ya está instalado y solo hace estos dos pasos.
+
+### Después de las mejoras del 2026-09-29 (modelo de Whisper cuantizado)
+
+`herramientas.json` ahora usa el modelo `large-v3-turbo-q8_0`. En cada PC que ya tenía la suite, una sola vez:
+
+```powershell
+Copy-Item setup/herramientas/instalar-whisper.mjs C:\Videos\_herramientas\ -Force
+node C:/Videos/_herramientas/instalar-whisper.mjs     # baja el q8_0 (~870 MB); whisper.cpp ya instalado no se toca
+node scripts/verificar-suite.mjs                      # todo en ✅ (velocidad de Whisper: paso 3c del prompt de instalación)
+node scripts/mixkit.mjs verificar                     # agrega el sha256 de los temas que se bajaron en esa PC
+```
+
+El modelo anterior (`ggml-large-v3-turbo.bin`, 1,6 GB) se puede borrar después de verificar.
 
 ## Uso
 
