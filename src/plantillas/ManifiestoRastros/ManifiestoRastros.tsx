@@ -495,7 +495,7 @@ const Sobreviviente: React.FC<{ f: number }> = ({ f }) => {
   w = mix(w, CAPSULA_W, abre);
   h = mix(h, CAPSULA_H, abre);
   let cx = SOBREVIVE[0];
-  let cy = SOBREVIVE[1];
+  const cy = SOBREVIVE[1];
   // se pliega hacia su extremo izquierdo
   w = mix(w, CAPSULA_H, pliega);
   cx = mix(cx, CAPSULA_IZQ + CAPSULA_H / 2, pliega);

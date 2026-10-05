@@ -132,10 +132,12 @@ paso("MediaPipe", () => {
   existe(herr.python, herr.modeloCaras);
   const img = path.join(TMP, "cuadro.png");
   correr(herr.ffmpeg, ["-v", "error", "-y", "-f", "lavfi", "-i", "testsrc2=s=640x360", "-frames:v", "1", img]);
-  const py = `import mediapipe as mp
+  // create_from_file no abre rutas con tildes en Windows: leer con numpy + OpenCV, como los scripts reales
+  const py = `import cv2, numpy as np, mediapipe as mp
 from mediapipe.tasks.python import BaseOptions, vision
 d = vision.FaceDetector.create_from_options(vision.FaceDetectorOptions(base_options=BaseOptions(model_asset_path=r"${herr.modeloCaras}")))
-print(len(d.detect(mp.Image.create_from_file(r"${img}")).detections), mp.__version__)`;
+rgb = cv2.cvtColor(cv2.imdecode(np.fromfile(r"${img}", dtype=np.uint8), cv2.IMREAD_COLOR), cv2.COLOR_BGR2RGB)
+print(len(d.detect(mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)).detections), mp.__version__)`;
   const [caras, ver] = correr(herr.python, ["-c", py]).trim().split("\n").at(-1).split(" ");
   return `mediapipe ${ver} · carga y detecta (${caras} caras en la imagen de prueba)`;
 });
