@@ -1,0 +1,117 @@
+{
+  "nota": "Bloomie bailando rock, 8 s, 9:16. Música: Mixkit 49 desde 64,157 s (120 bpm: pulso cada 15 cuadros, compás cada 60). Tiempos en cuadros a 30 fps.",
+  "duracion": 240,
+  "pulso": 15,
+  "pies": [
+    540,
+    1580
+  ],
+  "escala": 2.3,
+  "luz": {
+    "angulo": 115,
+    "altura": 40,
+    "intensidad": 3.2,
+    "ambiente": 0.75
+  },
+  "giro": {
+    "amplitud": 0.22
+  },
+  "baile": [
+    {
+      "desde": 0,
+      "hasta": 60,
+      "estilo": "onda"
+    },
+    {
+      "desde": 60,
+      "hasta": 120,
+      "estilo": "headbang"
+    },
+    {
+      "desde": 120,
+      "hasta": 180,
+      "estilo": "onda"
+    },
+    {
+      "desde": 180,
+      "hasta": 210,
+      "estilo": "onda"
+    },
+    {
+      "desde": 210,
+      "hasta": 240,
+      "estilo": "headbang"
+    }
+  ],
+  "cuernos": [
+    [
+      120,
+      165
+    ],
+    [
+      212,
+      240
+    ]
+  ],
+  "saltos": [
+    {
+      "desde": 178,
+      "duracion": 30,
+      "altura": 70
+    }
+  ],
+  "caras": [
+    {
+      "desde": 0,
+      "hasta": 60,
+      "cara": "rockero",
+      "anteojos": true
+    },
+    {
+      "desde": 60,
+      "hasta": 120,
+      "cara": "grito"
+    },
+    {
+      "desde": 120,
+      "hasta": 165,
+      "cara": "lengua"
+    },
+    {
+      "desde": 165,
+      "hasta": 210,
+      "cara": "extasis"
+    },
+    {
+      "desde": 210,
+      "hasta": 240,
+      "cara": "rockero"
+    }
+  ],
+  "guitarra": {
+    "centro": [
+      12,
+      -71
+    ],
+    "z": 85,
+    "ancho": 120,
+    "rot": 70
+  },
+  "panuelo": {
+    "centro": [
+      0,
+      -110
+    ],
+    "z": 72,
+    "ancho": 128
+  },
+  "manoCuernos": {
+    "centro": [
+      -90,
+      -40
+    ],
+    "z": 55,
+    "ancho": 92,
+    "angulo": 120
+  }
+}

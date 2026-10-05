@@ -1,0 +1,640 @@
+{
+ "personaje": "bloomie",
+ "expresion": "base",
+ "x": 540,
+ "y": 1580,
+ "escala": 2.3,
+ "pistas": [
+  {
+   "tipo": "pose",
+   "pose": {
+    "huesos": {
+     "mano_der": {
+      "rot": -22
+     }
+    }
+   }
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 0,
+   "fin": 60,
+   "secuencia": {
+    "nombre": "onda-rock",
+    "ciclo": true,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "nota": "pulso",
+      "huesos": {
+       "cabeza": {
+        "rot": 6,
+        "y": 4
+       },
+       "cuerpo": {
+        "rot": -3,
+        "sy": 0.96,
+        "sx": 1.02
+       },
+       "petalo_*": {
+        "rot": 6
+       },
+       "mano_izq": {
+        "rot": -15
+       }
+      }
+     },
+     {
+      "nota": "contratiempo",
+      "huesos": {
+       "cabeza": {
+        "rot": -3,
+        "y": -3
+       },
+       "cuerpo": {
+        "sy": 1.03
+       },
+       "raiz": {
+        "y": -8
+       },
+       "petalo_*": {
+        "rot": -6
+       },
+       "mano_izq": {
+        "rot": 20
+       },
+       "pie_der": {
+        "y": -7
+       }
+      }
+     },
+     {
+      "nota": "pulso",
+      "huesos": {
+       "cabeza": {
+        "rot": -6,
+        "y": 4
+       },
+       "cuerpo": {
+        "rot": 3,
+        "sy": 0.96,
+        "sx": 1.02
+       },
+       "petalo_*": {
+        "rot": 6
+       },
+       "mano_izq": {
+        "rot": -15
+       }
+      }
+     },
+     {
+      "nota": "contratiempo",
+      "huesos": {
+       "cabeza": {
+        "rot": 3,
+        "y": -3
+       },
+       "cuerpo": {
+        "sy": 1.03
+       },
+       "raiz": {
+        "y": -8
+       },
+       "petalo_*": {
+        "rot": -6
+       },
+       "mano_izq": {
+        "rot": 20
+       },
+       "pie_izq": {
+        "y": -7
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 60
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 60,
+   "fin": 120,
+   "secuencia": {
+    "nombre": "headbang",
+    "ciclo": true,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "nota": "abajo",
+      "huesos": {
+       "cabeza": {
+        "rot": 9,
+        "y": 14,
+        "sy": 0.92
+       },
+       "cuerpo": {
+        "rot": -5,
+        "sy": 0.93,
+        "sx": 1.04
+       },
+       "petalo_*": {
+        "rot": 16
+       },
+       "mano_izq": {
+        "rot": -28
+       },
+       "raiz": {
+        "y": 0
+       }
+      }
+     },
+     {
+      "nota": "arriba",
+      "huesos": {
+       "cabeza": {
+        "rot": -4,
+        "y": -10,
+        "sy": 1.05
+       },
+       "cuerpo": {
+        "sy": 1.05
+       },
+       "petalo_*": {
+        "rot": -14
+       },
+       "mano_izq": {
+        "rot": 28
+       },
+       "raiz": {
+        "y": -14
+       },
+       "pie_der": {
+        "y": -10
+       }
+      }
+     },
+     {
+      "nota": "abajo",
+      "huesos": {
+       "cabeza": {
+        "rot": -9,
+        "y": 14,
+        "sy": 0.92
+       },
+       "cuerpo": {
+        "rot": 5,
+        "sy": 0.93,
+        "sx": 1.04
+       },
+       "petalo_*": {
+        "rot": 16
+       },
+       "mano_izq": {
+        "rot": -28
+       },
+       "raiz": {
+        "y": 0
+       }
+      }
+     },
+     {
+      "nota": "arriba",
+      "huesos": {
+       "cabeza": {
+        "rot": 4,
+        "y": -10,
+        "sy": 1.05
+       },
+       "cuerpo": {
+        "sy": 1.05
+       },
+       "petalo_*": {
+        "rot": -14
+       },
+       "mano_izq": {
+        "rot": 28
+       },
+       "raiz": {
+        "y": -14
+       },
+       "pie_izq": {
+        "y": -10
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 60
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 120,
+   "fin": 180,
+   "secuencia": {
+    "nombre": "onda-rock",
+    "ciclo": true,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "nota": "pulso",
+      "huesos": {
+       "cabeza": {
+        "rot": 6,
+        "y": 4
+       },
+       "cuerpo": {
+        "rot": -3,
+        "sy": 0.96,
+        "sx": 1.02
+       },
+       "petalo_*": {
+        "rot": 6
+       },
+       "mano_izq": {
+        "rot": -15
+       }
+      }
+     },
+     {
+      "nota": "contratiempo",
+      "huesos": {
+       "cabeza": {
+        "rot": -3,
+        "y": -3
+       },
+       "cuerpo": {
+        "sy": 1.03
+       },
+       "raiz": {
+        "y": -8
+       },
+       "petalo_*": {
+        "rot": -6
+       },
+       "mano_izq": {
+        "rot": 20
+       },
+       "pie_der": {
+        "y": -7
+       }
+      }
+     },
+     {
+      "nota": "pulso",
+      "huesos": {
+       "cabeza": {
+        "rot": -6,
+        "y": 4
+       },
+       "cuerpo": {
+        "rot": 3,
+        "sy": 0.96,
+        "sx": 1.02
+       },
+       "petalo_*": {
+        "rot": 6
+       },
+       "mano_izq": {
+        "rot": -15
+       }
+      }
+     },
+     {
+      "nota": "contratiempo",
+      "huesos": {
+       "cabeza": {
+        "rot": 3,
+        "y": -3
+       },
+       "cuerpo": {
+        "sy": 1.03
+       },
+       "raiz": {
+        "y": -8
+       },
+       "petalo_*": {
+        "rot": -6
+       },
+       "mano_izq": {
+        "rot": 20
+       },
+       "pie_izq": {
+        "y": -7
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 60
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 180,
+   "fin": 210,
+   "secuencia": {
+    "nombre": "onda-rock",
+    "ciclo": true,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "nota": "pulso",
+      "huesos": {
+       "cabeza": {
+        "rot": 6,
+        "y": 4
+       },
+       "cuerpo": {
+        "rot": -3,
+        "sy": 0.96,
+        "sx": 1.02
+       },
+       "petalo_*": {
+        "rot": 6
+       },
+       "mano_izq": {
+        "rot": -15
+       }
+      }
+     },
+     {
+      "nota": "contratiempo",
+      "huesos": {
+       "cabeza": {
+        "rot": -3,
+        "y": -3
+       },
+       "cuerpo": {
+        "sy": 1.03
+       },
+       "raiz": {
+        "y": -8
+       },
+       "petalo_*": {
+        "rot": -6
+       },
+       "mano_izq": {
+        "rot": 20
+       },
+       "pie_der": {
+        "y": -7
+       }
+      }
+     },
+     {
+      "nota": "pulso",
+      "huesos": {
+       "cabeza": {
+        "rot": -6,
+        "y": 4
+       },
+       "cuerpo": {
+        "rot": 3,
+        "sy": 0.96,
+        "sx": 1.02
+       },
+       "petalo_*": {
+        "rot": 6
+       },
+       "mano_izq": {
+        "rot": -15
+       }
+      }
+     },
+     {
+      "nota": "contratiempo",
+      "huesos": {
+       "cabeza": {
+        "rot": 3,
+        "y": -3
+       },
+       "cuerpo": {
+        "sy": 1.03
+       },
+       "raiz": {
+        "y": -8
+       },
+       "petalo_*": {
+        "rot": -6
+       },
+       "mano_izq": {
+        "rot": 20
+       },
+       "pie_izq": {
+        "y": -7
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 60
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 210,
+   "fin": 240,
+   "secuencia": {
+    "nombre": "headbang",
+    "ciclo": true,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "nota": "abajo",
+      "huesos": {
+       "cabeza": {
+        "rot": 9,
+        "y": 14,
+        "sy": 0.92
+       },
+       "cuerpo": {
+        "rot": -5,
+        "sy": 0.93,
+        "sx": 1.04
+       },
+       "petalo_*": {
+        "rot": 16
+       },
+       "mano_izq": {
+        "rot": -28
+       },
+       "raiz": {
+        "y": 0
+       }
+      }
+     },
+     {
+      "nota": "arriba",
+      "huesos": {
+       "cabeza": {
+        "rot": -4,
+        "y": -10,
+        "sy": 1.05
+       },
+       "cuerpo": {
+        "sy": 1.05
+       },
+       "petalo_*": {
+        "rot": -14
+       },
+       "mano_izq": {
+        "rot": 28
+       },
+       "raiz": {
+        "y": -14
+       },
+       "pie_der": {
+        "y": -10
+       }
+      }
+     },
+     {
+      "nota": "abajo",
+      "huesos": {
+       "cabeza": {
+        "rot": -9,
+        "y": 14,
+        "sy": 0.92
+       },
+       "cuerpo": {
+        "rot": 5,
+        "sy": 0.93,
+        "sx": 1.04
+       },
+       "petalo_*": {
+        "rot": 16
+       },
+       "mano_izq": {
+        "rot": -28
+       },
+       "raiz": {
+        "y": 0
+       }
+      }
+     },
+     {
+      "nota": "arriba",
+      "huesos": {
+       "cabeza": {
+        "rot": 4,
+        "y": -10,
+        "sy": 1.05
+       },
+       "cuerpo": {
+        "sy": 1.05
+       },
+       "petalo_*": {
+        "rot": -14
+       },
+       "mano_izq": {
+        "rot": 28
+       },
+       "raiz": {
+        "y": -14
+       },
+       "pie_izq": {
+        "y": -10
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 60
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 120,
+   "fin": 165,
+   "secuencia": {
+    "nombre": "cuernos",
+    "ciclo": false,
+    "interpolacion": "lineal",
+    "poses": [
+     {
+      "huesos": {
+       "mano_izq": {
+        "rot": 0
+       }
+      },
+      "dura": 5
+     },
+     {
+      "huesos": {
+       "mano_izq": {
+        "rot": 120
+       }
+      },
+      "dura": 35
+     },
+     {
+      "huesos": {
+       "mano_izq": {
+        "rot": 120
+       }
+      },
+      "dura": 5
+     },
+     {
+      "huesos": {
+       "mano_izq": {
+        "rot": 120
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 45,
+   "veces": 1
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 212,
+   "fin": 240,
+   "secuencia": {
+    "nombre": "cuernos",
+    "ciclo": false,
+    "interpolacion": "lineal",
+    "poses": [
+     {
+      "huesos": {
+       "mano_izq": {
+        "rot": 0
+       }
+      },
+      "dura": 5
+     },
+     {
+      "huesos": {
+       "mano_izq": {
+        "rot": 120
+       }
+      },
+      "dura": 18
+     },
+     {
+      "huesos": {
+       "mano_izq": {
+        "rot": 120
+       }
+      },
+      "dura": 5
+     },
+     {
+      "huesos": {
+       "mano_izq": {
+        "rot": 120
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 28,
+   "veces": 1
+  },
+  {
+   "tipo": "saltar",
+   "inicio": 178,
+   "duracion": 30,
+   "altura": 70
+  }
+ ]
+}

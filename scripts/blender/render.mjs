@@ -47,10 +47,17 @@ const escena = {
   muestras: Number(opc("muestras", 16)),
 };
 const comp_cara = opc("cara");
+// --extra escena.json: se suma a la escena (tarjetas/accesorios, rotY por cuadro, luz…)
+// --cara-png carpeta: la cara ya armada como secuencia PNG (en vez de renderizar una composición CaraTextura)
+const extra = opc("extra") ? JSON.parse(fs.readFileSync(opc("extra"), "utf8")) : {};
+Object.assign(escena, extra);
+const caraPng = opc("cara-png");
 
 // ---------- Huella: animación + escena + modelo + scripts + código del rig ----------
 const h = crypto.createHash("sha256");
-h.update(JSON.stringify({ props, duracion, escena, comp_cara }));
+h.update(JSON.stringify({ props, duracion, escena, comp_cara, caraPng }));
+for (const t of escena.tarjetas ?? []) h.update(fs.readFileSync(t.imagen));
+if (caraPng) for (const f of fs.readdirSync(caraPng).sort()) h.update(fs.readFileSync(path.join(caraPng, f)));
 h.update(fs.readFileSync(blend));
 for (const f of ["scripts/blender/render.py", "scripts/blender/poses.ts", "src/rig/pose.ts", "src/rig/animaciones.ts", "src/rig/secuencia.ts", "src/rig/Rig.tsx", "src/rig/CaraTextura.tsx", "src/plantillas/PersonajeRig/calculos.ts"])
   h.update(fs.readFileSync(path.join(RAIZ, f)));
@@ -77,7 +84,8 @@ try {
   const poses = path.join(tmp, "poses.json");
   correr("npx", ["vite-node", "scripts/blender/poses.ts", "--", `"${animacion}"`, duracion, `"${poses}"`], { shell: true }); // con shell: rutas entre comillas (espacios)
   // 2) cara
-  if (comp_cara) {
+  if (caraPng) escena.cara = path.resolve(caraPng);
+  else if (comp_cara) {
     const dir = path.join(tmp, "cara");
     correr("npx", ["remotion", "render", "src/index.ts", comp_cara, `"${dir}"`, "--sequence", "--image-format=png", `--frames=0-${Number(duracion) - 1}`, "--log=error"], { shell: true });
     escena.cara = dir;

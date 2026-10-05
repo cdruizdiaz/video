@@ -7,7 +7,8 @@ escena.json:
     "rotY": 0 | [r0, r1, …],             # giro del personaje (radianes; lista = uno por cuadro)
     "luz": { "angulo": 135, "altura": 50, "intensidad": 3.0 },   # ángulo en pantalla (0 = desde la derecha,
                                          # 90 = desde arriba, 135 = arriba a la izquierda), como el brief 2,5D
-    "cara": "carpeta_png" | null,        # textura animada de la cara (composición CaraTextura)
+    "cara": "carpeta_png" | null,        # textura animada de la cara (composición CaraTextura o PNG propios)
+    "tarjetas": [ … ],                   # accesorios planos pegados a huesos (ver tarjetas())
     "estilo": "suave" | "toon",
     "muestras": 16 }
 Cámara ortográfica en px: un punto del .ai mide `lugar.escala` px y los pies van en (lugar.x, lugar.y) de cada
@@ -27,6 +28,54 @@ PT = 0.01
 def hex_lin(h):
     h = h.lstrip("#")
     return tuple(((c / 255) / 12.92 if c / 255 <= 0.04045 else ((c / 255 + 0.055) / 1.055) ** 2.4) for c in (int(h[i:i + 2], 16) for i in (0, 2, 4)))
+
+
+def tarjetas(lista, arm, n):
+    """Accesorios planos (guitarra, pañuelo, una mano especial…) dentro de la escena 3D: un plano con la imagen,
+    pegado a un hueso del rig (se mueve con él) y con visibilidad por tramos de cuadros.
+    Cada tarjeta: { imagen, hueso, centro: [x, y] (pt del .ai, en reposo), z (pt hacia la cámara), ancho (pt),
+                    rot (grados en pantalla, + = horario), visible: [[desde, hasta], …] (cuadros 0…n-1; null = siempre),
+                    ocultar: "pieza" (objeto del modelo que se esconde mientras la tarjeta se ve), sombra: true }"""
+    for t in lista:
+        img = bpy.data.images.load(str(Path(t["imagen"]).resolve()))
+        ancho = t["ancho"] * PT
+        alto = ancho * img.size[1] / img.size[0]
+        bpy.ops.mesh.primitive_plane_add(size=1)
+        o = bpy.context.active_object
+        o.name = Path(t["imagen"]).stem
+        o.scale = (ancho, alto, 1)
+        o.rotation_euler = Euler((math.radians(90), math.radians(t.get("rot", 0)), 0))  # al plano de la pantalla
+        cx, cy = t["centro"]
+        o.location = Vector((cx * PT, -t.get("z", 0) * PT, -cy * PT))
+        bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
+        m = bpy.data.materials.new(o.name)
+        m.use_nodes = True
+        nt = m.node_tree
+        bsdf = nt.nodes.get("Principled BSDF")
+        bsdf.inputs["Roughness"].default_value = 0.65
+        tex = nt.nodes.new("ShaderNodeTexImage")
+        tex.image = img
+        nt.links.new(tex.outputs["Color"], bsdf.inputs["Base Color"])
+        nt.links.new(tex.outputs["Alpha"], bsdf.inputs["Alpha"])
+        o.data.materials.append(m)
+        o.visible_shadow = t.get("sombra", True)
+        g = o.vertex_groups.new(name=t["hueso"])
+        g.add([v.index for v in o.data.vertices], 1.0, "REPLACE")
+        mod = o.modifiers.new("rig", "ARMATURE")
+        mod.object = arm
+        o.parent = arm
+        # Visibilidad por tramos (y la pieza que reemplaza, al revés)
+        tramos = t.get("visible")
+        if tramos is not None:
+            oculta = bpy.data.objects.get(t["ocultar"]) if t.get("ocultar") else None
+            for k in range(n):
+                ve = any(a <= k < b for a, b in tramos)
+                o.hide_render = not ve
+                o.keyframe_insert("hide_render", frame=k + 1)
+                if oculta:
+                    oculta.hide_render = ve
+                    oculta.keyframe_insert("hide_render", frame=k + 1)
+        yield o
 
 
 def main():
@@ -103,7 +152,7 @@ def main():
     cara = escena.get("cara")
     if cara and bpy.data.materials.get("cara"):
         nodo = bpy.data.materials["cara"].node_tree.nodes.get("textura_cara")
-        pngs = sorted(Path(cara).glob("*.png"))
+        pngs = sorted(Path(cara).resolve().glob("*.png"))
         if pngs:
             img = bpy.data.images.load(str(pngs[0]))
             img.source = "SEQUENCE" if len(pngs) > 1 else "FILE"
@@ -115,6 +164,11 @@ def main():
             primero = int(re.findall(r"(\d+)", pngs[0].stem)[-1])
             nodo.image_user.frame_offset = primero - 1
             nodo.image_user.use_auto_refresh = True
+
+    # Tarjetas: accesorios del kit (PNG con transparencia) como planos pegados a un hueso, en la escena 3D
+    arm = next(o for o in bpy.data.objects if o.type == "ARMATURE")
+    for t in tarjetas(escena.get("tarjetas", []), arm, n):
+        pass
 
     # Cámara ortográfica en px
     cam_d = bpy.data.cameras.new("camara")
