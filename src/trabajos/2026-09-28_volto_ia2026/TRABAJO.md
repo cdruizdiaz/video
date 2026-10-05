@@ -6,7 +6,7 @@
 | Pieza | IA2026 (comercial "¿Qué hace realmente un agente de IA en 2026?") |
 | Estado | 🟢 Cerrado |
 | Abierto | 2026-09-28 |
-| Cerrado | 2026-09-28 |
+| Cerrado | 2026-10-05 (material archivado en `C:/Videos/archivo/2026-09-28_volto_ia2026/`) |
 
 ## Brief
 - **Pedido:** abierto como "CEI Niños"; renombrado a Volto / IA2026 al ver el material (2026-09-28).
@@ -50,6 +50,7 @@
 - **Música:** Mixkit “Digital Clouds” (Alejandro Magaña, id 175), tramo 0–40 s, fundido de salida 2,5 s, preparada a -14 LUFS con `preparar_musica.sh`; en el mix, -21 dB (≈17 dB bajo la voz), sube en el cierre. Licencia en `public/biblioteca/LICENCIAS-mixkit.json` (Mixkit Stock Music Free License).
 - **Voz:** cada toma nivelada a -18,3 LUFS (gananciaDb en `clips.json`); sin DeepFilterNet (ruido de fondo ~30 dB bajo la voz, limpio).
 - **Mix final:** loudnorm en dos pasadas → -14,0 LUFS integrado, pico -1,5 dBFS (medido con ebur128).
+- **Verificación al cierre (2026-10-05):** `ia2026-40s_9x16_v1.mp4` — 40,1 s, 1080×1920, 30 fps, h264 + aac, 33,5 MB; ebur128: -14,0 LUFS integrado, LRA 1,9 LU, pico verdadero -1,5 dBFS.
 - **Otras:** tipografías Geist (texto y títulos) y Dancing Script (manuscrita) en lugar de New Black / Nostalgic Memories del sitio (no están en Google Fonts).
 
 ## Entregas
