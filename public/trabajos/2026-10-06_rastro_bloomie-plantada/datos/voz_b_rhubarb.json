@@ -1,0 +1,9 @@
+{"fuente":"rhubarb","audio":"public/trabajos/2026-10-06_rastro_bloomie-plantada/audio/voz_b.wav","duracion":1.1,"mouthCues":[
+{"start":0,"end":0.03,"value":"B"},
+{"start":0.03,"end":0.16,"value":"A"},
+{"start":0.16,"end":0.35,"value":"C"},
+{"start":0.35,"end":0.7,"value":"B"},
+{"start":0.7,"end":0.84,"value":"C"},
+{"start":0.84,"end":0.98,"value":"B"},
+{"start":0.98,"end":1.1,"value":"X"}
+]}

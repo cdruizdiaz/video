@@ -10,7 +10,13 @@ escena.json:
     "cara": "carpeta_png" | null,        # textura animada de la cara (composición CaraTextura o PNG propios)
     "tarjetas": [ … ],                   # accesorios planos pegados a huesos (ver tarjetas())
     "estilo": "suave" | "toon",
-    "muestras": 16 }
+    "muestras": 16,
+    "contraluz": { "angulo": 25, "atras": 40, "intensidad": 4, "color": "#8fd8ff" },   # opcional: luz desde atrás
+                                         # (ángulo en pantalla como "luz"; atras = grados por detrás del personaje)
+    "huesosExtra": { "<hueso>": { "z": [...], "cabeceo": [...], "yaw": [...] } },      # opcional, uno por cuadro:
+                                         # z en pt hacia la cámara (manos delante del cuerpo), cabeceo en grados
+                                         # (+ = mira hacia abajo), yaw en radianes (+ = como rotY)
+    "solo": [12, 40, …] }               # opcional: renderiza solo esos cuadros (0…n-1) → f0013.png, f0041.png…
 Cámara ortográfica en px: un punto del .ai mide `lugar.escala` px y los pies van en (lugar.x, lugar.y) de cada
 cuadro (los trayectos del rig incluidos), igual que en PersonajeRig.
 """
@@ -110,12 +116,26 @@ def main():
     alt = math.radians(luz.get("altura", 50))
     sol_d = bpy.data.lights.new("sol", "SUN")
     sol_d.energy = luz.get("intensidad", 3.0)
+    if luz.get("color"):
+        sol_d.color = hex_lin(luz["color"])
     sol_d.angle = math.radians(8)
     sol = bpy.data.objects.new("sol", sol_d)
     sc.collection.objects.link(sol)
     # dirección HACIA la luz en mundo: x = cos(ang), z = sin(ang) en pantalla, y = hacia la cámara (-Y)
     hacia = Vector((math.cos(ang) * math.cos(alt), -math.sin(alt), math.sin(ang) * math.cos(alt))).normalized()
     sol.rotation_euler = hacia.to_track_quat("Z", "Y").to_euler()
+    # Contraluz (opcional): sol de color desde atrás, para recortar la silueta del fondo
+    cl = escena.get("contraluz")
+    if cl:
+        cl_d = bpy.data.lights.new("contraluz", "SUN")
+        cl_d.energy = cl.get("intensidad", 4.0)
+        cl_d.color = hex_lin(cl.get("color", "#8fd8ff"))
+        cl_d.angle = math.radians(6)
+        clo = bpy.data.objects.new("contraluz", cl_d)
+        sc.collection.objects.link(clo)
+        a_cl, b_cl = math.radians(cl.get("angulo", 25)), math.radians(cl.get("atras", 40))
+        hacia_cl = Vector((math.cos(a_cl) * math.cos(b_cl), math.sin(b_cl), math.sin(a_cl) * math.cos(b_cl))).normalized()
+        clo.rotation_euler = hacia_cl.to_track_quat("Z", "Y").to_euler()
     mundo = bpy.data.worlds.new("mundo")
     mundo.use_nodes = True
     fondo = mundo.node_tree.nodes.get("Background")
@@ -181,6 +201,8 @@ def main():
     arm = next(o for o in bpy.data.objects if o.type == "ARMATURE")
     arm.animation_data_clear()
     rot_y = escena.get("rotY", 0)
+    extra = escena.get("huesosExtra", {})
+    de_extra = lambda hid, canal, k: (extra.get(hid, {}).get(canal) or [0] * n)[min(k, n - 1)]
     for k, c in enumerate(cuadros):
         f = k + 1
         lugar = c["lugar"]
@@ -202,8 +224,9 @@ def main():
                 continue
             pb.rotation_mode = "XYZ"
             # rig 2D: rot + = horario en pantalla = giro sobre +Y del mundo = -Z local del hueso (roll 0, apunta a +Z)
-            pb.rotation_euler = Euler((0, 0, -math.radians(m["rot"])))
-            pb.location = Vector((m["x"] * PT, -m["y"] * PT, 0))
+            # ejes locales del hueso (apunta a +Z del mundo, roll 0): X = derecha, Y = arriba, Z = hacia la cámara
+            pb.rotation_euler = Euler((math.radians(de_extra(hid, "cabeceo", k)), de_extra(hid, "yaw", k), -math.radians(m["rot"])))
+            pb.location = Vector((m["x"] * PT, -m["y"] * PT, de_extra(hid, "z", k) * PT))
             pb.scale = Vector((m["sx"], m["sy"], 1))
             pb.keyframe_insert("rotation_euler", frame=f)
             pb.keyframe_insert("location", frame=f)
@@ -215,6 +238,14 @@ def main():
             for fc in getattr(ad.action, "fcurves", []):
                 for kp in fc.keyframe_points:
                     kp.interpolation = "CONSTANT"
+    solo = escena.get("solo")
+    if solo:
+        for k in solo:
+            sc.frame_set(k + 1)
+            sc.render.filepath = str(salida / f"f{k + 1:04d}")
+            bpy.ops.render.render(write_still=True)
+        print(f"OK {salida} · {len(solo)} cuadros sueltos")
+        return
     sc.render.filepath = str(salida / "f")
     bpy.ops.render.render(animation=True)
     print(f"OK {salida} · {n} cuadros {W}×{H} · {sc.render.engine}")

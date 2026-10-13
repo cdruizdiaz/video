@@ -1,0 +1,92 @@
+{
+  "archivo": "voz_c.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1949,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1800,
+      "texto": "And I can't even leave... I'm planted!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " And",
+      "fromMs": 30,
+      "toMs": 140,
+      "dtwMs": 180,
+      "p": 0.741584
+    },
+    {
+      "text": " I",
+      "fromMs": 140,
+      "toMs": 180,
+      "dtwMs": 300,
+      "p": 0.987366
+    },
+    {
+      "text": " can",
+      "fromMs": 180,
+      "toMs": 290,
+      "dtwMs": 500,
+      "p": 0.995661
+    },
+    {
+      "text": "'t",
+      "fromMs": 380,
+      "toMs": 410,
+      "dtwMs": 640,
+      "p": 0.999601
+    },
+    {
+      "text": " even",
+      "fromMs": 410,
+      "toMs": 580,
+      "dtwMs": 840,
+      "p": 0.998664
+    },
+    {
+      "text": " leave",
+      "fromMs": 600,
+      "toMs": 840,
+      "dtwMs": 1100,
+      "p": 0.997853
+    },
+    {
+      "text": "...",
+      "fromMs": 840,
+      "toMs": 1270,
+      "dtwMs": 1240,
+      "p": 0.793849
+    },
+    {
+      "text": " I",
+      "fromMs": 1270,
+      "toMs": 1270,
+      "dtwMs": 1280,
+      "p": 0.962101
+    },
+    {
+      "text": "'m",
+      "fromMs": 1320,
+      "toMs": 1400,
+      "dtwMs": 1280,
+      "p": 0.997232
+    },
+    {
+      "text": " planted",
+      "fromMs": 1400,
+      "toMs": 1740,
+      "dtwMs": 1620,
+      "p": 0.991712
+    },
+    {
+      "text": "!",
+      "fromMs": 1800,
+      "toMs": 1800,
+      "dtwMs": 1780,
+      "p": 0.684727
+    }
+  ]
+}
