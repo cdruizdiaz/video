@@ -21,5 +21,6 @@
   "realesrgan": "C:/Videos/_herramientas/realesrgan/realesrgan-ncnn-vulkan.exe",
   "modeloProfundidad": "C:/Videos/_herramientas/modelos-profundidad/depth_anything_v2_small.onnx",
   "blender": "C:/Videos/_herramientas/blender/blender.exe",
-  "carpetaCola": "C:/Videos/cola"
+  "carpetaCola": "C:/Videos/cola",
+  "carpetaClientes": "C:/Users/LUCIA/Documents/RASTRO/Clientes"
 }

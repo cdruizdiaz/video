@@ -1,0 +1,151 @@
+{
+  "archivo": "IMG_4223.mov",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 60630,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 29980,
+      "texto": "Tres de la Corte"
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 59980,
+      "texto": "Tres de la Corte"
+    },
+    {
+      "desdeMs": 60000,
+      "hastaMs": 60600,
+      "texto": "CC por Antarctica Films Argentina"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " T",
+      "fromMs": 70,
+      "toMs": 2320,
+      "dtwMs": 1040,
+      "p": 0.283164
+    },
+    {
+      "text": "res",
+      "fromMs": 2320,
+      "toMs": 9210,
+      "dtwMs": 4460,
+      "p": 0.301999
+    },
+    {
+      "text": " de",
+      "fromMs": 9210,
+      "toMs": 13830,
+      "dtwMs": 27340,
+      "p": 0.778052
+    },
+    {
+      "text": " la",
+      "fromMs": 13830,
+      "toMs": 18450,
+      "dtwMs": 27360,
+      "p": 0.999973
+    },
+    {
+      "text": " C",
+      "fromMs": 18450,
+      "toMs": 20760,
+      "dtwMs": 27860,
+      "p": 0.954549
+    },
+    {
+      "text": "orte",
+      "fromMs": 20800,
+      "toMs": 29980,
+      "dtwMs": 28000,
+      "p": 0.997421
+    },
+    {
+      "text": " T",
+      "fromMs": 30070,
+      "toMs": 32320,
+      "dtwMs": 57600,
+      "p": 0.209542
+    },
+    {
+      "text": "res",
+      "fromMs": 32320,
+      "toMs": 39210,
+      "dtwMs": 57740,
+      "p": 0.999354
+    },
+    {
+      "text": " de",
+      "fromMs": 39210,
+      "toMs": 43830,
+      "dtwMs": 58960,
+      "p": 0.980521
+    },
+    {
+      "text": " la",
+      "fromMs": 43830,
+      "toMs": 48450,
+      "dtwMs": 58980,
+      "p": 0.993532
+    },
+    {
+      "text": " C",
+      "fromMs": 48450,
+      "toMs": 50760,
+      "dtwMs": 59220,
+      "p": 0.992763
+    },
+    {
+      "text": "orte",
+      "fromMs": 50800,
+      "toMs": 59980,
+      "dtwMs": 59420,
+      "p": 0.99666
+    },
+    {
+      "text": " CC",
+      "fromMs": 60040,
+      "toMs": 60040,
+      "dtwMs": 60580,
+      "p": 0.184067
+    },
+    {
+      "text": " por",
+      "fromMs": 60070,
+      "toMs": 60100,
+      "dtwMs": 60580,
+      "p": 0.998188
+    },
+    {
+      "text": " Antarctica",
+      "fromMs": 60100,
+      "toMs": 60300,
+      "dtwMs": 60580,
+      "p": 0.998638
+    },
+    {
+      "text": " Fil",
+      "fromMs": 60300,
+      "toMs": 60360,
+      "dtwMs": 60580,
+      "p": 0.998576
+    },
+    {
+      "text": "ms",
+      "fromMs": 60360,
+      "toMs": 60400,
+      "dtwMs": 60580,
+      "p": 0.998896
+    },
+    {
+      "text": " Argentina",
+      "fromMs": 60400,
+      "toMs": 60600,
+      "dtwMs": 60580,
+      "p": 0.99878
+    }
+  ]
+}

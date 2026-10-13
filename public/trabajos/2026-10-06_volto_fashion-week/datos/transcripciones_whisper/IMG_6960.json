@@ -1,0 +1,57 @@
+{
+  "archivo": "IMG_6960.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8820,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 8820,
+      "texto": "*Montage music*"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " *",
+      "fromMs": 50,
+      "toMs": 630,
+      "dtwMs": 80,
+      "p": 0.259691
+    },
+    {
+      "text": "M",
+      "fromMs": 630,
+      "toMs": 1250,
+      "dtwMs": 1360,
+      "p": 0.875108
+    },
+    {
+      "text": "ont",
+      "fromMs": 1250,
+      "toMs": 3130,
+      "dtwMs": 1380,
+      "p": 0.314999
+    },
+    {
+      "text": "age",
+      "fromMs": 3130,
+      "toMs": 5010,
+      "dtwMs": 1400,
+      "p": 0.940672
+    },
+    {
+      "text": " music",
+      "fromMs": 5010,
+      "toMs": 8160,
+      "dtwMs": 1420,
+      "p": 0.999367
+    },
+    {
+      "text": "*",
+      "fromMs": 8160,
+      "toMs": 8810,
+      "dtwMs": 1440,
+      "p": 0.999985
+    }
+  ]
+}

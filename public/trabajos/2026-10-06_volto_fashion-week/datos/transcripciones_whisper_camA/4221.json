@@ -1,0 +1,48 @@
+{
+  "archivo": "IMG_4221.mov",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 52263,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2000,
+      "texto": "Música"
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 52260,
+      "texto": "Música"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " M",
+      "fromMs": 60,
+      "toMs": 330,
+      "dtwMs": 1540,
+      "p": 0.0387061
+    },
+    {
+      "text": "úsica",
+      "fromMs": 330,
+      "toMs": 2000,
+      "dtwMs": 1800,
+      "p": 0.81509
+    },
+    {
+      "text": " M",
+      "fromMs": 30060,
+      "toMs": 33740,
+      "dtwMs": 39320,
+      "p": 0.27919
+    },
+    {
+      "text": "úsica",
+      "fromMs": 33740,
+      "toMs": 52260,
+      "dtwMs": 42300,
+      "p": 1
+    }
+  ]
+}

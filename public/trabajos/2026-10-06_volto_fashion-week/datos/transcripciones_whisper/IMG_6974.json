@@ -1,0 +1,266 @@
+{
+  "archivo": "IMG_6974.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7832,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3640,
+      "texto": "¿Ahora están por la radio cubriendo el evento?"
+    },
+    {
+      "desdeMs": 3640,
+      "hastaMs": 4860,
+      "texto": "La radio es de imagen"
+    },
+    {
+      "desdeMs": 4860,
+      "hastaMs": 5740,
+      "texto": "E imagen, ok"
+    },
+    {
+      "desdeMs": 5740,
+      "hastaMs": 6800,
+      "texto": "Yo soy invitada especial"
+    },
+    {
+      "desdeMs": 6800,
+      "hastaMs": 7840,
+      "texto": "¡Ah, buenísimo!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 120,
+      "dtwMs": 1100,
+      "p": 0.24273
+    },
+    {
+      "text": "A",
+      "fromMs": 120,
+      "toMs": 170,
+      "dtwMs": 1400,
+      "p": 0.339837
+    },
+    {
+      "text": "hora",
+      "fromMs": 300,
+      "toMs": 720,
+      "dtwMs": 1720,
+      "p": 0.92652
+    },
+    {
+      "text": " están",
+      "fromMs": 720,
+      "toMs": 1280,
+      "dtwMs": 1840,
+      "p": 0.921523
+    },
+    {
+      "text": " por",
+      "fromMs": 1350,
+      "toMs": 1680,
+      "dtwMs": 2020,
+      "p": 0.849363
+    },
+    {
+      "text": " la",
+      "fromMs": 1680,
+      "toMs": 1900,
+      "dtwMs": 2140,
+      "p": 0.987842
+    },
+    {
+      "text": " radio",
+      "fromMs": 1970,
+      "toMs": 2530,
+      "dtwMs": 2480,
+      "p": 0.976542
+    },
+    {
+      "text": " cub",
+      "fromMs": 2600,
+      "toMs": 2630,
+      "dtwMs": 2840,
+      "p": 0.758735
+    },
+    {
+      "text": "ri",
+      "fromMs": 2690,
+      "toMs": 2790,
+      "dtwMs": 2960,
+      "p": 0.998152
+    },
+    {
+      "text": "endo",
+      "fromMs": 2790,
+      "toMs": 3000,
+      "dtwMs": 3080,
+      "p": 0.998673
+    },
+    {
+      "text": " el",
+      "fromMs": 3000,
+      "toMs": 3150,
+      "dtwMs": 3180,
+      "p": 0.893299
+    },
+    {
+      "text": " evento",
+      "fromMs": 3150,
+      "toMs": 3540,
+      "dtwMs": 3420,
+      "p": 0.988694
+    },
+    {
+      "text": "?",
+      "fromMs": 3620,
+      "toMs": 3630,
+      "dtwMs": 3960,
+      "p": 0.893471
+    },
+    {
+      "text": " La",
+      "fromMs": 3640,
+      "toMs": 3770,
+      "dtwMs": 3980,
+      "p": 0.494251
+    },
+    {
+      "text": " radio",
+      "fromMs": 3780,
+      "toMs": 4130,
+      "dtwMs": 3980,
+      "p": 0.940505
+    },
+    {
+      "text": " es",
+      "fromMs": 4130,
+      "toMs": 4270,
+      "dtwMs": 4060,
+      "p": 0.539254
+    },
+    {
+      "text": " de",
+      "fromMs": 4270,
+      "toMs": 4410,
+      "dtwMs": 4120,
+      "p": 0.708744
+    },
+    {
+      "text": " imagen",
+      "fromMs": 4410,
+      "toMs": 4820,
+      "dtwMs": 4580,
+      "p": 0.879285
+    },
+    {
+      "text": " E",
+      "fromMs": 4860,
+      "toMs": 4950,
+      "dtwMs": 5000,
+      "p": 0.128296
+    },
+    {
+      "text": " imagen",
+      "fromMs": 4950,
+      "toMs": 5540,
+      "dtwMs": 5400,
+      "p": 0.90866
+    },
+    {
+      "text": ",",
+      "fromMs": 5540,
+      "toMs": 5630,
+      "dtwMs": 5500,
+      "p": 0.669173
+    },
+    {
+      "text": " ok",
+      "fromMs": 5630,
+      "toMs": 5730,
+      "dtwMs": 5620,
+      "p": 0.643306
+    },
+    {
+      "text": " Yo",
+      "fromMs": 5740,
+      "toMs": 5840,
+      "dtwMs": 5720,
+      "p": 0.314449
+    },
+    {
+      "text": " soy",
+      "fromMs": 5840,
+      "toMs": 5910,
+      "dtwMs": 5720,
+      "p": 0.776407
+    },
+    {
+      "text": " invit",
+      "fromMs": 6040,
+      "toMs": 6240,
+      "dtwMs": 6000,
+      "p": 0.713337
+    },
+    {
+      "text": "ada",
+      "fromMs": 6240,
+      "toMs": 6390,
+      "dtwMs": 6120,
+      "p": 0.981637
+    },
+    {
+      "text": " especial",
+      "fromMs": 6390,
+      "toMs": 6790,
+      "dtwMs": 6620,
+      "p": 0.759373
+    },
+    {
+      "text": " ¡",
+      "fromMs": 6800,
+      "toMs": 6860,
+      "dtwMs": 6980,
+      "p": 0.439416
+    },
+    {
+      "text": "Ah",
+      "fromMs": 6860,
+      "toMs": 6970,
+      "dtwMs": 7140,
+      "p": 0.720949
+    },
+    {
+      "text": ",",
+      "fromMs": 7090,
+      "toMs": 7090,
+      "dtwMs": 7260,
+      "p": 0.552685
+    },
+    {
+      "text": " buen",
+      "fromMs": 7100,
+      "toMs": 7340,
+      "dtwMs": 7540,
+      "p": 0.994048
+    },
+    {
+      "text": "ísimo",
+      "fromMs": 7340,
+      "toMs": 7640,
+      "dtwMs": 7740,
+      "p": 0.97379
+    },
+    {
+      "text": "!",
+      "fromMs": 7640,
+      "toMs": 7840,
+      "dtwMs": 7800,
+      "p": 0.987965
+    }
+  ]
+}

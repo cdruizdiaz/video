@@ -34,6 +34,7 @@ Reglas:
 - Si el pedido del usuario no nombra un trabajo, preguntar si es uno nuevo o la continuación de uno existente.
 - **Nunca sobrescribir un archivo de `out/<ID>/final/`**: cada cambio es una versión nueva `_vN+1`. Anotar cada entrega en `TRABAJO.md`.
 - Un trabajo parecido a otro anterior se hace reutilizando su plantilla y cambiando solo los datos (textos, imágenes, duraciones, música).
+- **Reels de entrevista o persona hablando** (`HablaSubtitulada`, una o dos cámaras): leer y aplicar **de entrada** `src/plantillas/HablaSubtitulada/CRITERIOS_REEL.md`, empezando por su lista de control de arranque. Cubre color y material, planos, zoom, subtítulos, gráficos, audio y efectos, tal como los fue corrigiendo el cliente. Si en un trabajo se aprende un criterio nuevo, se suma ahí.
 - Remotion copia TODO `public/` en cada render: mantener solo trabajos activos; al terminar, `/cerrar-trabajo` mueve el material pesado a `<carpetaArchivo>/<ID>/`.
 - IDs de composición: solo letras, números y guiones (`<cliente>-<pieza>-<variante>`); se registran en `src/trabajos/index.ts`.
 

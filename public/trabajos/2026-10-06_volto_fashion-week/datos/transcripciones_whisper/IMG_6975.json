@@ -1,0 +1,71 @@
+{
+  "archivo": "IMG_6975.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3698,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3700,
+      "texto": "Estamos en la tercera edición de"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Estamos",
+      "fromMs": 80,
+      "toMs": 1180,
+      "dtwMs": 1400,
+      "p": 0.156109
+    },
+    {
+      "text": " en",
+      "fromMs": 1180,
+      "toMs": 1510,
+      "dtwMs": 1720,
+      "p": 0.994991
+    },
+    {
+      "text": " la",
+      "fromMs": 1510,
+      "toMs": 1850,
+      "dtwMs": 1920,
+      "p": 0.989824
+    },
+    {
+      "text": " ter",
+      "fromMs": 1880,
+      "toMs": 2160,
+      "dtwMs": 2060,
+      "p": 0.833297
+    },
+    {
+      "text": "cera",
+      "fromMs": 2300,
+      "toMs": 2640,
+      "dtwMs": 2540,
+      "p": 0.999825
+    },
+    {
+      "text": " ed",
+      "fromMs": 2640,
+      "toMs": 2860,
+      "dtwMs": 2880,
+      "p": 0.998012
+    },
+    {
+      "text": "ición",
+      "fromMs": 2860,
+      "toMs": 3440,
+      "dtwMs": 3360,
+      "p": 0.998062
+    },
+    {
+      "text": " de",
+      "fromMs": 3440,
+      "toMs": 3650,
+      "dtwMs": 3640,
+      "p": 0.9282
+    }
+  ]
+}

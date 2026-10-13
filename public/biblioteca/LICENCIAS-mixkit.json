@@ -260,5 +260,195 @@
     "fuente": "https://assets.mixkit.co/music/49/49.mp3",
     "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
     "descargado": "2026-10-05"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-1060.wav",
+    "id": "1060",
+    "tipo": "sfx",
+    "duracionSeg": 23,
+    "sha256": "66efe4ce5e0b291af8bac1b31ad46b7f9d3ca2687b9fd87d30aabdb98754363d",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/1060/1060.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-472.wav",
+    "id": "472",
+    "tipo": "sfx",
+    "duracionSeg": 6,
+    "sha256": "821a5a56e2e93fd719645b41fc6707f91329f90b703ec62c592229aa34e2e0c4",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/472/472.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-616.wav",
+    "id": "616",
+    "tipo": "sfx",
+    "duracionSeg": 1.2,
+    "sha256": "b4b3a111a8c4bfc49d24e2678af979e12bc5519d5c517072fcdcdba94a7b06d2",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/616/616.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-578-joke-drums.wav",
+    "id": "578",
+    "tipo": "sfx",
+    "titulo": "Joke drums",
+    "duracionSeg": 2,
+    "sha256": "13737226f757d294e5ed8b58c71861a21c5178b01553887ab436cbb9db215031",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/578/578.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-744.wav",
+    "id": "744",
+    "tipo": "sfx",
+    "duracionSeg": 2.7,
+    "sha256": "5f8ef1f18907ca2f87dec0cd8b2393df776702bda6e66e678bafd4b4a270aecf",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/744/744.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-371-cat-walk.mp3",
+    "id": "371",
+    "tipo": "musica",
+    "titulo": "Cat Walk",
+    "autor": "Arulo",
+    "duracionSeg": 124,
+    "sha256": "e241cba000ce12e52cadd4c9956274e391ef1f66d1e48a5dd40bfc21645aa489",
+    "fuente": "https://assets.mixkit.co/music/371/371.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-130-tech-house-vibes.mp3",
+    "id": "130",
+    "tipo": "musica",
+    "titulo": "Tech House vibes",
+    "autor": "Alejandro Magaña (A. M.)",
+    "duracionSeg": 102.4,
+    "sha256": "95972c602ff0686e298792f45b384f0e15477f3cf983f05dd98fd5e5d965eed6",
+    "fuente": "https://assets.mixkit.co/music/130/130.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2542.wav",
+    "id": "2542",
+    "tipo": "sfx",
+    "duracionSeg": 0.3,
+    "sha256": "1658f41d4a3eb696daeaf4c73c50df3f9fa1a262f3b1371604dbd86b9beabe25",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2542/2542.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2574-software-interface-start.wav",
+    "id": "2574",
+    "tipo": "sfx",
+    "titulo": "Software interface start",
+    "duracionSeg": 2.3,
+    "sha256": "7323c6ced9605a9b8a406cd088550d06d1a39dc8d37c9abfe52b536482468ad5",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2574/2574.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-1113-mouse-click-close.wav",
+    "id": "1113",
+    "tipo": "sfx",
+    "titulo": "Mouse click close",
+    "duracionSeg": 1.4,
+    "sha256": "fe535fd085fe27f4397e2e6ab2e5798f66636f1d7244b559018aed85fa99348b",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/1113/1113.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-3005-explainer-video-pops-whoosh-light-pop.wav",
+    "id": "3005",
+    "tipo": "sfx",
+    "titulo": "Explainer video pops whoosh light pop",
+    "duracionSeg": 0.2,
+    "sha256": "2ae8c9395cb02fec01d1c24ba85e2251adde5a57b34ca890247d2ecd5bc12a83",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/3005/3005.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-3122.wav",
+    "id": "3122",
+    "tipo": "sfx",
+    "duracionSeg": 4,
+    "sha256": "485f7e8bb1432a58ac46133c84393d3c7422ee3a60083ef5e8a8fd2d19813947",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/3122/3122.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2964.wav",
+    "id": "2964",
+    "tipo": "sfx",
+    "duracionSeg": 1.2,
+    "sha256": "f46551149198a713e2445a301b7bdb622f70884e7b232d2f0bea7e4ee638c321",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2964/2964.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2870.wav",
+    "id": "2870",
+    "tipo": "sfx",
+    "duracionSeg": 2,
+    "sha256": "084b78463e30dae4aac5edbf9e9c93cdee5ece4a4a688352e6a2b6686f9b1f4a",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2870/2870.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2531.wav",
+    "id": "2531",
+    "tipo": "sfx",
+    "duracionSeg": 19.6,
+    "sha256": "0e9e5026be70c13195c2496151205f237c2858193d24d9ec7648a1a0ff55e2a6",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2531/2531.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2568.wav",
+    "id": "2568",
+    "tipo": "sfx",
+    "duracionSeg": 0.2,
+    "sha256": "248312c2ef619427ef7024126a846e4210fe37e39038cfd32c73b1fb854a8086",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2568/2568.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2357-bubble-pop-up-alert-notification.wav",
+    "id": "2357",
+    "tipo": "sfx",
+    "titulo": "Bubble pop up alert notification",
+    "duracionSeg": 0.4,
+    "sha256": "78040d4d9f09f878ee8f298942d03952373d1f890cd5903c4c521aa71eb9e2c2",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2357/2357.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2356-dry-pop-up-notification-alert.wav",
+    "id": "2356",
+    "tipo": "sfx",
+    "titulo": "Dry pop up notification alert",
+    "duracionSeg": 0.3,
+    "sha256": "aa1085ba2eb7fb36c59dc75cb8b515e95fa53e87318895774f5655f813ba342e",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2356/2356.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
   }
 ]
