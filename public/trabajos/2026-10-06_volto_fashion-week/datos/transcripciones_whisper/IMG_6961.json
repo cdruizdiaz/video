@@ -1,0 +1,130 @@
+{
+  "archivo": "IMG_6961.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6720,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2080,
+      "texto": "No está mal ese fondo"
+    },
+    {
+      "desdeMs": 2080,
+      "hastaMs": 2080,
+      "texto": "No está mal ese fondo"
+    },
+    {
+      "desdeMs": 2080,
+      "hastaMs": 6720,
+      "texto": "No está mal ese fondo"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " No",
+      "fromMs": 40,
+      "toMs": 240,
+      "dtwMs": 1360,
+      "p": 0.217504
+    },
+    {
+      "text": " está",
+      "fromMs": 240,
+      "toMs": 720,
+      "dtwMs": 1500,
+      "p": 0.421949
+    },
+    {
+      "text": " mal",
+      "fromMs": 720,
+      "toMs": 1070,
+      "dtwMs": 1660,
+      "p": 0.98014
+    },
+    {
+      "text": " ese",
+      "fromMs": 1080,
+      "toMs": 1440,
+      "dtwMs": 1800,
+      "p": 0.907515
+    },
+    {
+      "text": " fondo",
+      "fromMs": 1440,
+      "toMs": 2080,
+      "dtwMs": 2080,
+      "p": 0.971797
+    },
+    {
+      "text": " No",
+      "fromMs": 2080,
+      "toMs": 2080,
+      "dtwMs": 3120,
+      "p": 0.533905
+    },
+    {
+      "text": " está",
+      "fromMs": 2080,
+      "toMs": 2080,
+      "dtwMs": 4040,
+      "p": 0.805751
+    },
+    {
+      "text": " mal",
+      "fromMs": 2080,
+      "toMs": 2080,
+      "dtwMs": 4200,
+      "p": 0.876897
+    },
+    {
+      "text": " ese",
+      "fromMs": 2080,
+      "toMs": 2080,
+      "dtwMs": 4440,
+      "p": 0.883037
+    },
+    {
+      "text": " fondo",
+      "fromMs": 2080,
+      "toMs": 2080,
+      "dtwMs": 4440,
+      "p": 0.999028
+    },
+    {
+      "text": " No",
+      "fromMs": 2120,
+      "toMs": 6720,
+      "dtwMs": 4440,
+      "p": 0.744724
+    },
+    {
+      "text": " está",
+      "fromMs": 6720,
+      "toMs": 6720,
+      "dtwMs": 4440,
+      "p": 0.912545
+    },
+    {
+      "text": " mal",
+      "fromMs": 6720,
+      "toMs": 6720,
+      "dtwMs": 4440,
+      "p": 0.876921
+    },
+    {
+      "text": " ese",
+      "fromMs": 6720,
+      "toMs": 6720,
+      "dtwMs": 4840,
+      "p": 0.889415
+    },
+    {
+      "text": " fondo",
+      "fromMs": 6720,
+      "toMs": 6720,
+      "dtwMs": 4840,
+      "p": 0.998462
+    }
+  ]
+}

@@ -42,7 +42,7 @@ const porClaves = (claves) =>
 // ---------- Poses clave (pt del .ai y grados) ----------
 const NEUTRA = { cuerpo: { rot: 0, sy: 1, sx: 1 }, cabeza: { rot: 0, y: 0 }, "petalo_*": { rot: 0 }, mano_izq: { rot: 0, x: 0, y: 0 }, mano_der: { rot: 0, x: 0, y: 0 } };
 const con = (...cambios) => {
-  const p = structuredClone(NEUTRA);
+  const p = JSON.parse(JSON.stringify(NEUTRA));
   for (const ch of cambios) for (const [h, m] of Object.entries(ch)) p[h] = { ...p[h], ...m };
   return p;
 };

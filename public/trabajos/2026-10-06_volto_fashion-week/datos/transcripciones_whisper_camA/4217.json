@@ -1,0 +1,43 @@
+{
+  "archivo": "IMG_4217.mov",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 18865,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 18860,
+      "texto": "Aplausos"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " A",
+      "fromMs": 60,
+      "toMs": 2370,
+      "dtwMs": 13380,
+      "p": 0.0385877
+    },
+    {
+      "text": "pl",
+      "fromMs": 2370,
+      "toMs": 7070,
+      "dtwMs": 15220,
+      "p": 0.593419
+    },
+    {
+      "text": "aus",
+      "fromMs": 7070,
+      "toMs": 14130,
+      "dtwMs": 15220,
+      "p": 0.999958
+    },
+    {
+      "text": "os",
+      "fromMs": 14130,
+      "toMs": 18860,
+      "dtwMs": 15360,
+      "p": 0.999981
+    }
+  ]
+}

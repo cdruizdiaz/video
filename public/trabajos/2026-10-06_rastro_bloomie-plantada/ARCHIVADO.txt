@@ -1,0 +1,12 @@
+Trabajo 2026-10-06_rastro_bloomie-plantada — CERRADO el 2026-10-06.
+
+El material pesado se movió a C:/Videos/archivo/2026-10-06_rastro_bloomie-plantada/:
+  public/      copia completa de esta carpeta (audio/, cache3d/, img/ con el kit y las 255 caras, datos/)
+  final/       bloomie-plantada_9x16_v1.mp4 (entrega)
+  biblioteca/  originales de Mixkit usados (1060, 744, 616, 2894, 578, 3062)
+Aquí quedan solo los JSON de datos/ (los lee composiciones.ts).
+
+Restaurar:
+  cp -r C:/Videos/archivo/2026-10-06_rastro_bloomie-plantada/public/. public/trabajos/2026-10-06_rastro_bloomie-plantada/
+Rehacer desde cero: ver "Cómo rehacerlo" en src/trabajos/2026-10-06_rastro_bloomie-plantada/TRABAJO.md
+(el kit original sigue en C:/Videos/crudos/2026-10-06_rastro_bloomie-plantada/).

@@ -1,0 +1,57 @@
+{
+  "archivo": "IMG_6986.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6337,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6340,
+      "texto": "Aparejo, aparejo"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Ap",
+      "fromMs": 0,
+      "toMs": 1810,
+      "dtwMs": 5920,
+      "p": 0.169855
+    },
+    {
+      "text": "are",
+      "fromMs": 1810,
+      "toMs": 4520,
+      "dtwMs": 6040,
+      "p": 0.824203
+    },
+    {
+      "text": "jo",
+      "fromMs": 4520,
+      "toMs": 6320,
+      "dtwMs": 6140,
+      "p": 0.916469
+    },
+    {
+      "text": ",",
+      "fromMs": 6330,
+      "toMs": 6330,
+      "dtwMs": 6220,
+      "p": 0.893357
+    },
+    {
+      "text": " apare",
+      "fromMs": 6330,
+      "toMs": 6330,
+      "dtwMs": 6300,
+      "p": 0.858907
+    },
+    {
+      "text": "jo",
+      "fromMs": 6330,
+      "toMs": 6330,
+      "dtwMs": 6300,
+      "p": 0.997712
+    }
+  ]
+}

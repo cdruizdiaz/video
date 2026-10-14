@@ -1,0 +1,71 @@
+{
+  "archivo": "IMG_6973.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 4098,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4100,
+      "texto": "tenemos una entrevista ¿te parece?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " tenemos",
+      "fromMs": 0,
+      "toMs": 2000,
+      "dtwMs": 220,
+      "p": 0.0350869
+    },
+    {
+      "text": " una",
+      "fromMs": 2000,
+      "toMs": 2480,
+      "dtwMs": 1360,
+      "p": 0.846987
+    },
+    {
+      "text": " entrev",
+      "fromMs": 2480,
+      "toMs": 3420,
+      "dtwMs": 2500,
+      "p": 0.895945
+    },
+    {
+      "text": "ista",
+      "fromMs": 3440,
+      "toMs": 4090,
+      "dtwMs": 2780,
+      "p": 0.99368
+    },
+    {
+      "text": " ¿",
+      "fromMs": 4090,
+      "toMs": 4090,
+      "dtwMs": 3020,
+      "p": 0.162033
+    },
+    {
+      "text": "te",
+      "fromMs": 4090,
+      "toMs": 4090,
+      "dtwMs": 3020,
+      "p": 0.696036
+    },
+    {
+      "text": " parece",
+      "fromMs": 4090,
+      "toMs": 4090,
+      "dtwMs": 3120,
+      "p": 0.974726
+    },
+    {
+      "text": "?",
+      "fromMs": 4090,
+      "toMs": 4090,
+      "dtwMs": 3960,
+      "p": 0.983893
+    }
+  ]
+}

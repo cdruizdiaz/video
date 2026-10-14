@@ -1,0 +1,263 @@
+{
+ "duracion": 255,
+ "fps": 30,
+ "pies": [
+  540,
+  1330
+ ],
+ "escala": 1.95,
+ "voces": [
+  {
+   "id": "a",
+   "archivo": "trabajos/2026-10-06_rastro_bloomie-plantada/audio/voz_a.wav",
+   "inicio": 0.8
+  },
+  {
+   "id": "b",
+   "archivo": "trabajos/2026-10-06_rastro_bloomie-plantada/audio/voz_b.wav",
+   "inicio": 2.84
+  },
+  {
+   "id": "c",
+   "archivo": "trabajos/2026-10-06_rastro_bloomie-plantada/audio/voz_c.wav",
+   "inicio": 5.3
+  }
+ ],
+ "subtitulos": [
+  {
+   "lineas": [
+    "I waited for my date",
+    "for hours…"
+   ],
+   "borra": 75,
+   "palabras": [
+    {
+     "texto": "I",
+     "linea": 0,
+     "desde": 24,
+     "hasta": 26,
+     "grande": false
+    },
+    {
+     "texto": "waited",
+     "linea": 0,
+     "desde": 26,
+     "hasta": 37,
+     "grande": false
+    },
+    {
+     "texto": "for",
+     "linea": 0,
+     "desde": 39,
+     "hasta": 43,
+     "grande": false
+    },
+    {
+     "texto": "my",
+     "linea": 0,
+     "desde": 43,
+     "hasta": 46,
+     "grande": false
+    },
+    {
+     "texto": "date",
+     "linea": 0,
+     "desde": 47,
+     "hasta": 53,
+     "grande": false
+    },
+    {
+     "texto": "for",
+     "linea": 1,
+     "desde": 57,
+     "hasta": 61,
+     "grande": false
+    },
+    {
+     "texto": "hours…",
+     "linea": 1,
+     "desde": 61,
+     "hasta": 71,
+     "grande": false
+    }
+   ]
+  },
+  {
+   "lineas": [
+    "and I got stood up!"
+   ],
+   "borra": 119,
+   "palabras": [
+    {
+     "texto": "and",
+     "linea": 0,
+     "desde": 86,
+     "hasta": 91,
+     "grande": false
+    },
+    {
+     "texto": "I",
+     "linea": 0,
+     "desde": 91,
+     "hasta": 92,
+     "grande": false
+    },
+    {
+     "texto": "got",
+     "linea": 0,
+     "desde": 94,
+     "hasta": 97,
+     "grande": false
+    },
+    {
+     "texto": "stood",
+     "linea": 0,
+     "desde": 102,
+     "hasta": 109,
+     "grande": false
+    },
+    {
+     "texto": "up!",
+     "linea": 0,
+     "desde": 109,
+     "hasta": 114,
+     "grande": false
+    }
+   ]
+  },
+  {
+   "lineas": [
+    "And I can't even leave…",
+    "I'm planted!"
+   ],
+   "borra": 218,
+   "palabras": [
+    {
+     "texto": "And",
+     "linea": 0,
+     "desde": 160,
+     "hasta": 163,
+     "grande": false
+    },
+    {
+     "texto": "I",
+     "linea": 0,
+     "desde": 163,
+     "hasta": 164,
+     "grande": false
+    },
+    {
+     "texto": "can't",
+     "linea": 0,
+     "desde": 164,
+     "hasta": 171,
+     "grande": false
+    },
+    {
+     "texto": "even",
+     "linea": 0,
+     "desde": 171,
+     "hasta": 176,
+     "grande": false
+    },
+    {
+     "texto": "leave…",
+     "linea": 0,
+     "desde": 177,
+     "hasta": 197,
+     "grande": false
+    },
+    {
+     "texto": "I'm",
+     "linea": 1,
+     "desde": 197,
+     "hasta": 201,
+     "grande": false
+    },
+    {
+     "texto": "planted!",
+     "linea": 1,
+     "desde": 201,
+     "hasta": 213,
+     "grande": true
+    }
+   ]
+  }
+ ],
+ "efectos": [
+  {
+   "nombre": "tic-tac",
+   "archivo": "mixkit-1060.wav",
+   "en": 0,
+   "desde": 0.25,
+   "dura": 2.3,
+   "db": -10,
+   "fundido": 0.3
+  },
+  {
+   "nombre": "womp-womp",
+   "archivo": "mixkit-744.wav",
+   "en": 3.66,
+   "desde": 0,
+   "dura": 0.9,
+   "db": -9,
+   "fundido": 0.15
+  },
+  {
+   "nombre": "estiron-1",
+   "archivo": "mixkit-616.wav",
+   "en": 3.85,
+   "desde": 0.1,
+   "dura": 1,
+   "tempo": 2.4,
+   "db": -8,
+   "fundido": 0.06
+  },
+  {
+   "nombre": "boing-1",
+   "archivo": "mixkit-2894-boing-hit-sound.wav",
+   "en": 4.2,
+   "desde": 0,
+   "dura": 0.6,
+   "db": -7,
+   "fundido": 0.1
+  },
+  {
+   "nombre": "estiron-2",
+   "archivo": "mixkit-616.wav",
+   "en": 4.5,
+   "desde": 0.1,
+   "dura": 1,
+   "tempo": 2.1,
+   "db": -7,
+   "fundido": 0.06
+  },
+  {
+   "nombre": "boing-2",
+   "archivo": "mixkit-2894-boing-hit-sound.wav",
+   "en": 4.92,
+   "desde": 0,
+   "dura": 0.6,
+   "db": -6,
+   "fundido": 0.1
+  },
+  {
+   "nombre": "ba-dum-tss",
+   "archivo": "mixkit-578-joke-drums.wav",
+   "en": 7.25,
+   "desde": 0,
+   "dura": 1.25,
+   "db": -6,
+   "fundido": 0.3
+  },
+  {
+   "nombre": "destello",
+   "archivo": "mixkit-3062.wav",
+   "en": 7.3,
+   "desde": 0,
+   "dura": 1,
+   "db": -10,
+   "fundido": 0.3
+  }
+ ]
+}

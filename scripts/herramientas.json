@@ -23,5 +23,6 @@
   "modeloLama": "C:/Videos/_herramientas/modelos-lama/lama_fp32.onnx",
   "propainter": "C:/Videos/_herramientas/propainter",
   "blender": "C:/Videos/_herramientas/blender/blender.exe",
-  "carpetaCola": "C:/Videos/cola"
+  "carpetaCola": "C:/Videos/cola",
+  "carpetaClientes": "C:/Users/LUCIA/Documents/RASTRO/Clientes"
 }

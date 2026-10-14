@@ -1,0 +1,71 @@
+{
+  "archivo": "voz_a.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1720,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1580,
+      "texto": "I waited for my date for hours..."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " I",
+      "fromMs": 10,
+      "toMs": 60,
+      "dtwMs": 140,
+      "p": 0.806313
+    },
+    {
+      "text": " waited",
+      "fromMs": 60,
+      "toMs": 430,
+      "dtwMs": 380,
+      "p": 0.991964
+    },
+    {
+      "text": " for",
+      "fromMs": 510,
+      "toMs": 640,
+      "dtwMs": 580,
+      "p": 0.989872
+    },
+    {
+      "text": " my",
+      "fromMs": 640,
+      "toMs": 730,
+      "dtwMs": 700,
+      "p": 0.996291
+    },
+    {
+      "text": " date",
+      "fromMs": 780,
+      "toMs": 950,
+      "dtwMs": 940,
+      "p": 0.990437
+    },
+    {
+      "text": " for",
+      "fromMs": 1090,
+      "toMs": 1220,
+      "dtwMs": 1160,
+      "p": 0.990332
+    },
+    {
+      "text": " hours",
+      "fromMs": 1220,
+      "toMs": 1470,
+      "dtwMs": 1480,
+      "p": 0.997206
+    },
+    {
+      "text": "...",
+      "fromMs": 1580,
+      "toMs": 1580,
+      "dtwMs": 1560,
+      "p": 0.782757
+    }
+  ]
+}

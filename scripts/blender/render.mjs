@@ -6,9 +6,12 @@
 //
 // Uso: node scripts/blender/render.mjs <ID> <nombre> <animacion.json> <duración> [--cara <comp-cara>] [--rotY 0.4]
 //        [--luz 135] [--estilo toon] [--ancho 1080 --alto 1920] [--muestras 16] [--forzar]
-//        [--solo 30,54,66 --png out/<ID>/revision/blender]   (solo esos cuadros, como PNG para revisar; sin capa ni caché)
+//        [--solo 30,54,66] [--png carpeta]   (solo esos cuadros para revisar; sin capa ni caché; ver abajo)
 //   animacion.json: PersonajeRigProps (personaje, x, y, escala, pistas…) dentro del trabajo.
 // Salida: public/trabajos/<ID>/cache3d/<nombre>_<huella>.webm y la entrada <nombre> en datos/cache3d.json
+// --solo 12,40,70  renderiza solo esos cuadros (para revisar antes del render completo): PNG con alfa en
+//   out/<ID>/revision/solo_<nombre>/ y la hoja out/<ID>/revision/solo_<nombre>.png (sobre gris, con el número de cuadro);
+//   con --png carpeta, además una copia de cada cuadro como <nombre>_fNNNN.png
 // Antes, una vez por personaje: blender -b -P scripts/blender/personaje_desde_rig.py -- <personaje>
 import { spawnSync } from "node:child_process";
 import crypto from "node:crypto";
@@ -53,6 +56,7 @@ const comp_cara = opc("cara");
 const extra = opc("extra") ? JSON.parse(fs.readFileSync(opc("extra"), "utf8")) : {};
 Object.assign(escena, extra);
 const caraPng = opc("cara-png");
+const solo = opc("solo") ? String(opc("solo")).split(",").map(Number) : null;
 
 // ---------- Huella: animación + escena + modelo + scripts + código del rig ----------
 const h = crypto.createHash("sha256");
@@ -72,8 +76,6 @@ const guardar = () => {
   d[nombre] = relativo;
   fs.writeFileSync(indice, JSON.stringify(d, null, 2) + "\n");
 };
-const solo = opc("solo") ? opc("solo").split(",").map(Number) : null;
-if (solo) escena.solo = solo;
 if (fs.existsSync(webm) && !args.includes("--forzar") && !solo) {
   guardar();
   console.log(`OK reusada ${relativo} (huella ${huella})`);
@@ -98,15 +100,43 @@ try {
   escena.poses = poses;
   const esc = path.join(tmp, "escena.json");
   fs.writeFileSync(esc, JSON.stringify(escena));
-  const png = path.join(tmp, "png");
+  const png = solo ? path.join(RAIZ, "out", id, "revision", `solo_${nombre}`) : path.join(tmp, "png");
+  if (solo) {
+    fs.rmSync(png, { recursive: true, force: true });
+    escena.solo = solo;
+    fs.writeFileSync(esc, JSON.stringify(escena));
+  }
   correr(herr.blender, ["-b", blend, "--python-exit-code", "1", "-P", "scripts/blender/render.py", "--", esc, png]);
   const t2 = Date.now();
   if (solo) {
-    const dest = path.resolve(opc("png", path.join("out", id, "revision", "blender")));
-    fs.mkdirSync(dest, { recursive: true });
-    for (const f of fs.readdirSync(png)) fs.copyFileSync(path.join(png, f), path.join(dest, `${nombre}_${f}`));
-    console.log(`OK ${solo.length} cuadros sueltos → ${path.relative(RAIZ, dest)} · Blender ${((t2 - t1) / 1000).toFixed(0)} s`);
-    fs.rmSync(tmp, { recursive: true, force: true });
+    // hoja de contactos: cada cuadro sobre gris, achicado, con su número
+    const hoja = path.join(RAIZ, "out", id, "revision", `solo_${nombre}.png`);
+    const codigo = `
+import sys, cv2, numpy as np
+from pathlib import Path
+d, sal, cuadros = Path(sys.argv[1]), sys.argv[2], [int(x) for x in sys.argv[3].split(",")]
+T, cols = 360, 6
+filas = (len(cuadros) + cols - 1) // cols
+hoja = np.full((filas * T * 16 // 9, cols * T, 3), 70, np.uint8)
+alto = T * 16 // 9
+for i, k in enumerate(cuadros):
+    im = cv2.imdecode(np.fromfile(str(d / f"f{k + 1:04d}.png"), np.uint8), cv2.IMREAD_UNCHANGED)
+    im = cv2.resize(im, (T, alto), interpolation=cv2.INTER_AREA)
+    a = im[:, :, 3:4] / 255
+    y, x = (i // cols) * alto, (i % cols) * T
+    hoja[y:y + alto, x:x + T] = (im[:, :, :3] * a + hoja[y:y + alto, x:x + T] * (1 - a)).astype(np.uint8)
+    cv2.putText(hoja, str(k), (x + 8, y + 30), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2)
+cv2.imencode(".png", hoja)[1].tofile(sal)
+`;
+    correr(herr.python, ["-c", codigo, png, hoja, solo.join(",")]);
+    // --png carpeta: además, copia de los cuadros sueltos como <nombre>_fNNNN.png
+    if (opc("png")) {
+      const dest = path.resolve(opc("png"));
+      fs.mkdirSync(dest, { recursive: true });
+      for (const f of fs.readdirSync(png)) fs.copyFileSync(path.join(png, f), path.join(dest, `${nombre}_${f}`));
+    }
+    console.log(`OK ${solo.length} cuadros sueltos → ${path.relative(RAIZ, hoja)} · Blender ${((t2 - t1) / 1000).toFixed(0)} s`);
+    fs.rmSync(tmp, { recursive: true, force: true }); // process.exit no pasa por el finally
     process.exit(0);
   }
   // 4) webm con alfa

@@ -1,0 +1,62 @@
+{
+  "IMG_4213": {
+    "conAudioDe": "IMG_6966",
+    "desfaseMs": 4870.1,
+    "z": 25.2,
+    "ventanasDeAcuerdo": "3/3"
+  },
+  "IMG_4214": {
+    "conAudioDe": "IMG_6969",
+    "desfaseMs": 13945.1,
+    "z": 26.1,
+    "ventanasDeAcuerdo": "3/3"
+  },
+  "IMG_4215": {
+    "conAudioDe": "IMG_6972",
+    "desfaseMs": 6815.1,
+    "z": 30.9,
+    "ventanasDeAcuerdo": "3/3"
+  },
+  "IMG_4216": {
+    "conAudioDe": "IMG_6972",
+    "desfaseMs": 109378.0,
+    "z": 34.7,
+    "ventanasDeAcuerdo": "3/3"
+  },
+  "IMG_4217": {
+    "conAudioDe": "IMG_6980",
+    "desfaseMs": 1826.6,
+    "z": 14.5,
+    "ventanasDeAcuerdo": "1/1"
+  },
+  "IMG_4218": {
+    "conAudioDe": "IMG_6981",
+    "desfaseMs": 1885.4,
+    "z": 31.3,
+    "ventanasDeAcuerdo": "2/2"
+  },
+  "IMG_4219": {
+    "conAudioDe": "IMG_6982",
+    "desfaseMs": 1850.0,
+    "z": 21.1,
+    "ventanasDeAcuerdo": "3/3"
+  },
+  "IMG_4220": {
+    "conAudioDe": "IMG_6983",
+    "desfaseMs": 2378.5,
+    "z": 22.1,
+    "ventanasDeAcuerdo": "2/2"
+  },
+  "IMG_4221": {
+    "conAudioDe": "IMG_6987",
+    "desfaseMs": 11894.0,
+    "z": 14.7,
+    "ventanasDeAcuerdo": "2/3"
+  },
+  "IMG_4223": {
+    "conAudioDe": "IMG_6988",
+    "desfaseMs": 29494.6,
+    "z": 19.5,
+    "ventanasDeAcuerdo": "3/3"
+  }
+}

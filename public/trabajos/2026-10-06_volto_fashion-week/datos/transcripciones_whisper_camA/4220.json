@@ -1,0 +1,139 @@
+{
+  "archivo": "IMG_4220.mov",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 42565,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2000,
+      "texto": "Marga"
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 42560,
+      "texto": "En el momento de la que se va a perder, se va a perder"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Mar",
+      "fromMs": 60,
+      "toMs": 1200,
+      "dtwMs": 1400,
+      "p": 0.311331
+    },
+    {
+      "text": "ga",
+      "fromMs": 1200,
+      "toMs": 2000,
+      "dtwMs": 1560,
+      "p": 0.934099
+    },
+    {
+      "text": " En",
+      "fromMs": 30060,
+      "toMs": 30590,
+      "dtwMs": 34860,
+      "p": 0.519191
+    },
+    {
+      "text": " el",
+      "fromMs": 30590,
+      "toMs": 31180,
+      "dtwMs": 37120,
+      "p": 0.92265
+    },
+    {
+      "text": " momento",
+      "fromMs": 31180,
+      "toMs": 33250,
+      "dtwMs": 39100,
+      "p": 0.602691
+    },
+    {
+      "text": " de",
+      "fromMs": 33250,
+      "toMs": 33850,
+      "dtwMs": 40180,
+      "p": 0.530019
+    },
+    {
+      "text": " la",
+      "fromMs": 33880,
+      "toMs": 34440,
+      "dtwMs": 40180,
+      "p": 0.91495
+    },
+    {
+      "text": " que",
+      "fromMs": 34440,
+      "toMs": 35330,
+      "dtwMs": 40180,
+      "p": 0.983382
+    },
+    {
+      "text": " se",
+      "fromMs": 35330,
+      "toMs": 35920,
+      "dtwMs": 40180,
+      "p": 0.893359
+    },
+    {
+      "text": " va",
+      "fromMs": 35920,
+      "toMs": 36510,
+      "dtwMs": 40320,
+      "p": 0.466319
+    },
+    {
+      "text": " a",
+      "fromMs": 36510,
+      "toMs": 36810,
+      "dtwMs": 40620,
+      "p": 1
+    },
+    {
+      "text": " perder",
+      "fromMs": 36810,
+      "toMs": 38600,
+      "dtwMs": 40960,
+      "p": 0.999992
+    },
+    {
+      "text": ",",
+      "fromMs": 38600,
+      "toMs": 39190,
+      "dtwMs": 41460,
+      "p": 0.986779
+    },
+    {
+      "text": " se",
+      "fromMs": 39190,
+      "toMs": 39780,
+      "dtwMs": 41920,
+      "p": 0.999664
+    },
+    {
+      "text": " va",
+      "fromMs": 39780,
+      "toMs": 40370,
+      "dtwMs": 42000,
+      "p": 1
+    },
+    {
+      "text": " a",
+      "fromMs": 40370,
+      "toMs": 40670,
+      "dtwMs": 42280,
+      "p": 1
+    },
+    {
+      "text": " perder",
+      "fromMs": 40670,
+      "toMs": 42560,
+      "dtwMs": 42280,
+      "p": 1
+    }
+  ]
+}
