@@ -1,0 +1,14 @@
+{"fuente":"rhubarb","audio":"public/trabajos/2026-10-06_claudio_bloomie-plantado/audio/voz_c.wav","duracion":1.93,"mouthCues":[
+{"start":0,"end":0.05,"value":"B"},
+{"start":0.05,"end":0.09,"value":"C"},
+{"start":0.09,"end":0.22,"value":"A"},
+{"start":0.22,"end":0.28,"value":"B"},
+{"start":0.28,"end":0.47,"value":"C"},
+{"start":0.47,"end":1.03,"value":"B"},
+{"start":1.03,"end":1.17,"value":"C"},
+{"start":1.17,"end":1.24,"value":"F"},
+{"start":1.24,"end":1.52,"value":"B"},
+{"start":1.52,"end":1.66,"value":"C"},
+{"start":1.66,"end":1.8,"value":"B"},
+{"start":1.8,"end":1.93,"value":"X"}
+]}

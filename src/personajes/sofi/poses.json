@@ -1,0 +1,7 @@
+{
+  "referencia": "neutra",
+  "hojas": [
+    { "hoja": "C:/Videos/personajes/sofi/sofi_poses_izq.png", "filas": 3, "nombres": ["neutra", "senalando", "dudando", "cruzados", "pulgar", "festejo", "saludando", "explicando", "pensando"] },
+    { "hoja": "C:/Videos/personajes/sofi/sofi_intermedias_izq.png", "filas": 3, "nombres": ["neutra_b", "neutra_c", "paso_senalando", "paso_dudando", "paso_cruzados", "paso_pulgar", "paso1_festejo", "paso2_festejo", "paso1_saludando", "paso2_saludando", "paso_explicando", "paso_pensando"] }
+  ]
+}

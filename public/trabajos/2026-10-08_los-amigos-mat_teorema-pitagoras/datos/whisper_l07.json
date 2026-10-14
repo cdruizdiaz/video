@@ -1,0 +1,225 @@
+{
+  "archivo": "voz_l07.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5288,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5140,
+      "texto": "Los lados que forman ese ángulo son los catetos. El lado de enfrente, el m�s largo, es la hipotenusa."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Los",
+      "fromMs": 20,
+      "toMs": 160,
+      "dtwMs": 120,
+      "p": 0.628891
+    },
+    {
+      "text": " lados",
+      "fromMs": 160,
+      "toMs": 430,
+      "dtwMs": 300,
+      "p": 0.623778
+    },
+    {
+      "text": " que",
+      "fromMs": 430,
+      "toMs": 590,
+      "dtwMs": 440,
+      "p": 0.99142
+    },
+    {
+      "text": " form",
+      "fromMs": 590,
+      "toMs": 810,
+      "dtwMs": 660,
+      "p": 0.986728
+    },
+    {
+      "text": "an",
+      "fromMs": 810,
+      "toMs": 920,
+      "dtwMs": 740,
+      "p": 0.997588
+    },
+    {
+      "text": " ese",
+      "fromMs": 920,
+      "toMs": 1080,
+      "dtwMs": 920,
+      "p": 0.975891
+    },
+    {
+      "text": " á",
+      "fromMs": 1080,
+      "toMs": 1130,
+      "dtwMs": 1020,
+      "p": 0.184552
+    },
+    {
+      "text": "ngulo",
+      "fromMs": 1130,
+      "toMs": 1400,
+      "dtwMs": 1160,
+      "p": 0.996497
+    },
+    {
+      "text": " son",
+      "fromMs": 1400,
+      "toMs": 1500,
+      "dtwMs": 1340,
+      "p": 0.9828
+    },
+    {
+      "text": " los",
+      "fromMs": 1570,
+      "toMs": 1680,
+      "dtwMs": 1500,
+      "p": 0.988114
+    },
+    {
+      "text": " cat",
+      "fromMs": 1750,
+      "toMs": 1850,
+      "dtwMs": 1740,
+      "p": 0.714815
+    },
+    {
+      "text": "etos",
+      "fromMs": 1920,
+      "toMs": 2020,
+      "dtwMs": 2020,
+      "p": 0.998906
+    },
+    {
+      "text": ".",
+      "fromMs": 2020,
+      "toMs": 2150,
+      "dtwMs": 2420,
+      "p": 0.849338
+    },
+    {
+      "text": " El",
+      "fromMs": 2250,
+      "toMs": 2480,
+      "dtwMs": 2700,
+      "p": 0.536768
+    },
+    {
+      "text": " lado",
+      "fromMs": 2610,
+      "toMs": 2760,
+      "dtwMs": 2880,
+      "p": 0.945233
+    },
+    {
+      "text": " de",
+      "fromMs": 2760,
+      "toMs": 2900,
+      "dtwMs": 3000,
+      "p": 0.996559
+    },
+    {
+      "text": " enf",
+      "fromMs": 2900,
+      "toMs": 3090,
+      "dtwMs": 3200,
+      "p": 0.948252
+    },
+    {
+      "text": "rente",
+      "fromMs": 3170,
+      "toMs": 3450,
+      "dtwMs": 3460,
+      "p": 0.999565
+    },
+    {
+      "text": ",",
+      "fromMs": 3450,
+      "toMs": 3600,
+      "dtwMs": 3580,
+      "p": 0.985242
+    },
+    {
+      "text": " el",
+      "fromMs": 3600,
+      "toMs": 3790,
+      "dtwMs": 3700,
+      "p": 0.961555
+    },
+    {
+      "text": " m",
+      "fromMs": 3790,
+      "toMs": 3880,
+      "dtwMs": 3820,
+      "p": 0.713413
+    },
+    {
+      "text": "�s",
+      "fromMs": 3880,
+      "toMs": 4060,
+      "dtwMs": 3820,
+      "p": 0.548018
+    },
+    {
+      "text": " largo",
+      "fromMs": 4060,
+      "toMs": 4530,
+      "dtwMs": 4100,
+      "p": 0.983133
+    },
+    {
+      "text": ",",
+      "fromMs": 4610,
+      "toMs": 4660,
+      "dtwMs": 4260,
+      "p": 0.963089
+    },
+    {
+      "text": " es",
+      "fromMs": 4720,
+      "toMs": 4920,
+      "dtwMs": 4380,
+      "p": 0.991232
+    },
+    {
+      "text": " la",
+      "fromMs": 4920,
+      "toMs": 5120,
+      "dtwMs": 4460,
+      "p": 0.994008
+    },
+    {
+      "text": " hip",
+      "fromMs": 5120,
+      "toMs": 5140,
+      "dtwMs": 4620,
+      "p": 0.930475
+    },
+    {
+      "text": "oten",
+      "fromMs": 5140,
+      "toMs": 5140,
+      "dtwMs": 4820,
+      "p": 0.999169
+    },
+    {
+      "text": "usa",
+      "fromMs": 5140,
+      "toMs": 5140,
+      "dtwMs": 5060,
+      "p": 0.99771
+    },
+    {
+      "text": ".",
+      "fromMs": 5140,
+      "toMs": 5140,
+      "dtwMs": 5120,
+      "p": 0.968354
+    }
+  ]
+}

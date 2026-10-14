@@ -1,0 +1,470 @@
+{
+ "version": 1,
+ "personaje": "benja",
+ "fuente": "benja_poses.png, benja_intermedias.png",
+ "poses": {
+  "neutra": {
+   "img": "personajes/benja/poses/neutra.png",
+   "x": -162.4,
+   "y": -615.0,
+   "w": 302,
+   "h": 615,
+   "cabeza": [
+    -160.4,
+    -612.0,
+    88.6,
+    -420.0
+   ],
+   "sinBoca": "personajes/benja/poses/neutra_sinboca.png",
+   "boca": {
+    "c": [
+     20.1,
+     -444.6
+    ],
+    "w": 38.0,
+    "escala": 0.7755
+   }
+  },
+  "senalando": {
+   "img": "personajes/benja/poses/senalando.png",
+   "x": -176.8,
+   "y": -614.0,
+   "w": 400,
+   "h": 614,
+   "cabeza": [
+    -174.8,
+    -612.0,
+    156.2,
+    -421.0
+   ],
+   "sinBoca": "personajes/benja/poses/senalando_sinboca.png",
+   "boca": {
+    "c": [
+     5.1,
+     -446.5
+    ],
+    "w": 36.0,
+    "escala": 0.7347
+   }
+  },
+  "dudando": {
+   "img": "personajes/benja/poses/dudando.png",
+   "x": -175.3,
+   "y": -611.0,
+   "w": 364,
+   "h": 611,
+   "cabeza": [
+    -172.3,
+    -610.0,
+    72.7,
+    -419.0
+   ],
+   "sinBoca": "personajes/benja/poses/dudando_sinboca.png",
+   "boca": {
+    "c": [
+     6.5,
+     -444.0
+    ],
+    "w": 37.0,
+    "escala": 0.7551
+   }
+  },
+  "cruzados": {
+   "img": "personajes/benja/poses/cruzados.png",
+   "x": -176.4,
+   "y": -619.0,
+   "w": 324,
+   "h": 619,
+   "cabeza": [
+    -174.4,
+    -618.0,
+    82.6,
+    -422.0
+   ],
+   "sinBoca": "personajes/benja/poses/cruzados_sinboca.png",
+   "boca": {
+    "c": [
+     10.6,
+     -445.2
+    ],
+    "w": 39.0,
+    "escala": 0.7959
+   }
+  },
+  "pulgar": {
+   "img": "personajes/benja/poses/pulgar.png",
+   "x": -172.0,
+   "y": -620.0,
+   "w": 318,
+   "h": 620,
+   "cabeza": [
+    -171.0,
+    -618.0,
+    86.0,
+    -423.0
+   ],
+   "sinBoca": "personajes/benja/poses/pulgar_sinboca.png",
+   "boca": {
+    "c": [
+     14.2,
+     -447.6
+    ],
+    "w": 39.0,
+    "escala": 0.7959
+   }
+  },
+  "festejo": {
+   "img": "personajes/benja/poses/festejo.png",
+   "x": -160.8,
+   "y": -624.0,
+   "w": 307,
+   "h": 624,
+   "cabeza": [
+    -157.8,
+    -623.0,
+    104.2,
+    -422.0
+   ],
+   "sinBoca": "personajes/benja/poses/festejo_sinboca.png",
+   "boca": {
+    "c": [
+     32.3,
+     -445.5
+    ],
+    "w": 40.0,
+    "escala": 0.8163
+   }
+  },
+  "saludando": {
+   "img": "personajes/benja/poses/saludando.png",
+   "x": -227.9,
+   "y": -623.0,
+   "w": 380,
+   "h": 623,
+   "cabeza": [
+    -198.9,
+    -621.0,
+    100.1,
+    -428.0
+   ],
+   "sinBoca": "personajes/benja/poses/saludando_sinboca.png",
+   "boca": {
+    "c": [
+     26.3,
+     -451.9
+    ],
+    "w": 40.0,
+    "escala": 0.8163
+   }
+  },
+  "explicando": {
+   "img": "personajes/benja/poses/explicando.png",
+   "x": -170.4,
+   "y": -624.0,
+   "w": 319,
+   "h": 624,
+   "cabeza": [
+    -168.4,
+    -621.0,
+    85.6,
+    -427.0
+   ],
+   "sinBoca": "personajes/benja/poses/explicando_sinboca.png",
+   "boca": {
+    "c": [
+     17.0,
+     -452.3
+    ],
+    "w": 38.0,
+    "escala": 0.7755
+   }
+  },
+  "pensando": {
+   "img": "personajes/benja/poses/pensando.png",
+   "x": -178.4,
+   "y": -626.0,
+   "w": 329,
+   "h": 626,
+   "cabeza": [
+    -177.4,
+    -624.0,
+    74.6,
+    -436.0
+   ],
+   "sinBoca": "personajes/benja/poses/pensando_sinboca.png",
+   "boca": {
+    "c": [
+     7.8,
+     -454.4
+    ],
+    "w": 38.0,
+    "escala": 0.7755
+   }
+  },
+  "neutra_b": {
+   "img": "personajes/benja/poses/neutra_b.png",
+   "x": -166.2,
+   "y": -622.0,
+   "w": 311,
+   "h": 622,
+   "cabeza": [
+    -164.2,
+    -619.0,
+    95.8,
+    -422.0
+   ],
+   "sinBoca": "personajes/benja/poses/neutra_b_sinboca.png",
+   "boca": {
+    "c": [
+     21.5,
+     -447.3
+    ],
+    "w": 39.0,
+    "escala": 0.7959
+   }
+  },
+  "neutra_c": {
+   "img": "personajes/benja/poses/neutra_c.png",
+   "x": -173.7,
+   "y": -622.0,
+   "w": 322,
+   "h": 622,
+   "cabeza": [
+    -171.7,
+    -620.0,
+    82.3,
+    -422.0
+   ],
+   "sinBoca": "personajes/benja/poses/neutra_c_sinboca.png",
+   "boca": {
+    "c": [
+     10.6,
+     -447.5
+    ],
+    "w": 37.0,
+    "escala": 0.7551
+   }
+  },
+  "paso_senalando": {
+   "img": "personajes/benja/poses/paso_senalando.png",
+   "x": -172.8,
+   "y": -622.0,
+   "w": 321,
+   "h": 622,
+   "cabeza": [
+    -169.8,
+    -620.0,
+    85.2,
+    -423.0
+   ],
+   "sinBoca": "personajes/benja/poses/paso_senalando_sinboca.png",
+   "boca": {
+    "c": [
+     12.0,
+     -448.1
+    ],
+    "w": 37.0,
+    "escala": 0.7551
+   }
+  },
+  "paso_dudando": {
+   "img": "personajes/benja/poses/paso_dudando.png",
+   "x": -176.3,
+   "y": -624.0,
+   "w": 357,
+   "h": 624,
+   "cabeza": [
+    -175.3,
+    -621.0,
+    82.7,
+    -423.0
+   ],
+   "sinBoca": "personajes/benja/poses/paso_dudando_sinboca.png",
+   "boca": {
+    "c": [
+     8.9,
+     -448.4
+    ],
+    "w": 37.0,
+    "escala": 0.7551
+   }
+  },
+  "paso_cruzados": {
+   "img": "personajes/benja/poses/paso_cruzados.png",
+   "x": -171.4,
+   "y": -626.0,
+   "w": 323,
+   "h": 626,
+   "cabeza": [
+    -168.4,
+    -624.0,
+    94.6,
+    -423.0
+   ],
+   "sinBoca": "personajes/benja/poses/paso_cruzados_sinboca.png",
+   "boca": {
+    "c": [
+     16.4,
+     -447.8
+    ],
+    "w": 38.0,
+    "escala": 0.7755
+   }
+  },
+  "paso_pulgar": {
+   "img": "personajes/benja/poses/paso_pulgar.png",
+   "x": -169.6,
+   "y": -626.0,
+   "w": 319,
+   "h": 626,
+   "cabeza": [
+    -167.6,
+    -624.0,
+    98.4,
+    -424.0
+   ],
+   "sinBoca": "personajes/benja/poses/paso_pulgar_sinboca.png",
+   "boca": {
+    "c": [
+     16.9,
+     -449.6
+    ],
+    "w": 39.0,
+    "escala": 0.7959
+   }
+  },
+  "paso1_festejo": {
+   "img": "personajes/benja/poses/paso1_festejo.png",
+   "x": -170.7,
+   "y": -626.0,
+   "w": 322,
+   "h": 626,
+   "cabeza": [
+    -168.7,
+    -624.0,
+    97.3,
+    -423.0
+   ],
+   "sinBoca": "personajes/benja/poses/paso1_festejo_sinboca.png",
+   "boca": {
+    "c": [
+     18.4,
+     -448.1
+    ],
+    "w": 39.0,
+    "escala": 0.7959
+   }
+  },
+  "paso2_festejo": {
+   "img": "personajes/benja/poses/paso2_festejo.png",
+   "x": -172.8,
+   "y": -627.0,
+   "w": 325,
+   "h": 627,
+   "cabeza": [
+    -170.8,
+    -625.0,
+    104.2,
+    -424.0
+   ],
+   "sinBoca": "personajes/benja/poses/paso2_festejo_sinboca.png",
+   "boca": {
+    "c": [
+     24.8,
+     -449.2
+    ],
+    "w": 38.0,
+    "escala": 0.7755
+   }
+  },
+  "paso1_saludando": {
+   "img": "personajes/benja/poses/paso1_saludando.png",
+   "x": -183.2,
+   "y": -632.0,
+   "w": 338,
+   "h": 632,
+   "cabeza": [
+    -181.2,
+    -630.0,
+    99.8,
+    -432.0
+   ],
+   "sinBoca": "personajes/benja/poses/paso1_saludando_sinboca.png",
+   "boca": {
+    "c": [
+     21.2,
+     -456.5
+    ],
+    "w": 38.0,
+    "escala": 0.7755
+   }
+  },
+  "paso2_saludando": {
+   "img": "personajes/benja/poses/paso2_saludando.png",
+   "x": -208.8,
+   "y": -631.0,
+   "w": 364,
+   "h": 631,
+   "cabeza": [
+    -201.8,
+    -630.0,
+    108.2,
+    -430.0
+   ],
+   "sinBoca": "personajes/benja/poses/paso2_saludando_sinboca.png",
+   "boca": {
+    "c": [
+     27.4,
+     -455.0
+    ],
+    "w": 40.0,
+    "escala": 0.8163
+   }
+  },
+  "paso_explicando": {
+   "img": "personajes/benja/poses/paso_explicando.png",
+   "x": -175.1,
+   "y": -630.0,
+   "w": 328,
+   "h": 630,
+   "cabeza": [
+    -172.1,
+    -629.0,
+    95.9,
+    -429.0
+   ],
+   "sinBoca": "personajes/benja/poses/paso_explicando_sinboca.png",
+   "boca": {
+    "c": [
+     16.4,
+     -455.0
+    ],
+    "w": 37.0,
+    "escala": 0.7551
+   }
+  },
+  "paso_pensando": {
+   "img": "personajes/benja/poses/paso_pensando.png",
+   "x": -181.4,
+   "y": -630.0,
+   "w": 337,
+   "h": 630,
+   "cabeza": [
+    -178.4,
+    -629.0,
+    94.6,
+    -429.0
+   ],
+   "sinBoca": "personajes/benja/poses/paso_pensando_sinboca.png",
+   "boca": {
+    "c": [
+     12.7,
+     -453.9
+    ],
+    "w": 38.0,
+    "escala": 0.7755
+   }
+  }
+ },
+ "alertas": []
+}

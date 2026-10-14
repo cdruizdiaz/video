@@ -1,0 +1,839 @@
+{
+ "personaje": "bloomie",
+ "expresion": "base",
+ "x": 540,
+ "y": 1330,
+ "escala": 1.95,
+ "pistas": [
+  {
+   "tipo": "respirar",
+   "intensidad": 0.7
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 0,
+   "fin": 255,
+   "secuencia": {
+    "nombre": "plantado",
+    "ciclo": false,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 24
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 9
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 25,
+        "x": 62,
+        "y": -8
+       },
+       "mano_der": {
+        "rot": -25,
+        "x": -62,
+        "y": -8
+       }
+      },
+      "dura": 37
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 25,
+        "x": 62,
+        "y": -8
+       },
+       "mano_der": {
+        "rot": -25,
+        "x": -62,
+        "y": -8
+       }
+      },
+      "dura": 3
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 0.97,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 25,
+        "x": 62,
+        "y": -8
+       },
+       "mano_der": {
+        "rot": -25,
+        "x": -62,
+        "y": -8
+       }
+      },
+      "dura": 5
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 25,
+        "x": 62,
+        "y": -8
+       },
+       "mano_der": {
+        "rot": -25,
+        "x": -62,
+        "y": -8
+       }
+      },
+      "dura": 6
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 25,
+        "x": 62,
+        "y": -8
+       },
+       "mano_der": {
+        "rot": -25,
+        "x": -62,
+        "y": -8
+       }
+      },
+      "dura": 8
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 0.96,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 6
+       },
+       "petalo_*": {
+        "rot": 8
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 28
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 0.96,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 6
+       },
+       "petalo_*": {
+        "rot": 8
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 2
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": -3
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 8
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 12,
+        "sy": 1.12,
+        "sx": 0.9359999999999999
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": -8
+       },
+       "petalo_*": {
+        "rot": -10
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": -45,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 2
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": -3,
+        "sy": 0.9472,
+        "sx": 1.0304000000000002
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 12
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 4
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 3
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 9
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 18,
+        "sy": 1.16,
+        "sx": 0.8980000000000001
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": -8
+       },
+       "petalo_*": {
+        "rot": -10
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": -45,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 2
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": -4.5,
+        "sy": 0.9096000000000002,
+        "sx": 1.0672
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 12
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 3
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1.03,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 1
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 5
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 7
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1.04,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": -3
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 85,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": -85,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 52
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1.04,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": -3
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 85,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": -85,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 3
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 0.94,
+        "sx": 1.04
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": -3
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 85,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": -85,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 4
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1.04,
+        "sx": 0.98
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": -3
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 85,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": -85,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 4
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1.04,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": -3
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 85,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": -85,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 9
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "dura": 16
+     },
+     {
+      "huesos": {
+       "cuerpo": {
+        "rot": 0,
+        "sy": 1,
+        "sx": 1
+       },
+       "cabeza": {
+        "rot": 0,
+        "y": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       },
+       "mano_izq": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       },
+       "mano_der": {
+        "rot": 0,
+        "x": 0,
+        "y": 0
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 254,
+   "veces": 1
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 4,
+   "fin": 10,
+   "secuencia": {
+    "nombre": "golpeteo",
+    "ciclo": false,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "huesos": {
+       "pie_der": {
+        "y": 0
+       }
+      },
+      "dura": 3
+     },
+     {
+      "huesos": {
+       "pie_der": {
+        "y": -6
+       }
+      },
+      "dura": 3
+     },
+     {
+      "huesos": {
+       "pie_der": {
+        "y": 0
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 6,
+   "veces": 1
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 13,
+   "fin": 19,
+   "secuencia": {
+    "nombre": "golpeteo",
+    "ciclo": false,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "huesos": {
+       "pie_der": {
+        "y": 0
+       }
+      },
+      "dura": 3
+     },
+     {
+      "huesos": {
+       "pie_der": {
+        "y": -6
+       }
+      },
+      "dura": 3
+     },
+     {
+      "huesos": {
+       "pie_der": {
+        "y": 0
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 6,
+   "veces": 1
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 22,
+   "fin": 28,
+   "secuencia": {
+    "nombre": "golpeteo",
+    "ciclo": false,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "huesos": {
+       "pie_der": {
+        "y": 0
+       }
+      },
+      "dura": 3
+     },
+     {
+      "huesos": {
+       "pie_der": {
+        "y": -6
+       }
+      },
+      "dura": 3
+     },
+     {
+      "huesos": {
+       "pie_der": {
+        "y": 0
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 6,
+   "veces": 1
+  }
+ ]
+}

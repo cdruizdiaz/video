@@ -1,0 +1,52 @@
+{
+  "nota": "Bloomie — Planted, 8,5 s, 9:16, 30 fps. Fuente de verdad de los tiempos (cuadros), sale del guion_bloomie-plantado.md con los tiempos reales de las voces. La usan armar_escena.mjs (rig, escena 3D y subtítulos), caras.py (cara + lip sync), preparar_audio.mjs y la composición.",
+  "duracion": 255,
+  "pies": [540, 1330],
+  "escala": 1.95,
+  "luz": { "angulo": 125, "altura": 45, "color": "#ffd59a", "intensidad": 3.4, "ambiente": 0.3, "suavidad": 16, "colorAmbiente": "#ffe9cf" },
+  "recorte": { "angulo": 40, "altura": 40, "color": "#cfe6ff", "intensidad": 5.5 },
+  "final": { "baja": [246, 255], "factor": 0.8 },
+  "voces": [
+    { "archivo": "audio/voz_a.wav", "cuadro": 24, "lineas": [[0, 4], [5, 6]] },
+    { "archivo": "audio/voz_b.wav", "cuadro": 84, "lineas": [[0, 4]], "minuscula": true },
+    { "archivo": "audio/voz_c.wav", "cuadro": 159, "lineas": [[0, 4], [5, 6]], "destacar": ["planted"] }
+  ],
+  "subtitulosHasta": [75, 125, 218],
+  "caras": [
+    { "desde": 0, "hasta": 12, "ojos": "mirando_izq", "boca": "cerrada" },
+    { "desde": 12, "hasta": 15, "ojos": "parpadeo", "boca": "cerrada" },
+    { "desde": 15, "hasta": 24, "ojos": "mirando", "boca": "cerrada" },
+    { "desde": 24, "hasta": 70, "ojos": "parpadeo", "habla": true, "boca": "cerrada" },
+    { "desde": 70, "hasta": 84, "ojos": "mirando", "boca": "cerrada" },
+    { "desde": 84, "hasta": 120, "ojos": "triste", "habla": true },
+    { "desde": 120, "hasta": 122, "ojos": "triste" },
+    { "desde": 122, "hasta": 131, "ojos": "esfuerzo" },
+    { "desde": 131, "hasta": 139, "ojos": "asombro", "pop": true },
+    { "desde": 139, "hasta": 149, "ojos": "esfuerzo" },
+    { "desde": 149, "hasta": 159, "ojos": "asombro", "pop": true },
+    { "desde": 159, "hasta": 184, "ojos": "normal", "habla": true, "boca": "cerrada" },
+    { "desde": 184, "hasta": 197, "ojos": "normal", "boca": "cerrada" },
+    { "desde": 197, "hasta": 213, "ojos": "resignado", "habla": true },
+    { "desde": 213, "hasta": 218, "ojos": "resignado" },
+    { "desde": 218, "hasta": 255, "ojos": "alegria", "pop": true }
+  ],
+  "golpeteo": [4, 13, 22],
+  "tirones": [
+    { "desde": 122, "tira": 130, "suelta": 132, "quieto": 136, "inclina": 12, "estira": 1.12 },
+    { "desde": 139, "tira": 148, "suelta": 150, "quieto": 154, "inclina": 18, "estira": 1.16 }
+  ],
+  "dolly": { "tramo": [201, 211], "escala": 1.04 },
+  "particulas": { "desde": 220, "cada": 2, "vida": 40 },
+  "logo": { "entra": 225, "y": 1500, "alto": 150 },
+  "dof": { "tramo": [220, 235], "desenfoque": 6 },
+  "efectos": [
+    { "id": "tictac", "cuadro": 0, "volumen": 0.5, "hasta": 69 },
+    { "id": "womp", "cuadro": 113, "volumen": 0.35 },
+    { "id": "estiron", "cuadro": 122, "volumen": 0.18 },
+    { "id": "boing", "cuadro": 131, "volumen": 0.22 },
+    { "id": "estiron", "cuadro": 139, "volumen": 0.2 },
+    { "id": "boing", "cuadro": 149, "volumen": 0.26 },
+    { "id": "badumtss", "cuadro": 218, "volumen": 0.5 },
+    { "id": "destello", "cuadro": 220, "volumen": 0.35 }
+  ]
+}

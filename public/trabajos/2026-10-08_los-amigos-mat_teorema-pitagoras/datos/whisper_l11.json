@@ -1,0 +1,71 @@
+{
+  "archivo": "voz_l11.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2077,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1840,
+      "texto": "Nueve... y dieciséis."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Nue",
+      "fromMs": 10,
+      "toMs": 470,
+      "dtwMs": 200,
+      "p": 0.499166
+    },
+    {
+      "text": "ve",
+      "fromMs": 960,
+      "toMs": 1000,
+      "dtwMs": 420,
+      "p": 0.994033
+    },
+    {
+      "text": "...",
+      "fromMs": 1000,
+      "toMs": 1330,
+      "dtwMs": 1080,
+      "p": 0.295761
+    },
+    {
+      "text": " y",
+      "fromMs": 1350,
+      "toMs": 1370,
+      "dtwMs": 1080,
+      "p": 0.816733
+    },
+    {
+      "text": " die",
+      "fromMs": 1370,
+      "toMs": 1480,
+      "dtwMs": 1320,
+      "p": 0.98697
+    },
+    {
+      "text": "cis",
+      "fromMs": 1480,
+      "toMs": 1590,
+      "dtwMs": 1500,
+      "p": 0.99851
+    },
+    {
+      "text": "éis",
+      "fromMs": 1590,
+      "toMs": 1700,
+      "dtwMs": 1740,
+      "p": 0.660043
+    },
+    {
+      "text": ".",
+      "fromMs": 1700,
+      "toMs": 1830,
+      "dtwMs": 1820,
+      "p": 0.854961
+    }
+  ]
+}

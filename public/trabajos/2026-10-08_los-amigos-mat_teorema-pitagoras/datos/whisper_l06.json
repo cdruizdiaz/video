@@ -1,0 +1,281 @@
+{
+  "archivo": "voz_l06.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5877,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5840,
+      "texto": "Mirá, el borde del parque y la diagonal forman un triἶἶᬢ rectángulo. Tiene unἶἶᬢ recto de noventa grados."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Mir",
+      "fromMs": 10,
+      "toMs": 170,
+      "dtwMs": 180,
+      "p": 0.0958807
+    },
+    {
+      "text": "á",
+      "fromMs": 170,
+      "toMs": 220,
+      "dtwMs": 260,
+      "p": 0.84749
+    },
+    {
+      "text": ",",
+      "fromMs": 220,
+      "toMs": 290,
+      "dtwMs": 460,
+      "p": 0.773341
+    },
+    {
+      "text": " el",
+      "fromMs": 440,
+      "toMs": 440,
+      "dtwMs": 560,
+      "p": 0.97889
+    },
+    {
+      "text": " b",
+      "fromMs": 460,
+      "toMs": 490,
+      "dtwMs": 660,
+      "p": 0.837989
+    },
+    {
+      "text": "orde",
+      "fromMs": 490,
+      "toMs": 710,
+      "dtwMs": 760,
+      "p": 0.994239
+    },
+    {
+      "text": " del",
+      "fromMs": 720,
+      "toMs": 890,
+      "dtwMs": 940,
+      "p": 0.994471
+    },
+    {
+      "text": " par",
+      "fromMs": 890,
+      "toMs": 1060,
+      "dtwMs": 1140,
+      "p": 0.99306
+    },
+    {
+      "text": "que",
+      "fromMs": 1060,
+      "toMs": 1150,
+      "dtwMs": 1260,
+      "p": 0.998384
+    },
+    {
+      "text": " y",
+      "fromMs": 1230,
+      "toMs": 1280,
+      "dtwMs": 1360,
+      "p": 0.991775
+    },
+    {
+      "text": " la",
+      "fromMs": 1280,
+      "toMs": 1390,
+      "dtwMs": 1460,
+      "p": 0.995609
+    },
+    {
+      "text": " diagonal",
+      "fromMs": 1390,
+      "toMs": 1860,
+      "dtwMs": 1840,
+      "p": 0.984298
+    },
+    {
+      "text": " form",
+      "fromMs": 1860,
+      "toMs": 1940,
+      "dtwMs": 2300,
+      "p": 0.974007
+    },
+    {
+      "text": "an",
+      "fromMs": 2160,
+      "toMs": 2200,
+      "dtwMs": 2400,
+      "p": 0.990267
+    },
+    {
+      "text": " un",
+      "fromMs": 2200,
+      "toMs": 2310,
+      "dtwMs": 2520,
+      "p": 0.99397
+    },
+    {
+      "text": " tri",
+      "fromMs": 2310,
+      "toMs": 2480,
+      "dtwMs": 2680,
+      "p": 0.885818
+    },
+    {
+      "text": "ἶ",
+      "fromMs": 2480,
+      "toMs": 2630,
+      "dtwMs": 2740,
+      "p": 0.948922
+    },
+    {
+      "text": "ἶ",
+      "fromMs": 2630,
+      "toMs": 2780,
+      "dtwMs": 2820,
+      "p": 0.373321
+    },
+    {
+      "text": "ᬢ",
+      "fromMs": 2780,
+      "toMs": 2920,
+      "dtwMs": 2900,
+      "p": 0.762174
+    },
+    {
+      "text": " rect",
+      "fromMs": 2930,
+      "toMs": 3160,
+      "dtwMs": 3140,
+      "p": 0.745801
+    },
+    {
+      "text": "áng",
+      "fromMs": 3160,
+      "toMs": 3330,
+      "dtwMs": 3320,
+      "p": 0.962931
+    },
+    {
+      "text": "ulo",
+      "fromMs": 3330,
+      "toMs": 3490,
+      "dtwMs": 3500,
+      "p": 0.997849
+    },
+    {
+      "text": ".",
+      "fromMs": 3500,
+      "toMs": 3530,
+      "dtwMs": 3660,
+      "p": 0.878648
+    },
+    {
+      "text": " T",
+      "fromMs": 3900,
+      "toMs": 3940,
+      "dtwMs": 3940,
+      "p": 0.369788
+    },
+    {
+      "text": "iene",
+      "fromMs": 3940,
+      "toMs": 4120,
+      "dtwMs": 4020,
+      "p": 0.819774
+    },
+    {
+      "text": " un",
+      "fromMs": 4120,
+      "toMs": 4220,
+      "dtwMs": 4160,
+      "p": 0.924149
+    },
+    {
+      "text": "ἶ",
+      "fromMs": 4220,
+      "toMs": 4370,
+      "dtwMs": 4260,
+      "p": 0.186936
+    },
+    {
+      "text": "ἶ",
+      "fromMs": 4370,
+      "toMs": 4520,
+      "dtwMs": 4360,
+      "p": 0.972095
+    },
+    {
+      "text": "ᬢ",
+      "fromMs": 4520,
+      "toMs": 4670,
+      "dtwMs": 4420,
+      "p": 0.968121
+    },
+    {
+      "text": " rect",
+      "fromMs": 4720,
+      "toMs": 4820,
+      "dtwMs": 4620,
+      "p": 0.964913
+    },
+    {
+      "text": "o",
+      "fromMs": 4890,
+      "toMs": 4930,
+      "dtwMs": 4800,
+      "p": 0.969599
+    },
+    {
+      "text": " de",
+      "fromMs": 4930,
+      "toMs": 5030,
+      "dtwMs": 4980,
+      "p": 0.820315
+    },
+    {
+      "text": " no",
+      "fromMs": 5030,
+      "toMs": 5130,
+      "dtwMs": 5120,
+      "p": 0.506948
+    },
+    {
+      "text": "vent",
+      "fromMs": 5130,
+      "toMs": 5340,
+      "dtwMs": 5220,
+      "p": 0.99321
+    },
+    {
+      "text": "a",
+      "fromMs": 5340,
+      "toMs": 5380,
+      "dtwMs": 5300,
+      "p": 0.997661
+    },
+    {
+      "text": " grad",
+      "fromMs": 5390,
+      "toMs": 5600,
+      "dtwMs": 5460,
+      "p": 0.982422
+    },
+    {
+      "text": "os",
+      "fromMs": 5600,
+      "toMs": 5720,
+      "dtwMs": 5700,
+      "p": 0.998392
+    },
+    {
+      "text": ".",
+      "fromMs": 5840,
+      "toMs": 5840,
+      "dtwMs": 5780,
+      "p": 0.962486
+    }
+  ]
+}

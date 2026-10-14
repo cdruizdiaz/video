@@ -1,0 +1,219 @@
+{
+  "hojas": {
+    "cuerpo": "C:/Videos/personajes/sofi/sofi_1_cuerpo.png",
+    "cabezas": "C:/Videos/personajes/sofi/sofi_2_cabezas.png",
+    "bocas": "C:/Videos/personajes/sofi/sofi_3_bocas.png",
+    "manos": "C:/Videos/personajes/sofi/sofi_4_manos.png"
+  },
+  "cuerpo": {
+    "armado": [
+      214,
+      688
+    ],
+    "pintarBolaHombro": true,
+    "piezas": {
+      "cabeza": {
+        "c": [
+          587,
+          349
+        ],
+        "rol": "cabeza"
+      },
+      "cuerpo": {
+        "c": [
+          895,
+          425
+        ],
+        "rol": "cuerpo"
+      },
+      "capucha": {
+        "c": [
+          1146,
+          434
+        ],
+        "rol": "detalle",
+        "hueso": "cuerpo",
+        "a": "cuello",
+        "ancla": [
+          0.5,
+          0.8
+        ]
+      },
+      "aro_1": {
+        "c": [
+          1084,
+          244
+        ],
+        "rol": "detalle",
+        "hueso": "cabeza",
+        "a": "cabeza",
+        "en": [
+          0.25,
+          0.6
+        ]
+      },
+      "aro_2": {
+        "c": [
+          1189,
+          244
+        ],
+        "rol": "detalle",
+        "hueso": "cabeza",
+        "a": "cabeza",
+        "en": [
+          0.69,
+          0.6
+        ]
+      },
+      "brazo_1": {
+        "c": [
+          484,
+          694
+        ],
+        "rol": "brazo",
+        "dy": -18
+      },
+      "brazo_2": {
+        "c": [
+          665,
+          697
+        ],
+        "rol": "brazo",
+        "dy": -18
+      },
+      "antebrazo_1": {
+        "c": [
+          786,
+          732
+        ],
+        "rol": "antebrazo"
+      },
+      "antebrazo_2": {
+        "c": [
+          942,
+          731
+        ],
+        "rol": "antebrazo"
+      },
+      "mano_1": {
+        "c": [
+          1059,
+          765
+        ],
+        "rol": "mano"
+      },
+      "mano_2": {
+        "c": [
+          1182,
+          770
+        ],
+        "rol": "mano"
+      },
+      "pierna_1": {
+        "c": [
+          522,
+          1006
+        ],
+        "rol": "pierna"
+      },
+      "pierna_2": {
+        "c": [
+          745,
+          1012
+        ],
+        "rol": "pierna"
+      },
+      "pie_1": {
+        "c": [
+          942,
+          1119
+        ],
+        "rol": "pie"
+      },
+      "pie_2": {
+        "c": [
+          1167,
+          1117
+        ],
+        "rol": "pie"
+      }
+    },
+    "orden": [
+      "pie_der",
+      "pierna_der",
+      "pie_izq",
+      "pierna_izq",
+      "mano_der",
+      "antebrazo_der",
+      "brazo_der",
+      "mano_izq",
+      "antebrazo_izq",
+      "brazo_izq",
+      "aro_1",
+      "capucha",
+      "cabeza",
+      "cuerpo",
+      "aro_2"
+    ],
+    "borrarPielTorso": true,
+    "codoTela": true,
+    "redondear": [],
+    "munecaTela": true
+  },
+  "cabezas": {
+    "nombres": [
+      "normal",
+      "feliz",
+      "explicando",
+      "picara",
+      "sorprendida",
+      "ojos_cerrados",
+      "costado",
+      "orgullosa",
+      "sinboca"
+    ],
+    "normal": "normal",
+    "sinBoca": "sinboca",
+    "cerrados": "ojos_cerrados"
+  },
+  "bocas": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "manos": [
+    {
+      "nombre": "abierta",
+      "muneca": "der",
+      "referencia": true
+    },
+    {
+      "nombre": "senala",
+      "muneca": "der"
+    },
+    {
+      "nombre": "indice",
+      "muneca": "abajo-der"
+    },
+    {
+      "nombre": "pulgar",
+      "muneca": "der"
+    },
+    {
+      "nombre": "colgando",
+      "muneca": "arriba-der"
+    },
+    {
+      "nombre": "dos",
+      "muneca": "abajo-der"
+    }
+  ],
+  "solape": {
+    "pierna": 0.16,
+    "antebrazo": 0.2,
+    "mano": 0.2
+  }
+}

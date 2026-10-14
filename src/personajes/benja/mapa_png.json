@@ -1,0 +1,187 @@
+{
+  "hojas": {
+    "cuerpo": "C:/Videos/personajes/benja/benja_1_cuerpo.png",
+    "cabezas": "C:/Videos/personajes/benja/benja_2_cabezas.png",
+    "bocas": "C:/Videos/personajes/benja/benja_3_bocas.png",
+    "manos": "C:/Videos/personajes/benja/benja_4_manos.png"
+  },
+  "cuerpo": {
+    "armado": [
+      274,
+      696
+    ],
+    "piezas": {
+      "cabeza": {
+        "c": [
+          639,
+          227
+        ],
+        "rol": "cabeza"
+      },
+      "cuerpo": {
+        "c": [
+          1027,
+          269
+        ],
+        "rol": "cuerpo"
+      },
+      "brazo_1": {
+        "c": [
+          531,
+          540
+        ],
+        "rol": "brazo"
+      },
+      "brazo_2": {
+        "c": [
+          864,
+          538
+        ],
+        "rol": "brazo"
+      },
+      "antebrazo_1": {
+        "c": [
+          644,
+          614
+        ],
+        "rol": "antebrazo",
+        "giro": 25
+      },
+      "antebrazo_2": {
+        "c": [
+          792,
+          612
+        ],
+        "rol": "antebrazo",
+        "giro": 25
+      },
+      "mano_1": {
+        "c": [
+          1017,
+          645
+        ],
+        "rol": "mano",
+        "giro": 40
+      },
+      "mano_2": {
+        "c": [
+          1167,
+          643
+        ],
+        "rol": "mano",
+        "giro": 40
+      },
+      "pierna_1": {
+        "c": [
+          653,
+          909
+        ],
+        "rol": "pierna"
+      },
+      "pierna_2": {
+        "c": [
+          1046,
+          911
+        ],
+        "rol": "pierna"
+      },
+      "pie_1": {
+        "c": [
+          636,
+          1168
+        ],
+        "rol": "pie"
+      },
+      "pie_2": {
+        "c": [
+          1067,
+          1169
+        ],
+        "rol": "pie"
+      }
+    },
+    "orden": [
+      "pie_der",
+      "pierna_der",
+      "pie_izq",
+      "pierna_izq",
+      "mano_der",
+      "antebrazo_der",
+      "brazo_der",
+      "mano_izq",
+      "antebrazo_izq",
+      "brazo_izq",
+      "cabeza",
+      "cuerpo"
+    ],
+    "recortarMangas": false,
+    "brazoSinManga": true,
+    "borrarPielTorso": true,
+    "pintarBolaHombro": false,
+    "anclaMunon": true,
+    "redondear": [],
+    "mangaLarga": {
+      "color": "#283470",
+      "roles": [
+        "brazo",
+        "antebrazo"
+      ]
+    },
+    "metidoMunon": 0.2
+  },
+  "cabezas": {
+    "nombres": [
+      "normal",
+      "feliz",
+      "duda",
+      "confundido",
+      "sorprendido",
+      "ojos_cerrados",
+      "pensando",
+      "ahh",
+      "sinboca"
+    ],
+    "normal": "normal",
+    "sinBoca": "sinboca",
+    "cerrados": "ojos_cerrados"
+  },
+  "bocas": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "manos": [
+    {
+      "nombre": "abierta",
+      "muneca": "izq",
+      "referencia": true
+    },
+    {
+      "nombre": "senala",
+      "muneca": "izq"
+    },
+    {
+      "nombre": "indice",
+      "muneca": "abajo"
+    },
+    {
+      "nombre": "pulgar",
+      "muneca": "abajo-izq"
+    },
+    {
+      "nombre": "puno",
+      "muneca": "abajo-izq"
+    },
+    {
+      "nombre": "rasca",
+      "muneca": "abajo-izq"
+    }
+  ],
+  "solape": {
+    "mano": 0.2,
+    "antebrazo": 0.08
+  }
+}

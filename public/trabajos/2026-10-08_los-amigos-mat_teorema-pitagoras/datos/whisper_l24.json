@@ -1,0 +1,295 @@
+{
+  "archivo": "voz_l24.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6435,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6160,
+      "texto": "Teorema de Pitágoras. En un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Te",
+      "fromMs": 10,
+      "toMs": 80,
+      "dtwMs": 60,
+      "p": 0.996447
+    },
+    {
+      "text": "ore",
+      "fromMs": 80,
+      "toMs": 210,
+      "dtwMs": 180,
+      "p": 1
+    },
+    {
+      "text": "ma",
+      "fromMs": 210,
+      "toMs": 290,
+      "dtwMs": 300,
+      "p": 1
+    },
+    {
+      "text": " de",
+      "fromMs": 290,
+      "toMs": 370,
+      "dtwMs": 420,
+      "p": 0.999975
+    },
+    {
+      "text": " Pit",
+      "fromMs": 370,
+      "toMs": 500,
+      "dtwMs": 580,
+      "p": 0.998894
+    },
+    {
+      "text": "ág",
+      "fromMs": 500,
+      "toMs": 570,
+      "dtwMs": 700,
+      "p": 0.999371
+    },
+    {
+      "text": "oras",
+      "fromMs": 570,
+      "toMs": 750,
+      "dtwMs": 940,
+      "p": 0.999996
+    },
+    {
+      "text": ".",
+      "fromMs": 750,
+      "toMs": 940,
+      "dtwMs": 1140,
+      "p": 0.637748
+    },
+    {
+      "text": " En",
+      "fromMs": 940,
+      "toMs": 990,
+      "dtwMs": 1560,
+      "p": 0.973517
+    },
+    {
+      "text": " un",
+      "fromMs": 1180,
+      "toMs": 1180,
+      "dtwMs": 1680,
+      "p": 0.999992
+    },
+    {
+      "text": " tri",
+      "fromMs": 1360,
+      "toMs": 1360,
+      "dtwMs": 1800,
+      "p": 0.999672
+    },
+    {
+      "text": "áng",
+      "fromMs": 1450,
+      "toMs": 1540,
+      "dtwMs": 1900,
+      "p": 1
+    },
+    {
+      "text": "ulo",
+      "fromMs": 1540,
+      "toMs": 1710,
+      "dtwMs": 2020,
+      "p": 1
+    },
+    {
+      "text": " rect",
+      "fromMs": 1720,
+      "toMs": 1960,
+      "dtwMs": 2260,
+      "p": 0.999928
+    },
+    {
+      "text": "áng",
+      "fromMs": 1960,
+      "toMs": 2140,
+      "dtwMs": 2420,
+      "p": 0.999992
+    },
+    {
+      "text": "ulo",
+      "fromMs": 2140,
+      "toMs": 2320,
+      "dtwMs": 2600,
+      "p": 1
+    },
+    {
+      "text": ",",
+      "fromMs": 2320,
+      "toMs": 2440,
+      "dtwMs": 2780,
+      "p": 0.935198
+    },
+    {
+      "text": " el",
+      "fromMs": 2440,
+      "toMs": 2560,
+      "dtwMs": 2820,
+      "p": 0.996651
+    },
+    {
+      "text": " cuad",
+      "fromMs": 2560,
+      "toMs": 2800,
+      "dtwMs": 2980,
+      "p": 0.999996
+    },
+    {
+      "text": "rado",
+      "fromMs": 2800,
+      "toMs": 3040,
+      "dtwMs": 3160,
+      "p": 0.999996
+    },
+    {
+      "text": " de",
+      "fromMs": 3040,
+      "toMs": 3160,
+      "dtwMs": 3260,
+      "p": 0.999687
+    },
+    {
+      "text": " la",
+      "fromMs": 3160,
+      "toMs": 3270,
+      "dtwMs": 3360,
+      "p": 0.999926
+    },
+    {
+      "text": " hip",
+      "fromMs": 3280,
+      "toMs": 3420,
+      "dtwMs": 3500,
+      "p": 0.999775
+    },
+    {
+      "text": "oten",
+      "fromMs": 3500,
+      "toMs": 3700,
+      "dtwMs": 3680,
+      "p": 0.999985
+    },
+    {
+      "text": "usa",
+      "fromMs": 3700,
+      "toMs": 3980,
+      "dtwMs": 3960,
+      "p": 0.999996
+    },
+    {
+      "text": " es",
+      "fromMs": 3980,
+      "toMs": 4100,
+      "dtwMs": 4240,
+      "p": 0.987952
+    },
+    {
+      "text": " igual",
+      "fromMs": 4150,
+      "toMs": 4460,
+      "dtwMs": 4420,
+      "p": 0.999781
+    },
+    {
+      "text": " a",
+      "fromMs": 4460,
+      "toMs": 4530,
+      "dtwMs": 4540,
+      "p": 0.999981
+    },
+    {
+      "text": " la",
+      "fromMs": 4530,
+      "toMs": 4650,
+      "dtwMs": 4640,
+      "p": 0.999969
+    },
+    {
+      "text": " sum",
+      "fromMs": 4750,
+      "toMs": 4860,
+      "dtwMs": 4840,
+      "p": 0.867941
+    },
+    {
+      "text": "a",
+      "fromMs": 4860,
+      "toMs": 4920,
+      "dtwMs": 4900,
+      "p": 1
+    },
+    {
+      "text": " de",
+      "fromMs": 4920,
+      "toMs": 5000,
+      "dtwMs": 4980,
+      "p": 0.957238
+    },
+    {
+      "text": " los",
+      "fromMs": 5000,
+      "toMs": 5070,
+      "dtwMs": 5100,
+      "p": 0.999916
+    },
+    {
+      "text": " cuad",
+      "fromMs": 5180,
+      "toMs": 5290,
+      "dtwMs": 5280,
+      "p": 0.999989
+    },
+    {
+      "text": "rados",
+      "fromMs": 5290,
+      "toMs": 5480,
+      "dtwMs": 5480,
+      "p": 0.999996
+    },
+    {
+      "text": " de",
+      "fromMs": 5500,
+      "toMs": 5580,
+      "dtwMs": 5600,
+      "p": 0.999905
+    },
+    {
+      "text": " los",
+      "fromMs": 5580,
+      "toMs": 5700,
+      "dtwMs": 5740,
+      "p": 0.999977
+    },
+    {
+      "text": " cat",
+      "fromMs": 5700,
+      "toMs": 5820,
+      "dtwMs": 5920,
+      "p": 0.999994
+    },
+    {
+      "text": "etos",
+      "fromMs": 5820,
+      "toMs": 5990,
+      "dtwMs": 6140,
+      "p": 1
+    },
+    {
+      "text": ".",
+      "fromMs": 5990,
+      "toMs": 6160,
+      "dtwMs": 6140,
+      "p": 0.999657
+    }
+  ]
+}

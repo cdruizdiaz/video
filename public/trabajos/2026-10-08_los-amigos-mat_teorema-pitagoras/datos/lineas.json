@@ -1,0 +1,242 @@
+{
+  "voces": {
+    "sofi": {
+      "voz": "eleven:p7AwDmKvTdoHTBuueGvP",
+      "nombre": "Malena (ElevenLabs)",
+      "velocidad": 1.0
+    },
+    "benja": {
+      "voz": "eleven:qnvusyIjzlSoWYJ0C2Nm",
+      "nombre": "Facundo (ElevenLabs)",
+      "velocidad": 1.0
+    }
+  },
+  "lineas": [
+    {
+      "id": "l01",
+      "escena": 1,
+      "quien": "benja",
+      "texto": "¡Te juego una carrera al kiosco!",
+      "pausaAntes": 1.05,
+      "cara": "feliz",
+      "gesto": "puno"
+    },
+    {
+      "id": "l02",
+      "escena": 1,
+      "quien": "sofi",
+      "texto": "Dale. No tenés chances de ganarme.",
+      "pausaAntes": 0.63,
+      "cara": "picara",
+      "gesto": "indice"
+    },
+    {
+      "id": "l03",
+      "escena": 1,
+      "quien": "benja",
+      "texto": "¡Hice siete cuadras! ¿Vos cuántas?",
+      "pausaAntes": 6.72,
+      "cara": "confundido",
+      "gesto": "abierta"
+    },
+    {
+      "id": "l04",
+      "escena": 1,
+      "quien": "sofi",
+      "texto": "Cinco. ¿Viste? No tenías chance, porque soy buena en matemática.",
+      "pausaAntes": 0.74,
+      "cara": "orgullosa",
+      "gesto": "cruzados"
+    },
+    {
+      "id": "l05",
+      "escena": 2,
+      "quien": "benja",
+      "texto": "¿Cinco? ¡Si el parque tiene tres de un lado y cuatro del otro!",
+      "pausaAntes": 0.85,
+      "cara": "confundido",
+      "gesto": "abierta"
+    },
+    {
+      "id": "l06",
+      "escena": 2,
+      "quien": "sofi",
+      "texto": "Mirá: el borde del parque y la diagonal forman un triángulo rectángulo. Tiene un ángulo recto, de noventa grados.",
+      "pausaAntes": 1.88,
+      "cara": "explicando",
+      "gesto": "senala"
+    },
+    {
+      "id": "l07",
+      "escena": 2,
+      "quien": "sofi",
+      "texto": "Los lados que forman ese ángulo son los catetos. El lado de enfrente, el más largo, es la hipotenusa.",
+      "pausaAntes": 0.63,
+      "cara": "explicando",
+      "gesto": "senala"
+    },
+    {
+      "id": "l08",
+      "escena": 3,
+      "quien": "sofi",
+      "texto": "Ahora dibujo un cuadrado sobre cada lado.",
+      "pausaAntes": 1.68,
+      "cara": "explicando",
+      "gesto": "senala"
+    },
+    {
+      "id": "l09",
+      "escena": 3,
+      "quien": "benja",
+      "texto": "¿Y eso para qué?",
+      "pausaAntes": 0.63,
+      "cara": "duda",
+      "gesto": "abierta"
+    },
+    {
+      "id": "l10",
+      "escena": 3,
+      "quien": "sofi",
+      "texto": "Contá los cuadraditos.",
+      "pausaAntes": 0.63,
+      "cara": "picara",
+      "gesto": "indice"
+    },
+    {
+      "id": "l11",
+      "escena": 3,
+      "quien": "benja",
+      "texto": "Nueve... y dieciséis.",
+      "pausaAntes": 1.27,
+      "cara": "pensando",
+      "gesto": "pensando"
+    },
+    {
+      "id": "l12",
+      "escena": 3,
+      "quien": "sofi",
+      "texto": "Nueve más dieciséis, veinticinco. Entran justo.",
+      "pausaAntes": 0.63,
+      "cara": "feliz",
+      "gesto": "pulgar"
+    },
+    {
+      "id": "l13",
+      "escena": 3,
+      "quien": "benja",
+      "texto": "¡Y si el cuadrado tiene veinticinco, el lado mide cinco!",
+      "pausaAntes": 1.27,
+      "cara": "sorprendido",
+      "gesto": "indice"
+    },
+    {
+      "id": "l14",
+      "escena": 4,
+      "quien": "benja",
+      "texto": "Bueno, pero te salió con estos números. ¿Y con otro triángulo?",
+      "pausaAntes": 2.1,
+      "cara": "duda",
+      "gesto": "abierta"
+    },
+    {
+      "id": "l15",
+      "escena": 4,
+      "quien": "sofi",
+      "texto": "Con cualquiera que tenga un ángulo recto. Mirá.",
+      "pausaAntes": 0.63,
+      "cara": "picara",
+      "gesto": "indice"
+    },
+    {
+      "id": "l16",
+      "escena": 4,
+      "quien": "sofi",
+      "texto": "Tomo cuatro copias del triángulo y las acomodo en este cuadrado. Lo que queda libre en el medio es el cuadrado de la hipotenusa.",
+      "pausaAntes": 0.63,
+      "cara": "explicando",
+      "gesto": "senala"
+    },
+    {
+      "id": "l17",
+      "escena": 4,
+      "quien": "sofi",
+      "texto": "Ahora muevo los mismos triángulos, sin cambiar el cuadrado grande.",
+      "pausaAntes": 1.68,
+      "cara": "explicando",
+      "gesto": "senala"
+    },
+    {
+      "id": "l18",
+      "escena": 4,
+      "quien": "sofi",
+      "texto": "Y lo que queda libre son dos cuadrados: el de cada cateto.",
+      "pausaAntes": 3.79,
+      "cara": "explicando",
+      "gesto": "senala"
+    },
+    {
+      "id": "l19",
+      "escena": 4,
+      "quien": "benja",
+      "texto": "A ver... el cuadrado es el mismo, los triángulos son los mismos...",
+      "pausaAntes": 1.05,
+      "cara": "pensando",
+      "gesto": "pensando"
+    },
+    {
+      "id": "l20",
+      "escena": 4,
+      "quien": "sofi",
+      "texto": "Así que lo libre ocupa lo mismo.",
+      "pausaAntes": 0.45,
+      "cara": "picara",
+      "gesto": "cruzados"
+    },
+    {
+      "id": "l21",
+      "escena": 4,
+      "quien": "benja",
+      "texto": "¡Ahhh! ¡Ahora sí!",
+      "pausaAntes": 1.68,
+      "cara": "ahh",
+      "gesto": "puno",
+      "tts": "¡Aaaah! ¡Ahora sí!"
+    },
+    {
+      "id": "l22",
+      "escena": 5,
+      "quien": "benja",
+      "texto": "¿Y si el ángulo no es recto?",
+      "pausaAntes": 2.1,
+      "cara": "duda",
+      "gesto": "abierta"
+    },
+    {
+      "id": "l23",
+      "escena": 5,
+      "quien": "sofi",
+      "texto": "Ahí ya no da: el cuadrado grande crece y los otros dos no alcanzan.",
+      "pausaAntes": 0.63,
+      "cara": "explicando",
+      "gesto": "senala"
+    },
+    {
+      "id": "l24",
+      "escena": 6,
+      "quien": "sofi",
+      "texto": "Teorema de Pitágoras: en un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos.",
+      "pausaAntes": 2.1,
+      "cara": "orgullosa",
+      "gesto": "indice"
+    },
+    {
+      "id": "l25",
+      "escena": 6,
+      "quien": "benja",
+      "texto": "Mañana el que corta por la diagonal soy yo.",
+      "pausaAntes": 0.85,
+      "cara": "feliz",
+      "gesto": "pulgar"
+    }
+  ]
+}

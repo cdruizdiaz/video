@@ -1,0 +1,127 @@
+{
+  "archivo": "voz_l17.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2989,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2840,
+      "texto": "Ahora muevo los mismos triángulos, sin cambiar el cuadrado grande."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Ahora",
+      "fromMs": 30,
+      "toMs": 240,
+      "dtwMs": 240,
+      "p": 0.937242
+    },
+    {
+      "text": " mue",
+      "fromMs": 240,
+      "toMs": 380,
+      "dtwMs": 400,
+      "p": 0.97386
+    },
+    {
+      "text": "vo",
+      "fromMs": 380,
+      "toMs": 470,
+      "dtwMs": 500,
+      "p": 0.999504
+    },
+    {
+      "text": " los",
+      "fromMs": 470,
+      "toMs": 610,
+      "dtwMs": 620,
+      "p": 0.997537
+    },
+    {
+      "text": " mismos",
+      "fromMs": 610,
+      "toMs": 840,
+      "dtwMs": 800,
+      "p": 0.979055
+    },
+    {
+      "text": " tri",
+      "fromMs": 950,
+      "toMs": 1040,
+      "dtwMs": 1020,
+      "p": 0.973095
+    },
+    {
+      "text": "áng",
+      "fromMs": 1040,
+      "toMs": 1180,
+      "dtwMs": 1140,
+      "p": 0.207179
+    },
+    {
+      "text": "ulos",
+      "fromMs": 1180,
+      "toMs": 1340,
+      "dtwMs": 1360,
+      "p": 0.991015
+    },
+    {
+      "text": ",",
+      "fromMs": 1420,
+      "toMs": 1430,
+      "dtwMs": 1420,
+      "p": 0.535401
+    },
+    {
+      "text": " sin",
+      "fromMs": 1500,
+      "toMs": 1600,
+      "dtwMs": 1640,
+      "p": 0.991763
+    },
+    {
+      "text": " cambiar",
+      "fromMs": 1600,
+      "toMs": 1940,
+      "dtwMs": 1900,
+      "p": 0.992292
+    },
+    {
+      "text": " el",
+      "fromMs": 1940,
+      "toMs": 2030,
+      "dtwMs": 2040,
+      "p": 0.992597
+    },
+    {
+      "text": " cuad",
+      "fromMs": 2030,
+      "toMs": 2220,
+      "dtwMs": 2240,
+      "p": 0.996816
+    },
+    {
+      "text": "rado",
+      "fromMs": 2220,
+      "toMs": 2410,
+      "dtwMs": 2440,
+      "p": 0.996675
+    },
+    {
+      "text": " grande",
+      "fromMs": 2410,
+      "toMs": 2820,
+      "dtwMs": 2740,
+      "p": 0.995183
+    },
+    {
+      "text": ".",
+      "fromMs": 2820,
+      "toMs": 2840,
+      "dtwMs": 2820,
+      "p": 0.940033
+    }
+  ]
+}

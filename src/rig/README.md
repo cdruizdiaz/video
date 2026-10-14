@@ -38,6 +38,28 @@ C:/Videos/_herramientas/.venv/Scripts/python.exe scripts/rig/extraer_rig.py <arc
 - Si `rig.json` ya existe (con tus ajustes) no se pisa: lo nuevo va a `rig.propuesto.json`.
 - Revisión: `hoja_bloques.png` (números de bloque), `hoja_vistas.png` (piezas con nombre), `hoja_rostros.png` (cada cara armada, bocas y accesorios), `informe.md` (alertas y propuestas).
 
+### Personajes en PNG (kit pintado o hecho con IA, sin `.ai`)
+
+```
+C:/Videos/_herramientas/.venv/Scripts/python.exe scripts/rig/importar_png.py <nombre>
+```
+
+Lee `src/personajes/<nombre>/mapa_png.json` (ejemplos: `benja`, `sofi`) con 4 hojas PNG con transparencia: **cuerpo** (el personaje armado + sus piezas sueltas), **cabezas** (grilla de expresiones, incluida una *sin boca* y una con *ojos cerrados*), **bocas** (A–F) y **manos** (gestos). Los prompts para pedírselas a ChatGPT están en `src/trabajos/2026-10-08_los-amigos-mat_teorema-pitagoras/PROMPTS_CHATGPT.md`.
+
+- El cuerpo se arma **como un títere, uniendo las articulaciones dibujadas** (bolas de hombro y cadera y cuello del torso; cilindros de codo, muñeca y tobillo); el armado de la hoja es solo referencia (la IA no lo dibuja con las mismas proporciones). En el mapa: el centro aproximado de cada pieza en la hoja (`c`), su `rol`, `_1`/`_2` para los pares (izq/der salen de la posición), `orden` de capas y opciones de limpieza: `recortarMangas`, `pintarBolaHombro`, `borrarPielTorso`, `codoTela`, `borrarCaderas`; `solape` por rol y `dx`/`dy` por pieza para ajustar a mano. Piezas sueltas (aros, capucha): `{"a": "cabeza" | "cuello", "en": [fx, fy], "hueso": …}`.
+- Cada expresión es la **cabeza entera** (imagen), alineada a la del cuerpo; se genera su versión **sin boca** (para hablar con las bocas A–F encima) y un **parche de ojos cerrados** (parpadeo). Bocas del tamaño de la boca normal.
+- Las manos de gestos son **variantes** de `mano_izq`/`mano_der` (`"muneca"` = de qué lado está la muñeca en la hoja): se cambian con `variantes: { mano_der: "senala" }` en una pose (pista `pose` o secuencia).
+- Las piezas son trazos con `img` (+ `x, y, w, h`); `Rig.tsx` las dibuja con `<image>` y espera a que carguen (`delayRender`).
+- Revisión: `out/personajes/<nombre>/hoja_armado.png` (armado de la hoja contra la reconstrucción, con pivotes) y `hoja_rostros.png` (cada cara y su versión hablando). La búsqueda de las cabezas se guarda en `cache_ubicaciones.json`.
+- Límites: no hay 2,5D (sin `luz` ni giro por profundidades: las piezas son pintadas); las costuras de hombros y cintura dependen de cómo vino el kit.
+
+- Vestuario: `mangaLarga` pinta de tela la piel de brazos y antebrazos (conserva luces y sombras); `brazoSinManga` + `anclaMunon` hacen salir el brazo de abajo de la manga corta del torso (gira desde ahí); `borrarPielTorso` saca bolas y muñones del torso y rellena el hueco de los hombros copiando la tela de abajo (las rayas siguen).
+- Cajas de una pose (`src/rig/cajas.ts`, `cajasEnPose`): cuerpo y cabeza en coordenadas del personaje, para ubicar carteles sin pisarlos.
+
+### Personajes por poses (stop motion, sin articulaciones)
+
+`python scripts/rig/importar_poses.py <nombre>` con `src/personajes/<nombre>/poses.json` (`hoja`, `filas`, `nombres` en orden de lectura): cada pose de cuerpo entero se recorta, se alinea por el centro de los pies, se le saca la boca dibujada (`<pose>_sinboca.png`, para hablar con las bocas A–F de `piezas.json` escaladas al ancho de esa boca) y se guarda la caja de la cabeza. Datos en `public/personajes/<nombre>/poses.json` (registrados en `DATOS_POSES` de `src/personajes/index.ts`); dibujo en `src/rig/PersonajePoses.tsx`; cajas en `src/rig/poses.ts` (`cajasDePose`). Sin parpadeo ni cambio de cara: la expresión es la de cada pose.
+
 ### mapa.json (correcciones en texto)
 
 ```json
@@ -150,9 +172,11 @@ node scripts/blender/render.mjs <ID> <capa> datos/animacion.json <duración> --c
 ```
 
 - Blender 5.2 LTS portable en `C:/Videos/_herramientas/blender/` (`blender` en `herramientas.json`; sin instalador ni permisos de administrador).
-- **Modelo** (`personaje_desde_rig.py`): los mismos huesos y pivotes que `rig.json` (roll 0, apuntando hacia arriba); cabeza/cuerpo elipsoides, manos/pies elipsoides chicos, el resto el contorno de la pieza extruido con bisel (la corona inclinada hacia atrás); contorno de dibujo animado (Solidify invertido); cara = calcomanía (grilla con shrinkwrap sobre la cabeza) con textura. Guarda `C:/Videos/personajes/<nombre>/<nombre>_3d.blend` y `public/personajes/<nombre>/<nombre>.glb` (sirve para `Modelo3D` en Remotion).
+- **Modelo** (`personaje_desde_rig.py`): los mismos huesos y pivotes que `rig.json` (roll 0, apuntando hacia arriba); cabeza/cuerpo elipsoides, manos/pies elipsoides chicos, el resto el contorno de la pieza extruido con bisel y rehecho con remesh por vóxeles + suavizado (sin las rayas del relleno del SVG; la corona inclinada 0,22 rad hacia atrás: más se ve el canto como una tabla); contorno de dibujo animado (Solidify invertido); cara = calcomanía (grilla con shrinkwrap sobre la cabeza) con textura. Guarda `C:/Videos/personajes/<nombre>/<nombre>_3d.blend` y `public/personajes/<nombre>/<nombre>.glb` (sirve para `Modelo3D` en Remotion).
 - **Animación = el rig 2D**: `scripts/blender/poses.ts` (con `npx vite-node`) evalúa las pistas de un `animacion.json` (PersonajeRigProps) cuadro a cuadro con el mismo motor de Remotion, y `render.py` las aplica a los huesos (rot del rig → giro sobre −Z local; x, y → location; los trayectos mueven la cámara). La **cara** es una secuencia PNG de la composición `CaraTextura` (`src/rig/CaraTextura.tsx`): expresiones, parpadeo, mirada y lip sync del 2D sobre la cabeza 3D.
 - **Render** (`render.mjs`): Eevee con fondo transparente, cámara ortográfica en px (1 pt = `escala` px, pies en `x, y`), sol desde el ángulo de pantalla `--luz` (como la receta 2,5D), `--estilo toon` (3 tonos). Capa VP9 con alfa en `cache3d/` con huella (se reusa). ~1,5–2 s por cuadro 1080×1920 en la i3 (+20 s de arranque). Eevee no tiene "atrapa sombras": la sombra de contacto la pone Remotion (ejemplo `src/trabajos/2026-10-04_claudio_prueba-blender/Final.tsx`).
+- **Escenas con luz y "cámara"** (`--extra escena.json`, ejemplo `src/trabajos/2026-10-06_claudio_bloomie-toma-vida/armar_escena.mjs`): `luz.intensidad`/`luz.ambiente` por cuadro (un reflector que se enciende), `luz.color`, `recorte` (contraluz desde atrás), `luzSigueGiro` (las luces giran con `rotY`: se ve como una órbita de cámara alrededor del personaje), `huesosExtra` (`z` hacia la cámara y `rx` de cabeceo por cuadro: lo que el rig 2D no tiene; sirve para que las manos pasen DELANTE del cuerpo y no lo atraviesen). Revisar antes del render completo con `--solo 0,30,66 --png out/<ID>/revision/blender` (solo esos cuadros, sin caché).
+- **Superposiciones:** nada que toque las manos como tarjeta plana (la profundidad de una tarjeta es fija: en bloomie-rock la guitarra tapaba la mano que rasgueaba); las manos se llevan hacia la cámara con `huesosExtra.z` y se verifican los cuadros de contacto.
 - Rutas: Blender toma las rutas relativas desde el .blend → los scripts usan rutas absolutas. `--python-exit-code 1` para que un error de Python corte el proceso.
 
 ### 3D (Three.js, sin modelo de diseñador)

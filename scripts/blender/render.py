@@ -10,7 +10,14 @@ escena.json:
     "cara": "carpeta_png" | null,        # textura animada de la cara (composición CaraTextura o PNG propios)
     "tarjetas": [ … ],                   # accesorios planos pegados a huesos (ver tarjetas())
     "estilo": "suave" | "toon",
-    "muestras": 16 }
+    "muestras": 16,
+    # opcionales (escenas con luz que cambia y cámara que "orbita"):
+    "luz": { …, "color": "#ffd9a0", "intensidad": 3.0 | [por cuadro], "ambiente": 0.9 | [por cuadro] },
+    "recorte": { "angulo": 45, "altura": 35, "intensidad": 4 | [por cuadro], "color": "#fff" },  # contraluz desde atrás
+    "luzSigueGiro": true,                # las luces giran con rotY: se ve como si la CÁMARA orbitara al personaje
+    "huesosExtra": { "<hueso>": { "z": [pt hacia la cámara por cuadro], "rx": [grados por cuadro, + = cabecea
+                     hacia adelante] } },   # lo que el rig 2D no tiene: profundidad y cabeceo
+    "solo": [cuadros] }                  # renderiza solo esos cuadros (0…n-1) como f0001.png… para revisar
 Cámara ortográfica en px: un punto del .ai mide `lugar.escala` px y los pies van en (lugar.x, lugar.y) de cada
 cuadro (los trayectos del rig incluidos), igual que en PersonajeRig.
 """
@@ -20,7 +27,7 @@ import sys
 from pathlib import Path
 
 import bpy
-from mathutils import Euler, Vector
+from mathutils import Euler, Matrix, Vector
 
 PT = 0.01
 
@@ -28,6 +35,32 @@ PT = 0.01
 def hex_lin(h):
     h = h.lstrip("#")
     return tuple(((c / 255) / 12.92 if c / 255 <= 0.04045 else ((c / 255 + 0.055) / 1.055) ** 2.4) for c in (int(h[i:i + 2], 16) for i in (0, 2, 4)))
+
+
+def por_cuadro(v, k, defecto=0.0):
+    """Valor fijo o lista con un valor por cuadro."""
+    if v is None:
+        return defecto
+    return v[min(k, len(v) - 1)] if isinstance(v, list) else v
+
+
+def sol(sc, nombre, conf, atras=False):
+    """Sol desde un ángulo de pantalla (0 = derecha, 90 = arriba); `altura` = cuánto viene de frente (o de atrás)."""
+    d = bpy.data.lights.new(nombre, "SUN")
+    d.angle = math.radians(conf.get("suavidad", 8))
+    # Sombras finas y suaves (sin "dientes" en las superficies que la luz toca de costado, como la corona)
+    for attr, v in (("shadow_maximum_resolution", conf.get("resolucionSombra", 0.0003)), ("use_shadow_jitter", True), ("shadow_filter_radius", 2.0)):
+        if hasattr(d, attr):
+            setattr(d, attr, v)
+    if conf.get("color"):
+        d.color = hex_lin(conf["color"])
+    o = bpy.data.objects.new(nombre, d)
+    sc.collection.objects.link(o)
+    ang = math.radians(conf.get("angulo", 135))
+    alt = math.radians(conf.get("altura", 50))
+    # dirección HACIA la luz en mundo: x = cos(ang), z = sin(ang) en pantalla, y = hacia la cámara (-Y) o atrás (+Y)
+    hacia = Vector((math.cos(ang) * math.cos(alt), (1 if atras else -1) * math.sin(alt), math.sin(ang) * math.cos(alt))).normalized()
+    return o, hacia
 
 
 def tarjetas(lista, arm, n):
@@ -104,23 +137,17 @@ def main():
     sc.frame_start, sc.frame_end = 1, n
     sc.render.fps = int(poses.get("fps", 30))
 
-    # Luz: sol desde el ángulo de pantalla pedido + ambiente del mundo
+    # Luz: sol desde el ángulo de pantalla pedido (+ contraluz opcional) + ambiente del mundo
     luz = escena.get("luz", {})
-    ang = math.radians(luz.get("angulo", 135))
-    alt = math.radians(luz.get("altura", 50))
-    sol_d = bpy.data.lights.new("sol", "SUN")
-    sol_d.energy = luz.get("intensidad", 3.0)
-    sol_d.angle = math.radians(8)
-    sol = bpy.data.objects.new("sol", sol_d)
-    sc.collection.objects.link(sol)
-    # dirección HACIA la luz en mundo: x = cos(ang), z = sin(ang) en pantalla, y = hacia la cámara (-Y)
-    hacia = Vector((math.cos(ang) * math.cos(alt), -math.sin(alt), math.sin(ang) * math.cos(alt))).normalized()
-    sol.rotation_euler = hacia.to_track_quat("Z", "Y").to_euler()
+    luces = [(*sol(sc, "sol", luz), luz.get("intensidad", 3.0))]
+    if escena.get("recorte"):
+        r = escena["recorte"]
+        luces.append((*sol(sc, "recorte", r, atras=True), r.get("intensidad", 3.0)))
     mundo = bpy.data.worlds.new("mundo")
     mundo.use_nodes = True
     fondo = mundo.node_tree.nodes.get("Background")
-    fondo.inputs["Color"].default_value = (*hex_lin("#fff4e0"), 1)
-    fondo.inputs["Strength"].default_value = luz.get("ambiente", 0.9)
+    fondo.inputs["Color"].default_value = (*hex_lin(luz.get("colorAmbiente", "#fff4e0")), 1)
+    fondo.inputs["Strength"].default_value = por_cuadro(luz.get("ambiente"), 0, 0.9)
     sc.world = mundo
 
     # Estilo toon: reemplaza el BSDF por "Shader to RGB" + rampa de 3 tonos (como MeshToonMaterial en Remotion)
@@ -196,25 +223,47 @@ def main():
         arm.scale = (-1 if c.get("espejo") else 1, 1, 1)
         arm.keyframe_insert("rotation_euler", frame=f)
         arm.keyframe_insert("scale", frame=f)
-        for hid, m in c["huesos"].items():
+        # luces: intensidad por cuadro y, si la cámara "orbita", giran con el personaje
+        giro = Matrix.Rotation(-ry if escena.get("luzSigueGiro") else 0, 3, "Z")
+        for o, hacia, inten in luces:
+            o.rotation_euler = (giro @ hacia).to_track_quat("Z", "Y").to_euler()
+            o.keyframe_insert("rotation_euler", frame=f)
+            o.data.energy = por_cuadro(inten, k, 3.0)
+            o.data.keyframe_insert("energy", frame=f)
+        if isinstance(luz.get("ambiente"), list):
+            fondo.inputs["Strength"].default_value = por_cuadro(luz["ambiente"], k)
+            fondo.inputs["Strength"].keyframe_insert("default_value", frame=f)
+        extra = escena.get("huesosExtra", {})
+        neutro = {"rot": 0, "x": 0, "y": 0, "sx": 1, "sy": 1}
+        for hid in set(c["huesos"]) | set(extra):
+            m = c["huesos"].get(hid, neutro)
             pb = arm.pose.bones.get(hid)
             if not pb:
                 continue
+            ex = extra.get(hid, {})
             pb.rotation_mode = "XYZ"
             # rig 2D: rot + = horario en pantalla = giro sobre +Y del mundo = -Z local del hueso (roll 0, apunta a +Z)
-            pb.rotation_euler = Euler((0, 0, -math.radians(m["rot"])))
-            pb.location = Vector((m["x"] * PT, -m["y"] * PT, 0))
+            # extra: rx = cabeceo sobre X (+ = la punta hacia la cámara); z = hacia la cámara (eje Z local = -Y del mundo)
+            pb.rotation_euler = Euler((math.radians(por_cuadro(ex.get("rx"), k)), 0, -math.radians(m["rot"])))
+            pb.location = Vector((m["x"] * PT, -m["y"] * PT, por_cuadro(ex.get("z"), k) * PT))
             pb.scale = Vector((m["sx"], m["sy"], 1))
             pb.keyframe_insert("rotation_euler", frame=f)
             pb.keyframe_insert("location", frame=f)
             pb.keyframe_insert("scale", frame=f)
     # Sin interpolación entre claves (cada cuadro ya trae su pose exacta)
-    for obj in (arm, cam):
+    for obj in (arm, cam, *(o for o, _, _ in luces), *(o.data for o, _, _ in luces), mundo.node_tree):
         ad = obj.animation_data
         if ad and ad.action:
             for fc in getattr(ad.action, "fcurves", []):
                 for kp in fc.keyframe_points:
                     kp.interpolation = "CONSTANT"
+    if escena.get("solo"):
+        for k in escena["solo"]:
+            sc.frame_set(k + 1)
+            sc.render.filepath = str(salida / f"f{k + 1:04d}.png")
+            bpy.ops.render.render(write_still=True)
+        print(f"OK {salida} · cuadros sueltos {escena['solo']}")
+        return
     sc.render.filepath = str(salida / "f")
     bpy.ops.render.render(animation=True)
     print(f"OK {salida} · {n} cuadros {W}×{H} · {sc.render.engine}")

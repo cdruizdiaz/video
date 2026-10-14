@@ -1,10 +1,20 @@
-// Locución sintética local (Piper TTS) lista para usar: voz → (voz de nene) → recorte de silencios → -14 LUFS →
+/* global fetch, Buffer */
+// Locución sintética (Piper TTS local, o Edge TTS: voces neuronales de Microsoft, gratis, con internet) lista para usar: voz → (voz de nene) → recorte de silencios → -14 LUFS →
 // tiempos por palabra con Whisper (para globos, subtítulos y la boca del personaje).
 // Uso: node scripts/voz.mjs <"texto" | archivo.txt> <salida.wav> [opciones]
-//   --voz es_AR-daniela-high   modelo de modelos-piper/ (default: vozPiperEs de herramientas.json)
+//   --voz es_AR-daniela-high   modelo de modelos-piper/ (default: vozPiperEs de herramientas.json); una voz que
+//                              termina en "Neural" (es-AR-ElenaNeural, es-AR-TomasNeural…) usa Edge TTS
+//                              (paquete edge-tts del .venv: `edge-tts --list-voices`)
+//   --tono-edge +0Hz           (Edge) tono: "+8Hz", "-5Hz"…  · --volumen-edge +0% (Edge)
+//                              una voz "eleven:<voice_id>" usa ElevenLabs (API; clave en ELEVENLABS_API_KEY, también
+//                              leída de las variables de usuario de Windows; modelo eleven_multilingual_v2).
+//   --estabilidad 0.45 --similitud 0.8 --estilo 0.3   (ElevenLabs) menos estabilidad / más estilo = más expresiva
 //   --idioma es|en             para Whisper (default: el de la voz)
 //   --velocidad 1              >1 más rápido (Piper usa length-scale = 1/velocidad)
 //   --nene [1.35]              sube el tono con rubberband (formantes desplazados)
+//   --expresion 0.667          variación de la entonación de Piper (noise-scale; más = más expresiva, menos estable)
+//   --ritmo 0.8                variación del largo de cada sonido (noise-w; más = menos monótona)
+//   --pausa-oracion 0.2        silencio entre oraciones (segundos)
 //   --sin-tiempos              no transcribe (solo el .wav)
 //   --datos <carpeta>          dónde van los JSON (default: junto al .wav; en un trabajo: public/trabajos/<ID>/datos)
 // Salida: <salida.wav> (48 kHz mono, -14 LUFS) y, salvo --sin-tiempos, <nombre>.json (Whisper, formato de
@@ -33,29 +43,80 @@ if (!entrada || !salida) {
   console.error('Uso: node scripts/voz.mjs <"texto" | archivo.txt> <salida.wav> [--voz X] [--idioma es] [--velocidad 1] [--nene [1.35]] [--sin-tiempos]');
   process.exit(1);
 }
-// Piper (espeak) lee "¡" y "¿" como sílabas raras: se sacan (la entonación la dan "!" y "?")
-const texto = (fs.existsSync(entrada) ? fs.readFileSync(entrada, "utf8").trim() : entrada).replace(/[¡¿]/g, "");
 const voz = opc("voz", herr.vozPiperEs);
+const edge = /Neural$/.test(voz); // Edge TTS (Microsoft): voces "xx-YY-NombreNeural"
+const eleven = voz.startsWith("eleven:"); // ElevenLabs: "eleven:<voice_id>"
+// Piper (espeak) lee "¡" y "¿" como sílabas raras: se sacan (la entonación la dan "!" y "?"); Edge los entiende
+const original = fs.existsSync(entrada) ? fs.readFileSync(entrada, "utf8").trim() : entrada;
+const texto = edge || eleven ? original : original.replace(/[¡¿]/g, "");
 const modelo = path.join(herr.carpetaPiper, `${voz}.onnx`);
-if (!fs.existsSync(modelo)) {
+if (!edge && !eleven && !fs.existsSync(modelo)) {
   console.error(`No está la voz ${modelo}. Bajarla: python -m piper.download_voices --data-dir ${herr.carpetaPiper} ${voz}`);
   process.exit(1);
 }
-const idioma = opc("idioma", voz.slice(0, 2));
+const idioma = opc("idioma", eleven ? "es" : voz.slice(0, 2).toLowerCase());
+
+// Clave de ElevenLabs: del entorno o de las variables de usuario de Windows (setx), sin escribirla en ningún archivo
+const claveEleven = () => {
+  if (process.env.ELEVENLABS_API_KEY) return process.env.ELEVENLABS_API_KEY;
+  const r = spawnSync("powershell", ["-NoProfile", "-Command", '[Environment]::GetEnvironmentVariable("ELEVENLABS_API_KEY","User")'], { encoding: "utf8" });
+  const k = (r.stdout || "").trim();
+  if (!k) throw new Error("Falta ELEVENLABS_API_KEY (setx ELEVENLABS_API_KEY \"clave\" en una terminal).");
+  return k;
+};
 const velocidad = Number(opc("velocidad", "1"));
 const nene = opc("nene", false);
 const tono = nene === true ? 1.35 : Number(nene);
+const extrasPiper = [
+  ["expresion", "--noise-scale"],
+  ["ritmo", "--noise-w-scale"],
+  ["pausa-oracion", "--sentence-silence"],
+].flatMap(([o, flag]) => (opc(o, null) !== null ? [flag, String(opc(o, null))] : []));
 
 const correr = (exe, a, input) => {
-  const r = spawnSync(exe, a, { input, encoding: "utf8", maxBuffer: 64 * 1024 * 1024 });
+  // PYTHONUTF8: en Windows Python lee stdin como cp1252 y Piper recibía "Ã¡" en lugar de "á" (leía mal tildes y eñes)
+  const env = { ...process.env, PYTHONUTF8: "1", PYTHONIOENCODING: "utf-8" };
+  const r = spawnSync(exe, a, { input, encoding: "utf8", env, maxBuffer: 64 * 1024 * 1024 });
   if (r.status !== 0) throw new Error(`${path.basename(exe)}: ${(r.stderr || r.stdout || r.error?.message || "").trim().split("\n").at(-1)}`);
   return `${r.stdout}${r.stderr}`;
 };
 
 const tmp = fs.mkdtempSync(path.join(RAIZ, "tmp", "voz-"));
 try {
-  const crudo = path.join(tmp, "piper.wav");
-  correr(herr.python, ["-m", "piper", "-m", modelo, "--length-scale", String(1 / velocidad), "-f", crudo], texto);
+  let crudo = path.join(tmp, "piper.wav");
+  if (eleven) {
+    crudo = path.join(tmp, "eleven.mp3");
+    const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voz.slice(7)}?output_format=mp3_44100_128`, {
+      method: "POST",
+      headers: { "xi-api-key": claveEleven(), "Content-Type": "application/json", Accept: "audio/mpeg" },
+      body: JSON.stringify({
+        text: texto,
+        model_id: opc("modelo-eleven", "eleven_multilingual_v2"),
+        voice_settings: {
+          stability: Number(opc("estabilidad", "0.45")),
+          similarity_boost: Number(opc("similitud", "0.8")),
+          style: Number(opc("estilo", "0.3")),
+          use_speaker_boost: true,
+          speed: velocidad,
+        },
+      }),
+    });
+    if (!res.ok) throw new Error(`ElevenLabs ${res.status}: ${(await res.text()).slice(0, 300)}`);
+    fs.writeFileSync(crudo, Buffer.from(await res.arrayBuffer()));
+  } else if (edge) {
+    // Edge TTS: el texto va por archivo UTF-8; velocidad como porcentaje (1,1 → +10%)
+    const txt = path.join(tmp, "texto.txt");
+    fs.writeFileSync(txt, texto, "utf8");
+    crudo = path.join(tmp, "edge.mp3");
+    const pct = (v) => `${v >= 0 ? "+" : ""}${Math.round(v)}%`;
+    correr(herr.python, [
+      "-m", "edge_tts", "--voice", voz, "-f", txt,
+      `--rate=${pct((velocidad - 1) * 100)}`, `--pitch=${opc("tono-edge", "+0Hz")}`, `--volume=${opc("volumen-edge", "+0%")}`,
+      "--write-media", crudo,
+    ]);
+  } else {
+    correr(herr.python, ["-m", "piper", "-m", modelo, "--length-scale", String(1 / velocidad), ...extrasPiper, "-f", crudo], texto);
+  }
   const filtros = [nene ? `rubberband=pitch=${tono}:formant=shifted` : null, RECORTE, COLA].filter(Boolean).join(",");
   const limpio = path.join(tmp, "limpio.wav");
   correr(herr.ffmpeg, ["-y", "-hide_banner", "-loglevel", "error", "-i", crudo, "-af", filtros, "-ar", "48000", "-ac", "1", limpio]);

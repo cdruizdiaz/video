@@ -1,0 +1,134 @@
+{
+  "archivo": "voz_l14.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3965,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3820,
+      "texto": "Bueno, pero te salió con estos números, y con otro triángulo?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bueno",
+      "fromMs": 10,
+      "toMs": 290,
+      "dtwMs": 300,
+      "p": 0.458775
+    },
+    {
+      "text": ",",
+      "fromMs": 290,
+      "toMs": 420,
+      "dtwMs": 640,
+      "p": 0.943487
+    },
+    {
+      "text": " pero",
+      "fromMs": 420,
+      "toMs": 660,
+      "dtwMs": 760,
+      "p": 0.987314
+    },
+    {
+      "text": " te",
+      "fromMs": 660,
+      "toMs": 780,
+      "dtwMs": 900,
+      "p": 0.995364
+    },
+    {
+      "text": " sal",
+      "fromMs": 780,
+      "toMs": 940,
+      "dtwMs": 1100,
+      "p": 0.984919
+    },
+    {
+      "text": "ió",
+      "fromMs": 970,
+      "toMs": 1080,
+      "dtwMs": 1160,
+      "p": 0.542527
+    },
+    {
+      "text": " con",
+      "fromMs": 1080,
+      "toMs": 1260,
+      "dtwMs": 1320,
+      "p": 0.987398
+    },
+    {
+      "text": " estos",
+      "fromMs": 1260,
+      "toMs": 1560,
+      "dtwMs": 1500,
+      "p": 0.994045
+    },
+    {
+      "text": " números",
+      "fromMs": 1560,
+      "toMs": 1970,
+      "dtwMs": 1920,
+      "p": 0.679335
+    },
+    {
+      "text": ",",
+      "fromMs": 1970,
+      "toMs": 2110,
+      "dtwMs": 2360,
+      "p": 0.049141
+    },
+    {
+      "text": " y",
+      "fromMs": 2540,
+      "toMs": 2540,
+      "dtwMs": 2640,
+      "p": 0.798989
+    },
+    {
+      "text": " con",
+      "fromMs": 2590,
+      "toMs": 3080,
+      "dtwMs": 2800,
+      "p": 0.993044
+    },
+    {
+      "text": " otro",
+      "fromMs": 3080,
+      "toMs": 3790,
+      "dtwMs": 3060,
+      "p": 0.988729
+    },
+    {
+      "text": " tri",
+      "fromMs": 3820,
+      "toMs": 3820,
+      "dtwMs": 3300,
+      "p": 0.864486
+    },
+    {
+      "text": "áng",
+      "fromMs": 3820,
+      "toMs": 3820,
+      "dtwMs": 3500,
+      "p": 0.97391
+    },
+    {
+      "text": "ulo",
+      "fromMs": 3820,
+      "toMs": 3820,
+      "dtwMs": 3740,
+      "p": 0.999891
+    },
+    {
+      "text": "?",
+      "fromMs": 3820,
+      "toMs": 3820,
+      "dtwMs": 3800,
+      "p": 0.329025
+    }
+  ]
+}

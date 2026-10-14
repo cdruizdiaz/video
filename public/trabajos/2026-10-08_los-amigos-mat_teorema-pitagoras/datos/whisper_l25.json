@@ -1,0 +1,99 @@
+{
+  "archivo": "voz_l25.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2200,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2060,
+      "texto": "Mañana el que corta por la diagonal soy yo."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Ma",
+      "fromMs": 10,
+      "toMs": 120,
+      "dtwMs": 180,
+      "p": 0.876512
+    },
+    {
+      "text": "ñana",
+      "fromMs": 120,
+      "toMs": 360,
+      "dtwMs": 340,
+      "p": 0.999691
+    },
+    {
+      "text": " el",
+      "fromMs": 360,
+      "toMs": 450,
+      "dtwMs": 460,
+      "p": 0.984876
+    },
+    {
+      "text": " que",
+      "fromMs": 500,
+      "toMs": 660,
+      "dtwMs": 560,
+      "p": 0.99772
+    },
+    {
+      "text": " cort",
+      "fromMs": 660,
+      "toMs": 880,
+      "dtwMs": 780,
+      "p": 0.996654
+    },
+    {
+      "text": "a",
+      "fromMs": 930,
+      "toMs": 960,
+      "dtwMs": 860,
+      "p": 0.999823
+    },
+    {
+      "text": " por",
+      "fromMs": 960,
+      "toMs": 1140,
+      "dtwMs": 1000,
+      "p": 0.990258
+    },
+    {
+      "text": " la",
+      "fromMs": 1140,
+      "toMs": 1260,
+      "dtwMs": 1120,
+      "p": 0.997244
+    },
+    {
+      "text": " diagonal",
+      "fromMs": 1260,
+      "toMs": 1740,
+      "dtwMs": 1520,
+      "p": 0.995939
+    },
+    {
+      "text": " soy",
+      "fromMs": 1740,
+      "toMs": 1920,
+      "dtwMs": 1800,
+      "p": 0.973819
+    },
+    {
+      "text": " yo",
+      "fromMs": 1920,
+      "toMs": 2050,
+      "dtwMs": 1980,
+      "p": 0.994662
+    },
+    {
+      "text": ".",
+      "fromMs": 2060,
+      "toMs": 2060,
+      "dtwMs": 2040,
+      "p": 0.915396
+    }
+  ]
+}

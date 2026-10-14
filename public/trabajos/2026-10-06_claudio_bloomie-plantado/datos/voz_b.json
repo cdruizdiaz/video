@@ -1,0 +1,57 @@
+{
+  "archivo": "voz_b.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1390,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1240,
+      "texto": "And I got stood up!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " And",
+      "fromMs": 10,
+      "toMs": 260,
+      "dtwMs": 160,
+      "p": 0.475103
+    },
+    {
+      "text": " I",
+      "fromMs": 260,
+      "toMs": 290,
+      "dtwMs": 280,
+      "p": 0.981615
+    },
+    {
+      "text": " got",
+      "fromMs": 330,
+      "toMs": 490,
+      "dtwMs": 540,
+      "p": 0.996586
+    },
+    {
+      "text": " stood",
+      "fromMs": 720,
+      "toMs": 1030,
+      "dtwMs": 800,
+      "p": 0.996239
+    },
+    {
+      "text": " up",
+      "fromMs": 1030,
+      "toMs": 1130,
+      "dtwMs": 1140,
+      "p": 0.997723
+    },
+    {
+      "text": "!",
+      "fromMs": 1220,
+      "toMs": 1240,
+      "dtwMs": 1220,
+      "p": 0.73528
+    }
+  ]
+}

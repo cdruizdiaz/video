@@ -5,7 +5,8 @@
 // el orden de capas es el del dibujo original, salvo cambios en rig.orden o pose.orden. El rostro (ojos, cejas,
 // boca, anteojos, tocado) va sobre la cabeza y se cambia entero con la expresión; los ojos parpadean y la boca se
 // reemplaza por visemas al hablar.
-import React, { useId } from "react";
+import React, { useId, useState } from "react";
+import { continueRender, delayRender, staticFile } from "remotion";
 import type { Pose } from "./pose";
 import { IDENTIDAD, type Matriz, matricesMundo, matrizSvg, multiplicar, rotar, escalar, trasladar } from "./pose";
 import { cargarPersonaje, type Personaje } from "./personajes";
@@ -43,10 +44,31 @@ const luminancia = (hex?: string | null) => {
 
 const limpiarId = (s: string) => s.replace(/[^a-zA-Z0-9_-]/g, "");
 
+// Pieza de imagen dentro del SVG: el render espera a que cargue (si no, hay cuadros con piezas faltantes).
+// Se monta de nuevo (key = ruta) cada vez que cambia la imagen, así cada cambio de cara o de boca también espera.
+const ImagenSvg: React.FC<{ t: Trazo }> = ({ t }) => {
+  const [espera] = useState(() => delayRender(`Pieza ${t.img}`, { timeoutInMilliseconds: 60000 }));
+  const listo = () => continueRender(espera);
+  return (
+    <image
+      href={staticFile(t.img!)}
+      x={t.x}
+      y={t.y}
+      width={t.w}
+      height={t.h}
+      preserveAspectRatio="none"
+      opacity={t.op}
+      onLoad={listo}
+      onError={listo}
+    />
+  );
+};
+
 // Trazos con su recorte (si lo traen)
 const Trazos: React.FC<{ trazos: Trazo[]; id: string }> = ({ trazos, id }) => (
   <>
     {trazos.map((t, i) => {
+      if (t.img) return <ImagenSvg key={`${i}-${t.img}`} t={t} />;
       const clip = t.clip ? `${id}-c${i}` : undefined;
       return (
         <React.Fragment key={i}>
@@ -132,6 +154,7 @@ export { matricesMundo, pivotesMundo } from "./pose";
 // ---------- Rostro ----------
 // Caja aproximada de un path (por sus números): para saber cuál es el blanco del ojo
 const cajaD = (d: string) => {
+  if (!d) return 0;
   const n = (d.match(/-?\d+(?:\.\d+)?/g) ?? []).map(Number);
   const xs = n.filter((_, i) => i % 2 === 0);
   const ys = n.filter((_, i) => i % 2 === 1);
@@ -202,8 +225,11 @@ const RostroSvg: React.FC<{
   // El guiño cierra el ojo de más a la derecha de la pantalla
   const derecho = r.ojos.reduce((k, o, i) => (o.c[0] > r.ojos[k].c[0] ? i : k), 0);
   const vis = pose.visema && pose.visema !== "X" ? visemas[pose.visema] : undefined;
+  // Rostro de imagen (PNG): la cabeza entera va debajo de todo (la boca para hablar y el parpadeo se dibujan encima)
+  const cabezaImagen = r.extras && r.sinBoca ? <Trazos trazos={(vis ? r.sinBoca : r.extras).trazos} id={`${id}-x`} /> : null;
   return (
     <g>
+      {cabezaImagen}
       {r.cejas && <Trazos trazos={r.cejas.trazos} id={`${id}-cj`} />}
       {r.ojos.map((o, i) => (
         <g key={i} transform={pose.ojos !== 1 ? `translate(${o.c[0]} ${o.c[1]}) scale(${pose.ojos}) translate(${-o.c[0]} ${-o.c[1]})` : undefined}>
@@ -235,7 +261,8 @@ const RostroSvg: React.FC<{
           <Trazos trazos={vis.trazos} id={`${id}-v`} />
         </g>
       )}
-      {r.extras && <Trazos trazos={r.extras.trazos} id={`${id}-x`} />}
+      {r.extras && !cabezaImagen && <Trazos trazos={r.extras.trazos} id={`${id}-x`} />}
+      {r.cerrados && Math.max(pose.parpado, pose.guino) >= CIERRE_OJO && <Trazos trazos={r.cerrados.trazos} id={`${id}-cz`} />}
       {disfraz ? (
         <g transform={`translate(0 ${pose.disfrazY})`}>
           {disfraz.extras && <Trazos trazos={disfraz.extras.trazos} id={`${id}-dx`} />}
@@ -302,6 +329,12 @@ export const PersonajeRig: React.FC<PersonajeRigProps> = ({ personaje, pose, pie
     m = multiplicar(m, trasladar(-cx, 0));
     return multiplicar(m, mr);
   };
+  // Gestos: la pieza se cambia por su variante (misma caja de huesos; otra imagen)
+  const variante = (pz: Pieza): Pieza => {
+    const v = pose.variantes[pz.id];
+    const dat = v ? dv.variantes?.[`${pz.id}:${v}`] : undefined;
+    return dat ? { ...pz, trazos: dat.trazos, caja: dat.caja, clip: undefined } : pz;
+  };
   dv.piezas.forEach((pz, i) => {
     if (ocultas.has(pz.id)) return;
     const z = pose.orden[pz.id] ?? rv.orden?.[pz.id] ?? pz.z;
@@ -312,7 +345,7 @@ export const PersonajeRig: React.FC<PersonajeRigProps> = ({ personaje, pose, pie
       z,
       nodo: (
         <g key={pz.id} transform={matrizSvg(m)}>
-          <PiezaSvg pieza={pz} id={id} luz={silueta ? undefined : luz} />
+          <PiezaSvg pieza={variante(pz)} id={id} luz={silueta ? undefined : luz} />
           {pz.id === cabezaId && rostro && !silueta && (
             <g transform={matrizSvg(multiplicar(invertir(m), rostroGirado(deHueso(rv.rostro.hueso))))}>
               <RostroSvg

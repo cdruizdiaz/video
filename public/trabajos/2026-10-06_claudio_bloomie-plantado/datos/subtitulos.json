@@ -1,0 +1,125 @@
+[
+ {
+  "desde": 25,
+  "hasta": 75,
+  "lineas": [
+   [
+    {
+     "texto": "I",
+     "cuadro": 25,
+     "destacar": false
+    },
+    {
+     "texto": "waited",
+     "cuadro": 26,
+     "destacar": false
+    },
+    {
+     "texto": "for",
+     "cuadro": 39,
+     "destacar": false
+    },
+    {
+     "texto": "my",
+     "cuadro": 45,
+     "destacar": false
+    },
+    {
+     "texto": "date",
+     "cuadro": 49,
+     "destacar": false
+    }
+   ],
+   [
+    {
+     "texto": "for",
+     "cuadro": 58,
+     "destacar": false
+    },
+    {
+     "texto": "hours…",
+     "cuadro": 64,
+     "destacar": false
+    }
+   ]
+  ]
+ },
+ {
+  "desde": 84,
+  "hasta": 125,
+  "lineas": [
+   [
+    {
+     "texto": "and",
+     "cuadro": 84,
+     "destacar": false
+    },
+    {
+     "texto": "I",
+     "cuadro": 92,
+     "destacar": false
+    },
+    {
+     "texto": "got",
+     "cuadro": 94,
+     "destacar": false
+    },
+    {
+     "texto": "stood",
+     "cuadro": 106,
+     "destacar": false
+    },
+    {
+     "texto": "up!",
+     "cuadro": 115,
+     "destacar": false
+    }
+   ]
+  ]
+ },
+ {
+  "desde": 160,
+  "hasta": 218,
+  "lineas": [
+   [
+    {
+     "texto": "And",
+     "cuadro": 160,
+     "destacar": false
+    },
+    {
+     "texto": "I",
+     "cuadro": 163,
+     "destacar": false
+    },
+    {
+     "texto": "can't",
+     "cuadro": 164,
+     "destacar": false
+    },
+    {
+     "texto": "even",
+     "cuadro": 172,
+     "destacar": false
+    },
+    {
+     "texto": "leave…",
+     "cuadro": 177,
+     "destacar": false
+    }
+   ],
+   [
+    {
+     "texto": "I'm",
+     "cuadro": 197,
+     "destacar": false
+    },
+    {
+     "texto": "planted!",
+     "cuadro": 201,
+     "destacar": true
+    }
+   ]
+  ]
+ }
+]

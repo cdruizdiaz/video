@@ -1,5 +1,6 @@
 // Esquemas (zod) del sistema de rig vectorial de personajes.
 //  - piezas.json: lo que extrae scripts/rig/extraer_rig.py del .ai (trazos SVG por vista, rostros, visemas, accesorios)
+//    o scripts/rig/importar_png.py de hojas PNG (entonces cada trazo es una imagen: img + x, y, w, h)
 //  - rig.json:    huesos con pivotes y qué hueso mueve cada pieza (se ajusta en el editor del Studio)
 // Unidades: puntos del .ai. Origen de cada vista: en el piso, entre los pies; y hacia abajo.
 import { z } from "zod";
@@ -13,6 +14,12 @@ export const zTrazo = z.object({
   evenodd: z.boolean().optional(),
   op: z.number().optional(), // opacidad (sombras y brillos)
   clip: z.string().optional(), // recorte (path) que traía el .ai
+  // Pieza de imagen (personajes importados de PNG): ruta en public/ y caja en coordenadas del personaje
+  img: z.string().optional(),
+  x: z.number().optional(),
+  y: z.number().optional(),
+  w: z.number().optional(),
+  h: z.number().optional(),
 });
 export type Trazo = z.infer<typeof zTrazo>;
 
@@ -50,6 +57,8 @@ export const zRostro = z.object({
   anteojos: zGrupo.optional(),
   tocado: zGrupo.optional(),
   extras: zGrupo.optional(),
+  sinBoca: zGrupo.optional(), // (PNG) la cabeza de la expresión sin boca: se dibuja en vez de extras mientras habla
+  cerrados: zGrupo.optional(), // (PNG) parche de ojos cerrados: se dibuja encima al parpadear
   de: z.string().optional(),
 });
 export type Rostro = z.infer<typeof zRostro>;
@@ -60,6 +69,8 @@ export const zVista = z.object({
   piezas: z.array(zPieza),
   cabeza: z.object({ id: z.string(), caja: zCaja, z: z.number() }).optional(),
   rostro: zRostro.optional(),
+  // Variantes de piezas que se cambian con la pose ("mano_der:senala" → otra mano), p. ej. gestos de las manos
+  variantes: z.record(z.string(), z.object({ trazos: z.array(zTrazo), caja: zCaja })).optional(),
 });
 export type Vista = z.infer<typeof zVista>;
 

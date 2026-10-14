@@ -1,0 +1,57 @@
+{
+  "archivo": "voz_l09.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 812,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 660,
+      "texto": "¿Y eso para qué?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 20,
+      "toMs": 40,
+      "dtwMs": 40,
+      "p": 0.428919
+    },
+    {
+      "text": "Y",
+      "fromMs": 40,
+      "toMs": 80,
+      "dtwMs": 80,
+      "p": 0.757562
+    },
+    {
+      "text": " eso",
+      "fromMs": 80,
+      "toMs": 160,
+      "dtwMs": 240,
+      "p": 0.996232
+    },
+    {
+      "text": " para",
+      "fromMs": 210,
+      "toMs": 380,
+      "dtwMs": 420,
+      "p": 0.994427
+    },
+    {
+      "text": " qué",
+      "fromMs": 380,
+      "toMs": 450,
+      "dtwMs": 580,
+      "p": 0.345664
+    },
+    {
+      "text": "?",
+      "fromMs": 510,
+      "toMs": 650,
+      "dtwMs": 640,
+      "p": 0.994774
+    }
+  ]
+}

@@ -22,6 +22,7 @@ export const zPoseClave = z.object({
   mirada: z.array(z.number()).length(2).optional(), // pupilas: -1…1 en x e y
   ojos: z.number().optional(), // tamaño de los ojos (1 normal)
   yaw: z.number().optional(), // giro 2,5D (-1…1)
+  variantes: z.record(z.string(), z.string().nullable()).optional(), // gestos: { mano_der: "senala" } (null = la normal)
   nota: z.string().optional(), // descripción libre de la pose (para el que la lee)
 });
 export type PoseClave = z.infer<typeof zPoseClave>;
@@ -108,5 +109,6 @@ const aParcial = (p: PoseClave, huesos: Record<string, Mov>): PoseParcial => {
   if (p.mirada) r.mirada = [p.mirada[0], p.mirada[1]];
   if (p.ojos !== undefined) r.ojos = p.ojos;
   if (p.yaw !== undefined) r.yaw = p.yaw;
+  if (p.variantes) r.variantes = p.variantes;
   return r;
 };

@@ -1,0 +1,17 @@
+{"fuente":"rhubarb","audio":"public/trabajos/2026-10-08_los-amigos-mat_teorema-pitagoras/audio/voz_l03.wav","duracion":2.1,"mouthCues":[
+{"start":0,"end":0.56,"value":"B"},
+{"start":0.56,"end":0.7,"value":"F"},
+{"start":0.7,"end":0.77,"value":"C"},
+{"start":0.77,"end":0.84,"value":"B"},
+{"start":0.84,"end":0.98,"value":"C"},
+{"start":0.98,"end":1.05,"value":"B"},
+{"start":1.05,"end":1.2,"value":"A"},
+{"start":1.2,"end":1.28,"value":"B"},
+{"start":1.28,"end":1.41,"value":"A"},
+{"start":1.41,"end":1.48,"value":"F"},
+{"start":1.48,"end":1.54,"value":"C"},
+{"start":1.54,"end":1.62,"value":"A"},
+{"start":1.62,"end":1.85,"value":"C"},
+{"start":1.85,"end":1.99,"value":"B"},
+{"start":1.99,"end":2.1,"value":"X"}
+]}

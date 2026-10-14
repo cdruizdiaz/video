@@ -1,0 +1,470 @@
+{
+ "version": 1,
+ "personaje": "sofi",
+ "fuente": "sofi_poses_izq.png, sofi_intermedias_izq.png",
+ "poses": {
+  "neutra": {
+   "img": "personajes/sofi/poses/neutra.png",
+   "x": -154.9,
+   "y": -650.0,
+   "w": 336,
+   "h": 650,
+   "cabeza": [
+    -121.9,
+    -647.0,
+    114.1,
+    -462.0
+   ],
+   "sinBoca": "personajes/sofi/poses/neutra_sinboca.png",
+   "boca": {
+    "c": [
+     -22.0,
+     -480.6
+    ],
+    "w": 30.0,
+    "escala": 0.75
+   }
+  },
+  "senalando": {
+   "img": "personajes/sofi/poses/senalando.png",
+   "x": -250.8,
+   "y": -651.0,
+   "w": 422,
+   "h": 651,
+   "cabeza": [
+    -138.8,
+    -648.0,
+    106.2,
+    -464.0
+   ],
+   "sinBoca": "personajes/sofi/poses/senalando_sinboca.png",
+   "boca": {
+    "c": [
+     -29.4,
+     -482.6
+    ],
+    "w": 29.0,
+    "escala": 0.725
+   }
+  },
+  "dudando": {
+   "img": "personajes/sofi/poses/dudando.png",
+   "x": -199.2,
+   "y": -650.0,
+   "w": 374,
+   "h": 650,
+   "cabeza": [
+    -130.2,
+    -647.0,
+    108.8,
+    -462.0
+   ],
+   "sinBoca": "personajes/sofi/poses/dudando_sinboca.png",
+   "boca": {
+    "c": [
+     -31.0,
+     -481.1
+    ],
+    "w": 30.0,
+    "escala": 0.75
+   }
+  },
+  "cruzados": {
+   "img": "personajes/sofi/poses/cruzados.png",
+   "x": -162.0,
+   "y": -655.0,
+   "w": 338,
+   "h": 655,
+   "cabeza": [
+    -128.0,
+    -654.0,
+    114.0,
+    -466.0
+   ],
+   "sinBoca": "personajes/sofi/poses/cruzados_sinboca.png",
+   "boca": {
+    "c": [
+     -27.1,
+     -485.0
+    ],
+    "w": 30.0,
+    "escala": 0.75
+   }
+  },
+  "pulgar": {
+   "img": "personajes/sofi/poses/pulgar.png",
+   "x": -164.0,
+   "y": -657.0,
+   "w": 334,
+   "h": 657,
+   "cabeza": [
+    -132.0,
+    -655.0,
+    103.0,
+    -468.0
+   ],
+   "sinBoca": "personajes/sofi/poses/pulgar_sinboca.png",
+   "boca": {
+    "c": [
+     -37.1,
+     -489.1
+    ],
+    "w": 30.0,
+    "escala": 0.75
+   }
+  },
+  "festejo": {
+   "img": "personajes/sofi/poses/festejo.png",
+   "x": -164.3,
+   "y": -658.0,
+   "w": 340,
+   "h": 658,
+   "cabeza": [
+    -138.3,
+    -656.0,
+    148.7,
+    -475.0
+   ],
+   "sinBoca": "personajes/sofi/poses/festejo_sinboca.png",
+   "boca": {
+    "c": [
+     32.0,
+     -497.1
+    ],
+    "w": 33.0,
+    "escala": 0.825
+   }
+  },
+  "saludando": {
+   "img": "personajes/sofi/poses/saludando.png",
+   "x": -171.7,
+   "y": -660.0,
+   "w": 365,
+   "h": 660,
+   "cabeza": [
+    -143.7,
+    -658.0,
+    103.3,
+    -475.0
+   ],
+   "sinBoca": "personajes/sofi/poses/saludando_sinboca.png",
+   "boca": {
+    "c": [
+     -40.6,
+     -494.5
+    ],
+    "w": 33.0,
+    "escala": 0.825
+   }
+  },
+  "explicando": {
+   "img": "personajes/sofi/poses/explicando.png",
+   "x": -186.6,
+   "y": -655.0,
+   "w": 359,
+   "h": 655,
+   "cabeza": [
+    -148.6,
+    -654.0,
+    106.4,
+    -472.0
+   ],
+   "sinBoca": "personajes/sofi/poses/explicando_sinboca.png",
+   "boca": {
+    "c": [
+     -35.0,
+     -491.7
+    ],
+    "w": 32.0,
+    "escala": 0.8
+   }
+  },
+  "pensando": {
+   "img": "personajes/sofi/poses/pensando.png",
+   "x": -177.2,
+   "y": -659.0,
+   "w": 356,
+   "h": 659,
+   "cabeza": [
+    -126.2,
+    -657.0,
+    117.8,
+    -471.0
+   ],
+   "sinBoca": "personajes/sofi/poses/pensando_sinboca.png",
+   "boca": {
+    "c": [
+     -27.4,
+     -490.7
+    ],
+    "w": 32.0,
+    "escala": 0.8
+   }
+  },
+  "neutra_b": {
+   "img": "personajes/sofi/poses/neutra_b.png",
+   "x": -160.0,
+   "y": -671.0,
+   "w": 353,
+   "h": 671,
+   "cabeza": [
+    -119.0,
+    -669.0,
+    122.0,
+    -472.0
+   ],
+   "sinBoca": "personajes/sofi/poses/neutra_b_sinboca.png",
+   "boca": {
+    "c": [
+     -21.8,
+     -494.1
+    ],
+    "w": 31.0,
+    "escala": 0.775
+   }
+  },
+  "neutra_c": {
+   "img": "personajes/sofi/poses/neutra_c.png",
+   "x": -159.0,
+   "y": -670.0,
+   "w": 348,
+   "h": 670,
+   "cabeza": [
+    -121.0,
+    -667.0,
+    116.0,
+    -470.0
+   ],
+   "sinBoca": "personajes/sofi/poses/neutra_c_sinboca.png",
+   "boca": {
+    "c": [
+     -23.8,
+     -492.2
+    ],
+    "w": 29.0,
+    "escala": 0.725
+   }
+  },
+  "paso_senalando": {
+   "img": "personajes/sofi/poses/paso_senalando.png",
+   "x": -161.7,
+   "y": -673.0,
+   "w": 351,
+   "h": 673,
+   "cabeza": [
+    -120.7,
+    -669.0,
+    120.3,
+    -472.0
+   ],
+   "sinBoca": "personajes/sofi/poses/paso_senalando_sinboca.png",
+   "boca": {
+    "c": [
+     -23.3,
+     -494.2
+    ],
+    "w": 29.0,
+    "escala": 0.725
+   }
+  },
+  "paso_dudando": {
+   "img": "personajes/sofi/poses/paso_dudando.png",
+   "x": -177.4,
+   "y": -668.0,
+   "w": 367,
+   "h": 668,
+   "cabeza": [
+    -118.4,
+    -666.0,
+    123.6,
+    -472.0
+   ],
+   "sinBoca": "personajes/sofi/poses/paso_dudando_sinboca.png",
+   "boca": {
+    "c": [
+     -21.7,
+     -493.3
+    ],
+    "w": 33.0,
+    "escala": 0.825
+   }
+  },
+  "paso_cruzados": {
+   "img": "personajes/sofi/poses/paso_cruzados.png",
+   "x": -168.5,
+   "y": -674.0,
+   "w": 354,
+   "h": 674,
+   "cabeza": [
+    -131.5,
+    -672.0,
+    112.5,
+    -474.0
+   ],
+   "sinBoca": "personajes/sofi/poses/paso_cruzados_sinboca.png",
+   "boca": {
+    "c": [
+     -33.6,
+     -495.2
+    ],
+    "w": 30.0,
+    "escala": 0.75
+   }
+  },
+  "paso_pulgar": {
+   "img": "personajes/sofi/poses/paso_pulgar.png",
+   "x": -162.8,
+   "y": -675.0,
+   "w": 352,
+   "h": 675,
+   "cabeza": [
+    -123.8,
+    -672.0,
+    117.2,
+    -475.0
+   ],
+   "sinBoca": "personajes/sofi/poses/paso_pulgar_sinboca.png",
+   "boca": {
+    "c": [
+     -27.2,
+     -496.2
+    ],
+    "w": 30.0,
+    "escala": 0.75
+   }
+  },
+  "paso1_festejo": {
+   "img": "personajes/sofi/poses/paso1_festejo.png",
+   "x": -171.6,
+   "y": -677.0,
+   "w": 351,
+   "h": 677,
+   "cabeza": [
+    -137.6,
+    -674.0,
+    103.4,
+    -476.0
+   ],
+   "sinBoca": "personajes/sofi/poses/paso1_festejo_sinboca.png",
+   "boca": {
+    "c": [
+     -40.0,
+     -498.3
+    ],
+    "w": 29.0,
+    "escala": 0.725
+   }
+  },
+  "paso2_festejo": {
+   "img": "personajes/sofi/poses/paso2_festejo.png",
+   "x": -171.5,
+   "y": -673.0,
+   "w": 371,
+   "h": 673,
+   "cabeza": [
+    -133.5,
+    -671.0,
+    109.5,
+    -476.0
+   ],
+   "sinBoca": "personajes/sofi/poses/paso2_festejo_sinboca.png",
+   "boca": {
+    "c": [
+     -35.4,
+     -496.1
+    ],
+    "w": 29.0,
+    "escala": 0.725
+   }
+  },
+  "paso1_saludando": {
+   "img": "personajes/sofi/poses/paso1_saludando.png",
+   "x": -171.6,
+   "y": -673.0,
+   "w": 366,
+   "h": 673,
+   "cabeza": [
+    -137.6,
+    -670.0,
+    103.4,
+    -468.0
+   ],
+   "sinBoca": "personajes/sofi/poses/paso1_saludando_sinboca.png",
+   "boca": {
+    "c": [
+     -40.5,
+     -491.2
+    ],
+    "w": 30.0,
+    "escala": 0.75
+   }
+  },
+  "paso2_saludando": {
+   "img": "personajes/sofi/poses/paso2_saludando.png",
+   "x": -173.1,
+   "y": -669.0,
+   "w": 383,
+   "h": 669,
+   "cabeza": [
+    -136.1,
+    -666.0,
+    114.9,
+    -473.0
+   ],
+   "sinBoca": "personajes/sofi/poses/paso2_saludando_sinboca.png",
+   "boca": {
+    "c": [
+     -30.8,
+     -492.9
+    ],
+    "w": 30.0,
+    "escala": 0.75
+   }
+  },
+  "paso_explicando": {
+   "img": "personajes/sofi/poses/paso_explicando.png",
+   "x": -171.7,
+   "y": -667.0,
+   "w": 357,
+   "h": 667,
+   "cabeza": [
+    -134.7,
+    -665.0,
+    107.3,
+    -471.0
+   ],
+   "sinBoca": "personajes/sofi/poses/paso_explicando_sinboca.png",
+   "boca": {
+    "c": [
+     -38.8,
+     -491.6
+    ],
+    "w": 28.0,
+    "escala": 0.7
+   }
+  },
+  "paso_pensando": {
+   "img": "personajes/sofi/poses/paso_pensando.png",
+   "x": -170.9,
+   "y": -667.0,
+   "w": 360,
+   "h": 667,
+   "cabeza": [
+    -127.9,
+    -664.0,
+    116.1,
+    -468.0
+   ],
+   "sinBoca": "personajes/sofi/poses/paso_pensando_sinboca.png",
+   "boca": {
+    "c": [
+     -30.7,
+     -488.9
+    ],
+    "w": 32.0,
+    "escala": 0.8
+   }
+  }
+ },
+ "alertas": []
+}

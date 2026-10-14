@@ -1,0 +1,127 @@
+{
+  "archivo": "voz_l04.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3445,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3300,
+      "texto": "Viste, no tenías chance, porque soy buena en matemática."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " V",
+      "fromMs": 80,
+      "toMs": 80,
+      "dtwMs": 900,
+      "p": 0.252781
+    },
+    {
+      "text": "iste",
+      "fromMs": 120,
+      "toMs": 400,
+      "dtwMs": 1040,
+      "p": 0.938564
+    },
+    {
+      "text": ",",
+      "fromMs": 420,
+      "toMs": 520,
+      "dtwMs": 1100,
+      "p": 0.755096
+    },
+    {
+      "text": " no",
+      "fromMs": 760,
+      "toMs": 760,
+      "dtwMs": 1180,
+      "p": 0.958863
+    },
+    {
+      "text": " ten",
+      "fromMs": 840,
+      "toMs": 950,
+      "dtwMs": 1340,
+      "p": 0.976802
+    },
+    {
+      "text": "ías",
+      "fromMs": 1030,
+      "toMs": 1280,
+      "dtwMs": 1440,
+      "p": 0.709888
+    },
+    {
+      "text": " chance",
+      "fromMs": 1280,
+      "toMs": 1720,
+      "dtwMs": 1820,
+      "p": 0.997571
+    },
+    {
+      "text": ",",
+      "fromMs": 1800,
+      "toMs": 1910,
+      "dtwMs": 2040,
+      "p": 0.755349
+    },
+    {
+      "text": " porque",
+      "fromMs": 2090,
+      "toMs": 2270,
+      "dtwMs": 2220,
+      "p": 0.963842
+    },
+    {
+      "text": " soy",
+      "fromMs": 2320,
+      "toMs": 2440,
+      "dtwMs": 2380,
+      "p": 0.995847
+    },
+    {
+      "text": " buena",
+      "fromMs": 2440,
+      "toMs": 2690,
+      "dtwMs": 2580,
+      "p": 0.982717
+    },
+    {
+      "text": " en",
+      "fromMs": 2690,
+      "toMs": 2780,
+      "dtwMs": 2700,
+      "p": 0.992744
+    },
+    {
+      "text": " mat",
+      "fromMs": 2780,
+      "toMs": 2940,
+      "dtwMs": 2840,
+      "p": 0.943434
+    },
+    {
+      "text": "em",
+      "fromMs": 2940,
+      "toMs": 3020,
+      "dtwMs": 2960,
+      "p": 0.770217
+    },
+    {
+      "text": "ática",
+      "fromMs": 3060,
+      "toMs": 3290,
+      "dtwMs": 3220,
+      "p": 0.615899
+    },
+    {
+      "text": ".",
+      "fromMs": 3300,
+      "toMs": 3300,
+      "dtwMs": 3280,
+      "p": 0.871125
+    }
+  ]
+}

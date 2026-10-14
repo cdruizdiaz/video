@@ -1,0 +1,132 @@
+{
+ "version": 1,
+ "personaje": "benja",
+ "vistas": {
+  "frente": {
+   "huesos": [
+    {
+     "id": "raiz",
+     "padre": null,
+     "pivote": [
+      0,
+      0
+     ]
+    },
+    {
+     "id": "cuerpo",
+     "padre": "raiz",
+     "pivote": [
+      -16.7,
+      -319.1
+     ]
+    },
+    {
+     "id": "cabeza",
+     "padre": "cuerpo",
+     "pivote": [
+      -23.6,
+      -612.5
+     ]
+    },
+    {
+     "id": "brazo_izq",
+     "padre": "cuerpo",
+     "pivote": [
+      -144.2,
+      -466.0
+     ]
+    },
+    {
+     "id": "antebrazo_izq",
+     "padre": "brazo_izq",
+     "pivote": [
+      -158.7,
+      -433.7
+     ]
+    },
+    {
+     "id": "mano_izq",
+     "padre": "antebrazo_izq",
+     "pivote": [
+      -138.6,
+      -290.0
+     ]
+    },
+    {
+     "id": "pierna_izq",
+     "padre": "raiz",
+     "pivote": [
+      -40.2,
+      -404.3
+     ]
+    },
+    {
+     "id": "pie_izq",
+     "padre": "pierna_izq",
+     "pivote": [
+      -58.8,
+      -103.1
+     ]
+    },
+    {
+     "id": "brazo_der",
+     "padre": "cuerpo",
+     "pivote": [
+      93.6,
+      -461.0
+     ]
+    },
+    {
+     "id": "antebrazo_der",
+     "padre": "brazo_der",
+     "pivote": [
+      110.6,
+      -428.3
+     ]
+    },
+    {
+     "id": "mano_der",
+     "padre": "antebrazo_der",
+     "pivote": [
+      145.7,
+      -303.1
+     ]
+    },
+    {
+     "id": "pierna_der",
+     "padre": "raiz",
+     "pivote": [
+      22.0,
+      -403.3
+     ]
+    },
+    {
+     "id": "pie_der",
+     "padre": "pierna_der",
+     "pivote": [
+      56.1,
+      -103.0
+     ]
+    }
+   ],
+   "piezas": {
+    "pie_der": "pie_der",
+    "pierna_der": "pierna_der",
+    "pie_izq": "pie_izq",
+    "pierna_izq": "pierna_izq",
+    "mano_der": "mano_der",
+    "antebrazo_der": "antebrazo_der",
+    "brazo_der": "brazo_der",
+    "mano_izq": "mano_izq",
+    "antebrazo_izq": "antebrazo_izq",
+    "brazo_izq": "brazo_izq",
+    "cabeza": "cabeza",
+    "cuerpo": "cuerpo"
+   },
+   "rostro": {
+    "hueso": "cabeza"
+   },
+   "mano": "mano_der"
+  }
+ }
+}

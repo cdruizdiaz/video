@@ -1,0 +1,57 @@
+{
+  "archivo": "voz_l21.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1302,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1160,
+      "texto": "Ahhhh, ahora sí."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Ah",
+      "fromMs": 10,
+      "toMs": 160,
+      "dtwMs": 260,
+      "p": 0.509532
+    },
+    {
+      "text": "hhh",
+      "fromMs": 160,
+      "toMs": 380,
+      "dtwMs": 460,
+      "p": 0.184342
+    },
+    {
+      "text": ",",
+      "fromMs": 440,
+      "toMs": 560,
+      "dtwMs": 460,
+      "p": 0.357822
+    },
+    {
+      "text": " ahora",
+      "fromMs": 560,
+      "toMs": 970,
+      "dtwMs": 760,
+      "p": 0.95863
+    },
+    {
+      "text": " sí",
+      "fromMs": 970,
+      "toMs": 1150,
+      "dtwMs": 1040,
+      "p": 0.597698
+    },
+    {
+      "text": ".",
+      "fromMs": 1160,
+      "toMs": 1160,
+      "dtwMs": 1140,
+      "p": 0.733213
+    }
+  ]
+}

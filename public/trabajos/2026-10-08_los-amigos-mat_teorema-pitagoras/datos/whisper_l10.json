@@ -1,0 +1,64 @@
+{
+  "archivo": "voz_l10.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1169,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1200,
+      "texto": "Contá los cuadraditos."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Cont",
+      "fromMs": 20,
+      "toMs": 210,
+      "dtwMs": 140,
+      "p": 0.939198
+    },
+    {
+      "text": "á",
+      "fromMs": 210,
+      "toMs": 260,
+      "dtwMs": 220,
+      "p": 0.562364
+    },
+    {
+      "text": " los",
+      "fromMs": 280,
+      "toMs": 420,
+      "dtwMs": 300,
+      "p": 0.964488
+    },
+    {
+      "text": " cuad",
+      "fromMs": 420,
+      "toMs": 630,
+      "dtwMs": 480,
+      "p": 0.998887
+    },
+    {
+      "text": "rad",
+      "fromMs": 630,
+      "toMs": 790,
+      "dtwMs": 640,
+      "p": 0.998603
+    },
+    {
+      "text": "itos",
+      "fromMs": 790,
+      "toMs": 940,
+      "dtwMs": 900,
+      "p": 0.999371
+    },
+    {
+      "text": ".",
+      "fromMs": 1160,
+      "toMs": 1160,
+      "dtwMs": 1140,
+      "p": 0.814587
+    }
+  ]
+}

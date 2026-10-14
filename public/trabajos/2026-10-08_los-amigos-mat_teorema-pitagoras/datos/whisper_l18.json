@@ -1,0 +1,127 @@
+{
+  "archivo": "voz_l18.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3061,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2920,
+      "texto": "Y lo que queda libre son dos cuadrados: el de cada cateto."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Y",
+      "fromMs": 20,
+      "toMs": 50,
+      "dtwMs": 100,
+      "p": 0.699089
+    },
+    {
+      "text": " lo",
+      "fromMs": 50,
+      "toMs": 160,
+      "dtwMs": 220,
+      "p": 0.977392
+    },
+    {
+      "text": " que",
+      "fromMs": 160,
+      "toMs": 330,
+      "dtwMs": 360,
+      "p": 0.998386
+    },
+    {
+      "text": " queda",
+      "fromMs": 330,
+      "toMs": 620,
+      "dtwMs": 580,
+      "p": 0.993197
+    },
+    {
+      "text": " libre",
+      "fromMs": 620,
+      "toMs": 890,
+      "dtwMs": 820,
+      "p": 0.995942
+    },
+    {
+      "text": " son",
+      "fromMs": 990,
+      "toMs": 1080,
+      "dtwMs": 1060,
+      "p": 0.998226
+    },
+    {
+      "text": " dos",
+      "fromMs": 1080,
+      "toMs": 1190,
+      "dtwMs": 1220,
+      "p": 0.987602
+    },
+    {
+      "text": " cuad",
+      "fromMs": 1310,
+      "toMs": 1470,
+      "dtwMs": 1440,
+      "p": 0.999022
+    },
+    {
+      "text": "rados",
+      "fromMs": 1470,
+      "toMs": 1710,
+      "dtwMs": 1740,
+      "p": 0.997103
+    },
+    {
+      "text": ":",
+      "fromMs": 1830,
+      "toMs": 1900,
+      "dtwMs": 1940,
+      "p": 0.779209
+    },
+    {
+      "text": " el",
+      "fromMs": 1900,
+      "toMs": 2020,
+      "dtwMs": 1960,
+      "p": 0.970764
+    },
+    {
+      "text": " de",
+      "fromMs": 2020,
+      "toMs": 2070,
+      "dtwMs": 2120,
+      "p": 0.999134
+    },
+    {
+      "text": " cada",
+      "fromMs": 2150,
+      "toMs": 2320,
+      "dtwMs": 2300,
+      "p": 0.999053
+    },
+    {
+      "text": " cat",
+      "fromMs": 2390,
+      "toMs": 2470,
+      "dtwMs": 2560,
+      "p": 0.998401
+    },
+    {
+      "text": "eto",
+      "fromMs": 2570,
+      "toMs": 2680,
+      "dtwMs": 2840,
+      "p": 0.999211
+    },
+    {
+      "text": ".",
+      "fromMs": 2780,
+      "toMs": 2900,
+      "dtwMs": 2900,
+      "p": 0.971089
+    }
+  ]
+}

@@ -6,6 +6,7 @@
 //
 // Uso: node scripts/blender/render.mjs <ID> <nombre> <animacion.json> <duración> [--cara <comp-cara>] [--rotY 0.4]
 //        [--luz 135] [--estilo toon] [--ancho 1080 --alto 1920] [--muestras 16] [--forzar]
+//        [--solo 30,54,66 --png out/<ID>/revision/blender]   (solo esos cuadros, como PNG para revisar; sin capa ni caché)
 //   animacion.json: PersonajeRigProps (personaje, x, y, escala, pistas…) dentro del trabajo.
 // Salida: public/trabajos/<ID>/cache3d/<nombre>_<huella>.webm y la entrada <nombre> en datos/cache3d.json
 // Antes, una vez por personaje: blender -b -P scripts/blender/personaje_desde_rig.py -- <personaje>
@@ -71,7 +72,9 @@ const guardar = () => {
   d[nombre] = relativo;
   fs.writeFileSync(indice, JSON.stringify(d, null, 2) + "\n");
 };
-if (fs.existsSync(webm) && !args.includes("--forzar")) {
+const solo = opc("solo") ? opc("solo").split(",").map(Number) : null;
+if (solo) escena.solo = solo;
+if (fs.existsSync(webm) && !args.includes("--forzar") && !solo) {
   guardar();
   console.log(`OK reusada ${relativo} (huella ${huella})`);
   process.exit(0);
@@ -98,6 +101,14 @@ try {
   const png = path.join(tmp, "png");
   correr(herr.blender, ["-b", blend, "--python-exit-code", "1", "-P", "scripts/blender/render.py", "--", esc, png]);
   const t2 = Date.now();
+  if (solo) {
+    const dest = path.resolve(opc("png", path.join("out", id, "revision", "blender")));
+    fs.mkdirSync(dest, { recursive: true });
+    for (const f of fs.readdirSync(png)) fs.copyFileSync(path.join(png, f), path.join(dest, `${nombre}_${f}`));
+    console.log(`OK ${solo.length} cuadros sueltos → ${path.relative(RAIZ, dest)} · Blender ${((t2 - t1) / 1000).toFixed(0)} s`);
+    fs.rmSync(tmp, { recursive: true, force: true });
+    process.exit(0);
+  }
   // 4) webm con alfa
   fs.mkdirSync(carpeta, { recursive: true });
   for (const viejo of fs.readdirSync(carpeta).filter((f) => f.startsWith(`${nombre}_`))) fs.rmSync(path.join(carpeta, viejo));

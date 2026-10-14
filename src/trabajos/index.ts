@@ -16,6 +16,10 @@ import { composiciones as claudioPrueba25dVideo } from "./2026-10-04_claudio_pru
 import { composiciones as claudioPrueba3d } from "./2026-10-04_claudio_prueba-3d/composiciones";
 import { composiciones as claudioPruebaBlender } from "./2026-10-04_claudio_prueba-blender/composiciones";
 import { composiciones as claudioBloomieRock } from "./2026-10-04_claudio_bloomie-rock/composiciones";
+import { composiciones as claudioBloomieTomaVida } from "./2026-10-06_claudio_bloomie-toma-vida/composiciones";
+import { composiciones as claudioBloomiePlantado } from "./2026-10-06_claudio_bloomie-plantado/composiciones";
+import { composiciones as claudioCantandoRobot } from "./2026-10-06_claudio_cantando-como-robot/composiciones";
+import { composiciones as amigosMatPitagoras } from "./2026-10-08_los-amigos-mat_teorema-pitagoras/composiciones";
 import type { Trabajo } from "./tipos";
 
 export const TRABAJOS: Trabajo[] = [
@@ -36,4 +40,8 @@ export const TRABAJOS: Trabajo[] = [
   { id: "2026-10-04_claudio_prueba-3d", composiciones: claudioPrueba3d },
   { id: "2026-10-04_claudio_prueba-blender", composiciones: claudioPruebaBlender },
   { id: "2026-10-04_claudio_bloomie-rock", composiciones: claudioBloomieRock },
+  { id: "2026-10-06_claudio_bloomie-toma-vida", composiciones: claudioBloomieTomaVida },
+  { id: "2026-10-06_claudio_bloomie-plantado", composiciones: claudioBloomiePlantado },
+  { id: "2026-10-06_claudio_cantando-como-robot", composiciones: claudioCantandoRobot },
+  { id: "2026-10-08_los-amigos-mat_teorema-pitagoras", composiciones: amigosMatPitagoras },
 ];

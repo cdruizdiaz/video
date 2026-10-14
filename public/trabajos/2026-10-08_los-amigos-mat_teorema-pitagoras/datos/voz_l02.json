@@ -1,0 +1,148 @@
+{
+  "archivo": "voz_l02.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3346,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3200,
+      "texto": "Dale, no ten a ti de símbolo de copyright trece chances de ganarme."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Dale",
+      "fromMs": 30,
+      "toMs": 230,
+      "dtwMs": 180,
+      "p": 0.937032
+    },
+    {
+      "text": ",",
+      "fromMs": 230,
+      "toMs": 250,
+      "dtwMs": 500,
+      "p": 0.6386
+    },
+    {
+      "text": " no",
+      "fromMs": 450,
+      "toMs": 450,
+      "dtwMs": 620,
+      "p": 0.984363
+    },
+    {
+      "text": " ten",
+      "fromMs": 490,
+      "toMs": 620,
+      "dtwMs": 780,
+      "p": 0.965272
+    },
+    {
+      "text": " a",
+      "fromMs": 670,
+      "toMs": 670,
+      "dtwMs": 920,
+      "p": 0.905592
+    },
+    {
+      "text": " ti",
+      "fromMs": 690,
+      "toMs": 780,
+      "dtwMs": 980,
+      "p": 0.964131
+    },
+    {
+      "text": " de",
+      "fromMs": 780,
+      "toMs": 870,
+      "dtwMs": 1140,
+      "p": 0.917351
+    },
+    {
+      "text": " sí",
+      "fromMs": 950,
+      "toMs": 1000,
+      "dtwMs": 1260,
+      "p": 0.980552
+    },
+    {
+      "text": "mbol",
+      "fromMs": 1000,
+      "toMs": 1230,
+      "dtwMs": 1360,
+      "p": 0.999066
+    },
+    {
+      "text": "o",
+      "fromMs": 1230,
+      "toMs": 1280,
+      "dtwMs": 1460,
+      "p": 0.997398
+    },
+    {
+      "text": " de",
+      "fromMs": 1280,
+      "toMs": 1390,
+      "dtwMs": 1560,
+      "p": 0.977961
+    },
+    {
+      "text": " copyright",
+      "fromMs": 1390,
+      "toMs": 1910,
+      "dtwMs": 1880,
+      "p": 0.922252
+    },
+    {
+      "text": " tre",
+      "fromMs": 1910,
+      "toMs": 2080,
+      "dtwMs": 2080,
+      "p": 0.354996
+    },
+    {
+      "text": "ce",
+      "fromMs": 2080,
+      "toMs": 2190,
+      "dtwMs": 2160,
+      "p": 0.972648
+    },
+    {
+      "text": " chances",
+      "fromMs": 2190,
+      "toMs": 2590,
+      "dtwMs": 2460,
+      "p": 0.998001
+    },
+    {
+      "text": " de",
+      "fromMs": 2590,
+      "toMs": 2700,
+      "dtwMs": 2600,
+      "p": 0.997548
+    },
+    {
+      "text": " gan",
+      "fromMs": 2700,
+      "toMs": 2850,
+      "dtwMs": 2780,
+      "p": 0.998479
+    },
+    {
+      "text": "arme",
+      "fromMs": 2860,
+      "toMs": 3040,
+      "dtwMs": 3000,
+      "p": 0.998216
+    },
+    {
+      "text": ".",
+      "fromMs": 3170,
+      "toMs": 3200,
+      "dtwMs": 3180,
+      "p": 0.934078
+    }
+  ]
+}

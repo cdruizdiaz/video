@@ -44,6 +44,11 @@ describe("poseSecuencia", () => {
   it("interpola parpado entre claves", () => {
     expect(poseSecuencia(sec("lineal"), 0.125).parpado).toBeCloseTo(0.5);
   });
+  it("variantes (gestos) pasan de la pose clave a la pose parcial", () => {
+    const s1 = zSecuencia.parse({ nombre: "gesto", poses: [{ huesos: {}, variantes: { mano_der: "senala" } }, { huesos: {}, variantes: { mano_der: null } }], interpolacion: "paso" });
+    expect(poseSecuencia(s1, 0.1).variantes).toEqual({ mano_der: "senala" });
+    expect(poseSecuencia(s1, 0.6).variantes).toEqual({ mano_der: null });
+  });
   it("una sola pose", () => {
     const s = zSecuencia.parse({ nombre: "x", poses: [{ huesos: { a: { rot: 7 } } }] });
     expect(poseSecuencia(s, 0.6).huesos!.a.rot).toBe(7);

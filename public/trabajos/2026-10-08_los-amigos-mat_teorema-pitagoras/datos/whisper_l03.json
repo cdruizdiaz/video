@@ -1,0 +1,85 @@
+{
+  "archivo": "voz_l03.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2105,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1960,
+      "texto": "Hice siete cuadras, vos cuantas?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " H",
+      "fromMs": 10,
+      "toMs": 60,
+      "dtwMs": 80,
+      "p": 0.178958
+    },
+    {
+      "text": "ice",
+      "fromMs": 60,
+      "toMs": 220,
+      "dtwMs": 180,
+      "p": 0.986476
+    },
+    {
+      "text": " siete",
+      "fromMs": 270,
+      "toMs": 600,
+      "dtwMs": 440,
+      "p": 0.948484
+    },
+    {
+      "text": " cuad",
+      "fromMs": 600,
+      "toMs": 850,
+      "dtwMs": 800,
+      "p": 0.998319
+    },
+    {
+      "text": "ras",
+      "fromMs": 870,
+      "toMs": 1010,
+      "dtwMs": 1000,
+      "p": 0.997815
+    },
+    {
+      "text": ",",
+      "fromMs": 1170,
+      "toMs": 1210,
+      "dtwMs": 1160,
+      "p": 0.366618
+    },
+    {
+      "text": " vos",
+      "fromMs": 1210,
+      "toMs": 1300,
+      "dtwMs": 1320,
+      "p": 0.645434
+    },
+    {
+      "text": " cu",
+      "fromMs": 1390,
+      "toMs": 1490,
+      "dtwMs": 1500,
+      "p": 0.937824
+    },
+    {
+      "text": "antas",
+      "fromMs": 1490,
+      "toMs": 1770,
+      "dtwMs": 1760,
+      "p": 0.628117
+    },
+    {
+      "text": "?",
+      "fromMs": 1770,
+      "toMs": 1860,
+      "dtwMs": 1760,
+      "p": 0.969239
+    }
+  ]
+}
