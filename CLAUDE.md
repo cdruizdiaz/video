@@ -125,6 +125,7 @@ Reglas:
 | Cámara lenta suave / subir fps | RIFE (`scripts/camara_lenta.mjs`) |
 | Subir resolución (fotos viejas, logos chicos, 720p) | Real-ESRGAN (`scripts/subir_resolucion.mjs`) |
 | Cortes o animaciones al ritmo de la música | librosa (`scripts/pulsos.py`) → `ajustarAlPulso` |
+| Motion graphics al compás (títulos con máscara y blur vertical, camera punch, personaje que habla, CTA con resorte) | plantilla `MotionGraphicRitmo` (títulos: `comunes/TituloMascara.tsx`). Ejemplo: `2026-10-20_claudio_motion-graphic-prueba` |
 | Proxies / borradores rápidos | ffmpeg con `codecBorrador` de `equipo.json` |
 | Aplicar color (LUT) | ffmpeg `lut3d` |
 | Normalizar volumen (-14 LUFS) / medirlo | ffmpeg `loudnorm` / `ebur128` |

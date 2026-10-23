@@ -1,0 +1,120 @@
+{
+  "archivo": "voz_2.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2850,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2700,
+      "texto": "Encontra el mejor precio al instante con HiperPrecios."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " En",
+      "fromMs": 10,
+      "toMs": 90,
+      "dtwMs": 120,
+      "p": 0.687271
+    },
+    {
+      "text": "cont",
+      "fromMs": 130,
+      "toMs": 340,
+      "dtwMs": 300,
+      "p": 0.996453
+    },
+    {
+      "text": "ra",
+      "fromMs": 340,
+      "toMs": 450,
+      "dtwMs": 360,
+      "p": 0.255497
+    },
+    {
+      "text": " el",
+      "fromMs": 450,
+      "toMs": 560,
+      "dtwMs": 460,
+      "p": 0.886735
+    },
+    {
+      "text": " mejor",
+      "fromMs": 560,
+      "toMs": 800,
+      "dtwMs": 720,
+      "p": 0.978291
+    },
+    {
+      "text": " precio",
+      "fromMs": 880,
+      "toMs": 1200,
+      "dtwMs": 1120,
+      "p": 0.978184
+    },
+    {
+      "text": " al",
+      "fromMs": 1200,
+      "toMs": 1300,
+      "dtwMs": 1240,
+      "p": 0.996506
+    },
+    {
+      "text": " instant",
+      "fromMs": 1390,
+      "toMs": 1720,
+      "dtwMs": 1420,
+      "p": 0.570768
+    },
+    {
+      "text": "e",
+      "fromMs": 1720,
+      "toMs": 1770,
+      "dtwMs": 1600,
+      "p": 0.963207
+    },
+    {
+      "text": " con",
+      "fromMs": 1770,
+      "toMs": 1940,
+      "dtwMs": 1760,
+      "p": 0.988816
+    },
+    {
+      "text": " Hip",
+      "fromMs": 1940,
+      "toMs": 2110,
+      "dtwMs": 1920,
+      "p": 0.984613
+    },
+    {
+      "text": "er",
+      "fromMs": 2110,
+      "toMs": 2210,
+      "dtwMs": 2020,
+      "p": 0.960173
+    },
+    {
+      "text": "Pre",
+      "fromMs": 2210,
+      "toMs": 2370,
+      "dtwMs": 2180,
+      "p": 0.662754
+    },
+    {
+      "text": "cios",
+      "fromMs": 2370,
+      "toMs": 2540,
+      "dtwMs": 2440,
+      "p": 0.999388
+    },
+    {
+      "text": ".",
+      "fromMs": 2680,
+      "toMs": 2700,
+      "dtwMs": 2680,
+      "p": 0.864308
+    }
+  ]
+}

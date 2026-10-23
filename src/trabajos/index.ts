@@ -23,6 +23,7 @@ import { composiciones as claudioCantandoRobot } from "./2026-10-06_claudio_cant
 import { composiciones as amigosMatPitagoras } from "./2026-10-08_los-amigos-mat_teorema-pitagoras/composiciones";
 import { composiciones as rastroBloomiePlantada } from "./2026-10-06_rastro_bloomie-plantada/composiciones";
 import { composiciones as voltoFashionWeek } from "./2026-10-06_volto_fashion-week/composiciones";
+import { composiciones as claudioMotionGraphicPrueba } from "./2026-10-20_claudio_motion-graphic-prueba/composiciones";
 import type { Trabajo } from "./tipos";
 
 export const TRABAJOS: Trabajo[] = [
@@ -50,4 +51,5 @@ export const TRABAJOS: Trabajo[] = [
   { id: "2026-10-08_los-amigos-mat_teorema-pitagoras", composiciones: amigosMatPitagoras },
   { id: "2026-10-06_rastro_bloomie-plantada", composiciones: rastroBloomiePlantada },
   { id: "2026-10-06_volto_fashion-week", composiciones: voltoFashionWeek },
+  { id: "2026-10-20_claudio_motion-graphic-prueba", composiciones: claudioMotionGraphicPrueba },
 ];
