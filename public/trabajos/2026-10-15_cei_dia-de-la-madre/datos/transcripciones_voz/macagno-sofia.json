@@ -1,0 +1,270 @@
+{
+  "archivo": "macagno-sofia.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 13227,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2000,
+      "texto": "Venga"
+    },
+    {
+      "desdeMs": 2000,
+      "hastaMs": 11000,
+      "texto": "Hola mami, te quería agradecer por amarme mucho, por estar conmigo y por cocinarme por lo que siempre me gusta."
+    },
+    {
+      "desdeMs": 11000,
+      "hastaMs": 13220,
+      "texto": "Listo."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " V",
+      "fromMs": 50,
+      "toMs": 400,
+      "dtwMs": 560,
+      "p": 0.0115381
+    },
+    {
+      "text": "enga",
+      "fromMs": 410,
+      "toMs": 1990,
+      "dtwMs": 1160,
+      "p": 0.28709
+    },
+    {
+      "text": " Hola",
+      "fromMs": 2050,
+      "toMs": 2500,
+      "dtwMs": 2340,
+      "p": 0.852454
+    },
+    {
+      "text": " m",
+      "fromMs": 2500,
+      "toMs": 2620,
+      "dtwMs": 2600,
+      "p": 0.586429
+    },
+    {
+      "text": "ami",
+      "fromMs": 2620,
+      "toMs": 3000,
+      "dtwMs": 2840,
+      "p": 0.997997
+    },
+    {
+      "text": ",",
+      "fromMs": 3000,
+      "toMs": 3090,
+      "dtwMs": 3020,
+      "p": 0.720409
+    },
+    {
+      "text": " te",
+      "fromMs": 3100,
+      "toMs": 3200,
+      "dtwMs": 3160,
+      "p": 0.984317
+    },
+    {
+      "text": " quería",
+      "fromMs": 3200,
+      "toMs": 3510,
+      "dtwMs": 3440,
+      "p": 0.844224
+    },
+    {
+      "text": " agrade",
+      "fromMs": 3510,
+      "toMs": 3810,
+      "dtwMs": 3740,
+      "p": 0.994368
+    },
+    {
+      "text": "cer",
+      "fromMs": 3810,
+      "toMs": 4000,
+      "dtwMs": 4040,
+      "p": 0.991942
+    },
+    {
+      "text": " por",
+      "fromMs": 4180,
+      "toMs": 4300,
+      "dtwMs": 4280,
+      "p": 0.973768
+    },
+    {
+      "text": " am",
+      "fromMs": 4300,
+      "toMs": 4430,
+      "dtwMs": 4500,
+      "p": 0.95614
+    },
+    {
+      "text": "arme",
+      "fromMs": 4430,
+      "toMs": 4700,
+      "dtwMs": 4720,
+      "p": 0.997151
+    },
+    {
+      "text": " mucho",
+      "fromMs": 4700,
+      "toMs": 4930,
+      "dtwMs": 5160,
+      "p": 0.979537
+    },
+    {
+      "text": ",",
+      "fromMs": 5000,
+      "toMs": 5110,
+      "dtwMs": 5440,
+      "p": 0.676875
+    },
+    {
+      "text": " por",
+      "fromMs": 5110,
+      "toMs": 5280,
+      "dtwMs": 5540,
+      "p": 0.87381
+    },
+    {
+      "text": " estar",
+      "fromMs": 5280,
+      "toMs": 5570,
+      "dtwMs": 5760,
+      "p": 0.990467
+    },
+    {
+      "text": " con",
+      "fromMs": 5570,
+      "toMs": 5740,
+      "dtwMs": 6080,
+      "p": 0.991039
+    },
+    {
+      "text": "m",
+      "fromMs": 5740,
+      "toMs": 5790,
+      "dtwMs": 6220,
+      "p": 0.963397
+    },
+    {
+      "text": "igo",
+      "fromMs": 5790,
+      "toMs": 6000,
+      "dtwMs": 6360,
+      "p": 0.997305
+    },
+    {
+      "text": " y",
+      "fromMs": 6000,
+      "toMs": 6130,
+      "dtwMs": 6920,
+      "p": 0.443402
+    },
+    {
+      "text": " por",
+      "fromMs": 6190,
+      "toMs": 6610,
+      "dtwMs": 7120,
+      "p": 0.973308
+    },
+    {
+      "text": " coc",
+      "fromMs": 6610,
+      "toMs": 7000,
+      "dtwMs": 7360,
+      "p": 0.982812
+    },
+    {
+      "text": "inar",
+      "fromMs": 7090,
+      "toMs": 7600,
+      "dtwMs": 7600,
+      "p": 0.999394
+    },
+    {
+      "text": "me",
+      "fromMs": 7700,
+      "toMs": 8000,
+      "dtwMs": 7800,
+      "p": 0.992526
+    },
+    {
+      "text": " por",
+      "fromMs": 8000,
+      "toMs": 8240,
+      "dtwMs": 8260,
+      "p": 0.817427
+    },
+    {
+      "text": " lo",
+      "fromMs": 8240,
+      "toMs": 8390,
+      "dtwMs": 8440,
+      "p": 0.982019
+    },
+    {
+      "text": " que",
+      "fromMs": 8390,
+      "toMs": 8440,
+      "dtwMs": 8620,
+      "p": 0.984108
+    },
+    {
+      "text": " siempre",
+      "fromMs": 8840,
+      "toMs": 9290,
+      "dtwMs": 9360,
+      "p": 0.924545
+    },
+    {
+      "text": " me",
+      "fromMs": 9310,
+      "toMs": 9490,
+      "dtwMs": 9700,
+      "p": 0.990994
+    },
+    {
+      "text": " gusta",
+      "fromMs": 9490,
+      "toMs": 9910,
+      "dtwMs": 10120,
+      "p": 0.988688
+    },
+    {
+      "text": ".",
+      "fromMs": 10140,
+      "toMs": 11000,
+      "dtwMs": 10360,
+      "p": 0.498978
+    },
+    {
+      "text": " L",
+      "fromMs": 11050,
+      "toMs": 11440,
+      "dtwMs": 12140,
+      "p": 0.776105
+    },
+    {
+      "text": "isto",
+      "fromMs": 12460,
+      "toMs": 13220,
+      "dtwMs": 12360,
+      "p": 0.997948
+    },
+    {
+      "text": ".",
+      "fromMs": 13220,
+      "toMs": 13220,
+      "dtwMs": 12540,
+      "p": 0.795864
+    }
+  ]
+}

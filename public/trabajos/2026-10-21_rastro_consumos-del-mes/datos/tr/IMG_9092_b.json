@@ -1,0 +1,267 @@
+{
+  "archivo": "9092b.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7208,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7200,
+      "texto": "Y por último, pero no menos importante, cada tanto vuelvo a escuchar el audiolibro \"Dar de leer a los niños\", de Yolanda Reyes"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Y",
+      "fromMs": 0,
+      "toMs": 60,
+      "dtwMs": 260,
+      "p": 0.489184
+    },
+    {
+      "text": " por",
+      "fromMs": 120,
+      "toMs": 240,
+      "dtwMs": 400,
+      "p": 0.95212
+    },
+    {
+      "text": " último",
+      "fromMs": 240,
+      "toMs": 580,
+      "dtwMs": 740,
+      "p": 0.916747
+    },
+    {
+      "text": ",",
+      "fromMs": 620,
+      "toMs": 720,
+      "dtwMs": 940,
+      "p": 0.621305
+    },
+    {
+      "text": " pero",
+      "fromMs": 720,
+      "toMs": 960,
+      "dtwMs": 1020,
+      "p": 0.993807
+    },
+    {
+      "text": " no",
+      "fromMs": 960,
+      "toMs": 1080,
+      "dtwMs": 1160,
+      "p": 0.996244
+    },
+    {
+      "text": " menos",
+      "fromMs": 1080,
+      "toMs": 1380,
+      "dtwMs": 1320,
+      "p": 0.997518
+    },
+    {
+      "text": " importante",
+      "fromMs": 1380,
+      "toMs": 1990,
+      "dtwMs": 1860,
+      "p": 0.995502
+    },
+    {
+      "text": ",",
+      "fromMs": 2080,
+      "toMs": 2080,
+      "dtwMs": 2060,
+      "p": 0.813272
+    },
+    {
+      "text": " cada",
+      "fromMs": 2080,
+      "toMs": 2210,
+      "dtwMs": 2200,
+      "p": 0.885713
+    },
+    {
+      "text": " tanto",
+      "fromMs": 2310,
+      "toMs": 2460,
+      "dtwMs": 2480,
+      "p": 0.991743
+    },
+    {
+      "text": " vuel",
+      "fromMs": 2460,
+      "toMs": 2630,
+      "dtwMs": 2680,
+      "p": 0.980976
+    },
+    {
+      "text": "vo",
+      "fromMs": 2630,
+      "toMs": 2710,
+      "dtwMs": 2720,
+      "p": 0.722111
+    },
+    {
+      "text": " a",
+      "fromMs": 2710,
+      "toMs": 2750,
+      "dtwMs": 2780,
+      "p": 0.963994
+    },
+    {
+      "text": " escuch",
+      "fromMs": 2750,
+      "toMs": 2980,
+      "dtwMs": 2960,
+      "p": 0.992809
+    },
+    {
+      "text": "ar",
+      "fromMs": 3020,
+      "toMs": 3120,
+      "dtwMs": 3120,
+      "p": 0.998807
+    },
+    {
+      "text": " el",
+      "fromMs": 3120,
+      "toMs": 3230,
+      "dtwMs": 3240,
+      "p": 0.960921
+    },
+    {
+      "text": " audi",
+      "fromMs": 3230,
+      "toMs": 3450,
+      "dtwMs": 3400,
+      "p": 0.963234
+    },
+    {
+      "text": "ol",
+      "fromMs": 3450,
+      "toMs": 3560,
+      "dtwMs": 3540,
+      "p": 0.99847
+    },
+    {
+      "text": "ib",
+      "fromMs": 3560,
+      "toMs": 3670,
+      "dtwMs": 3640,
+      "p": 0.999171
+    },
+    {
+      "text": "ro",
+      "fromMs": 3670,
+      "toMs": 3790,
+      "dtwMs": 3740,
+      "p": 0.997763
+    },
+    {
+      "text": " \"",
+      "fromMs": 3850,
+      "toMs": 3850,
+      "dtwMs": 3900,
+      "p": 0.39966
+    },
+    {
+      "text": "D",
+      "fromMs": 3870,
+      "toMs": 3880,
+      "dtwMs": 3980,
+      "p": 0.917742
+    },
+    {
+      "text": "ar",
+      "fromMs": 3920,
+      "toMs": 4000,
+      "dtwMs": 4080,
+      "p": 0.934159
+    },
+    {
+      "text": " de",
+      "fromMs": 4000,
+      "toMs": 4090,
+      "dtwMs": 4140,
+      "p": 0.975407
+    },
+    {
+      "text": " leer",
+      "fromMs": 4090,
+      "toMs": 4320,
+      "dtwMs": 4340,
+      "p": 0.940129
+    },
+    {
+      "text": " a",
+      "fromMs": 4320,
+      "toMs": 4370,
+      "dtwMs": 4420,
+      "p": 0.982492
+    },
+    {
+      "text": " los",
+      "fromMs": 4370,
+      "toMs": 4520,
+      "dtwMs": 4560,
+      "p": 0.993208
+    },
+    {
+      "text": " niños",
+      "fromMs": 4530,
+      "toMs": 4820,
+      "dtwMs": 4820,
+      "p": 0.958229
+    },
+    {
+      "text": "\",",
+      "fromMs": 4820,
+      "toMs": 5000,
+      "dtwMs": 5020,
+      "p": 0.513077
+    },
+    {
+      "text": " de",
+      "fromMs": 5160,
+      "toMs": 5310,
+      "dtwMs": 5300,
+      "p": 0.927617
+    },
+    {
+      "text": " Yo",
+      "fromMs": 5350,
+      "toMs": 5620,
+      "dtwMs": 5380,
+      "p": 0.812384
+    },
+    {
+      "text": "land",
+      "fromMs": 5620,
+      "toMs": 5960,
+      "dtwMs": 5540,
+      "p": 0.967913
+    },
+    {
+      "text": "a",
+      "fromMs": 6130,
+      "toMs": 6390,
+      "dtwMs": 5660,
+      "p": 0.999556
+    },
+    {
+      "text": " Rey",
+      "fromMs": 6390,
+      "toMs": 6860,
+      "dtwMs": 5780,
+      "p": 0.45367
+    },
+    {
+      "text": "es",
+      "fromMs": 6860,
+      "toMs": 7200,
+      "dtwMs": 6020,
+      "p": 0.987842
+    }
+  ]
+}

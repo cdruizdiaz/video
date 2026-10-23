@@ -1,0 +1,268 @@
+{
+  "archivo": "alvarez-lola.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 11520,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1640,
+      "texto": "de los brazos."
+    },
+    {
+      "desdeMs": 1640,
+      "hastaMs": 4360,
+      "texto": "Hola, mam. ¿Cómo estás?"
+    },
+    {
+      "desdeMs": 4360,
+      "hastaMs": 7280,
+      "texto": "Mo, te quería agradecer por siempre estar para mí."
+    },
+    {
+      "desdeMs": 7280,
+      "hastaMs": 11520,
+      "texto": "Mo, te quiero mucho. Chau."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " de",
+      "fromMs": 40,
+      "toMs": 230,
+      "dtwMs": 140,
+      "p": 0.0241421
+    },
+    {
+      "text": " los",
+      "fromMs": 230,
+      "toMs": 580,
+      "dtwMs": 140,
+      "p": 0.0335494
+    },
+    {
+      "text": " bra",
+      "fromMs": 700,
+      "toMs": 910,
+      "dtwMs": 140,
+      "p": 0.00542872
+    },
+    {
+      "text": "zos",
+      "fromMs": 920,
+      "toMs": 1140,
+      "dtwMs": 140,
+      "p": 0.912882
+    },
+    {
+      "text": ".",
+      "fromMs": 1140,
+      "toMs": 1640,
+      "dtwMs": 280,
+      "p": 0.273632
+    },
+    {
+      "text": " Hola",
+      "fromMs": 1730,
+      "toMs": 2140,
+      "dtwMs": 2760,
+      "p": 0.100206
+    },
+    {
+      "text": ",",
+      "fromMs": 2340,
+      "toMs": 2530,
+      "dtwMs": 3000,
+      "p": 0.6781
+    },
+    {
+      "text": " mam",
+      "fromMs": 2530,
+      "toMs": 2780,
+      "dtwMs": 3020,
+      "p": 0.802628
+    },
+    {
+      "text": ".",
+      "fromMs": 2810,
+      "toMs": 3480,
+      "dtwMs": 3400,
+      "p": 0.515636
+    },
+    {
+      "text": " ¿",
+      "fromMs": 3480,
+      "toMs": 3540,
+      "dtwMs": 3600,
+      "p": 0.86767
+    },
+    {
+      "text": "Cómo",
+      "fromMs": 3540,
+      "toMs": 3810,
+      "dtwMs": 3720,
+      "p": 0.941618
+    },
+    {
+      "text": " estás",
+      "fromMs": 3810,
+      "toMs": 4140,
+      "dtwMs": 3980,
+      "p": 0.950869
+    },
+    {
+      "text": "?",
+      "fromMs": 4260,
+      "toMs": 4360,
+      "dtwMs": 4420,
+      "p": 0.988095
+    },
+    {
+      "text": " Mo",
+      "fromMs": 4400,
+      "toMs": 4510,
+      "dtwMs": 4720,
+      "p": 0.538624
+    },
+    {
+      "text": ",",
+      "fromMs": 4510,
+      "toMs": 4660,
+      "dtwMs": 4860,
+      "p": 0.963536
+    },
+    {
+      "text": " te",
+      "fromMs": 4660,
+      "toMs": 4810,
+      "dtwMs": 4960,
+      "p": 0.988263
+    },
+    {
+      "text": " quería",
+      "fromMs": 5060,
+      "toMs": 5260,
+      "dtwMs": 5160,
+      "p": 0.980383
+    },
+    {
+      "text": " agrade",
+      "fromMs": 5260,
+      "toMs": 5500,
+      "dtwMs": 5340,
+      "p": 0.997329
+    },
+    {
+      "text": "cer",
+      "fromMs": 5500,
+      "toMs": 6000,
+      "dtwMs": 5700,
+      "p": 0.994008
+    },
+    {
+      "text": " por",
+      "fromMs": 6000,
+      "toMs": 6160,
+      "dtwMs": 6280,
+      "p": 0.891586
+    },
+    {
+      "text": " siempre",
+      "fromMs": 6160,
+      "toMs": 6530,
+      "dtwMs": 6520,
+      "p": 0.933097
+    },
+    {
+      "text": " estar",
+      "fromMs": 6530,
+      "toMs": 6790,
+      "dtwMs": 6700,
+      "p": 0.937174
+    },
+    {
+      "text": " para",
+      "fromMs": 6970,
+      "toMs": 7000,
+      "dtwMs": 6860,
+      "p": 0.687534
+    },
+    {
+      "text": " mí",
+      "fromMs": 7000,
+      "toMs": 7100,
+      "dtwMs": 7100,
+      "p": 0.927456
+    },
+    {
+      "text": ".",
+      "fromMs": 7100,
+      "toMs": 7280,
+      "dtwMs": 7400,
+      "p": 0.980655
+    },
+    {
+      "text": " Mo",
+      "fromMs": 7320,
+      "toMs": 7420,
+      "dtwMs": 7620,
+      "p": 0.958619
+    },
+    {
+      "text": ",",
+      "fromMs": 7420,
+      "toMs": 7550,
+      "dtwMs": 7780,
+      "p": 0.995927
+    },
+    {
+      "text": " te",
+      "fromMs": 7550,
+      "toMs": 7690,
+      "dtwMs": 7880,
+      "p": 0.995619
+    },
+    {
+      "text": " quiero",
+      "fromMs": 7980,
+      "toMs": 8100,
+      "dtwMs": 8080,
+      "p": 0.99605
+    },
+    {
+      "text": " mucho",
+      "fromMs": 8100,
+      "toMs": 8190,
+      "dtwMs": 8460,
+      "p": 0.998759
+    },
+    {
+      "text": ".",
+      "fromMs": 8190,
+      "toMs": 8680,
+      "dtwMs": 8760,
+      "p": 0.917858
+    },
+    {
+      "text": " Ch",
+      "fromMs": 8680,
+      "toMs": 9490,
+      "dtwMs": 8940,
+      "p": 0.339613
+    },
+    {
+      "text": "au",
+      "fromMs": 9900,
+      "toMs": 10300,
+      "dtwMs": 9180,
+      "p": 0.986562
+    },
+    {
+      "text": ".",
+      "fromMs": 10300,
+      "toMs": 11400,
+      "dtwMs": 10300,
+      "p": 0.980626
+    }
+  ]
+}

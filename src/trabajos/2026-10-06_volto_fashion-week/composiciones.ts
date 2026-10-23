@@ -548,11 +548,14 @@ const preview = (p: HablaSubtituladaProps): HablaSubtituladaProps => ({
   zoomLento: false,
   cruceAudio: p.cruceAudio, // desde la preview de "Vení, seguime" (2026-10-13): las anteriores se renderizaron sin él (~20 ms de silencio en cada corte)
   seguimiento: p.seguimiento,
-  // los movimientos que siguen la cara ("Vení, seguime", pedido 2026-10-13) son parte del montaje: se mantienen
+  // los movimientos de cámara de "Vení, seguime" (planos con `seguir` o con `zoomDesde`, pedido 2026-10-13) son
+  // parte del montaje: se mantienen (hasta la v4 se perdían los que no seguían la cara)
   tomas: p.tomas.map((t) => ({
     ...t,
     planos: t.planos?.map((pl) =>
-      pl.seguir ? pl : { ...pl, rampaMs: undefined },
+      pl.seguir || pl.zoomDesde !== undefined
+        ? pl
+        : { ...pl, rampaMs: undefined },
     ),
   })),
 });
@@ -624,13 +627,21 @@ const plano5 = (
 ) => ({ desdeMs: ms, clip: ID_5, desfaseMs: 0, zoom, fijo: true, ...extra });
 const ABIERTO_5 = 1; // el original
 const CERCA_5 = 1.35; // corte seco a un plano más cerrado, quieto, con la cara encuadrada
-const ESTAMOS_5 = "100% 45%"; // "Estamos acá…": recorte anclado a la derecha (a la izquierda caminan mujeres)
 const abierto5 = (ms: number) => plano5(ms, ABIERTO_5);
 const cerca5 = (ms: number, zoom = CERCA_5) =>
   plano5(ms, zoom, { seguir: true });
 // movimiento de cámara para destacar una frase: acercamiento suave al arrancar y al llegar
 const empuje5 = (ms: number, desde: number, hasta: number, rampaMs: number) =>
   plano5(ms, hasta, { zoomDesde: desde, rampaMs, seguir: true });
+// zoom rápido que llama la atención y deja el plano fijo (sin seguir la cara después: pedido 2026-10-13)
+const golpe5 = (
+  ms: number,
+  desde: number,
+  hasta: number,
+  rampaMs: number,
+  origen: string,
+) => plano5(ms, hasta, { zoomDesde: desde, rampaMs, origen });
+const CARA_GANCHO_5 = "52% 46%"; // dónde está su cara en el gancho (seguimiento_IMG_6977n.json, 2–11 s)
 const toma5 = (
   desdeMs: number,
   hastaMs: number,
@@ -643,20 +654,18 @@ const veniSeguime: HablaSubtituladaProps = {
   cruceAudio: 1, // un cuadro de fundido cruzado entre tomas (sin él, cada corte cae a silencio ~20 ms)
   seguimiento: { [ID_5]: seguimiento5 },
   tomas: [
-    // "¿Sos dueño o dueña de una marca de ropa…?": leve zoom de entrada (gancho) / en "¿Tenés un montón
-    // de consultas…?" otro acercamiento leve y lento, con la cámara en movimiento (pedido 2026-10-13)
+    // "¿Sos dueño o dueña de una marca de ropa…?": zoom de entrada RÁPIDO (gancho) y después plano fijo /
+    // justo antes de "¿Tenés un montón de consultas…?" (7,59) otro zoom leve y rápido, y queda fijo (pedido 2026-10-13, 3ª tanda)
     toma5(2150, 11420, [
-      empuje5(2150, 1, 1.1, 1500),
-      empuje5(7500, 1.1, 1.22, 3000),
+      golpe5(2150, 1, 1.12, 400, CARA_GANCHO_5),
+      golpe5(7250, 1.12, 1.24, 300, CARA_GANCHO_5),
     ]),
-    // "Estamos acá en Argentina Fashion Week…": 1,45× anclado a la derecha para sacar a las mujeres que
-    // caminan por el borde izquierdo / MOVIMIENTO en "Vení, seguime." y corte apenas termina (17,28)
-    toma5(12000, 17330, [
-      plano5(12000, 1.45, { origen: ESTAMOS_5 }),
-      plano5(16650, 1.65, { zoomDesde: 1.45, rampaMs: 600, origen: ESTAMOS_5 }),
-    ]),
-    // caminando: "Lo que dueños y dueñas de marcas nos dicen…" / cerca en "no doy abasto para responder WhatsApp."
-    toma5(18200, 24650, [abierto5(18200), cerca5(22100, 1.5)]),
+    // "Estamos acá en Argentina Fashion Week…" en su plano original (pedido 2026-10-13, 3ª tanda) /
+    // MOVIMIENTO en "Vení, seguime." y corte apenas termina (17,28)
+    toma5(12000, 17330, [abierto5(12000), empuje5(16650, 1, 1.3, 600)]),
+    // caminando: "Lo que dueños y dueñas de marcas nos dicen…" / zoom RÁPIDO al arrancar "no doy abasto…" (22,20)
+    // en vez del corte seco al cerrado (sigue la cara: camina)
+    toma5(18200, 24650, [abierto5(18200), empuje5(21950, 1, 1.45, 300)]),
     // "Entonces, tenés tu WhatsApp reventado… y tenés una tienda online" en el original (sin corte) /
     // MOVIMIENTO en "Volto es la solución para tu negocio." (queda cerca hasta "¿Qué es lo que hacemos para eso?")
     toma5(30700, 37320, [abierto5(30700), empuje5(34200, 1, 1.45, 600)]),
@@ -674,15 +683,343 @@ const veniSeguime: HablaSubtituladaProps = {
     // "Hoy el agente de IA ya puede resolver eso." Corte apenas termina (59,64; "la tecnología" viene pegada)
     toma5(57950, 59640, [abierto5(57950)]),
     // "Literalmente, en Volto lo estamos haciendo para las marcas…" / original desde "y están teniendo
-    // resultados" / MOVIMIENTO recién en "increíbles." (68,86)
+    // resultados" / MOVIMIENTO apenas termina "resultados" (68,19), antes de "increíbles" (68,86)
     toma5(62100, 69600, [
       cerca5(62100),
       abierto5(66750),
-      empuje5(68800, 1, 1.4, 700),
+      empuje5(68200, 1, 1.4, 650),
     ]),
     // viene hacia la cámara: "¿Necesitás Volto? ¿Estás en esa situación? Escribinos acá abajo…"
     toma5(108050, 112800, [abierto5(108050)]),
   ],
+};
+
+// ---------- Pieza 5, borrador completo (2026-10-13): las tomas de la preview v5 aprobada + CRITERIOS_REEL.md ----------
+// Voz con menos ruido (voz_suave, DeepFilterNet 15 dB) con cada toma a -19 LUFS (ebur128 sobre el tramo); subtítulos
+// escritos a mano (amarillo: propuesta mínima, a confirmar); un gráfico con su pop por cada cosa que se nombra; en el
+// tramo en que él sale de cuadro ("Logramos liberar hasta el 80%…") la cifra grande que cuenta ocupa la pantalla;
+// música suave solo al final y placa por corte.
+const GANANCIAS_5 = [3.9, 5.8, 3.4, 3.2, 3.4, 3.0, 2.3, 2.9, 2.5]; // dB por toma, a -19 LUFS (picos ≤ -0,5 dBFS)
+const SONIDO_5 = (ms: number, archivo: string, volumen: number) => ({
+  clip: "IMG_6977",
+  ms,
+  src: `trabajos/${ID}/audio/${archivo}.wav`,
+  volumen,
+});
+// [ícono, ms en que lo nombra, x]
+const LOGOS_TIENDA_5 = [
+  ["tiendanube", 42060, 300],
+  ["woocommerce", 43100, 540],
+  ["shopify", 44030, 780],
+] as const;
+const PREGUNTAS_5: [string, number][] = [
+  ["¿stock?", 53980],
+  ["¿talle?", 54960],
+  ["¿cantidad?", 56700],
+];
+const veniSeguimeBorrador: EntrevistaRadioProps = {
+  ...veniSeguime,
+  audios: { IMG_6977: `trabajos/${ID}/audio/voz_suave/IMG_6977.wav` },
+  efectosDb: EFECTOS_DB,
+  tomas: veniSeguime.tomas.map((t, i) => ({
+    ...t,
+    gananciaDb: GANANCIAS_5[i],
+  })),
+  sonidos: [
+    SONIDO_5(12780, "pop", POP_VOLUMEN), // logo de la Argentina Fashion Week
+    SONIDO_5(31250, "logo-ig", POP_VOLUMEN), // WhatsApp (las redes comparten la notificación)
+    SONIDO_5(32200, "logo-ig", POP_VOLUMEN), // Instagram
+    SONIDO_5(33270, "interfaz", POP_VOLUMEN), // tienda online: se conectan
+    SONIDO_5(34290, "pop", POP_VOLUMEN), // logo de Volto
+    ...LOGOS_TIENDA_5.map(([, ms], i) =>
+      SONIDO_5(ms, `dia-${i + 1}`, POP_VOLUMEN),
+    ), // escalera de tono
+    SONIDO_5(47750, "cuenta", ACIERTO_VOLUMEN), // el 80 % sube
+    SONIDO_5(65460, "logo-tn", POP_VOLUMEN), // Tienda Nube Partners
+    // gráficos de trazo (2026-10-14): un pop por dibujo
+    SONIDO_5(4890, "error", ERROR_VOLUMEN), // "estancado": suena a error, no a campanita
+    SONIDO_5(8580, "pop", POP_VOLUMEN), // embudo
+    // "no doy a basto": un pop por palabra
+    ...[22196, 22765, 23040].map((ms) => SONIDO_5(ms, "pop", POP_VOLUMEN)),
+    SONIDO_5(46040, "pop", POP_VOLUMEN), // respuesta del chat
+    SONIDO_5(66800, "dia-1", DIAS_POP_VOLUMEN), // barra 1
+    SONIDO_5(67050, "dia-2", DIAS_POP_VOLUMEN), // barra 2
+    SONIDO_5(67300, "dia-3", DIAS_POP_VOLUMEN), // barra 3
+    SONIDO_5(67550, "dia-4", DIAS_POP_VOLUMEN), // barra 4
+    SONIDO_5(67800, "dia-5", DIAS_POP_VOLUMEN), // barra 5
+    SONIDO_5(68050, "dia-6", DIAS_POP_VOLUMEN), // barra 6
+    SONIDO_5(68857, "acierto-1", ACIERTO_VOLUMEN), // "increíbles"
+  ],
+  // "Escribinos acá abajo": el rótulo "@volto.ai" de siempre, sin flecha y con el recuadro translúcido para que
+  // se distinga del de las otras piezas (pedido 2026-10-14)
+  rotulo: {
+    texto: "@volto.ai",
+    clip: "IMG_6977",
+    desdeMs: 110000,
+    hastaMs: 112790, // el fin de la toma (112,80) queda afuera del montaje
+    y: 300,
+    fondoOpacidad: 0.5,
+    sonido: `trabajos/${ID}/audio/interfaz.wav`, // Mixkit 2574 "Software interface start"
+  },
+  insertos: [
+    // "Estamos acá en Argentina Fashion Week": el logo del evento en el aire de arriba de la cabeza
+    {
+      tipo: "logo",
+      clip: "IMG_6977",
+      desdeMs: 12780,
+      hastaMs: 14040, // termina de decir "Fashion Week" en 14,01: el cartel se va ahí
+      x: 540,
+      y: 320,
+      seco: true,
+      sinTarjeta: true,
+      sinSombra: true,
+      src: `trabajos/${ID}/img/argentina-fashion-week.png`,
+      ancho: 760,
+    },
+    // "tenés tu WhatsApp reventado, tu Instagram reventado y tenés una tienda online": se conectan con líneas lisas
+    {
+      tipo: "conexion",
+      clip: "IMG_6977",
+      desdeMs: 31250,
+      hastaMs: 34200,
+      x: 0,
+      y: 0,
+      seco: true,
+      apps: [
+        {
+          icono: "whatsapp",
+          x: 230,
+          y: 440,
+          ms: 31250,
+          badge: { texto: "24", ms: 31700 }, // muchas notificaciones sin leer
+        },
+        {
+          icono: "instagram",
+          x: 850,
+          y: 440,
+          ms: 32200,
+          badge: { texto: "99+", ms: 32650 },
+        },
+      ],
+      centro: { icono: "tienda", x: 540, y: 310, ms: 33270 },
+    },
+    // "Volto es la solución para tu negocio"
+    {
+      tipo: "logo",
+      clip: "IMG_6977",
+      desdeMs: 34290,
+      hastaMs: 35950,
+      x: 540,
+      y: 280,
+      seco: true,
+      sinTarjeta: true, // el logo es blanco: sobre la tarjeta blanca no se veía
+      src: "marcas/volto/logo.png",
+      ancho: 520,
+    },
+    // "se conectan a Tienda Nube, a WooCommerce, a Shopify": uno por vez, salen juntos con el cambio de plano
+    ...LOGOS_TIENDA_5.map(([icono, ms, x]) => ({
+      tipo: "app" as const,
+      icono,
+      clip: "IMG_6977",
+      desdeMs: ms,
+      hastaMs: 44750,
+      x,
+      y: 300,
+      seco: true,
+    })),
+    // "Logramos liberar hasta el 80 %": él sale de cuadro (47,85–48,70) y la cifra crece y cuenta en el espacio
+    // vacío; todavía sin él en cuadro (48,28) sube suave hasta arriba y llega justo cuando vuelve (48,95), y queda
+    // como 80 % hasta el fin de "consultas" (pedido 2026-10-14: un solo gráfico continuo, no dos cortes). No hace
+    // falta recorte de persona: ya está arriba cuando él entra)
+    {
+      tipo: "cifraViaja",
+      valor: 80,
+      sufijo: "%",
+      etiqueta: "de las consultas",
+      tamano: 225,
+      tamanoFinal: 190,
+      yFinal: 360,
+      viajeMs: 48280, // empieza a subir; llega arriba en 48,88
+      clip: "IMG_6977",
+      desdeMs: 47750,
+      hastaMs: 50250,
+      x: 540,
+      y: 760,
+      seco: true,
+    },
+    // "Te preguntan por stock, por talle, por cantidad": píldoras de vidrio; salen en seco con el cambio de plano
+    {
+      tipo: "proLista",
+      clip: "IMG_6977",
+      desdeMs: 53900,
+      hastaMs: 57360, // el fin de la toma queda afuera del montaje
+      x: 84, // alineadas cerca del margen izquierdo, sin pegarse
+      y: 330,
+      seco: true,
+      items: PREGUNTAS_5.map(([texto, ms]) => ({ texto, ms })),
+    },
+    // "las marcas que más venden en Tienda Nube"
+    {
+      tipo: "logo",
+      clip: "IMG_6977",
+      desdeMs: 65460,
+      hastaMs: 66750,
+      x: 540,
+      y: 330,
+      seco: true,
+      src: `trabajos/${ID}/img/tiendanube-partners.png`,
+      ancho: 600,
+    },
+    // "estancado en tus ventas, que no podés crecer": tarjeta de panel flotante de vidrio, solo la cifra y la
+    // curva; la curva sube y se aplana en "estancado" mientras el porcentaje cae a casi cero (pedido 2026-10-14)
+    {
+      tipo: "proVentas",
+      clip: "IMG_6977",
+      desdeMs: 4415, // arranca cuando dice "sentís que…" (4,42)
+      hastaMs: 7250, // el zoom del segundo gancho (7,25) es un cambio de plano
+      x: 540,
+      y: 290,
+      seco: true,
+      subeMs: 4500,
+      estancadoMs: 4890,
+    },
+    // "consultas por tu web y no se transforman en ventas": tres barras que nacen del mismo lado, sin textos
+    {
+      tipo: "proEmbudo",
+      clip: "IMG_6977",
+      desdeMs: 8500,
+      hastaMs: 11400,
+      x: 540,
+      y: 245,
+      seco: true,
+      ms: [8580, 8800, 9020], // rápido: da tiempo a leerlo hasta 11,40
+    },
+    // "no doy a basto": una sola palabra a la vez sobre el sujeto, cada una en el momento en que se dice
+    // (pedido 2026-10-15: sin los globos de mensajes)
+    {
+      tipo: "proPalabraSola",
+      clip: "IMG_6977",
+      desdeMs: 22196,
+      hastaMs: 24000,
+      x: 540,
+      y: 260,
+      seco: true,
+      tamano: 160,
+      palabras: [
+        { texto: "no", ms: 22196 },
+        { texto: "doy", ms: 22765 },
+        { texto: "abasto", ms: 23040 },
+      ],
+    },
+    // "y responden como si fueran vendedores de tu empresa": pregunta, escribe y contesta
+    {
+      tipo: "proChat",
+      clip: "IMG_6977",
+      desdeMs: 44860,
+      hastaMs: 47399, // hasta el último cuadro de la toma: sin un cuadro vacío antes del corte
+      x: 540,
+      y: 330,
+      seco: true,
+      clienteMs: 44880,
+      escribeMs: 45460,
+      respuestaMs: 46040,
+    },
+    {
+      // "están teniendo resultados increíbles": la tarjeta de ventas del principio, ahora en alza
+      tipo: "proResultados",
+      clip: "IMG_6977",
+      desdeMs: 66760,
+      hastaMs: 69590,
+      x: 540,
+      y: 290,
+      seco: true,
+      subeMs: 67100, // la curva sube y llega arriba con "increíbles" (68,86)
+    },
+  ],
+  // "Digital Clouds" (Mixkit 175) entra suave en la última frase ("¿Necesitás Volto?") y sigue bajo la placa
+  musicaFinal: {
+    clip: "IMG_6977",
+    ms: 112700, // la música arranca justo con la placa: no pisa su voz
+    src: `trabajos/${ID}/audio/musica-final-entrevista.wav`,
+    bajoVozDb: -80,
+    placaDb: MUSICA_PLACA_DB,
+  },
+  subtitulos: {
+    estilo: "reel",
+    tamano: SUB_TAMANO,
+    seco: true,
+    // Amarillo (entre asteriscos): propuesta mínima, a confirmar por el cliente
+    grupos: [
+      "¿Sos dueño o dueña",
+      "de una marca de ropa",
+      "y sentís que estás",
+      "estancado en tus ventas,",
+      "que no podés crecer?",
+      "¿Tenés un montón",
+      "de consultas por tu web",
+      "y no se transforman",
+      "en ventas?",
+      "Estamos acá",
+      "en Argentina Fashion Week",
+      "y te vamos a decir",
+      "qué es lo que podés hacer",
+      "para incrementar eso.",
+      "*Vení, seguime.*",
+      "Lo que dueños y dueñas",
+      "de marcas nos dicen",
+      "todo el tiempo es:",
+      "no doy abasto",
+      "para responder WhatsApp.",
+      "Entonces, tenés",
+      "tu WhatsApp reventado,",
+      "tu Instagram reventado",
+      "y tenés una tienda online.",
+      "*Volto es la solución*",
+      "para tu negocio.",
+      "¿Qué es lo que",
+      "hacemos para eso?",
+      "Conectamos agentes",
+      "de inteligencia artificial",
+      "que se conectan",
+      "a tus sistemas,",
+      "se conectan a Tienda Nube,",
+      "se conectan a WooCommerce,",
+      "se conectan a Shopify",
+      "y responden como si fueran",
+      "vendedores de tu empresa.",
+      "Logramos liberar hasta el",
+      "-80% de las consultas", // lo muestra la cifra
+      "repetitivas",
+      "que tenés una y otra vez.",
+      "Te preguntan por stock,",
+      "te preguntan por talle,",
+      "te preguntan por cantidad.",
+      "Hoy el agente~de~IA", // ⚠️ confirmar: ¿"el agente de IA" o "la IA"?
+      "ya puede resolver eso.",
+      "Literalmente,",
+      "en Volto lo estamos haciendo",
+      "para las marcas",
+      "que más venden",
+      "en Tienda Nube",
+      "a nivel país",
+      "y están teniendo",
+      "*resultados*",
+      "*increíbles.*",
+      "¿Necesitás Volto?",
+      "¿Estás en esa situación?",
+      "Escribinos acá abajo",
+      "y contanos,",
+      "te podemos ayudar.",
+    ],
+  },
+  // placa por corte, solo el logo animado, con la música (sin el ambiente del desfile)
+  cierre: {
+    frase: "",
+    sitio: "@volto.ai",
+    duracion: CIERRE,
+    estilo: "claro",
+    corte: true,
+  },
 };
 
 // Pieza 6: entrevista de radio (guion_entrevista-radio.md; preview aprobada, correcciones del 2026-10-08).
@@ -1104,6 +1441,13 @@ export const composiciones: ComposicionTrabajo[] = [
     durationInFrames: duracionHablaSubtitulada(tiendaNube),
     defaultProps: tiendaNube,
     salida: "tienda-nube_9x16",
+  },
+  {
+    id: "volto-fashion-week-veni-seguime",
+    component: EntrevistaRadio,
+    durationInFrames: duracionHablaSubtitulada(veniSeguimeBorrador),
+    defaultProps: veniSeguimeBorrador,
+    salida: "veni-seguime_9x16",
   },
   {
     id: "volto-fashion-week-entrevista-radio",

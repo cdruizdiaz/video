@@ -1,0 +1,404 @@
+{
+  "_nota": "Plan de montaje. ini/fin en segundos del VIDEO de cada alumno (plano original, sin zoom). 'texto' son los subtítulos (\\n = segunda línea); armar_subs.py calcula 'subs' repartiendo las frases sobre las pausas reales de la voz (datos/segmentos.json). Los cortes caen en pausas medidas con voz_segmentos.py / envolvente.py.",
+  "tomas": [
+    {
+      "clip": "aglieri-olivia",
+      "ini": 1.4,
+      "fin": 9.7,
+      "texto": [
+        "Hola mami,",
+        "¿Cómo estás?",
+        "Estoy acá en inglés",
+        "y solamente te quería decir que",
+        "gracias por siempre estar ahí para mí",
+        "y por apoyarme."
+      ],
+      "subs": [
+        [
+          "Hola mami,",
+          1.77,
+          2.76
+        ],
+        [
+          "¿Cómo estás?",
+          2.76,
+          3.47
+        ],
+        [
+          "Estoy acá en inglés",
+          3.47,
+          4.71
+        ],
+        [
+          "y solamente te quería decir que",
+          4.71,
+          7.07
+        ],
+        [
+          "gracias por siempre estar ahí para mí",
+          7.07,
+          8.74
+        ],
+        [
+          "y por apoyarme.",
+          8.74,
+          9.69
+        ]
+      ]
+    },
+    {
+      "clip": "meresman-mateo",
+      "ini": 4.06,
+      "fin": 13.1,
+      "texto": [
+        "Te quiero agradecer por todo,",
+        "por todo el esfuerzo que vos me diste,",
+        "por el amor que vos me diste",
+        "con todo este tiempo",
+        "y te quiero agradecer con todo,",
+        "te amo mucho."
+      ],
+      "subs": [
+        [
+          "Te quiero agradecer por todo,",
+          4.08,
+          6.16
+        ],
+        [
+          "por todo el esfuerzo que vos me diste,",
+          6.16,
+          7.71
+        ],
+        [
+          "por el amor que vos me diste",
+          7.71,
+          9.18
+        ],
+        [
+          "con todo este tiempo",
+          9.18,
+          9.98
+        ],
+        [
+          "y te quiero agradecer con todo,",
+          9.98,
+          12.1
+        ],
+        [
+          "te amo mucho.",
+          12.1,
+          13.1
+        ]
+      ]
+    },
+    {
+      "clip": "perello-clara",
+      "ini": 0.54,
+      "fin": 4.78,
+      "texto": [
+        "Te agradezco por quererme mucho",
+        "y hacerme comida rica."
+      ],
+      "subs": [
+        [
+          "Te agradezco por quererme mucho",
+          0.58,
+          3.33
+        ],
+        [
+          "y hacerme comida rica.",
+          3.33,
+          4.78
+        ]
+      ]
+    },
+    {
+      "clip": "benuzzi-dante",
+      "ini": 3.06,
+      "fin": 7.5,
+      "texto": [
+        "Gracias por llevarme",
+        "y traerme todos los días."
+      ],
+      "subs": [
+        [
+          "Gracias por llevarme",
+          3.06,
+          5.02
+        ],
+        [
+          "y traerme todos los días.",
+          5.02,
+          6.8
+        ]
+      ]
+    },
+    {
+      "clip": "sartore-naiara",
+      "ini": 3.55,
+      "fin": 6.15,
+      "texto": [
+        "Te quería agradecer",
+        "por ser la mejor mamá de todas."
+      ],
+      "subs": [
+        [
+          "Te quería agradecer",
+          3.55,
+          4.58
+        ],
+        [
+          "por ser la mejor mamá de todas.",
+          4.58,
+          6.15
+        ]
+      ]
+    },
+    {
+      "clip": "macagno-sofia",
+      "ini": 3.55,
+      "fin": 9.15,
+      "texto": [
+        "Por estar conmigo",
+        "y por cocinarme",
+        "por lo que siempre me gusta."
+      ],
+      "subs": [
+        [
+          "Por estar conmigo",
+          3.55,
+          4.64
+        ],
+        [
+          "y por cocinarme",
+          4.64,
+          6.66
+        ],
+        [
+          "por lo que siempre me gusta.",
+          6.66,
+          8.56
+        ]
+      ]
+    },
+    {
+      "clip": "di-gerolamo-pilar",
+      "ini": 9.98,
+      "fin": 15.35,
+      "texto": [
+        "Gracias por siempre acompañarme",
+        "y ayudarme en todos los momentos",
+        "y por siempre estar conmigo."
+      ],
+      "subs": [
+        [
+          "Gracias por siempre acompañarme",
+          9.98,
+          12.28
+        ],
+        [
+          "y ayudarme en todos los momentos",
+          12.28,
+          13.91
+        ],
+        [
+          "y por siempre estar conmigo.",
+          13.91,
+          15.35
+        ]
+      ]
+    },
+    {
+      "clip": "mastropaolo-ricardo",
+      "ini": 3.43,
+      "fin": 8.95,
+      "texto": [
+        "Te quería llamar para decirte",
+        "que muchísimas gracias",
+        "por siempre acompañarme",
+        "y que nada, sos la mejor mamá del mundo."
+      ],
+      "subs": [
+        [
+          "Te quería llamar para decirte",
+          3.43,
+          4.86
+        ],
+        [
+          "que muchísimas gracias",
+          4.86,
+          5.85
+        ],
+        [
+          "por siempre acompañarme",
+          5.85,
+          7.0
+        ],
+        [
+          "y que nada, sos la mejor mamá del mundo.",
+          7.0,
+          8.95
+        ]
+      ]
+    },
+    {
+      "clip": "alvarez-lola",
+      "ini": 3.8,
+      "fin": 6.72,
+      "texto": [
+        "Te quería agradecer",
+        "por siempre estar para mí."
+      ],
+      "subs": [
+        [
+          "Te quería agradecer",
+          3.87,
+          5.51
+        ],
+        [
+          "por siempre estar para mí.",
+          5.51,
+          6.72
+        ]
+      ]
+    },
+    {
+      "clip": "bautista-rosario",
+      "ini": 2.2,
+      "fin": 6.2,
+      "texto": [
+        "Estoy en el insti.",
+        "Te quería agradecer",
+        "por acompañarme."
+      ],
+      "subs": [
+        [
+          "Estoy en el insti.",
+          2.2,
+          3.08
+        ],
+        [
+          "Te quería agradecer",
+          3.08,
+          4.47
+        ],
+        [
+          "por acompañarme.",
+          4.47,
+          5.39
+        ]
+      ]
+    },
+    {
+      "clip": "azanza-amparo",
+      "ini": 7.4,
+      "fin": 10.45,
+      "texto": [
+        "Gracias por",
+        "quererme mucho."
+      ],
+      "subs": [
+        [
+          "Gracias por",
+          7.4,
+          8.23
+        ],
+        [
+          "quererme mucho.",
+          8.23,
+          10.45
+        ]
+      ]
+    },
+    {
+      "clip": "rodrigo-antonia",
+      "ini": 5.55,
+      "fin": 7.7,
+      "texto": [
+        "Gracias por cuidarme,"
+      ],
+      "subs": [
+        [
+          "Gracias por cuidarme,",
+          5.6,
+          7.7
+        ]
+      ]
+    },
+    {
+      "clip": "mellis-silvero",
+      "ini": 12.43,
+      "fin": 16.9,
+      "texto": [
+        "Te quería decir gracias",
+        "por cuidarme.",
+        "Te adoro.",
+        "Te amamos."
+      ],
+      "subs": [
+        [
+          "Te quería decir gracias",
+          12.48,
+          13.66
+        ],
+        [
+          "por cuidarme.",
+          13.66,
+          14.66
+        ],
+        [
+          "Te adoro.",
+          14.66,
+          15.52
+        ],
+        [
+          "Te amamos.",
+          15.98,
+          16.9
+        ]
+      ]
+    },
+    {
+      "clip": "ciorciari-santiago",
+      "ini": 6.07,
+      "fin": 10.4,
+      "texto": [
+        "Por todo lo que me diste siempre",
+        "y me vas a seguir dando."
+      ],
+      "subs": [
+        [
+          "Por todo lo que me diste siempre",
+          6.07,
+          8.65
+        ],
+        [
+          "y me vas a seguir dando.",
+          8.65,
+          10.4
+        ]
+      ]
+    },
+    {
+      "clip": "gauna-alfonsina",
+      "ini": 15.22,
+      "fin": 19.1,
+      "texto": [
+        "Gracias por darme la vida",
+        "y compartirla junto a mí."
+      ],
+      "subs": [
+        [
+          "Gracias por darme la vida",
+          15.27,
+          17.34
+        ],
+        [
+          "y compartirla junto a mí.",
+          17.34,
+          19.09
+        ]
+      ]
+    }
+  ]
+}

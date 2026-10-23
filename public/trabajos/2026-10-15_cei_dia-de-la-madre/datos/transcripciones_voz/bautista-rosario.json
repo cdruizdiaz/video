@@ -1,0 +1,113 @@
+{
+  "archivo": "bautista-rosario.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5973,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5980,
+      "texto": "Hola mam, estoy feliz, te quería agradecer por acompañarme."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 0,
+      "toMs": 420,
+      "dtwMs": 840,
+      "p": 0.629053
+    },
+    {
+      "text": " mam",
+      "fromMs": 430,
+      "toMs": 730,
+      "dtwMs": 1060,
+      "p": 0.749518
+    },
+    {
+      "text": ",",
+      "fromMs": 730,
+      "toMs": 940,
+      "dtwMs": 1260,
+      "p": 0.776906
+    },
+    {
+      "text": " estoy",
+      "fromMs": 940,
+      "toMs": 1330,
+      "dtwMs": 1540,
+      "p": 0.639566
+    },
+    {
+      "text": " feliz",
+      "fromMs": 1460,
+      "toMs": 1860,
+      "dtwMs": 1840,
+      "p": 0.430232
+    },
+    {
+      "text": ",",
+      "fromMs": 2020,
+      "toMs": 2240,
+      "dtwMs": 2120,
+      "p": 0.438551
+    },
+    {
+      "text": " te",
+      "fromMs": 2250,
+      "toMs": 2480,
+      "dtwMs": 2280,
+      "p": 0.96969
+    },
+    {
+      "text": " quería",
+      "fromMs": 2480,
+      "toMs": 3200,
+      "dtwMs": 2520,
+      "p": 0.645745
+    },
+    {
+      "text": " agrade",
+      "fromMs": 3200,
+      "toMs": 3740,
+      "dtwMs": 2740,
+      "p": 0.995076
+    },
+    {
+      "text": "cer",
+      "fromMs": 3850,
+      "toMs": 4270,
+      "dtwMs": 2960,
+      "p": 0.996808
+    },
+    {
+      "text": " por",
+      "fromMs": 4330,
+      "toMs": 4640,
+      "dtwMs": 3120,
+      "p": 0.980625
+    },
+    {
+      "text": " acompañ",
+      "fromMs": 4640,
+      "toMs": 5100,
+      "dtwMs": 3560,
+      "p": 0.99072
+    },
+    {
+      "text": "arme",
+      "fromMs": 5520,
+      "toMs": 5970,
+      "dtwMs": 3780,
+      "p": 0.884663
+    },
+    {
+      "text": ".",
+      "fromMs": 5970,
+      "toMs": 5970,
+      "dtwMs": 4360,
+      "p": 0.619675
+    }
+  ]
+}

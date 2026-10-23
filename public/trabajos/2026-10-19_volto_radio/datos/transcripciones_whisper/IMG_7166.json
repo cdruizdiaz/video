@@ -1,0 +1,152 @@
+{
+  "archivo": "IMG_7166.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 4802,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        871,
+        4802
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 871,
+      "hastaMs": 4791,
+      "texto": "Cuento la gente que puede estar tranquilamente desde short y de última con un bus."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Cu",
+      "fromMs": 871,
+      "toMs": 921,
+      "dtwMs": 1011,
+      "p": 0.191169
+    },
+    {
+      "text": "ento",
+      "fromMs": 971,
+      "toMs": 1111,
+      "dtwMs": 1111,
+      "p": 0.829326
+    },
+    {
+      "text": " la",
+      "fromMs": 1111,
+      "toMs": 1191,
+      "dtwMs": 1231,
+      "p": 0.627734
+    },
+    {
+      "text": " gente",
+      "fromMs": 1191,
+      "toMs": 1391,
+      "dtwMs": 1411,
+      "p": 0.940943
+    },
+    {
+      "text": " que",
+      "fromMs": 1391,
+      "toMs": 1511,
+      "dtwMs": 1551,
+      "p": 0.779105
+    },
+    {
+      "text": " puede",
+      "fromMs": 1511,
+      "toMs": 1711,
+      "dtwMs": 1731,
+      "p": 0.90536
+    },
+    {
+      "text": " estar",
+      "fromMs": 1711,
+      "toMs": 1911,
+      "dtwMs": 1931,
+      "p": 0.980181
+    },
+    {
+      "text": " tranquil",
+      "fromMs": 1911,
+      "toMs": 2241,
+      "dtwMs": 2151,
+      "p": 0.864855
+    },
+    {
+      "text": "amente",
+      "fromMs": 2241,
+      "toMs": 2531,
+      "dtwMs": 2491,
+      "p": 0.995494
+    },
+    {
+      "text": " desde",
+      "fromMs": 2531,
+      "toMs": 2821,
+      "dtwMs": 2691,
+      "p": 0.622787
+    },
+    {
+      "text": " short",
+      "fromMs": 2821,
+      "toMs": 3111,
+      "dtwMs": 3051,
+      "p": 0.575749
+    },
+    {
+      "text": " y",
+      "fromMs": 3111,
+      "toMs": 3181,
+      "dtwMs": 3711,
+      "p": 0.684299
+    },
+    {
+      "text": " de",
+      "fromMs": 3181,
+      "toMs": 3301,
+      "dtwMs": 3831,
+      "p": 0.906051
+    },
+    {
+      "text": " última",
+      "fromMs": 3401,
+      "toMs": 3851,
+      "dtwMs": 4111,
+      "p": 0.757274
+    },
+    {
+      "text": " con",
+      "fromMs": 3851,
+      "toMs": 4101,
+      "dtwMs": 4371,
+      "p": 0.830936
+    },
+    {
+      "text": " un",
+      "fromMs": 4101,
+      "toMs": 4251,
+      "dtwMs": 4511,
+      "p": 0.768562
+    },
+    {
+      "text": " bus",
+      "fromMs": 4261,
+      "toMs": 4511,
+      "dtwMs": 4771,
+      "p": 0.428383
+    },
+    {
+      "text": ".",
+      "fromMs": 4511,
+      "toMs": 4781,
+      "dtwMs": 4771,
+      "p": 0.736388
+    }
+  ]
+}

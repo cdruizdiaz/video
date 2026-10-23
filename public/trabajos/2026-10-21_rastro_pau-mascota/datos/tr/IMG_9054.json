@@ -1,0 +1,170 @@
+{
+  "archivo": "IMG_9054.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6970,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        864
+      ],
+      [
+        1218,
+        6126
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5934,
+      "texto": "Este es Bloomy, del inglés Bloom y del castellano amo hacer mascotas para marcas"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Este",
+      "fromMs": 0,
+      "toMs": 820,
+      "dtwMs": 1694,
+      "p": 0.172949
+    },
+    {
+      "text": " es",
+      "fromMs": 820,
+      "toMs": 1284,
+      "dtwMs": 2174,
+      "p": 0.936307
+    },
+    {
+      "text": " Blo",
+      "fromMs": 1464,
+      "toMs": 1824,
+      "dtwMs": 2334,
+      "p": 0.379692
+    },
+    {
+      "text": "omy",
+      "fromMs": 2064,
+      "toMs": 2504,
+      "dtwMs": 2494,
+      "p": 0.915163
+    },
+    {
+      "text": ",",
+      "fromMs": 2504,
+      "toMs": 2644,
+      "dtwMs": 2774,
+      "p": 0.480873
+    },
+    {
+      "text": " del",
+      "fromMs": 2644,
+      "toMs": 2854,
+      "dtwMs": 3014,
+      "p": 0.975334
+    },
+    {
+      "text": " inglés",
+      "fromMs": 2914,
+      "toMs": 3294,
+      "dtwMs": 3294,
+      "p": 0.976232
+    },
+    {
+      "text": " Bloom",
+      "fromMs": 3404,
+      "toMs": 3674,
+      "dtwMs": 3654,
+      "p": 0.557379
+    },
+    {
+      "text": " y",
+      "fromMs": 3674,
+      "toMs": 3684,
+      "dtwMs": 3794,
+      "p": 0.896341
+    },
+    {
+      "text": " del",
+      "fromMs": 3764,
+      "toMs": 3874,
+      "dtwMs": 3894,
+      "p": 0.978763
+    },
+    {
+      "text": " cast",
+      "fromMs": 3874,
+      "toMs": 3994,
+      "dtwMs": 4074,
+      "p": 0.996694
+    },
+    {
+      "text": "ell",
+      "fromMs": 4074,
+      "toMs": 4224,
+      "dtwMs": 4214,
+      "p": 0.99962
+    },
+    {
+      "text": "ano",
+      "fromMs": 4224,
+      "toMs": 4384,
+      "dtwMs": 4374,
+      "p": 0.999819
+    },
+    {
+      "text": " amo",
+      "fromMs": 4534,
+      "toMs": 4564,
+      "dtwMs": 4754,
+      "p": 0.60571
+    },
+    {
+      "text": " hacer",
+      "fromMs": 4564,
+      "toMs": 4824,
+      "dtwMs": 5054,
+      "p": 0.98454
+    },
+    {
+      "text": " mascot",
+      "fromMs": 4884,
+      "toMs": 5174,
+      "dtwMs": 5274,
+      "p": 0.781122
+    },
+    {
+      "text": "as",
+      "fromMs": 5234,
+      "toMs": 5304,
+      "dtwMs": 5414,
+      "p": 0.998458
+    },
+    {
+      "text": " para",
+      "fromMs": 5344,
+      "toMs": 5544,
+      "dtwMs": 5554,
+      "p": 0.99014
+    },
+    {
+      "text": " mar",
+      "fromMs": 5544,
+      "toMs": 5714,
+      "dtwMs": 5754,
+      "p": 0.889812
+    },
+    {
+      "text": "cas",
+      "fromMs": 5714,
+      "toMs": 5904,
+      "dtwMs": 5914,
+      "p": 0.997527
+    }
+  ]
+}

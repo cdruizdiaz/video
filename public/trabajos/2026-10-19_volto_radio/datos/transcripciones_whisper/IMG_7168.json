@@ -1,0 +1,155 @@
+{
+  "archivo": "IMG_7168.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3432,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3440,
+      "texto": "- ¿Cómo estás, Nacho? La verdad que es un gustazo que estés acá."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " -",
+      "fromMs": 0,
+      "toMs": 40,
+      "dtwMs": 0,
+      "p": 0.124942
+    },
+    {
+      "text": " ¿",
+      "fromMs": 40,
+      "toMs": 80,
+      "dtwMs": 0,
+      "p": 0.184278
+    },
+    {
+      "text": "Cómo",
+      "fromMs": 80,
+      "toMs": 140,
+      "dtwMs": 0,
+      "p": 0.546779
+    },
+    {
+      "text": " estás",
+      "fromMs": 290,
+      "toMs": 500,
+      "dtwMs": 100,
+      "p": 0.925046
+    },
+    {
+      "text": ",",
+      "fromMs": 500,
+      "toMs": 590,
+      "dtwMs": 260,
+      "p": 0.556849
+    },
+    {
+      "text": " Nach",
+      "fromMs": 590,
+      "toMs": 710,
+      "dtwMs": 580,
+      "p": 0.754327
+    },
+    {
+      "text": "o",
+      "fromMs": 780,
+      "toMs": 790,
+      "dtwMs": 620,
+      "p": 0.999409
+    },
+    {
+      "text": "?",
+      "fromMs": 810,
+      "toMs": 990,
+      "dtwMs": 860,
+      "p": 0.996001
+    },
+    {
+      "text": " La",
+      "fromMs": 1110,
+      "toMs": 1140,
+      "dtwMs": 1180,
+      "p": 0.44669
+    },
+    {
+      "text": " verdad",
+      "fromMs": 1140,
+      "toMs": 1580,
+      "dtwMs": 1300,
+      "p": 0.997592
+    },
+    {
+      "text": " que",
+      "fromMs": 1580,
+      "toMs": 1780,
+      "dtwMs": 1400,
+      "p": 0.703568
+    },
+    {
+      "text": " es",
+      "fromMs": 1780,
+      "toMs": 1930,
+      "dtwMs": 1520,
+      "p": 0.602038
+    },
+    {
+      "text": " un",
+      "fromMs": 1940,
+      "toMs": 2080,
+      "dtwMs": 2160,
+      "p": 0.986986
+    },
+    {
+      "text": " gust",
+      "fromMs": 2160,
+      "toMs": 2360,
+      "dtwMs": 2400,
+      "p": 0.935789
+    },
+    {
+      "text": "azo",
+      "fromMs": 2400,
+      "toMs": 2580,
+      "dtwMs": 2560,
+      "p": 0.99767
+    },
+    {
+      "text": " que",
+      "fromMs": 2580,
+      "toMs": 2810,
+      "dtwMs": 2720,
+      "p": 0.942327
+    },
+    {
+      "text": " est",
+      "fromMs": 2810,
+      "toMs": 3030,
+      "dtwMs": 2760,
+      "p": 0.986011
+    },
+    {
+      "text": "és",
+      "fromMs": 3030,
+      "toMs": 3150,
+      "dtwMs": 2800,
+      "p": 0.998673
+    },
+    {
+      "text": " acá",
+      "fromMs": 3150,
+      "toMs": 3430,
+      "dtwMs": 3000,
+      "p": 0.989727
+    },
+    {
+      "text": ".",
+      "fromMs": 3430,
+      "toMs": 3430,
+      "dtwMs": 3220,
+      "p": 0.704854
+    }
+  ]
+}

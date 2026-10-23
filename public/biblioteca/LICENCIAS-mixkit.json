@@ -452,6 +452,66 @@
     "descargado": "2026-10-08"
   },
   {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-1081-we-ll-be-okay.mp3",
+    "id": "1081",
+    "tipo": "musica",
+    "titulo": "We'll Be Okay",
+    "autor": "Michael Ramir C.",
+    "duracionSeg": 104,
+    "sha256": "a07e945508eb65714fc0673a18af43f09b602fa726493dfafc6a726e63d6055d",
+    "fuente": "https://assets.mixkit.co/music/1081/1081.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-15"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-1037-my-little-star.mp3",
+    "id": "1037",
+    "tipo": "musica",
+    "titulo": "My Little Star",
+    "autor": "Michael Ramir C.",
+    "duracionSeg": 136,
+    "sha256": "8efc36df9024678d3f44769e8f5a40035c88b8bad28d94a598a7f296da3c2a76",
+    "fuente": "https://assets.mixkit.co/music/1037/1037.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-15"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-1142-gummies.mp3",
+    "id": "1142",
+    "tipo": "musica",
+    "titulo": "Gummies",
+    "autor": "Michael Ramir C.",
+    "duracionSeg": 99.6,
+    "sha256": "28a4219e2b0c7308b4fcd910d3bb2c00b4f0a9535308ca5cdf68d262dc5f8d77",
+    "fuente": "https://assets.mixkit.co/music/1142/1142.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-21"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-738-hip-hop-02.mp3",
+    "id": "738",
+    "tipo": "musica",
+    "titulo": "Hip Hop 02",
+    "autor": "Lily J",
+    "duracionSeg": 115,
+    "sha256": "4b7bc45aedd38bf43e67d550177aeaafa367ec32a3a6498f8ffd9ec5132e268e",
+    "fuente": "https://assets.mixkit.co/music/738/738.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-21"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-134-deep-techno-ambience.mp3",
+    "id": "134",
+    "tipo": "musica",
+    "titulo": "Deep Techno Ambience",
+    "autor": "Alejandro Magaña (A. M.)",
+    "duracionSeg": 122.5,
+    "sha256": "b873f8373c4d1cf134f358105ff5914e601d60dd518a7a5c0ad04398f47c0fad",
+    "fuente": "https://assets.mixkit.co/music/134/134.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-23"
+  },
+  {
     "archivo": "public/biblioteca/sfx/mixkit/mixkit-2579-light-switch-sound.wav",
     "id": "2579",
     "tipo": "sfx",

@@ -1,0 +1,225 @@
+{
+  "archivo": "di-gerolamo-pilar.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 11349,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 8440,
+      "texto": "Hola, ma, estoy en el Insti y gracias por siempre acompañarme y ayudarme en todos los momentos y por siempre estar conmigo."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 120,
+      "toMs": 1000,
+      "dtwMs": 1580,
+      "p": 0.434975
+    },
+    {
+      "text": ",",
+      "fromMs": 1360,
+      "toMs": 1490,
+      "dtwMs": 1780,
+      "p": 0.381207
+    },
+    {
+      "text": " ma",
+      "fromMs": 1490,
+      "toMs": 1990,
+      "dtwMs": 1820,
+      "p": 0.413953
+    },
+    {
+      "text": ",",
+      "fromMs": 1990,
+      "toMs": 2140,
+      "dtwMs": 2120,
+      "p": 0.4218
+    },
+    {
+      "text": " estoy",
+      "fromMs": 2140,
+      "toMs": 2510,
+      "dtwMs": 2360,
+      "p": 0.960841
+    },
+    {
+      "text": " en",
+      "fromMs": 2510,
+      "toMs": 2650,
+      "dtwMs": 2580,
+      "p": 0.974813
+    },
+    {
+      "text": " el",
+      "fromMs": 2650,
+      "toMs": 2810,
+      "dtwMs": 2680,
+      "p": 0.932451
+    },
+    {
+      "text": " Inst",
+      "fromMs": 2810,
+      "toMs": 3110,
+      "dtwMs": 3040,
+      "p": 0.245187
+    },
+    {
+      "text": "i",
+      "fromMs": 3110,
+      "toMs": 3200,
+      "dtwMs": 3140,
+      "p": 0.640305
+    },
+    {
+      "text": " y",
+      "fromMs": 3200,
+      "toMs": 3210,
+      "dtwMs": 3380,
+      "p": 0.375968
+    },
+    {
+      "text": " gracias",
+      "fromMs": 3290,
+      "toMs": 3670,
+      "dtwMs": 3560,
+      "p": 0.946547
+    },
+    {
+      "text": " por",
+      "fromMs": 3680,
+      "toMs": 3840,
+      "dtwMs": 3820,
+      "p": 0.977147
+    },
+    {
+      "text": " siempre",
+      "fromMs": 3840,
+      "toMs": 4160,
+      "dtwMs": 4080,
+      "p": 0.900697
+    },
+    {
+      "text": " acompañ",
+      "fromMs": 4160,
+      "toMs": 4690,
+      "dtwMs": 4600,
+      "p": 0.870622
+    },
+    {
+      "text": "arme",
+      "fromMs": 4690,
+      "toMs": 5000,
+      "dtwMs": 5080,
+      "p": 0.994376
+    },
+    {
+      "text": " y",
+      "fromMs": 5000,
+      "toMs": 5560,
+      "dtwMs": 5600,
+      "p": 0.546649
+    },
+    {
+      "text": " ayud",
+      "fromMs": 5560,
+      "toMs": 5860,
+      "dtwMs": 5920,
+      "p": 0.97707
+    },
+    {
+      "text": "arme",
+      "fromMs": 5860,
+      "toMs": 6160,
+      "dtwMs": 6160,
+      "p": 0.998357
+    },
+    {
+      "text": " en",
+      "fromMs": 6160,
+      "toMs": 6360,
+      "dtwMs": 6380,
+      "p": 0.919101
+    },
+    {
+      "text": " todos",
+      "fromMs": 6360,
+      "toMs": 6600,
+      "dtwMs": 6520,
+      "p": 0.939842
+    },
+    {
+      "text": " los",
+      "fromMs": 6600,
+      "toMs": 6720,
+      "dtwMs": 6680,
+      "p": 0.940757
+    },
+    {
+      "text": " momentos",
+      "fromMs": 6720,
+      "toMs": 7240,
+      "dtwMs": 7180,
+      "p": 0.944178
+    },
+    {
+      "text": " y",
+      "fromMs": 7240,
+      "toMs": 7400,
+      "dtwMs": 7400,
+      "p": 0.760679
+    },
+    {
+      "text": " por",
+      "fromMs": 7400,
+      "toMs": 7590,
+      "dtwMs": 7560,
+      "p": 0.975642
+    },
+    {
+      "text": " siempre",
+      "fromMs": 7610,
+      "toMs": 7860,
+      "dtwMs": 7800,
+      "p": 0.975212
+    },
+    {
+      "text": " estar",
+      "fromMs": 7860,
+      "toMs": 8040,
+      "dtwMs": 7980,
+      "p": 0.986976
+    },
+    {
+      "text": " con",
+      "fromMs": 8070,
+      "toMs": 8160,
+      "dtwMs": 8200,
+      "p": 0.995663
+    },
+    {
+      "text": "m",
+      "fromMs": 8160,
+      "toMs": 8190,
+      "dtwMs": 8300,
+      "p": 0.998673
+    },
+    {
+      "text": "igo",
+      "fromMs": 8190,
+      "toMs": 8300,
+      "dtwMs": 8420,
+      "p": 0.999558
+    },
+    {
+      "text": ".",
+      "fromMs": 8300,
+      "toMs": 8440,
+      "dtwMs": 8420,
+      "p": 0.733803
+    }
+  ]
+}

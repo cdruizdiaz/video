@@ -1,0 +1,307 @@
+{
+  "archivo": "IMG_9093.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 10103,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4060,
+      "texto": "porque bueno, en este mes del Día de la Madre me puse melancólica"
+    },
+    {
+      "desdeMs": 4060,
+      "hastaMs": 8500,
+      "texto": "y este audiolibro habla del acto de amor más grande que hay que es dar tiempo."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " porque",
+      "fromMs": 0,
+      "toMs": 550,
+      "dtwMs": 1360,
+      "p": 0.28271
+    },
+    {
+      "text": " bueno",
+      "fromMs": 550,
+      "toMs": 1010,
+      "dtwMs": 1600,
+      "p": 0.692571
+    },
+    {
+      "text": ",",
+      "fromMs": 1050,
+      "toMs": 1190,
+      "dtwMs": 1700,
+      "p": 0.701118
+    },
+    {
+      "text": " en",
+      "fromMs": 1240,
+      "toMs": 1370,
+      "dtwMs": 1720,
+      "p": 0.986335
+    },
+    {
+      "text": " este",
+      "fromMs": 1370,
+      "toMs": 1740,
+      "dtwMs": 1860,
+      "p": 0.997988
+    },
+    {
+      "text": " mes",
+      "fromMs": 1740,
+      "toMs": 2040,
+      "dtwMs": 2040,
+      "p": 0.98856
+    },
+    {
+      "text": " del",
+      "fromMs": 2040,
+      "toMs": 2200,
+      "dtwMs": 2180,
+      "p": 0.907921
+    },
+    {
+      "text": " D",
+      "fromMs": 2200,
+      "toMs": 2250,
+      "dtwMs": 2300,
+      "p": 0.713077
+    },
+    {
+      "text": "ía",
+      "fromMs": 2250,
+      "toMs": 2360,
+      "dtwMs": 2300,
+      "p": 0.998793
+    },
+    {
+      "text": " de",
+      "fromMs": 2360,
+      "toMs": 2460,
+      "dtwMs": 2440,
+      "p": 0.994962
+    },
+    {
+      "text": " la",
+      "fromMs": 2470,
+      "toMs": 2570,
+      "dtwMs": 2560,
+      "p": 0.994619
+    },
+    {
+      "text": " Mad",
+      "fromMs": 2570,
+      "toMs": 2740,
+      "dtwMs": 2760,
+      "p": 0.987138
+    },
+    {
+      "text": "re",
+      "fromMs": 2740,
+      "toMs": 2880,
+      "dtwMs": 2860,
+      "p": 0.999813
+    },
+    {
+      "text": " me",
+      "fromMs": 2880,
+      "toMs": 3000,
+      "dtwMs": 3000,
+      "p": 0.84789
+    },
+    {
+      "text": " p",
+      "fromMs": 3000,
+      "toMs": 3050,
+      "dtwMs": 3120,
+      "p": 0.999449
+    },
+    {
+      "text": "use",
+      "fromMs": 3080,
+      "toMs": 3270,
+      "dtwMs": 3220,
+      "p": 0.999582
+    },
+    {
+      "text": " mel",
+      "fromMs": 3270,
+      "toMs": 3470,
+      "dtwMs": 3480,
+      "p": 0.980187
+    },
+    {
+      "text": "anc",
+      "fromMs": 3470,
+      "toMs": 3630,
+      "dtwMs": 3700,
+      "p": 0.999825
+    },
+    {
+      "text": "ó",
+      "fromMs": 3690,
+      "toMs": 3730,
+      "dtwMs": 3780,
+      "p": 0.999354
+    },
+    {
+      "text": "lica",
+      "fromMs": 3730,
+      "toMs": 4060,
+      "dtwMs": 4040,
+      "p": 0.999632
+    },
+    {
+      "text": " y",
+      "fromMs": 4060,
+      "toMs": 4130,
+      "dtwMs": 4600,
+      "p": 0.999638
+    },
+    {
+      "text": " este",
+      "fromMs": 4130,
+      "toMs": 4420,
+      "dtwMs": 5220,
+      "p": 0.999504
+    },
+    {
+      "text": " audi",
+      "fromMs": 4420,
+      "toMs": 4710,
+      "dtwMs": 5360,
+      "p": 0.977722
+    },
+    {
+      "text": "ol",
+      "fromMs": 4710,
+      "toMs": 4850,
+      "dtwMs": 5500,
+      "p": 0.9995
+    },
+    {
+      "text": "ib",
+      "fromMs": 4850,
+      "toMs": 4980,
+      "dtwMs": 5560,
+      "p": 0.999325
+    },
+    {
+      "text": "ro",
+      "fromMs": 4990,
+      "toMs": 5130,
+      "dtwMs": 5640,
+      "p": 0.999668
+    },
+    {
+      "text": " habla",
+      "fromMs": 5300,
+      "toMs": 5500,
+      "dtwMs": 5920,
+      "p": 0.999302
+    },
+    {
+      "text": " del",
+      "fromMs": 5500,
+      "toMs": 5720,
+      "dtwMs": 6220,
+      "p": 0.767306
+    },
+    {
+      "text": " act",
+      "fromMs": 5720,
+      "toMs": 5940,
+      "dtwMs": 6700,
+      "p": 0.997088
+    },
+    {
+      "text": "o",
+      "fromMs": 5940,
+      "toMs": 6010,
+      "dtwMs": 6760,
+      "p": 0.999928
+    },
+    {
+      "text": " de",
+      "fromMs": 6010,
+      "toMs": 6150,
+      "dtwMs": 6840,
+      "p": 0.999255
+    },
+    {
+      "text": " amor",
+      "fromMs": 6150,
+      "toMs": 6440,
+      "dtwMs": 7000,
+      "p": 0.999758
+    },
+    {
+      "text": " más",
+      "fromMs": 6440,
+      "toMs": 6660,
+      "dtwMs": 7140,
+      "p": 0.997919
+    },
+    {
+      "text": " grande",
+      "fromMs": 6660,
+      "toMs": 7080,
+      "dtwMs": 7320,
+      "p": 0.999687
+    },
+    {
+      "text": " que",
+      "fromMs": 7100,
+      "toMs": 7320,
+      "dtwMs": 7460,
+      "p": 0.99875
+    },
+    {
+      "text": " hay",
+      "fromMs": 7320,
+      "toMs": 7620,
+      "dtwMs": 7580,
+      "p": 0.99775
+    },
+    {
+      "text": " que",
+      "fromMs": 7620,
+      "toMs": 7800,
+      "dtwMs": 7700,
+      "p": 0.53706
+    },
+    {
+      "text": " es",
+      "fromMs": 7800,
+      "toMs": 7920,
+      "dtwMs": 7860,
+      "p": 0.991387
+    },
+    {
+      "text": " dar",
+      "fromMs": 7920,
+      "toMs": 8100,
+      "dtwMs": 8100,
+      "p": 0.995579
+    },
+    {
+      "text": " tiempo",
+      "fromMs": 8100,
+      "toMs": 8500,
+      "dtwMs": 8480,
+      "p": 0.9996
+    },
+    {
+      "text": ".",
+      "fromMs": 8500,
+      "toMs": 8500,
+      "dtwMs": 8480,
+      "p": 0.588663
+    }
+  ]
+}

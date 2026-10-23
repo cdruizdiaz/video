@@ -1,0 +1,110 @@
+{
+  "archivo": "IMG_7163.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2835,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        1689
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1689,
+      "texto": "Bueno, y también lo podés difundir con..."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bueno",
+      "fromMs": 0,
+      "toMs": 270,
+      "dtwMs": 80,
+      "p": 0.347526
+    },
+    {
+      "text": ",",
+      "fromMs": 280,
+      "toMs": 380,
+      "dtwMs": 140,
+      "p": 0.522723
+    },
+    {
+      "text": " y",
+      "fromMs": 390,
+      "toMs": 430,
+      "dtwMs": 180,
+      "p": 0.434826
+    },
+    {
+      "text": " también",
+      "fromMs": 470,
+      "toMs": 830,
+      "dtwMs": 280,
+      "p": 0.987724
+    },
+    {
+      "text": " lo",
+      "fromMs": 830,
+      "toMs": 940,
+      "dtwMs": 440,
+      "p": 0.965064
+    },
+    {
+      "text": " pod",
+      "fromMs": 940,
+      "toMs": 1110,
+      "dtwMs": 560,
+      "p": 0.782912
+    },
+    {
+      "text": "és",
+      "fromMs": 1110,
+      "toMs": 1220,
+      "dtwMs": 600,
+      "p": 0.561955
+    },
+    {
+      "text": " dif",
+      "fromMs": 1220,
+      "toMs": 1390,
+      "dtwMs": 780,
+      "p": 0.988814
+    },
+    {
+      "text": "und",
+      "fromMs": 1390,
+      "toMs": 1520,
+      "dtwMs": 920,
+      "p": 0.999647
+    },
+    {
+      "text": "ir",
+      "fromMs": 1550,
+      "toMs": 1680,
+      "dtwMs": 1020,
+      "p": 0.999861
+    },
+    {
+      "text": " con",
+      "fromMs": 1689,
+      "toMs": 1689,
+      "dtwMs": 1260,
+      "p": 0.937371
+    },
+    {
+      "text": "...",
+      "fromMs": 1689,
+      "toMs": 1689,
+      "dtwMs": 1420,
+      "p": 0.527368
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "archivo": "IMG_7164.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6603,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6600,
+      "texto": "coordinador de la comisión de jóvenes del colegio y consejo"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " coordin",
+      "fromMs": 0,
+      "toMs": 430,
+      "dtwMs": 440,
+      "p": 0.117427
+    },
+    {
+      "text": "ador",
+      "fromMs": 430,
+      "toMs": 670,
+      "dtwMs": 700,
+      "p": 0.988665
+    },
+    {
+      "text": " de",
+      "fromMs": 670,
+      "toMs": 790,
+      "dtwMs": 800,
+      "p": 0.985276
+    },
+    {
+      "text": " la",
+      "fromMs": 790,
+      "toMs": 900,
+      "dtwMs": 880,
+      "p": 0.962816
+    },
+    {
+      "text": " com",
+      "fromMs": 900,
+      "toMs": 1050,
+      "dtwMs": 1040,
+      "p": 0.468221
+    },
+    {
+      "text": "isión",
+      "fromMs": 1090,
+      "toMs": 1400,
+      "dtwMs": 1160,
+      "p": 0.958263
+    },
+    {
+      "text": " de",
+      "fromMs": 1400,
+      "toMs": 1520,
+      "dtwMs": 1280,
+      "p": 0.993905
+    },
+    {
+      "text": " jóvenes",
+      "fromMs": 1520,
+      "toMs": 1810,
+      "dtwMs": 1640,
+      "p": 0.957125
+    },
+    {
+      "text": " del",
+      "fromMs": 2390,
+      "toMs": 2750,
+      "dtwMs": 2620,
+      "p": 0.40288
+    },
+    {
+      "text": " co",
+      "fromMs": 2840,
+      "toMs": 3260,
+      "dtwMs": 3180,
+      "p": 0.888605
+    },
+    {
+      "text": "leg",
+      "fromMs": 3260,
+      "toMs": 4010,
+      "dtwMs": 3280,
+      "p": 0.999794
+    },
+    {
+      "text": "io",
+      "fromMs": 4010,
+      "toMs": 4340,
+      "dtwMs": 3400,
+      "p": 0.995965
+    },
+    {
+      "text": " y",
+      "fromMs": 4680,
+      "toMs": 4790,
+      "dtwMs": 4740,
+      "p": 0.17993
+    },
+    {
+      "text": " conse",
+      "fromMs": 4790,
+      "toMs": 6070,
+      "dtwMs": 5300,
+      "p": 0.922542
+    },
+    {
+      "text": "jo",
+      "fromMs": 6070,
+      "toMs": 6360,
+      "dtwMs": 5520,
+      "p": 0.857652
+    }
+  ]
+}

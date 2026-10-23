@@ -1,0 +1,232 @@
+{
+  "archivo": "IMG_9085.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6968,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6180,
+      "texto": "Buenas, buenas, acá Pau, su creativa de confianza viene a contarles qué consume su diseñadora cuando no está en redes."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bu",
+      "fromMs": 0,
+      "toMs": 240,
+      "dtwMs": 1180,
+      "p": 0.658904
+    },
+    {
+      "text": "enas",
+      "fromMs": 240,
+      "toMs": 720,
+      "dtwMs": 1280,
+      "p": 0.991019
+    },
+    {
+      "text": ",",
+      "fromMs": 720,
+      "toMs": 960,
+      "dtwMs": 1360,
+      "p": 0.486826
+    },
+    {
+      "text": " buenas",
+      "fromMs": 1120,
+      "toMs": 1700,
+      "dtwMs": 1520,
+      "p": 0.917812
+    },
+    {
+      "text": ",",
+      "fromMs": 1700,
+      "toMs": 1800,
+      "dtwMs": 1760,
+      "p": 0.55282
+    },
+    {
+      "text": " acá",
+      "fromMs": 1850,
+      "toMs": 1920,
+      "dtwMs": 1880,
+      "p": 0.879124
+    },
+    {
+      "text": " P",
+      "fromMs": 2010,
+      "toMs": 2060,
+      "dtwMs": 2060,
+      "p": 0.52721
+    },
+    {
+      "text": "au",
+      "fromMs": 2060,
+      "toMs": 2200,
+      "dtwMs": 2180,
+      "p": 0.994592
+    },
+    {
+      "text": ",",
+      "fromMs": 2200,
+      "toMs": 2220,
+      "dtwMs": 2320,
+      "p": 0.568824
+    },
+    {
+      "text": " su",
+      "fromMs": 2330,
+      "toMs": 2360,
+      "dtwMs": 2420,
+      "p": 0.910471
+    },
+    {
+      "text": " creat",
+      "fromMs": 2360,
+      "toMs": 2630,
+      "dtwMs": 2580,
+      "p": 0.964969
+    },
+    {
+      "text": "iva",
+      "fromMs": 2780,
+      "toMs": 2830,
+      "dtwMs": 2820,
+      "p": 0.961559
+    },
+    {
+      "text": " de",
+      "fromMs": 2830,
+      "toMs": 2940,
+      "dtwMs": 2940,
+      "p": 0.982975
+    },
+    {
+      "text": " confian",
+      "fromMs": 3010,
+      "toMs": 3350,
+      "dtwMs": 3220,
+      "p": 0.981
+    },
+    {
+      "text": "za",
+      "fromMs": 3440,
+      "toMs": 3500,
+      "dtwMs": 3500,
+      "p": 0.999828
+    },
+    {
+      "text": " viene",
+      "fromMs": 3500,
+      "toMs": 3760,
+      "dtwMs": 3740,
+      "p": 0.439213
+    },
+    {
+      "text": " a",
+      "fromMs": 3760,
+      "toMs": 3840,
+      "dtwMs": 3840,
+      "p": 0.964469
+    },
+    {
+      "text": " contar",
+      "fromMs": 3840,
+      "toMs": 4140,
+      "dtwMs": 3980,
+      "p": 0.976248
+    },
+    {
+      "text": "les",
+      "fromMs": 4140,
+      "toMs": 4180,
+      "dtwMs": 4220,
+      "p": 0.994182
+    },
+    {
+      "text": " qué",
+      "fromMs": 4370,
+      "toMs": 4440,
+      "dtwMs": 4420,
+      "p": 0.509615
+    },
+    {
+      "text": " consume",
+      "fromMs": 4450,
+      "toMs": 4820,
+      "dtwMs": 4800,
+      "p": 0.986415
+    },
+    {
+      "text": " su",
+      "fromMs": 4820,
+      "toMs": 4900,
+      "dtwMs": 4980,
+      "p": 0.953886
+    },
+    {
+      "text": " dise",
+      "fromMs": 4950,
+      "toMs": 5090,
+      "dtwMs": 5140,
+      "p": 0.992636
+    },
+    {
+      "text": "ñ",
+      "fromMs": 5140,
+      "toMs": 5150,
+      "dtwMs": 5240,
+      "p": 0.999935
+    },
+    {
+      "text": "adora",
+      "fromMs": 5160,
+      "toMs": 5420,
+      "dtwMs": 5400,
+      "p": 0.997988
+    },
+    {
+      "text": " cuando",
+      "fromMs": 5420,
+      "toMs": 5620,
+      "dtwMs": 5640,
+      "p": 0.875888
+    },
+    {
+      "text": " no",
+      "fromMs": 5620,
+      "toMs": 5680,
+      "dtwMs": 5760,
+      "p": 0.988802
+    },
+    {
+      "text": " está",
+      "fromMs": 5680,
+      "toMs": 5770,
+      "dtwMs": 5860,
+      "p": 0.991295
+    },
+    {
+      "text": " en",
+      "fromMs": 5850,
+      "toMs": 5870,
+      "dtwMs": 5980,
+      "p": 0.999605
+    },
+    {
+      "text": " redes",
+      "fromMs": 5870,
+      "toMs": 6040,
+      "dtwMs": 6160,
+      "p": 0.994922
+    },
+    {
+      "text": ".",
+      "fromMs": 6040,
+      "toMs": 6180,
+      "dtwMs": 6160,
+      "p": 0.774545
+    }
+  ]
+}

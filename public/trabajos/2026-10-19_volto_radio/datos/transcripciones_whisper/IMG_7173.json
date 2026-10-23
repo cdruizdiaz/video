@@ -1,0 +1,148 @@
+{
+  "archivo": "IMG_7173.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5100,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5100,
+      "texto": "caso de uso, realmente nosotros vemos que cada empresa tiene su caso de uso puntual o su"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " caso",
+      "fromMs": 0,
+      "toMs": 270,
+      "dtwMs": 240,
+      "p": 0.0443945
+    },
+    {
+      "text": " de",
+      "fromMs": 270,
+      "toMs": 400,
+      "dtwMs": 380,
+      "p": 0.994917
+    },
+    {
+      "text": " uso",
+      "fromMs": 400,
+      "toMs": 620,
+      "dtwMs": 600,
+      "p": 0.99919
+    },
+    {
+      "text": ",",
+      "fromMs": 620,
+      "toMs": 700,
+      "dtwMs": 960,
+      "p": 0.535418
+    },
+    {
+      "text": " realmente",
+      "fromMs": 920,
+      "toMs": 1480,
+      "dtwMs": 1480,
+      "p": 0.96926
+    },
+    {
+      "text": " nosotros",
+      "fromMs": 1480,
+      "toMs": 1820,
+      "dtwMs": 1780,
+      "p": 0.641804
+    },
+    {
+      "text": " vemos",
+      "fromMs": 1820,
+      "toMs": 2060,
+      "dtwMs": 2040,
+      "p": 0.657148
+    },
+    {
+      "text": " que",
+      "fromMs": 2060,
+      "toMs": 2230,
+      "dtwMs": 2220,
+      "p": 0.882164
+    },
+    {
+      "text": " cada",
+      "fromMs": 2240,
+      "toMs": 2560,
+      "dtwMs": 2540,
+      "p": 0.887702
+    },
+    {
+      "text": " empresa",
+      "fromMs": 2560,
+      "toMs": 2900,
+      "dtwMs": 2880,
+      "p": 0.96433
+    },
+    {
+      "text": " tiene",
+      "fromMs": 2900,
+      "toMs": 3120,
+      "dtwMs": 3100,
+      "p": 0.958073
+    },
+    {
+      "text": " su",
+      "fromMs": 3120,
+      "toMs": 3200,
+      "dtwMs": 3280,
+      "p": 0.989238
+    },
+    {
+      "text": " caso",
+      "fromMs": 3250,
+      "toMs": 3470,
+      "dtwMs": 3520,
+      "p": 0.987796
+    },
+    {
+      "text": " de",
+      "fromMs": 3530,
+      "toMs": 3610,
+      "dtwMs": 3640,
+      "p": 0.981843
+    },
+    {
+      "text": " uso",
+      "fromMs": 3610,
+      "toMs": 3680,
+      "dtwMs": 3760,
+      "p": 0.999636
+    },
+    {
+      "text": " punt",
+      "fromMs": 3760,
+      "toMs": 4290,
+      "dtwMs": 4080,
+      "p": 0.975422
+    },
+    {
+      "text": "ual",
+      "fromMs": 4290,
+      "toMs": 4570,
+      "dtwMs": 4300,
+      "p": 0.999989
+    },
+    {
+      "text": " o",
+      "fromMs": 4690,
+      "toMs": 4800,
+      "dtwMs": 4580,
+      "p": 0.956514
+    },
+    {
+      "text": " su",
+      "fromMs": 4830,
+      "toMs": 5090,
+      "dtwMs": 4980,
+      "p": 0.989198
+    }
+  ]
+}

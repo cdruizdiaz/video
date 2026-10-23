@@ -1,0 +1,253 @@
+{
+  "archivo": "IMG_9092.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 15708,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 14460,
+      "texto": "Y por último, pero no menos importante, cada tanto vuelvo a escuchar el audiolibro Dar de leer a los niños, de Yolanda Reyes"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Y",
+      "fromMs": 0,
+      "toMs": 100,
+      "dtwMs": 1560,
+      "p": 0.444373
+    },
+    {
+      "text": " por",
+      "fromMs": 100,
+      "toMs": 400,
+      "dtwMs": 1720,
+      "p": 0.97262
+    },
+    {
+      "text": " último",
+      "fromMs": 400,
+      "toMs": 990,
+      "dtwMs": 2060,
+      "p": 0.973322
+    },
+    {
+      "text": ",",
+      "fromMs": 990,
+      "toMs": 1180,
+      "dtwMs": 2280,
+      "p": 0.783796
+    },
+    {
+      "text": " pero",
+      "fromMs": 1240,
+      "toMs": 1580,
+      "dtwMs": 2340,
+      "p": 0.996383
+    },
+    {
+      "text": " no",
+      "fromMs": 1640,
+      "toMs": 1780,
+      "dtwMs": 2500,
+      "p": 0.999485
+    },
+    {
+      "text": " menos",
+      "fromMs": 1780,
+      "toMs": 2270,
+      "dtwMs": 2700,
+      "p": 0.998308
+    },
+    {
+      "text": " importante",
+      "fromMs": 2270,
+      "toMs": 3300,
+      "dtwMs": 3260,
+      "p": 0.997569
+    },
+    {
+      "text": ",",
+      "fromMs": 3300,
+      "toMs": 3410,
+      "dtwMs": 3440,
+      "p": 0.860186
+    },
+    {
+      "text": " cada",
+      "fromMs": 3540,
+      "toMs": 3960,
+      "dtwMs": 3640,
+      "p": 0.932966
+    },
+    {
+      "text": " tanto",
+      "fromMs": 4000,
+      "toMs": 4490,
+      "dtwMs": 4000,
+      "p": 0.99697
+    },
+    {
+      "text": " vuel",
+      "fromMs": 4600,
+      "toMs": 4980,
+      "dtwMs": 4200,
+      "p": 0.998266
+    },
+    {
+      "text": "vo",
+      "fromMs": 4980,
+      "toMs": 5200,
+      "dtwMs": 4280,
+      "p": 0.9464
+    },
+    {
+      "text": " a",
+      "fromMs": 5200,
+      "toMs": 5310,
+      "dtwMs": 4360,
+      "p": 0.997134
+    },
+    {
+      "text": " escuch",
+      "fromMs": 5310,
+      "toMs": 5670,
+      "dtwMs": 4520,
+      "p": 0.998856
+    },
+    {
+      "text": "ar",
+      "fromMs": 5930,
+      "toMs": 6200,
+      "dtwMs": 4740,
+      "p": 0.999922
+    },
+    {
+      "text": " el",
+      "fromMs": 6200,
+      "toMs": 6420,
+      "dtwMs": 4920,
+      "p": 0.99578
+    },
+    {
+      "text": " audi",
+      "fromMs": 6420,
+      "toMs": 6870,
+      "dtwMs": 5100,
+      "p": 0.857122
+    },
+    {
+      "text": "ol",
+      "fromMs": 6870,
+      "toMs": 7090,
+      "dtwMs": 5280,
+      "p": 0.998791
+    },
+    {
+      "text": "ib",
+      "fromMs": 7240,
+      "toMs": 7310,
+      "dtwMs": 5360,
+      "p": 0.998367
+    },
+    {
+      "text": "ro",
+      "fromMs": 7310,
+      "toMs": 7560,
+      "dtwMs": 5460,
+      "p": 0.999363
+    },
+    {
+      "text": " Dar",
+      "fromMs": 7890,
+      "toMs": 10630,
+      "dtwMs": 12480,
+      "p": 0.71444
+    },
+    {
+      "text": " de",
+      "fromMs": 10630,
+      "toMs": 12680,
+      "dtwMs": 12660,
+      "p": 0.990995
+    },
+    {
+      "text": " leer",
+      "fromMs": 12680,
+      "toMs": 12880,
+      "dtwMs": 12840,
+      "p": 0.79269
+    },
+    {
+      "text": " a",
+      "fromMs": 12880,
+      "toMs": 12930,
+      "dtwMs": 12940,
+      "p": 0.997491
+    },
+    {
+      "text": " los",
+      "fromMs": 12930,
+      "toMs": 13040,
+      "dtwMs": 13060,
+      "p": 0.999075
+    },
+    {
+      "text": " niños",
+      "fromMs": 13070,
+      "toMs": 13360,
+      "dtwMs": 13320,
+      "p": 0.966543
+    },
+    {
+      "text": ",",
+      "fromMs": 13360,
+      "toMs": 13480,
+      "dtwMs": 13540,
+      "p": 0.640453
+    },
+    {
+      "text": " de",
+      "fromMs": 13490,
+      "toMs": 13620,
+      "dtwMs": 13760,
+      "p": 0.996392
+    },
+    {
+      "text": " Y",
+      "fromMs": 13620,
+      "toMs": 13680,
+      "dtwMs": 13880,
+      "p": 0.993254
+    },
+    {
+      "text": "ol",
+      "fromMs": 13680,
+      "toMs": 13800,
+      "dtwMs": 13960,
+      "p": 0.997183
+    },
+    {
+      "text": "anda",
+      "fromMs": 13850,
+      "toMs": 14080,
+      "dtwMs": 14100,
+      "p": 0.999615
+    },
+    {
+      "text": " Re",
+      "fromMs": 14080,
+      "toMs": 14210,
+      "dtwMs": 14260,
+      "p": 0.997522
+    },
+    {
+      "text": "yes",
+      "fromMs": 14210,
+      "toMs": 14390,
+      "dtwMs": 14440,
+      "p": 0.999735
+    }
+  ]
+}

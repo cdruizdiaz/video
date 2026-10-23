@@ -1,0 +1,365 @@
+{
+  "archivo": "IMG_7328.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 9002,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 9000,
+      "texto": "- ¿Para qué lo querés? ¿Te le gusta algún color a tu novia? ¿Sabés qué talle es? Porque si no sabés, se puede recomendarte. Entonces empieza a hacerte preguntas de propiedad."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " -",
+      "fromMs": 0,
+      "toMs": 1000,
+      "dtwMs": 0,
+      "p": 0.0251484
+    },
+    {
+      "text": " ¿",
+      "fromMs": 1000,
+      "toMs": 1050,
+      "dtwMs": 0,
+      "p": 0.0421137
+    },
+    {
+      "text": "P",
+      "fromMs": 1050,
+      "toMs": 1100,
+      "dtwMs": 40,
+      "p": 0.552036
+    },
+    {
+      "text": "ara",
+      "fromMs": 1100,
+      "toMs": 1250,
+      "dtwMs": 80,
+      "p": 0.99208
+    },
+    {
+      "text": " qué",
+      "fromMs": 1250,
+      "toMs": 1390,
+      "dtwMs": 180,
+      "p": 0.9393
+    },
+    {
+      "text": " lo",
+      "fromMs": 1390,
+      "toMs": 1480,
+      "dtwMs": 300,
+      "p": 0.869337
+    },
+    {
+      "text": " quer",
+      "fromMs": 1510,
+      "toMs": 1700,
+      "dtwMs": 460,
+      "p": 0.983128
+    },
+    {
+      "text": "és",
+      "fromMs": 1700,
+      "toMs": 1800,
+      "dtwMs": 600,
+      "p": 0.924553
+    },
+    {
+      "text": "?",
+      "fromMs": 1800,
+      "toMs": 1950,
+      "dtwMs": 840,
+      "p": 0.925903
+    },
+    {
+      "text": " ¿",
+      "fromMs": 1950,
+      "toMs": 2000,
+      "dtwMs": 2260,
+      "p": 0.194551
+    },
+    {
+      "text": "Te",
+      "fromMs": 2000,
+      "toMs": 2100,
+      "dtwMs": 2400,
+      "p": 0.857861
+    },
+    {
+      "text": " le",
+      "fromMs": 2100,
+      "toMs": 2130,
+      "dtwMs": 2520,
+      "p": 0.71476
+    },
+    {
+      "text": " gusta",
+      "fromMs": 2390,
+      "toMs": 2450,
+      "dtwMs": 2720,
+      "p": 0.983262
+    },
+    {
+      "text": " algún",
+      "fromMs": 2450,
+      "toMs": 2690,
+      "dtwMs": 2900,
+      "p": 0.818974
+    },
+    {
+      "text": " color",
+      "fromMs": 2700,
+      "toMs": 2940,
+      "dtwMs": 3140,
+      "p": 0.969443
+    },
+    {
+      "text": " a",
+      "fromMs": 2950,
+      "toMs": 2990,
+      "dtwMs": 3240,
+      "p": 0.982372
+    },
+    {
+      "text": " tu",
+      "fromMs": 3010,
+      "toMs": 3100,
+      "dtwMs": 3300,
+      "p": 0.987816
+    },
+    {
+      "text": " no",
+      "fromMs": 3100,
+      "toMs": 3200,
+      "dtwMs": 3420,
+      "p": 0.855331
+    },
+    {
+      "text": "via",
+      "fromMs": 3200,
+      "toMs": 3350,
+      "dtwMs": 3560,
+      "p": 0.999779
+    },
+    {
+      "text": "?",
+      "fromMs": 3350,
+      "toMs": 3600,
+      "dtwMs": 3580,
+      "p": 0.937951
+    },
+    {
+      "text": " ¿",
+      "fromMs": 3600,
+      "toMs": 3660,
+      "dtwMs": 3640,
+      "p": 0.848029
+    },
+    {
+      "text": "Sab",
+      "fromMs": 3660,
+      "toMs": 3890,
+      "dtwMs": 3760,
+      "p": 0.921633
+    },
+    {
+      "text": "és",
+      "fromMs": 3890,
+      "toMs": 4030,
+      "dtwMs": 3820,
+      "p": 0.897907
+    },
+    {
+      "text": " qué",
+      "fromMs": 4030,
+      "toMs": 4250,
+      "dtwMs": 3900,
+      "p": 0.843941
+    },
+    {
+      "text": " tall",
+      "fromMs": 4250,
+      "toMs": 4540,
+      "dtwMs": 4040,
+      "p": 0.882125
+    },
+    {
+      "text": "e",
+      "fromMs": 4540,
+      "toMs": 4610,
+      "dtwMs": 4160,
+      "p": 0.910158
+    },
+    {
+      "text": " es",
+      "fromMs": 4610,
+      "toMs": 4750,
+      "dtwMs": 4320,
+      "p": 0.982693
+    },
+    {
+      "text": "?",
+      "fromMs": 4750,
+      "toMs": 5000,
+      "dtwMs": 4460,
+      "p": 0.980676
+    },
+    {
+      "text": " Porque",
+      "fromMs": 5010,
+      "toMs": 5390,
+      "dtwMs": 4580,
+      "p": 0.344897
+    },
+    {
+      "text": " si",
+      "fromMs": 5390,
+      "toMs": 5510,
+      "dtwMs": 5020,
+      "p": 0.87822
+    },
+    {
+      "text": " no",
+      "fromMs": 5510,
+      "toMs": 5650,
+      "dtwMs": 5140,
+      "p": 0.987631
+    },
+    {
+      "text": " sab",
+      "fromMs": 5650,
+      "toMs": 5770,
+      "dtwMs": 5340,
+      "p": 0.765904
+    },
+    {
+      "text": "és",
+      "fromMs": 5900,
+      "toMs": 5990,
+      "dtwMs": 5380,
+      "p": 0.991157
+    },
+    {
+      "text": ",",
+      "fromMs": 6040,
+      "toMs": 6090,
+      "dtwMs": 5420,
+      "p": 0.497633
+    },
+    {
+      "text": " se",
+      "fromMs": 6090,
+      "toMs": 6180,
+      "dtwMs": 6100,
+      "p": 0.123004
+    },
+    {
+      "text": " puede",
+      "fromMs": 6180,
+      "toMs": 6420,
+      "dtwMs": 6500,
+      "p": 0.614008
+    },
+    {
+      "text": " recomend",
+      "fromMs": 6420,
+      "toMs": 6810,
+      "dtwMs": 6820,
+      "p": 0.843479
+    },
+    {
+      "text": "arte",
+      "fromMs": 6810,
+      "toMs": 7030,
+      "dtwMs": 7100,
+      "p": 0.977696
+    },
+    {
+      "text": ".",
+      "fromMs": 7030,
+      "toMs": 7160,
+      "dtwMs": 7240,
+      "p": 0.571976
+    },
+    {
+      "text": " Entonces",
+      "fromMs": 7450,
+      "toMs": 7640,
+      "dtwMs": 7560,
+      "p": 0.771217
+    },
+    {
+      "text": " empieza",
+      "fromMs": 7640,
+      "toMs": 8030,
+      "dtwMs": 7900,
+      "p": 0.365686
+    },
+    {
+      "text": " a",
+      "fromMs": 8030,
+      "toMs": 8080,
+      "dtwMs": 7980,
+      "p": 0.899879
+    },
+    {
+      "text": " hac",
+      "fromMs": 8080,
+      "toMs": 8230,
+      "dtwMs": 8060,
+      "p": 0.987767
+    },
+    {
+      "text": "erte",
+      "fromMs": 8240,
+      "toMs": 8460,
+      "dtwMs": 8180,
+      "p": 0.990924
+    },
+    {
+      "text": " preguntas",
+      "fromMs": 8460,
+      "toMs": 9000,
+      "dtwMs": 8680,
+      "p": 0.935238
+    },
+    {
+      "text": " de",
+      "fromMs": 9000,
+      "toMs": 9000,
+      "dtwMs": 8880,
+      "p": 0.884645
+    },
+    {
+      "text": " prop",
+      "fromMs": 9000,
+      "toMs": 9000,
+      "dtwMs": 8960,
+      "p": 0.366172
+    },
+    {
+      "text": "ied",
+      "fromMs": 9000,
+      "toMs": 9000,
+      "dtwMs": 8960,
+      "p": 0.42981
+    },
+    {
+      "text": "ad",
+      "fromMs": 9000,
+      "toMs": 9000,
+      "dtwMs": 8960,
+      "p": 0.731066
+    },
+    {
+      "text": ".",
+      "fromMs": 9000,
+      "toMs": 9000,
+      "dtwMs": 8960,
+      "p": 0.530609
+    }
+  ]
+}

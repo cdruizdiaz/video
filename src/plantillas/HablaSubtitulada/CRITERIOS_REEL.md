@@ -2,7 +2,8 @@
 
 Instrucciones para aplicar **de entrada**, desde el primer borrador, en cualquier reel 9:16 de persona hablando (`HablaSubtitulada`, o `EntrevistaRadio` para el montaje con insertos y sonidos). Salen de las correcciones del cliente, una por una, en `2026-10-06_volto_fashion-week`:
 - pieza 6, entrevista de radio, una cámara (2026-10-08);
-- pieza 1, "¿Tenés una marca de ropa?", dos cámaras (2026-10-09, borradores `_d` a `_j`).
+- pieza 1, "¿Tenés una marca de ropa?", dos cámaras (2026-10-09, borradores `_d` a `_j`);
+- pieza 5, "Vení, seguime", una cámara en mano caminando (2026-10-13/19, previews v1–v5, borradores B–J, entregas v1–v3).
 
 Si un brief dice otra cosa, manda el brief. Si un trabajo enseña un criterio nuevo, se suma acá.
 
@@ -17,14 +18,17 @@ Ejemplos completos en `src/trabajos/2026-10-06_volto_fashion-week/`:
    - `preparar_voz_entrevista.sh <clip> 15`: voz suave para el montaje.
    - Voz limpia solo para medir.
    - Transcripción corregida en `corregir_transcripcion.mjs`.
+   - **Medir el nivel de cada persona que habla,** no solo el del clip: un entrevistador lejos del micrófono puede quedar 26 dB abajo y DeepFilterNet lo borra (ver Audio).
+   - **Palabras dudosas:** retranscribir el tramo con `--prompt` (nombres: "Volto, agente de IA") y comparar con la transcripción del audio de la 2ª cámara. Si las dos dicen lo mismo pero el sentido pide otra cosa ("la gente" / "el agente"), subtitular lo que tiene sentido, marcarlo ⚠️ en `TRABAJO.md` y preguntarlo en la entrega. Si el usuario dicta lo que se dice, eso manda ("nos hizo el vendedor" → "nos dicen los vendedores").
 4. **Preview.** Solo cortes y planos, sin subtítulos ni gráficos; el cliente aprueba los cortes.
 5. **Guion de subtítulos como tabla** (`#`, tiempo, texto). El cliente marca uniones y cortes por número; después se escriben a mano en `subtitulos.grupos`.
 6. **Primer borrador completo,** con todo lo de abajo ya aplicado.
 7. **Revisión antes de entregar cada borrador:**
-   - hoja de cuadros clave: cada inserto, cada cambio de plano y cada zoom;
+   - hoja de cuadros clave: cada inserto, cada cambio de plano y cada zoom; mirar los gráficos en un cuadro **después** de que terminaron de entrar y **antes** de su desvanecido (en los últimos 6 cuadros se ven a medias);
+   - `scripts/detectar_glitches.py` sobre el borrador (cuadros vacíos, congelados, flashes);
    - control de audio (ver Audio);
    - `npm test` y `npm run lint`.
-8. **Borradores siempre a resolución completa:** 1080×1920, `--crf=20`, en `revision/borrador_<pieza>_9x16_<letra>.mp4`. Los de 540×960 se ven borrosos.
+8. **Borradores siempre a resolución completa:** 1080×1920, `--crf=20`, en `revision/borrador_<pieza>_9x16_<letra>.mp4`, con el audio pasado por `scripts/terminar_audio.sh`. Los de 540×960 se ven borrosos. Para verlo en el celular, una copia liviana aparte (ver `CLAUDE.md` → Render).
 9. **Cada pedido del cliente va también a `guion_<pieza>.md` y a `TRABAJO.md`,** con el valor anterior y el nuevo (sirve para no volver atrás).
 
 ## Cómo trabajar con el cliente
@@ -47,7 +51,8 @@ Errores de proceso de la pieza 1 de Volto (2026-10-09): 11 borradores (`_d` a `_
    - Si el cliente manda pedidos de a uno, sugerirle que los junte.
 8. **Cuidado con las herramientas:**
    - formatear con prettier solo los archivos que se tocaron, y sin reformatear archivos enteros que no estaban formateados;
-   - escribir los scripts largos a un archivo del scratchpad, no pegarlos inline en la terminal.
+   - escribir los scripts largos a un archivo del scratchpad, no pegarlos inline en la terminal;
+   - prettier sobre un archivo **nuevo sin versión en git** también reformatea lo que ya estaba (no hay forma de ver la diferencia): formatear solo lo que se escribió, o avisar.
 
 ## Color y material
 - **Primero, el original bien convertido; nada de corregir el color a mano.** Dos intentos de igualar cámaras con curvas y LUT fueron rechazados ("difuso", "muy feo"): el cliente quiere el color original de cada cámara.
@@ -74,6 +79,7 @@ Errores de proceso de la pieza 1 de Volto (2026-10-09): 11 borradores (`_d` a `_
   - nunca antes de que **termine la última palabra** de la frase anterior: medir el final con la energía de la voz limpia;
   - el plano del gancho dura hasta que la palabra final se oye entera, con un poco de margen ("acá": el cliente lo quiso hasta el segundo 2,30).
 - **"Hasta el segundo 2:30" = 2,30 s.**
+- **El primer plano de una toma arranca con la toma** (2026-10-22): si se marca unos ms después del inicio, esos cuadros salían vacíos (un "glitch" de 1–8 cuadros). Ya lo corrige `tramosDePlanos`; igual, revisar cada borrador con una detección de cuadros vacíos o repetidos.
 - **Cortes pegados a la voz:**
   - sin silencios entre tomas, cortando en valles de energía y nunca dentro de una palabra;
   - **sacar la pausa después de un remate** ("…más rápido.") y entrar con el otro plano ya hablando;
@@ -101,6 +107,7 @@ Errores de proceso de la pieza 1 de Volto (2026-10-09): 11 borradores (`_d` a `_
 - **Cuidar la calidad:** un plano que ya viene recortado de uno horizontal (608 px de ancho) se ablanda rápido con el zoom.
 
 ## Subtítulos
+- **Con marca de tipografía fina** (RASTRO, Inter): `peso: 500`, `tamano: 64`, `sinBorde: true` (2026-10-21: "muy gruesos… sacale el trazo negro"). El estilo Volto (New Black con borde) no es para todos los clientes.
 - **Escritos a mano** (`subtitulos.grupos`).
   - Nunca partir un nombre propio ni dejar un renglón colgando en preposición o artículo.
   - Lo que dice otra persona sin aportar va sin subtítulo (`"-Exactamente."`).
@@ -119,8 +126,11 @@ Errores de proceso de la pieza 1 de Volto (2026-10-09): 11 borradores (`_d` a `_
   - **un valle de energía no siempre es el final de una palabra:** las oclusivas del medio ("a-**c**á", "ti**em**po") hacen un silencio corto de 30–60 ms. Antes de tomar un valle como final, mirar que después no siga la misma palabra; el final real es donde la energía cae y queda abajo.
   - **un subtítulo dura hasta que la palabra termina de oírse**, aunque cruce el cambio de plano ("tu marca acá?");
   - corregir en `TIEMPOS` (inicios) y `FINES` (finales) de `corregir_transcripcion.mjs`, y comparar la transcripción antes y después: solo deben cambiar esas palabras.
+- **Citas** (lo que dijo otro): entre comillas angulares « » de principio a fin de la cita, aunque cruce varios subtítulos (2026-10-23). En New Black, las comillas inglesas ” y las rectas cierran mal (salen como de apertura).
+- **Prefijos unidos (RAE):** "súper" delante de un adjetivo va pegado ("supercontentos", "superproductivo"). Como los subtítulos a mano emparejan palabra por palabra con la transcripción, las dos palabras de Whisper se unen en la transcripción (`UNIR` de `2026-10-19_volto_radio/transcripcion_trabajo.py`).
 - **Números dichos como aproximación, en letras:** "tres, cuatro páginas", no "3 o 4". Se corrige en `TEXTO`.
 - **Amarillo (#efc512) solo en las palabras que elige el cliente.** Proponer pocas.
+- **Partes sin la persona** (lee de una tablet, voz en off): mostrar **lo que dice**, con la identidad del cliente de la historia (2026-10-21: "cuando dice el icónico Big Ben… quiero que lo que diga se refleje en lo que se ve"): motion graphic con los recursos del manual de marca, un gráfico por idea nombrada, cada uno en la palabra. Grabaciones de pantalla solo donde acompañan lo que se dice, **centradas**, y en tramos elegidos para cada frase (p. ej. el disfraz de Halloween cuando dice "Halloween").
 - **Si un gráfico ya muestra la frase** ("En Volto resolvemos"), se omite ese subtítulo.
 
 ## Gráficos (insertos)
@@ -131,10 +141,19 @@ Sin música el video queda plano: **graficar lo que se nombra**, cada gráfico c
 - Nunca tapar caras.
 - El cliente pidió "subilos para que no lo tapen" para todos: arrancar arriba, no pegados a la cabeza.
 - Excepción: un título de marca puede ir **cerca** de la persona, más abajo que el resto, pero sin tocarla.
+- **Con un cerrado, dejar el aire en el encuadre** (2026-10-21, consumos-del-mes: "no la tapes, usá el aire de arriba"): anclar el cerrado más arriba (1,45 con `origen: "50% 60%"` en vez de 72 %) para que quede lugar sobre la cabeza; nunca bajar el gráfico al pecho.
+- **No graficar lo que la persona ya muestra a cámara** (el libro en la mano que señala).
+- **Personas nombradas: la cara en un círculo, sin el nombre ni texto debajo** (el subtítulo ya lo dice). Si la foto es CC BY-SA, avisar que pide crédito y proponer ponerlo en el texto de la publicación.
+- **Todos los gráficos a la misma distancia de la cabeza** (2026-10-21): anclarlos por el borde de abajo, ~80 px arriba del pelo medido en un cuadro de cada uno; los textos, centrados.
+- **Textos de los gráficos con la tipografía de la marca** (RASTRO: Inter), aunque el gráfico copie la estética de otra cosa (colores, formas): "cambiá la tipografía pero dejale su estética".
+- **Si se equivoca un nombre,** el texto como lo dijo se tacha y aparece el correcto ("La Fábrica" → "*la Factoria").
+
+- **Tiempos de un inserto:** `hastaMs` igual al fin exacto de la toma da error ("cae fuera del montaje"): usar 10 ms antes. Un inserto puede seguir en la toma siguiente si es contigua en el montaje (el "= más productivos" siguió 1 s en el plano general).
+- **Medir antes de ubicar:** cuadros de cada plano con una grilla cada 200 px (`drawgrid`, ver `CLAUDE.md` → ffmpeg) para saber dónde empieza el pelo en cada uno; los gráficos van ~80 px arriba. El cliente prefiere poco aire ("bajalo mucho más, que no haya tanto aire"), no el gráfico pegado al techo.
 
 **Cómo se mueven**
 - Entrada con un rebote corto.
-- **Salida en seco en el cambio de plano o de toma.**
+- **Salida en seco en el cambio de plano o de toma** (piezas 1 y 6). Con los gráficos de vidrio de la pieza 5, en cambio, desvanecido corto de 6 cuadros (ver "Gráficos de vidrio").
 - Animar con `zoom` o tamaños reales, nunca con `transform: scale` (sale pixelado).
 
 **Estética**
@@ -168,7 +187,30 @@ Sin música el video queda plano: **graficar lo que se nombra**, cada gráfico c
   - "robotizar": `InsertoRobot`;
   - enumeraciones ✕/✓: `InsertoLista`;
   - usuario de redes: `RotuloUsuario`.
+- **No repetir seguido los recursos de las piezas anteriores** (2026-10-22, Volto radio: "la idea es intentar no repetir tan seguido los recursos"): el anillo del 80 %, las píldoras y la palabra sola de "Vení, seguime" no se reusan en la pieza siguiente. Para cada idea, un gráfico nuevo dentro del mismo look (vidrio + tipografía de la marca): cifra grande con barra (`ProReparto`), textos que se revelan (`ProTextos`), frase en bloque (`ProFrase`), velocímetro (`ProVelocimetro`), reloj por porciones para un relato de horas (`ProReloj8`), lema con resaltador (`ProLema`), flecha a una cara que bosteza (`ProSueno`), etiquetas blancas (`ProEtiquetas`), cifra que se corre y escribe lo que significa (`ProIgual`). Antes del primer borrador, listar qué gráficos usaron las piezas recientes del cliente.
+- **Sobre un fondo claro** (cartel blanco detrás), la letra blanca no se lee: tarjeta de vidrio con letra oscura o chip blanco (2026-10-23).
+- **Un gráfico que termina de armarse al final de la toma** se ve apenas unos cuadros: adelantar la animación o dejarlo seguir un poco en el plano siguiente (el "= más productivos" duraba 5 cuadros).
+- **Variar el lenguaje gráfico entre piezas del mismo cliente** (2026-10-14, "Vení, seguime"): si dos reels ya usan tarjetas e íconos, el siguiente va con otro estilo para que no parezca "todo lo mismo". ⚠️ En Volto, el trazo gustó en el borrador B pero el cliente lo cambió enseguida por el **look profesional de vidrio** (ver "Gráficos de vidrio" abajo): para Volto, arrancar directamente con el vidrio. Familia de trazo (`src/plantillas/comunes/InsertosTrazo.tsx`: `TrazoVentas`, `TrazoEmbudo`, `TrazoMensajes`, `TrazoEnchufe`, `TrazoChat`, `TrazoTilde`, `TrazoBarras`, `TrazoFlecha`): dibujos de línea que se trazan con lo que se dice, línea clara con sombra paralela, acento naranja, sin tarjetas ni rebote.
+  - Con la persona en plano cerrado (1,45×) hay que subirlos (`y` 250–290): a 330 rozaban el pelo.
+  - Un gráfico por idea nombrada, aunque la frase sea corta: tomarse los tiempos de las palabras de `transcripcion.json`.
 - **Placa final:** entra por corte, solo se anima el logo (`cierre.corte`).
+
+### Gráficos de vidrio (pieza 5 de Volto, "Vení, seguime", borradores C–J y entregas v1–v3, 2026-10-14/19)
+Look "profesional" que el cliente eligió y aprobó (`src/plantillas/comunes/InsertosPro.tsx`). Para el próximo reel de Volto, arrancar con esto:
+- **Tarjetas de vidrio translúcido flotando:** fondo translúcido con desenfoque (`backdrop-filter`) y sombra negra difusa (nunca la paralela dura). **Sin títulos ni chips** ("Crecimiento de ventas", "Estancado", "No convierte" se sacaron): solo la cifra y el dibujo.
+- **Una idea, un gráfico, y simple.** Se sacaron: la percha, el círculo con tilde, las barras de "las marcas que más venden", los globos de mensajes de "no doy abasto", las barras y flechas de "resultados" (cuatro flechas probadas y descartadas).
+- **Cerrar con un eco del principio:** "resultados increíbles" es la **misma tarjeta de ventas del inicio, ahora en alza** (curva naranja con área degradé, sin cifra), que llega arriba con la palabra clave.
+- **Cifras:** la cifra cuenta con sonido de cuenta; el porcentaje grande ("80 %") como indicador circular de vidrio con el anillo en degradé de la marca, **sin sombra**; si la persona sale de cuadro, la cifra ocupa el espacio vacío y sube antes de que vuelva.
+- **Frase clave del dolor** ("no doy abasto"): **una palabra a la vez** sobre la persona, cada una cuando se dice (`ProPalabraSola`), New Black **blanca** con sombra suave y **subrayado naranja**, un pop por palabra (palabras en naranja o celeste: descartadas). Sin globos ni otro gráfico encima.
+- **Conexión agente → sistemas:** entra primero "Agente de IA" solo; al nombrar los sistemas se corre, se traza la línea fijada a las dos tarjetas y "Tus sistemas" se enciende.
+- **Chat que responde:** globos de vidrio sutiles (opacidad baja, borde fino), tres puntos al escribir y el asterisco de la marca en la respuesta.
+- **Enumeraciones** (stock / talle / cantidad): píldoras de vidrio alineadas cerca del margen izquierdo, **sin sonido**.
+- **Íconos de redes** con numerito de notificaciones (24, 99+), no pegados arriba: cerca de la persona sin tocarla.
+- **Logo del evento** sale apenas termina de nombrarse ("…Fashion Week").
+- **Cierre "Escribinos":** rótulo-píldora "@volto.ai" con el recuadro al 50 %, sin flecha.
+- **Salidas:** cada gráfico se **desvanece en sus últimos 6 cuadros** (no en seco a mitad de plano) y termina en el último cuadro de su toma (ni un cuadro vacío antes del corte). El desvanecido va **en cada elemento de vidrio, no en el contenedor**: un `opacity` en el padre hace que `backdrop-filter` pierda el desenfoque de golpe y parpadea (`SalidaCtx`). Revisar las salidas cuadro a cuadro.
+- **Subtítulos de esta pieza en blanco** (el amarillo de "no doy abasto" se sacó en la 4ª tanda) y palabras que el cliente quiere separadas en grupos distintos ("resultados" / "increíbles", que entra cuando se dice).
+- **Ortografía:** revisar contra la RAE cada texto en pantalla, subtítulos y gráficos. "a basto" quedó así en cuatro borradores y dos entregas hasta que el cliente pidió "abasto" (v3). Whisper lo había escrito bien: no separar palabras a mano sin verificarlo.
 
 ## Audio
 - **Voz con menos ruido, sin robotizar:**
@@ -177,11 +219,18 @@ Sin música el video queda plano: **graficar lo que se nombra**, cada gráfico c
   - `preparar_voz_entrevista.sh <clip> <dB>` → opción `audios`.
 - **Tomas a -19 LUFS** (ebur128 por tramo); `loudnorm` a -14 en el render final, verificado con ebur128.
 - **`cruceAudio: 1`:** un cuadro de fundido cruzado entre tomas. Sin él, cada corte deja ~20 ms de silencio.
+- **Micrófono muy bajo** (2026-10-21, `2026-10-21_rastro_pau-mascota`, voz a −40 LUFS que hay que subir ~21 dB): el ruido sube con ella. DeepFilterNet con `--atten-lim 24` y pasa-altos 70 Hz, **sin** la entrada 6 dB más baja (con la voz tan suave la confunde con ruido y la borra: un tramo perdió 20 dB). Medir el fondo en una pausa **después** de llevar la voz a −19 (tiene que quedar ≲ −55 dB) y el nivel de cada tramo usado.
+- **Entrevistador lejos del micrófono** (2026-10-22, `2026-10-19_volto_radio`: el conductor 26 dB por debajo del invitado): DeepFilterNet sobre el original lo borra entero (lo toma por ruido). Subirlo primero (+20 dB, limitador, pasa-altos 70 Hz) y recién ahí DeepFilterNet 24 dB; su voz va como audio aparte de su toma (`preparar_voz_conductor.sh` del trabajo). Medir el nivel de **cada persona** que habla, no solo el del clip.
+- **Palabras que "se apagan"** (2026-10-21, mismo trabajo: "tiene que estar toda al mismo nivel"): con mucha atenuación, DeepFilterNet se come palabras suaves enteras ("En el": −40 dB contra −16 en la original). Medir el nivel **por palabra** con los tiempos de la transcripción (`src/trabajos/2026-10-21_rastro_pau-mascota/medir_palabras.py`) y nivelar con `nivelar_voz.py` del mismo trabajo: la palabra comida vuelve de la original y cada palabra va a la mediana (rampas cortas, las pausas no suben). Nada de `dynaudnorm` ni compresión fuerte sobre todo el clip: igualan las palabras pero suben el ruido de las pausas (quedaba 10 dB debajo de la voz). Una puerta de ruido en las pausas no cambia las palabras: no hace falta.
+- **Música de fondo bajo la voz** (mismo trabajo): ~22 dB por debajo (`musicaBajoVozDb: -27` con la música a −14 y la voz a −19); a 14 dB fue "extremadamente alta".
+- **Ruidos antes de la primera palabra** ("acción", claqueta): al subir la voz se oyen aunque en el original casi no se noten. Mirar la energía de los primeros cuadros y arrancar justo antes de la primera palabra.
+- **Atraso del AAC de Remotion** (2026-10-21, `2026-10-21_rastro_pau-mascota`: "se mueve la boca antes que el audio"): cada render de Remotion deja el audio 42,7 ms tarde (relleno del AAC sin marcar), y se acumula si un clip se renderiza dos veces (un proxy derivado con gráficos + el reel = 85 ms). Los proxies derivados van **mudos** (`--muted`) y la voz sale del original (`audios`); el render final se corrige con `scripts/terminar_audio.sh` (adelanta 42,7 ms + loudnorm). Verificar con correlación contra el proxy: 0 ms.
 - **Control en cada borrador:**
   - energía cada 10 ms alrededor de cada corte, sin caídas a silencio;
   - saltos de muestra solo en los efectos puestos a propósito;
   - pico por debajo de 0 dBFS.
 - **Música:**
+  - Volto, entrevista en estudio (2026-10-22/23): pidió música suave de fondo, la escuchó (Digital Clouds, ~22 dB bajo la voz) y la sacó ("no me gusta"); después pidió una "no tan corpo, pero sí tecnológica" y eligió **Deep Techno Ambience** (Mixkit 134) a -25 dB bajo la voz (~21 dB por debajo: a -30, ~26 dB, "casi ni se notaba"; "que NO tape la voz, pero no te zarpes") y -6 dB en la placa. Electrónica relajada e hipnótica sí; corporativa o "positiva" (Digital Clouds) no;
   - con ambiente ruidoso, nada bajo la voz;
   - música suave **solo al final**: entra en la última frase y queda sola bajo la placa;
   - si alguien sigue hablando después, la placa va sin ambiente.

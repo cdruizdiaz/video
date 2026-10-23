@@ -44,12 +44,20 @@ const anchoTexto = (texto: string, familia: string) => {
   return ctx.measureText(texto).width + texto.length * ESPACIADO * TAMANO_TEXTO;
 };
 
+// color hex (#rrggbb) con opacidad
+const conAlpha = (hex: string, a: number) => {
+  const h = hex.replace("#", "");
+  const n = parseInt(h.length === 3 ? h.split("").map((c) => c + c).join("") : h, 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${a})`;
+};
+
 export const RotuloUsuario: React.FC<{
   m: Marca;
   texto: string;
   duracion: number; // frames
   y: number; // centro vertical (px, en 1920 de alto)
-}> = ({ m, texto, duracion, y }) => {
+  fondoOpacidad?: number; // 1 = píldora clara opaca; menos = vidrio translúcido
+}> = ({ m, texto, duracion, y, fondoOpacidad = 1 }) => {
   const f = useCurrentFrame();
   const { width } = useVideoConfig();
   const familia = m.fuenteTitulos ?? m.fuente;
@@ -100,7 +108,11 @@ export const RotuloUsuario: React.FC<{
           width: anchoActual,
           height: Math.round(d),
           borderRadius: d / 2,
-          background: m.colores.claro,
+          background:
+            fondoOpacidad >= 1
+              ? m.colores.claro
+              : conAlpha(m.colores.claro, fondoOpacidad),
+          backdropFilter: fondoOpacidad >= 1 ? undefined : "blur(16px) saturate(1.15)",
           boxShadow: SOMBRA,
           overflow: "hidden",
         }}

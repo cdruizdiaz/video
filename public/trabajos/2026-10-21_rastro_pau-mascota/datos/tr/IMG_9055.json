@@ -1,0 +1,254 @@
+{
+  "archivo": "IMG_9055.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8472,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        2009,
+        7406
+      ],
+      [
+        8222,
+        8472
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 2009,
+      "hastaMs": 8464,
+      "texto": "En el diagnóstico que le hicimos a nuestro cliente nos dimos cuenta que tenía cuatro públicos y que no le estaba hablando a ninguno."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " En",
+      "fromMs": 2009,
+      "toMs": 2099,
+      "dtwMs": 2309,
+      "p": 0.832452
+    },
+    {
+      "text": " el",
+      "fromMs": 2189,
+      "toMs": 2189,
+      "dtwMs": 2369,
+      "p": 0.988512
+    },
+    {
+      "text": " diagn",
+      "fromMs": 2229,
+      "toMs": 2419,
+      "dtwMs": 2549,
+      "p": 0.910575
+    },
+    {
+      "text": "óst",
+      "fromMs": 2419,
+      "toMs": 2559,
+      "dtwMs": 2709,
+      "p": 0.989955
+    },
+    {
+      "text": "ico",
+      "fromMs": 2559,
+      "toMs": 2599,
+      "dtwMs": 2809,
+      "p": 0.999668
+    },
+    {
+      "text": " que",
+      "fromMs": 2709,
+      "toMs": 2839,
+      "dtwMs": 2929,
+      "p": 0.955713
+    },
+    {
+      "text": " le",
+      "fromMs": 2839,
+      "toMs": 2929,
+      "dtwMs": 3009,
+      "p": 0.774298
+    },
+    {
+      "text": " hic",
+      "fromMs": 2929,
+      "toMs": 3019,
+      "dtwMs": 3109,
+      "p": 0.992668
+    },
+    {
+      "text": "imos",
+      "fromMs": 3069,
+      "toMs": 3259,
+      "dtwMs": 3249,
+      "p": 0.998826
+    },
+    {
+      "text": " a",
+      "fromMs": 3259,
+      "toMs": 3299,
+      "dtwMs": 3369,
+      "p": 0.966521
+    },
+    {
+      "text": " nuestro",
+      "fromMs": 3299,
+      "toMs": 3629,
+      "dtwMs": 3629,
+      "p": 0.993834
+    },
+    {
+      "text": " client",
+      "fromMs": 3629,
+      "toMs": 3909,
+      "dtwMs": 3909,
+      "p": 0.985614
+    },
+    {
+      "text": "e",
+      "fromMs": 3909,
+      "toMs": 4009,
+      "dtwMs": 4109,
+      "p": 0.999462
+    },
+    {
+      "text": " nos",
+      "fromMs": 4009,
+      "toMs": 4169,
+      "dtwMs": 4249,
+      "p": 0.637919
+    },
+    {
+      "text": " dim",
+      "fromMs": 4169,
+      "toMs": 4329,
+      "dtwMs": 4369,
+      "p": 0.998856
+    },
+    {
+      "text": "os",
+      "fromMs": 4329,
+      "toMs": 4419,
+      "dtwMs": 4469,
+      "p": 0.999895
+    },
+    {
+      "text": " cuenta",
+      "fromMs": 4539,
+      "toMs": 4759,
+      "dtwMs": 4689,
+      "p": 0.990439
+    },
+    {
+      "text": " que",
+      "fromMs": 4759,
+      "toMs": 4839,
+      "dtwMs": 4829,
+      "p": 0.859451
+    },
+    {
+      "text": " tenía",
+      "fromMs": 4849,
+      "toMs": 5049,
+      "dtwMs": 5069,
+      "p": 0.799045
+    },
+    {
+      "text": " cuatro",
+      "fromMs": 5049,
+      "toMs": 5439,
+      "dtwMs": 5389,
+      "p": 0.611404
+    },
+    {
+      "text": " públic",
+      "fromMs": 5439,
+      "toMs": 5869,
+      "dtwMs": 5729,
+      "p": 0.855605
+    },
+    {
+      "text": "os",
+      "fromMs": 5869,
+      "toMs": 5979,
+      "dtwMs": 5989,
+      "p": 0.999956
+    },
+    {
+      "text": " y",
+      "fromMs": 6069,
+      "toMs": 6109,
+      "dtwMs": 6129,
+      "p": 0.646114
+    },
+    {
+      "text": " que",
+      "fromMs": 6109,
+      "toMs": 6299,
+      "dtwMs": 6229,
+      "p": 0.955574
+    },
+    {
+      "text": " no",
+      "fromMs": 6299,
+      "toMs": 6389,
+      "dtwMs": 6309,
+      "p": 0.992623
+    },
+    {
+      "text": " le",
+      "fromMs": 6479,
+      "toMs": 6539,
+      "dtwMs": 6389,
+      "p": 0.883944
+    },
+    {
+      "text": " estaba",
+      "fromMs": 6539,
+      "toMs": 6909,
+      "dtwMs": 6549,
+      "p": 0.986867
+    },
+    {
+      "text": " hablando",
+      "fromMs": 6909,
+      "toMs": 7299,
+      "dtwMs": 6829,
+      "p": 0.98982
+    },
+    {
+      "text": " a",
+      "fromMs": 8222,
+      "toMs": 7406,
+      "dtwMs": 6929,
+      "p": 0.610582
+    },
+    {
+      "text": " ning",
+      "fromMs": 8222,
+      "toMs": 8244,
+      "dtwMs": 7049,
+      "p": 0.99782
+    },
+    {
+      "text": "uno",
+      "fromMs": 8244,
+      "toMs": 8464,
+      "dtwMs": 7249,
+      "p": 0.997887
+    },
+    {
+      "text": ".",
+      "fromMs": 8464,
+      "toMs": 8464,
+      "dtwMs": 7406,
+      "p": 0.506542
+    }
+  ]
+}

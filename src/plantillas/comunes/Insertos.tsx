@@ -830,6 +830,8 @@ export const InsertoCifra: React.FC<{
   m: Marca;
   valor: number;
   prefijo?: string;
+  sufijo?: string; // "%"
+  inicial?: number; // valor desde el que cuenta (igual a `valor`: aparece ya contada)
   etiqueta: string;
   tamano?: number;
   x: number;
@@ -840,6 +842,8 @@ export const InsertoCifra: React.FC<{
   m,
   valor,
   prefijo = "",
+  sufijo = "",
+  inicial = 0,
   etiqueta,
   tamano = TEXTO_GRANDE,
   x,
@@ -849,11 +853,11 @@ export const InsertoCifra: React.FC<{
 }) => {
   const f = useCurrentFrame();
   const s = aparece(f, duracion, seco);
-  const v = interpolate(f, [0, CIFRA_CUENTA], [0, valor], {
+  const v = interpolate(f, [0, CIFRA_CUENTA], [inicial, valor], {
     ...clamp,
     easing: Easing.out(Easing.cubic),
   });
-  const texto = prefijo + Math.round(v).toLocaleString("es-AR");
+  const texto = prefijo + Math.round(v).toLocaleString("es-AR") + sufijo;
   const letra: React.CSSProperties = {
     fontFamily: m.fuenteTitulos ?? m.fuente,
     fontWeight: 800,
@@ -1313,12 +1317,20 @@ export const InsertoTiendaOnline: React.FC<{
 // ---------- Conexión ----------
 // Íconos de app que entran cada uno en su frame y, en `centro.frame`, un ícono central (p. ej. el catálogo)
 // al que se conectan con líneas lisas que se dibujan una vez (sin puntitos que viajan ni nodos "de IA").
+type BadgeConexion = { texto: string; frame: number }; // numerito de notificaciones sobre la baldosa
 export const InsertoConexion: React.FC<{
-  apps: { icono: IconoRed; x: number; y: number; frame: number }[];
+  apps: {
+    icono: IconoRed;
+    x: number;
+    y: number;
+    frame: number;
+    badge?: BadgeConexion;
+  }[];
   centro: { icono: IconoRed; x: number; y: number; frame: number };
   duracion: number;
   seco?: boolean;
-}> = ({ apps, centro, duracion, seco }) => {
+  fuente?: string; // tipografía del numerito
+}> = ({ apps, centro, duracion, seco, fuente }) => {
   const f = useCurrentFrame();
   const salida = seco
     ? 1
@@ -1357,18 +1369,38 @@ export const InsertoConexion: React.FC<{
           ))}
         </svg>
       ) : null}
-      {[...apps, centro].map((a, i) => (
-        <Pop key={i} x={a.x} y={a.y} s={entraDesde(f, a.frame) * salida}>
-          <Baldosa icono={a.icono} />
-        </Pop>
-      ))}
+      {[...apps, centro].map((a, i) => {
+        const badge = (a as { badge?: BadgeConexion }).badge;
+        return (
+          <Pop key={i} x={a.x} y={a.y} s={entraDesde(f, a.frame) * salida}>
+            <Baldosa
+              icono={a.icono}
+              badge={
+                badge
+                  ? {
+                      texto: badge.texto,
+                      s: Math.max(0, entraDesde(f, badge.frame)),
+                      fuente,
+                    }
+                  : undefined
+              }
+            />
+          </Pop>
+        );
+      })}
     </>
   );
 };
 
-const Baldosa: React.FC<{ icono: IconoRed }> = ({ icono }) => (
+const BADGE_LADO = 66; // numerito de notificaciones
+const BADGE_TEXTO = 36;
+const Baldosa: React.FC<{
+  icono: IconoRed;
+  badge?: { texto: string; s: number; fuente?: string };
+}> = ({ icono, badge }) => (
   <div
     style={{
+      position: "relative",
       width: APP,
       height: APP,
       borderRadius: APP_RADIO,
@@ -1382,5 +1414,36 @@ const Baldosa: React.FC<{ icono: IconoRed }> = ({ icono }) => (
     <svg width={APP * 0.62} height={APP * 0.62} viewBox="0 0 24 24">
       <path d={icono.d} fill={BLANCO} fillRule="evenodd" />
     </svg>
+    {badge && badge.s > 0.02 ? (
+      <div
+        style={{
+          position: "absolute",
+          top: -BADGE_LADO / 2.6,
+          right: -BADGE_LADO / 2.6,
+          zoom: badge.s,
+        }}
+      >
+        <div
+          style={{
+            minWidth: BADGE_LADO,
+            height: BADGE_LADO,
+            padding: "0 14px",
+            boxSizing: "border-box",
+            borderRadius: BADGE_LADO / 2,
+            background: ERROR,
+            border: `5px solid ${BLANCO}`,
+            color: BLANCO,
+            fontFamily: badge.fuente,
+            fontWeight: 800,
+            fontSize: BADGE_TEXTO,
+            lineHeight: `${BADGE_LADO - 10}px`,
+            textAlign: "center",
+            boxShadow: "0 6px 14px rgba(0, 0, 0, 0.3)",
+          }}
+        >
+          {badge.texto}
+        </div>
+      </div>
+    ) : null}
   </div>
 );

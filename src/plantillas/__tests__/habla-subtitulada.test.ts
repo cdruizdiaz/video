@@ -150,6 +150,18 @@ describe("tramosDePlanos", () => {
     expect(t.map((x) => x.clip)).toEqual(["A"]);
     expect(t[0].desdeMs).toBe(1000);
   });
+
+  it("el primer plano empieza con la toma aunque se haya marcado unos ms después", () => {
+    const t = tramosDePlanos(toma, [
+      { desdeMs: 1120, clip: "A", desfaseMs: 500 },
+      { desdeMs: 5000 },
+    ]);
+    expect(t[0]).toMatchObject({
+      desdeMs: 1000,
+      hastaMs: 5000,
+      inicioClipMs: 500,
+    });
+  });
 });
 
 describe("partirFrase", () => {

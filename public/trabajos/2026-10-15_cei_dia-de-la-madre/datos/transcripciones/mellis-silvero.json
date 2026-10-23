@@ -1,0 +1,408 @@
+{
+  "archivo": "mellis-silvero.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 18688,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6460,
+      "texto": "Hola mami, estoy en el Insti, te quería decir gracias por..."
+    },
+    {
+      "desdeMs": 6460,
+      "hastaMs": 11520,
+      "texto": "Hola mami, ¿cómo estás? Te quería decir que te amo. Soy Joaquín."
+    },
+    {
+      "desdeMs": 12340,
+      "hastaMs": 16700,
+      "texto": "Te quería decir gracias por cuidarme. Te adoro. Te amamos."
+    },
+    {
+      "desdeMs": 17460,
+      "hastaMs": 17900,
+      "texto": "También."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 60,
+      "toMs": 1230,
+      "dtwMs": 2180,
+      "p": 0.368107
+    },
+    {
+      "text": " m",
+      "fromMs": 1330,
+      "toMs": 1530,
+      "dtwMs": 2320,
+      "p": 0.767198
+    },
+    {
+      "text": "ami",
+      "fromMs": 1530,
+      "toMs": 2460,
+      "dtwMs": 2460,
+      "p": 0.995465
+    },
+    {
+      "text": ",",
+      "fromMs": 2460,
+      "toMs": 2540,
+      "dtwMs": 2560,
+      "p": 0.600397
+    },
+    {
+      "text": " estoy",
+      "fromMs": 2660,
+      "toMs": 3000,
+      "dtwMs": 2700,
+      "p": 0.969572
+    },
+    {
+      "text": " en",
+      "fromMs": 3000,
+      "toMs": 3150,
+      "dtwMs": 2940,
+      "p": 0.991677
+    },
+    {
+      "text": " el",
+      "fromMs": 3150,
+      "toMs": 3300,
+      "dtwMs": 3140,
+      "p": 0.978838
+    },
+    {
+      "text": " Inst",
+      "fromMs": 3300,
+      "toMs": 3610,
+      "dtwMs": 3460,
+      "p": 0.77962
+    },
+    {
+      "text": "i",
+      "fromMs": 3610,
+      "toMs": 3720,
+      "dtwMs": 3620,
+      "p": 0.713506
+    },
+    {
+      "text": ",",
+      "fromMs": 3720,
+      "toMs": 3890,
+      "dtwMs": 4200,
+      "p": 0.248688
+    },
+    {
+      "text": " te",
+      "fromMs": 4010,
+      "toMs": 4140,
+      "dtwMs": 4300,
+      "p": 0.972894
+    },
+    {
+      "text": " quería",
+      "fromMs": 4230,
+      "toMs": 4730,
+      "dtwMs": 4720,
+      "p": 0.956287
+    },
+    {
+      "text": " decir",
+      "fromMs": 4730,
+      "toMs": 5200,
+      "dtwMs": 5200,
+      "p": 0.977727
+    },
+    {
+      "text": " gracias",
+      "fromMs": 5200,
+      "toMs": 5700,
+      "dtwMs": 5540,
+      "p": 0.907803
+    },
+    {
+      "text": " por",
+      "fromMs": 5700,
+      "toMs": 5930,
+      "dtwMs": 5900,
+      "p": 0.990216
+    },
+    {
+      "text": "...",
+      "fromMs": 5930,
+      "toMs": 6460,
+      "dtwMs": 6240,
+      "p": 0.861356
+    },
+    {
+      "text": " Hola",
+      "fromMs": 6520,
+      "toMs": 6730,
+      "dtwMs": 6940,
+      "p": 0.984071
+    },
+    {
+      "text": " m",
+      "fromMs": 6730,
+      "toMs": 6800,
+      "dtwMs": 7200,
+      "p": 0.998904
+    },
+    {
+      "text": "ami",
+      "fromMs": 6800,
+      "toMs": 7000,
+      "dtwMs": 7360,
+      "p": 0.999971
+    },
+    {
+      "text": ",",
+      "fromMs": 7000,
+      "toMs": 7130,
+      "dtwMs": 7460,
+      "p": 0.987473
+    },
+    {
+      "text": " ¿",
+      "fromMs": 7130,
+      "toMs": 7200,
+      "dtwMs": 7520,
+      "p": 0.755417
+    },
+    {
+      "text": "cómo",
+      "fromMs": 7200,
+      "toMs": 7460,
+      "dtwMs": 7660,
+      "p": 0.980176
+    },
+    {
+      "text": " estás",
+      "fromMs": 7470,
+      "toMs": 7810,
+      "dtwMs": 7980,
+      "p": 0.985625
+    },
+    {
+      "text": "?",
+      "fromMs": 7810,
+      "toMs": 8040,
+      "dtwMs": 8080,
+      "p": 0.973485
+    },
+    {
+      "text": " Te",
+      "fromMs": 8070,
+      "toMs": 8190,
+      "dtwMs": 8300,
+      "p": 0.962717
+    },
+    {
+      "text": " quería",
+      "fromMs": 8190,
+      "toMs": 8590,
+      "dtwMs": 8540,
+      "p": 0.99976
+    },
+    {
+      "text": " decir",
+      "fromMs": 8590,
+      "toMs": 8920,
+      "dtwMs": 8880,
+      "p": 0.99971
+    },
+    {
+      "text": " que",
+      "fromMs": 8920,
+      "toMs": 9000,
+      "dtwMs": 9100,
+      "p": 0.999779
+    },
+    {
+      "text": " te",
+      "fromMs": 9120,
+      "toMs": 9250,
+      "dtwMs": 9280,
+      "p": 0.999907
+    },
+    {
+      "text": " amo",
+      "fromMs": 9250,
+      "toMs": 9450,
+      "dtwMs": 9640,
+      "p": 0.999657
+    },
+    {
+      "text": ".",
+      "fromMs": 9450,
+      "toMs": 9680,
+      "dtwMs": 10280,
+      "p": 0.338755
+    },
+    {
+      "text": " Soy",
+      "fromMs": 9680,
+      "toMs": 10100,
+      "dtwMs": 10960,
+      "p": 0.78454
+    },
+    {
+      "text": " Jo",
+      "fromMs": 10100,
+      "toMs": 10290,
+      "dtwMs": 11160,
+      "p": 0.88263
+    },
+    {
+      "text": "aqu",
+      "fromMs": 10470,
+      "toMs": 10800,
+      "dtwMs": 11360,
+      "p": 0.967508
+    },
+    {
+      "text": "ín",
+      "fromMs": 10800,
+      "toMs": 11080,
+      "dtwMs": 11480,
+      "p": 0.782079
+    },
+    {
+      "text": ".",
+      "fromMs": 11080,
+      "toMs": 11480,
+      "dtwMs": 12280,
+      "p": 0.981648
+    },
+    {
+      "text": " Te",
+      "fromMs": 12340,
+      "toMs": 12340,
+      "dtwMs": 12460,
+      "p": 0.999685
+    },
+    {
+      "text": " quería",
+      "fromMs": 12340,
+      "toMs": 12340,
+      "dtwMs": 12680,
+      "p": 0.999699
+    },
+    {
+      "text": " decir",
+      "fromMs": 12400,
+      "toMs": 12580,
+      "dtwMs": 12940,
+      "p": 0.999672
+    },
+    {
+      "text": " gracias",
+      "fromMs": 12580,
+      "toMs": 13160,
+      "dtwMs": 13220,
+      "p": 0.999312
+    },
+    {
+      "text": " por",
+      "fromMs": 13160,
+      "toMs": 13400,
+      "dtwMs": 13500,
+      "p": 0.999975
+    },
+    {
+      "text": " cuid",
+      "fromMs": 13410,
+      "toMs": 13730,
+      "dtwMs": 13800,
+      "p": 0.999903
+    },
+    {
+      "text": "arme",
+      "fromMs": 13730,
+      "toMs": 14060,
+      "dtwMs": 14100,
+      "p": 0.999436
+    },
+    {
+      "text": ".",
+      "fromMs": 14060,
+      "toMs": 14200,
+      "dtwMs": 14560,
+      "p": 0.636244
+    },
+    {
+      "text": " Te",
+      "fromMs": 14350,
+      "toMs": 14460,
+      "dtwMs": 14680,
+      "p": 0.999514
+    },
+    {
+      "text": " ad",
+      "fromMs": 14460,
+      "toMs": 14620,
+      "dtwMs": 14940,
+      "p": 0.998382
+    },
+    {
+      "text": "oro",
+      "fromMs": 14620,
+      "toMs": 14830,
+      "dtwMs": 15180,
+      "p": 0.999905
+    },
+    {
+      "text": ".",
+      "fromMs": 15000,
+      "toMs": 15180,
+      "dtwMs": 15700,
+      "p": 0.999586
+    },
+    {
+      "text": " Te",
+      "fromMs": 15180,
+      "toMs": 15450,
+      "dtwMs": 15980,
+      "p": 0.684834
+    },
+    {
+      "text": " am",
+      "fromMs": 15450,
+      "toMs": 15650,
+      "dtwMs": 16200,
+      "p": 0.999596
+    },
+    {
+      "text": "amos",
+      "fromMs": 15740,
+      "toMs": 16220,
+      "dtwMs": 16680,
+      "p": 0.99991
+    },
+    {
+      "text": ".",
+      "fromMs": 16350,
+      "toMs": 16700,
+      "dtwMs": 17420,
+      "p": 0.999378
+    },
+    {
+      "text": " También",
+      "fromMs": 17500,
+      "toMs": 17540,
+      "dtwMs": 17880,
+      "p": 0.75455
+    },
+    {
+      "text": ".",
+      "fromMs": 17540,
+      "toMs": 17900,
+      "dtwMs": 17880,
+      "p": 0.908522
+    }
+  ]
+}

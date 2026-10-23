@@ -1,0 +1,314 @@
+{
+  "archivo": "macagno-sofia.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 13227,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1980,
+      "texto": "\"Ven, cabrón\""
+    },
+    {
+      "desdeMs": 1980,
+      "hastaMs": 13220,
+      "texto": "\"Hola mami, te quería agradecer por amarme mucho, por estar conmigo y por cocinarme por lo que siempre me gusta, listo\""
+    }
+  ],
+  "tokens": [
+    {
+      "text": " \"",
+      "fromMs": 30,
+      "toMs": 150,
+      "dtwMs": 600,
+      "p": 0.0252873
+    },
+    {
+      "text": "V",
+      "fromMs": 150,
+      "toMs": 300,
+      "dtwMs": 600,
+      "p": 0.10012
+    },
+    {
+      "text": "en",
+      "fromMs": 300,
+      "toMs": 600,
+      "dtwMs": 780,
+      "p": 0.846156
+    },
+    {
+      "text": ",",
+      "fromMs": 600,
+      "toMs": 900,
+      "dtwMs": 1140,
+      "p": 0.30332
+    },
+    {
+      "text": " cab",
+      "fromMs": 900,
+      "toMs": 1350,
+      "dtwMs": 1380,
+      "p": 0.142549
+    },
+    {
+      "text": "r",
+      "fromMs": 1350,
+      "toMs": 1500,
+      "dtwMs": 1520,
+      "p": 0.120217
+    },
+    {
+      "text": "ón",
+      "fromMs": 1500,
+      "toMs": 1800,
+      "dtwMs": 1520,
+      "p": 0.928108
+    },
+    {
+      "text": "\"",
+      "fromMs": 1800,
+      "toMs": 1980,
+      "dtwMs": 1900,
+      "p": 0.715838
+    },
+    {
+      "text": " \"",
+      "fromMs": 2010,
+      "toMs": 2090,
+      "dtwMs": 2180,
+      "p": 0.22908
+    },
+    {
+      "text": "Hola",
+      "fromMs": 2090,
+      "toMs": 2550,
+      "dtwMs": 2380,
+      "p": 0.810224
+    },
+    {
+      "text": " m",
+      "fromMs": 2550,
+      "toMs": 2660,
+      "dtwMs": 2600,
+      "p": 0.535126
+    },
+    {
+      "text": "ami",
+      "fromMs": 2660,
+      "toMs": 3020,
+      "dtwMs": 2820,
+      "p": 0.997742
+    },
+    {
+      "text": ",",
+      "fromMs": 3020,
+      "toMs": 3120,
+      "dtwMs": 3040,
+      "p": 0.489834
+    },
+    {
+      "text": " te",
+      "fromMs": 3120,
+      "toMs": 3220,
+      "dtwMs": 3160,
+      "p": 0.962058
+    },
+    {
+      "text": " quería",
+      "fromMs": 3220,
+      "toMs": 3520,
+      "dtwMs": 3440,
+      "p": 0.745395
+    },
+    {
+      "text": " agrade",
+      "fromMs": 3520,
+      "toMs": 3820,
+      "dtwMs": 3740,
+      "p": 0.99156
+    },
+    {
+      "text": "cer",
+      "fromMs": 3820,
+      "toMs": 4000,
+      "dtwMs": 4040,
+      "p": 0.982336
+    },
+    {
+      "text": " por",
+      "fromMs": 4160,
+      "toMs": 4260,
+      "dtwMs": 4300,
+      "p": 0.952094
+    },
+    {
+      "text": " am",
+      "fromMs": 4260,
+      "toMs": 4450,
+      "dtwMs": 4520,
+      "p": 0.932018
+    },
+    {
+      "text": "arme",
+      "fromMs": 4450,
+      "toMs": 4830,
+      "dtwMs": 4740,
+      "p": 0.99659
+    },
+    {
+      "text": " mucho",
+      "fromMs": 4830,
+      "toMs": 5310,
+      "dtwMs": 5160,
+      "p": 0.987409
+    },
+    {
+      "text": ",",
+      "fromMs": 5320,
+      "toMs": 5470,
+      "dtwMs": 5420,
+      "p": 0.618657
+    },
+    {
+      "text": " por",
+      "fromMs": 5470,
+      "toMs": 5700,
+      "dtwMs": 5540,
+      "p": 0.824825
+    },
+    {
+      "text": " estar",
+      "fromMs": 5700,
+      "toMs": 6080,
+      "dtwMs": 5760,
+      "p": 0.992224
+    },
+    {
+      "text": " con",
+      "fromMs": 6080,
+      "toMs": 6310,
+      "dtwMs": 6080,
+      "p": 0.988625
+    },
+    {
+      "text": "m",
+      "fromMs": 6310,
+      "toMs": 6380,
+      "dtwMs": 6220,
+      "p": 0.988438
+    },
+    {
+      "text": "igo",
+      "fromMs": 6380,
+      "toMs": 6640,
+      "dtwMs": 6360,
+      "p": 0.997956
+    },
+    {
+      "text": " y",
+      "fromMs": 6640,
+      "toMs": 6740,
+      "dtwMs": 6920,
+      "p": 0.542407
+    },
+    {
+      "text": " por",
+      "fromMs": 6740,
+      "toMs": 6990,
+      "dtwMs": 7120,
+      "p": 0.969967
+    },
+    {
+      "text": " coc",
+      "fromMs": 7070,
+      "toMs": 7310,
+      "dtwMs": 7360,
+      "p": 0.972951
+    },
+    {
+      "text": "inar",
+      "fromMs": 7360,
+      "toMs": 7770,
+      "dtwMs": 7580,
+      "p": 0.999079
+    },
+    {
+      "text": "me",
+      "fromMs": 7770,
+      "toMs": 8000,
+      "dtwMs": 7800,
+      "p": 0.997307
+    },
+    {
+      "text": " por",
+      "fromMs": 8000,
+      "toMs": 8240,
+      "dtwMs": 8260,
+      "p": 0.857987
+    },
+    {
+      "text": " lo",
+      "fromMs": 8240,
+      "toMs": 8380,
+      "dtwMs": 8440,
+      "p": 0.976936
+    },
+    {
+      "text": " que",
+      "fromMs": 8380,
+      "toMs": 8620,
+      "dtwMs": 8620,
+      "p": 0.990996
+    },
+    {
+      "text": " siempre",
+      "fromMs": 8620,
+      "toMs": 9390,
+      "dtwMs": 9380,
+      "p": 0.921287
+    },
+    {
+      "text": " me",
+      "fromMs": 9390,
+      "toMs": 9610,
+      "dtwMs": 9700,
+      "p": 0.995794
+    },
+    {
+      "text": " gusta",
+      "fromMs": 9610,
+      "toMs": 10180,
+      "dtwMs": 10120,
+      "p": 0.983344
+    },
+    {
+      "text": ",",
+      "fromMs": 10180,
+      "toMs": 11040,
+      "dtwMs": 11780,
+      "p": 0.00854204
+    },
+    {
+      "text": " list",
+      "fromMs": 11040,
+      "toMs": 12090,
+      "dtwMs": 12180,
+      "p": 0.546066
+    },
+    {
+      "text": "o",
+      "fromMs": 12790,
+      "toMs": 13220,
+      "dtwMs": 12460,
+      "p": 0.994712
+    },
+    {
+      "text": "\"",
+      "fromMs": 13220,
+      "toMs": 13220,
+      "dtwMs": 12540,
+      "p": 0.791838
+    }
+  ]
+}

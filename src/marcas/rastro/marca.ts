@@ -25,3 +25,14 @@ export const rastro: Marca = {
   logoFiltroSobreClaro: "brightness(0.35)",
   logoFiltroSobreOscuro: "invert(1) brightness(2.2)",
 };
+
+// Paleta del feed de Instagram (@somos_rastro, portadas medidas el 2026-10-16). Va aparte de `colores`
+// para no cambiar las plantillas que ya usan `colores.acento` con esta marca.
+export const paletaRastro = {
+  papel: "#f7f4ea", // base clara (= colores.fondo)
+  crema: "#dbd1bf", // papel kraft / crema de fondos
+  tinta: "#0d0d0d", // negro de fondos y texto
+  petroleo: "#045e5a", // verde petróleo: fondos completos (Welcome Luco, Marca Personal)
+  bordo: "#750d0e", // bordó: fondos, recuadros de palabras, estrellas
+  turquesa: "#0f9c9a", // turquesa de los trazos a mano y estrellas: acento chico
+} as const;

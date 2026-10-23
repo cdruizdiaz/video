@@ -1,0 +1,309 @@
+{
+  "archivo": "aglieri-olivia.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 12715,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 10920,
+      "texto": "Hola mami, ¿cómo estás? Estoy acá en inglés y solamente te quería decir que gracias por siempre estaré para mí y por apoyarme. Te amo y te quiero un montón. Un beso."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 630,
+      "toMs": 1250,
+      "dtwMs": 1860,
+      "p": 0.346422
+    },
+    {
+      "text": " m",
+      "fromMs": 1250,
+      "toMs": 1500,
+      "dtwMs": 2060,
+      "p": 0.752098
+    },
+    {
+      "text": "ami",
+      "fromMs": 1730,
+      "toMs": 2490,
+      "dtwMs": 2300,
+      "p": 0.994721
+    },
+    {
+      "text": ",",
+      "fromMs": 2510,
+      "toMs": 2560,
+      "dtwMs": 2480,
+      "p": 0.642095
+    },
+    {
+      "text": " ¿",
+      "fromMs": 2560,
+      "toMs": 2590,
+      "dtwMs": 2500,
+      "p": 0.629429
+    },
+    {
+      "text": "cómo",
+      "fromMs": 2590,
+      "toMs": 2710,
+      "dtwMs": 2620,
+      "p": 0.884646
+    },
+    {
+      "text": " estás",
+      "fromMs": 2800,
+      "toMs": 2880,
+      "dtwMs": 2860,
+      "p": 0.924806
+    },
+    {
+      "text": "?",
+      "fromMs": 2880,
+      "toMs": 3000,
+      "dtwMs": 3180,
+      "p": 0.959106
+    },
+    {
+      "text": " Estoy",
+      "fromMs": 3000,
+      "toMs": 3290,
+      "dtwMs": 3400,
+      "p": 0.552872
+    },
+    {
+      "text": " acá",
+      "fromMs": 3350,
+      "toMs": 3480,
+      "dtwMs": 3560,
+      "p": 0.961708
+    },
+    {
+      "text": " en",
+      "fromMs": 3520,
+      "toMs": 3610,
+      "dtwMs": 3680,
+      "p": 0.989393
+    },
+    {
+      "text": " inglés",
+      "fromMs": 3610,
+      "toMs": 4000,
+      "dtwMs": 3980,
+      "p": 0.895705
+    },
+    {
+      "text": " y",
+      "fromMs": 4000,
+      "toMs": 4080,
+      "dtwMs": 4600,
+      "p": 0.735615
+    },
+    {
+      "text": " solamente",
+      "fromMs": 4500,
+      "toMs": 5040,
+      "dtwMs": 4940,
+      "p": 0.924699
+    },
+    {
+      "text": " te",
+      "fromMs": 5040,
+      "toMs": 5160,
+      "dtwMs": 5160,
+      "p": 0.950798
+    },
+    {
+      "text": " quería",
+      "fromMs": 5160,
+      "toMs": 5400,
+      "dtwMs": 5380,
+      "p": 0.977417
+    },
+    {
+      "text": " decir",
+      "fromMs": 5400,
+      "toMs": 5840,
+      "dtwMs": 5760,
+      "p": 0.948048
+    },
+    {
+      "text": " que",
+      "fromMs": 5840,
+      "toMs": 6480,
+      "dtwMs": 6480,
+      "p": 0.795077
+    },
+    {
+      "text": " gracias",
+      "fromMs": 6480,
+      "toMs": 6970,
+      "dtwMs": 6900,
+      "p": 0.77733
+    },
+    {
+      "text": " por",
+      "fromMs": 7020,
+      "toMs": 7120,
+      "dtwMs": 7080,
+      "p": 0.913833
+    },
+    {
+      "text": " siempre",
+      "fromMs": 7120,
+      "toMs": 7260,
+      "dtwMs": 7240,
+      "p": 0.573864
+    },
+    {
+      "text": " estar",
+      "fromMs": 7260,
+      "toMs": 7460,
+      "dtwMs": 7400,
+      "p": 0.449592
+    },
+    {
+      "text": "é",
+      "fromMs": 7460,
+      "toMs": 7470,
+      "dtwMs": 7460,
+      "p": 0.379802
+    },
+    {
+      "text": " para",
+      "fromMs": 7520,
+      "toMs": 7770,
+      "dtwMs": 7620,
+      "p": 0.920823
+    },
+    {
+      "text": " mí",
+      "fromMs": 7770,
+      "toMs": 7920,
+      "dtwMs": 7880,
+      "p": 0.913163
+    },
+    {
+      "text": " y",
+      "fromMs": 7920,
+      "toMs": 7990,
+      "dtwMs": 8120,
+      "p": 0.853505
+    },
+    {
+      "text": " por",
+      "fromMs": 7990,
+      "toMs": 8210,
+      "dtwMs": 8260,
+      "p": 0.971693
+    },
+    {
+      "text": " apoy",
+      "fromMs": 8210,
+      "toMs": 8450,
+      "dtwMs": 8540,
+      "p": 0.996546
+    },
+    {
+      "text": "arme",
+      "fromMs": 8500,
+      "toMs": 8810,
+      "dtwMs": 8800,
+      "p": 0.999666
+    },
+    {
+      "text": ".",
+      "fromMs": 8810,
+      "toMs": 8850,
+      "dtwMs": 9320,
+      "p": 0.748326
+    },
+    {
+      "text": " Te",
+      "fromMs": 8850,
+      "toMs": 9090,
+      "dtwMs": 9380,
+      "p": 0.802776
+    },
+    {
+      "text": " amo",
+      "fromMs": 9260,
+      "toMs": 9260,
+      "dtwMs": 9600,
+      "p": 0.994421
+    },
+    {
+      "text": " y",
+      "fromMs": 9310,
+      "toMs": 9310,
+      "dtwMs": 9720,
+      "p": 0.99028
+    },
+    {
+      "text": " te",
+      "fromMs": 9340,
+      "toMs": 9420,
+      "dtwMs": 9780,
+      "p": 0.955055
+    },
+    {
+      "text": " quiero",
+      "fromMs": 9420,
+      "toMs": 9760,
+      "dtwMs": 9920,
+      "p": 0.998039
+    },
+    {
+      "text": " un",
+      "fromMs": 9760,
+      "toMs": 9870,
+      "dtwMs": 10000,
+      "p": 0.98394
+    },
+    {
+      "text": " montón",
+      "fromMs": 9870,
+      "toMs": 10210,
+      "dtwMs": 10280,
+      "p": 0.976518
+    },
+    {
+      "text": ".",
+      "fromMs": 10210,
+      "toMs": 10370,
+      "dtwMs": 10420,
+      "p": 0.653984
+    },
+    {
+      "text": " Un",
+      "fromMs": 10370,
+      "toMs": 10480,
+      "dtwMs": 10540,
+      "p": 0.843716
+    },
+    {
+      "text": " bes",
+      "fromMs": 10480,
+      "toMs": 10650,
+      "dtwMs": 10760,
+      "p": 0.999314
+    },
+    {
+      "text": "o",
+      "fromMs": 10650,
+      "toMs": 10680,
+      "dtwMs": 10900,
+      "p": 0.999338
+    },
+    {
+      "text": ".",
+      "fromMs": 10790,
+      "toMs": 10920,
+      "dtwMs": 10900,
+      "p": 0.919893
+    }
+  ]
+}

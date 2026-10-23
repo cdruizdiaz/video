@@ -1,0 +1,26 @@
+{
+  "IMG_7328": {
+    "conAudioDe": "IMG_7180-002",
+    "desfaseMs": 343169.9,
+    "z": 19.4,
+    "ventanasDeAcuerdo": "1/1"
+  },
+  "IMG_7329": {
+    "conAudioDe": "IMG_7180-002",
+    "desfaseMs": 354022.8,
+    "z": 17.9,
+    "ventanasDeAcuerdo": "1/1"
+  },
+  "IMG_7330": {
+    "conAudioDe": "IMG_7180-002",
+    "desfaseMs": 1629739.8,
+    "z": 43.1,
+    "ventanasDeAcuerdo": "3/3"
+  },
+  "IMG_7327": {
+    "conAudioDe": "IMG_7180-002",
+    "desfaseMs": 209772.0,
+    "z": 5.1,
+    "ventanasDeAcuerdo": "1/2"
+  }
+}

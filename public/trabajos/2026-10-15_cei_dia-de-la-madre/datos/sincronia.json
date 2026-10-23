@@ -1,0 +1,92 @@
+{
+  "aglieri-olivia": {
+    "desfaseMs": -708.4,
+    "z": 69.1,
+    "duracionVideoMs": 12833,
+    "duracionExternoMs": 12715
+  },
+  "alvarez-lola": {
+    "desfaseMs": 647.1,
+    "z": 14.0,
+    "duracionVideoMs": 10917,
+    "duracionExternoMs": 11520
+  },
+  "azanza-amparo": {
+    "desfaseMs": -902.8,
+    "z": 35.4,
+    "duracionVideoMs": 13873,
+    "duracionExternoMs": 14763
+  },
+  "bautista-rosario": {
+    "desfaseMs": -173.4,
+    "z": 25.5,
+    "duracionVideoMs": 5415,
+    "duracionExternoMs": 5973
+  },
+  "benuzzi-dante": {
+    "desfaseMs": 182.4,
+    "z": 20.6,
+    "duracionVideoMs": 12875,
+    "duracionExternoMs": 11179
+  },
+  "ciorciari-santiago": {
+    "desfaseMs": 203.2,
+    "z": 76.8,
+    "duracionVideoMs": 19208,
+    "duracionExternoMs": 21077
+  },
+  "di-gerolamo-pilar": {
+    "desfaseMs": -6755.5,
+    "z": 26.6,
+    "duracionVideoMs": 17168,
+    "duracionExternoMs": 11349
+  },
+  "gauna-alfonsina": {
+    "desfaseMs": -226.2,
+    "z": 55.3,
+    "duracionVideoMs": 21543,
+    "duracionExternoMs": 22528
+  },
+  "macagno-sofia": {
+    "desfaseMs": 1456.3,
+    "z": 31.5,
+    "duracionVideoMs": 10625,
+    "duracionExternoMs": 13227
+  },
+  "mastropaolo-ricardo": {
+    "desfaseMs": 410.2,
+    "z": 24.8,
+    "duracionVideoMs": 13000,
+    "duracionExternoMs": 16299
+  },
+  "mellis-silvero": {
+    "desfaseMs": -75.5,
+    "z": 45.1,
+    "duracionVideoMs": 19875,
+    "duracionExternoMs": 18688
+  },
+  "meresman-mateo": {
+    "desfaseMs": -882.6,
+    "z": 55.1,
+    "duracionVideoMs": 13708,
+    "duracionExternoMs": 14507
+  },
+  "perello-clara": {
+    "desfaseMs": 355.1,
+    "z": 29.9,
+    "duracionVideoMs": 7917,
+    "duracionExternoMs": 6485
+  },
+  "rodrigo-antonia": {
+    "desfaseMs": 284.1,
+    "z": 40.7,
+    "duracionVideoMs": 12500,
+    "duracionExternoMs": 13312
+  },
+  "sartore-naiara": {
+    "desfaseMs": 463.5,
+    "z": 47.5,
+    "duracionVideoMs": 8958,
+    "duracionExternoMs": 10837
+  }
+}
