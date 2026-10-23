@@ -1,0 +1,78 @@
+{
+  "archivo": "voz_l20.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1443,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1300,
+      "texto": "Así que lo libre ocupa lo mismo."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Así",
+      "fromMs": 20,
+      "toMs": 90,
+      "dtwMs": 160,
+      "p": 0.870936
+    },
+    {
+      "text": " que",
+      "fromMs": 160,
+      "toMs": 260,
+      "dtwMs": 280,
+      "p": 0.994643
+    },
+    {
+      "text": " lo",
+      "fromMs": 260,
+      "toMs": 350,
+      "dtwMs": 380,
+      "p": 0.98724
+    },
+    {
+      "text": " libre",
+      "fromMs": 350,
+      "toMs": 600,
+      "dtwMs": 560,
+      "p": 0.99728
+    },
+    {
+      "text": " oc",
+      "fromMs": 600,
+      "toMs": 700,
+      "dtwMs": 700,
+      "p": 0.691555
+    },
+    {
+      "text": "upa",
+      "fromMs": 700,
+      "toMs": 880,
+      "dtwMs": 800,
+      "p": 0.99934
+    },
+    {
+      "text": " lo",
+      "fromMs": 880,
+      "toMs": 990,
+      "dtwMs": 940,
+      "p": 0.994285
+    },
+    {
+      "text": " mismo",
+      "fromMs": 990,
+      "toMs": 1280,
+      "dtwMs": 1200,
+      "p": 0.993534
+    },
+    {
+      "text": ".",
+      "fromMs": 1300,
+      "toMs": 1300,
+      "dtwMs": 1280,
+      "p": 0.924093
+    }
+  ]
+}

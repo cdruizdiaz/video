@@ -17,6 +17,10 @@ import { composiciones as claudioPrueba25dVideo } from "./2026-10-04_claudio_pru
 import { composiciones as claudioPrueba3d } from "./2026-10-04_claudio_prueba-3d/composiciones";
 import { composiciones as claudioPruebaBlender } from "./2026-10-04_claudio_prueba-blender/composiciones";
 import { composiciones as claudioBloomieRock } from "./2026-10-04_claudio_bloomie-rock/composiciones";
+import { composiciones as claudioBloomieTomaVida } from "./2026-10-06_claudio_bloomie-toma-vida/composiciones";
+import { composiciones as claudioBloomiePlantado } from "./2026-10-06_claudio_bloomie-plantado/composiciones";
+import { composiciones as claudioCantandoRobot } from "./2026-10-06_claudio_cantando-como-robot/composiciones";
+import { composiciones as amigosMatPitagoras } from "./2026-10-08_los-amigos-mat_teorema-pitagoras/composiciones";
 import { composiciones as rastroBloomiePlantada } from "./2026-10-06_rastro_bloomie-plantada/composiciones";
 import { composiciones as voltoFashionWeek } from "./2026-10-06_volto_fashion-week/composiciones";
 import { composiciones as laencinaErosFilosofia } from "./2026-10-13_laencina_eros-filosofia/composiciones";
@@ -45,6 +49,10 @@ export const TRABAJOS: Trabajo[] = [
   { id: "2026-10-04_claudio_prueba-3d", composiciones: claudioPrueba3d },
   { id: "2026-10-04_claudio_prueba-blender", composiciones: claudioPruebaBlender },
   { id: "2026-10-04_claudio_bloomie-rock", composiciones: claudioBloomieRock },
+  { id: "2026-10-06_claudio_bloomie-toma-vida", composiciones: claudioBloomieTomaVida },
+  { id: "2026-10-06_claudio_bloomie-plantado", composiciones: claudioBloomiePlantado },
+  { id: "2026-10-06_claudio_cantando-como-robot", composiciones: claudioCantandoRobot },
+  { id: "2026-10-08_los-amigos-mat_teorema-pitagoras", composiciones: amigosMatPitagoras },
   { id: "2026-10-06_rastro_bloomie-plantada", composiciones: rastroBloomiePlantada },
   { id: "2026-10-06_volto_fashion-week", composiciones: voltoFashionWeek },
   { id: "2026-10-13_laencina_eros-filosofia", composiciones: laencinaErosFilosofia },

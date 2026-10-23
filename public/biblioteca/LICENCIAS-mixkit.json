@@ -510,5 +510,60 @@
     "fuente": "https://assets.mixkit.co/music/134/134.mp3",
     "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
     "descargado": "2026-10-23"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-2579-light-switch-sound.wav",
+    "id": "2579",
+    "tipo": "sfx",
+    "titulo": "Light switch sound",
+    "duracionSeg": 0.2,
+    "sha256": "a24aae3ccf08e65c63dd56ee6b60f1e0369576cbab0e135f15760e29e9cc88e0",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/2579/2579.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-1070-big-old-clock-ticking.wav",
+    "id": "1070",
+    "tipo": "sfx",
+    "titulo": "Big old clock ticking",
+    "duracionSeg": 36,
+    "sha256": "03da1e576efa1a7d07eedbc366a56bd88bc09bb3c5691592d6a47a7c28636799",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/1070/1070.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-471-sad-game-over-trombone.wav",
+    "id": "471",
+    "tipo": "sfx",
+    "titulo": "Sad game over trombone",
+    "duracionSeg": 5.6,
+    "sha256": "304676ea4cc8a2e7aa8bcac5a70e7b123f7d042492095920a1f21ecff5d2215f",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/471/471.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-1009-rubber-squeaking.wav",
+    "id": "1009",
+    "tipo": "sfx",
+    "titulo": "Rubber squeaking",
+    "duracionSeg": 5.6,
+    "sha256": "1f02542f26a5c20bf355edccdaee6b729a6ca51cd4e563ffe3580041e26a7a79",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/1009/1009.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-06"
+  },
+  {
+    "archivo": "public/biblioteca/sfx/mixkit/mixkit-600-achievement-bell.wav",
+    "id": "600",
+    "tipo": "sfx",
+    "titulo": "Achievement bell",
+    "duracionSeg": 2.4,
+    "sha256": "7a5c0b2fb7f7cf77f6b3d36e9e165176a0b2f463c6ff3e6f3c133eda7fc945a1",
+    "fuente": "https://assets.mixkit.co/active_storage/sfx/600/600.wav",
+    "licencia": "Mixkit Sound Effects Free License — https://mixkit.co/license/#sfxFree",
+    "descargado": "2026-10-08"
   }
 ]

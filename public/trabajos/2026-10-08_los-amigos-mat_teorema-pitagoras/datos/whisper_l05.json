@@ -1,0 +1,127 @@
+{
+  "archivo": "voz_l05.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3969,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3820,
+      "texto": "5. Si el parque tiene tres de un lado y cuatro del otro!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " 5",
+      "fromMs": 90,
+      "toMs": 240,
+      "dtwMs": 420,
+      "p": 0.382385
+    },
+    {
+      "text": ".",
+      "fromMs": 240,
+      "toMs": 480,
+      "dtwMs": 760,
+      "p": 0.717837
+    },
+    {
+      "text": " Si",
+      "fromMs": 480,
+      "toMs": 640,
+      "dtwMs": 1100,
+      "p": 0.447121
+    },
+    {
+      "text": " el",
+      "fromMs": 640,
+      "toMs": 680,
+      "dtwMs": 1220,
+      "p": 0.997286
+    },
+    {
+      "text": " par",
+      "fromMs": 990,
+      "toMs": 1040,
+      "dtwMs": 1380,
+      "p": 0.988395
+    },
+    {
+      "text": "que",
+      "fromMs": 1040,
+      "toMs": 1280,
+      "dtwMs": 1500,
+      "p": 0.997902
+    },
+    {
+      "text": " tiene",
+      "fromMs": 1280,
+      "toMs": 1680,
+      "dtwMs": 1740,
+      "p": 0.995571
+    },
+    {
+      "text": " tres",
+      "fromMs": 1680,
+      "toMs": 2000,
+      "dtwMs": 2020,
+      "p": 0.984311
+    },
+    {
+      "text": " de",
+      "fromMs": 2000,
+      "toMs": 2160,
+      "dtwMs": 2160,
+      "p": 0.970458
+    },
+    {
+      "text": " un",
+      "fromMs": 2160,
+      "toMs": 2320,
+      "dtwMs": 2260,
+      "p": 0.977252
+    },
+    {
+      "text": " lado",
+      "fromMs": 2320,
+      "toMs": 2640,
+      "dtwMs": 2560,
+      "p": 0.993301
+    },
+    {
+      "text": " y",
+      "fromMs": 2640,
+      "toMs": 2650,
+      "dtwMs": 2800,
+      "p": 0.981913
+    },
+    {
+      "text": " cuatro",
+      "fromMs": 2720,
+      "toMs": 3200,
+      "dtwMs": 3160,
+      "p": 0.993147
+    },
+    {
+      "text": " del",
+      "fromMs": 3200,
+      "toMs": 3440,
+      "dtwMs": 3380,
+      "p": 0.99412
+    },
+    {
+      "text": " otro",
+      "fromMs": 3440,
+      "toMs": 3800,
+      "dtwMs": 3660,
+      "p": 0.999195
+    },
+    {
+      "text": "!",
+      "fromMs": 3800,
+      "toMs": 3820,
+      "dtwMs": 3800,
+      "p": 0.402235
+    }
+  ]
+}

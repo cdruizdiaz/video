@@ -1,0 +1,30 @@
+{
+  "nota": "Bloomie toma vida, 5 s, 9:16, 30 fps. Fuente de verdad de los tiempos (cuadros). La usan armar_escena.mjs (rig + escena 3D), caras.py (textura de la cara), preparar_audio.sh y BloomieTomaVida.tsx. Sale del guion_bloomie-toma-vida.md.",
+  "duracion": 150,
+  "pies": [540, 1330],
+  "escala": 1.95,
+  "luz": { "angulo": 125, "altura": 45, "color": "#ffd59a", "intensidad": 3.4, "ambiente": 0.3, "suavidad": 16, "colorAmbiente": "#ffe9cf", "apagado": 0.035 },
+  "recorte": { "angulo": 40, "altura": 40, "color": "#cfe6ff", "intensidad": 5.5, "entra": [30, 66] },
+  "encendido": { "cuadro": 6, "parpadeo": [1, 0.45, 0.1, 0.05, 1, 0.75, 1] },
+  "final": { "baja": [141, 150], "factor": 0.8 },
+  "giro": { "inicio": -0.5, "fin": 0, "tramo": [30, 66] },
+  "dormir": { "hasta": 36 },
+  "estirar": { "sube": [45, 52], "arriba": [52, 60], "baja": [60, 66] },
+  "mirarManos": { "sube": [66, 72], "mira": [72, 81], "baja": [81, 86], "cabeceo": 9, "adelante": 46, "adentro": 36, "alto": -6 },
+  "dolly": { "tramo": [66, 84], "escala": 1.05 },
+  "salto": { "inicio": 84, "duracion": 20, "altura": 70 },
+  "saludo": { "inicio": 106, "duracion": 42, "veces": 3, "adelante": 22 },
+  "caras": [
+    { "desde": 0, "hasta": 38, "cara": "dormido" },
+    { "desde": 38, "hasta": 44, "cara": "despertando" },
+    { "desde": 44, "hasta": 47, "cara": "parpadeo" },
+    { "desde": 47, "hasta": 50, "cara": "dormido" },
+    { "desde": 50, "hasta": 53, "cara": "parpadeo" },
+    { "desde": 53, "hasta": 66, "cara": "normal" },
+    { "desde": 66, "hasta": 87, "cara": "asombro", "pop": true },
+    { "desde": 87, "hasta": 150, "cara": "alegria", "pop": true }
+  ],
+  "particulas": { "desde": 105, "cada": 2, "vida": 45 },
+  "logo": { "entra": 126, "y": 1500, "alto": 150 },
+  "dof": { "tramo": [105, 120], "desenfoque": 9 }
+}

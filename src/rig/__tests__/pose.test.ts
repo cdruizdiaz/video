@@ -34,6 +34,13 @@ describe("combinar", () => {
     expect(sin.accesorios.gorro).toBeUndefined();
     expect(base.accesorios.gorro).toBeDefined();
   });
+  it("variantes: la última gana, null vuelve a la pieza original y no muta la base", () => {
+    const base = combinar(poseInicial(), { variantes: { mano_der: "abierta" } }, { variantes: { mano_der: "senala", mano_izq: "pulgar" } });
+    expect(base.variantes).toEqual({ mano_der: "senala", mano_izq: "pulgar" });
+    const sin = combinar(base, { variantes: { mano_der: null } });
+    expect(sin.variantes).toEqual({ mano_izq: "pulgar" });
+    expect(base.variantes.mano_der).toBe("senala");
+  });
 });
 
 describe("movDe con comodines", () => {

@@ -1,0 +1,260 @@
+{
+  "archivo": "voz_l16.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6552,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6940,
+      "texto": "Tomo cuatro copias del triᅡulo y las acomodo en este cuadrado. Lo que queda libre en el medio es el cuadrado de la hipotenusa."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Tom",
+      "fromMs": 10,
+      "toMs": 180,
+      "dtwMs": 160,
+      "p": 0.909903
+    },
+    {
+      "text": "o",
+      "fromMs": 180,
+      "toMs": 240,
+      "dtwMs": 280,
+      "p": 0.994634
+    },
+    {
+      "text": " cuatro",
+      "fromMs": 240,
+      "toMs": 540,
+      "dtwMs": 620,
+      "p": 0.975286
+    },
+    {
+      "text": " cop",
+      "fromMs": 600,
+      "toMs": 780,
+      "dtwMs": 880,
+      "p": 0.998399
+    },
+    {
+      "text": "ias",
+      "fromMs": 780,
+      "toMs": 960,
+      "dtwMs": 1000,
+      "p": 0.99744
+    },
+    {
+      "text": " del",
+      "fromMs": 960,
+      "toMs": 1140,
+      "dtwMs": 1180,
+      "p": 0.99735
+    },
+    {
+      "text": " tri",
+      "fromMs": 1140,
+      "toMs": 1320,
+      "dtwMs": 1380,
+      "p": 0.975459
+    },
+    {
+      "text": "ᅡ",
+      "fromMs": 1320,
+      "toMs": 1500,
+      "dtwMs": 1440,
+      "p": 0.84498
+    },
+    {
+      "text": "ulo",
+      "fromMs": 1500,
+      "toMs": 1680,
+      "dtwMs": 1640,
+      "p": 0.779472
+    },
+    {
+      "text": " y",
+      "fromMs": 1680,
+      "toMs": 1720,
+      "dtwMs": 1880,
+      "p": 0.976556
+    },
+    {
+      "text": " las",
+      "fromMs": 1820,
+      "toMs": 1920,
+      "dtwMs": 2000,
+      "p": 0.982907
+    },
+    {
+      "text": " acom",
+      "fromMs": 1920,
+      "toMs": 2160,
+      "dtwMs": 2240,
+      "p": 0.994418
+    },
+    {
+      "text": "odo",
+      "fromMs": 2160,
+      "toMs": 2340,
+      "dtwMs": 2380,
+      "p": 0.999022
+    },
+    {
+      "text": " en",
+      "fromMs": 2340,
+      "toMs": 2460,
+      "dtwMs": 2500,
+      "p": 0.995653
+    },
+    {
+      "text": " este",
+      "fromMs": 2460,
+      "toMs": 2670,
+      "dtwMs": 2660,
+      "p": 0.983629
+    },
+    {
+      "text": " cuad",
+      "fromMs": 2750,
+      "toMs": 2930,
+      "dtwMs": 2900,
+      "p": 0.991178
+    },
+    {
+      "text": "rado",
+      "fromMs": 2930,
+      "toMs": 3180,
+      "dtwMs": 3180,
+      "p": 0.995811
+    },
+    {
+      "text": ".",
+      "fromMs": 3180,
+      "toMs": 3230,
+      "dtwMs": 3480,
+      "p": 0.803223
+    },
+    {
+      "text": " Lo",
+      "fromMs": 3470,
+      "toMs": 3530,
+      "dtwMs": 3600,
+      "p": 0.8424
+    },
+    {
+      "text": " que",
+      "fromMs": 3530,
+      "toMs": 3650,
+      "dtwMs": 3720,
+      "p": 0.997339
+    },
+    {
+      "text": " queda",
+      "fromMs": 3670,
+      "toMs": 3910,
+      "dtwMs": 3940,
+      "p": 0.986643
+    },
+    {
+      "text": " libre",
+      "fromMs": 3910,
+      "toMs": 4180,
+      "dtwMs": 4160,
+      "p": 0.996675
+    },
+    {
+      "text": " en",
+      "fromMs": 4180,
+      "toMs": 4300,
+      "dtwMs": 4300,
+      "p": 0.971452
+    },
+    {
+      "text": " el",
+      "fromMs": 4300,
+      "toMs": 4380,
+      "dtwMs": 4400,
+      "p": 0.938324
+    },
+    {
+      "text": " medio",
+      "fromMs": 4380,
+      "toMs": 4750,
+      "dtwMs": 4680,
+      "p": 0.614828
+    },
+    {
+      "text": " es",
+      "fromMs": 4860,
+      "toMs": 4900,
+      "dtwMs": 4940,
+      "p": 0.781356
+    },
+    {
+      "text": " el",
+      "fromMs": 4970,
+      "toMs": 5060,
+      "dtwMs": 5060,
+      "p": 0.975294
+    },
+    {
+      "text": " cuad",
+      "fromMs": 5140,
+      "toMs": 5360,
+      "dtwMs": 5260,
+      "p": 0.996405
+    },
+    {
+      "text": "rado",
+      "fromMs": 5360,
+      "toMs": 5650,
+      "dtwMs": 5420,
+      "p": 0.996696
+    },
+    {
+      "text": " de",
+      "fromMs": 5650,
+      "toMs": 5730,
+      "dtwMs": 5540,
+      "p": 0.991925
+    },
+    {
+      "text": " la",
+      "fromMs": 5820,
+      "toMs": 5890,
+      "dtwMs": 5660,
+      "p": 0.994732
+    },
+    {
+      "text": " hip",
+      "fromMs": 5950,
+      "toMs": 6170,
+      "dtwMs": 5820,
+      "p": 0.994533
+    },
+    {
+      "text": "oten",
+      "fromMs": 6170,
+      "toMs": 6390,
+      "dtwMs": 6020,
+      "p": 0.999199
+    },
+    {
+      "text": "usa",
+      "fromMs": 6550,
+      "toMs": 6550,
+      "dtwMs": 6320,
+      "p": 0.99879
+    },
+    {
+      "text": ".",
+      "fromMs": 6550,
+      "toMs": 6550,
+      "dtwMs": 6440,
+      "p": 0.939057
+    }
+  ]
+}

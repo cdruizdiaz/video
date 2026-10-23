@@ -1,0 +1,141 @@
+{
+  "archivo": "voz_l12.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3026,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2880,
+      "texto": "Nueve m�s dieciséis, veinticinco. Entran justo."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Nue",
+      "fromMs": 10,
+      "toMs": 180,
+      "dtwMs": 200,
+      "p": 0.124277
+    },
+    {
+      "text": "ve",
+      "fromMs": 180,
+      "toMs": 300,
+      "dtwMs": 300,
+      "p": 0.9821
+    },
+    {
+      "text": " m",
+      "fromMs": 300,
+      "toMs": 360,
+      "dtwMs": 400,
+      "p": 0.561526
+    },
+    {
+      "text": "�s",
+      "fromMs": 360,
+      "toMs": 480,
+      "dtwMs": 420,
+      "p": 0.519926
+    },
+    {
+      "text": " die",
+      "fromMs": 480,
+      "toMs": 590,
+      "dtwMs": 620,
+      "p": 0.765296
+    },
+    {
+      "text": "cis",
+      "fromMs": 650,
+      "toMs": 840,
+      "dtwMs": 820,
+      "p": 0.985755
+    },
+    {
+      "text": "éis",
+      "fromMs": 840,
+      "toMs": 940,
+      "dtwMs": 960,
+      "p": 0.649542
+    },
+    {
+      "text": ",",
+      "fromMs": 1070,
+      "toMs": 1140,
+      "dtwMs": 1100,
+      "p": 0.641114
+    },
+    {
+      "text": " ve",
+      "fromMs": 1140,
+      "toMs": 1240,
+      "dtwMs": 1200,
+      "p": 0.927785
+    },
+    {
+      "text": "int",
+      "fromMs": 1280,
+      "toMs": 1340,
+      "dtwMs": 1260,
+      "p": 0.968243
+    },
+    {
+      "text": "ic",
+      "fromMs": 1450,
+      "toMs": 1560,
+      "dtwMs": 1460,
+      "p": 0.99204
+    },
+    {
+      "text": "in",
+      "fromMs": 1560,
+      "toMs": 1680,
+      "dtwMs": 1660,
+      "p": 0.983194
+    },
+    {
+      "text": "co",
+      "fromMs": 1680,
+      "toMs": 1750,
+      "dtwMs": 1720,
+      "p": 0.902542
+    },
+    {
+      "text": ".",
+      "fromMs": 2060,
+      "toMs": 2060,
+      "dtwMs": 1920,
+      "p": 0.94758
+    },
+    {
+      "text": " Ent",
+      "fromMs": 2220,
+      "toMs": 2280,
+      "dtwMs": 2360,
+      "p": 0.767424
+    },
+    {
+      "text": "ran",
+      "fromMs": 2280,
+      "toMs": 2500,
+      "dtwMs": 2480,
+      "p": 0.993689
+    },
+    {
+      "text": " justo",
+      "fromMs": 2500,
+      "toMs": 2870,
+      "dtwMs": 2800,
+      "p": 0.988388
+    },
+    {
+      "text": ".",
+      "fromMs": 2870,
+      "toMs": 2880,
+      "dtwMs": 2860,
+      "p": 0.975515
+    }
+  ]
+}

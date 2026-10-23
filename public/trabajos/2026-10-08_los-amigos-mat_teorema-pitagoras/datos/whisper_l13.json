@@ -1,0 +1,141 @@
+{
+  "archivo": "voz_l13.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3326,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3180,
+      "texto": "Y si el cuadrado tiene veinticinco, el lado mide cinco!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Y",
+      "fromMs": 20,
+      "toMs": 60,
+      "dtwMs": 80,
+      "p": 0.68351
+    },
+    {
+      "text": " si",
+      "fromMs": 60,
+      "toMs": 190,
+      "dtwMs": 180,
+      "p": 0.982725
+    },
+    {
+      "text": " el",
+      "fromMs": 190,
+      "toMs": 310,
+      "dtwMs": 300,
+      "p": 0.99335
+    },
+    {
+      "text": " cuad",
+      "fromMs": 380,
+      "toMs": 590,
+      "dtwMs": 560,
+      "p": 0.996883
+    },
+    {
+      "text": "rado",
+      "fromMs": 590,
+      "toMs": 790,
+      "dtwMs": 760,
+      "p": 0.995036
+    },
+    {
+      "text": " tiene",
+      "fromMs": 860,
+      "toMs": 1200,
+      "dtwMs": 1000,
+      "p": 0.997069
+    },
+    {
+      "text": " ve",
+      "fromMs": 1200,
+      "toMs": 1330,
+      "dtwMs": 1180,
+      "p": 0.866147
+    },
+    {
+      "text": "int",
+      "fromMs": 1330,
+      "toMs": 1530,
+      "dtwMs": 1280,
+      "p": 0.992894
+    },
+    {
+      "text": "ic",
+      "fromMs": 1530,
+      "toMs": 1660,
+      "dtwMs": 1520,
+      "p": 0.998129
+    },
+    {
+      "text": "in",
+      "fromMs": 1660,
+      "toMs": 1790,
+      "dtwMs": 1680,
+      "p": 0.949562
+    },
+    {
+      "text": "co",
+      "fromMs": 1790,
+      "toMs": 1920,
+      "dtwMs": 1800,
+      "p": 0.998192
+    },
+    {
+      "text": ",",
+      "fromMs": 1920,
+      "toMs": 2050,
+      "dtwMs": 2020,
+      "p": 0.911591
+    },
+    {
+      "text": " el",
+      "fromMs": 2050,
+      "toMs": 2180,
+      "dtwMs": 2120,
+      "p": 0.981299
+    },
+    {
+      "text": " lado",
+      "fromMs": 2180,
+      "toMs": 2440,
+      "dtwMs": 2320,
+      "p": 0.990191
+    },
+    {
+      "text": " m",
+      "fromMs": 2450,
+      "toMs": 2510,
+      "dtwMs": 2480,
+      "p": 0.82043
+    },
+    {
+      "text": "ide",
+      "fromMs": 2510,
+      "toMs": 2630,
+      "dtwMs": 2580,
+      "p": 0.998778
+    },
+    {
+      "text": " cinco",
+      "fromMs": 2720,
+      "toMs": 3170,
+      "dtwMs": 2980,
+      "p": 0.970897
+    },
+    {
+      "text": "!",
+      "fromMs": 3180,
+      "toMs": 3180,
+      "dtwMs": 3160,
+      "p": 0.559681
+    }
+  ]
+}

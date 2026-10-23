@@ -1,0 +1,14 @@
+Trabajo 2026-10-04_claudio_bloomie-rock — cerrado y archivado el 2026-10-06.
+
+Material archivado en C:/Videos/archivo/2026-10-04_claudio_bloomie-rock/
+  public/      copia completa de esta carpeta (img/: recortes del kit rock y 240 caras f000..f239.png; audio/rock_8s.wav;
+               cache3d/bloomie-rock_b29087017310.webm = capa de Blender con alfa; datos/)
+  final/       entregas: bloomie-rock_9x16_v1.mp4
+  biblioteca/  original de Mixkit usado (música 49 "Rock the Game", sha256 6ee768f33c21…) y LICENCIAS-mixkit.json
+
+Aquí quedan solo los datos (animacion.json, cache3d.json, coreografia.json, escena_extra.json, kit.json):
+los usa src/trabajos/2026-10-04_claudio_bloomie-rock/.
+
+Para restaurar: copiar C:/Videos/archivo/2026-10-04_claudio_bloomie-rock/public/ sobre esta carpeta (public/trabajos/2026-10-04_claudio_bloomie-rock/).
+O regenerarlo con recortar_kit.py, preparar_musica.sh, armar_escena.mjs, caras_rock.py y el render de Blender
+(ver src/trabajos/2026-10-04_claudio_bloomie-rock/TRABAJO.md → Cómo rehacerlo). Los originales siguen en C:/Videos/crudos/2026-10-04_claudio_bloomie-rock/.

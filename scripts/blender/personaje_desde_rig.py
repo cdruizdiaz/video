@@ -28,7 +28,7 @@ PT = 0.01  # metros por punto del .ai
 
 # Formas (las mismas proporciones que src/personajes/bloomie/Bloomie3D.tsx)
 PROF = {"cabeza": 0.72, "cuerpo": 0.78}
-PETALO = {"grosor": 16, "bisel": 6, "atras": -42, "inclina": 0.42}
+PETALO = {"grosor": 16, "bisel": 6, "atras": -42, "inclina": 0.22, "voxel": 1.6}  # inclina: más de ~0,3 rad y de frente se ve el canto como una tabla
 CONTORNO = 2.6  # pt
 COLOR_CONTORNO = "#a8650a"
 CARA = {"delante": 1.25, "subdiv": 24}  # la calcomanía arranca a 1,25 radios delante del centro y se proyecta
@@ -139,8 +139,15 @@ def extruido(nombre, d, caja, color, grosor, bisel):
     sol.offset = 0
     bev = o.modifiers.new("bisel", "BEVEL")
     bev.width = bisel * PT
-    bev.segments = 3
+    bev.segments = 4
     bev.limit_method = "ANGLE"
+    # Malla pareja: el relleno del SVG deja triángulos largos y finos que se ven como rayas con la luz rasante;
+    # el remesh por vóxeles + un suavizado dejan la pieza "acolchada", como un muñeco
+    rem = o.modifiers.new("remesh", "REMESH")
+    rem.mode = "VOXEL"
+    rem.voxel_size = PETALO["voxel"] * PT
+    lis = o.modifiers.new("suave", "SMOOTH")
+    lis.factor, lis.iterations = 0.6, 6
     for m in list(o.modifiers):
         bpy.ops.object.modifier_apply(modifier=m.name)
     bpy.ops.object.shade_smooth()

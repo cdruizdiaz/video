@@ -1,0 +1,1144 @@
+{
+ "version": 1,
+ "nombre": "benja",
+ "fuente": "benja_1_cuerpo.png",
+ "unidad": "px",
+ "bloques": [],
+ "vistas": {
+  "frente": {
+   "caja": [
+    -213.0,
+    -902.0,
+    192.0,
+    3.0
+   ],
+   "origenPagina": [
+    1158.0,
+    1373.0
+   ],
+   "piezas": [
+    {
+     "id": "pie_der",
+     "rol": "pie",
+     "z": 0,
+     "caja": [
+      -7.0,
+      -119.0,
+      185.0,
+      3.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/pie_der.png",
+       "x": -7.0,
+       "y": -119.0,
+       "w": 192,
+       "h": 122
+      }
+     ]
+    },
+    {
+     "id": "pierna_der",
+     "rol": "pierna",
+     "z": 2,
+     "caja": [
+      -44.0,
+      -417.0,
+      180.0,
+      -74.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/pierna_der.png",
+       "x": -44.0,
+       "y": -417.0,
+       "w": 224,
+       "h": 343
+      }
+     ]
+    },
+    {
+     "id": "pie_izq",
+     "rol": "pie",
+     "z": 4,
+     "caja": [
+      -180.0,
+      -119.0,
+      3.0,
+      1.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/pie_izq.png",
+       "x": -180.0,
+       "y": -119.0,
+       "w": 183,
+       "h": 120
+      }
+     ]
+    },
+    {
+     "id": "pierna_izq",
+     "rol": "pierna",
+     "z": 6,
+     "caja": [
+      -178.0,
+      -418.0,
+      29.0,
+      -74.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/pierna_izq.png",
+       "x": -178.0,
+       "y": -418.0,
+       "w": 207,
+       "h": 344
+      }
+     ]
+    },
+    {
+     "id": "mano_der",
+     "rol": "mano",
+     "z": 8,
+     "caja": [
+      103.0,
+      -313.0,
+      192.0,
+      -182.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_der.png",
+       "x": 103.0,
+       "y": -313.0,
+       "w": 89,
+       "h": 131
+      }
+     ]
+    },
+    {
+     "id": "antebrazo_der",
+     "rol": "antebrazo",
+     "z": 10,
+     "caja": [
+      86.0,
+      -443.0,
+      171.0,
+      -270.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/antebrazo_der.png",
+       "x": 86.0,
+       "y": -443.0,
+       "w": 85,
+       "h": 173
+      }
+     ]
+    },
+    {
+     "id": "brazo_der",
+     "rol": "brazo",
+     "z": 12,
+     "caja": [
+      60.0,
+      -474.0,
+      137.0,
+      -414.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/brazo_der.png",
+       "x": 60.0,
+       "y": -474.0,
+       "w": 77,
+       "h": 60
+      }
+     ]
+    },
+    {
+     "id": "mano_izq",
+     "rol": "mano",
+     "z": 14,
+     "caja": [
+      -171.0,
+      -300.0,
+      -71.0,
+      -168.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_izq.png",
+       "x": -171.0,
+       "y": -300.0,
+       "w": 100,
+       "h": 132
+      }
+     ]
+    },
+    {
+     "id": "antebrazo_izq",
+     "rol": "antebrazo",
+     "z": 16,
+     "caja": [
+      -188.0,
+      -449.0,
+      -98.0,
+      -254.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/antebrazo_izq.png",
+       "x": -188.0,
+       "y": -449.0,
+       "w": 90,
+       "h": 195
+      }
+     ]
+    },
+    {
+     "id": "brazo_izq",
+     "rol": "brazo",
+     "z": 18,
+     "caja": [
+      -184.0,
+      -479.0,
+      -108.0,
+      -419.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/brazo_izq.png",
+       "x": -184.0,
+       "y": -479.0,
+       "w": 76,
+       "h": 60
+      }
+     ]
+    },
+    {
+     "id": "cabeza",
+     "rol": "cabeza",
+     "z": 20,
+     "caja": [
+      -213.0,
+      -902.0,
+      123.0,
+      -572.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": []
+    },
+    {
+     "id": "cuerpo",
+     "rol": "cuerpo",
+     "z": 22,
+     "caja": [
+      -189.0,
+      -635.0,
+      128.0,
+      -347.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/cuerpo.png",
+       "x": -189.0,
+       "y": -635.0,
+       "w": 317,
+       "h": 288
+      }
+     ]
+    }
+   ],
+   "cabeza": {
+    "id": "cabeza",
+    "caja": [
+     -213.0,
+     -902.0,
+     123.0,
+     -572.0
+    ],
+    "z": 20
+   },
+   "rostro": {
+    "ojos": [],
+    "boca": {
+     "trazos": [],
+     "caja": [
+      1.8,
+      -689.9,
+      51.8,
+      -664.9
+     ],
+     "c": [
+      26.8,
+      -677.4
+     ]
+    },
+    "extras": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/cabeza_normal.png",
+       "x": -213.0,
+       "y": -902.0,
+       "w": 336,
+       "h": 330
+      }
+     ]
+    },
+    "sinBoca": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/cabeza_normal_sinboca.png",
+       "x": -213.0,
+       "y": -902.0,
+       "w": 336,
+       "h": 330
+      }
+     ]
+    },
+    "de": "png",
+    "cerrados": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/ojos_cerrados.png",
+       "x": -117.0,
+       "y": -816.0,
+       "w": 212,
+       "h": 121
+      }
+     ]
+    }
+   },
+   "variantes": {
+    "mano_izq:abierta": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_izq_abierta.png",
+       "x": -192.0,
+       "y": -306.0,
+       "w": 133,
+       "h": 145
+      }
+     ],
+     "caja": [
+      -192.0,
+      -306.0,
+      -59.0,
+      -161.0
+     ]
+    },
+    "mano_izq:senala": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_izq_senala.png",
+       "x": -176.0,
+       "y": -289.0,
+       "w": 85,
+       "h": 141
+      }
+     ],
+     "caja": [
+      -176.0,
+      -289.0,
+      -91.0,
+      -148.0
+     ]
+    },
+    "mano_izq:indice": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_izq_indice.png",
+       "x": -173.0,
+       "y": -289.0,
+       "w": 80,
+       "h": 137
+      }
+     ],
+     "caja": [
+      -173.0,
+      -289.0,
+      -93.0,
+      -152.0
+     ]
+    },
+    "mano_izq:pulgar": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_izq_pulgar.png",
+       "x": -186.0,
+       "y": -296.0,
+       "w": 126,
+       "h": 117
+      }
+     ],
+     "caja": [
+      -186.0,
+      -296.0,
+      -60.0,
+      -179.0
+     ]
+    },
+    "mano_izq:puno": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_izq_puno.png",
+       "x": -170.0,
+       "y": -293.0,
+       "w": 86,
+       "h": 109
+      }
+     ],
+     "caja": [
+      -170.0,
+      -293.0,
+      -84.0,
+      -184.0
+     ]
+    },
+    "mano_izq:rasca": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_izq_rasca.png",
+       "x": -165.0,
+       "y": -283.0,
+       "w": 81,
+       "h": 122
+      }
+     ],
+     "caja": [
+      -165.0,
+      -283.0,
+      -84.0,
+      -161.0
+     ]
+    },
+    "mano_der:abierta": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_der_abierta.png",
+       "x": 93.0,
+       "y": -319.0,
+       "w": 115,
+       "h": 140
+      }
+     ],
+     "caja": [
+      93.0,
+      -319.0,
+      208.0,
+      -179.0
+     ]
+    },
+    "mano_der:senala": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_der_senala.png",
+       "x": 107.0,
+       "y": -303.0,
+       "w": 77,
+       "h": 133
+      }
+     ],
+     "caja": [
+      107.0,
+      -303.0,
+      184.0,
+      -170.0
+     ]
+    },
+    "mano_der:indice": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_der_indice.png",
+       "x": 108.0,
+       "y": -303.0,
+       "w": 71,
+       "h": 129
+      }
+     ],
+     "caja": [
+      108.0,
+      -303.0,
+      179.0,
+      -174.0
+     ]
+    },
+    "mano_der:pulgar": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_der_pulgar.png",
+       "x": 97.0,
+       "y": -310.0,
+       "w": 112,
+       "h": 113
+      }
+     ],
+     "caja": [
+      97.0,
+      -310.0,
+      209.0,
+      -197.0
+     ]
+    },
+    "mano_der:puno": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_der_puno.png",
+       "x": 111.0,
+       "y": -307.0,
+       "w": 79,
+       "h": 100
+      }
+     ],
+     "caja": [
+      111.0,
+      -307.0,
+      190.0,
+      -207.0
+     ]
+    },
+    "mano_der:rasca": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/benja/piezas/mano_der_rasca.png",
+       "x": 114.0,
+       "y": -297.0,
+       "w": 74,
+       "h": 113
+      }
+     ],
+     "caja": [
+      114.0,
+      -297.0,
+      188.0,
+      -184.0
+     ]
+    }
+   }
+  }
+ },
+ "rostros": {
+  "normal": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     1.8,
+     -689.9,
+     51.8,
+     -664.9
+    ],
+    "c": [
+     26.8,
+     -677.4
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_normal.png",
+      "x": -213.0,
+      "y": -902.0,
+      "w": 336,
+      "h": 330
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_normal_sinboca.png",
+      "x": -213.0,
+      "y": -902.0,
+      "w": 336,
+      "h": 330
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/ojos_cerrados.png",
+      "x": -117.0,
+      "y": -816.0,
+      "w": 212,
+      "h": 121
+     }
+    ]
+   }
+  },
+  "feliz": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -4.8,
+     -677.2,
+     45.2,
+     -652.2
+    ],
+    "c": [
+     20.2,
+     -664.7
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_feliz.png",
+      "x": -212.0,
+      "y": -903.0,
+      "w": 337,
+      "h": 335
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_feliz_sinboca.png",
+      "x": -212.0,
+      "y": -903.0,
+      "w": 337,
+      "h": 335
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/ojos_cerrados.png",
+      "x": -117.0,
+      "y": -816.0,
+      "w": 212,
+      "h": 121
+     }
+    ]
+   }
+  },
+  "duda": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -0.7,
+     -693.1,
+     49.3,
+     -668.1
+    ],
+    "c": [
+     24.3,
+     -680.6
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_duda.png",
+      "x": -211.0,
+      "y": -903.0,
+      "w": 335,
+      "h": 331
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_duda_sinboca.png",
+      "x": -211.0,
+      "y": -903.0,
+      "w": 335,
+      "h": 331
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/ojos_cerrados.png",
+      "x": -117.0,
+      "y": -816.0,
+      "w": 212,
+      "h": 121
+     }
+    ]
+   }
+  },
+  "confundido": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     6.0,
+     -690.2,
+     56.0,
+     -665.2
+    ],
+    "c": [
+     31.0,
+     -677.7
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_confundido.png",
+      "x": -213.0,
+      "y": -902.0,
+      "w": 336,
+      "h": 331
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_confundido_sinboca.png",
+      "x": -213.0,
+      "y": -902.0,
+      "w": 336,
+      "h": 331
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/ojos_cerrados.png",
+      "x": -117.0,
+      "y": -816.0,
+      "w": 212,
+      "h": 121
+     }
+    ]
+   }
+  },
+  "sorprendido": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     2.6,
+     -682.1,
+     52.6,
+     -657.1
+    ],
+    "c": [
+     27.6,
+     -669.6
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_sorprendido.png",
+      "x": -212.0,
+      "y": -903.0,
+      "w": 339,
+      "h": 336
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_sorprendido_sinboca.png",
+      "x": -212.0,
+      "y": -903.0,
+      "w": 339,
+      "h": 336
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/ojos_cerrados.png",
+      "x": -117.0,
+      "y": -816.0,
+      "w": 212,
+      "h": 121
+     }
+    ]
+   }
+  },
+  "ojos_cerrados": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -4.6,
+     -679.7,
+     45.4,
+     -654.7
+    ],
+    "c": [
+     20.4,
+     -667.2
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_ojos_cerrados.png",
+      "x": -211.0,
+      "y": -902.0,
+      "w": 333,
+      "h": 329
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_ojos_cerrados_sinboca.png",
+      "x": -211.0,
+      "y": -902.0,
+      "w": 333,
+      "h": 329
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/ojos_cerrados.png",
+      "x": -117.0,
+      "y": -816.0,
+      "w": 212,
+      "h": 121
+     }
+    ]
+   }
+  },
+  "pensando": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     9.4,
+     -690.9,
+     59.4,
+     -665.9
+    ],
+    "c": [
+     34.4,
+     -678.4
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_pensando.png",
+      "x": -214.0,
+      "y": -901.0,
+      "w": 339,
+      "h": 334
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_pensando_sinboca.png",
+      "x": -214.0,
+      "y": -901.0,
+      "w": 339,
+      "h": 334
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/ojos_cerrados.png",
+      "x": -117.0,
+      "y": -816.0,
+      "w": 212,
+      "h": 121
+     }
+    ]
+   }
+  },
+  "ahh": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -6.9,
+     -678.3,
+     43.1,
+     -653.3
+    ],
+    "c": [
+     18.1,
+     -665.8
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_ahh.png",
+      "x": -211.0,
+      "y": -900.0,
+      "w": 337,
+      "h": 334
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_ahh_sinboca.png",
+      "x": -211.0,
+      "y": -900.0,
+      "w": 337,
+      "h": 334
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/ojos_cerrados.png",
+      "x": -117.0,
+      "y": -816.0,
+      "w": 212,
+      "h": 121
+     }
+    ]
+   }
+  },
+  "base": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     1.8,
+     -689.9,
+     51.8,
+     -664.9
+    ],
+    "c": [
+     26.8,
+     -677.4
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_normal.png",
+      "x": -213.0,
+      "y": -902.0,
+      "w": 336,
+      "h": 330
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/cabeza_normal_sinboca.png",
+      "x": -213.0,
+      "y": -902.0,
+      "w": 336,
+      "h": 330
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/benja/piezas/ojos_cerrados.png",
+      "x": -117.0,
+      "y": -816.0,
+      "w": 212,
+      "h": 121
+     }
+    ]
+   }
+  }
+ },
+ "visemas": {
+  "A": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/benja/piezas/boca_A.png",
+     "x": -24.5,
+     "y": -4.5,
+     "w": 49,
+     "h": 9
+    }
+   ],
+   "w": 49,
+   "h": 9,
+   "de": "png"
+  },
+  "B": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/benja/piezas/boca_B.png",
+     "x": -27.0,
+     "y": -7.0,
+     "w": 54,
+     "h": 14
+    }
+   ],
+   "w": 54,
+   "h": 14,
+   "de": "png"
+  },
+  "C": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/benja/piezas/boca_C.png",
+     "x": -34.0,
+     "y": -13.0,
+     "w": 68,
+     "h": 26
+    }
+   ],
+   "w": 68,
+   "h": 26,
+   "de": "png"
+  },
+  "D": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/benja/piezas/boca_D.png",
+     "x": -27.5,
+     "y": -22.0,
+     "w": 55,
+     "h": 44
+    }
+   ],
+   "w": 55,
+   "h": 44,
+   "de": "png"
+  },
+  "E": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/benja/piezas/boca_E.png",
+     "x": -15.0,
+     "y": -22.5,
+     "w": 30,
+     "h": 45
+    }
+   ],
+   "w": 30,
+   "h": 45,
+   "de": "png"
+  },
+  "F": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/benja/piezas/boca_F.png",
+     "x": -13.0,
+     "y": -10.5,
+     "w": 26,
+     "h": 21
+    }
+   ],
+   "w": 26,
+   "h": 21,
+   "de": "png"
+  }
+ },
+ "accesorios": {},
+ "alertas": []
+}

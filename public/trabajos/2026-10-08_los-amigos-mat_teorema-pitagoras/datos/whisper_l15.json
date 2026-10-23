@@ -1,0 +1,92 @@
+{
+  "archivo": "voz_l15.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2123,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1980,
+      "texto": "Con cualquiera que tenga un ḵngulo recto."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Con",
+      "fromMs": 30,
+      "toMs": 150,
+      "dtwMs": 120,
+      "p": 0.547694
+    },
+    {
+      "text": " cual",
+      "fromMs": 150,
+      "toMs": 340,
+      "dtwMs": 360,
+      "p": 0.941039
+    },
+    {
+      "text": "quiera",
+      "fromMs": 410,
+      "toMs": 640,
+      "dtwMs": 520,
+      "p": 0.994619
+    },
+    {
+      "text": " que",
+      "fromMs": 650,
+      "toMs": 800,
+      "dtwMs": 640,
+      "p": 0.952042
+    },
+    {
+      "text": " tenga",
+      "fromMs": 800,
+      "toMs": 1050,
+      "dtwMs": 820,
+      "p": 0.996466
+    },
+    {
+      "text": " un",
+      "fromMs": 1050,
+      "toMs": 1150,
+      "dtwMs": 980,
+      "p": 0.93332
+    },
+    {
+      "text": " ḵ",
+      "fromMs": 1150,
+      "toMs": 1280,
+      "dtwMs": 1100,
+      "p": 0.795976
+    },
+    {
+      "text": "ngulo",
+      "fromMs": 1300,
+      "toMs": 1440,
+      "dtwMs": 1220,
+      "p": 0.231315
+    },
+    {
+      "text": " rect",
+      "fromMs": 1560,
+      "toMs": 1630,
+      "dtwMs": 1480,
+      "p": 0.99661
+    },
+    {
+      "text": "o",
+      "fromMs": 1780,
+      "toMs": 1800,
+      "dtwMs": 1620,
+      "p": 0.999893
+    },
+    {
+      "text": ".",
+      "fromMs": 1800,
+      "toMs": 1970,
+      "dtwMs": 1720,
+      "p": 0.855366
+    }
+  ]
+}

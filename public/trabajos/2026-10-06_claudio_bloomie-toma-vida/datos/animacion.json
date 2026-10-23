@@ -1,0 +1,238 @@
+{
+ "personaje": "bloomie",
+ "expresion": "base",
+ "x": 540,
+ "y": 1330,
+ "escala": 1.95,
+ "pistas": [
+  {
+   "tipo": "respirar",
+   "intensidad": 1
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 0,
+   "fin": 66,
+   "secuencia": {
+    "nombre": "despertar",
+    "ciclo": false,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "huesos": {
+       "cabeza": {
+        "rot": -9,
+        "y": 7
+       },
+       "cuerpo": {
+        "rot": 3,
+        "sy": 0.96,
+        "sx": 1.02
+       },
+       "petalo_*": {
+        "rot": 7
+       },
+       "mano_izq": {
+        "rot": -8
+       },
+       "mano_der": {
+        "rot": 8
+       }
+      },
+      "dura": 45
+     },
+     {
+      "huesos": {
+       "cabeza": {
+        "rot": -9,
+        "y": 7
+       },
+       "cuerpo": {
+        "rot": 3,
+        "sy": 0.96,
+        "sx": 1.02
+       },
+       "petalo_*": {
+        "rot": 7
+       },
+       "mano_izq": {
+        "rot": -8
+       },
+       "mano_der": {
+        "rot": 8
+       }
+      },
+      "dura": 7
+     },
+     {
+      "huesos": {
+       "cabeza": {
+        "rot": 0,
+        "y": -6
+       },
+       "cuerpo": {
+        "sy": 1.07,
+        "sx": 0.97
+       },
+       "petalo_*": {
+        "rot": -6
+       },
+       "mano_izq": {
+        "rot": 140
+       },
+       "mano_der": {
+        "rot": -140
+       }
+      },
+      "dura": 8
+     },
+     {
+      "huesos": {
+       "cabeza": {
+        "rot": 0,
+        "y": -6
+       },
+       "cuerpo": {
+        "sy": 1.07,
+        "sx": 0.97
+       },
+       "petalo_*": {
+        "rot": -6
+       },
+       "mano_izq": {
+        "rot": 140
+       },
+       "mano_der": {
+        "rot": -140
+       }
+      },
+      "dura": 6
+     },
+     {
+      "huesos": {
+       "cabeza": {
+        "rot": 0
+       },
+       "cuerpo": {
+        "sy": 1
+       },
+       "mano_izq": {
+        "rot": 0
+       },
+       "mano_der": {
+        "rot": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 66,
+   "veces": 1
+  },
+  {
+   "tipo": "secuencia",
+   "inicio": 66,
+   "fin": 86,
+   "secuencia": {
+    "nombre": "mirar-manos",
+    "ciclo": false,
+    "interpolacion": "suave",
+    "poses": [
+     {
+      "huesos": {
+       "cabeza": {
+        "rot": 0
+       },
+       "cuerpo": {
+        "sy": 1
+       },
+       "mano_izq": {
+        "rot": 0
+       },
+       "mano_der": {
+        "rot": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       }
+      },
+      "dura": 6
+     },
+     {
+      "huesos": {
+       "cabeza": {
+        "y": 4
+       },
+       "mano_izq": {
+        "x": 36,
+        "y": -6,
+        "rot": 25
+       },
+       "mano_der": {
+        "x": -36,
+        "y": -6,
+        "rot": -25
+       }
+      },
+      "dura": 9
+     },
+     {
+      "huesos": {
+       "cabeza": {
+        "y": 4
+       },
+       "mano_izq": {
+        "x": 36,
+        "y": -6,
+        "rot": 25
+       },
+       "mano_der": {
+        "x": -36,
+        "y": -6,
+        "rot": -25
+       }
+      },
+      "dura": 5
+     },
+     {
+      "huesos": {
+       "cabeza": {
+        "rot": 0
+       },
+       "cuerpo": {
+        "sy": 1
+       },
+       "mano_izq": {
+        "rot": 0
+       },
+       "mano_der": {
+        "rot": 0
+       },
+       "petalo_*": {
+        "rot": 0
+       }
+      }
+     }
+    ]
+   },
+   "duracion": 20,
+   "veces": 1
+  },
+  {
+   "tipo": "saltar",
+   "inicio": 84,
+   "duracion": 20,
+   "altura": 70
+  },
+  {
+   "tipo": "saludar",
+   "inicio": 106,
+   "duracion": 42,
+   "mano": "mano_der",
+   "veces": 3
+  }
+ ]
+}

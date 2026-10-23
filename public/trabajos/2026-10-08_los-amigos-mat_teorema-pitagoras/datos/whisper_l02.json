@@ -1,0 +1,85 @@
+{
+  "archivo": "voz_l02.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2122,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1980,
+      "texto": "Dale, no tenés chances de ganarme."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Dale",
+      "fromMs": 20,
+      "toMs": 210,
+      "dtwMs": 320,
+      "p": 0.890647
+    },
+    {
+      "text": ",",
+      "fromMs": 210,
+      "toMs": 320,
+      "dtwMs": 840,
+      "p": 0.535932
+    },
+    {
+      "text": " no",
+      "fromMs": 320,
+      "toMs": 460,
+      "dtwMs": 920,
+      "p": 0.968274
+    },
+    {
+      "text": " ten",
+      "fromMs": 460,
+      "toMs": 480,
+      "dtwMs": 1060,
+      "p": 0.986675
+    },
+    {
+      "text": "és",
+      "fromMs": 820,
+      "toMs": 850,
+      "dtwMs": 1140,
+      "p": 0.855301
+    },
+    {
+      "text": " chances",
+      "fromMs": 850,
+      "toMs": 1400,
+      "dtwMs": 1380,
+      "p": 0.991312
+    },
+    {
+      "text": " de",
+      "fromMs": 1400,
+      "toMs": 1520,
+      "dtwMs": 1520,
+      "p": 0.978299
+    },
+    {
+      "text": " gan",
+      "fromMs": 1520,
+      "toMs": 1710,
+      "dtwMs": 1680,
+      "p": 0.996723
+    },
+    {
+      "text": "arme",
+      "fromMs": 1710,
+      "toMs": 1960,
+      "dtwMs": 1900,
+      "p": 0.999275
+    },
+    {
+      "text": ".",
+      "fromMs": 1980,
+      "toMs": 1980,
+      "dtwMs": 1960,
+      "p": 0.964545
+    }
+  ]
+}

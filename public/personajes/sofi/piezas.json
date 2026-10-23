@@ -1,0 +1,1213 @@
+{
+ "version": 1,
+ "nombre": "sofi",
+ "fuente": "sofi_1_cuerpo.png",
+ "unidad": "px",
+ "bloques": [],
+ "vistas": {
+  "frente": {
+   "caja": [
+    -216.7,
+    -926.0,
+    183.3,
+    3.0
+   ],
+   "origenPagina": [
+    1109.7,
+    1424.0
+   ],
+   "piezas": [
+    {
+     "id": "pie_der",
+     "rol": "pie",
+     "z": 0,
+     "caja": [
+      -19.7,
+      -148.0,
+      135.3,
+      3.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/pie_der.png",
+       "x": -19.7,
+       "y": -148.0,
+       "w": 155,
+       "h": 151
+      }
+     ]
+    },
+    {
+     "id": "pierna_der",
+     "rol": "pierna",
+     "z": 2,
+     "caja": [
+      -41.7,
+      -440.0,
+      143.3,
+      -95.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/pierna_der.png",
+       "x": -41.7,
+       "y": -440.0,
+       "w": 185,
+       "h": 345
+      }
+     ]
+    },
+    {
+     "id": "pie_izq",
+     "rol": "pie",
+     "z": 4,
+     "caja": [
+      -140.7,
+      -159.0,
+      21.30000000000001,
+      -12.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/pie_izq.png",
+       "x": -140.7,
+       "y": -159.0,
+       "w": 162,
+       "h": 147
+      }
+     ]
+    },
+    {
+     "id": "pierna_izq",
+     "rol": "pierna",
+     "z": 6,
+     "caja": [
+      -142.7,
+      -438.0,
+      46.30000000000001,
+      -107.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/pierna_izq.png",
+       "x": -142.7,
+       "y": -438.0,
+       "w": 189,
+       "h": 331
+      }
+     ]
+    },
+    {
+     "id": "mano_der",
+     "rol": "mano",
+     "z": 8,
+     "caja": [
+      99.3,
+      -353.0,
+      183.3,
+      -208.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_der.png",
+       "x": 99.3,
+       "y": -353.0,
+       "w": 84,
+       "h": 145
+      }
+     ]
+    },
+    {
+     "id": "antebrazo_der",
+     "rol": "antebrazo",
+     "z": 10,
+     "caja": [
+      66.3,
+      -477.0,
+      171.3,
+      -300.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/antebrazo_der.png",
+       "x": 66.3,
+       "y": -477.0,
+       "w": 105,
+       "h": 177
+      }
+     ]
+    },
+    {
+     "id": "brazo_der",
+     "rol": "brazo",
+     "z": 12,
+     "caja": [
+      64.3,
+      -607.0,
+      180.3,
+      -375.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/brazo_der.png",
+       "x": 64.3,
+       "y": -607.0,
+       "w": 116,
+       "h": 232
+      }
+     ]
+    },
+    {
+     "id": "mano_izq",
+     "rol": "mano",
+     "z": 14,
+     "caja": [
+      -210.7,
+      -356.0,
+      -125.69999999999999,
+      -212.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_izq.png",
+       "x": -210.7,
+       "y": -356.0,
+       "w": 85,
+       "h": 144
+      }
+     ]
+    },
+    {
+     "id": "antebrazo_izq",
+     "rol": "antebrazo",
+     "z": 16,
+     "caja": [
+      -196.7,
+      -480.0,
+      -99.69999999999999,
+      -304.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/antebrazo_izq.png",
+       "x": -196.7,
+       "y": -480.0,
+       "w": 97,
+       "h": 176
+      }
+     ]
+    },
+    {
+     "id": "brazo_izq",
+     "rol": "brazo",
+     "z": 18,
+     "caja": [
+      -216.7,
+      -609.0,
+      -97.69999999999999,
+      -381.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/brazo_izq.png",
+       "x": -216.7,
+       "y": -609.0,
+       "w": 119,
+       "h": 228
+      }
+     ]
+    },
+    {
+     "id": "aro_1",
+     "rol": "detalle",
+     "z": 20,
+     "caja": [
+      -124.7,
+      -710.0,
+      -68.7,
+      -624.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/aro_1.png",
+       "x": -124.7,
+       "y": -710.0,
+       "w": 56,
+       "h": 86
+      }
+     ]
+    },
+    {
+     "id": "capucha",
+     "rol": "detalle",
+     "z": 22,
+     "caja": [
+      -112.7,
+      -789.0,
+      72.3,
+      -594.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/capucha.png",
+       "x": -112.7,
+       "y": -789.0,
+       "w": 185,
+       "h": 195
+      }
+     ]
+    },
+    {
+     "id": "cabeza",
+     "rol": "cabeza",
+     "z": 24,
+     "caja": [
+      -189.7,
+      -926.0,
+      160.3,
+      -571.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": []
+    },
+    {
+     "id": "cuerpo",
+     "rol": "cuerpo",
+     "z": 26,
+     "caja": [
+      -139.7,
+      -678.0,
+      107.30000000000001,
+      -384.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/cuerpo.png",
+       "x": -139.7,
+       "y": -678.0,
+       "w": 247,
+       "h": 294
+      }
+     ]
+    },
+    {
+     "id": "aro_2",
+     "rol": "detalle",
+     "z": 28,
+     "caja": [
+      17.3,
+      -710.0,
+      75.3,
+      -624.0
+     ],
+     "dibujos": [],
+     "de": "png",
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/aro_2.png",
+       "x": 17.3,
+       "y": -710.0,
+       "w": 58,
+       "h": 86
+      }
+     ]
+    }
+   ],
+   "cabeza": {
+    "id": "cabeza",
+    "caja": [
+     -189.7,
+     -926.0,
+     160.3,
+     -571.0
+    ],
+    "z": 24
+   },
+   "rostro": {
+    "ojos": [],
+    "boca": {
+     "trazos": [],
+     "caja": [
+      -70.0,
+      -717.5,
+      -30.0,
+      -697.5
+     ],
+     "c": [
+      -50.0,
+      -707.5
+     ]
+    },
+    "extras": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/cabeza_normal.png",
+       "x": -189.7,
+       "y": -926.0,
+       "w": 350,
+       "h": 355
+      }
+     ]
+    },
+    "sinBoca": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/cabeza_normal_sinboca.png",
+       "x": -189.7,
+       "y": -926.0,
+       "w": 350,
+       "h": 355
+      }
+     ]
+    },
+    "de": "png",
+    "cerrados": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/ojos_cerrados.png",
+       "x": -119.7,
+       "y": -813.0,
+       "w": 145,
+       "h": 86
+      }
+     ]
+    }
+   },
+   "variantes": {
+    "mano_izq:abierta": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_izq_abierta.png",
+       "x": -224.7,
+       "y": -345.0,
+       "w": 94,
+       "h": 131
+      }
+     ],
+     "caja": [
+      -224.7,
+      -345.0,
+      -130.7,
+      -214.0
+     ]
+    },
+    "mano_izq:senala": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_izq_senala.png",
+       "x": -198.7,
+       "y": -343.0,
+       "w": 73,
+       "h": 138
+      }
+     ],
+     "caja": [
+      -198.7,
+      -343.0,
+      -125.69999999999999,
+      -205.0
+     ]
+    },
+    "mano_izq:indice": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_izq_indice.png",
+       "x": -214.7,
+       "y": -344.0,
+       "w": 86,
+       "h": 122
+      }
+     ],
+     "caja": [
+      -214.7,
+      -344.0,
+      -128.7,
+      -222.0
+     ]
+    },
+    "mano_izq:pulgar": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_izq_pulgar.png",
+       "x": -235.7,
+       "y": -344.0,
+       "w": 119,
+       "h": 98
+      }
+     ],
+     "caja": [
+      -235.7,
+      -344.0,
+      -116.69999999999999,
+      -246.0
+     ]
+    },
+    "mano_izq:colgando": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_izq_colgando.png",
+       "x": -204.7,
+       "y": -344.0,
+       "w": 81,
+       "h": 119
+      }
+     ],
+     "caja": [
+      -204.7,
+      -344.0,
+      -123.69999999999999,
+      -225.0
+     ]
+    },
+    "mano_izq:dos": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_izq_dos.png",
+       "x": -220.7,
+       "y": -344.0,
+       "w": 93,
+       "h": 127
+      }
+     ],
+     "caja": [
+      -220.7,
+      -344.0,
+      -127.69999999999999,
+      -217.0
+     ]
+    },
+    "mano_der:abierta": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_der_abierta.png",
+       "x": 83.3,
+       "y": -341.0,
+       "w": 93,
+       "h": 129
+      }
+     ],
+     "caja": [
+      83.3,
+      -341.0,
+      176.3,
+      -212.0
+     ]
+    },
+    "mano_der:senala": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_der_senala.png",
+       "x": 106.3,
+       "y": -341.0,
+       "w": 74,
+       "h": 140
+      }
+     ],
+     "caja": [
+      106.3,
+      -341.0,
+      180.3,
+      -201.0
+     ]
+    },
+    "mano_der:indice": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_der_indice.png",
+       "x": 108.3,
+       "y": -342.0,
+       "w": 70,
+       "h": 132
+      }
+     ],
+     "caja": [
+      108.3,
+      -342.0,
+      178.3,
+      -210.0
+     ]
+    },
+    "mano_der:pulgar": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_der_pulgar.png",
+       "x": 72.3,
+       "y": -343.0,
+       "w": 117,
+       "h": 100
+      }
+     ],
+     "caja": [
+      72.3,
+      -343.0,
+      189.3,
+      -243.0
+     ]
+    },
+    "mano_der:colgando": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_der_colgando.png",
+       "x": 103.3,
+       "y": -340.0,
+       "w": 81,
+       "h": 110
+      }
+     ],
+     "caja": [
+      103.3,
+      -340.0,
+      184.3,
+      -230.0
+     ]
+    },
+    "mano_der:dos": {
+     "trazos": [
+      {
+       "d": "",
+       "img": "personajes/sofi/piezas/mano_der_dos.png",
+       "x": 98.3,
+       "y": -343.0,
+       "w": 76,
+       "h": 132
+      }
+     ],
+     "caja": [
+      98.3,
+      -343.0,
+      174.3,
+      -211.0
+     ]
+    }
+   }
+  }
+ },
+ "rostros": {
+  "normal": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -70.0,
+     -717.5,
+     -30.0,
+     -697.5
+    ],
+    "c": [
+     -50.0,
+     -707.5
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_normal.png",
+      "x": -189.7,
+      "y": -926.0,
+      "w": 350,
+      "h": 355
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_normal_sinboca.png",
+      "x": -189.7,
+      "y": -926.0,
+      "w": 350,
+      "h": 355
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/ojos_cerrados.png",
+      "x": -119.7,
+      "y": -813.0,
+      "w": 145,
+      "h": 86
+     }
+    ]
+   }
+  },
+  "feliz": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -72.7,
+     -711.3,
+     -32.7,
+     -691.3
+    ],
+    "c": [
+     -52.7,
+     -701.3
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_feliz.png",
+      "x": -189.7,
+      "y": -926.0,
+      "w": 350,
+      "h": 355
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_feliz_sinboca.png",
+      "x": -189.7,
+      "y": -926.0,
+      "w": 350,
+      "h": 355
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/ojos_cerrados.png",
+      "x": -119.7,
+      "y": -813.0,
+      "w": 145,
+      "h": 86
+     }
+    ]
+   }
+  },
+  "explicando": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -77.3,
+     -712.3,
+     -37.3,
+     -692.3
+    ],
+    "c": [
+     -57.3,
+     -702.3
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_explicando.png",
+      "x": -187.7,
+      "y": -926.0,
+      "w": 347,
+      "h": 352
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_explicando_sinboca.png",
+      "x": -187.7,
+      "y": -926.0,
+      "w": 347,
+      "h": 352
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/ojos_cerrados.png",
+      "x": -119.7,
+      "y": -813.0,
+      "w": 145,
+      "h": 86
+     }
+    ]
+   }
+  },
+  "picara": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -69.2,
+     -719.1,
+     -29.2,
+     -699.1
+    ],
+    "c": [
+     -49.2,
+     -709.1
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_picara.png",
+      "x": -187.7,
+      "y": -926.0,
+      "w": 347,
+      "h": 352
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_picara_sinboca.png",
+      "x": -187.7,
+      "y": -926.0,
+      "w": 347,
+      "h": 352
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/ojos_cerrados.png",
+      "x": -119.7,
+      "y": -813.0,
+      "w": 145,
+      "h": 86
+     }
+    ]
+   }
+  },
+  "sorprendida": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -78.9,
+     -709.1,
+     -38.9,
+     -689.1
+    ],
+    "c": [
+     -58.9,
+     -699.1
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_sorprendida.png",
+      "x": -187.7,
+      "y": -926.0,
+      "w": 346,
+      "h": 353
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_sorprendida_sinboca.png",
+      "x": -187.7,
+      "y": -926.0,
+      "w": 346,
+      "h": 353
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/ojos_cerrados.png",
+      "x": -119.7,
+      "y": -813.0,
+      "w": 145,
+      "h": 86
+     }
+    ]
+   }
+  },
+  "ojos_cerrados": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -69.5,
+     -717.9,
+     -29.5,
+     -697.9
+    ],
+    "c": [
+     -49.5,
+     -707.9
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_ojos_cerrados.png",
+      "x": -190.7,
+      "y": -927.0,
+      "w": 352,
+      "h": 356
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_ojos_cerrados_sinboca.png",
+      "x": -190.7,
+      "y": -927.0,
+      "w": 352,
+      "h": 356
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/ojos_cerrados.png",
+      "x": -119.7,
+      "y": -813.0,
+      "w": 145,
+      "h": 86
+     }
+    ]
+   }
+  },
+  "costado": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -72.9,
+     -718.0,
+     -32.9,
+     -698.0
+    ],
+    "c": [
+     -52.9,
+     -708.0
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_costado.png",
+      "x": -188.7,
+      "y": -927.0,
+      "w": 350,
+      "h": 357
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_costado_sinboca.png",
+      "x": -188.7,
+      "y": -927.0,
+      "w": 350,
+      "h": 357
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/ojos_cerrados.png",
+      "x": -119.7,
+      "y": -813.0,
+      "w": 145,
+      "h": 86
+     }
+    ]
+   }
+  },
+  "orgullosa": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -69.2,
+     -722.0,
+     -29.2,
+     -702.0
+    ],
+    "c": [
+     -49.2,
+     -712.0
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_orgullosa.png",
+      "x": -189.7,
+      "y": -926.0,
+      "w": 348,
+      "h": 357
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_orgullosa_sinboca.png",
+      "x": -189.7,
+      "y": -926.0,
+      "w": 348,
+      "h": 357
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/ojos_cerrados.png",
+      "x": -119.7,
+      "y": -813.0,
+      "w": 145,
+      "h": 86
+     }
+    ]
+   }
+  },
+  "base": {
+   "ojos": [],
+   "boca": {
+    "trazos": [],
+    "caja": [
+     -70.0,
+     -717.5,
+     -30.0,
+     -697.5
+    ],
+    "c": [
+     -50.0,
+     -707.5
+    ]
+   },
+   "extras": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_normal.png",
+      "x": -189.7,
+      "y": -926.0,
+      "w": 350,
+      "h": 355
+     }
+    ]
+   },
+   "sinBoca": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/cabeza_normal_sinboca.png",
+      "x": -189.7,
+      "y": -926.0,
+      "w": 350,
+      "h": 355
+     }
+    ]
+   },
+   "de": "png",
+   "cerrados": {
+    "trazos": [
+     {
+      "d": "",
+      "img": "personajes/sofi/piezas/ojos_cerrados.png",
+      "x": -119.7,
+      "y": -813.0,
+      "w": 145,
+      "h": 86
+     }
+    ]
+   }
+  }
+ },
+ "visemas": {
+  "A": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/sofi/piezas/boca_A.png",
+     "x": -20.0,
+     "y": -5.0,
+     "w": 40,
+     "h": 10
+    }
+   ],
+   "w": 40,
+   "h": 10,
+   "de": "png"
+  },
+  "B": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/sofi/piezas/boca_B.png",
+     "x": -21.5,
+     "y": -6.5,
+     "w": 43,
+     "h": 13
+    }
+   ],
+   "w": 43,
+   "h": 13,
+   "de": "png"
+  },
+  "C": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/sofi/piezas/boca_C.png",
+     "x": -24.0,
+     "y": -12.0,
+     "w": 48,
+     "h": 24
+    }
+   ],
+   "w": 48,
+   "h": 24,
+   "de": "png"
+  },
+  "D": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/sofi/piezas/boca_D.png",
+     "x": -23.0,
+     "y": -19.0,
+     "w": 46,
+     "h": 38
+    }
+   ],
+   "w": 46,
+   "h": 38,
+   "de": "png"
+  },
+  "E": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/sofi/piezas/boca_E.png",
+     "x": -11.5,
+     "y": -17.5,
+     "w": 23,
+     "h": 35
+    }
+   ],
+   "w": 23,
+   "h": 35,
+   "de": "png"
+  },
+  "F": {
+   "trazos": [
+    {
+     "d": "",
+     "img": "personajes/sofi/piezas/boca_F.png",
+     "x": -9.0,
+     "y": -10.0,
+     "w": 18,
+     "h": 20
+    }
+   ],
+   "w": 18,
+   "h": 20,
+   "de": "png"
+  }
+ },
+ "accesorios": {},
+ "alertas": []
+}

@@ -6,10 +6,12 @@
 //
 // Uso: node scripts/blender/render.mjs <ID> <nombre> <animacion.json> <duración> [--cara <comp-cara>] [--rotY 0.4]
 //        [--luz 135] [--estilo toon] [--ancho 1080 --alto 1920] [--muestras 16] [--forzar]
+//        [--solo 30,54,66] [--png carpeta]   (solo esos cuadros para revisar; sin capa ni caché; ver abajo)
 //   animacion.json: PersonajeRigProps (personaje, x, y, escala, pistas…) dentro del trabajo.
 // Salida: public/trabajos/<ID>/cache3d/<nombre>_<huella>.webm y la entrada <nombre> en datos/cache3d.json
 // --solo 12,40,70  renderiza solo esos cuadros (para revisar antes del render completo): PNG con alfa en
-//   out/<ID>/revision/solo_<nombre>/ y la hoja out/<ID>/revision/solo_<nombre>.png (sobre gris, con el número de cuadro)
+//   out/<ID>/revision/solo_<nombre>/ y la hoja out/<ID>/revision/solo_<nombre>.png (sobre gris, con el número de cuadro);
+//   con --png carpeta, además una copia de cada cuadro como <nombre>_fNNNN.png
 // Antes, una vez por personaje: blender -b -P scripts/blender/personaje_desde_rig.py -- <personaje>
 import { spawnSync } from "node:child_process";
 import crypto from "node:crypto";
@@ -127,6 +129,12 @@ for i, k in enumerate(cuadros):
 cv2.imencode(".png", hoja)[1].tofile(sal)
 `;
     correr(herr.python, ["-c", codigo, png, hoja, solo.join(",")]);
+    // --png carpeta: además, copia de los cuadros sueltos como <nombre>_fNNNN.png
+    if (opc("png")) {
+      const dest = path.resolve(opc("png"));
+      fs.mkdirSync(dest, { recursive: true });
+      for (const f of fs.readdirSync(png)) fs.copyFileSync(path.join(png, f), path.join(dest, `${nombre}_${f}`));
+    }
     console.log(`OK ${solo.length} cuadros sueltos → ${path.relative(RAIZ, hoja)} · Blender ${((t2 - t1) / 1000).toFixed(0)} s`);
     fs.rmSync(tmp, { recursive: true, force: true }); // process.exit no pasa por el finally
     process.exit(0);

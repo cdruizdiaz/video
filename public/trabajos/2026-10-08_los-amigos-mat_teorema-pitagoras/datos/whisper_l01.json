@@ -1,0 +1,85 @@
+{
+  "archivo": "voz_l01.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1549,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1400,
+      "texto": "Te juego una carrera al kiosco!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Te",
+      "fromMs": 10,
+      "toMs": 90,
+      "dtwMs": 100,
+      "p": 0.58699
+    },
+    {
+      "text": " juego",
+      "fromMs": 160,
+      "toMs": 370,
+      "dtwMs": 280,
+      "p": 0.99034
+    },
+    {
+      "text": " una",
+      "fromMs": 380,
+      "toMs": 540,
+      "dtwMs": 440,
+      "p": 0.998588
+    },
+    {
+      "text": " carr",
+      "fromMs": 540,
+      "toMs": 760,
+      "dtwMs": 680,
+      "p": 0.524768
+    },
+    {
+      "text": "era",
+      "fromMs": 760,
+      "toMs": 920,
+      "dtwMs": 800,
+      "p": 0.943122
+    },
+    {
+      "text": " al",
+      "fromMs": 920,
+      "toMs": 1030,
+      "dtwMs": 960,
+      "p": 0.993689
+    },
+    {
+      "text": " ki",
+      "fromMs": 1030,
+      "toMs": 1140,
+      "dtwMs": 1080,
+      "p": 0.673676
+    },
+    {
+      "text": "osc",
+      "fromMs": 1140,
+      "toMs": 1300,
+      "dtwMs": 1200,
+      "p": 0.989498
+    },
+    {
+      "text": "o",
+      "fromMs": 1300,
+      "toMs": 1400,
+      "dtwMs": 1380,
+      "p": 0.506774
+    },
+    {
+      "text": "!",
+      "fromMs": 1400,
+      "toMs": 1400,
+      "dtwMs": 1380,
+      "p": 0.537492
+    }
+  ]
+}

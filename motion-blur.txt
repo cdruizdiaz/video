@@ -1,0 +1,44 @@
+Quiero sumar motion blur (desenfoque de movimiento) a la suite de este proyecto. Resolvé todo solo, sin preguntarme; anotá las decisiones que tomes en TRABAJO.md. Seguí las reglas de CLAUDE.md en todo momento (constantes al inicio, interpolate con clamp, nunca render completo, tests y lint limpios).
+
+## 0. Preparación
+- `git pull` y verificá que el árbol quede limpio.
+- Abrí un trabajo de prueba con `/nuevo-trabajo claudio prueba-motionblur` (ID: `2026-10-20_claudio_prueba-motionblur`, 9:16, modo plano), sin crudos.
+
+## 1. Instalación
+- Instalá `@remotion/motion-blur` en la MISMA versión exacta que `remotion` en package.json (hoy 4.0.529), con `--save-exact`. No actualices ningún otro paquete.
+- Sumá a `scripts/verificar-suite.mjs` un control que confirme que el paquete está y que su versión coincide con `remotion`.
+
+## 2. Componente común
+Creá `src/plantillas/comunes/Desenfoque.tsx` con `DesenfoqueMovimiento`:
+- `modo: "camara"` → `<CameraMotionBlur>` (borroso realista) | `modo: "estela"` → `<Trail>` (copias tipo dibujo animado).
+- `tramos?: {desde: number; hasta: number}[]` en cuadros: fuera de los tramos renderiza los hijos tal cual (sin costo extra). Sin tramos = siempre activo.
+- Calidad por `inputProps`: `calidad: "borrador"` → 5 muestras; `"final"` (default) → 10. Que se pueda forzar con `muestras`.
+- Valores (muestras, obturador, capas y desfase de la estela) como constantes al inicio del archivo.
+
+## 3. Detección automática de movimientos rápidos
+- Función pura `tramosRapidos(posiciones, {umbral, margen, cortes})` (en un archivo `.ts` testeable): mide la velocidad en px/cuadro, devuelve los tramos que superan el umbral con un margen de cuadros a cada lado y NUNCA cruza un corte (`cortes` = cuadros de corte).
+- Tests en `__tests__/` (tramos vacíos, unión de tramos cercanos, respeto de cortes, bordes del video).
+
+## 4. Integración
+- `PersonajeRig`: prop `desenfoque?: true | {modo?, muestras?, tramos?, umbral?}`. `true` = tramos automáticos con `tramosRapidos` a partir de la posición/pose del rig en cada cuadro (saltar, correr, trayecto, girar). Envuelve SOLO la capa del personaje: fondo, video, `sonidos` y cualquier `<Audio>` quedan afuera (si no, el sonido se repite).
+- `PersonajePoses`: misma prop, aplicada a los traslados y al "pop" de cambio de pose (obturador bajo).
+- Carteles y títulos de `HistoriaMarca`, `MontajeMusical` y `ExplicacionGeometrica`: opción `desenfoqueEntrada` para que entrada y salida tengan blur y el texto quede nítido mientras está quieto.
+- `Logo3D` y `Bloomie3D`: blur en los giros rápidos; probar con `--gl=angle`.
+- Blender: NO usar el paquete; agregar `--motion-blur` a `scripts/blender/render.mjs`/`render.py` con el motion blur propio de Eevee.
+- Nunca meter un `<OffthreadVideo>` dentro del desenfoque.
+
+## 5. Prueba y medición (en esta Ryzen)
+- Composición `claudio-prueba-motionblur` registrada en `src/trabajos/index.ts`: Bloomie (rig) salta y cruza la pantalla en ~1 s, más un título que entra de golpe. Tres variantes: `-sin`, `-camara`, `-estela`.
+- Revisá con `node scripts/revisar.mjs` y stills de los cuadros clave en `out/2026-10-20_claudio_prueba-motionblur/revision/`. Armá una hoja comparativa (las 3 variantes lado a lado en los mismos cuadros).
+- Revisá los bordes de la estela con transparencia: `node scripts/rig/exportar.mjs ... --mov` de un tramo corto.
+- Medí el tiempo por cuadro de cada variante (borrador y final) y anotalo en `C:/Videos/_herramientas/equipo.json` como `motionBlurVelocidad` con la fecha.
+- Render final SOLO de la comparativa corta (es la muestra para Lucía): `out/<ID>/final/comparativa_9x16_v1.mp4`, libx264 crf 18, audio a -14 LUFS verificado con ebur128. Anotalo en TRABAJO.md.
+
+## 6. Documentación
+- `CLAUDE.md`: fila en "Qué herramienta usar" (Desenfoque de movimiento → `DesenfoqueMovimiento` / prop `desenfoque`) y regla: solo en tramos rápidos, nunca sobre el fondo ni sobre audio, sin cruzar cortes; con los tiempos medidos.
+- `src/rig/README.md`: sección con ejemplos de la prop `desenfoque`.
+- `src/trabajos/_plantilla/GUION.md`: permitir anotar "motion blur" o "estela" en una toma, y que `/guion` y `/aplicar-guion` lo apliquen.
+
+## 7. Cierre
+- `npm test` y `npm run lint` limpios.
+- Commit con todo (no push). Al final, mostrame un resumen: qué se agregó, los tiempos medidos en la Ryzen, la ruta de la comparativa y cualquier problema que hayas encontrado.

@@ -1,0 +1,99 @@
+{
+  "archivo": "voz_l22.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1464,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1320,
+      "texto": "¿Y si el ვngulo no es recto?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 10,
+      "toMs": 50,
+      "dtwMs": 60,
+      "p": 0.263871
+    },
+    {
+      "text": "Y",
+      "fromMs": 50,
+      "toMs": 70,
+      "dtwMs": 60,
+      "p": 0.92395
+    },
+    {
+      "text": " si",
+      "fromMs": 150,
+      "toMs": 200,
+      "dtwMs": 180,
+      "p": 0.985475
+    },
+    {
+      "text": " el",
+      "fromMs": 200,
+      "toMs": 300,
+      "dtwMs": 320,
+      "p": 0.988086
+    },
+    {
+      "text": " ვ",
+      "fromMs": 300,
+      "toMs": 440,
+      "dtwMs": 420,
+      "p": 0.667113
+    },
+    {
+      "text": "ng",
+      "fromMs": 450,
+      "toMs": 550,
+      "dtwMs": 460,
+      "p": 0.513648
+    },
+    {
+      "text": "ulo",
+      "fromMs": 550,
+      "toMs": 700,
+      "dtwMs": 580,
+      "p": 0.568845
+    },
+    {
+      "text": " no",
+      "fromMs": 700,
+      "toMs": 800,
+      "dtwMs": 720,
+      "p": 0.960102
+    },
+    {
+      "text": " es",
+      "fromMs": 800,
+      "toMs": 900,
+      "dtwMs": 820,
+      "p": 0.984419
+    },
+    {
+      "text": " rect",
+      "fromMs": 900,
+      "toMs": 960,
+      "dtwMs": 1060,
+      "p": 0.990225
+    },
+    {
+      "text": "o",
+      "fromMs": 1100,
+      "toMs": 1150,
+      "dtwMs": 1260,
+      "p": 0.99983
+    },
+    {
+      "text": "?",
+      "fromMs": 1150,
+      "toMs": 1310,
+      "dtwMs": 1300,
+      "p": 0.985076
+    }
+  ]
+}
