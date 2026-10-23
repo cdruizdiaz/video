@@ -1,11 +1,14 @@
 Necesito que instales y dejes verificada mi suite de producción de video en este proyecto. Trabaja de forma autónoma siguiendo los pasos en orden, pero respeta las REGLAS.
 
-(Este prompt vive en el repo github.com/cdruizdiaz/video, en setup/prompt_instalacion.txt. Los archivos de apoyo están en setup/herramientas/.)
+(Este prompt vive en el repo github.com/cdruizdiaz/video, en setup/prompt_instalacion.txt. Los archivos de apoyo están en setup/herramientas/.
+El inventario completo, con versiones y de dónde se baja cada cosa, es setup/all_requeriments.txt: si algo no está acá, sale de ahí.
+Actualizado el 2026-10-23.)
 
 === CONTEXTO ===
 - Windows 11, sin GPU NVIDIA (todo corre en CPU; el procesador Intel puede tener Quick Sync).
 - El directorio de trabajo actual es un proyecto Remotion (si no existe package.json con "remotion", DETENTE y avísame).
-- Suite: Remotion + ffmpeg COMPLETO (del sistema) + whisper.cpp + MediaPipe + DeepFilterNet + Google Fonts + Mixkit (música y efectos gratis, vía script). DaVinci Resolve es manual (no lo instales).
+- Suite: Remotion + ffmpeg COMPLETO (del sistema) + whisper.cpp + MediaPipe + DeepFilterNet + Google Fonts + Mixkit (música y efectos gratis, vía script),
+  más las herramientas del paso 1f (Rhubarb, RIFE, Real-ESRGAN, Blender portable, Piper y Edge TTS, profundidad, LaMa). DaVinci Resolve es manual (no lo instales).
 - Herramientas pesadas COMPARTIDAS entre proyectos en: C:\Videos\_herramientas
   (si ya existen y funcionan, NO las reinstales: reutilízalas. Lee C:\Videos\_herramientas\README.txt si existe).
 
@@ -61,6 +64,7 @@ Estructura:
 
 1c. DeepFilterNet + MediaPipe (dentro del .venv)
    - Instala todo de una vez con: C:\Videos\_herramientas\.venv\Scripts\python.exe -m pip install -r setup/herramientas/requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+     (trae también librosa, opencv, onnxruntime, piper-tts, edge-tts y PyMuPDF; torchvision/av/einops/imageio/tqdm solo los usa ProPainter, opcional)
    - Versiones probadas que funcionan juntas (ya fijadas en ese requirements.txt):
      torch==2.0.1 y torchaudio==2.0.2 (CPU, desde https://download.pytorch.org/whl/cpu),
      deepfilternet 0.5.6, mediapipe 1.0.1, numpy 1.26.4 (numpy<2), soundfile.
@@ -73,20 +77,37 @@ Estructura:
 
 1e. Mixkit: el script ya está en scripts/mixkit.mjs del repo. Copia una copia maestra a C:\Videos\_herramientas\mixkit.mjs (si no existe). No requiere dependencias: usa fetch de Node y ffprobe.
 
-1f. README.txt en C:\Videos\_herramientas: parte de setup/herramientas/README.txt y actualízalo con contenido, versiones, ruta de ffmpeg, cómo usar cada herramienta y el rendimiento medido en la verificación.
+1f. El resto de la suite (todo en C:\Videos\_herramientas; carpetas y fuentes exactas en setup/all_requeriments.txt, puntos 3 y 4):
+   - Portables (zip, sin instalador): rhubarb\ (Rhubarb Lip Sync 1.14.0), rife\ (rife-ncnn-vulkan 20221029, con modelos),
+     realesrgan\ (realesrgan-ncnn-vulkan 20220424), blender\ (Blender 5.2 LTS portable: el zip renombrado a "blender").
+   - Modelos de MediaPipe además del de caras: pose_landmarker_full.task, face_landmarker.task, selfie_multiclass_256x256.tflite.
+   - modelos-profundidad\depth_anything_v2_small.onnx (SOLO Small: Base y Large no son de uso comercial) + LICENCIA.md.
+   - modelos-lama\lama_fp32.onnx (big-lama ONNX de huggingface.co/Carve/LaMa-ONNX, Apache-2.0): borrar personas del video.
+   - Voces de Piper en modelos-piper\: es_AR-daniela-high y es_MX-claude-high (y las inglesas de la lista) con
+     C:\Videos\_herramientas\.venv\Scripts\python.exe -m piper.download_voices --data-dir C:/Videos/_herramientas/modelos-piper <voz>
+   - Edge TTS no se baja: es el paquete edge-tts del .venv (necesita internet al usarlo). Probalo con
+     node scripts/voz.mjs "Hola, esto es una prueba" tmp/edge.wav --voz es-AR-ElenaNeural
+   - NO instales ProPainter (licencia no comercial, horas por clip en estas PC) ni configures ElevenLabs: son opcionales,
+     solo si yo lo pido.
+   - Blender: el modelo 3D de Bloomie (C:\Videos\personajes\bloomie\bloomie_3d.blend) sale del .ai de C:\Videos\personajes\,
+     que no viene en el repo: si no está, avisame (no lo inventes).
+
+1g. README.txt en C:\Videos\_herramientas: parte de setup/herramientas/README.txt y actualízalo con contenido, versiones, ruta de ffmpeg, cómo usar cada herramienta y el rendimiento medido en la verificación.
 
 === PASO 2: Proyecto actual ===
 2a. Dependencias Node, todas en la MISMA versión exacta que "remotion" en package.json (npm i --save-exact):
     @remotion/install-whisper-cpp @remotion/captions @remotion/google-fonts @remotion/transitions @remotion/media-utils
+    @remotion/motion-blur @remotion/three @remotion/zod-types @remotion/tailwind-v4 (ya vienen en package.json: con `npm install` alcanza)
     Luego ejecuta `npx remotion versions` y confirma que no hay versiones mezcladas.
 
 2b. Estructura por trabajos (ya viene en el repo; solo verifica que exista):
-    public/marcas/<cliente>/          kits de marca (hoy: rastro)
+    public/marcas/<cliente>/          kits de marca (hoy: rastro, volto, cei, laencina, animana)
     public/biblioteca/musica, sfx     música y efectos de Mixkit (+ LICENCIAS-mixkit.json)
     public/trabajos/<ID>/crudos, audio, img, datos
     src/marcas/, src/plantillas/, src/trabajos/ (con _plantilla/TRABAJO.md e index.ts)
-    .claude/commands/nuevo-trabajo.md y cerrar-trabajo.md
-    Crea fuera del proyecto: C:\Videos\crudos\ (originales) y C:\Videos\archivo\ (trabajos cerrados).
+    .claude/commands/ (nuevo-trabajo, guion, aplicar-guion, estado, a-premiere, cerrar-trabajo, rig-personaje, personaje-3d)
+    Crea fuera del proyecto: C:\Videos\crudos\ (originales), C:\Videos\archivo\ (trabajos cerrados),
+    C:\Videos\personajes\ (.ai de los personajes) y C:\Videos\cola\ (render repartido).
 
 2c. .gitignore: ya viene en el repo (ignora out/, tmp/, crudos/audio/img de cada trabajo y los audios de la biblioteca;
     versiona datos/, marcas y LICENCIAS-mixkit.json). No lo modifiques salvo que falte.
@@ -97,7 +118,8 @@ Estructura:
     NO lo modifiques; solo verifica que cada ruta exista.
     Los datos propios de esta PC van en C:\Videos\_herramientas\equipo.json (fuera del repo); créalo o actualízalo con:
     cpu, ffmpegVersion, codecBorrador (el elegido en el paso 0), hilosWhisper (hilos lógicos del CPU),
-    whisperVelocidad (medida en 3c), verificado (fecha)
+    whisperVelocidad (medida en 3c), verificado (fecha); y las que se miden en el paso 3
+    (rifeVelocidad, esrganVelocidad, piperVelocidad, webglVelocidad, blenderVelocidad, motionBlurVelocidad)
 
 2f. CLAUDE.md: ya viene completo en el repo (regla principal, estructura de trabajos, archivos, render, herramientas,
     tabla "Qué herramienta usar", música). Solo verifica que exista y que sus rutas coincidan con esta PC.
@@ -108,11 +130,18 @@ Crea los archivos de prueba en una carpeta temporal (tmp/, NO en public/) y bór
 3b. Suite completa: `node scripts/verificar-suite.mjs`. Prueba que cada herramienta FUNCIONE, no solo que exista:
     ffmpeg con todos los filtros, Whisper (voz sintética de Windows), DeepFilterNet (voz + ruido:
     falla si la salida queda en silencio o si no baja el ruido al menos 10 dB, que es lo que pasa cuando se rompe PyTorch),
-    MediaPipe, biblioteca de Mixkit (sha256), TypeScript y composiciones de Remotion. Muéstrame su tabla.
+    MediaPipe, Piper, Rhubarb, RIFE, Real-ESRGAN, librosa, mocap, recorte de personas, profundidad, seguimiento, Blender,
+    biblioteca de Mixkit (sha256), versión de @remotion/motion-blur, rig, tests, TypeScript, render 2D y 3D y composiciones
+    de Remotion. Muéstrame su tabla. "Mixkit: N faltan" es normal en una PC nueva (los temas no viajan por git: paso 4).
 3c. Velocidad de Whisper: genera ~60 s de voz en español con pausas (System.Speech, en tmp/) y transcríbela con
     `node scripts/transcribir.mjs tmp/voz60.wav tmp/voz60.json`. La relación "x el tiempo real" que imprime va a
     whisperVelocidad en equipo.json (el audio de 3b es muy corto: ahí manda la carga del modelo).
 3d. Mixkit (con red): `node scripts/mixkit.mjs buscar --sfx click` debe listar resultados (quedan en tmp/mixkit-busqueda.json). Luego `node scripts/mixkit.mjs bajar <un id de esa lista> --sfx` (UNA sola descarga) y confirma que aparece en public/biblioteca/LICENCIAS-mixkit.json con su duración.
+
+3e. Rendimiento del render y del motion blur:
+    node scripts/medir_render.mjs claudio-prueba-motionblur-sin:13-47 claudio-prueba-motionblur-camara:13-47:borrador claudio-prueba-motionblur-camara:13-47:final
+    y anotá los s/cuadro en motionBlurVelocidad de equipo.json (con la fecha). Si esa composición ya no existe, salteá este paso.
+3f. `npm test` y `npm run lint` tienen que quedar limpios.
 
 === PASO 4: recursos que no se versionan ===
 - Temas de Mixkit de la biblioteca: están listados en public/biblioteca/LICENCIAS-mixkit.json; vuelve a bajarlos de a UNO con `node scripts/mixkit.mjs bajar <id> [--sfx]` (sin bucles: pregúntame si son muchos).
