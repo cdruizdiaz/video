@@ -190,6 +190,27 @@ node scripts/blender/render.mjs <ID> <capa> datos/animacion.json <duración> --c
 - Muestra: composición `personaje-bloomie-3d` (gira, saluda y habla); ejemplo sobre video: `rastro-bloomie-creators-3d`.
 - Para otro personaje: copiar Bloomie3D.tsx y ajustar las formas, o (mejor) un `.glb` con huesos y animaciones (de un modelador, de Blender o de una biblioteca libre) con `Modelo3D` (`src/plantillas/comunes/`): `clips: [{ nombre: "Wave", desde: 30, hasta: 75 }, …]` con fundidos. Biblioteca: `public/biblioteca/modelos3d/` (licencias en `LICENCIAS.md` de esa carpeta).
 
+### Desenfoque de movimiento (motion blur)
+
+Prop `desenfoque` de PersonajeRig (también en los personajes de `ExplicacionGeometrica`, en `Logo3D` y en la muestra 3D):
+
+```ts
+desenfoque: true                                  // borroso realista, solo donde se mueve rápido (automático)
+desenfoque: { modo: "estela" }                     // copias atrasadas tipo dibujo animado
+desenfoque: { umbral: 12 }                         // más exigente: px por cuadro para considerarlo rápido (8)
+desenfoque: { tramos: [{ desde: 15, hasta: 46 }] } // cuadros elegidos a mano (`hasta` no incluido)
+desenfoque: { muestras: 16, obturador: 270 }       // más suave / más largo (10 muestras y 180° por defecto)
+```
+
+- **Automático** (`tramosDelRig` en `src/plantillas/PersonajeRig/calculos.ts` → `tramosRapidos`): sigue en cada cuadro los pies, la cabeza y un borde del cuerpo (así cuentan los saltos, correr, los trayectos y los giros de vista) y desenfoca donde alguno pasa de `umbral` px por cuadro, con 2 cuadros de margen y sin cruzar cortes. Quieto, el personaje queda nítido y no cuesta nada extra.
+- Envuelve **solo** el dibujo del personaje (con su sombra): el fondo, `audio` y `sonidos` quedan afuera (si no, el sonido se repetiría en cada muestra).
+- Con `pasos: 1` la pose se evalúa con decimales entre cuadros (las muestras del blur); con `pasos: 2` o más (look de recorte) el blur solo barre el trayecto.
+- **Personajes por poses:** `PersonajePosesAnimado` (`src/rig/PersonajePoses.tsx`) recibe el estado como función del cuadro y desenfoca los traslados y el "pop" de cada cambio de pose (obturador 90°); en `ExplicacionGeometrica`, `desenfoque` en el personaje.
+- **Piezas propias de un trabajo:** `<ConDesenfoque desenfoque={…} tramos={tramosRapidos(posiciones)}><PorCuadro dibujar={(f) => …} /></ConDesenfoque>` (de `src/plantillas/comunes/Desenfoque.tsx`). Lo de adentro tiene que calcular su cuadro con `useCurrentFrame` (eso hace `PorCuadro`): si recibe la posición ya calculada por props, el blur no tiene qué mover.
+- **Calidad:** `--props='{"calidad":"borrador"}'` usa 5 muestras (la mitad del tiempo); la final, 10.
+- **Blender:** no usa esto; `node scripts/blender/render.mjs … --motion-blur [180]` activa el motion blur de Eevee (interpola la pose entre cuadros solo para eso).
+- Prueba y comparativa: `src/trabajos/2026-10-23_claudio_prueba-motionblur/` (variantes `-sin`, `-camara`, `-estela`, `-comparativa`, `-3d`, `-logo`).
+
 ## 4. Exportar
 
 ```

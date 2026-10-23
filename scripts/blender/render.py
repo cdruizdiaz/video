@@ -114,6 +114,31 @@ def tarjetas(lista, arm, n):
         yield o
 
 
+# Curvas de una acción: la API vieja (action.fcurves) o la de capas de Blender 4.4+ (capas → tiras → canales)
+def curvas(accion):
+    if getattr(accion, "fcurves", None) is not None and len(accion.fcurves):
+        return list(accion.fcurves)
+    res = []
+    for capa in getattr(accion, "layers", []):
+        for tira in capa.strips:
+            for bolsa in getattr(tira, "channelbags", []):
+                res.extend(bolsa.fcurves)
+    return res
+
+
+# Motion blur propio de Eevee: obturador en grados (180 = medio cuadro), centrado en el cuadro
+def desenfoque_movimiento(sc, mb):
+    sc.render.use_motion_blur = True
+    sc.render.motion_blur_shutter = mb.get("obturador", 180) / 360
+    for prop, valor in (("motion_blur_position", "CENTER"),):
+        for dueno in (sc.render, sc.eevee):
+            if hasattr(dueno, prop):
+                setattr(dueno, prop, valor)
+    for prop, valor in (("motion_blur_steps", 2), ("motion_blur_max", 64)):
+        if hasattr(sc.eevee, prop):
+            setattr(sc.eevee, prop, valor)
+
+
 def main():
     a = sys.argv[sys.argv.index("--") + 1:]
     escena = json.loads(Path(a[0]).read_text(encoding="utf-8"))
@@ -257,13 +282,19 @@ def main():
             pb.keyframe_insert("rotation_euler", frame=f)
             pb.keyframe_insert("location", frame=f)
             pb.keyframe_insert("scale", frame=f)
-    # Sin interpolación entre claves (cada cuadro ya trae su pose exacta)
+    # Sin interpolación entre claves (cada cuadro ya trae su pose exacta). Con motion blur, lineal en los huesos y
+    # la cámara: Eevee mira la escena entre cuadros dentro del obturador, y con claves constantes no vería movimiento.
+    # (lo que se prende y apaga, como hide_render de las vistas, queda siempre constante)
+    mb = escena.get("motionBlur")
     for obj in (arm, cam, *(o for o, _, _ in luces), *(o.data for o, _, _ in luces), mundo.node_tree):
         ad = obj.animation_data
         if ad and ad.action:
-            for fc in getattr(ad.action, "fcurves", []):
+            for fc in curvas(ad.action):
+                movil = mb and obj in (arm, cam) and fc.data_path.split(".")[-1] in ("location", "rotation_euler", "scale")
                 for kp in fc.keyframe_points:
-                    kp.interpolation = "CONSTANT"
+                    kp.interpolation = "LINEAR" if movil else "CONSTANT"
+    if mb:
+        desenfoque_movimiento(sc, mb)
     solo = escena.get("solo")
     if solo:
         for k in solo:

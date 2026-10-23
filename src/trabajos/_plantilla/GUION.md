@@ -11,6 +11,7 @@ Escena 1 — {{nombre}}
 Tiempo: 00:00 a 00:{{ss}}
 Imagen: {{fondo, imagen principal, movimiento de cámara/zoom, degradados}}.
 Profundidad: {{solo en 2,5D/3D: giro ¾ hacia…, se acerca desde el fondo, sombra; omitir si es plano}}.
+Movimiento: {{opcional: "motion blur" (borroso realista) o "estela" (copias tipo dibujo animado) y sobre qué: el personaje cuando salta/corre, el título al entrar y salir…; omitir si no lleva}}.
 Elementos y textos:
 •    {{elemento}}
 •    {{texto entre comillas: “...”}}

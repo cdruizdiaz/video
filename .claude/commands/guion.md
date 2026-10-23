@@ -8,6 +8,7 @@ Generá un guion audiovisual con tiempos para: $ARGUMENTS
 **Formato:** seguí EXACTAMENTE la estructura de `src/trabajos/_plantilla/GUION.md` (y como ejemplo real, `src/trabajos/2026-09-28_rastro_historia-ig/guion_historia-30s.md`):
 - Encabezado: `VIDEO:`, `Duración:`, `Formato:`, `Estética:`, `Tono:`, `Audio:`, `Transiciones:`.
 - Un bloque por escena: `Escena N — nombre`, `Tiempo: 00:00 a 00:04` (decimales con coma: `00:02,5`), `Imagen:`, y según corresponda `Elementos y textos:` (viñetas •), `Título:` / `Texto inferior:` (una línea por renglón, entre comillas “ ”), `Evolución visual:`, `Pie de escena:`, `Cierre:` y siempre `Intención:`.
+- Si una toma lleva desenfoque de movimiento, una línea `Movimiento: motion blur …` o `Movimiento: estela …` diciendo sobre qué (personaje al saltar o correr, título al entrar/salir, logo 3D al girar). En un video existente, escribila solo si el código usa `desenfoque` / `desenfoqueEntrada`.
 - Todos los textos que se ven en pantalla van entre comillas “ ”, exactamente como deben aparecer (mayúsculas incluidas). Voseo si la marca lo usa.
 - Los tiempos de todas las escenas deben sumar la duración total, sin huecos ni superposiciones.
 

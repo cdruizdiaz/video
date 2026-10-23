@@ -39,6 +39,11 @@ import {
   WHOOSH_DURA,
   type TomaMusical,
 } from "./calculos";
+import {
+  ConDesenfoque,
+  type Desenfoque,
+  tramosEntradaSalida,
+} from "../comunes/Desenfoque";
 
 const { fontFamily: FREDOKA } = loadFont("normal", {
   weights: ["600", "700"],
@@ -76,6 +81,7 @@ const SUTIL_NOTAS_ALFA = 0.6;
 const SUTIL_NOTAS_RECORRIDO: [number, number] = [1540, 1060]; // y de salida y de llegada
 const SUTIL_NOTAS_VAIVEN = 16; // px de balanceo lateral
 const SUTIL_NOTAS_GIRO = 10; // grados de balanceo
+const BLUR_POP = 18; // frames que dura el resorte de entrada de un cartel (desenfoqueEntrada)
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const salida = Easing.out(Easing.cubic);
@@ -102,6 +108,7 @@ export type MontajeMusicalProps = {
   estilo: EstiloMontaje;
   apariencia?: "sticker" | "sutil"; // por defecto "sticker"
   soloGraficos?: boolean; // sin video ni audio y con fondo transparente: capa de gráficos para Premiere
+  desenfoqueEntrada?: Desenfoque; // título, etiquetas y cierre entran y salen con motion blur (quietos, nítidos)
 };
 
 // ---------- Piezas ----------
@@ -597,20 +604,29 @@ export const MontajeMusical: React.FC<MontajeMusicalProps> = (p) => {
                 durationInFrames={Math.min(dura, 75)}
                 name={`etiqueta ${t.etiqueta}`}
               >
-                {sutil ? (
-                  <EtiquetaSutil
-                    texto={t.etiqueta}
-                    e={p.estilo}
-                    dura={Math.min(dura, 75)}
-                  />
-                ) : (
-                  <Etiqueta
-                    texto={t.etiqueta}
-                    e={p.estilo}
-                    dura={Math.min(dura, 75)}
-                    fondo={i % 2 ? p.estilo.secundario : p.estilo.claro}
-                  />
-                )}
+                <ConDesenfoque
+                  desenfoque={p.desenfoqueEntrada}
+                  tramos={tramosEntradaSalida(
+                    Math.min(dura, 75),
+                    ETIQUETA_ENTRA + (sutil ? SUTIL_ENTRA : BLUR_POP),
+                    sutil ? 10 : 6,
+                  )}
+                >
+                  {sutil ? (
+                    <EtiquetaSutil
+                      texto={t.etiqueta}
+                      e={p.estilo}
+                      dura={Math.min(dura, 75)}
+                    />
+                  ) : (
+                    <Etiqueta
+                      texto={t.etiqueta}
+                      e={p.estilo}
+                      dura={Math.min(dura, 75)}
+                      fondo={i % 2 ? p.estilo.secundario : p.estilo.claro}
+                    />
+                  )}
+                </ConDesenfoque>
               </Sequence>
             ) : null}
             {!primera ? (
@@ -643,30 +659,40 @@ export const MontajeMusical: React.FC<MontajeMusicalProps> = (p) => {
       })}
       {sutil ? <NotasSutiles e={p.estilo} /> : <Notas e={p.estilo} />}
       <Sequence durationInFrames={TITULO_DURA} name="título">
-        {sutil ? (
-          <TituloSutil renglones={p.titulo} e={p.estilo} />
-        ) : (
-          <Titulo renglones={p.titulo} e={p.estilo} />
-        )}
+        <ConDesenfoque
+          desenfoque={p.desenfoqueEntrada}
+          tramos={tramosEntradaSalida(TITULO_DURA, 11 + BLUR_POP, 10)}
+        >
+          {sutil ? (
+            <TituloSutil renglones={p.titulo} e={p.estilo} />
+          ) : (
+            <Titulo renglones={p.titulo} e={p.estilo} />
+          )}
+        </ConDesenfoque>
       </Sequence>
       <Sequence
         from={total - p.cierre.duracion}
         durationInFrames={p.cierre.duracion}
         name="cierre"
       >
-        {sutil ? (
-          <CierreSutil
-            texto={p.cierre.texto}
-            subtexto={p.cierre.subtexto}
-            e={p.estilo}
-          />
-        ) : (
-          <Cierre
-            texto={p.cierre.texto}
-            subtexto={p.cierre.subtexto}
-            e={p.estilo}
-          />
-        )}
+        <ConDesenfoque
+          desenfoque={p.desenfoqueEntrada}
+          tramos={[{ desde: 0, hasta: 9 + BLUR_POP }]}
+        >
+          {sutil ? (
+            <CierreSutil
+              texto={p.cierre.texto}
+              subtexto={p.cierre.subtexto}
+              e={p.estilo}
+            />
+          ) : (
+            <Cierre
+              texto={p.cierre.texto}
+              subtexto={p.cierre.subtexto}
+              e={p.estilo}
+            />
+          )}
+        </ConDesenfoque>
       </Sequence>
     </AbsoluteFill>
   );

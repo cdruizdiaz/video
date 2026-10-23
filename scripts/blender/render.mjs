@@ -5,13 +5,15 @@
 // 4) ffmpeg → webm VP9 con alfa en public/trabajos/<ID>/cache3d/, con huella (si no cambió nada, se reusa)
 //
 // Uso: node scripts/blender/render.mjs <ID> <nombre> <animacion.json> <duración> [--cara <comp-cara>] [--rotY 0.4]
-//        [--luz 135] [--estilo toon] [--ancho 1080 --alto 1920] [--muestras 16] [--forzar]
+//        [--luz 135] [--estilo toon] [--ancho 1080 --alto 1920] [--muestras 16] [--forzar] [--motion-blur [180]]
 //        [--solo 30,54,66] [--png carpeta]   (solo esos cuadros para revisar; sin capa ni caché; ver abajo)
 //   animacion.json: PersonajeRigProps (personaje, x, y, escala, pistas…) dentro del trabajo.
 // Salida: public/trabajos/<ID>/cache3d/<nombre>_<huella>.webm y la entrada <nombre> en datos/cache3d.json
 // --solo 12,40,70  renderiza solo esos cuadros (para revisar antes del render completo): PNG con alfa en
 //   out/<ID>/revision/solo_<nombre>/ y la hoja out/<ID>/revision/solo_<nombre>.png (sobre gris, con el número de cuadro);
 //   con --png carpeta, además una copia de cada cuadro como <nombre>_fNNNN.png
+// --motion-blur [grados]  desenfoque de movimiento propio de Eevee (obturador en grados, 180 por defecto). NO usa
+//   @remotion/motion-blur: Blender interpola la pose entre cuadros y promedia dentro del obturador.
 // Antes, una vez por personaje: blender -b -P scripts/blender/personaje_desde_rig.py -- <personaje>
 import { spawnSync } from "node:child_process";
 import crypto from "node:crypto";
@@ -26,7 +28,15 @@ const opc = (n, d) => {
   const i = args.indexOf(`--${n}`);
   return i >= 0 ? args[i + 1] : d;
 };
-const [id, nombre, animacion, duracion] = args.filter((a, i) => !a.startsWith("--") && !(i > 0 && args[i - 1].startsWith("--") && args[i - 1] !== "--forzar"));
+// Banderas sin valor (--motion-blur acepta un número opcional: el obturador en grados)
+const BANDERAS = ["--forzar", "--motion-blur"];
+const esNumero = (a) => /^\d+(\.\d+)?$/.test(a ?? "");
+const [id, nombre, animacion, duracion] = args.filter((a, i) => {
+  if (a.startsWith("--")) return false;
+  const previo = i > 0 ? args[i - 1] : "";
+  if (previo === "--motion-blur") return !esNumero(a);
+  return !(previo.startsWith("--") && !BANDERAS.includes(previo));
+});
 if (!id || !nombre || !animacion || !duracion) {
   console.error("Uso: node scripts/blender/render.mjs <ID> <nombre> <animacion.json> <duración> [--cara comp] [--rotY r] [--luz grados] [--estilo toon]");
   process.exit(1);
@@ -50,6 +60,10 @@ const escena = {
   estilo: opc("estilo", "suave"),
   muestras: Number(opc("muestras", 16)),
 };
+if (args.includes("--motion-blur")) {
+  const g = args[args.indexOf("--motion-blur") + 1];
+  escena.motionBlur = { obturador: esNumero(g) ? Number(g) : 180 };
+}
 const comp_cara = opc("cara");
 // --extra escena.json: se suma a la escena (tarjetas/accesorios, rotY por cuadro, luz…)
 // --cara-png carpeta: la cara ya armada como secuencia PNG (en vez de renderizar una composición CaraTextura)

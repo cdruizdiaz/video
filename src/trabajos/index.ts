@@ -29,6 +29,7 @@ import { composiciones as voltoRadio } from "./2026-10-19_volto_radio/composicio
 import { composiciones as rastroPauMascota } from "./2026-10-21_rastro_pau-mascota/composiciones";
 import { composiciones as rastroConsumosDelMes } from "./2026-10-21_rastro_consumos-del-mes/composiciones";
 import { composiciones as claudioMotionGraphicPrueba } from "./2026-10-20_claudio_motion-graphic-prueba/composiciones";
+import { composiciones as claudioPruebaMotionblur } from "./2026-10-23_claudio_prueba-motionblur/composiciones";
 import type { Trabajo } from "./tipos";
 
 export const TRABAJOS: Trabajo[] = [
@@ -62,4 +63,5 @@ export const TRABAJOS: Trabajo[] = [
   { id: "2026-10-21_rastro_pau-mascota", composiciones: rastroPauMascota },
   { id: "2026-10-21_rastro_consumos-del-mes", composiciones: rastroConsumosDelMes },
   { id: "2026-10-20_claudio_motion-graphic-prueba", composiciones: claudioMotionGraphicPrueba },
+  { id: "2026-10-23_claudio_prueba-motionblur", composiciones: claudioPruebaMotionblur },
 ];

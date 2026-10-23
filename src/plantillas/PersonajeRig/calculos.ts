@@ -7,6 +7,7 @@ import { aplicar, combinar, matricesMundo, poseInicial, type Pose, type PoseParc
 import { cargarPersonaje } from "../../rig/personajes";
 import { poseSecuencia, zPoseClave, zSecuencia } from "../../rig/secuencia";
 import { escalar, multiplicar, rotar, trasladar } from "../../rig/pose";
+import { type Punto, type Tramo, tramosRapidos, zDesenfoque } from "../comunes/tramosDesenfoque";
 
 // ---------- Esquema de props (zod: lo valida Remotion y se edita en el Studio) ----------
 const tiempo = { inicio: z.number().default(0), fin: z.number().optional(), pasos: z.number().int().min(1).optional() };
@@ -112,6 +113,9 @@ export const zPersonajeRig = z.object({
     })
     .nullable()
     .default(null),
+  // Desenfoque de movimiento (src/plantillas/comunes/Desenfoque.tsx) solo sobre el personaje: true = tramos
+  // automáticos donde se mueve rápido (saltar, correr, trayecto, girar); o con modo, muestras, tramos, umbral
+  desenfoque: zDesenfoque,
   pistas: z.array(zPista),
 });
 export type PersonajeRigProps = z.input<typeof zPersonajeRig>;
@@ -151,7 +155,8 @@ export const poseEn = (entrada: PersonajeRigProps, f0: number, fps: number): Pos
   let pose = base;
   for (const p of props.pistas) {
     const pasos = p.pasos ?? props.pasos;
-    const f = Math.floor(f0 / pasos) * pasos;
+    // Con pasos 1 el cuadro puede traer decimales (muestras del desenfoque de movimiento): la pose se interpola
+    const f = pasos === 1 ? f0 : Math.floor(f0 / pasos) * pasos;
     if (!activa(p, f)) continue;
     const local = f - p.inicio;
     const rv = per.rig.vistas[pose.vista] ?? Object.values(per.rig.vistas)[0];
@@ -333,9 +338,11 @@ export const encuadreRecortado = (props: PersonajeRigProps, duracion: number, fp
 // ---------- Puntos del personaje (para enganchar globos, destellos…) ----------
 // Posición de la boca, el centro de los ojos o la cabeza en coordenadas del personaje (puntos del .ai, origen en
 // los pies), con la pose del frame. Para pasarla al cuadro: x = lugar.x + px · escala, y = lugar.y + py · escala.
-export const puntoPersonaje = (entrada: PersonajeRigProps, f: number, fps: number, punto: "boca" | "ojos" | "cabeza"): [number, number] => {
-  const per = cargarPersonaje(entrada.personaje);
-  const pose = poseEn(entrada, f, fps);
+export const puntoPersonaje = (entrada: PersonajeRigProps, f: number, fps: number, punto: "boca" | "ojos" | "cabeza"): [number, number] =>
+  puntoEnPose(entrada.personaje, poseEn(entrada, f, fps), punto);
+
+const puntoEnPose = (personaje: string, pose: Pose, punto: "boca" | "ojos" | "cabeza"): [number, number] => {
+  const per = cargarPersonaje(personaje);
   const vista = per.rig.vistas[pose.vista] ? pose.vista : Object.keys(per.rig.vistas)[0];
   const rv = per.rig.vistas[vista];
   const dv = per.piezas.vistas[vista];
@@ -353,4 +360,38 @@ export const puntoPersonaje = (entrada: PersonajeRigProps, f: number, fps: numbe
   }
   const [x, y] = aplicar(mundo[hueso] ?? mundo.raiz, local[0], local[1]);
   return [x * (pose.espejo ? -1 : 1) * pose.giro, y];
+};
+
+// ---------- Tramos del desenfoque de movimiento ----------
+// Puntos que se siguen en cada cuadro (px del cuadro): pies, cabeza y un borde del cuerpo (que en un giro de vista
+// se cierra y se vuelve a abrir aunque el personaje no se corra de lugar)
+const cacheTramos = new WeakMap<object, Map<string, Tramo[]>>();
+export const tramosDelRig = (entrada: PersonajeRigProps, duracion: number, fps: number, umbral?: number): Tramo[] => {
+  const clave = `${duracion}|${fps}|${umbral ?? ""}`;
+  let porClave = cacheTramos.get(entrada);
+  const guardado = porClave?.get(clave);
+  if (guardado) return guardado;
+  const per = cargarPersonaje(entrada.personaje);
+  const posiciones: Punto[][] = [];
+  for (let f = 0; f < duracion; f++) {
+    const pose = poseEn(entrada, f, fps);
+    const l = lugarEn(entrada, f);
+    const vista = per.rig.vistas[pose.vista] ? pose.vista : Object.keys(per.rig.vistas)[0];
+    const caja = per.piezas.vistas[vista].caja;
+    const raiz = { x: pose.huesos.raiz?.x ?? 0, y: pose.huesos.raiz?.y ?? 0 };
+    const cab = puntoEnPose(entrada.personaje, pose, "cabeza");
+    const borde = caja[2] * (pose.espejo ? -1 : 1) * pose.giro;
+    posiciones.push([
+      [l.x + raiz.x * l.escala, l.y + raiz.y * l.escala],
+      [l.x + cab[0] * l.escala, l.y + cab[1] * l.escala],
+      [l.x + (raiz.x + borde) * l.escala, l.y + raiz.y * l.escala],
+    ]);
+  }
+  const tramos = tramosRapidos(posiciones, { umbral });
+  if (!porClave) {
+    porClave = new Map();
+    cacheTramos.set(entrada, porClave);
+  }
+  porClave.set(clave, tramos);
+  return tramos;
 };

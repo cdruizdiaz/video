@@ -3,12 +3,16 @@
 // la cara de adelante lleva el PNG original como textura (respeta sus colores) y los costados el color de marca.
 // Animaciones: "giro" (entra girando), "caida" (cae y rebota), "armado" (cada pieza llega volando por separado).
 // Después de la entrada pasa un brillo por el bisel y, si hay texto, aparece debajo con la fuente de la marca.
+// `desenfoque`: motion blur durante la entrada (giro, caída o armado); después queda nítido. Cada muestra es otro
+// lienzo WebGL: con --gl=angle, 5 muestras en borrador y 10 en la final.
 import { ThreeCanvas } from "@remotion/three";
 import React, { useEffect, useMemo, useState } from "react";
 import { AbsoluteFill, cancelRender, continueRender, delayRender, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import * as THREE from "three";
 import { SVGLoader } from "three/examples/jsm/loaders/SVGLoader.js";
 import { z } from "zod";
+import { ConDesenfoque } from "../comunes/Desenfoque";
+import { zDesenfoque } from "../comunes/tramosDesenfoque";
 
 // ---------- Constantes ----------
 const ANCHO_LOGO = 0.72; // fracción del ancho del cuadro que ocupa el logo
@@ -33,6 +37,7 @@ export const zLogo3D = z.object({
   subtexto: z.string().nullable().default(null),
   colorTexto: z.string().default("#ffffff"),
   fuente: z.string().default("sans-serif"),
+  desenfoque: zDesenfoque,
 });
 export type Logo3DProps = z.input<typeof zLogo3D>;
 
@@ -161,9 +166,14 @@ export const Logo3D: React.FC<Logo3DProps> = (entrada) => {
   return (
     <AbsoluteFill style={{ backgroundColor: p.fondo ?? "transparent" }}>
       {datos && svg !== null && textura !== undefined && (
-        <ThreeCanvas width={width} height={height} camera={{ fov: CAMARA.fov, position: [0, 0, CAMARA.distancia], near: 10, far: 20000 }} style={{ position: "absolute" }}>
-          <Escena p={p} piezas={datos.piezas} tam={datos.tam} textura={textura} />
-        </ThreeCanvas>
+        <ConDesenfoque
+          desenfoque={p.desenfoque}
+          tramos={[{ desde: 0, hasta: ENTRADA + (p.animacion === "armado" ? datos.piezas.length * ESCALONADO : 0) }]}
+        >
+          <ThreeCanvas width={width} height={height} camera={{ fov: CAMARA.fov, position: [0, 0, CAMARA.distancia], near: 10, far: 20000 }} style={{ position: "absolute" }}>
+            <Escena p={p} piezas={datos.piezas} tam={datos.tam} textura={textura} />
+          </ThreeCanvas>
+        </ConDesenfoque>
       )}
       {p.texto && (
         <div
