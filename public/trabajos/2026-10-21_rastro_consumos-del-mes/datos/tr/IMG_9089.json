@@ -1,0 +1,449 @@
+{
+  "archivo": "IMG_9089.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 17143,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 15420,
+      "texto": "El programa de La Fábrica, no te cases ni te embarques, Juli y Catona hablando como si fueran tus mejores amigas, diciendo cosas muy graciosas pero a la vez que te dejan pensando. Amo escucharlas cuando estoy ahí full metida en Photoshop."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " El",
+      "fromMs": 0,
+      "toMs": 560,
+      "dtwMs": 4980,
+      "p": 0.0974605
+    },
+    {
+      "text": " programa",
+      "fromMs": 560,
+      "toMs": 2850,
+      "dtwMs": 5360,
+      "p": 0.987545
+    },
+    {
+      "text": " de",
+      "fromMs": 2850,
+      "toMs": 3430,
+      "dtwMs": 5500,
+      "p": 0.992924
+    },
+    {
+      "text": " La",
+      "fromMs": 3430,
+      "toMs": 4000,
+      "dtwMs": 5600,
+      "p": 0.373186
+    },
+    {
+      "text": " F",
+      "fromMs": 4000,
+      "toMs": 4280,
+      "dtwMs": 5760,
+      "p": 0.81755
+    },
+    {
+      "text": "áb",
+      "fromMs": 4280,
+      "toMs": 4850,
+      "dtwMs": 5820,
+      "p": 0.973105
+    },
+    {
+      "text": "rica",
+      "fromMs": 4910,
+      "toMs": 6040,
+      "dtwMs": 6020,
+      "p": 0.998993
+    },
+    {
+      "text": ",",
+      "fromMs": 6040,
+      "toMs": 6140,
+      "dtwMs": 6040,
+      "p": 0.279608
+    },
+    {
+      "text": " no",
+      "fromMs": 6140,
+      "toMs": 6240,
+      "dtwMs": 6220,
+      "p": 0.684356
+    },
+    {
+      "text": " te",
+      "fromMs": 6240,
+      "toMs": 6340,
+      "dtwMs": 6360,
+      "p": 0.998074
+    },
+    {
+      "text": " cases",
+      "fromMs": 6340,
+      "toMs": 6610,
+      "dtwMs": 6600,
+      "p": 0.983819
+    },
+    {
+      "text": " ni",
+      "fromMs": 6610,
+      "toMs": 6710,
+      "dtwMs": 6780,
+      "p": 0.958153
+    },
+    {
+      "text": " te",
+      "fromMs": 6710,
+      "toMs": 6790,
+      "dtwMs": 6900,
+      "p": 0.994958
+    },
+    {
+      "text": " embar",
+      "fromMs": 6850,
+      "toMs": 7080,
+      "dtwMs": 7100,
+      "p": 0.994218
+    },
+    {
+      "text": "ques",
+      "fromMs": 7080,
+      "toMs": 7330,
+      "dtwMs": 7320,
+      "p": 0.998759
+    },
+    {
+      "text": ",",
+      "fromMs": 7330,
+      "toMs": 7460,
+      "dtwMs": 7520,
+      "p": 0.107332
+    },
+    {
+      "text": " Jul",
+      "fromMs": 7580,
+      "toMs": 7640,
+      "dtwMs": 7700,
+      "p": 0.47458
+    },
+    {
+      "text": "i",
+      "fromMs": 7640,
+      "toMs": 7700,
+      "dtwMs": 7740,
+      "p": 0.873289
+    },
+    {
+      "text": " y",
+      "fromMs": 7700,
+      "toMs": 7750,
+      "dtwMs": 7840,
+      "p": 0.424609
+    },
+    {
+      "text": " Cat",
+      "fromMs": 7760,
+      "toMs": 7890,
+      "dtwMs": 7940,
+      "p": 0.748403
+    },
+    {
+      "text": "ona",
+      "fromMs": 7960,
+      "toMs": 8160,
+      "dtwMs": 8120,
+      "p": 0.991609
+    },
+    {
+      "text": " hablando",
+      "fromMs": 8160,
+      "toMs": 8520,
+      "dtwMs": 8480,
+      "p": 0.762363
+    },
+    {
+      "text": " como",
+      "fromMs": 8520,
+      "toMs": 8720,
+      "dtwMs": 8700,
+      "p": 0.984992
+    },
+    {
+      "text": " si",
+      "fromMs": 8720,
+      "toMs": 8840,
+      "dtwMs": 8820,
+      "p": 0.948809
+    },
+    {
+      "text": " fuer",
+      "fromMs": 8900,
+      "toMs": 8980,
+      "dtwMs": 8980,
+      "p": 0.922648
+    },
+    {
+      "text": "an",
+      "fromMs": 8980,
+      "toMs": 9040,
+      "dtwMs": 9040,
+      "p": 0.998967
+    },
+    {
+      "text": " tus",
+      "fromMs": 9040,
+      "toMs": 9180,
+      "dtwMs": 9140,
+      "p": 0.954101
+    },
+    {
+      "text": " mejores",
+      "fromMs": 9180,
+      "toMs": 9540,
+      "dtwMs": 9420,
+      "p": 0.976217
+    },
+    {
+      "text": " am",
+      "fromMs": 9540,
+      "toMs": 9640,
+      "dtwMs": 9660,
+      "p": 0.99111
+    },
+    {
+      "text": "ig",
+      "fromMs": 9640,
+      "toMs": 9740,
+      "dtwMs": 9760,
+      "p": 0.999989
+    },
+    {
+      "text": "as",
+      "fromMs": 9740,
+      "toMs": 9850,
+      "dtwMs": 9860,
+      "p": 0.999933
+    },
+    {
+      "text": ",",
+      "fromMs": 9850,
+      "toMs": 9860,
+      "dtwMs": 9960,
+      "p": 0.573886
+    },
+    {
+      "text": " diciendo",
+      "fromMs": 9940,
+      "toMs": 10310,
+      "dtwMs": 10180,
+      "p": 0.867414
+    },
+    {
+      "text": " cosas",
+      "fromMs": 10310,
+      "toMs": 10580,
+      "dtwMs": 10420,
+      "p": 0.999308
+    },
+    {
+      "text": " muy",
+      "fromMs": 10580,
+      "toMs": 10740,
+      "dtwMs": 10620,
+      "p": 0.998748
+    },
+    {
+      "text": " grac",
+      "fromMs": 10740,
+      "toMs": 10950,
+      "dtwMs": 10840,
+      "p": 0.999283
+    },
+    {
+      "text": "ios",
+      "fromMs": 10950,
+      "toMs": 11110,
+      "dtwMs": 11040,
+      "p": 0.99914
+    },
+    {
+      "text": "as",
+      "fromMs": 11110,
+      "toMs": 11170,
+      "dtwMs": 11200,
+      "p": 0.999765
+    },
+    {
+      "text": " pero",
+      "fromMs": 11320,
+      "toMs": 11430,
+      "dtwMs": 11400,
+      "p": 0.397171
+    },
+    {
+      "text": " a",
+      "fromMs": 11430,
+      "toMs": 11470,
+      "dtwMs": 11520,
+      "p": 0.969283
+    },
+    {
+      "text": " la",
+      "fromMs": 11470,
+      "toMs": 11560,
+      "dtwMs": 11520,
+      "p": 0.997605
+    },
+    {
+      "text": " vez",
+      "fromMs": 11560,
+      "toMs": 11650,
+      "dtwMs": 11660,
+      "p": 0.998523
+    },
+    {
+      "text": " que",
+      "fromMs": 11750,
+      "toMs": 11800,
+      "dtwMs": 11780,
+      "p": 0.990106
+    },
+    {
+      "text": " te",
+      "fromMs": 11850,
+      "toMs": 11920,
+      "dtwMs": 11880,
+      "p": 0.998563
+    },
+    {
+      "text": " de",
+      "fromMs": 11950,
+      "toMs": 12020,
+      "dtwMs": 12000,
+      "p": 0.967966
+    },
+    {
+      "text": "jan",
+      "fromMs": 12020,
+      "toMs": 12120,
+      "dtwMs": 12080,
+      "p": 0.999462
+    },
+    {
+      "text": " pensando",
+      "fromMs": 12160,
+      "toMs": 12600,
+      "dtwMs": 12600,
+      "p": 0.998803
+    },
+    {
+      "text": ".",
+      "fromMs": 12600,
+      "toMs": 12750,
+      "dtwMs": 13280,
+      "p": 0.571981
+    },
+    {
+      "text": " Am",
+      "fromMs": 12750,
+      "toMs": 12860,
+      "dtwMs": 13380,
+      "p": 0.572177
+    },
+    {
+      "text": "o",
+      "fromMs": 12860,
+      "toMs": 12910,
+      "dtwMs": 13440,
+      "p": 0.995767
+    },
+    {
+      "text": " escuch",
+      "fromMs": 12910,
+      "toMs": 13220,
+      "dtwMs": 13680,
+      "p": 0.965906
+    },
+    {
+      "text": "arl",
+      "fromMs": 13250,
+      "toMs": 13390,
+      "dtwMs": 13880,
+      "p": 0.99347
+    },
+    {
+      "text": "as",
+      "fromMs": 13390,
+      "toMs": 13470,
+      "dtwMs": 13960,
+      "p": 0.999983
+    },
+    {
+      "text": " cuando",
+      "fromMs": 13560,
+      "toMs": 13810,
+      "dtwMs": 14140,
+      "p": 0.998492
+    },
+    {
+      "text": " estoy",
+      "fromMs": 13810,
+      "toMs": 14080,
+      "dtwMs": 14340,
+      "p": 0.995038
+    },
+    {
+      "text": " ahí",
+      "fromMs": 14080,
+      "toMs": 14170,
+      "dtwMs": 14460,
+      "p": 0.9549
+    },
+    {
+      "text": " full",
+      "fromMs": 14260,
+      "toMs": 14450,
+      "dtwMs": 14720,
+      "p": 0.974855
+    },
+    {
+      "text": " met",
+      "fromMs": 14450,
+      "toMs": 14500,
+      "dtwMs": 14900,
+      "p": 0.992926
+    },
+    {
+      "text": "ida",
+      "fromMs": 14630,
+      "toMs": 14770,
+      "dtwMs": 15000,
+      "p": 0.941316
+    },
+    {
+      "text": " en",
+      "fromMs": 14770,
+      "toMs": 14850,
+      "dtwMs": 15100,
+      "p": 0.998708
+    },
+    {
+      "text": " Photoshop",
+      "fromMs": 14870,
+      "toMs": 15420,
+      "dtwMs": 15400,
+      "p": 0.896656
+    },
+    {
+      "text": ".",
+      "fromMs": 15420,
+      "toMs": 15420,
+      "dtwMs": 15400,
+      "p": 0.935964
+    }
+  ]
+}

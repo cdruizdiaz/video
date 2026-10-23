@@ -1,0 +1,387 @@
+{
+  "archivo": "IMG_9059.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 15108,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        817
+      ],
+      [
+        2210,
+        5454
+      ],
+      [
+        6225,
+        13931
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4854,
+      "texto": "El problema más grande, no saber cómo se..."
+    },
+    {
+      "desdeMs": 4854,
+      "hastaMs": 9744,
+      "texto": "El problema más grande, no poder separar el contenido de adultos del de niños."
+    },
+    {
+      "desdeMs": 10104,
+      "hastaMs": 13684,
+      "texto": "La solución, una mascota que acompaña a los niños en su viaje de aprendizaje."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " El",
+      "fromMs": 0,
+      "toMs": 240,
+      "dtwMs": 2534,
+      "p": 0.132024
+    },
+    {
+      "text": " problema",
+      "fromMs": 240,
+      "toMs": 2304,
+      "dtwMs": 2854,
+      "p": 0.986285
+    },
+    {
+      "text": " más",
+      "fromMs": 2454,
+      "toMs": 2664,
+      "dtwMs": 3074,
+      "p": 0.807888
+    },
+    {
+      "text": " grande",
+      "fromMs": 2664,
+      "toMs": 3414,
+      "dtwMs": 3394,
+      "p": 0.997427
+    },
+    {
+      "text": ",",
+      "fromMs": 3414,
+      "toMs": 3454,
+      "dtwMs": 3554,
+      "p": 0.244361
+    },
+    {
+      "text": " no",
+      "fromMs": 3664,
+      "toMs": 3664,
+      "dtwMs": 3774,
+      "p": 0.974731
+    },
+    {
+      "text": " saber",
+      "fromMs": 3674,
+      "toMs": 4014,
+      "dtwMs": 4014,
+      "p": 0.800569
+    },
+    {
+      "text": " cómo",
+      "fromMs": 4014,
+      "toMs": 4314,
+      "dtwMs": 4294,
+      "p": 0.752887
+    },
+    {
+      "text": " se",
+      "fromMs": 4314,
+      "toMs": 4554,
+      "dtwMs": 4574,
+      "p": 0.278604
+    },
+    {
+      "text": "...",
+      "fromMs": 4554,
+      "toMs": 4854,
+      "dtwMs": 4834,
+      "p": 0.539199
+    },
+    {
+      "text": " El",
+      "fromMs": 4854,
+      "toMs": 5014,
+      "dtwMs": 6544,
+      "p": 0.937121
+    },
+    {
+      "text": " problema",
+      "fromMs": 5014,
+      "toMs": 5454,
+      "dtwMs": 6864,
+      "p": 0.999335
+    },
+    {
+      "text": " más",
+      "fromMs": 6225,
+      "toMs": 5454,
+      "dtwMs": 7024,
+      "p": 0.997765
+    },
+    {
+      "text": " grande",
+      "fromMs": 6544,
+      "toMs": 6824,
+      "dtwMs": 7304,
+      "p": 0.999897
+    },
+    {
+      "text": ",",
+      "fromMs": 6824,
+      "toMs": 6974,
+      "dtwMs": 7404,
+      "p": 0.974096
+    },
+    {
+      "text": " no",
+      "fromMs": 6974,
+      "toMs": 7134,
+      "dtwMs": 7544,
+      "p": 0.998077
+    },
+    {
+      "text": " poder",
+      "fromMs": 7134,
+      "toMs": 7534,
+      "dtwMs": 7724,
+      "p": 0.995999
+    },
+    {
+      "text": " separ",
+      "fromMs": 7534,
+      "toMs": 7934,
+      "dtwMs": 7984,
+      "p": 0.998953
+    },
+    {
+      "text": "ar",
+      "fromMs": 7934,
+      "toMs": 8124,
+      "dtwMs": 8104,
+      "p": 0.999954
+    },
+    {
+      "text": " el",
+      "fromMs": 8124,
+      "toMs": 8224,
+      "dtwMs": 8224,
+      "p": 0.987833
+    },
+    {
+      "text": " contenido",
+      "fromMs": 8224,
+      "toMs": 8624,
+      "dtwMs": 8564,
+      "p": 0.995459
+    },
+    {
+      "text": " de",
+      "fromMs": 8704,
+      "toMs": 8784,
+      "dtwMs": 8724,
+      "p": 0.99681
+    },
+    {
+      "text": " adult",
+      "fromMs": 8784,
+      "toMs": 9044,
+      "dtwMs": 8924,
+      "p": 0.998104
+    },
+    {
+      "text": "os",
+      "fromMs": 9064,
+      "toMs": 9164,
+      "dtwMs": 9144,
+      "p": 0.999232
+    },
+    {
+      "text": " del",
+      "fromMs": 9164,
+      "toMs": 9334,
+      "dtwMs": 9344,
+      "p": 0.944291
+    },
+    {
+      "text": " de",
+      "fromMs": 9334,
+      "toMs": 9424,
+      "dtwMs": 9484,
+      "p": 0.997411
+    },
+    {
+      "text": " niños",
+      "fromMs": 9424,
+      "toMs": 9574,
+      "dtwMs": 9684,
+      "p": 0.99859
+    },
+    {
+      "text": ".",
+      "fromMs": 9744,
+      "toMs": 9744,
+      "dtwMs": 9944,
+      "p": 0.654016
+    },
+    {
+      "text": " La",
+      "fromMs": 10104,
+      "toMs": 10104,
+      "dtwMs": 10184,
+      "p": 0.946987
+    },
+    {
+      "text": " solu",
+      "fromMs": 10104,
+      "toMs": 10104,
+      "dtwMs": 10384,
+      "p": 0.999821
+    },
+    {
+      "text": "ción",
+      "fromMs": 10104,
+      "toMs": 10314,
+      "dtwMs": 10604,
+      "p": 0.999964
+    },
+    {
+      "text": ",",
+      "fromMs": 10314,
+      "toMs": 10414,
+      "dtwMs": 10784,
+      "p": 0.982321
+    },
+    {
+      "text": " una",
+      "fromMs": 10534,
+      "toMs": 10594,
+      "dtwMs": 11124,
+      "p": 0.999632
+    },
+    {
+      "text": " masc",
+      "fromMs": 10594,
+      "toMs": 10814,
+      "dtwMs": 11364,
+      "p": 0.999554
+    },
+    {
+      "text": "ota",
+      "fromMs": 10814,
+      "toMs": 10914,
+      "dtwMs": 11524,
+      "p": 0.999922
+    },
+    {
+      "text": " que",
+      "fromMs": 11164,
+      "toMs": 11164,
+      "dtwMs": 11664,
+      "p": 0.999962
+    },
+    {
+      "text": " acompa",
+      "fromMs": 11294,
+      "toMs": 11514,
+      "dtwMs": 11904,
+      "p": 0.99001
+    },
+    {
+      "text": "ña",
+      "fromMs": 11514,
+      "toMs": 11624,
+      "dtwMs": 12044,
+      "p": 0.999893
+    },
+    {
+      "text": " a",
+      "fromMs": 11624,
+      "toMs": 11674,
+      "dtwMs": 12124,
+      "p": 0.999796
+    },
+    {
+      "text": " los",
+      "fromMs": 11674,
+      "toMs": 11844,
+      "dtwMs": 12184,
+      "p": 0.999798
+    },
+    {
+      "text": " niños",
+      "fromMs": 11844,
+      "toMs": 12134,
+      "dtwMs": 12444,
+      "p": 0.99992
+    },
+    {
+      "text": " en",
+      "fromMs": 12134,
+      "toMs": 12244,
+      "dtwMs": 12704,
+      "p": 0.999542
+    },
+    {
+      "text": " su",
+      "fromMs": 12244,
+      "toMs": 12354,
+      "dtwMs": 12804,
+      "p": 0.999798
+    },
+    {
+      "text": " viaje",
+      "fromMs": 12354,
+      "toMs": 12464,
+      "dtwMs": 13004,
+      "p": 0.99983
+    },
+    {
+      "text": " de",
+      "fromMs": 12674,
+      "toMs": 12754,
+      "dtwMs": 13124,
+      "p": 0.966143
+    },
+    {
+      "text": " aprend",
+      "fromMs": 12754,
+      "toMs": 13074,
+      "dtwMs": 13344,
+      "p": 0.999964
+    },
+    {
+      "text": "iz",
+      "fromMs": 13154,
+      "toMs": 13214,
+      "dtwMs": 13484,
+      "p": 0.999979
+    },
+    {
+      "text": "aje",
+      "fromMs": 13214,
+      "toMs": 13384,
+      "dtwMs": 13664,
+      "p": 0.999847
+    },
+    {
+      "text": ".",
+      "fromMs": 13384,
+      "toMs": 13594,
+      "dtwMs": 13664,
+      "p": 0.998734
+    }
+  ]
+}

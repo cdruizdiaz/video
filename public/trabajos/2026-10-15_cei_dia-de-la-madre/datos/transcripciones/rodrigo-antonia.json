@@ -1,0 +1,176 @@
+{
+  "archivo": "rodrigo-antonia.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 13312,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 9900,
+      "texto": "Hola mami, estoy en inglés, te quería decir que gracias por cuidarme, chao, te quiero."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 90,
+      "toMs": 980,
+      "dtwMs": 1460,
+      "p": 0.421324
+    },
+    {
+      "text": " m",
+      "fromMs": 1230,
+      "toMs": 1310,
+      "dtwMs": 1760,
+      "p": 0.707884
+    },
+    {
+      "text": "ami",
+      "fromMs": 1310,
+      "toMs": 2100,
+      "dtwMs": 2100,
+      "p": 0.996964
+    },
+    {
+      "text": ",",
+      "fromMs": 2100,
+      "toMs": 2220,
+      "dtwMs": 2400,
+      "p": 0.645464
+    },
+    {
+      "text": " estoy",
+      "fromMs": 2390,
+      "toMs": 2710,
+      "dtwMs": 2700,
+      "p": 0.968416
+    },
+    {
+      "text": " en",
+      "fromMs": 2710,
+      "toMs": 2880,
+      "dtwMs": 3000,
+      "p": 0.975877
+    },
+    {
+      "text": " inglés",
+      "fromMs": 2880,
+      "toMs": 3420,
+      "dtwMs": 3380,
+      "p": 0.63878
+    },
+    {
+      "text": ",",
+      "fromMs": 3420,
+      "toMs": 3640,
+      "dtwMs": 3540,
+      "p": 0.604727
+    },
+    {
+      "text": " te",
+      "fromMs": 3640,
+      "toMs": 3860,
+      "dtwMs": 3660,
+      "p": 0.96255
+    },
+    {
+      "text": " quería",
+      "fromMs": 3860,
+      "toMs": 4540,
+      "dtwMs": 4220,
+      "p": 0.886149
+    },
+    {
+      "text": " decir",
+      "fromMs": 4540,
+      "toMs": 4940,
+      "dtwMs": 4880,
+      "p": 0.984635
+    },
+    {
+      "text": " que",
+      "fromMs": 5120,
+      "toMs": 5480,
+      "dtwMs": 5300,
+      "p": 0.928918
+    },
+    {
+      "text": " gracias",
+      "fromMs": 5480,
+      "toMs": 6320,
+      "dtwMs": 6180,
+      "p": 0.392815
+    },
+    {
+      "text": " por",
+      "fromMs": 6320,
+      "toMs": 6680,
+      "dtwMs": 6640,
+      "p": 0.998706
+    },
+    {
+      "text": " cuid",
+      "fromMs": 6680,
+      "toMs": 7160,
+      "dtwMs": 7140,
+      "p": 0.995355
+    },
+    {
+      "text": "arme",
+      "fromMs": 7160,
+      "toMs": 7650,
+      "dtwMs": 7660,
+      "p": 0.996462
+    },
+    {
+      "text": ",",
+      "fromMs": 7650,
+      "toMs": 7910,
+      "dtwMs": 8760,
+      "p": 0.758621
+    },
+    {
+      "text": " cha",
+      "fromMs": 7910,
+      "toMs": 8340,
+      "dtwMs": 8940,
+      "p": 0.790244
+    },
+    {
+      "text": "o",
+      "fromMs": 8340,
+      "toMs": 8480,
+      "dtwMs": 9100,
+      "p": 0.99847
+    },
+    {
+      "text": ",",
+      "fromMs": 8480,
+      "toMs": 8750,
+      "dtwMs": 9280,
+      "p": 0.895678
+    },
+    {
+      "text": " te",
+      "fromMs": 8830,
+      "toMs": 9030,
+      "dtwMs": 9360,
+      "p": 0.996928
+    },
+    {
+      "text": " quiero",
+      "fromMs": 9030,
+      "toMs": 9900,
+      "dtwMs": 9880,
+      "p": 0.839197
+    },
+    {
+      "text": ".",
+      "fromMs": 9900,
+      "toMs": 9900,
+      "dtwMs": 9880,
+      "p": 0.492751
+    }
+  ]
+}

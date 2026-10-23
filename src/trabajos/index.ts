@@ -19,6 +19,11 @@ import { composiciones as claudioPruebaBlender } from "./2026-10-04_claudio_prue
 import { composiciones as claudioBloomieRock } from "./2026-10-04_claudio_bloomie-rock/composiciones";
 import { composiciones as rastroBloomiePlantada } from "./2026-10-06_rastro_bloomie-plantada/composiciones";
 import { composiciones as voltoFashionWeek } from "./2026-10-06_volto_fashion-week/composiciones";
+import { composiciones as laencinaErosFilosofia } from "./2026-10-13_laencina_eros-filosofia/composiciones";
+import { composiciones as ceiDiaDeLaMadre } from "./2026-10-15_cei_dia-de-la-madre/composiciones";
+import { composiciones as voltoRadio } from "./2026-10-19_volto_radio/composiciones";
+import { composiciones as rastroPauMascota } from "./2026-10-21_rastro_pau-mascota/composiciones";
+import { composiciones as rastroConsumosDelMes } from "./2026-10-21_rastro_consumos-del-mes/composiciones";
 import type { Trabajo } from "./tipos";
 
 export const TRABAJOS: Trabajo[] = [
@@ -42,4 +47,9 @@ export const TRABAJOS: Trabajo[] = [
   { id: "2026-10-04_claudio_bloomie-rock", composiciones: claudioBloomieRock },
   { id: "2026-10-06_rastro_bloomie-plantada", composiciones: rastroBloomiePlantada },
   { id: "2026-10-06_volto_fashion-week", composiciones: voltoFashionWeek },
+  { id: "2026-10-13_laencina_eros-filosofia", composiciones: laencinaErosFilosofia },
+  { id: "2026-10-15_cei_dia-de-la-madre", composiciones: ceiDiaDeLaMadre },
+  { id: "2026-10-19_volto_radio", composiciones: voltoRadio },
+  { id: "2026-10-21_rastro_pau-mascota", composiciones: rastroPauMascota },
+  { id: "2026-10-21_rastro_consumos-del-mes", composiciones: rastroConsumosDelMes },
 ];

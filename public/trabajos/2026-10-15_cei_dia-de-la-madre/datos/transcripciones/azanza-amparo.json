@@ -1,0 +1,225 @@
+{
+  "archivo": "azanza-amparo.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 14763,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 11080,
+      "texto": "Hola mami, estoy acá en el Insti y te quería decir que gracias por quererme mucho. Te mando besos, chau."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 990,
+      "toMs": 1550,
+      "dtwMs": 2520,
+      "p": 0.371617
+    },
+    {
+      "text": " m",
+      "fromMs": 1550,
+      "toMs": 1930,
+      "dtwMs": 2740,
+      "p": 0.670781
+    },
+    {
+      "text": "ami",
+      "fromMs": 1930,
+      "toMs": 3100,
+      "dtwMs": 3100,
+      "p": 0.993908
+    },
+    {
+      "text": ",",
+      "fromMs": 3100,
+      "toMs": 3290,
+      "dtwMs": 3680,
+      "p": 0.552273
+    },
+    {
+      "text": " estoy",
+      "fromMs": 3290,
+      "toMs": 3780,
+      "dtwMs": 4060,
+      "p": 0.945445
+    },
+    {
+      "text": " acá",
+      "fromMs": 3780,
+      "toMs": 4080,
+      "dtwMs": 4280,
+      "p": 0.768171
+    },
+    {
+      "text": " en",
+      "fromMs": 4080,
+      "toMs": 4280,
+      "dtwMs": 4400,
+      "p": 0.945949
+    },
+    {
+      "text": " el",
+      "fromMs": 4280,
+      "toMs": 4480,
+      "dtwMs": 4560,
+      "p": 0.823289
+    },
+    {
+      "text": " Inst",
+      "fromMs": 4480,
+      "toMs": 4810,
+      "dtwMs": 4880,
+      "p": 0.78304
+    },
+    {
+      "text": "i",
+      "fromMs": 4880,
+      "toMs": 5000,
+      "dtwMs": 5000,
+      "p": 0.758953
+    },
+    {
+      "text": " y",
+      "fromMs": 5000,
+      "toMs": 5090,
+      "dtwMs": 5300,
+      "p": 0.773081
+    },
+    {
+      "text": " te",
+      "fromMs": 5090,
+      "toMs": 5270,
+      "dtwMs": 5460,
+      "p": 0.991456
+    },
+    {
+      "text": " quería",
+      "fromMs": 5270,
+      "toMs": 5840,
+      "dtwMs": 5800,
+      "p": 0.897677
+    },
+    {
+      "text": " decir",
+      "fromMs": 5840,
+      "toMs": 6380,
+      "dtwMs": 6300,
+      "p": 0.976607
+    },
+    {
+      "text": " que",
+      "fromMs": 6380,
+      "toMs": 6680,
+      "dtwMs": 6640,
+      "p": 0.95413
+    },
+    {
+      "text": " gracias",
+      "fromMs": 6680,
+      "toMs": 7490,
+      "dtwMs": 7220,
+      "p": 0.928683
+    },
+    {
+      "text": " por",
+      "fromMs": 7660,
+      "toMs": 7850,
+      "dtwMs": 8040,
+      "p": 0.991828
+    },
+    {
+      "text": " quer",
+      "fromMs": 7850,
+      "toMs": 8090,
+      "dtwMs": 8660,
+      "p": 0.987022
+    },
+    {
+      "text": "erme",
+      "fromMs": 8340,
+      "toMs": 8770,
+      "dtwMs": 8880,
+      "p": 0.997609
+    },
+    {
+      "text": " mucho",
+      "fromMs": 8770,
+      "toMs": 9380,
+      "dtwMs": 9320,
+      "p": 0.990455
+    },
+    {
+      "text": ".",
+      "fromMs": 9380,
+      "toMs": 9620,
+      "dtwMs": 9600,
+      "p": 0.567769
+    },
+    {
+      "text": " Te",
+      "fromMs": 9640,
+      "toMs": 9780,
+      "dtwMs": 9680,
+      "p": 0.845806
+    },
+    {
+      "text": " mand",
+      "fromMs": 9780,
+      "toMs": 10100,
+      "dtwMs": 9820,
+      "p": 0.998558
+    },
+    {
+      "text": "o",
+      "fromMs": 10100,
+      "toMs": 10180,
+      "dtwMs": 9960,
+      "p": 0.999502
+    },
+    {
+      "text": " bes",
+      "fromMs": 10180,
+      "toMs": 10420,
+      "dtwMs": 10280,
+      "p": 0.991665
+    },
+    {
+      "text": "os",
+      "fromMs": 10420,
+      "toMs": 10570,
+      "dtwMs": 10420,
+      "p": 0.995207
+    },
+    {
+      "text": ",",
+      "fromMs": 10580,
+      "toMs": 10720,
+      "dtwMs": 10680,
+      "p": 0.533327
+    },
+    {
+      "text": " ch",
+      "fromMs": 10770,
+      "toMs": 10900,
+      "dtwMs": 10820,
+      "p": 0.603514
+    },
+    {
+      "text": "au",
+      "fromMs": 10900,
+      "toMs": 11080,
+      "dtwMs": 11060,
+      "p": 0.998378
+    },
+    {
+      "text": ".",
+      "fromMs": 11080,
+      "toMs": 11080,
+      "dtwMs": 11060,
+      "p": 0.889102
+    }
+  ]
+}

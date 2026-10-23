@@ -1,0 +1,116 @@
+{
+  "archivo": "IMG_7167.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3932,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 740,
+      "texto": "Hay que guardar el auto"
+    },
+    {
+      "desdeMs": 740,
+      "hastaMs": 1800,
+      "texto": "Así es"
+    },
+    {
+      "desdeMs": 1800,
+      "hastaMs": 3740,
+      "texto": "Así que pasamos a"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hay",
+      "fromMs": 0,
+      "toMs": 110,
+      "dtwMs": 100,
+      "p": 0.113066
+    },
+    {
+      "text": " que",
+      "fromMs": 110,
+      "toMs": 220,
+      "dtwMs": 180,
+      "p": 0.994583
+    },
+    {
+      "text": " guard",
+      "fromMs": 220,
+      "toMs": 410,
+      "dtwMs": 340,
+      "p": 0.993314
+    },
+    {
+      "text": "ar",
+      "fromMs": 410,
+      "toMs": 480,
+      "dtwMs": 400,
+      "p": 0.996692
+    },
+    {
+      "text": " el",
+      "fromMs": 480,
+      "toMs": 550,
+      "dtwMs": 500,
+      "p": 0.979619
+    },
+    {
+      "text": " auto",
+      "fromMs": 550,
+      "toMs": 730,
+      "dtwMs": 720,
+      "p": 0.991024
+    },
+    {
+      "text": " Así",
+      "fromMs": 740,
+      "toMs": 1360,
+      "dtwMs": 1580,
+      "p": 0.974956
+    },
+    {
+      "text": " es",
+      "fromMs": 1370,
+      "toMs": 1540,
+      "dtwMs": 1740,
+      "p": 0.562634
+    },
+    {
+      "text": " Así",
+      "fromMs": 1800,
+      "toMs": 2170,
+      "dtwMs": 2840,
+      "p": 0.984883
+    },
+    {
+      "text": " que",
+      "fromMs": 2170,
+      "toMs": 2530,
+      "dtwMs": 2980,
+      "p": 0.998412
+    },
+    {
+      "text": " pas",
+      "fromMs": 2530,
+      "toMs": 2650,
+      "dtwMs": 3220,
+      "p": 0.994162
+    },
+    {
+      "text": "amos",
+      "fromMs": 2940,
+      "toMs": 3420,
+      "dtwMs": 3380,
+      "p": 0.999409
+    },
+    {
+      "text": " a",
+      "fromMs": 3420,
+      "toMs": 3740,
+      "dtwMs": 3720,
+      "p": 0.959662
+    }
+  ]
+}

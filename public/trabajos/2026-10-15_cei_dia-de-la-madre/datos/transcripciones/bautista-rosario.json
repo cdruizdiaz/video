@@ -1,0 +1,134 @@
+{
+  "archivo": "bautista-rosario.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5973,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5980,
+      "texto": "Hola, mam. Estoy en Listi. Te quería agradecer por acompañarme."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 10,
+      "toMs": 880,
+      "dtwMs": 840,
+      "p": 0.579785
+    },
+    {
+      "text": ",",
+      "fromMs": 880,
+      "toMs": 1320,
+      "dtwMs": 1000,
+      "p": 0.385266
+    },
+    {
+      "text": " mam",
+      "fromMs": 1320,
+      "toMs": 1990,
+      "dtwMs": 1060,
+      "p": 0.722167
+    },
+    {
+      "text": ".",
+      "fromMs": 1990,
+      "toMs": 2240,
+      "dtwMs": 1260,
+      "p": 0.317099
+    },
+    {
+      "text": " Estoy",
+      "fromMs": 2240,
+      "toMs": 2640,
+      "dtwMs": 1540,
+      "p": 0.925678
+    },
+    {
+      "text": " en",
+      "fromMs": 2640,
+      "toMs": 2800,
+      "dtwMs": 1700,
+      "p": 0.956749
+    },
+    {
+      "text": " List",
+      "fromMs": 2800,
+      "toMs": 3120,
+      "dtwMs": 1980,
+      "p": 0.154205
+    },
+    {
+      "text": "i",
+      "fromMs": 3120,
+      "toMs": 3200,
+      "dtwMs": 2060,
+      "p": 0.356149
+    },
+    {
+      "text": ".",
+      "fromMs": 3200,
+      "toMs": 3440,
+      "dtwMs": 2180,
+      "p": 0.424956
+    },
+    {
+      "text": " Te",
+      "fromMs": 3440,
+      "toMs": 3600,
+      "dtwMs": 2300,
+      "p": 0.834301
+    },
+    {
+      "text": " quería",
+      "fromMs": 3600,
+      "toMs": 4080,
+      "dtwMs": 2520,
+      "p": 0.914323
+    },
+    {
+      "text": " agrade",
+      "fromMs": 4200,
+      "toMs": 4560,
+      "dtwMs": 2720,
+      "p": 0.992275
+    },
+    {
+      "text": "cer",
+      "fromMs": 4560,
+      "toMs": 4800,
+      "dtwMs": 2960,
+      "p": 0.994594
+    },
+    {
+      "text": " por",
+      "fromMs": 4800,
+      "toMs": 5030,
+      "dtwMs": 3120,
+      "p": 0.983384
+    },
+    {
+      "text": " acompañ",
+      "fromMs": 5040,
+      "toMs": 5600,
+      "dtwMs": 3560,
+      "p": 0.995121
+    },
+    {
+      "text": "arme",
+      "fromMs": 5600,
+      "toMs": 5970,
+      "dtwMs": 3820,
+      "p": 0.975249
+    },
+    {
+      "text": ".",
+      "fromMs": 5970,
+      "toMs": 5970,
+      "dtwMs": 4260,
+      "p": 0.835389
+    }
+  ]
+}

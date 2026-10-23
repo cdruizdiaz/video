@@ -71,7 +71,8 @@ const REEL_TAMANO = 66;
 const REEL_ANCHO = 940;
 const REEL_ANCHO_DOS = 680; // con tamaño fijo: ancho de renglón antes de pasar a dos (renglones cortos, como el reel de referencia)
 const REEL_INTERLINEA_DOS = 1.08;
-const REEL_SOMBRA_SUAVE = "0 6px 16px rgba(0, 0, 0, 0.5)"; // con tamaño fijo: leve sombra difusa (reel de referencia)
+const REEL_SOMBRA_SUAVE = "0 6px 16px rgba(0, 0, 0, 0.5)";
+const REEL_SOMBRA_SIN_BORDE = "0 2px 4px rgba(0, 0, 0, 0.45), 0 4px 18px rgba(0, 0, 0, 0.55)"; // sin trazo: solo sombra difusa para leerse sobre fondos claros // con tamaño fijo: leve sombra difusa (reel de referencia)
 const REEL_SOMBRA_PARALELA = "3px 7px 0 #000"; // con tamaño fijo: sombra paralela sólida (100 %), como la referencia
 const REEL_ESPACIO = 0.32; // em entre palabras (margen 0.16em a cada lado) // un renglón casi siempre (dos renglones bajarían de la zona segura)
 const REEL_PESO = 700;
@@ -104,6 +105,8 @@ const CIERRE_FUNDIDO = 9; // frames de fundido de entrada del cierre
 const CIERRE_LOGO_DEMORA = 4; // frames hasta que entra el logo (con fundido)
 const CIERRE_TEXTO_DEMORA = 10; // frames hasta que entran frase y sitio (con fundido)
 const CIERRE_ENTRADA = 14; // frames de la animación de entrada
+const CIERRE_LOGO_COLORES =
+  "linear-gradient(100deg, #f97d55 0%, #95a8a0 42%, #406162 72%, #262626 100%)"; // logo de la placa blanca
 const CIERRE_FRASE_MAX = 120; // tamaño de la frase manuscrita en el cierre "degrade"…
 const CIERRE_FRASE_ANCHO = 1900; // …que se achica en frases largas (≈ tamaño × letras)
 const MUSICA_SUBIDA = 18; // frames en que la música sube al empezar el cierre
@@ -149,7 +152,7 @@ export type HablaSubtituladaProps = {
     frase: string;
     sitio: string;
     duracion: number; // en frames
-    estilo?: "oscuro" | "degrade";
+    estilo?: "oscuro" | "degrade" | "claro";
     colaAmbiente?: boolean; // el sonido del último clip sigue bajo el cierre y se apaga
     corte?: boolean; // la placa entra por corte (sin fundido con la toma) y solo se anima el logo
   };
@@ -160,6 +163,8 @@ export type HablaSubtituladaProps = {
     grupos?: string[]; // subtítulos escritos a mano, en orden (ver gruposManuales en calculos.ts)
     tamano?: number; // "reel": tamaño de letra fijo; si no entra en un renglón pasa a dos (sin achicar)
     seco?: boolean; // "reel": entran y salen sin animación
+    peso?: number; // "reel": grosor de la letra (por defecto REEL_PESO)
+    sinBorde?: boolean; // "reel": sin el trazo negro ni la sombra paralela, solo una sombra difusa
   };
   apertura?: { titulo: string; subtitulo?: string; duracion: number }; // duracion en frames
   ubicacion?: { texto: string; duracion: number }; // rótulo con pin que entra desde la izquierda (frames)
@@ -171,6 +176,9 @@ export type HablaSubtituladaProps = {
   // webm con alfa del mismo clip que se ve, en carpetaVideos; su cuadro 0 = segundo `recorteDesdeMs` del clip).
   // desdeMs/hastaMs en tiempo del clip de la toma. El recorte recibe el mismo encuadre y zoom que el plano.
   detrasDePersona?: CapaDetras[];
+  // Capa sobre el video y debajo de logo y subtítulos, en frames de salida (p. ej. grabaciones de pantalla con
+  // la voz en off: la persona sigue sonando y los subtítulos quedan encima)
+  sobreVideo?: React.ReactNode;
 };
 
 export type CapaDetras = {
@@ -616,7 +624,9 @@ const SubtituloReel: React.FC<{
   minusculas?: boolean;
   tamanoFijo?: number;
   seco?: boolean;
-}> = ({ g, m, minusculas, tamanoFijo, seco }) => {
+  peso?: number;
+  sinBorde?: boolean;
+}> = ({ g, m, minusculas, tamanoFijo, seco, peso = REEL_PESO, sinBorde }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const entrada = spring({
@@ -648,7 +658,7 @@ const SubtituloReel: React.FC<{
         ? null
         : document.createElement("canvas").getContext("2d");
     if (!ctx) return 0;
-    ctx.font = `${REEL_PESO} ${tamanoFijo}px ${familia}`;
+    ctx.font = `${peso} ${tamanoFijo}px ${familia}`;
     const anchos = textos.map(
       (t) => ctx.measureText(t).width + 0.02 * tamanoFijo * t.length,
     );
@@ -657,8 +667,10 @@ const SubtituloReel: React.FC<{
       REEL_ESPACIO * tamanoFijo,
       REEL_ANCHO_DOS - REEL_BORDE - REEL_SOMBRA,
     );
-  }, [textos.join(" "), tamanoFijo, familia, g.unRenglon]); // eslint-disable-line react-hooks/exhaustive-deps
-  const sombra = tamanoFijo
+  }, [textos.join(" "), tamanoFijo, familia, g.unRenglon, peso]); // eslint-disable-line react-hooks/exhaustive-deps
+  const sombra = sinBorde
+    ? REEL_SOMBRA_SIN_BORDE
+    : tamanoFijo
     ? `${REEL_SOMBRA_PARALELA}, ${REEL_SOMBRA_SUAVE}`
     : `${REEL_SOMBRA}px ${REEL_SOMBRA}px 0 ${REEL_TINTA}`;
   const palabra = (w: Palabra, i: number) => (
@@ -668,7 +680,7 @@ const SubtituloReel: React.FC<{
         display: "inline-block",
         margin: "0 0.16em",
         color: w.clave ? REEL_CLAVE : REEL_TEXTO,
-        WebkitTextStroke: `${REEL_BORDE}px ${REEL_TINTA}`,
+        WebkitTextStroke: sinBorde ? undefined : `${REEL_BORDE}px ${REEL_TINTA}`,
         paintOrder: "stroke fill",
         textShadow: sombra,
       }}
@@ -687,7 +699,7 @@ const SubtituloReel: React.FC<{
         opacity: opacidad,
         textAlign: "center",
         fontFamily: familia,
-        fontWeight: REEL_PESO,
+        fontWeight: peso,
         fontSize: tamano,
         lineHeight: tamanoFijo ? REEL_INTERLINEA_DOS : 1.2,
         letterSpacing: "0.02em",
@@ -932,7 +944,7 @@ const Cierre: React.FC<{
   m: Marca;
   frase: string;
   sitio: string;
-  estilo: "oscuro" | "degrade";
+  estilo: "oscuro" | "degrade" | "claro";
   corte?: boolean;
 }> = ({ m, frase, sitio, estilo, corte }) => {
   const frame = useCurrentFrame();
@@ -955,27 +967,59 @@ const Cierre: React.FC<{
         { ...clamp, easing: m.ease },
       );
   const degrade = estilo === "degrade";
+  const claro = estilo === "claro";
   return (
     <AbsoluteFill>
       <AbsoluteFill
         style={{
-          background: degrade ? fondoDegrade(m) : m.colores.oscuro,
+          background: claro
+            ? "#ffffff"
+            : degrade
+              ? fondoDegrade(m)
+              : m.colores.oscuro,
           opacity: fondo,
         }}
       />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
-        <Img
-          src={staticFile(m.logo)}
-          style={{
-            width: 620,
-            opacity: logo,
-            transform: `translateY(${(1 - logo) * 40}px)`,
-            filter:
-              m.logoFiltroSobreOscuro === "none"
-                ? undefined
-                : m.logoFiltroSobreOscuro,
-          }}
-        />
+        {claro ? (
+          // placa blanca: el logo (claro sobre transparente) se tiñe con los colores de la marca
+          <div
+            style={{
+              position: "relative",
+              width: 620,
+              opacity: logo,
+              transform: `translateY(${(1 - logo) * 40}px)`,
+            }}
+          >
+            <Img src={staticFile(m.logo)} style={{ width: 620, opacity: 0 }} />
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                background: CIERRE_LOGO_COLORES,
+                WebkitMaskImage: `url(${staticFile(m.logo)})`,
+                WebkitMaskSize: "100% 100%",
+                WebkitMaskRepeat: "no-repeat",
+                maskImage: `url(${staticFile(m.logo)})`,
+                maskSize: "100% 100%",
+                maskRepeat: "no-repeat",
+              }}
+            />
+          </div>
+        ) : (
+          <Img
+            src={staticFile(m.logo)}
+            style={{
+              width: 620,
+              opacity: logo,
+              transform: `translateY(${(1 - logo) * 40}px)`,
+              filter:
+                m.logoFiltroSobreOscuro === "none"
+                  ? undefined
+                  : m.logoFiltroSobreOscuro,
+            }}
+          />
+        )}
         {frase ? (
           <div
             style={{
@@ -1006,7 +1050,7 @@ const Cierre: React.FC<{
             fontWeight: degrade ? 600 : 500,
             fontSize: 44,
             letterSpacing: "0.04em",
-            color: m.colores.claro,
+            color: claro ? "#262626" : m.colores.claro,
           }}
         >
           {sitio}
@@ -1062,6 +1106,11 @@ export const HablaSubtitulada: React.FC<HablaSubtituladaProps> = (p) => {
           </Sequence>
         );
       })}
+      {p.sobreVideo ? (
+        <Sequence durationInFrames={finTomas} name="sobre el video">
+          {p.sobreVideo}
+        </Sequence>
+      ) : null}
       {/* con cruceAudio: la voz de cada toma empieza `c` frames antes y termina `c` después, fundiendo
           cruzado con la vecina (sin el hueco de silencio que dejan dos fundidos a cero) */}
       {p.cruceAudio
@@ -1165,6 +1214,8 @@ export const HablaSubtitulada: React.FC<HablaSubtituladaProps> = (p) => {
               minusculas={p.subtitulos?.minusculas}
               tamanoFijo={p.subtitulos?.tamano}
               seco={p.subtitulos?.seco}
+              peso={p.subtitulos?.peso}
+              sinBorde={p.subtitulos?.sinBorde}
             />
           ) : (
             <Subtitulo g={{ ...g, desde: Math.round(g.desde) }} m={m} />

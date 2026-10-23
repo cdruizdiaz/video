@@ -1,0 +1,337 @@
+{
+  "archivo": "meresman-mateo.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 14507,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 12200,
+      "texto": "Hola mami, te quiero agradecer por todo, por todo el esfuerzo que vos me diste, por el amor que vos me diste con todo este tiempo y te quiero agradecer con todo, te amo mucho."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 230,
+      "toMs": 1500,
+      "dtwMs": 2420,
+      "p": 0.254328
+    },
+    {
+      "text": " m",
+      "fromMs": 1500,
+      "toMs": 1870,
+      "dtwMs": 2560,
+      "p": 0.613246
+    },
+    {
+      "text": "ami",
+      "fromMs": 2310,
+      "toMs": 2950,
+      "dtwMs": 2720,
+      "p": 0.995055
+    },
+    {
+      "text": ",",
+      "fromMs": 3000,
+      "toMs": 3130,
+      "dtwMs": 3260,
+      "p": 0.597576
+    },
+    {
+      "text": " te",
+      "fromMs": 3230,
+      "toMs": 3280,
+      "dtwMs": 3860,
+      "p": 0.828288
+    },
+    {
+      "text": " quiero",
+      "fromMs": 3280,
+      "toMs": 3720,
+      "dtwMs": 4020,
+      "p": 0.990121
+    },
+    {
+      "text": " agrade",
+      "fromMs": 3720,
+      "toMs": 4160,
+      "dtwMs": 4200,
+      "p": 0.993059
+    },
+    {
+      "text": "cer",
+      "fromMs": 4160,
+      "toMs": 4310,
+      "dtwMs": 4460,
+      "p": 0.994848
+    },
+    {
+      "text": " por",
+      "fromMs": 4380,
+      "toMs": 4600,
+      "dtwMs": 4640,
+      "p": 0.992548
+    },
+    {
+      "text": " todo",
+      "fromMs": 4600,
+      "toMs": 4940,
+      "dtwMs": 4900,
+      "p": 0.995006
+    },
+    {
+      "text": ",",
+      "fromMs": 4940,
+      "toMs": 5000,
+      "dtwMs": 5180,
+      "p": 0.820872
+    },
+    {
+      "text": " por",
+      "fromMs": 5000,
+      "toMs": 5180,
+      "dtwMs": 5420,
+      "p": 0.910624
+    },
+    {
+      "text": " todo",
+      "fromMs": 5220,
+      "toMs": 5390,
+      "dtwMs": 5520,
+      "p": 0.991106
+    },
+    {
+      "text": " el",
+      "fromMs": 5390,
+      "toMs": 5490,
+      "dtwMs": 5620,
+      "p": 0.987941
+    },
+    {
+      "text": " esfuer",
+      "fromMs": 5490,
+      "toMs": 5800,
+      "dtwMs": 5780,
+      "p": 0.992775
+    },
+    {
+      "text": "zo",
+      "fromMs": 5800,
+      "toMs": 5900,
+      "dtwMs": 5880,
+      "p": 0.997615
+    },
+    {
+      "text": " que",
+      "fromMs": 5900,
+      "toMs": 6050,
+      "dtwMs": 6000,
+      "p": 0.989355
+    },
+    {
+      "text": " vos",
+      "fromMs": 6050,
+      "toMs": 6200,
+      "dtwMs": 6080,
+      "p": 0.944359
+    },
+    {
+      "text": " me",
+      "fromMs": 6200,
+      "toMs": 6300,
+      "dtwMs": 6200,
+      "p": 0.994427
+    },
+    {
+      "text": " dist",
+      "fromMs": 6300,
+      "toMs": 6500,
+      "dtwMs": 6360,
+      "p": 0.994806
+    },
+    {
+      "text": "e",
+      "fromMs": 6500,
+      "toMs": 6600,
+      "dtwMs": 6540,
+      "p": 0.998264
+    },
+    {
+      "text": ",",
+      "fromMs": 6600,
+      "toMs": 6720,
+      "dtwMs": 6840,
+      "p": 0.905189
+    },
+    {
+      "text": " por",
+      "fromMs": 6770,
+      "toMs": 6980,
+      "dtwMs": 6960,
+      "p": 0.887585
+    },
+    {
+      "text": " el",
+      "fromMs": 6980,
+      "toMs": 7200,
+      "dtwMs": 7180,
+      "p": 0.978176
+    },
+    {
+      "text": " amor",
+      "fromMs": 7200,
+      "toMs": 7460,
+      "dtwMs": 7360,
+      "p": 0.973223
+    },
+    {
+      "text": " que",
+      "fromMs": 7460,
+      "toMs": 7650,
+      "dtwMs": 7500,
+      "p": 0.991316
+    },
+    {
+      "text": " vos",
+      "fromMs": 7650,
+      "toMs": 7840,
+      "dtwMs": 7620,
+      "p": 0.986324
+    },
+    {
+      "text": " me",
+      "fromMs": 7840,
+      "toMs": 7970,
+      "dtwMs": 7760,
+      "p": 0.998759
+    },
+    {
+      "text": " dist",
+      "fromMs": 7970,
+      "toMs": 8190,
+      "dtwMs": 8440,
+      "p": 0.996952
+    },
+    {
+      "text": "e",
+      "fromMs": 8290,
+      "toMs": 8290,
+      "dtwMs": 8620,
+      "p": 0.999887
+    },
+    {
+      "text": " con",
+      "fromMs": 8330,
+      "toMs": 8480,
+      "dtwMs": 8760,
+      "p": 0.995824
+    },
+    {
+      "text": " todo",
+      "fromMs": 8480,
+      "toMs": 8740,
+      "dtwMs": 8920,
+      "p": 0.999531
+    },
+    {
+      "text": " este",
+      "fromMs": 8740,
+      "toMs": 8990,
+      "dtwMs": 9060,
+      "p": 0.998852
+    },
+    {
+      "text": " tiempo",
+      "fromMs": 9010,
+      "toMs": 9420,
+      "dtwMs": 9400,
+      "p": 0.999407
+    },
+    {
+      "text": " y",
+      "fromMs": 9420,
+      "toMs": 9480,
+      "dtwMs": 10180,
+      "p": 0.65293
+    },
+    {
+      "text": " te",
+      "fromMs": 9480,
+      "toMs": 9620,
+      "dtwMs": 10400,
+      "p": 0.999664
+    },
+    {
+      "text": " quiero",
+      "fromMs": 9620,
+      "toMs": 9860,
+      "dtwMs": 10560,
+      "p": 0.999441
+    },
+    {
+      "text": " agrade",
+      "fromMs": 10090,
+      "toMs": 10510,
+      "dtwMs": 10740,
+      "p": 0.999729
+    },
+    {
+      "text": "cer",
+      "fromMs": 10510,
+      "toMs": 10730,
+      "dtwMs": 11020,
+      "p": 0.999865
+    },
+    {
+      "text": " con",
+      "fromMs": 10730,
+      "toMs": 10950,
+      "dtwMs": 11340,
+      "p": 0.980696
+    },
+    {
+      "text": " todo",
+      "fromMs": 10950,
+      "toMs": 11240,
+      "dtwMs": 11520,
+      "p": 0.999211
+    },
+    {
+      "text": ",",
+      "fromMs": 11250,
+      "toMs": 11380,
+      "dtwMs": 11700,
+      "p": 0.907971
+    },
+    {
+      "text": " te",
+      "fromMs": 11380,
+      "toMs": 11520,
+      "dtwMs": 11800,
+      "p": 0.996023
+    },
+    {
+      "text": " amo",
+      "fromMs": 11520,
+      "toMs": 11650,
+      "dtwMs": 11940,
+      "p": 0.999533
+    },
+    {
+      "text": " mucho",
+      "fromMs": 11730,
+      "toMs": 12140,
+      "dtwMs": 12180,
+      "p": 0.999411
+    },
+    {
+      "text": ".",
+      "fromMs": 12170,
+      "toMs": 12190,
+      "dtwMs": 12180,
+      "p": 0.801284
+    }
+  ]
+}

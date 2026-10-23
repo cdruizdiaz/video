@@ -1,0 +1,62 @@
+{
+  "aglieri-olivia": {
+    "lufs": -19.6,
+    "gananciaDb": -13.4
+  },
+  "meresman-mateo": {
+    "lufs": -23.2,
+    "gananciaDb": -9.8
+  },
+  "perello-clara": {
+    "lufs": -26.7,
+    "gananciaDb": -6.3
+  },
+  "benuzzi-dante": {
+    "lufs": -24.3,
+    "gananciaDb": -8.7
+  },
+  "sartore-naiara": {
+    "lufs": -22.5,
+    "gananciaDb": -10.5
+  },
+  "macagno-sofia": {
+    "lufs": -24.2,
+    "gananciaDb": -8.8
+  },
+  "di-gerolamo-pilar": {
+    "lufs": -22.8,
+    "gananciaDb": -10.2
+  },
+  "mastropaolo-ricardo": {
+    "lufs": -25.3,
+    "gananciaDb": -7.7
+  },
+  "alvarez-lola": {
+    "lufs": -23.8,
+    "gananciaDb": -9.2
+  },
+  "bautista-rosario": {
+    "lufs": -35.0,
+    "gananciaDb": 0.0
+  },
+  "azanza-amparo": {
+    "lufs": -21.9,
+    "gananciaDb": -11.1
+  },
+  "rodrigo-antonia": {
+    "lufs": -19.7,
+    "gananciaDb": -13.3
+  },
+  "mellis-silvero": {
+    "lufs": -22.2,
+    "gananciaDb": -10.8
+  },
+  "ciorciari-santiago": {
+    "lufs": -20.7,
+    "gananciaDb": -12.3
+  },
+  "gauna-alfonsina": {
+    "lufs": -20.3,
+    "gananciaDb": -12.7
+  }
+}

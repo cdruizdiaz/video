@@ -1,0 +1,141 @@
+{
+  "archivo": "perello-clara.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6485,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6480,
+      "texto": "Hola ma, te agradezco por quererme mucho y hacerme comida rica."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 150,
+      "toMs": 420,
+      "dtwMs": 1160,
+      "p": 0.741719
+    },
+    {
+      "text": " ma",
+      "fromMs": 420,
+      "toMs": 630,
+      "dtwMs": 1380,
+      "p": 0.197102
+    },
+    {
+      "text": ",",
+      "fromMs": 630,
+      "toMs": 840,
+      "dtwMs": 1560,
+      "p": 0.824172
+    },
+    {
+      "text": " te",
+      "fromMs": 970,
+      "toMs": 1050,
+      "dtwMs": 1660,
+      "p": 0.986446
+    },
+    {
+      "text": " agrade",
+      "fromMs": 1050,
+      "toMs": 1680,
+      "dtwMs": 1960,
+      "p": 0.993251
+    },
+    {
+      "text": "z",
+      "fromMs": 1680,
+      "toMs": 1780,
+      "dtwMs": 2180,
+      "p": 0.994567
+    },
+    {
+      "text": "co",
+      "fromMs": 1780,
+      "toMs": 2000,
+      "dtwMs": 2260,
+      "p": 0.999235
+    },
+    {
+      "text": " por",
+      "fromMs": 2000,
+      "toMs": 3000,
+      "dtwMs": 2560,
+      "p": 0.970861
+    },
+    {
+      "text": " quer",
+      "fromMs": 3000,
+      "toMs": 3300,
+      "dtwMs": 3140,
+      "p": 0.929008
+    },
+    {
+      "text": "erme",
+      "fromMs": 3300,
+      "toMs": 3600,
+      "dtwMs": 3280,
+      "p": 0.986831
+    },
+    {
+      "text": " mucho",
+      "fromMs": 3600,
+      "toMs": 3930,
+      "dtwMs": 3700,
+      "p": 0.987171
+    },
+    {
+      "text": " y",
+      "fromMs": 4040,
+      "toMs": 4130,
+      "dtwMs": 3840,
+      "p": 0.847669
+    },
+    {
+      "text": " hac",
+      "fromMs": 4130,
+      "toMs": 4540,
+      "dtwMs": 4040,
+      "p": 0.973749
+    },
+    {
+      "text": "erme",
+      "fromMs": 4540,
+      "toMs": 5000,
+      "dtwMs": 4260,
+      "p": 0.998211
+    },
+    {
+      "text": " comida",
+      "fromMs": 5000,
+      "toMs": 5900,
+      "dtwMs": 4700,
+      "p": 0.967837
+    },
+    {
+      "text": " r",
+      "fromMs": 5900,
+      "toMs": 6030,
+      "dtwMs": 4880,
+      "p": 0.810839
+    },
+    {
+      "text": "ica",
+      "fromMs": 6030,
+      "toMs": 6480,
+      "dtwMs": 5020,
+      "p": 0.968073
+    },
+    {
+      "text": ".",
+      "fromMs": 6480,
+      "toMs": 6480,
+      "dtwMs": 5120,
+      "p": 0.711761
+    }
+  ]
+}

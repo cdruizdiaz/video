@@ -1,0 +1,195 @@
+{
+  "archivo": "benuzzi-dante.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 11179,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7420,
+      "texto": "Hola amada, te quería decirle gracias por llevarme y traerme todos los días. Chao."
+    },
+    {
+      "desdeMs": 7420,
+      "hastaMs": 11180,
+      "texto": "Amén."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 50,
+      "toMs": 470,
+      "dtwMs": 2280,
+      "p": 0.378928
+    },
+    {
+      "text": " am",
+      "fromMs": 470,
+      "toMs": 700,
+      "dtwMs": 2500,
+      "p": 0.0698962
+    },
+    {
+      "text": "ada",
+      "fromMs": 700,
+      "toMs": 1050,
+      "dtwMs": 2640,
+      "p": 0.65776
+    },
+    {
+      "text": ",",
+      "fromMs": 1050,
+      "toMs": 1280,
+      "dtwMs": 2840,
+      "p": 0.785155
+    },
+    {
+      "text": " te",
+      "fromMs": 1280,
+      "toMs": 1510,
+      "dtwMs": 2840,
+      "p": 0.961964
+    },
+    {
+      "text": " quería",
+      "fromMs": 1670,
+      "toMs": 2210,
+      "dtwMs": 3000,
+      "p": 0.61567
+    },
+    {
+      "text": " decir",
+      "fromMs": 2210,
+      "toMs": 2790,
+      "dtwMs": 3340,
+      "p": 0.996631
+    },
+    {
+      "text": "le",
+      "fromMs": 2790,
+      "toMs": 3020,
+      "dtwMs": 3500,
+      "p": 0.39064
+    },
+    {
+      "text": " gracias",
+      "fromMs": 3020,
+      "toMs": 3880,
+      "dtwMs": 3840,
+      "p": 0.964824
+    },
+    {
+      "text": " por",
+      "fromMs": 3880,
+      "toMs": 4150,
+      "dtwMs": 4180,
+      "p": 0.978027
+    },
+    {
+      "text": " llevar",
+      "fromMs": 4150,
+      "toMs": 4700,
+      "dtwMs": 4520,
+      "p": 0.981699
+    },
+    {
+      "text": "me",
+      "fromMs": 4700,
+      "toMs": 4880,
+      "dtwMs": 4800,
+      "p": 0.999744
+    },
+    {
+      "text": " y",
+      "fromMs": 4880,
+      "toMs": 4980,
+      "dtwMs": 5300,
+      "p": 0.97449
+    },
+    {
+      "text": " tra",
+      "fromMs": 4980,
+      "toMs": 5230,
+      "dtwMs": 5480,
+      "p": 0.998106
+    },
+    {
+      "text": "erme",
+      "fromMs": 5230,
+      "toMs": 5560,
+      "dtwMs": 5720,
+      "p": 0.987675
+    },
+    {
+      "text": " todos",
+      "fromMs": 5560,
+      "toMs": 5980,
+      "dtwMs": 6020,
+      "p": 0.993896
+    },
+    {
+      "text": " los",
+      "fromMs": 5980,
+      "toMs": 6230,
+      "dtwMs": 6300,
+      "p": 0.999104
+    },
+    {
+      "text": " días",
+      "fromMs": 6230,
+      "toMs": 6590,
+      "dtwMs": 6540,
+      "p": 0.98375
+    },
+    {
+      "text": ".",
+      "fromMs": 6590,
+      "toMs": 6840,
+      "dtwMs": 6980,
+      "p": 0.896287
+    },
+    {
+      "text": " Cha",
+      "fromMs": 6840,
+      "toMs": 7080,
+      "dtwMs": 7200,
+      "p": 0.409532
+    },
+    {
+      "text": "o",
+      "fromMs": 7080,
+      "toMs": 7160,
+      "dtwMs": 7420,
+      "p": 0.999014
+    },
+    {
+      "text": ".",
+      "fromMs": 7160,
+      "toMs": 7420,
+      "dtwMs": 8140,
+      "p": 0.960131
+    },
+    {
+      "text": " Am",
+      "fromMs": 7480,
+      "toMs": 9300,
+      "dtwMs": 8560,
+      "p": 0.151144
+    },
+    {
+      "text": "én",
+      "fromMs": 9520,
+      "toMs": 11180,
+      "dtwMs": 8700,
+      "p": 0.424482
+    },
+    {
+      "text": ".",
+      "fromMs": 11180,
+      "toMs": 11180,
+      "dtwMs": 9060,
+      "p": 0.907477
+    }
+  ]
+}

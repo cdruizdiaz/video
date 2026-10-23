@@ -4,7 +4,7 @@
 |---|---|
 | Cliente / marca | VOLTO (`src/marcas/volto`) |
 | Pieza | Fashion Week: serie de reels con el material del desfile |
-| Estado | 🟡 En curso (al 2026-10-09: pieza 6 entregada en v2; pieza 1 rehecha, borrador `_n` en revisión; piezas 2, 3, 4 y 7 en preview; la 5 descartada). 2026-10-13: pieza 5 retomada, preview de cortes `preview-veni-seguime_9x16_v4` (correcciones de la v1 a la v3) |
+| Estado | 🟡 En curso (al 2026-10-09: pieza 6 entregada en v2; pieza 1 rehecha, borrador `_n` en revisión; piezas 2, 3, 4 y 7 en preview; la 5 descartada). 2026-10-13: pieza 5 retomada, preview v5 aprobada; borrador completo `revision/borrador_veni-seguime_9x16_a.mp4` en revisión |
 | Abierto | 2026-10-06 |
 | Cerrado | — |
 
@@ -28,7 +28,7 @@
 | 2 | "El lunes tengo el WhatsApp reventado" | IMG_6966 (0:23–1:45) | IMG_4213 | guion pendiente |
 | 3 | Partners de Tienda Nube + caso real (1,5 M de seguidores) | IMG_6972, 3ª toma (1:43–2:57) | IMG_4215 / IMG_4216 | guion pendiente |
 | 4 | "Tengo un casamiento el viernes" (posventa) | IMG_6969 (97,5–144,2 s) | IMG_4214 | preview |
-| 5 | "Vení, seguime" (caminando por la pasarela) | IMG_6977 (2,15–112,80 s, 9 tomas) | — (una cámara; zooms que siguen la cara) | preview de cortes v4 (2026-10-13; retomada a pedido, ~1 min) |
+| 5 | "Vení, seguime" (caminando por la pasarela) | IMG_6977 (2,15–112,80 s, 9 tomas) | — (una cámara; zooms que siguen la cara) | borrador completo A (2026-10-13; retomada a pedido, ~1 min) |
 | 6 | Entrevista de radio ("dejar de robotizar a los humanos") | IMG_6976 (0–10,4 · 14,1–19,7 · 24,1–25,8 · 45,1–62,4 · 90,0–122,2 s) | — (general, cerrado de ella, cerrado de él) | ✅ entregada v2 (2026-10-08) |
 | 7 | Lanzamientos y pauta | IMG_6969 (18,9–55,8 · 79,9–97,2 s) | IMG_4214 | preview |
 
@@ -68,6 +68,30 @@
 - **Pieza 5, correcciones de la preview v1 (2026-10-13):** (1) "Vení, seguime" se cortaba enseguida → la toma llega a 17,85 (0,6 s de aire; el silencio llega a 18,24). (2) En 0:37 "no se lo ve": en el original él sale de cuadro por la derecha entre 47,85 y 48,70 (no es el recorte) → cuadro quieto de 47,45 con empuje lento 1,4→1,55× hasta 48,95 (`congelarMs`, opción nueva de `Plano`). (3) "can…": "canti-dad" sigue hasta 57,36 (boca abierta en la "a", labios redondeados de "Bueno" en 57,40; el valle de 56,97 era la "d") → corte en 57,37 y `TIEMPOS`/`FINES` corregidos. (4) "resolver eso" sin aire: "la tecnología" arranca pegada (59,67) → voz hasta 59,64 y 0,45 s de imagen quieta con el ambiente de la pausa de 17,35 (`pausaMs` + `ambienteMs`, opción nueva de `Toma`). (5) Zooms "como seguimiento de cámara": `seguir_cara.py` (MediaPipe, 10 cuadros/s, 1090 de 1148 con cara) → `datos/seguimiento_IMG_6977n.json`; planos con `seguir` (el `transform-origin` deja la cara en (50 %, 40 %) de la pantalla, promedio gaussiano σ 0,4 s; el origen se limita a 0–1 para no salirse del video) y empujes con `zoomDesde` + `rampaMs` (ease in-out) en las frases fuertes; cada corte cambia ≥ 0,15 de escala. `preview()` mantiene las rampas de los planos con `seguir`. `render_previews.sh` acepta `[v] [idea…]`.
 - **Pieza 5, correcciones de la preview v2 (2026-10-13):** movimiento de cámara solo en frases a destacar ("Vení, seguime", "Volto es la solución para tu negocio", "resultados increíbles"); el resto, cortes secos entre el original y planos quietos más cerrados (1,35–1,5×) que siguen la cara (`fijo` + `seguir`, suavizado σ 0,6 s), ≥ 0,3 de escala en cada corte. Sin cuadros congelados ("trabado" en 0:38): en "Logramos…" plano 1,3× quieto anclado a la derecha (el original no lo tiene en cuadro 47,85–48,70: ~0,6 s se le ve solo el hombro), abierto cuando vuelve (48,95). La pausa de "resolver eso" sigue con imagen en movimiento (0,35 s, la plantilla ya no congela en `pausaMs`).
 - **Pieza 5, correcciones de la preview v3 (2026-10-13):** leve zoom de entrada como gancho (1→1,1× en 1,5 s) y en "¿Tenés un montón de consultas…" acercamiento leve y lento (1,1→1,22× en 3 s) en vez del corte seco; "Estamos acá…" a 1,45× anclado a la derecha (tapa a las mujeres que caminan por el borde izquierdo) con el movimiento de "Vení, seguime" sobre el mismo anclaje, y corte apenas termina "seguime" (17,33); "y tenés una tienda online" sigue en el original (sin el corte a cerca), movimiento en "Volto es la solución…"; "resolver eso" corta apenas termina (sin pausa); "y están teniendo resultados" en el original y movimiento recién en "increíbles" (68,80).
+- **Pieza 5, correcciones de la preview v4 (2026-10-13):**
+  - El zoom de entrada es rápido (0,4 s) y después el plano queda fijo; ya no sigue la cara (`golpe5`: origen fijo en su cara).
+  - Antes de "¿Tenés…" (7,59) va otro zoom leve y rápido (0,3 s), y el plano queda fijo.
+  - "Estamos acá…" vuelve al plano original (ya sin el recorte por las mujeres de la izquierda), con el movimiento en "Vení, seguime".
+  - En "no doy abasto…" (22,20), zoom rápido en vez de corte seco.
+  - El movimiento final arranca apenas termina "resultados" (68,19).
+  - **Error de la v4 corregido:** `preview()` les sacaba la rampa a los planos sin `seguir`, así que el movimiento de "Vení, seguime" salía como corte seco. Ahora se mantienen las rampas de los planos con `zoomDesde`.
+- **Pieza 5, borrador completo A (2026-10-13):** la preview v5 quedó aprobada y se arma el borrador con `CRITERIOS_REEL.md` (composición `volto-fashion-week-veni-seguime`, con `EntrevistaRadio`).
+  - **Voz:** `voz_suave` con las tomas a -19 LUFS: ganancias 3,9 / 5,8 / 3,4 / 3,2 / 3,4 / 3,0 / 2,3 / 2,9 / 2,5 dB.
+  - **Subtítulos** escritos a mano, con amarillo propuesto en 3 frases.
+  - **Gráficos con pop:**
+    - logo de la AFW;
+    - conexión de WhatsApp e Instagram con la tienda;
+    - logo de Volto (sin tarjeta: es blanco);
+    - íconos de Tienda Nube (nube propia, ⚠️), WooCommerce y Shopify (Simple Icons, CC0, sumados a `iconosRedes.ts`);
+    - "80% de las consultas" en dos tiempos: grande y en el centro mientras él está fuera de cuadro, y arriba cuando vuelve (pedido del usuario). `InsertoCifra` sumó `sufijo` e `inicial`;
+    - burbujas ✕ de stock, talle y cantidad;
+    - Tienda Nube Partners;
+    - rótulo @volto.ai.
+  - **Música y placa:** "Digital Clouds" desde "¿Necesitás Volto?" y placa por corte.
+  - **Ajustes revisados en la hoja de cuadros antes del render:**
+    - el logo de Volto sin tarjeta (blanco sobre blanco no se veía);
+    - el 80% no tapa la cabeza cuando él vuelve;
+    - el rótulo y los globos terminaban justo en el borde de su toma (fuera del montaje): 112,79 y 57,36 s.
 - **Música:** pieza 1 sin música bajo la voz; "Digital Clouds" solo al final (desde el 2026-10-09; antes, ambiente bajo el cierre). Pieza 2: Mixkit “Cat Walk” de Arulo (id 371, sha256 e241cba000ce), 0–53,4 s. Pieza 3: Mixkit “Tech House vibes” de Alejandro Magaña (id 130, sha256 95972c602ff0), 0–54,9 s. Ambas con entrada de 1 s y salida de 1,5 s, a -14 LUFS (`preparar_musica.sh`); en la mezcla, -17 dB (~15 dB bajo la voz) y -8 dB en el cierre.
 - **Voz:** cada toma nivelada a -16 LUFS con `gananciaDb` (ebur128 por tramo: -0,7 a -4,9 dB).
 - **Otras:** audio siempre de la cám. B. Sincronía A↔B con GCC-PHAT (3 ventanas de acuerdo, z 14–35); la correlación de envolventes había fallado en 4216 (daba 43 s; es 109,378 s).
@@ -84,6 +108,17 @@
 | `preview-veni-seguime_9x16_v2.mp4` | 2026-10-13 | Pieza 5, preview v2 (62,2 s): correcciones de la v1 (más aire en "Vení, seguime" y "resolver eso", "cantidad" entera, él siempre en cuadro) y zooms que siguen su cara. |
 | `preview-veni-seguime_9x16_v3.mp4` | 2026-10-13 | Pieza 5, preview v3 (62,1 s, -14,0 LUFS): cortes secos a planos más cerrados y movimiento solo en tres frases; sin cuadros congelados. |
 | `preview-veni-seguime_9x16_v4.mp4` | 2026-10-13 | Pieza 5, preview v4 (61,2 s, -14,0 LUFS): zoom de entrada, sin las mujeres de la izquierda en "Estamos acá…", cortes apenas terminan "seguime" y "resolver eso", movimiento en "increíbles". |
+| `preview-veni-seguime_9x16_v5.mp4` | 2026-10-13 | Zooms rápidos que dejan el plano fijo (entrada, antes de "¿Tenés…", "no doy abasto…"), "Estamos acá…" en el plano original y el movimiento final apenas termina "resultados". |
+| `revision/borrador_veni-seguime_9x16_b.mp4` | 2026-10-14 | Pieza 5, borrador completo B (1080×1920, crf 20): + 9 motion graphics "de trazo" a medida que habla (percha → curva de ventas, embudo, mensajes sin leer, enchufe, chat que responde, tilde, barras, flecha). Lenguaje distinto al de las piezas 1 y 6 (`InsertosTrazo.tsx`). Anterior: borrador A. |
+| `revision/borrador_veni-seguime_9x16_c.mp4` | 2026-10-14 | Pieza 5, borrador completo C (1080×1920, crf 20), correcciones del cliente sobre el B: gráficos en estilo panel/vidrio (ventas que se estancan, embudo, globos de vidrio, agente conectado a los sistemas, barras de resultados), subtítulo "no doy abasto…" en amarillo, numeritos de notificaciones y íconos más abajo, tarjeta de perfil en lugar del rótulo y sin flecha. Anterior: borrador B. |
+| `revision/borrador_veni-seguime_9x16_d.mp4` | 2026-10-14 | Pieza 5, borrador completo D (1080×1920, crf 20), 3ª tanda de correcciones: percha de vuelta antes de la tarjeta de ventas, tarjetas de vidrio translúcido flotando (sin textos en ventas y embudo, barras del embudo desde la derecha y más rápidas), globos con sombra difusa y naranjas translúcidos, agente de IA entra solo y luego se conecta a sistemas, sombra suave en el chat, 80 % que escala y sube antes de que él vuelva, preguntas en píldoras de vidrio y en seco, sin círculo/tilde, sin barras de "marcas que más venden", rótulo @volto.ai translúcido sin flecha. Anterior: borrador C. |
+| `revision/borrador_veni-seguime_9x16_e.mp4` | 2026-10-14 | Pieza 5, borrador completo E (1080×1920, crf 20), 4ª tanda: sin percha, sonido de cuenta en la cifra de ventas, cartel de la Argentina Fashion Week se va al terminar "Fashion Week" (14,04), "no doy a basto" como texto resaltado que se planta palabra por palabra, subtítulos en blanco ("a basto", "resultados" e "increíbles" separados, "agente de IA" hasta 48,0 s), conexión visible agente→sistemas, chat de vidrio sutil, 80 % sin sombra, preguntas alineadas al margen izquierdo, barras de colores con sonido y flecha que escala antes de "increíbles", música recién con la placa. Anterior: borrador D. |
+| `revision/borrador_veni-seguime_9x16_g.mp4` | 2026-10-15 | Pieza 5, borrador completo G (1080×1920, crf 20): "no doy a basto" palabra por palabra (sin globos), 80 % como indicador circular de vidrio, flecha de barras suave con estela, sin sonido en stock/talle/cantidad y salidas con desvanecido corto en todos los gráficos. Anterior: borrador F. |
+| `revision/borrador_veni-seguime_9x16_h.mp4` | 2026-10-15 | Pieza 5, borrador H: palabras de "no doy a basto" en naranja con subrayado petróleo (el celeste no gustó). Anterior: borrador G. |
+| `revision/borrador_veni-seguime_9x16_j.mp4` | 2026-10-15 | Pieza 5, borrador J: "no doy a basto" vuelve a blanco con subrayado naranja (como el G); salida de los gráficos de vidrio sin parpadeo (el desvanecido se aplica a cada elemento de vidrio, no al contenedor, para que no pierdan el desenfoque de golpe). Anterior: borrador I. |
+| `final/veni-seguime_9x16_v1.mp4` | 2026-10-15 | Pieza 5, "Vení, seguime": entrega v1 (1080×1920, crf 18, -14 LUFS), igual al borrador J. |
+| `final/veni-seguime_9x16_v2.mp4` | 2026-10-15 | Pieza 5, "Vení, seguime": entrega v2 (1080×1920, 30 fps, 64,2 s, crf 18, -14,2 LUFS, LRA 2,2, pico -1,5 dBFS). Cambia solo "resultados increíbles": la tarjeta de ventas del principio ahora en alza (curva grande, sin cifra), en vez de las barras con flecha. Salidas de todos los gráficos revisadas cuadro a cuadro (`revision/glitch2/`). |
+| `final/veni-seguime_9x16_v3.mp4` | 2026-10-19 | Pieza 5, "Vení, seguime": entrega v3 (1080×1920, 30 fps, 64,3 s, crf 18, -14,0 LUFS, LRA 2,2, pico -1,5 dBFS). Cambia solo "a basto" → "abasto" (subtítulo y palabra sobre el sujeto). |
 
 Después de la v2 (no se renderizó: el cliente no lo necesitó; queda en el borrador `revision/borrador_entrevista-radio_9x16_t.mp4` y en el código): en "lo conectamos a las redes sociales", red con el asterisco de Volto al centro conectado a WhatsApp, Instagram, Facebook y TikTok (`InsertoRed`; íconos de Simple Icons, CC0).
 

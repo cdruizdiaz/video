@@ -1,0 +1,90 @@
+{
+  "archivo": "IMG_7162.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3432,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2000,
+      "texto": "A Industria, me parece"
+    },
+    {
+      "desdeMs": 2000,
+      "hastaMs": 3440,
+      "texto": "Si, si pero"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " A",
+      "fromMs": 0,
+      "toMs": 100,
+      "dtwMs": 1200,
+      "p": 0.114363
+    },
+    {
+      "text": " Indust",
+      "fromMs": 100,
+      "toMs": 680,
+      "dtwMs": 1340,
+      "p": 0.510055
+    },
+    {
+      "text": "ria",
+      "fromMs": 680,
+      "toMs": 960,
+      "dtwMs": 1520,
+      "p": 0.986412
+    },
+    {
+      "text": ",",
+      "fromMs": 1060,
+      "toMs": 1170,
+      "dtwMs": 1540,
+      "p": 0.431809
+    },
+    {
+      "text": " me",
+      "fromMs": 1170,
+      "toMs": 1370,
+      "dtwMs": 1600,
+      "p": 0.957753
+    },
+    {
+      "text": " parece",
+      "fromMs": 1370,
+      "toMs": 1920,
+      "dtwMs": 1860,
+      "p": 0.988389
+    },
+    {
+      "text": " Si",
+      "fromMs": 2000,
+      "toMs": 3440,
+      "dtwMs": 2320,
+      "p": 0.734923
+    },
+    {
+      "text": ",",
+      "fromMs": 3440,
+      "toMs": 3440,
+      "dtwMs": 2900,
+      "p": 0.699889
+    },
+    {
+      "text": " si",
+      "fromMs": 3440,
+      "toMs": 3440,
+      "dtwMs": 3020,
+      "p": 0.55328
+    },
+    {
+      "text": " pero",
+      "fromMs": 3440,
+      "toMs": 3440,
+      "dtwMs": 3280,
+      "p": 0.582362
+    }
+  ]
+}

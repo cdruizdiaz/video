@@ -1,0 +1,831 @@
+{
+  "archivo": "krishnamurti_amor.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 58236,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        24016
+      ],
+      [
+        25097,
+        31113
+      ],
+      [
+        31635,
+        33681
+      ],
+      [
+        34251,
+        34751
+      ],
+      [
+        35271,
+        53548
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 9120,
+      "texto": "So, this question of love is really an extraordinary thing, because a mind that is frightened,"
+    },
+    {
+      "desdeMs": 9120,
+      "hastaMs": 12000,
+      "texto": "obviously, cannot love."
+    },
+    {
+      "desdeMs": 12000,
+      "hastaMs": 20680,
+      "texto": "A mind that is self-concerned with its own ambitions, greed, fears, guilt, suffering,"
+    },
+    {
+      "desdeMs": 20680,
+      "hastaMs": 26242,
+      "texto": "has no capacity to love."
+    },
+    {
+      "desdeMs": 26242,
+      "hastaMs": 36553,
+      "texto": "A mind that is divided in itself, that lives in fragments, obviously, cannot love."
+    },
+    {
+      "desdeMs": 36553,
+      "hastaMs": 43933,
+      "texto": "A mind that lives in division."
+    },
+    {
+      "desdeMs": 43933,
+      "hastaMs": 45893,
+      "texto": "Division implies sorrow."
+    },
+    {
+      "desdeMs": 45893,
+      "hastaMs": 52493,
+      "texto": "That is the root cause of sorrow, division, between you and me, between me and they, or"
+    },
+    {
+      "desdeMs": 52493,
+      "hastaMs": 53548,
+      "texto": "we and they."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " So",
+      "fromMs": 100,
+      "toMs": 230,
+      "dtwMs": 660,
+      "p": 0.984793
+    },
+    {
+      "text": ",",
+      "fromMs": 250,
+      "toMs": 450,
+      "dtwMs": 920,
+      "p": 0.699188
+    },
+    {
+      "text": " this",
+      "fromMs": 550,
+      "toMs": 800,
+      "dtwMs": 1180,
+      "p": 0.549942
+    },
+    {
+      "text": " question",
+      "fromMs": 980,
+      "toMs": 1760,
+      "dtwMs": 1620,
+      "p": 0.999712
+    },
+    {
+      "text": " of",
+      "fromMs": 1880,
+      "toMs": 2100,
+      "dtwMs": 1820,
+      "p": 0.999169
+    },
+    {
+      "text": " love",
+      "fromMs": 2110,
+      "toMs": 2580,
+      "dtwMs": 2120,
+      "p": 0.994905
+    },
+    {
+      "text": " is",
+      "fromMs": 2580,
+      "toMs": 2710,
+      "dtwMs": 2360,
+      "p": 0.986451
+    },
+    {
+      "text": " really",
+      "fromMs": 2810,
+      "toMs": 3580,
+      "dtwMs": 2640,
+      "p": 0.965009
+    },
+    {
+      "text": " an",
+      "fromMs": 3580,
+      "toMs": 3690,
+      "dtwMs": 3660,
+      "p": 0.974063
+    },
+    {
+      "text": " extraordinary",
+      "fromMs": 3690,
+      "toMs": 4450,
+      "dtwMs": 4260,
+      "p": 0.997366
+    },
+    {
+      "text": " thing",
+      "fromMs": 4450,
+      "toMs": 4760,
+      "dtwMs": 4800,
+      "p": 0.99721
+    },
+    {
+      "text": ",",
+      "fromMs": 4760,
+      "toMs": 4940,
+      "dtwMs": 4920,
+      "p": 0.523514
+    },
+    {
+      "text": " because",
+      "fromMs": 4940,
+      "toMs": 6910,
+      "dtwMs": 5280,
+      "p": 0.885849
+    },
+    {
+      "text": " a",
+      "fromMs": 7070,
+      "toMs": 7230,
+      "dtwMs": 7200,
+      "p": 0.970023
+    },
+    {
+      "text": " mind",
+      "fromMs": 7230,
+      "toMs": 7800,
+      "dtwMs": 7780,
+      "p": 0.997078
+    },
+    {
+      "text": " that",
+      "fromMs": 8230,
+      "toMs": 8380,
+      "dtwMs": 8400,
+      "p": 0.958985
+    },
+    {
+      "text": " is",
+      "fromMs": 8380,
+      "toMs": 8380,
+      "dtwMs": 8540,
+      "p": 0.705802
+    },
+    {
+      "text": " frightened",
+      "fromMs": 8480,
+      "toMs": 9000,
+      "dtwMs": 8940,
+      "p": 0.984445
+    },
+    {
+      "text": ",",
+      "fromMs": 9000,
+      "toMs": 9120,
+      "dtwMs": 9000,
+      "p": 0.627451
+    },
+    {
+      "text": " obviously",
+      "fromMs": 9670,
+      "toMs": 10190,
+      "dtwMs": 9440,
+      "p": 0.998317
+    },
+    {
+      "text": ",",
+      "fromMs": 10190,
+      "toMs": 10270,
+      "dtwMs": 9580,
+      "p": 0.940537
+    },
+    {
+      "text": " cannot",
+      "fromMs": 10450,
+      "toMs": 11140,
+      "dtwMs": 9760,
+      "p": 0.992597
+    },
+    {
+      "text": " love",
+      "fromMs": 11140,
+      "toMs": 11620,
+      "dtwMs": 10200,
+      "p": 0.999285
+    },
+    {
+      "text": ".",
+      "fromMs": 11620,
+      "toMs": 11910,
+      "dtwMs": 10440,
+      "p": 0.900844
+    },
+    {
+      "text": " A",
+      "fromMs": 12100,
+      "toMs": 12110,
+      "dtwMs": 12140,
+      "p": 0.998978
+    },
+    {
+      "text": " mind",
+      "fromMs": 12540,
+      "toMs": 12550,
+      "dtwMs": 12480,
+      "p": 0.999886
+    },
+    {
+      "text": " that",
+      "fromMs": 12550,
+      "toMs": 12990,
+      "dtwMs": 12680,
+      "p": 0.997661
+    },
+    {
+      "text": " is",
+      "fromMs": 12990,
+      "toMs": 13190,
+      "dtwMs": 12900,
+      "p": 0.998595
+    },
+    {
+      "text": " self",
+      "fromMs": 13330,
+      "toMs": 13650,
+      "dtwMs": 13580,
+      "p": 0.999617
+    },
+    {
+      "text": "-",
+      "fromMs": 13650,
+      "toMs": 13750,
+      "dtwMs": 13720,
+      "p": 0.987839
+    },
+    {
+      "text": "con",
+      "fromMs": 13760,
+      "toMs": 14090,
+      "dtwMs": 13980,
+      "p": 0.995378
+    },
+    {
+      "text": "c",
+      "fromMs": 14090,
+      "toMs": 14200,
+      "dtwMs": 14060,
+      "p": 0.987366
+    },
+    {
+      "text": "ern",
+      "fromMs": 14200,
+      "toMs": 14530,
+      "dtwMs": 14320,
+      "p": 0.997818
+    },
+    {
+      "text": "ed",
+      "fromMs": 14530,
+      "toMs": 14700,
+      "dtwMs": 14540,
+      "p": 0.998157
+    },
+    {
+      "text": " with",
+      "fromMs": 14700,
+      "toMs": 15140,
+      "dtwMs": 15160,
+      "p": 0.957406
+    },
+    {
+      "text": " its",
+      "fromMs": 15200,
+      "toMs": 15510,
+      "dtwMs": 15360,
+      "p": 0.979708
+    },
+    {
+      "text": " own",
+      "fromMs": 15530,
+      "toMs": 15850,
+      "dtwMs": 15620,
+      "p": 0.999184
+    },
+    {
+      "text": " ambitions",
+      "fromMs": 15850,
+      "toMs": 16850,
+      "dtwMs": 16180,
+      "p": 0.993705
+    },
+    {
+      "text": ",",
+      "fromMs": 16850,
+      "toMs": 17000,
+      "dtwMs": 16420,
+      "p": 0.996962
+    },
+    {
+      "text": " greed",
+      "fromMs": 17080,
+      "toMs": 17320,
+      "dtwMs": 16660,
+      "p": 0.577988
+    },
+    {
+      "text": ",",
+      "fromMs": 17320,
+      "toMs": 17840,
+      "dtwMs": 16940,
+      "p": 0.986412
+    },
+    {
+      "text": " fears",
+      "fromMs": 17840,
+      "toMs": 18380,
+      "dtwMs": 17300,
+      "p": 0.967564
+    },
+    {
+      "text": ",",
+      "fromMs": 18390,
+      "toMs": 18610,
+      "dtwMs": 17940,
+      "p": 0.99779
+    },
+    {
+      "text": " guilt",
+      "fromMs": 19060,
+      "toMs": 19160,
+      "dtwMs": 19480,
+      "p": 0.995083
+    },
+    {
+      "text": ",",
+      "fromMs": 19160,
+      "toMs": 19380,
+      "dtwMs": 19980,
+      "p": 0.993585
+    },
+    {
+      "text": " suffering",
+      "fromMs": 19380,
+      "toMs": 20500,
+      "dtwMs": 20340,
+      "p": 0.986871
+    },
+    {
+      "text": ",",
+      "fromMs": 20500,
+      "toMs": 20670,
+      "dtwMs": 20480,
+      "p": 0.80902
+    },
+    {
+      "text": " has",
+      "fromMs": 21220,
+      "toMs": 21330,
+      "dtwMs": 20700,
+      "p": 0.972097
+    },
+    {
+      "text": " no",
+      "fromMs": 21330,
+      "toMs": 21760,
+      "dtwMs": 21320,
+      "p": 0.999548
+    },
+    {
+      "text": " capacity",
+      "fromMs": 21760,
+      "toMs": 23390,
+      "dtwMs": 22860,
+      "p": 0.999495
+    },
+    {
+      "text": " to",
+      "fromMs": 23460,
+      "toMs": 23920,
+      "dtwMs": 23080,
+      "p": 0.999417
+    },
+    {
+      "text": " love",
+      "fromMs": 25097,
+      "toMs": 25562,
+      "dtwMs": 23360,
+      "p": 0.999838
+    },
+    {
+      "text": ".",
+      "fromMs": 25562,
+      "toMs": 26242,
+      "dtwMs": 23960,
+      "p": 0.971628
+    },
+    {
+      "text": " A",
+      "fromMs": 26342,
+      "toMs": 26342,
+      "dtwMs": 26502,
+      "p": 0.969096
+    },
+    {
+      "text": " mind",
+      "fromMs": 26762,
+      "toMs": 26762,
+      "dtwMs": 26902,
+      "p": 0.99939
+    },
+    {
+      "text": " that",
+      "fromMs": 26792,
+      "toMs": 26972,
+      "dtwMs": 27102,
+      "p": 0.995391
+    },
+    {
+      "text": " is",
+      "fromMs": 27212,
+      "toMs": 27392,
+      "dtwMs": 27262,
+      "p": 0.997004
+    },
+    {
+      "text": " divided",
+      "fromMs": 27392,
+      "toMs": 28122,
+      "dtwMs": 27802,
+      "p": 0.998875
+    },
+    {
+      "text": " in",
+      "fromMs": 28122,
+      "toMs": 28332,
+      "dtwMs": 28062,
+      "p": 0.980395
+    },
+    {
+      "text": " itself",
+      "fromMs": 28342,
+      "toMs": 28952,
+      "dtwMs": 28622,
+      "p": 0.978213
+    },
+    {
+      "text": ",",
+      "fromMs": 28972,
+      "toMs": 29192,
+      "dtwMs": 29222,
+      "p": 0.956928
+    },
+    {
+      "text": " that",
+      "fromMs": 29192,
+      "toMs": 29612,
+      "dtwMs": 29322,
+      "p": 0.958528
+    },
+    {
+      "text": " lives",
+      "fromMs": 29612,
+      "toMs": 30092,
+      "dtwMs": 29742,
+      "p": 0.998447
+    },
+    {
+      "text": " in",
+      "fromMs": 30152,
+      "toMs": 30352,
+      "dtwMs": 29962,
+      "p": 0.998643
+    },
+    {
+      "text": " fragments",
+      "fromMs": 30352,
+      "toMs": 31113,
+      "dtwMs": 30622,
+      "p": 0.999493
+    },
+    {
+      "text": ",",
+      "fromMs": 31635,
+      "toMs": 31743,
+      "dtwMs": 31763,
+      "p": 0.936442
+    },
+    {
+      "text": " obviously",
+      "fromMs": 31743,
+      "toMs": 33403,
+      "dtwMs": 32263,
+      "p": 0.903274
+    },
+    {
+      "text": ",",
+      "fromMs": 33533,
+      "toMs": 33681,
+      "dtwMs": 32483,
+      "p": 0.467868
+    },
+    {
+      "text": " cannot",
+      "fromMs": 34251,
+      "toMs": 35303,
+      "dtwMs": 32643,
+      "p": 0.99275
+    },
+    {
+      "text": " love",
+      "fromMs": 35303,
+      "toMs": 36003,
+      "dtwMs": 32983,
+      "p": 0.995837
+    },
+    {
+      "text": ".",
+      "fromMs": 36003,
+      "toMs": 36493,
+      "dtwMs": 33483,
+      "p": 0.965968
+    },
+    {
+      "text": " A",
+      "fromMs": 36653,
+      "toMs": 36823,
+      "dtwMs": 36813,
+      "p": 0.998891
+    },
+    {
+      "text": " mind",
+      "fromMs": 37103,
+      "toMs": 37913,
+      "dtwMs": 37193,
+      "p": 0.999754
+    },
+    {
+      "text": " that",
+      "fromMs": 37913,
+      "toMs": 39003,
+      "dtwMs": 37713,
+      "p": 0.998761
+    },
+    {
+      "text": " lives",
+      "fromMs": 39003,
+      "toMs": 40363,
+      "dtwMs": 39233,
+      "p": 0.998843
+    },
+    {
+      "text": " in",
+      "fromMs": 40373,
+      "toMs": 40903,
+      "dtwMs": 40153,
+      "p": 0.997348
+    },
+    {
+      "text": " division",
+      "fromMs": 40903,
+      "toMs": 41873,
+      "dtwMs": 40653,
+      "p": 0.998919
+    },
+    {
+      "text": ".",
+      "fromMs": 43623,
+      "toMs": 43933,
+      "dtwMs": 41173,
+      "p": 0.74265
+    },
+    {
+      "text": " Division",
+      "fromMs": 44473,
+      "toMs": 44583,
+      "dtwMs": 43813,
+      "p": 0.986919
+    },
+    {
+      "text": " implies",
+      "fromMs": 44583,
+      "toMs": 45123,
+      "dtwMs": 44313,
+      "p": 0.998856
+    },
+    {
+      "text": " sorrow",
+      "fromMs": 45263,
+      "toMs": 45643,
+      "dtwMs": 44813,
+      "p": 0.999445
+    },
+    {
+      "text": ".",
+      "fromMs": 45643,
+      "toMs": 45893,
+      "dtwMs": 45373,
+      "p": 0.705497
+    },
+    {
+      "text": " That",
+      "fromMs": 46013,
+      "toMs": 46273,
+      "dtwMs": 45913,
+      "p": 0.997421
+    },
+    {
+      "text": " is",
+      "fromMs": 46443,
+      "toMs": 46463,
+      "dtwMs": 46033,
+      "p": 0.993705
+    },
+    {
+      "text": " the",
+      "fromMs": 46463,
+      "toMs": 46623,
+      "dtwMs": 46153,
+      "p": 0.993697
+    },
+    {
+      "text": " root",
+      "fromMs": 46863,
+      "toMs": 47083,
+      "dtwMs": 46433,
+      "p": 0.999815
+    },
+    {
+      "text": " cause",
+      "fromMs": 47223,
+      "toMs": 47603,
+      "dtwMs": 46813,
+      "p": 0.994615
+    },
+    {
+      "text": " of",
+      "fromMs": 47603,
+      "toMs": 47793,
+      "dtwMs": 46953,
+      "p": 0.999199
+    },
+    {
+      "text": " sorrow",
+      "fromMs": 47793,
+      "toMs": 48363,
+      "dtwMs": 47293,
+      "p": 0.996464
+    },
+    {
+      "text": ",",
+      "fromMs": 48363,
+      "toMs": 48553,
+      "dtwMs": 47433,
+      "p": 0.62877
+    },
+    {
+      "text": " division",
+      "fromMs": 48553,
+      "toMs": 49303,
+      "dtwMs": 47793,
+      "p": 0.961579
+    },
+    {
+      "text": ",",
+      "fromMs": 49323,
+      "toMs": 49553,
+      "dtwMs": 48333,
+      "p": 0.594026
+    },
+    {
+      "text": " between",
+      "fromMs": 49553,
+      "toMs": 50123,
+      "dtwMs": 49573,
+      "p": 0.968357
+    },
+    {
+      "text": " you",
+      "fromMs": 50123,
+      "toMs": 50343,
+      "dtwMs": 49833,
+      "p": 0.990201
+    },
+    {
+      "text": " and",
+      "fromMs": 50363,
+      "toMs": 50603,
+      "dtwMs": 50253,
+      "p": 0.997208
+    },
+    {
+      "text": " me",
+      "fromMs": 50603,
+      "toMs": 50763,
+      "dtwMs": 50553,
+      "p": 0.996692
+    },
+    {
+      "text": ",",
+      "fromMs": 50763,
+      "toMs": 50893,
+      "dtwMs": 50953,
+      "p": 0.889239
+    },
+    {
+      "text": " between",
+      "fromMs": 50973,
+      "toMs": 51213,
+      "dtwMs": 51233,
+      "p": 0.905701
+    },
+    {
+      "text": " me",
+      "fromMs": 51213,
+      "toMs": 51593,
+      "dtwMs": 51533,
+      "p": 0.94875
+    },
+    {
+      "text": " and",
+      "fromMs": 51593,
+      "toMs": 51803,
+      "dtwMs": 51773,
+      "p": 0.984063
+    },
+    {
+      "text": " they",
+      "fromMs": 51803,
+      "toMs": 52083,
+      "dtwMs": 52033,
+      "p": 0.971853
+    },
+    {
+      "text": ",",
+      "fromMs": 52083,
+      "toMs": 52253,
+      "dtwMs": 52233,
+      "p": 0.744155
+    },
+    {
+      "text": " or",
+      "fromMs": 52253,
+      "toMs": 52493,
+      "dtwMs": 52273,
+      "p": 0.64589
+    },
+    {
+      "text": " we",
+      "fromMs": 52593,
+      "toMs": 52663,
+      "dtwMs": 52533,
+      "p": 0.941228
+    },
+    {
+      "text": " and",
+      "fromMs": 52663,
+      "toMs": 52923,
+      "dtwMs": 52753,
+      "p": 0.991751
+    },
+    {
+      "text": " they",
+      "fromMs": 53043,
+      "toMs": 53243,
+      "dtwMs": 52993,
+      "p": 0.99654
+    },
+    {
+      "text": ".",
+      "fromMs": 53463,
+      "toMs": 53548,
+      "dtwMs": 53373,
+      "p": 0.988404
+    }
+  ]
+}

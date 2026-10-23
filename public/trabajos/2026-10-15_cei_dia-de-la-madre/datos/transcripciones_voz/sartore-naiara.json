@@ -1,0 +1,237 @@
+{
+  "archivo": "sartore-naiara.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 10837,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7200,
+      "texto": "Hola, ma, estoy acá en el insti. Te quiero agradecer por ser la mejor mamá de todas. Bye."
+    },
+    {
+      "desdeMs": 7200,
+      "hastaMs": 10840,
+      "texto": "Divinas, mam."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 50,
+      "toMs": 1430,
+      "dtwMs": 2560,
+      "p": 0.353192
+    },
+    {
+      "text": ",",
+      "fromMs": 1430,
+      "toMs": 2130,
+      "dtwMs": 2760,
+      "p": 0.392935
+    },
+    {
+      "text": " ma",
+      "fromMs": 2370,
+      "toMs": 2860,
+      "dtwMs": 2780,
+      "p": 0.831627
+    },
+    {
+      "text": ",",
+      "fromMs": 2860,
+      "toMs": 2910,
+      "dtwMs": 2960,
+      "p": 0.659698
+    },
+    {
+      "text": " estoy",
+      "fromMs": 3090,
+      "toMs": 3260,
+      "dtwMs": 3140,
+      "p": 0.973081
+    },
+    {
+      "text": " acá",
+      "fromMs": 3290,
+      "toMs": 3440,
+      "dtwMs": 3340,
+      "p": 0.921923
+    },
+    {
+      "text": " en",
+      "fromMs": 3440,
+      "toMs": 3560,
+      "dtwMs": 3440,
+      "p": 0.977363
+    },
+    {
+      "text": " el",
+      "fromMs": 3560,
+      "toMs": 3680,
+      "dtwMs": 3580,
+      "p": 0.988451
+    },
+    {
+      "text": " inst",
+      "fromMs": 3680,
+      "toMs": 3910,
+      "dtwMs": 3860,
+      "p": 0.880365
+    },
+    {
+      "text": "i",
+      "fromMs": 3910,
+      "toMs": 3990,
+      "dtwMs": 3940,
+      "p": 0.997164
+    },
+    {
+      "text": ".",
+      "fromMs": 4090,
+      "toMs": 4110,
+      "dtwMs": 4060,
+      "p": 0.309631
+    },
+    {
+      "text": " Te",
+      "fromMs": 4110,
+      "toMs": 4190,
+      "dtwMs": 4140,
+      "p": 0.922607
+    },
+    {
+      "text": " quiero",
+      "fromMs": 4190,
+      "toMs": 4430,
+      "dtwMs": 4300,
+      "p": 0.56772
+    },
+    {
+      "text": " agrade",
+      "fromMs": 4430,
+      "toMs": 4670,
+      "dtwMs": 4480,
+      "p": 0.993439
+    },
+    {
+      "text": "cer",
+      "fromMs": 4670,
+      "toMs": 4780,
+      "dtwMs": 4740,
+      "p": 0.99838
+    },
+    {
+      "text": " por",
+      "fromMs": 4920,
+      "toMs": 5020,
+      "dtwMs": 5000,
+      "p": 0.952241
+    },
+    {
+      "text": " ser",
+      "fromMs": 5020,
+      "toMs": 5240,
+      "dtwMs": 5200,
+      "p": 0.98991
+    },
+    {
+      "text": " la",
+      "fromMs": 5240,
+      "toMs": 5320,
+      "dtwMs": 5320,
+      "p": 0.947998
+    },
+    {
+      "text": " mejor",
+      "fromMs": 5320,
+      "toMs": 5640,
+      "dtwMs": 5600,
+      "p": 0.957934
+    },
+    {
+      "text": " mam",
+      "fromMs": 5640,
+      "toMs": 5860,
+      "dtwMs": 5860,
+      "p": 0.925817
+    },
+    {
+      "text": "á",
+      "fromMs": 5860,
+      "toMs": 5940,
+      "dtwMs": 5940,
+      "p": 0.981523
+    },
+    {
+      "text": " de",
+      "fromMs": 5940,
+      "toMs": 6020,
+      "dtwMs": 6060,
+      "p": 0.981024
+    },
+    {
+      "text": " todas",
+      "fromMs": 6110,
+      "toMs": 6420,
+      "dtwMs": 6340,
+      "p": 0.982553
+    },
+    {
+      "text": ".",
+      "fromMs": 6490,
+      "toMs": 6500,
+      "dtwMs": 6840,
+      "p": 0.884683
+    },
+    {
+      "text": " Bye",
+      "fromMs": 6960,
+      "toMs": 6960,
+      "dtwMs": 7160,
+      "p": 0.836768
+    },
+    {
+      "text": ".",
+      "fromMs": 6980,
+      "toMs": 7200,
+      "dtwMs": 8460,
+      "p": 0.402656
+    },
+    {
+      "text": " Div",
+      "fromMs": 7250,
+      "toMs": 8740,
+      "dtwMs": 10340,
+      "p": 0.607939
+    },
+    {
+      "text": "inas",
+      "fromMs": 9570,
+      "toMs": 10840,
+      "dtwMs": 10620,
+      "p": 0.201238
+    },
+    {
+      "text": ",",
+      "fromMs": 10840,
+      "toMs": 10840,
+      "dtwMs": 10660,
+      "p": 0.112781
+    },
+    {
+      "text": " mam",
+      "fromMs": 10840,
+      "toMs": 10840,
+      "dtwMs": 10800,
+      "p": 0.702517
+    },
+    {
+      "text": ".",
+      "fromMs": 10840,
+      "toMs": 10840,
+      "dtwMs": 10800,
+      "p": 0.466438
+    }
+  ]
+}

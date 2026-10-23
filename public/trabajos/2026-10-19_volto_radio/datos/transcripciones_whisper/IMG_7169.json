@@ -1,0 +1,258 @@
+{
+  "archivo": "IMG_7169.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8700,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3900,
+      "texto": "Gracias por la invitación, acá listo para hablar de lo que sea"
+    },
+    {
+      "desdeMs": 3900,
+      "hastaMs": 8700,
+      "texto": "Buenísimo, mirá, como para empezar, ¿cómo fueron los comienzos?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Gracias",
+      "fromMs": 0,
+      "toMs": 250,
+      "dtwMs": 140,
+      "p": 0.502913
+    },
+    {
+      "text": " por",
+      "fromMs": 300,
+      "toMs": 410,
+      "dtwMs": 340,
+      "p": 0.991361
+    },
+    {
+      "text": " la",
+      "fromMs": 410,
+      "toMs": 490,
+      "dtwMs": 440,
+      "p": 0.996649
+    },
+    {
+      "text": " invit",
+      "fromMs": 490,
+      "toMs": 670,
+      "dtwMs": 580,
+      "p": 0.999567
+    },
+    {
+      "text": "ación",
+      "fromMs": 770,
+      "toMs": 940,
+      "dtwMs": 940,
+      "p": 0.999893
+    },
+    {
+      "text": ",",
+      "fromMs": 940,
+      "toMs": 1010,
+      "dtwMs": 1900,
+      "p": 0.451701
+    },
+    {
+      "text": " acá",
+      "fromMs": 1170,
+      "toMs": 1420,
+      "dtwMs": 2020,
+      "p": 0.945373
+    },
+    {
+      "text": " list",
+      "fromMs": 1420,
+      "toMs": 1730,
+      "dtwMs": 2700,
+      "p": 0.979692
+    },
+    {
+      "text": "o",
+      "fromMs": 1810,
+      "toMs": 1900,
+      "dtwMs": 2820,
+      "p": 0.995628
+    },
+    {
+      "text": " para",
+      "fromMs": 1960,
+      "toMs": 2280,
+      "dtwMs": 3040,
+      "p": 0.999037
+    },
+    {
+      "text": " hablar",
+      "fromMs": 2280,
+      "toMs": 2870,
+      "dtwMs": 3400,
+      "p": 0.998203
+    },
+    {
+      "text": " de",
+      "fromMs": 2890,
+      "toMs": 3070,
+      "dtwMs": 3520,
+      "p": 0.999601
+    },
+    {
+      "text": " lo",
+      "fromMs": 3070,
+      "toMs": 3260,
+      "dtwMs": 3600,
+      "p": 0.999825
+    },
+    {
+      "text": " que",
+      "fromMs": 3260,
+      "toMs": 3540,
+      "dtwMs": 3680,
+      "p": 0.999987
+    },
+    {
+      "text": " sea",
+      "fromMs": 3540,
+      "toMs": 3860,
+      "dtwMs": 3880,
+      "p": 0.999432
+    },
+    {
+      "text": " Bu",
+      "fromMs": 3900,
+      "toMs": 4070,
+      "dtwMs": 4260,
+      "p": 0.966464
+    },
+    {
+      "text": "en",
+      "fromMs": 4070,
+      "toMs": 4240,
+      "dtwMs": 4380,
+      "p": 0.999853
+    },
+    {
+      "text": "ísimo",
+      "fromMs": 4240,
+      "toMs": 4680,
+      "dtwMs": 4640,
+      "p": 0.999335
+    },
+    {
+      "text": ",",
+      "fromMs": 4680,
+      "toMs": 4850,
+      "dtwMs": 5060,
+      "p": 0.982992
+    },
+    {
+      "text": " mir",
+      "fromMs": 4860,
+      "toMs": 5130,
+      "dtwMs": 5180,
+      "p": 0.619542
+    },
+    {
+      "text": "á",
+      "fromMs": 5130,
+      "toMs": 5210,
+      "dtwMs": 5280,
+      "p": 0.99939
+    },
+    {
+      "text": ",",
+      "fromMs": 5220,
+      "toMs": 5400,
+      "dtwMs": 5440,
+      "p": 0.700479
+    },
+    {
+      "text": " como",
+      "fromMs": 5400,
+      "toMs": 5760,
+      "dtwMs": 5520,
+      "p": 0.999771
+    },
+    {
+      "text": " para",
+      "fromMs": 5760,
+      "toMs": 6120,
+      "dtwMs": 5740,
+      "p": 0.999979
+    },
+    {
+      "text": " empezar",
+      "fromMs": 6120,
+      "toMs": 6760,
+      "dtwMs": 6640,
+      "p": 0.998304
+    },
+    {
+      "text": ",",
+      "fromMs": 6760,
+      "toMs": 6910,
+      "dtwMs": 7380,
+      "p": 0.883037
+    },
+    {
+      "text": " ¿",
+      "fromMs": 6910,
+      "toMs": 6980,
+      "dtwMs": 7420,
+      "p": 0.962805
+    },
+    {
+      "text": "cómo",
+      "fromMs": 6980,
+      "toMs": 7280,
+      "dtwMs": 7520,
+      "p": 0.899005
+    },
+    {
+      "text": " fueron",
+      "fromMs": 7280,
+      "toMs": 7740,
+      "dtwMs": 7780,
+      "p": 0.999865
+    },
+    {
+      "text": " los",
+      "fromMs": 7740,
+      "toMs": 7800,
+      "dtwMs": 7960,
+      "p": 0.99996
+    },
+    {
+      "text": " com",
+      "fromMs": 8110,
+      "toMs": 8200,
+      "dtwMs": 8220,
+      "p": 0.999931
+    },
+    {
+      "text": "ien",
+      "fromMs": 8200,
+      "toMs": 8400,
+      "dtwMs": 8360,
+      "p": 0.999826
+    },
+    {
+      "text": "zos",
+      "fromMs": 8460,
+      "toMs": 8650,
+      "dtwMs": 8600,
+      "p": 0.999878
+    },
+    {
+      "text": "?",
+      "fromMs": 8690,
+      "toMs": 8700,
+      "dtwMs": 8660,
+      "p": 0.935979
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "archivo": "IMG_9086.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8372,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7200,
+      "texto": "Música de mierda, de Carl Wilson, que habla sobre por qué nos gusta lo que nos gusta y por qué nos da vergüenza nuestro guin de pleasure."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " M",
+      "fromMs": 0,
+      "toMs": 160,
+      "dtwMs": 1540,
+      "p": 0.319018
+    },
+    {
+      "text": "úsica",
+      "fromMs": 160,
+      "toMs": 960,
+      "dtwMs": 1700,
+      "p": 0.988336
+    },
+    {
+      "text": " de",
+      "fromMs": 960,
+      "toMs": 1280,
+      "dtwMs": 1840,
+      "p": 0.981306
+    },
+    {
+      "text": " mier",
+      "fromMs": 1460,
+      "toMs": 1920,
+      "dtwMs": 2040,
+      "p": 0.668115
+    },
+    {
+      "text": "da",
+      "fromMs": 1920,
+      "toMs": 2250,
+      "dtwMs": 2200,
+      "p": 0.995871
+    },
+    {
+      "text": ",",
+      "fromMs": 2260,
+      "toMs": 2360,
+      "dtwMs": 2380,
+      "p": 0.368371
+    },
+    {
+      "text": " de",
+      "fromMs": 2380,
+      "toMs": 2450,
+      "dtwMs": 2460,
+      "p": 0.951817
+    },
+    {
+      "text": " Carl",
+      "fromMs": 2520,
+      "toMs": 2700,
+      "dtwMs": 2660,
+      "p": 0.940311
+    },
+    {
+      "text": " Wilson",
+      "fromMs": 2700,
+      "toMs": 3040,
+      "dtwMs": 3000,
+      "p": 0.901334
+    },
+    {
+      "text": ",",
+      "fromMs": 3040,
+      "toMs": 3160,
+      "dtwMs": 3340,
+      "p": 0.465869
+    },
+    {
+      "text": " que",
+      "fromMs": 3160,
+      "toMs": 3350,
+      "dtwMs": 3560,
+      "p": 0.896944
+    },
+    {
+      "text": " habla",
+      "fromMs": 3520,
+      "toMs": 3670,
+      "dtwMs": 3740,
+      "p": 0.996124
+    },
+    {
+      "text": " sobre",
+      "fromMs": 3670,
+      "toMs": 4000,
+      "dtwMs": 4000,
+      "p": 0.976364
+    },
+    {
+      "text": " por",
+      "fromMs": 4000,
+      "toMs": 4130,
+      "dtwMs": 4220,
+      "p": 0.887825
+    },
+    {
+      "text": " qué",
+      "fromMs": 4130,
+      "toMs": 4260,
+      "dtwMs": 4260,
+      "p": 0.935999
+    },
+    {
+      "text": " nos",
+      "fromMs": 4260,
+      "toMs": 4390,
+      "dtwMs": 4400,
+      "p": 0.996774
+    },
+    {
+      "text": " gusta",
+      "fromMs": 4390,
+      "toMs": 4610,
+      "dtwMs": 4600,
+      "p": 0.999542
+    },
+    {
+      "text": " lo",
+      "fromMs": 4610,
+      "toMs": 4700,
+      "dtwMs": 4720,
+      "p": 0.988421
+    },
+    {
+      "text": " que",
+      "fromMs": 4700,
+      "toMs": 4830,
+      "dtwMs": 4820,
+      "p": 0.999192
+    },
+    {
+      "text": " nos",
+      "fromMs": 4830,
+      "toMs": 4960,
+      "dtwMs": 4940,
+      "p": 0.998016
+    },
+    {
+      "text": " gusta",
+      "fromMs": 4960,
+      "toMs": 5240,
+      "dtwMs": 5220,
+      "p": 0.997501
+    },
+    {
+      "text": " y",
+      "fromMs": 5240,
+      "toMs": 5280,
+      "dtwMs": 5400,
+      "p": 0.662355
+    },
+    {
+      "text": " por",
+      "fromMs": 5280,
+      "toMs": 5400,
+      "dtwMs": 5580,
+      "p": 0.990325
+    },
+    {
+      "text": " qué",
+      "fromMs": 5480,
+      "toMs": 5560,
+      "dtwMs": 5680,
+      "p": 0.984177
+    },
+    {
+      "text": " nos",
+      "fromMs": 5560,
+      "toMs": 5700,
+      "dtwMs": 5820,
+      "p": 0.996666
+    },
+    {
+      "text": " da",
+      "fromMs": 5700,
+      "toMs": 5780,
+      "dtwMs": 5920,
+      "p": 0.99644
+    },
+    {
+      "text": " verg",
+      "fromMs": 5790,
+      "toMs": 5970,
+      "dtwMs": 6100,
+      "p": 0.995404
+    },
+    {
+      "text": "ü",
+      "fromMs": 5970,
+      "toMs": 6010,
+      "dtwMs": 6180,
+      "p": 0.99976
+    },
+    {
+      "text": "enza",
+      "fromMs": 6010,
+      "toMs": 6190,
+      "dtwMs": 6320,
+      "p": 0.999748
+    },
+    {
+      "text": " nuestro",
+      "fromMs": 6190,
+      "toMs": 6490,
+      "dtwMs": 6620,
+      "p": 0.901524
+    },
+    {
+      "text": " gu",
+      "fromMs": 6570,
+      "toMs": 6600,
+      "dtwMs": 6780,
+      "p": 0.427767
+    },
+    {
+      "text": "in",
+      "fromMs": 6600,
+      "toMs": 6690,
+      "dtwMs": 6800,
+      "p": 0.201666
+    },
+    {
+      "text": " de",
+      "fromMs": 6690,
+      "toMs": 6780,
+      "dtwMs": 6900,
+      "p": 0.860584
+    },
+    {
+      "text": " pleasure",
+      "fromMs": 6780,
+      "toMs": 7200,
+      "dtwMs": 7180,
+      "p": 0.965817
+    },
+    {
+      "text": ".",
+      "fromMs": 7200,
+      "toMs": 7200,
+      "dtwMs": 7180,
+      "p": 0.777607
+    }
+  ]
+}

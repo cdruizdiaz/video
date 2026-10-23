@@ -1,0 +1,284 @@
+{
+  "archivo": "IMG_9088.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 10272,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3820,
+      "texto": "American Horror Story, temporada 13"
+    },
+    {
+      "desdeMs": 3820,
+      "hastaMs": 6760,
+      "texto": "Tiene vestuarios, tiene música, tiene una edición impecable"
+    },
+    {
+      "desdeMs": 6760,
+      "hastaMs": 9480,
+      "texto": "Y está Evan Peters, Hot Horror, me sirve para el ojo"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " American",
+      "fromMs": 0,
+      "toMs": 840,
+      "dtwMs": 2260,
+      "p": 0.908413
+    },
+    {
+      "text": " Horror",
+      "fromMs": 840,
+      "toMs": 1470,
+      "dtwMs": 2600,
+      "p": 0.993217
+    },
+    {
+      "text": " Story",
+      "fromMs": 1570,
+      "toMs": 2000,
+      "dtwMs": 3000,
+      "p": 0.98478
+    },
+    {
+      "text": ",",
+      "fromMs": 2000,
+      "toMs": 2210,
+      "dtwMs": 3000,
+      "p": 0.578495
+    },
+    {
+      "text": " temporada",
+      "fromMs": 2210,
+      "toMs": 3160,
+      "dtwMs": 3380,
+      "p": 0.9326
+    },
+    {
+      "text": " 13",
+      "fromMs": 3160,
+      "toMs": 3810,
+      "dtwMs": 3740,
+      "p": 0.953217
+    },
+    {
+      "text": " T",
+      "fromMs": 3820,
+      "toMs": 3870,
+      "dtwMs": 4040,
+      "p": 0.606882
+    },
+    {
+      "text": "iene",
+      "fromMs": 3870,
+      "toMs": 4100,
+      "dtwMs": 4160,
+      "p": 0.998654
+    },
+    {
+      "text": " vest",
+      "fromMs": 4100,
+      "toMs": 4330,
+      "dtwMs": 4400,
+      "p": 0.99831
+    },
+    {
+      "text": "u",
+      "fromMs": 4330,
+      "toMs": 4380,
+      "dtwMs": 4460,
+      "p": 0.999714
+    },
+    {
+      "text": "arios",
+      "fromMs": 4380,
+      "toMs": 4660,
+      "dtwMs": 4700,
+      "p": 0.996341
+    },
+    {
+      "text": ",",
+      "fromMs": 4660,
+      "toMs": 4770,
+      "dtwMs": 4940,
+      "p": 0.987217
+    },
+    {
+      "text": " tiene",
+      "fromMs": 4770,
+      "toMs": 5050,
+      "dtwMs": 5080,
+      "p": 0.993184
+    },
+    {
+      "text": " música",
+      "fromMs": 5050,
+      "toMs": 5440,
+      "dtwMs": 5400,
+      "p": 0.987698
+    },
+    {
+      "text": ",",
+      "fromMs": 5440,
+      "toMs": 5540,
+      "dtwMs": 5560,
+      "p": 0.923884
+    },
+    {
+      "text": " tiene",
+      "fromMs": 5700,
+      "toMs": 5790,
+      "dtwMs": 5660,
+      "p": 0.980563
+    },
+    {
+      "text": " una",
+      "fromMs": 5790,
+      "toMs": 5940,
+      "dtwMs": 5780,
+      "p": 0.996299
+    },
+    {
+      "text": " ed",
+      "fromMs": 5940,
+      "toMs": 6040,
+      "dtwMs": 5940,
+      "p": 0.925909
+    },
+    {
+      "text": "ición",
+      "fromMs": 6040,
+      "toMs": 6210,
+      "dtwMs": 6120,
+      "p": 0.999363
+    },
+    {
+      "text": " impe",
+      "fromMs": 6300,
+      "toMs": 6490,
+      "dtwMs": 6460,
+      "p": 0.993091
+    },
+    {
+      "text": "c",
+      "fromMs": 6490,
+      "toMs": 6510,
+      "dtwMs": 6560,
+      "p": 0.999127
+    },
+    {
+      "text": "able",
+      "fromMs": 6660,
+      "toMs": 6760,
+      "dtwMs": 6740,
+      "p": 0.999546
+    },
+    {
+      "text": " Y",
+      "fromMs": 6760,
+      "toMs": 6820,
+      "dtwMs": 6920,
+      "p": 0.959143
+    },
+    {
+      "text": " está",
+      "fromMs": 6820,
+      "toMs": 7090,
+      "dtwMs": 7080,
+      "p": 0.888254
+    },
+    {
+      "text": " Evan",
+      "fromMs": 7090,
+      "toMs": 7360,
+      "dtwMs": 7340,
+      "p": 0.988192
+    },
+    {
+      "text": " Peters",
+      "fromMs": 7360,
+      "toMs": 7760,
+      "dtwMs": 7740,
+      "p": 0.994114
+    },
+    {
+      "text": ",",
+      "fromMs": 7760,
+      "toMs": 7890,
+      "dtwMs": 7900,
+      "p": 0.990065
+    },
+    {
+      "text": " Hot",
+      "fromMs": 7890,
+      "toMs": 8090,
+      "dtwMs": 8080,
+      "p": 0.916584
+    },
+    {
+      "text": " Horror",
+      "fromMs": 8090,
+      "toMs": 8520,
+      "dtwMs": 8480,
+      "p": 0.991891
+    },
+    {
+      "text": ",",
+      "fromMs": 8520,
+      "toMs": 8620,
+      "dtwMs": 8680,
+      "p": 0.86382
+    },
+    {
+      "text": " me",
+      "fromMs": 8720,
+      "toMs": 8720,
+      "dtwMs": 8840,
+      "p": 0.612984
+    },
+    {
+      "text": " sir",
+      "fromMs": 8730,
+      "toMs": 8880,
+      "dtwMs": 8980,
+      "p": 0.999729
+    },
+    {
+      "text": "ve",
+      "fromMs": 8880,
+      "toMs": 8980,
+      "dtwMs": 9040,
+      "p": 0.999455
+    },
+    {
+      "text": " para",
+      "fromMs": 8980,
+      "toMs": 9150,
+      "dtwMs": 9180,
+      "p": 0.999897
+    },
+    {
+      "text": " el",
+      "fromMs": 9240,
+      "toMs": 9290,
+      "dtwMs": 9300,
+      "p": 0.99955
+    },
+    {
+      "text": " o",
+      "fromMs": 9290,
+      "toMs": 9340,
+      "dtwMs": 9400,
+      "p": 0.998574
+    },
+    {
+      "text": "jo",
+      "fromMs": 9340,
+      "toMs": 9440,
+      "dtwMs": 9460,
+      "p": 0.999661
+    }
+  ]
+}

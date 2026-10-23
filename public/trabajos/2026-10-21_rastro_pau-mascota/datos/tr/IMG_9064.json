@@ -1,0 +1,110 @@
+{
+  "archivo": "IMG_9064.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3333,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        713,
+        3333
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 713,
+      "hastaMs": 3333,
+      "texto": "¿Y tu marca? ¿Qué mascota tendría?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 713,
+      "toMs": 793,
+      "dtwMs": 1013,
+      "p": 0.365886
+    },
+    {
+      "text": "Y",
+      "fromMs": 873,
+      "toMs": 873,
+      "dtwMs": 1013,
+      "p": 0.727801
+    },
+    {
+      "text": " tu",
+      "fromMs": 943,
+      "toMs": 1033,
+      "dtwMs": 1133,
+      "p": 0.947861
+    },
+    {
+      "text": " marca",
+      "fromMs": 1033,
+      "toMs": 1443,
+      "dtwMs": 1473,
+      "p": 0.987556
+    },
+    {
+      "text": "?",
+      "fromMs": 1443,
+      "toMs": 1563,
+      "dtwMs": 1633,
+      "p": 0.75967
+    },
+    {
+      "text": " ¿",
+      "fromMs": 1783,
+      "toMs": 1783,
+      "dtwMs": 1773,
+      "p": 0.796654
+    },
+    {
+      "text": "Qué",
+      "fromMs": 1793,
+      "toMs": 1923,
+      "dtwMs": 1853,
+      "p": 0.743432
+    },
+    {
+      "text": " masc",
+      "fromMs": 2033,
+      "toMs": 2313,
+      "dtwMs": 2013,
+      "p": 0.993254
+    },
+    {
+      "text": "ota",
+      "fromMs": 2313,
+      "toMs": 2543,
+      "dtwMs": 2153,
+      "p": 0.9991
+    },
+    {
+      "text": " tend",
+      "fromMs": 2543,
+      "toMs": 2823,
+      "dtwMs": 2413,
+      "p": 0.994056
+    },
+    {
+      "text": "ría",
+      "fromMs": 2833,
+      "toMs": 3073,
+      "dtwMs": 2573,
+      "p": 0.95484
+    },
+    {
+      "text": "?",
+      "fromMs": 3073,
+      "toMs": 3333,
+      "dtwMs": 2753,
+      "p": 0.983498
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "archivo": "IMG_7165.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8100,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1840,
+      "texto": "Tenticulares, nada que ver uno con el otro"
+    },
+    {
+      "desdeMs": 1840,
+      "hastaMs": 6000,
+      "texto": "Pero bueno, vamos a ver que nos cuentan los invitados"
+    },
+    {
+      "desdeMs": 6000,
+      "hastaMs": 8100,
+      "texto": "Antes de arrancar con ellos"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " T",
+      "fromMs": 0,
+      "toMs": 40,
+      "dtwMs": 0,
+      "p": 0.0119899
+    },
+    {
+      "text": "ent",
+      "fromMs": 40,
+      "toMs": 160,
+      "dtwMs": 0,
+      "p": 0.0319841
+    },
+    {
+      "text": "ic",
+      "fromMs": 160,
+      "toMs": 240,
+      "dtwMs": 0,
+      "p": 0.199103
+    },
+    {
+      "text": "ulares",
+      "fromMs": 240,
+      "toMs": 480,
+      "dtwMs": 440,
+      "p": 0.995475
+    },
+    {
+      "text": ",",
+      "fromMs": 480,
+      "toMs": 530,
+      "dtwMs": 720,
+      "p": 0.744562
+    },
+    {
+      "text": " nada",
+      "fromMs": 750,
+      "toMs": 830,
+      "dtwMs": 860,
+      "p": 0.934348
+    },
+    {
+      "text": " que",
+      "fromMs": 830,
+      "toMs": 990,
+      "dtwMs": 980,
+      "p": 0.998152
+    },
+    {
+      "text": " ver",
+      "fromMs": 990,
+      "toMs": 1140,
+      "dtwMs": 1060,
+      "p": 0.996637
+    },
+    {
+      "text": " uno",
+      "fromMs": 1150,
+      "toMs": 1310,
+      "dtwMs": 1200,
+      "p": 0.986611
+    },
+    {
+      "text": " con",
+      "fromMs": 1310,
+      "toMs": 1470,
+      "dtwMs": 1420,
+      "p": 0.960864
+    },
+    {
+      "text": " el",
+      "fromMs": 1470,
+      "toMs": 1580,
+      "dtwMs": 1560,
+      "p": 0.990388
+    },
+    {
+      "text": " otro",
+      "fromMs": 1580,
+      "toMs": 1840,
+      "dtwMs": 1780,
+      "p": 0.99658
+    },
+    {
+      "text": " Pero",
+      "fromMs": 1850,
+      "toMs": 2900,
+      "dtwMs": 3720,
+      "p": 0.767693
+    },
+    {
+      "text": " bueno",
+      "fromMs": 2900,
+      "toMs": 4190,
+      "dtwMs": 4200,
+      "p": 0.966009
+    },
+    {
+      "text": ",",
+      "fromMs": 4230,
+      "toMs": 4310,
+      "dtwMs": 4260,
+      "p": 0.837034
+    },
+    {
+      "text": " vamos",
+      "fromMs": 4310,
+      "toMs": 4490,
+      "dtwMs": 4420,
+      "p": 0.985273
+    },
+    {
+      "text": " a",
+      "fromMs": 4490,
+      "toMs": 4520,
+      "dtwMs": 4480,
+      "p": 0.998515
+    },
+    {
+      "text": " ver",
+      "fromMs": 4520,
+      "toMs": 4640,
+      "dtwMs": 4620,
+      "p": 0.999748
+    },
+    {
+      "text": " que",
+      "fromMs": 4640,
+      "toMs": 4780,
+      "dtwMs": 4740,
+      "p": 0.515274
+    },
+    {
+      "text": " nos",
+      "fromMs": 4960,
+      "toMs": 4960,
+      "dtwMs": 4900,
+      "p": 0.997527
+    },
+    {
+      "text": " cuent",
+      "fromMs": 4970,
+      "toMs": 5220,
+      "dtwMs": 5120,
+      "p": 0.978248
+    },
+    {
+      "text": "an",
+      "fromMs": 5230,
+      "toMs": 5330,
+      "dtwMs": 5200,
+      "p": 0.99902
+    },
+    {
+      "text": " los",
+      "fromMs": 5400,
+      "toMs": 5490,
+      "dtwMs": 5340,
+      "p": 0.575336
+    },
+    {
+      "text": " invit",
+      "fromMs": 5490,
+      "toMs": 5760,
+      "dtwMs": 5620,
+      "p": 0.997238
+    },
+    {
+      "text": "ados",
+      "fromMs": 5760,
+      "toMs": 6000,
+      "dtwMs": 5980,
+      "p": 0.999935
+    },
+    {
+      "text": " Antes",
+      "fromMs": 6010,
+      "toMs": 6450,
+      "dtwMs": 6920,
+      "p": 0.99559
+    },
+    {
+      "text": " de",
+      "fromMs": 6450,
+      "toMs": 6500,
+      "dtwMs": 7100,
+      "p": 0.991128
+    },
+    {
+      "text": " arran",
+      "fromMs": 6760,
+      "toMs": 7080,
+      "dtwMs": 7320,
+      "p": 0.996219
+    },
+    {
+      "text": "car",
+      "fromMs": 7080,
+      "toMs": 7350,
+      "dtwMs": 7500,
+      "p": 0.99962
+    },
+    {
+      "text": " con",
+      "fromMs": 7350,
+      "toMs": 7620,
+      "dtwMs": 7660,
+      "p": 0.999723
+    },
+    {
+      "text": " ellos",
+      "fromMs": 7620,
+      "toMs": 8100,
+      "dtwMs": 7880,
+      "p": 0.999443
+    }
+  ]
+}

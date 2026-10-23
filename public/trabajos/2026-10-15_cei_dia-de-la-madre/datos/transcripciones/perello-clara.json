@@ -1,0 +1,148 @@
+{
+  "archivo": "perello-clara.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6485,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6480,
+      "texto": "Hola, ma, te agradezco por quererme mucho y hacerme comida ricana."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 130,
+      "toMs": 380,
+      "dtwMs": 1160,
+      "p": 0.622031
+    },
+    {
+      "text": ",",
+      "fromMs": 380,
+      "toMs": 540,
+      "dtwMs": 1340,
+      "p": 0.413144
+    },
+    {
+      "text": " ma",
+      "fromMs": 540,
+      "toMs": 750,
+      "dtwMs": 1360,
+      "p": 0.263839
+    },
+    {
+      "text": ",",
+      "fromMs": 760,
+      "toMs": 870,
+      "dtwMs": 1500,
+      "p": 0.589392
+    },
+    {
+      "text": " te",
+      "fromMs": 970,
+      "toMs": 1140,
+      "dtwMs": 1660,
+      "p": 0.962374
+    },
+    {
+      "text": " agrade",
+      "fromMs": 1140,
+      "toMs": 1710,
+      "dtwMs": 1940,
+      "p": 0.993398
+    },
+    {
+      "text": "z",
+      "fromMs": 1710,
+      "toMs": 1800,
+      "dtwMs": 2180,
+      "p": 0.998911
+    },
+    {
+      "text": "co",
+      "fromMs": 1800,
+      "toMs": 2000,
+      "dtwMs": 2260,
+      "p": 0.998412
+    },
+    {
+      "text": " por",
+      "fromMs": 2000,
+      "toMs": 2640,
+      "dtwMs": 2560,
+      "p": 0.930564
+    },
+    {
+      "text": " quer",
+      "fromMs": 2640,
+      "toMs": 2940,
+      "dtwMs": 3120,
+      "p": 0.940725
+    },
+    {
+      "text": "erme",
+      "fromMs": 2970,
+      "toMs": 3280,
+      "dtwMs": 3300,
+      "p": 0.948241
+    },
+    {
+      "text": " mucho",
+      "fromMs": 3280,
+      "toMs": 3600,
+      "dtwMs": 3700,
+      "p": 0.984856
+    },
+    {
+      "text": " y",
+      "fromMs": 3700,
+      "toMs": 3840,
+      "dtwMs": 3860,
+      "p": 0.792507
+    },
+    {
+      "text": " hac",
+      "fromMs": 3840,
+      "toMs": 4250,
+      "dtwMs": 4020,
+      "p": 0.988008
+    },
+    {
+      "text": "erme",
+      "fromMs": 4250,
+      "toMs": 4790,
+      "dtwMs": 4260,
+      "p": 0.997489
+    },
+    {
+      "text": " comida",
+      "fromMs": 4790,
+      "toMs": 5630,
+      "dtwMs": 4680,
+      "p": 0.987221
+    },
+    {
+      "text": " ric",
+      "fromMs": 5630,
+      "toMs": 6040,
+      "dtwMs": 4980,
+      "p": 0.348101
+    },
+    {
+      "text": "ana",
+      "fromMs": 6040,
+      "toMs": 6480,
+      "dtwMs": 5120,
+      "p": 0.966589
+    },
+    {
+      "text": ".",
+      "fromMs": 6480,
+      "toMs": 6480,
+      "dtwMs": 5380,
+      "p": 0.597703
+    }
+  ]
+}

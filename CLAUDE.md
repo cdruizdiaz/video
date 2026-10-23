@@ -52,9 +52,11 @@ Reglas:
 ## Render
 - NUNCA hacer un render completo salvo pedido explícito. Para verificar: `npx remotion still src/index.ts <comp> out/<ID>/revision/f<N>.png --frame=N`, o una secuencia a `--scale=0.25` y una hoja de contactos en `out/<ID>/revision/`.
 - **Revisión automática:** `node scripts/revisar.mjs <comp> [ID] [--desde N --hasta M] [--gl angle]` renderiza un borrador mudo chico, detecta los cuadros donde algo cambia de golpe (cortes, globos, poses, disfraces) y arma `out/<ID>/revision/revisar_<comp>.png` (en rojo los cambios bruscos). Usarlo después de cada cambio visible en vez de elegir cuadros a mano. Necesita que estén los audios/crudos de la composición en `public/`.
-- Render final: `npx remotion render src/index.ts <comp> out/<ID>/final/<pieza>_<formato>_v<N>.mp4 --crf=18`.
+- Render final: `npx remotion render src/index.ts <comp> <tmp>.mp4 --crf=18` y después **`bash scripts/terminar_audio.sh <tmp>.mp4 out/<ID>/final/<pieza>_<formato>_v<N>.mp4`** (adelanta los 42,7 ms que Remotion atrasa el audio en cada render + loudnorm a -14 en dos pasadas + ebur128). Lo mismo para los borradores con audio.
+- **Glitches:** después de cada borrador y antes de cada entrega, `python scripts/detectar_glitches.py <video> [--hasta-s <inicio de la placa>]` (Python del `.venv`): avisa cuadros vacíos (un solo color), congelados y flashes de 1–3 cuadros; separa los cortes y los zooms rápidos. Sale con código 1 si encuentra algo.
+- **Mostrar un borrador en el celular** (SendUserFile, máximo 30 MB): copia liviana `-c:v libx264 -preset veryfast -crf 26 -c:a copy` en el scratchpad; el de calidad completa queda en `out/<ID>/revision/`.
 - **Render largo o pesado → repartido:** `node scripts/render_partes.mjs <comp> out/<ID>/final/<…>_v<N>.mp4 --partes 4 [--cola C:/Videos/cola]`: tramos de cuadros renderizados por separado y unidos sin recodificar; el audio se renderiza entero una vez. Sin `--cola` sirve para retomar un render cortado (las partes hechas no se rehacen). Con `--cola` (carpeta compartida en red, `carpetaCola`), en la otra PC: `git pull` y `node scripts/trabajador.mjs --cola <carpeta>`; las tareas llevan el commit y el trabajador se niega si no coincide (los archivos de `public/` también tienen que estar en las dos). Verifica la cantidad de cuadros al unir. Después, el `loudnorm` de siempre sobre el archivo unido.
-- Audio final normalizado a -14 LUFS (`loudnorm`) y verificado con `ebur128`.
+- Audio final normalizado a -14 LUFS (`loudnorm`) y verificado con `ebur128` (`terminar_audio.sh` hace las dos cosas).
 - Premiere: después de cada render final, si la composición tiene `premiere` en `composiciones.ts`, correr **`/a-premiere <ID>`** (`node scripts/a-premiere.mjs <ID>`, en segundo plano). Genera el XML de esa `_vN` (cortes con los originales, reencuadre como keyframes, audio con niveles y fundidos) y la capa de gráficos con transparencia, que solo se vuelve a renderizar si cambió (huella de los datos gráficos + código de `src/plantillas/`). Plantillas con exportación: `MontajeMusical`. Para agregarla a otra: `src/plantillas/<X>/premiere.ts` con el formato de `src/plantillas/comunes/premiere.ts` y opción `soloGraficos` en la plantilla.
 
 ## Personajes animados (rig vectorial)
@@ -87,6 +89,7 @@ Reglas:
   - Tiene todos los filtros: `ebur128` (medir LUFS), `loudnorm`, `lut3d`, `silencedetect`, `sidechaincompress`, `xfade`, `drawtext`, `subtitles`, `arnndn`, `filter_complex`.
   - Proxies y borradores: el códec de `codecBorrador` en `equipo.json` (depende de la PC: `h264_qsv -global_quality 23` en la notebook Intel con Quick Sync; `libx264 -preset veryfast -crf 20` en la PC AMD Ryzen de 16 hilos, igual de rápido que AMF y con archivos más chicos). Entregas finales: `-c:v libx264 -crf 18 -preset slow`.
   - Medir volumen: `ffmpeg -i x.wav -af ebur128=peak=true -f null -`. Normalizar: `-af loudnorm=I=-14:TP=-1.5:LRA=11`.
+  - **`drawtext` se cuelga en esta PC** (Fontconfig sin configuración → segmentation fault): las hojas de contacto van sin texto. Para medir dónde están las cabezas y ubicar gráficos: `drawgrid=w=1080:h=200:t=3:c=red@0.8` (una línea cada 200 px) sobre cuadros de cada plano.
   - `npx remotion ffmpeg` queda solo como respaldo: le faltan filtros (`ebur128`) y rompe los `filter_complex` desde Git Bash.
 - Whisper: **`node scripts/transcribir.mjs <audio|video> <salida.json> [--prompt "Odoo, Tango"]`**. Usa el modelo `modeloWhisper` de `herramientas.json` (`large-v3-turbo-q8_0`), idioma `es` (otro con `--idioma en`), tiempos por palabra con DTW y todos los hilos (`hilosWhisper` de `equipo.json`). Salta los silencios largos con ffmpeg y devuelve cada palabra a su tiempo real: en crudos con pausas tarda la mitad. Velocidad: ~2,8x el tiempo real en la i3 con pausas (antes ~10x); en la Ryzen 7, menos de 1x. Si el audio es largo, correrlo en segundo plano.
   - NO usar el `--vad` de whisper-cli: los tiempos por palabra quedan en la línea de tiempo sin silencios (desfasados).
@@ -128,6 +131,8 @@ Reglas:
 | Transcribir, tiempos por palabra | whisper.cpp |
 | Silencios y muletillas | whisper.cpp (huecos entre palabras) → Remotion corta |
 | Elegir fragmentos | leer la transcripción (texto, nunca el video) → candidatos en `public/trabajos/<ID>/datos/candidatos.json` → **`scripts/hoja_fragmentos.py <ID>`** (Python del `.venv`): alertas de desenfoque, brillo y caras + hoja en `out/<ID>/revision/`; descartar los que tengan alertas y recién ahí proponer → `clips.json` |
+| Cuadros vacíos, congelados o flashes en un render | `scripts/detectar_glitches.py` (después de cada borrador) |
+| Audio final de un render de Remotion (desfase del AAC + -14 LUFS) | `scripts/terminar_audio.sh` |
 | Verificar que la suite funcione (tras instalar o actualizar) | `node scripts/verificar-suite.mjs [--rapido]` |
 | Posición del sujeto para 9:16 | MediaPipe → `public/trabajos/<ID>/datos/encuadre.json` |
 | Texto / personaje detrás de una persona | `scripts/mascaras.py` → `DetrasDePersona` |

@@ -1,0 +1,1381 @@
+{
+ "origen": [
+  {
+   "clip": "IMG_7170",
+   "desdeMs": 300,
+   "hastaMs": 22090,
+   "planos": [
+    [
+     300,
+     "abierto"
+    ],
+    [
+     14300,
+     "cerca"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7171",
+   "desdeMs": 13580,
+   "hastaMs": 37200,
+   "planos": [
+    [
+     13600,
+     "abierto"
+    ],
+    [
+     21700,
+     "cerca"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7171",
+   "desdeMs": 44680,
+   "hastaMs": 54710,
+   "planos": [
+    [
+     44680,
+     "abierto"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7171",
+   "desdeMs": 55070,
+   "hastaMs": 62660,
+   "planos": [
+    [
+     55070,
+     "cerca"
+    ]
+   ]
+  }
+ ],
+ "tienda-online": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 216990,
+   "hastaMs": 224290,
+   "planos": [
+    [
+     217000,
+     "general"
+    ],
+    [
+     221500,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 238470,
+   "hastaMs": 242880,
+   "planos": [
+    [
+     238500,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 243200,
+   "hastaMs": 249620,
+   "planos": [
+    [
+     243300,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 274200,
+   "hastaMs": 284580,
+   "planos": [
+    [
+     274300,
+     "general"
+    ],
+    [
+     281000,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 289500,
+   "hastaMs": 302980,
+   "planos": [
+    [
+     289500,
+     "general"
+    ],
+    [
+     295100,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 306500,
+   "hastaMs": 314250,
+   "planos": [
+    [
+     306500,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 327490,
+   "hastaMs": 331910,
+   "planos": [
+    [
+     327900,
+     "el"
+    ]
+   ]
+  }
+ ],
+ "casamiento": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 331940,
+   "hastaMs": 343890,
+   "planos": [
+    [
+     332200,
+     "general"
+    ],
+    [
+     335000,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 344580,
+   "hastaMs": 367440,
+   "planos": [
+    [
+     344600,
+     "b:IMG_7328"
+    ],
+    [
+     350600,
+     "el"
+    ],
+    [
+     357100,
+     "b:IMG_7329"
+    ],
+    [
+     364500,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 367730,
+   "hastaMs": 378690,
+   "planos": [
+    [
+     368100,
+     "b:IMG_7329"
+    ],
+    [
+     374300,
+     "el"
+    ]
+   ]
+  }
+ ],
+ "departamentos": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 438540,
+   "hastaMs": 452900,
+   "planos": [
+    [
+     438700,
+     "el"
+    ],
+    [
+     443600,
+     "general"
+    ],
+    [
+     449350,
+     "conductor"
+    ],
+    [
+     450500,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 456420,
+   "hastaMs": 460950,
+   "planos": [
+    [
+     456420,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 461030,
+   "hastaMs": 473920,
+   "planos": [
+    [
+     461400,
+     "el"
+    ],
+    [
+     465600,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 477550,
+   "hastaMs": 492440,
+   "planos": [
+    [
+     477550,
+     "el"
+    ],
+    [
+     483900,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 507910,
+   "hastaMs": 514570,
+   "planos": [
+    [
+     508000,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 523760,
+   "hastaMs": 530900,
+   "planos": [
+    [
+     523800,
+     "general"
+    ],
+    [
+     527300,
+     "el"
+    ]
+   ]
+  }
+ ],
+ "alquiler": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 584860,
+   "hastaMs": 610880,
+   "planos": [
+    [
+     585000,
+     "general"
+    ],
+    [
+     589500,
+     "el"
+    ],
+    [
+     595800,
+     "general"
+    ],
+    [
+     601100,
+     "el"
+    ],
+    [
+     606000,
+     "general"
+    ]
+   ]
+  }
+ ],
+ "gimnasios": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 635370,
+   "hastaMs": 645380,
+   "planos": [
+    [
+     635400,
+     "general"
+    ],
+    [
+     640400,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 645570,
+   "hastaMs": 674420,
+   "planos": [
+    [
+     645900,
+     "general"
+    ],
+    [
+     652500,
+     "el"
+    ],
+    [
+     657200,
+     "general"
+    ],
+    [
+     663200,
+     "el"
+    ],
+    [
+     669000,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 694930,
+   "hastaMs": 716450,
+   "planos": [
+    [
+     694930,
+     "el"
+    ],
+    [
+     698600,
+     "general"
+    ],
+    [
+     706300,
+     "el"
+    ],
+    [
+     713500,
+     "general"
+    ]
+   ]
+  }
+ ],
+ "manada": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 751040,
+   "hastaMs": 756430,
+   "planos": [
+    [
+     751040,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 773750,
+   "hastaMs": 783530,
+   "planos": [
+    [
+     773750,
+     "general"
+    ],
+    [
+     781300,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 787680,
+   "hastaMs": 797060,
+   "planos": [
+    [
+     787700,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 797210,
+   "hastaMs": 801690,
+   "planos": [
+    [
+     797210,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 801840,
+   "hastaMs": 809950,
+   "planos": [
+    [
+     801840,
+     "general"
+    ],
+    [
+     805100,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 815500,
+   "hastaMs": 821600,
+   "planos": [
+    [
+     815500,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 821790,
+   "hastaMs": 826780,
+   "planos": [
+    [
+     821790,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 827000,
+   "hastaMs": 839690,
+   "planos": [
+    [
+     827600,
+     "general"
+    ],
+    [
+     833300,
+     "el"
+    ]
+   ]
+  }
+ ],
+ "mejor-vendedor": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 851320,
+   "hastaMs": 870640,
+   "planos": [
+    [
+     851600,
+     "el"
+    ],
+    [
+     857400,
+     "general"
+    ],
+    [
+     864400,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 871460,
+   "hastaMs": 878860,
+   "planos": [
+    [
+     871460,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 914770,
+   "hastaMs": 919410,
+   "planos": [
+    [
+     915000,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 927990,
+   "hastaMs": 945460,
+   "planos": [
+    [
+     928000,
+     "general"
+    ],
+    [
+     935000,
+     "el"
+    ],
+    [
+     941900,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 954810,
+   "hastaMs": 962900,
+   "planos": [
+    [
+     954810,
+     "el"
+    ]
+   ]
+  }
+ ],
+ "contadores": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 975360,
+   "hastaMs": 981100,
+   "planos": [
+    [
+     975400,
+     "conductor"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1008880,
+   "hastaMs": 1020010,
+   "planos": [
+    [
+     1008900,
+     "el"
+    ],
+    [
+     1015400,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1040950,
+   "hastaMs": 1049310,
+   "planos": [
+    [
+     1041300,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1050200,
+   "hastaMs": 1062280,
+   "planos": [
+    [
+     1050300,
+     "general"
+    ],
+    [
+     1057600,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1095280,
+   "hastaMs": 1097230,
+   "planos": [
+    [
+     1095300,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1103320,
+   "hastaMs": 1113880,
+   "planos": [
+    [
+     1103320,
+     "el"
+    ],
+    [
+     1106400,
+     "general"
+    ],
+    [
+     1111300,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1121410,
+   "hastaMs": 1124430,
+   "planos": [
+    [
+     1121410,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1124560,
+   "hastaMs": 1131380,
+   "planos": [
+    [
+     1124600,
+     "el"
+    ]
+   ]
+  }
+ ],
+ "herramientas": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1221760,
+   "hastaMs": 1235920,
+   "planos": [
+    [
+     1221800,
+     "el"
+    ],
+    [
+     1231500,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1258860,
+   "hastaMs": 1272880,
+   "planos": [
+    [
+     1259000,
+     "el"
+    ],
+    [
+     1265600,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7177",
+   "desdeMs": 32790,
+   "hastaMs": 47370,
+   "planos": [
+    [
+     33000,
+     "abierto"
+    ],
+    [
+     41000,
+     "cerca"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7177",
+   "desdeMs": 47640,
+   "hastaMs": 64110,
+   "planos": [
+    [
+     47640,
+     "abierto"
+    ],
+    [
+     57200,
+     "cerca"
+    ]
+   ]
+  }
+ ],
+ "software-98": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1323220,
+   "hastaMs": 1337300,
+   "planos": [
+    [
+     1323220,
+     "conductor"
+    ],
+    [
+     1330900,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1350020,
+   "hastaMs": 1359100,
+   "planos": [
+    [
+     1350600,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1359800,
+   "hastaMs": 1365950,
+   "planos": [
+    [
+     1359800,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1366410,
+   "hastaMs": 1374270,
+   "planos": [
+    [
+     1366410,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1375030,
+   "hastaMs": 1392330,
+   "planos": [
+    [
+     1375030,
+     "general"
+    ],
+    [
+     1382800,
+     "el"
+    ],
+    [
+     1386700,
+     "general"
+    ]
+   ]
+  }
+ ],
+ "pauta": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1415870,
+   "hastaMs": 1418420,
+   "planos": [
+    [
+     1415870,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1418390,
+   "hastaMs": 1433340,
+   "planos": [
+    [
+     1418600,
+     "general"
+    ],
+    [
+     1425100,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1435630,
+   "hastaMs": 1441040,
+   "planos": [
+    [
+     1435800,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1453360,
+   "hastaMs": 1456810,
+   "planos": [
+    [
+     1453600,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1465880,
+   "hastaMs": 1477190,
+   "planos": [
+    [
+     1466300,
+     "general"
+    ],
+    [
+     1474200,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1477830,
+   "hastaMs": 1489420,
+   "planos": [
+    [
+     1477900,
+     "general"
+    ],
+    [
+     1484400,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1489690,
+   "hastaMs": 1495450,
+   "planos": [
+    [
+     1490200,
+     "general"
+    ]
+   ]
+  }
+ ],
+ "horno": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1498290,
+   "hastaMs": 1541880,
+   "planos": [
+    [
+     1498600,
+     "el"
+    ],
+    [
+     1504000,
+     "general"
+    ],
+    [
+     1509500,
+     "el"
+    ],
+    [
+     1518900,
+     "general"
+    ],
+    [
+     1524400,
+     "el"
+    ],
+    [
+     1530700,
+     "general"
+    ],
+    [
+     1536500,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1542950,
+   "hastaMs": 1546460,
+   "planos": [
+    [
+     1542950,
+     "general"
+    ]
+   ]
+  }
+ ],
+ "30-dias": [
+  {
+   "clip": "IMG_7175",
+   "desdeMs": 5140,
+   "hastaMs": 11650,
+   "planos": [
+    [
+     5200,
+     "cerca"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1571620,
+   "hastaMs": 1599180,
+   "planos": [
+    [
+     1572750,
+     "general"
+    ],
+    [
+     1579000,
+     "el"
+    ],
+    [
+     1587600,
+     "general"
+    ],
+    [
+     1592700,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1601100,
+   "hastaMs": 1608610,
+   "planos": [
+    [
+     1601400,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7175",
+   "desdeMs": 18790,
+   "hastaMs": 34680,
+   "planos": [
+    [
+     18900,
+     "abierto"
+    ],
+    [
+     25400,
+     "cerca"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7175",
+   "desdeMs": 44780,
+   "hastaMs": 50580,
+   "planos": [
+    [
+     44900,
+     "abierto"
+    ]
+   ]
+  }
+ ],
+ "trabajo": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1640100,
+   "hastaMs": 1645380,
+   "planos": [
+    [
+     1640100,
+     "conductor"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1651150,
+   "hastaMs": 1656690,
+   "planos": [
+    [
+     1651200,
+     "b:IMG_7330"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1678380,
+   "hastaMs": 1690260,
+   "planos": [
+    [
+     1678400,
+     "general"
+    ],
+    [
+     1685600,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1690700,
+   "hastaMs": 1703360,
+   "planos": [
+    [
+     1690700,
+     "b:IMG_7330"
+    ],
+    [
+     1698000,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1703410,
+   "hastaMs": 1712230,
+   "planos": [
+    [
+     1703500,
+     "el"
+    ],
+    [
+     1708300,
+     "b:IMG_7330"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1712760,
+   "hastaMs": 1719130,
+   "planos": [
+    [
+     1712800,
+     "general"
+    ],
+    [
+     1715200,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1731980,
+   "hastaMs": 1744890,
+   "planos": [
+    [
+     1732100,
+     "b:IMG_7330"
+    ],
+    [
+     1737200,
+     "general"
+    ],
+    [
+     1740200,
+     "el"
+    ]
+   ]
+  }
+ ],
+ "cardigan": [
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1819530,
+   "hastaMs": 1829570,
+   "planos": [
+    [
+     1819600,
+     "b:IMG_7330"
+    ],
+    [
+     1825500,
+     "general"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1829690,
+   "hastaMs": 1842970,
+   "planos": [
+    [
+     1829800,
+     "el"
+    ],
+    [
+     1837200,
+     "b:IMG_7330"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1850600,
+   "hastaMs": 1875770,
+   "planos": [
+    [
+     1850600,
+     "general"
+    ],
+    [
+     1858900,
+     "el"
+    ],
+    [
+     1866000,
+     "b:IMG_7330"
+    ],
+    [
+     1870700,
+     "el"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7180-002",
+   "desdeMs": 1897810,
+   "hastaMs": 1910730,
+   "planos": [
+    [
+     1897900,
+     "b:IMG_7330"
+    ],
+    [
+     1906200,
+     "general"
+    ]
+   ]
+  }
+ ],
+ "facturas": [
+  {
+   "clip": "IMG_7172",
+   "desdeMs": 1920,
+   "hastaMs": 29330,
+   "planos": [
+    [
+     1920,
+     "abierto"
+    ],
+    [
+     6300,
+     "cerca"
+    ],
+    [
+     16000,
+     "abierto"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7172",
+   "desdeMs": 45570,
+   "hastaMs": 69340,
+   "planos": [
+    [
+     45600,
+     "cerca"
+    ],
+    [
+     54500,
+     "abierto"
+    ],
+    [
+     62200,
+     "cerca"
+    ]
+   ]
+  }
+ ],
+ "media-loca": [
+  {
+   "clip": "IMG_7177",
+   "desdeMs": 102450,
+   "hastaMs": 120790,
+   "planos": [
+    [
+     102450,
+     "abierto"
+    ],
+    [
+     110400,
+     "cerca"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7172",
+   "desdeMs": 78420,
+   "hastaMs": 114020,
+   "planos": [
+    [
+     78500,
+     "abierto"
+    ],
+    [
+     84000,
+     "cerca"
+    ],
+    [
+     94500,
+     "abierto"
+    ],
+    [
+     104500,
+     "cerca"
+    ],
+    [
+     110300,
+     "abierto"
+    ]
+   ]
+  }
+ ],
+ "trinchera": [
+  {
+   "clip": "IMG_7175",
+   "desdeMs": 250,
+   "hastaMs": 4850,
+   "planos": [
+    [
+     250,
+     "cerca"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7176",
+   "desdeMs": 5080,
+   "hastaMs": 49550,
+   "planos": [
+    [
+     5200,
+     "abierto"
+    ],
+    [
+     10400,
+     "cerca"
+    ],
+    [
+     19600,
+     "abierto"
+    ],
+    [
+     26500,
+     "cerca"
+    ],
+    [
+     33400,
+     "abierto"
+    ],
+    [
+     40500,
+     "cerca"
+    ]
+   ]
+  }
+ ],
+ "chatbot": [
+  {
+   "clip": "IMG_7176",
+   "desdeMs": 52750,
+   "hastaMs": 64070,
+   "planos": [
+    [
+     52750,
+     "abierto"
+    ],
+    [
+     58600,
+     "cerca"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7176",
+   "desdeMs": 75150,
+   "hastaMs": 85420,
+   "planos": [
+    [
+     75200,
+     "abierto"
+    ],
+    [
+     80200,
+     "cerca"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7176",
+   "desdeMs": 85790,
+   "hastaMs": 95620,
+   "planos": [
+    [
+     85790,
+     "abierto"
+    ],
+    [
+     90000,
+     "cerca"
+    ]
+   ]
+  },
+  {
+   "clip": "IMG_7176",
+   "desdeMs": 95910,
+   "hastaMs": 113950,
+   "planos": [
+    [
+     96200,
+     "abierto"
+    ],
+    [
+     102400,
+     "cerca"
+    ],
+    [
+     109500,
+     "abierto"
+    ]
+   ]
+  }
+ ]
+}

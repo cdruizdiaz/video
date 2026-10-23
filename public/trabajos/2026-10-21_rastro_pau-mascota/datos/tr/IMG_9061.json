@@ -1,0 +1,359 @@
+{
+  "archivo": "IMG_9061.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 12673,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        945,
+        4454
+      ],
+      [
+        5062,
+        7489
+      ],
+      [
+        8697,
+        12020
+      ],
+      [
+        12423,
+        12673
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 945,
+      "hastaMs": 4454,
+      "texto": "Pasamos del papel Illustrator y de Illustrator a la animación"
+    },
+    {
+      "desdeMs": 5062,
+      "hastaMs": 7153,
+      "texto": "Para de vuelta porque cuando haces esto se va a escuchar"
+    },
+    {
+      "desdeMs": 7153,
+      "hastaMs": 7353,
+      "texto": "Ok"
+    },
+    {
+      "desdeMs": 7353,
+      "hastaMs": 11841,
+      "texto": "Pasamos del papel Illustrator y de Illustrator a la animación"
+    },
+    {
+      "desdeMs": 11841,
+      "hastaMs": 12665,
+      "texto": "Ya"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Pas",
+      "fromMs": 945,
+      "toMs": 945,
+      "dtwMs": 1345,
+      "p": 0.437234
+    },
+    {
+      "text": "amos",
+      "fromMs": 1185,
+      "toMs": 1475,
+      "dtwMs": 1545,
+      "p": 0.994865
+    },
+    {
+      "text": " del",
+      "fromMs": 1475,
+      "toMs": 1665,
+      "dtwMs": 1685,
+      "p": 0.950859
+    },
+    {
+      "text": " papel",
+      "fromMs": 1755,
+      "toMs": 2085,
+      "dtwMs": 1945,
+      "p": 0.919117
+    },
+    {
+      "text": " Illust",
+      "fromMs": 2085,
+      "toMs": 2495,
+      "dtwMs": 2245,
+      "p": 0.490639
+    },
+    {
+      "text": "rator",
+      "fromMs": 2545,
+      "toMs": 2945,
+      "dtwMs": 2565,
+      "p": 0.998681
+    },
+    {
+      "text": " y",
+      "fromMs": 2945,
+      "toMs": 2995,
+      "dtwMs": 2925,
+      "p": 0.803398
+    },
+    {
+      "text": " de",
+      "fromMs": 2995,
+      "toMs": 3095,
+      "dtwMs": 2985,
+      "p": 0.964834
+    },
+    {
+      "text": " Illust",
+      "fromMs": 3095,
+      "toMs": 3415,
+      "dtwMs": 3205,
+      "p": 0.934049
+    },
+    {
+      "text": "rator",
+      "fromMs": 3415,
+      "toMs": 3675,
+      "dtwMs": 3565,
+      "p": 0.998251
+    },
+    {
+      "text": " a",
+      "fromMs": 3785,
+      "toMs": 3785,
+      "dtwMs": 3905,
+      "p": 0.939155
+    },
+    {
+      "text": " la",
+      "fromMs": 3825,
+      "toMs": 3945,
+      "dtwMs": 3945,
+      "p": 0.983559
+    },
+    {
+      "text": " anim",
+      "fromMs": 3945,
+      "toMs": 4215,
+      "dtwMs": 4145,
+      "p": 0.949559
+    },
+    {
+      "text": "ación",
+      "fromMs": 4275,
+      "toMs": 4445,
+      "dtwMs": 4445,
+      "p": 0.915767
+    },
+    {
+      "text": " Para",
+      "fromMs": 5062,
+      "toMs": 4454,
+      "dtwMs": 5433,
+      "p": 0.808909
+    },
+    {
+      "text": " de",
+      "fromMs": 5213,
+      "toMs": 5283,
+      "dtwMs": 5573,
+      "p": 0.815902
+    },
+    {
+      "text": " vuelta",
+      "fromMs": 5283,
+      "toMs": 5593,
+      "dtwMs": 5753,
+      "p": 0.99039
+    },
+    {
+      "text": " porque",
+      "fromMs": 5593,
+      "toMs": 5853,
+      "dtwMs": 5993,
+      "p": 0.842399
+    },
+    {
+      "text": " cuando",
+      "fromMs": 5923,
+      "toMs": 6213,
+      "dtwMs": 6253,
+      "p": 0.769199
+    },
+    {
+      "text": " ha",
+      "fromMs": 6213,
+      "toMs": 6293,
+      "dtwMs": 6373,
+      "p": 0.610798
+    },
+    {
+      "text": "ces",
+      "fromMs": 6333,
+      "toMs": 6463,
+      "dtwMs": 6513,
+      "p": 0.97929
+    },
+    {
+      "text": " esto",
+      "fromMs": 6463,
+      "toMs": 6723,
+      "dtwMs": 6693,
+      "p": 0.915849
+    },
+    {
+      "text": " se",
+      "fromMs": 6723,
+      "toMs": 6743,
+      "dtwMs": 6893,
+      "p": 0.566959
+    },
+    {
+      "text": " va",
+      "fromMs": 6853,
+      "toMs": 6853,
+      "dtwMs": 6973,
+      "p": 0.531364
+    },
+    {
+      "text": " a",
+      "fromMs": 6883,
+      "toMs": 6883,
+      "dtwMs": 7033,
+      "p": 0.826401
+    },
+    {
+      "text": " escuch",
+      "fromMs": 6893,
+      "toMs": 7073,
+      "dtwMs": 7073,
+      "p": 0.324884
+    },
+    {
+      "text": "ar",
+      "fromMs": 7073,
+      "toMs": 7153,
+      "dtwMs": 7153,
+      "p": 0.993201
+    },
+    {
+      "text": " Ok",
+      "fromMs": 7353,
+      "toMs": 7353,
+      "dtwMs": 7353,
+      "p": 0.49028
+    },
+    {
+      "text": " Pas",
+      "fromMs": 8697,
+      "toMs": 7489,
+      "dtwMs": 9041,
+      "p": 0.996453
+    },
+    {
+      "text": "amos",
+      "fromMs": 8697,
+      "toMs": 8731,
+      "dtwMs": 9281,
+      "p": 0.999971
+    },
+    {
+      "text": " del",
+      "fromMs": 8731,
+      "toMs": 8931,
+      "dtwMs": 9401,
+      "p": 0.999846
+    },
+    {
+      "text": " papel",
+      "fromMs": 8931,
+      "toMs": 9271,
+      "dtwMs": 9621,
+      "p": 0.999897
+    },
+    {
+      "text": " Illust",
+      "fromMs": 9271,
+      "toMs": 9681,
+      "dtwMs": 9881,
+      "p": 0.998119
+    },
+    {
+      "text": "rator",
+      "fromMs": 9681,
+      "toMs": 10011,
+      "dtwMs": 10261,
+      "p": 0.99991
+    },
+    {
+      "text": " y",
+      "fromMs": 10011,
+      "toMs": 10031,
+      "dtwMs": 10501,
+      "p": 0.999182
+    },
+    {
+      "text": " de",
+      "fromMs": 10181,
+      "toMs": 10211,
+      "dtwMs": 10581,
+      "p": 0.999169
+    },
+    {
+      "text": " Illust",
+      "fromMs": 10211,
+      "toMs": 10601,
+      "dtwMs": 10761,
+      "p": 0.999249
+    },
+    {
+      "text": "rator",
+      "fromMs": 10621,
+      "toMs": 10961,
+      "dtwMs": 11081,
+      "p": 0.999912
+    },
+    {
+      "text": " a",
+      "fromMs": 10961,
+      "toMs": 10991,
+      "dtwMs": 11341,
+      "p": 0.999792
+    },
+    {
+      "text": " la",
+      "fromMs": 11141,
+      "toMs": 11151,
+      "dtwMs": 11401,
+      "p": 0.999935
+    },
+    {
+      "text": " anim",
+      "fromMs": 11151,
+      "toMs": 11421,
+      "dtwMs": 11581,
+      "p": 0.999722
+    },
+    {
+      "text": "ación",
+      "fromMs": 11421,
+      "toMs": 11761,
+      "dtwMs": 11881,
+      "p": 0.999783
+    },
+    {
+      "text": " Ya",
+      "fromMs": 12423,
+      "toMs": 12655,
+      "dtwMs": 12645,
+      "p": 0.90972
+    }
+  ]
+}

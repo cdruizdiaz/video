@@ -1,0 +1,232 @@
+{
+  "archivo": "IMG_9094.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8003,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6840,
+      "texto": "y ahora en esta comunidad creativa me interesaría saber qué están leyendo ustedes, qué están consumiendo, me lo dejan en los comentarios."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " y",
+      "fromMs": 0,
+      "toMs": 90,
+      "dtwMs": 1180,
+      "p": 0.378393
+    },
+    {
+      "text": " ahora",
+      "fromMs": 90,
+      "toMs": 570,
+      "dtwMs": 1460,
+      "p": 0.975983
+    },
+    {
+      "text": " en",
+      "fromMs": 570,
+      "toMs": 760,
+      "dtwMs": 1800,
+      "p": 0.929842
+    },
+    {
+      "text": " esta",
+      "fromMs": 1110,
+      "toMs": 1140,
+      "dtwMs": 1980,
+      "p": 0.989706
+    },
+    {
+      "text": " comunidad",
+      "fromMs": 1150,
+      "toMs": 1990,
+      "dtwMs": 2280,
+      "p": 0.91157
+    },
+    {
+      "text": " creat",
+      "fromMs": 1990,
+      "toMs": 2480,
+      "dtwMs": 2500,
+      "p": 0.59087
+    },
+    {
+      "text": "iva",
+      "fromMs": 2480,
+      "toMs": 2800,
+      "dtwMs": 2740,
+      "p": 0.415367
+    },
+    {
+      "text": " me",
+      "fromMs": 2800,
+      "toMs": 3100,
+      "dtwMs": 3060,
+      "p": 0.747319
+    },
+    {
+      "text": " inter",
+      "fromMs": 3100,
+      "toMs": 3270,
+      "dtwMs": 3240,
+      "p": 0.955147
+    },
+    {
+      "text": "esar",
+      "fromMs": 3340,
+      "toMs": 3490,
+      "dtwMs": 3380,
+      "p": 0.991248
+    },
+    {
+      "text": "ía",
+      "fromMs": 3490,
+      "toMs": 3490,
+      "dtwMs": 3480,
+      "p": 0.988106
+    },
+    {
+      "text": " saber",
+      "fromMs": 3580,
+      "toMs": 3820,
+      "dtwMs": 3780,
+      "p": 0.986571
+    },
+    {
+      "text": " qué",
+      "fromMs": 3820,
+      "toMs": 3870,
+      "dtwMs": 4080,
+      "p": 0.534221
+    },
+    {
+      "text": " están",
+      "fromMs": 4040,
+      "toMs": 4240,
+      "dtwMs": 4220,
+      "p": 0.974593
+    },
+    {
+      "text": " ley",
+      "fromMs": 4240,
+      "toMs": 4320,
+      "dtwMs": 4380,
+      "p": 0.963874
+    },
+    {
+      "text": "endo",
+      "fromMs": 4370,
+      "toMs": 4500,
+      "dtwMs": 4480,
+      "p": 0.99882
+    },
+    {
+      "text": " ustedes",
+      "fromMs": 4600,
+      "toMs": 4760,
+      "dtwMs": 4760,
+      "p": 0.909472
+    },
+    {
+      "text": ",",
+      "fromMs": 4760,
+      "toMs": 4890,
+      "dtwMs": 5040,
+      "p": 0.844829
+    },
+    {
+      "text": " qué",
+      "fromMs": 4890,
+      "toMs": 5090,
+      "dtwMs": 5100,
+      "p": 0.661311
+    },
+    {
+      "text": " están",
+      "fromMs": 5090,
+      "toMs": 5260,
+      "dtwMs": 5220,
+      "p": 0.846694
+    },
+    {
+      "text": " consum",
+      "fromMs": 5260,
+      "toMs": 5560,
+      "dtwMs": 5540,
+      "p": 0.900722
+    },
+    {
+      "text": "iendo",
+      "fromMs": 5560,
+      "toMs": 5820,
+      "dtwMs": 5780,
+      "p": 0.999272
+    },
+    {
+      "text": ",",
+      "fromMs": 5820,
+      "toMs": 5890,
+      "dtwMs": 5980,
+      "p": 0.539272
+    },
+    {
+      "text": " me",
+      "fromMs": 5890,
+      "toMs": 5900,
+      "dtwMs": 6060,
+      "p": 0.94792
+    },
+    {
+      "text": " lo",
+      "fromMs": 6010,
+      "toMs": 6020,
+      "dtwMs": 6140,
+      "p": 0.9886
+    },
+    {
+      "text": " de",
+      "fromMs": 6020,
+      "toMs": 6100,
+      "dtwMs": 6240,
+      "p": 0.991361
+    },
+    {
+      "text": "jan",
+      "fromMs": 6100,
+      "toMs": 6200,
+      "dtwMs": 6320,
+      "p": 0.999355
+    },
+    {
+      "text": " en",
+      "fromMs": 6210,
+      "toMs": 6280,
+      "dtwMs": 6420,
+      "p": 0.997562
+    },
+    {
+      "text": " los",
+      "fromMs": 6280,
+      "toMs": 6390,
+      "dtwMs": 6500,
+      "p": 0.993735
+    },
+    {
+      "text": " comentarios",
+      "fromMs": 6390,
+      "toMs": 6840,
+      "dtwMs": 6820,
+      "p": 0.99954
+    },
+    {
+      "text": ".",
+      "fromMs": 6840,
+      "toMs": 6840,
+      "dtwMs": 6820,
+      "p": 0.893492
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "archivo": "azanza-amparo.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 14763,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 11060,
+      "texto": "Hola mami, estoy acá en el insti y te quería decir que gracias por quererme mucho. Te mando besos, chau."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 1050,
+      "toMs": 1750,
+      "dtwMs": 2520,
+      "p": 0.366407
+    },
+    {
+      "text": " m",
+      "fromMs": 1750,
+      "toMs": 2180,
+      "dtwMs": 2740,
+      "p": 0.717843
+    },
+    {
+      "text": "ami",
+      "fromMs": 2340,
+      "toMs": 3310,
+      "dtwMs": 3100,
+      "p": 0.993521
+    },
+    {
+      "text": ",",
+      "fromMs": 3650,
+      "toMs": 3650,
+      "dtwMs": 3700,
+      "p": 0.626825
+    },
+    {
+      "text": " estoy",
+      "fromMs": 3690,
+      "toMs": 4040,
+      "dtwMs": 4060,
+      "p": 0.944907
+    },
+    {
+      "text": " acá",
+      "fromMs": 4040,
+      "toMs": 4270,
+      "dtwMs": 4300,
+      "p": 0.775262
+    },
+    {
+      "text": " en",
+      "fromMs": 4270,
+      "toMs": 4420,
+      "dtwMs": 4400,
+      "p": 0.922693
+    },
+    {
+      "text": " el",
+      "fromMs": 4420,
+      "toMs": 4570,
+      "dtwMs": 4560,
+      "p": 0.932018
+    },
+    {
+      "text": " inst",
+      "fromMs": 4570,
+      "toMs": 4750,
+      "dtwMs": 4880,
+      "p": 0.922412
+    },
+    {
+      "text": "i",
+      "fromMs": 4880,
+      "toMs": 5000,
+      "dtwMs": 5000,
+      "p": 0.990284
+    },
+    {
+      "text": " y",
+      "fromMs": 5000,
+      "toMs": 5070,
+      "dtwMs": 5300,
+      "p": 0.812
+    },
+    {
+      "text": " te",
+      "fromMs": 5220,
+      "toMs": 5500,
+      "dtwMs": 5460,
+      "p": 0.980165
+    },
+    {
+      "text": " quería",
+      "fromMs": 5500,
+      "toMs": 5820,
+      "dtwMs": 5800,
+      "p": 0.939512
+    },
+    {
+      "text": " decir",
+      "fromMs": 5820,
+      "toMs": 6350,
+      "dtwMs": 6300,
+      "p": 0.936654
+    },
+    {
+      "text": " que",
+      "fromMs": 6360,
+      "toMs": 6600,
+      "dtwMs": 6640,
+      "p": 0.902218
+    },
+    {
+      "text": " gracias",
+      "fromMs": 6600,
+      "toMs": 7490,
+      "dtwMs": 7220,
+      "p": 0.837848
+    },
+    {
+      "text": " por",
+      "fromMs": 7660,
+      "toMs": 8000,
+      "dtwMs": 8060,
+      "p": 0.945932
+    },
+    {
+      "text": " quer",
+      "fromMs": 8000,
+      "toMs": 8110,
+      "dtwMs": 8660,
+      "p": 0.926205
+    },
+    {
+      "text": "erme",
+      "fromMs": 8530,
+      "toMs": 8880,
+      "dtwMs": 8880,
+      "p": 0.997168
+    },
+    {
+      "text": " mucho",
+      "fromMs": 8880,
+      "toMs": 9380,
+      "dtwMs": 9320,
+      "p": 0.917784
+    },
+    {
+      "text": ".",
+      "fromMs": 9380,
+      "toMs": 9450,
+      "dtwMs": 9600,
+      "p": 0.522187
+    },
+    {
+      "text": " Te",
+      "fromMs": 9640,
+      "toMs": 9680,
+      "dtwMs": 9680,
+      "p": 0.864919
+    },
+    {
+      "text": " mand",
+      "fromMs": 9680,
+      "toMs": 9920,
+      "dtwMs": 9820,
+      "p": 0.986963
+    },
+    {
+      "text": "o",
+      "fromMs": 9920,
+      "toMs": 10000,
+      "dtwMs": 9960,
+      "p": 0.997961
+    },
+    {
+      "text": " bes",
+      "fromMs": 10000,
+      "toMs": 10200,
+      "dtwMs": 10280,
+      "p": 0.950303
+    },
+    {
+      "text": "os",
+      "fromMs": 10250,
+      "toMs": 10390,
+      "dtwMs": 10440,
+      "p": 0.990046
+    },
+    {
+      "text": ",",
+      "fromMs": 10390,
+      "toMs": 10550,
+      "dtwMs": 10700,
+      "p": 0.486015
+    },
+    {
+      "text": " ch",
+      "fromMs": 10690,
+      "toMs": 10780,
+      "dtwMs": 10820,
+      "p": 0.544427
+    },
+    {
+      "text": "au",
+      "fromMs": 10780,
+      "toMs": 11000,
+      "dtwMs": 11040,
+      "p": 0.996903
+    },
+    {
+      "text": ".",
+      "fromMs": 11000,
+      "toMs": 11060,
+      "dtwMs": 11040,
+      "p": 0.695024
+    }
+  ]
+}

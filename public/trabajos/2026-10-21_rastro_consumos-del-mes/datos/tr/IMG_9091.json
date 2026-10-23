@@ -1,0 +1,316 @@
+{
+  "archivo": "IMG_9091.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 9938,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 9940,
+      "texto": "No vayas a atender cuando el demonio llama de Lali un must, por Dios, Lali te amo y me arrepiento de no haber ido un river pero alguien tenía que diseñar"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " No",
+      "fromMs": 0,
+      "toMs": 270,
+      "dtwMs": 1380,
+      "p": 0.42484
+    },
+    {
+      "text": " v",
+      "fromMs": 270,
+      "toMs": 400,
+      "dtwMs": 1540,
+      "p": 0.942148
+    },
+    {
+      "text": "ay",
+      "fromMs": 400,
+      "toMs": 670,
+      "dtwMs": 1600,
+      "p": 0.998932
+    },
+    {
+      "text": "as",
+      "fromMs": 670,
+      "toMs": 940,
+      "dtwMs": 1700,
+      "p": 0.996445
+    },
+    {
+      "text": " a",
+      "fromMs": 940,
+      "toMs": 1070,
+      "dtwMs": 1720,
+      "p": 0.989861
+    },
+    {
+      "text": " at",
+      "fromMs": 1270,
+      "toMs": 1340,
+      "dtwMs": 1880,
+      "p": 0.924701
+    },
+    {
+      "text": "ender",
+      "fromMs": 1340,
+      "toMs": 2030,
+      "dtwMs": 2040,
+      "p": 0.999683
+    },
+    {
+      "text": " cuando",
+      "fromMs": 2040,
+      "toMs": 2280,
+      "dtwMs": 2260,
+      "p": 0.945136
+    },
+    {
+      "text": " el",
+      "fromMs": 2280,
+      "toMs": 2360,
+      "dtwMs": 2380,
+      "p": 0.948353
+    },
+    {
+      "text": " demon",
+      "fromMs": 2360,
+      "toMs": 2560,
+      "dtwMs": 2520,
+      "p": 0.985625
+    },
+    {
+      "text": "io",
+      "fromMs": 2560,
+      "toMs": 2660,
+      "dtwMs": 2620,
+      "p": 0.98923
+    },
+    {
+      "text": " llama",
+      "fromMs": 2660,
+      "toMs": 2960,
+      "dtwMs": 2960,
+      "p": 0.917015
+    },
+    {
+      "text": " de",
+      "fromMs": 2960,
+      "toMs": 3040,
+      "dtwMs": 3260,
+      "p": 0.875997
+    },
+    {
+      "text": " L",
+      "fromMs": 3200,
+      "toMs": 3240,
+      "dtwMs": 3360,
+      "p": 0.987676
+    },
+    {
+      "text": "ali",
+      "fromMs": 3240,
+      "toMs": 3540,
+      "dtwMs": 3520,
+      "p": 0.925454
+    },
+    {
+      "text": " un",
+      "fromMs": 3540,
+      "toMs": 3690,
+      "dtwMs": 4420,
+      "p": 0.792706
+    },
+    {
+      "text": " must",
+      "fromMs": 4260,
+      "toMs": 4860,
+      "dtwMs": 4840,
+      "p": 0.724972
+    },
+    {
+      "text": ",",
+      "fromMs": 4910,
+      "toMs": 5070,
+      "dtwMs": 5240,
+      "p": 0.423123
+    },
+    {
+      "text": " por",
+      "fromMs": 5260,
+      "toMs": 5270,
+      "dtwMs": 5340,
+      "p": 0.917356
+    },
+    {
+      "text": " Dios",
+      "fromMs": 5270,
+      "toMs": 5530,
+      "dtwMs": 5520,
+      "p": 0.665868
+    },
+    {
+      "text": ",",
+      "fromMs": 5680,
+      "toMs": 5680,
+      "dtwMs": 5660,
+      "p": 0.772691
+    },
+    {
+      "text": " L",
+      "fromMs": 5710,
+      "toMs": 5740,
+      "dtwMs": 5760,
+      "p": 0.979294
+    },
+    {
+      "text": "ali",
+      "fromMs": 5740,
+      "toMs": 5910,
+      "dtwMs": 5900,
+      "p": 0.999114
+    },
+    {
+      "text": " te",
+      "fromMs": 5940,
+      "toMs": 6040,
+      "dtwMs": 6000,
+      "p": 0.955872
+    },
+    {
+      "text": " amo",
+      "fromMs": 6040,
+      "toMs": 6240,
+      "dtwMs": 6240,
+      "p": 0.999131
+    },
+    {
+      "text": " y",
+      "fromMs": 6240,
+      "toMs": 6300,
+      "dtwMs": 6460,
+      "p": 0.875641
+    },
+    {
+      "text": " me",
+      "fromMs": 6300,
+      "toMs": 6420,
+      "dtwMs": 6580,
+      "p": 0.996782
+    },
+    {
+      "text": " ar",
+      "fromMs": 6420,
+      "toMs": 6540,
+      "dtwMs": 6720,
+      "p": 0.994134
+    },
+    {
+      "text": "rep",
+      "fromMs": 6540,
+      "toMs": 6700,
+      "dtwMs": 6780,
+      "p": 0.999744
+    },
+    {
+      "text": "iento",
+      "fromMs": 6760,
+      "toMs": 7040,
+      "dtwMs": 6920,
+      "p": 0.997927
+    },
+    {
+      "text": " de",
+      "fromMs": 7040,
+      "toMs": 7160,
+      "dtwMs": 7000,
+      "p": 0.987325
+    },
+    {
+      "text": " no",
+      "fromMs": 7160,
+      "toMs": 7280,
+      "dtwMs": 7060,
+      "p": 0.999632
+    },
+    {
+      "text": " haber",
+      "fromMs": 7280,
+      "toMs": 7590,
+      "dtwMs": 7160,
+      "p": 0.995792
+    },
+    {
+      "text": " ido",
+      "fromMs": 7590,
+      "toMs": 7770,
+      "dtwMs": 7320,
+      "p": 0.983887
+    },
+    {
+      "text": " un",
+      "fromMs": 7770,
+      "toMs": 7900,
+      "dtwMs": 7460,
+      "p": 0.572388
+    },
+    {
+      "text": " river",
+      "fromMs": 7900,
+      "toMs": 8210,
+      "dtwMs": 7600,
+      "p": 0.482736
+    },
+    {
+      "text": " pero",
+      "fromMs": 8210,
+      "toMs": 8440,
+      "dtwMs": 7800,
+      "p": 0.519861
+    },
+    {
+      "text": " alguien",
+      "fromMs": 8450,
+      "toMs": 8810,
+      "dtwMs": 8000,
+      "p": 0.995085
+    },
+    {
+      "text": " tenía",
+      "fromMs": 8850,
+      "toMs": 9210,
+      "dtwMs": 8200,
+      "p": 0.967519
+    },
+    {
+      "text": " que",
+      "fromMs": 9210,
+      "toMs": 9400,
+      "dtwMs": 8320,
+      "p": 0.999973
+    },
+    {
+      "text": " dise",
+      "fromMs": 9400,
+      "toMs": 9650,
+      "dtwMs": 8560,
+      "p": 0.999489
+    },
+    {
+      "text": "ñ",
+      "fromMs": 9650,
+      "toMs": 9710,
+      "dtwMs": 8680,
+      "p": 0.999857
+    },
+    {
+      "text": "ar",
+      "fromMs": 9710,
+      "toMs": 9930,
+      "dtwMs": 8820,
+      "p": 0.995807
+    }
+  ]
+}

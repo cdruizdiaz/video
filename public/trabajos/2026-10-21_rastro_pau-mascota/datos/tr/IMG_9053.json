@@ -1,0 +1,123 @@
+{
+  "archivo": "IMG_9053.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5335,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        2109
+      ],
+      [
+        3183,
+        4025
+      ],
+      [
+        4742,
+        5335
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3834,
+      "texto": "¿Cómo pasamos? De esto a esto"
+    },
+    {
+      "desdeMs": 3834,
+      "hastaMs": 5331,
+      "texto": "Ahí quedo"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 80,
+      "dtwMs": 720,
+      "p": 0.348866
+    },
+    {
+      "text": "Cómo",
+      "fromMs": 80,
+      "toMs": 410,
+      "dtwMs": 880,
+      "p": 0.56989
+    },
+    {
+      "text": " pas",
+      "fromMs": 410,
+      "toMs": 640,
+      "dtwMs": 1120,
+      "p": 0.982252
+    },
+    {
+      "text": "amos",
+      "fromMs": 750,
+      "toMs": 990,
+      "dtwMs": 1260,
+      "p": 0.997997
+    },
+    {
+      "text": "?",
+      "fromMs": 990,
+      "toMs": 1260,
+      "dtwMs": 1380,
+      "p": 0.268951
+    },
+    {
+      "text": " De",
+      "fromMs": 1260,
+      "toMs": 1440,
+      "dtwMs": 1420,
+      "p": 0.650455
+    },
+    {
+      "text": " esto",
+      "fromMs": 1520,
+      "toMs": 1860,
+      "dtwMs": 1840,
+      "p": 0.945711
+    },
+    {
+      "text": " a",
+      "fromMs": 1860,
+      "toMs": 1880,
+      "dtwMs": 3474,
+      "p": 0.649308
+    },
+    {
+      "text": " esto",
+      "fromMs": 3184,
+      "toMs": 3824,
+      "dtwMs": 3794,
+      "p": 0.972481
+    },
+    {
+      "text": " Ahí",
+      "fromMs": 3834,
+      "toMs": 4025,
+      "dtwMs": 5071,
+      "p": 0.941185
+    },
+    {
+      "text": " qued",
+      "fromMs": 4991,
+      "toMs": 5191,
+      "dtwMs": 5231,
+      "p": 0.645578
+    },
+    {
+      "text": "o",
+      "fromMs": 5191,
+      "toMs": 5281,
+      "dtwMs": 5311,
+      "p": 0.532724
+    }
+  ]
+}

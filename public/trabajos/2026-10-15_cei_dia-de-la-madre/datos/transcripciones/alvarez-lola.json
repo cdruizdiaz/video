@@ -1,0 +1,176 @@
+{
+  "archivo": "alvarez-lola.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 11520,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 11520,
+      "texto": "hola mam, como estas? te queria agradecer por siempre estar para mi, te quiero mucho, chao"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " hol",
+      "fromMs": 110,
+      "toMs": 1180,
+      "dtwMs": 2740,
+      "p": 0.0559541
+    },
+    {
+      "text": "a",
+      "fromMs": 1430,
+      "toMs": 1930,
+      "dtwMs": 2860,
+      "p": 0.995672
+    },
+    {
+      "text": " mam",
+      "fromMs": 2620,
+      "toMs": 3360,
+      "dtwMs": 3080,
+      "p": 0.450062
+    },
+    {
+      "text": ",",
+      "fromMs": 3410,
+      "toMs": 3500,
+      "dtwMs": 3500,
+      "p": 0.461905
+    },
+    {
+      "text": " como",
+      "fromMs": 3630,
+      "toMs": 3810,
+      "dtwMs": 3720,
+      "p": 0.587533
+    },
+    {
+      "text": " estas",
+      "fromMs": 3810,
+      "toMs": 4180,
+      "dtwMs": 3980,
+      "p": 0.904517
+    },
+    {
+      "text": "?",
+      "fromMs": 4180,
+      "toMs": 4460,
+      "dtwMs": 4460,
+      "p": 0.598892
+    },
+    {
+      "text": " te",
+      "fromMs": 4530,
+      "toMs": 4640,
+      "dtwMs": 4960,
+      "p": 0.297895
+    },
+    {
+      "text": " queria",
+      "fromMs": 4640,
+      "toMs": 5180,
+      "dtwMs": 5160,
+      "p": 0.738694
+    },
+    {
+      "text": " agrade",
+      "fromMs": 5180,
+      "toMs": 5720,
+      "dtwMs": 5360,
+      "p": 0.944229
+    },
+    {
+      "text": "cer",
+      "fromMs": 5720,
+      "toMs": 5980,
+      "dtwMs": 5720,
+      "p": 0.986326
+    },
+    {
+      "text": " por",
+      "fromMs": 6020,
+      "toMs": 6200,
+      "dtwMs": 6320,
+      "p": 0.849929
+    },
+    {
+      "text": " siempre",
+      "fromMs": 6200,
+      "toMs": 6670,
+      "dtwMs": 6520,
+      "p": 0.7873
+    },
+    {
+      "text": " estar",
+      "fromMs": 6670,
+      "toMs": 7010,
+      "dtwMs": 6700,
+      "p": 0.727627
+    },
+    {
+      "text": " para",
+      "fromMs": 7010,
+      "toMs": 7240,
+      "dtwMs": 6860,
+      "p": 0.726564
+    },
+    {
+      "text": " mi",
+      "fromMs": 7270,
+      "toMs": 7420,
+      "dtwMs": 7120,
+      "p": 0.90548
+    },
+    {
+      "text": ",",
+      "fromMs": 7470,
+      "toMs": 7580,
+      "dtwMs": 7400,
+      "p": 0.337294
+    },
+    {
+      "text": " te",
+      "fromMs": 7580,
+      "toMs": 7720,
+      "dtwMs": 7860,
+      "p": 0.955496
+    },
+    {
+      "text": " quiero",
+      "fromMs": 7720,
+      "toMs": 8160,
+      "dtwMs": 8080,
+      "p": 0.955572
+    },
+    {
+      "text": " mucho",
+      "fromMs": 8160,
+      "toMs": 8560,
+      "dtwMs": 8460,
+      "p": 0.926438
+    },
+    {
+      "text": ",",
+      "fromMs": 8560,
+      "toMs": 9330,
+      "dtwMs": 8800,
+      "p": 0.592786
+    },
+    {
+      "text": " cha",
+      "fromMs": 9720,
+      "toMs": 11020,
+      "dtwMs": 8960,
+      "p": 0.435315
+    },
+    {
+      "text": "o",
+      "fromMs": 11020,
+      "toMs": 11490,
+      "dtwMs": 9280,
+      "p": 0.949065
+    }
+  ]
+}

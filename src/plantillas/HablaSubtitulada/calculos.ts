@@ -172,7 +172,8 @@ export const tramosDePlanos = (
         (i + 1 >= arr.length || arr[i + 1].desdeMs > toma.desdeMs),
     );
   return lista.map((p, i) => {
-    const desde = Math.max(toma.desdeMs, p.desdeMs);
+    // el primer plano cubre desde el inicio de la toma (si arranca unos ms después, esos cuadros quedaban vacíos)
+    const desde = i === 0 ? toma.desdeMs : Math.max(toma.desdeMs, p.desdeMs);
     const hasta = i + 1 < lista.length ? lista[i + 1].desdeMs : toma.hastaMs;
     return {
       clip: p.clip ?? toma.clip,
