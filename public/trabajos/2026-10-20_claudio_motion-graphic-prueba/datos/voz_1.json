@@ -1,0 +1,71 @@
+{
+  "archivo": "voz_1.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1418,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1260,
+      "texto": "Cansado de pagar de más."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " C",
+      "fromMs": 30,
+      "toMs": 50,
+      "dtwMs": 100,
+      "p": 0.793998
+    },
+    {
+      "text": "ans",
+      "fromMs": 50,
+      "toMs": 210,
+      "dtwMs": 240,
+      "p": 0.99858
+    },
+    {
+      "text": "ado",
+      "fromMs": 250,
+      "toMs": 390,
+      "dtwMs": 400,
+      "p": 0.99467
+    },
+    {
+      "text": " de",
+      "fromMs": 390,
+      "toMs": 500,
+      "dtwMs": 540,
+      "p": 0.998643
+    },
+    {
+      "text": " pagar",
+      "fromMs": 500,
+      "toMs": 770,
+      "dtwMs": 760,
+      "p": 0.996689
+    },
+    {
+      "text": " de",
+      "fromMs": 790,
+      "toMs": 890,
+      "dtwMs": 940,
+      "p": 0.975622
+    },
+    {
+      "text": " más",
+      "fromMs": 890,
+      "toMs": 1060,
+      "dtwMs": 1160,
+      "p": 0.323576
+    },
+    {
+      "text": ".",
+      "fromMs": 1060,
+      "toMs": 1180,
+      "dtwMs": 1240,
+      "p": 0.492194
+    }
+  ]
+}

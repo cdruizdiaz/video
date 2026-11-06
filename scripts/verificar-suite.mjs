@@ -281,6 +281,19 @@ paso("Mixkit (biblioteca)", () => {
   return ultima;
 });
 
+// Los paquetes @remotion/* tienen que ir en la misma versión exacta que remotion (si no, Remotion avisa o falla).
+paso("Motion blur (@remotion)", () => {
+  const pkg = JSON.parse(fs.readFileSync(path.join(RAIZ, "package.json"), "utf8"));
+  const pedido = pkg.dependencies["@remotion/motion-blur"];
+  if (!pedido) throw new Error("falta @remotion/motion-blur en package.json");
+  if (pedido !== pkg.dependencies.remotion) throw new Error(`@remotion/motion-blur ${pedido} ≠ remotion ${pkg.dependencies.remotion}`);
+  const instalado = path.join(RAIZ, "node_modules/@remotion/motion-blur/package.json");
+  existe(instalado);
+  const version = JSON.parse(fs.readFileSync(instalado, "utf8")).version;
+  if (version !== pedido) throw new Error(`instalado ${version}, package.json pide ${pedido} (correr npm install)`);
+  return `${version} = remotion`;
+});
+
 // ---- Rig de personajes (scripts/rig/, src/rig/) ----
 paso("Rig: extractor", () => {
   // Bloomie (.ai sin capas): tiene que salir igual que el de la biblioteca (vistas, caras, visemas, escoba)

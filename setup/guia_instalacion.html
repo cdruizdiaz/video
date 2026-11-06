@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Guía de instalación de la suite de video</title>
+<!-- Fuente de la guía en PDF. Para regenerarla:
+     "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" --headless --disable-gpu --no-pdf-header-footer
+       --print-to-pdf="<salida>.pdf" "file:///<ruta>/setup/guia_instalacion.html" -->
+<style>
+  @page { size: A4; margin: 16mm 17mm 16mm 17mm; }
+  :root {
+    --naranja: #e0573a; --tinta: #1f2430; --suave: #5b6372; --linea: #e3e6ec;
+    --azul: #2f5d8a; --azul-fondo: #e9f0f8; --rosa: #d9584a; --rosa-fondo: #fcebe8;
+    --codigo: #1f2633; --tabla: #f3f5f8; --amarillo: #fffaeb;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", "Open Sans", Arial, sans-serif; font-size: 10.4pt; line-height: 1.5; color: var(--tinta); background: #fff; }
+  .portada { border-left: 6px solid var(--naranja); padding: 4px 0 4px 22px; margin: 0 0 18px; }
+  .portada h1 { font-size: 27pt; line-height: 1.1; margin: 0 0 6px; }
+  .portada .sub { font-size: 12.5pt; color: var(--suave); margin: 0 0 8px; }
+  .portada .meta { font-size: 9pt; color: var(--suave); }
+  .novedad { background: var(--amarillo); border: 1px dashed #e2c46a; border-radius: 6px; padding: 9px 14px; margin: 12px 0; font-size: 9.6pt; }
+  .novedad b { color: #8a6200; }
+  code, .mono { font-family: Consolas, "Cascadia Mono", monospace; font-size: 8.9pt; background: #eef0f4; border: 1px solid #dfe3ea; border-radius: 3px; padding: 0 3px; }
+  .indice { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 30px; margin: 10px 0 6px; padding-left: 18px; }
+  .indice div { break-inside: avoid; }
+  h2 { font-size: 15.5pt; margin: 22px 0 10px; padding-bottom: 5px; border-bottom: 2px solid var(--naranja); display: flex; align-items: center; gap: 10px; break-after: avoid; }
+  h2 .n { flex: none; width: 24px; height: 24px; border-radius: 50%; background: var(--naranja); color: #fff; font-size: 11pt; display: inline-flex; align-items: center; justify-content: center; }
+  h3 { font-size: 11.5pt; color: var(--azul); margin: 16px 0 6px; break-after: avoid; }
+  ul, ol { margin: 6px 0; padding-left: 22px; }
+  li { margin: 3px 0; }
+  pre { background: var(--codigo); color: #e8ecf2; border-radius: 6px; padding: 10px 16px; font-family: Consolas, "Cascadia Mono", monospace; font-size: 8.9pt; white-space: pre-wrap; margin: 8px 0; break-inside: avoid; }
+  .caja { border-left: 4px solid var(--azul); background: var(--azul-fondo); border-radius: 0 6px 6px 0; padding: 10px 16px; margin: 12px 0; break-inside: avoid; }
+  .caja.rosa { border-left-color: var(--rosa); background: var(--rosa-fondo); }
+  .caja .t { font-weight: 700; margin-bottom: 4px; }
+  .mensaje { border: 1px dashed #d9b766; background: var(--amarillo); border-radius: 6px; padding: 10px 16px; font-family: Consolas, "Cascadia Mono", monospace; font-size: 8.9pt; white-space: pre-wrap; break-inside: avoid; margin: 10px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 9.6pt; }
+  thead th { background: var(--tabla); text-align: left; padding: 7px 10px; font-weight: 600; }
+  td { padding: 7px 10px; border-bottom: 1px solid var(--linea); vertical-align: top; }
+  tr { break-inside: avoid; }
+  .flujo { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 8px 0 12px; }
+  .flujo span.paso { font-family: Consolas, monospace; font-size: 8.9pt; background: var(--azul-fondo); border: 1px solid #c9d6e6; border-radius: 4px; padding: 4px 8px; }
+  .flujo span.flecha { color: var(--suave); }
+  .nuevo { display: inline-block; font-size: 7.4pt; font-weight: 700; color: #fff; background: var(--naranja); border-radius: 3px; padding: 0 4px; margin-left: 4px; vertical-align: 1px; }
+</style>
+</head>
+<body>
+
+<div class="portada">
+  <h1>Suite de producción de video</h1>
+  <p class="sub">Guía para instalar el proyecto en una PC nueva y empezar a editar con Claude Code</p>
+  <div class="meta">Para Serena · Repositorio <span class="mono">github.com/cdruizdiaz/video</span> · Windows 11 · Actualizada el 23 de octubre de 2026</div>
+</div>
+
+<p>Esta guía va en orden: primero los programas básicos (VS Code y Git), después el proyecto, después Claude Code, que se encarga de instalar todo el resto por vos. Al final hay consejos para trabajar con la suite en el día a día.</p>
+
+<div class="novedad"><b>Qué cambió desde la versión anterior:</b> la instalación ahora está toda en un solo archivo del proyecto, así que el mensaje para Claude (paso 6) es más corto. Se sumaron voces de Edge TTS, la herramienta para borrar a una persona del video, motion blur, motion graphics al compás de la música y un control automático de glitches antes de cada entrega. Las novedades están marcadas con <span class="nuevo">NUEVO</span>.</div>
+
+<ol class="indice">
+  <div><li>Antes de empezar</li></div>
+  <div><li value="5">Instalar y abrir Claude Code</li></div>
+  <div><li value="2">Instalar VS Code</li></div>
+  <div><li value="6">Pedirle a Claude que instale todo</li></div>
+  <div><li value="3">Instalar Git</li></div>
+  <div><li value="7">Tips para usar la suite</li></div>
+  <div><li value="4">Crear la carpeta y clonar el proyecto</li></div>
+  <div><li value="8">Si algo falla</li></div>
+</ol>
+
+<h2><span class="n">1</span>Antes de empezar</h2>
+<ul>
+  <li><b>Windows 11</b> de 64 bits, con conexión a internet estable (se bajan unos 6 GB de herramientas y modelos).</li>
+  <li><b>Espacio en disco:</b> al menos 20 GB libres en <code>C:</code> (herramientas, proyecto y algo de material de trabajo).</li>
+  <li><b>Cuenta de GitHub:</b> el repositorio es <b>privado</b> y se usa <b>la cuenta de GitHub de Claudio</b>, que inicia sesión con su <b>Gmail</b> (botón <i>Continue with Google</i>). Coordiná con Claudio el momento del paso 4: puede hacer falta que confirme el ingreso desde su celular.</li>
+  <li><b>Cuenta de Claude</b> con plan Pro o Max (o una cuenta de la organización): Claude Code la usa para iniciar sesión.</li>
+  <li>No hace falta placa de video NVIDIA: toda la suite corre en el procesador (y en la gráfica integrada para el 3D).</li>
+  <li><b>Internet también al trabajar:</b> las voces de Edge TTS, las tipografías de Google Fonts y la música de Mixkit se bajan en el momento.</li>
+</ul>
+
+<div class="caja">
+  <div class="t">Cómo abrir PowerShell (la terminal de Windows)</div>
+  Varios pasos se hacen escribiendo comandos en PowerShell. Cualquiera de estas formas sirve:
+  <ol>
+    <li><b>Desde el buscador:</b> apretá la tecla <b>Windows</b> (o hacé clic en Inicio), escribí <b>PowerShell</b> y elegí <b>Windows PowerShell</b> (o apretá Enter).</li>
+    <li><b>Desde el botón Inicio:</b> clic derecho sobre el botón de Inicio (o <b>Windows + X</b>) → <b>Terminal</b>. Se abre directamente en PowerShell.</li>
+    <li><b>Desde VS Code</b> (una vez instalado): menú <b>Terminal → Nueva terminal</b> (o <b>Ctrl + ñ</b>). Se abre abajo, ya ubicada en la carpeta del proyecto.</li>
+  </ol>
+  Aparece una ventana con un texto tipo <code>PS C:\Users\Serena&gt;</code> y el cursor titilando: ahí se escriben los comandos. Para pegar uno, copialo de esta guía, hacé <b>clic derecho</b> dentro de la ventana (o <b>Ctrl+V</b>) y apretá <b>Enter</b>. No hace falta abrirla “como administrador”: cuando algo necesite permisos, Windows lo pregunta.
+</div>
+
+<h2><span class="n">2</span>Instalar VS Code</h2>
+<p>VS Code es el editor donde vas a ver el proyecto y conversar con Claude.</p>
+<ol>
+  <li>Entrá a <b>code.visualstudio.com</b> y descargá la versión para Windows (<i>User Installer</i>), o en PowerShell:
+<pre>winget install -e --id Microsoft.VisualStudioCode</pre></li>
+  <li>En el instalador dejá tildadas las opciones <b>“Agregar a PATH”</b> y <b>“Agregar la acción Abrir con Code”</b> al menú contextual.</li>
+  <li>Opcional: para tenerlo en castellano, abrí VS Code, pestaña <b>Extensiones</b> (Ctrl+Shift+X), buscá <i>Spanish Language Pack</i> e instalalo.</li>
+</ol>
+
+<h2><span class="n">3</span>Instalar Git</h2>
+<p>Git sirve para bajar el proyecto y mantenerlo sincronizado con lo que hace Claudio desde la otra PC. También lo necesita Claude Code en Windows.</p>
+<ol>
+  <li>Descargalo de <b>git-scm.com</b> o en PowerShell:
+<pre>winget install --id Git.Git -e</pre>
+  En el instalador podés aceptar todas las opciones que vienen por defecto.</li>
+  <li><b>Cerrá y volvé a abrir PowerShell</b> (para que reconozca el comando <code>git</code>) y cargá tu nombre y mail; quedan registrados en cada cambio que subas:
+<pre>git config --global user.name "Serena ..."
+git config --global user.email "tu-mail@ejemplo.com"</pre></li>
+</ol>
+
+<h2><span class="n">4</span>Crear la carpeta y clonar el proyecto</h2>
+<p>Toda la suite vive en <code>C:\Videos</code>. Las herramientas pesadas se instalan en <code>C:\Videos\_herramientas</code> y los scripts las buscan ahí, así que usá exactamente esta carpeta.</p>
+<pre>mkdir C:\Videos
+cd C:\Videos
+git clone https://github.com/cdruizdiaz/video.git</pre>
+
+<div class="caja rosa">
+  <div class="t">Iniciar sesión en GitHub con la cuenta de Claudio</div>
+  <ol>
+    <li>Al correr <code>git clone</code>, la primera vez se abre una ventana <b>“Connect to GitHub”</b>. Elegí <b>Sign in with your browser</b>.</li>
+    <li>En la página de GitHub que se abre en el navegador, <b>no</b> escribas usuario ni contraseña: hacé clic en <b>Continue with Google</b>.</li>
+    <li>Elegí <b>el Gmail de Claudio</b> (claudio.ruizdiaz@gmail.com). Si Google pide un código o una confirmación en el celular, la hace Claudio.</li>
+    <li>Cuando GitHub pregunte si autorizás a <b>Git Credential Manager</b>, aceptá (<i>Authorize</i>). Aparece un aviso de que la autenticación fue correcta y la descarga sigue sola.</li>
+  </ol>
+  Queda guardado en Windows: los <code>git pull</code> y las subidas siguientes ya no piden iniciar sesión.
+</div>
+
+<p>Al terminar queda el proyecto en <code>C:\Videos\video</code>.</p>
+<p>Abrilo en VS Code: <b>Archivo → Abrir carpeta…</b> → <code>C:\Videos\video</code>. Si pregunta si confiás en los autores de la carpeta, respondé que sí.</p>
+
+<div class="caja rosa">
+  <div class="t">Lo que no viene en el repositorio</div>
+  Git trae el código, los guiones, las plantillas, los datos (transcripciones, JSON) y las imágenes de personajes. <b>No</b> trae videos, audios, la música bajada de Mixkit, los renders ni los archivos <code>.ai</code> y modelos 3D de los personajes (<code>C:\Videos\personajes</code>): son pesados y se pasan aparte (Drive, pendrive), o los regenera Claude cuando se puede.
+</div>
+
+<h2><span class="n">5</span>Instalar y abrir Claude Code</h2>
+<p>Claude Code es el asistente que hace el trabajo: instala la suite, arma los videos, corre las herramientas y sube los cambios. Hay dos formas de usarlo; con una alcanza.</p>
+<h3>Opción A — Extensión de VS Code (la más cómoda)</h3>
+<ol>
+  <li>En VS Code, pestaña <b>Extensiones</b> (Ctrl+Shift+X), buscá <b>Claude Code</b> (de Anthropic) e instalala.</li>
+  <li>Aparece el ícono de Claude en la barra lateral. Abrilo e iniciá sesión con tu cuenta de Claude.</li>
+</ol>
+<h3>Opción B — En la terminal</h3>
+<ol>
+  <li>En PowerShell:
+<pre>irm https://claude.ai/install.ps1 | iex</pre></li>
+  <li>En VS Code abrí una terminal (<b>Terminal → Nueva terminal</b>; queda en la carpeta del proyecto) y escribí <code>claude</code>. La primera vez te pide iniciar sesión en el navegador.</li>
+</ol>
+<div class="caja">
+  <div class="t">Siempre desde la carpeta del proyecto</div>
+  Claude lee al arrancar el archivo <code>CLAUDE.md</code> del proyecto, que tiene todas las reglas de la suite (formatos, carpetas, qué herramienta usar para cada cosa). Por eso tiene que abrirse con <code>C:\Videos\video</code> como carpeta de trabajo.
+</div>
+
+<h2><span class="n">6</span>Pedirle a Claude que instale todo</h2>
+<p>El proyecto trae las instrucciones completas de instalación en <code>setup/prompt_instalacion.txt</code>. Ese archivo ya incluye todas las herramientas: Blender, lip sync, cámara lenta, voces, modelos de inteligencia artificial y los paquetes de Python. Al lado está el inventario con las versiones probadas (<code>setup/all_requeriments.txt</code>). Copiá y pegá este mensaje en Claude Code:</p>
+<div class="mensaje">Acabo de clonar este proyecto en una PC nueva. Instalá y dejá verificada toda la suite de producción de video:
+
+1. Seguí paso a paso las instrucciones de setup/prompt_instalacion.txt (el inventario con versiones y fuentes está en setup/all_requeriments.txt).
+2. Pedime permiso antes de instalar software del sistema (winget o instaladores).
+3. Creá C:\Videos\_herramientas\equipo.json con los datos y el rendimiento de esta PC.
+4. No instales ProPainter ni configures ElevenLabs: son opcionales.
+5. Al final corré node scripts/verificar-suite.mjs, npm test y npm run lint, y dame un resumen corto: qué quedó instalado, cuánto mide el rendimiento de esta PC y qué falta hacer a mano.</div>
+<ul>
+  <li><b>Va a pedir permisos.</b> Cuando quiera instalar algo con <code>winget</code> o ejecutar comandos, aceptá. Windows puede mostrar además una ventana de “¿Permitir cambios?”: también aceptá.</li>
+  <li><b>Tarda.</b> Entre 1 y 2 horas según la conexión: solo el modelo de Whisper son ~870 MB, Blender ~400 MB, el de borrar personas ~200 MB y PyTorch varios cientos más. Podés dejarlo trabajando y mirar de vez en cuando por si pregunta algo.</li>
+  <li><b>Es reanudable.</b> Si se corta la luz o cerrás la ventana, volvé a pegar el mismo mensaje: revisa lo que ya está hecho y sigue desde ahí.</li>
+  <li>Al final tiene que decir que <code>verificar-suite</code>, los tests y el lint dan bien. Si en la línea de Mixkit dice <b>“N faltan”</b>, es normal: la música no viaja por Git; copiá la carpeta <code>public\biblioteca</code> desde la PC de Claudio. Si algo más quedó pendiente, pedile que lo resuelva o avisale a Claudio.</li>
+</ul>
+
+<h2><span class="n">7</span>Tips para usar la suite</h2>
+<h3>Hablale normal, en castellano</h3>
+<p>No hace falta saber programar. Contale qué video querés como se lo contarías a un editor: <b>cliente, qué pieza es, formato</b> (horizontal 16:9 o vertical 9:16 para reels/historias), <b>duración</b>, tono, música, textos, dónde están los crudos. Cuanto más concreto, menos idas y vueltas. Si no nombrás un trabajo, te va a preguntar si es uno nuevo o la continuación de otro.</p>
+
+<h3>Cómo se organiza el trabajo</h3>
+<p>Cada pedido es un <b>trabajo</b> con un ID del tipo <code>2026-10-23_cliente_pieza</code>. El recorrido típico:</p>
+<div class="flujo">
+  <span class="paso">/nuevo-trabajo</span><span class="flecha">→</span><span class="paso">/guion</span><span class="flecha">→</span><span class="paso">editás el guion</span><span class="flecha">→</span><span class="paso">/aplicar-guion</span><span class="flecha">→</span><span class="paso">revisión</span><span class="flecha">→</span><span class="paso">render final</span><span class="flecha">→</span><span class="paso">/cerrar-trabajo</span>
+</div>
+<table>
+  <thead><tr><th style="width:42%">Comando</th><th>Para qué sirve</th></tr></thead>
+  <tbody>
+    <tr><td><code>/nuevo-trabajo cliente pieza [crudos] [brief]</code></td><td>Abre un trabajo: carpetas, ficha <code>TRABAJO.md</code>, proxies livianos de los crudos y registro en Remotion.</td></tr>
+    <tr><td><code>/guion</code></td><td>Escribe el guion audiovisual con tiempos. <b>El guion es la fuente de verdad</b> de cada pieza. Podés anotar en una toma “motion blur” o “estela” <span class="nuevo">NUEVO</span>.</td></tr>
+    <tr><td><code>/aplicar-guion &lt;ID&gt;</code></td><td>Después de que edites o pegues un guion nuevo, aplica solo lo que cambió y saca una versión nueva.</td></tr>
+    <tr><td><code>/estado</code> (o <code>/estado todos</code>)</td><td>Lista los trabajos abiertos (o todos), su última entrega y lo que falta.</td></tr>
+    <tr><td><code>/a-premiere &lt;ID&gt;</code></td><td>Exporta la edición a Adobe Premiere (XML con cortes y audio + capa de gráficos con transparencia).</td></tr>
+    <tr><td><code>/cerrar-trabajo &lt;ID&gt;</code></td><td>Verifica entregas, actualiza la ficha y archiva el material pesado.</td></tr>
+    <tr><td><code>/rig-personaje</code>, <code>/personaje-3d</code></td><td>Suman un personaje animable a la biblioteca (desde su archivo <code>.ai</code>) y su versión 3D en Blender.</td></tr>
+  </tbody>
+</table>
+
+<h3>Dónde va cada cosa</h3>
+<table>
+  <thead><tr><th style="width:30%">Carpeta</th><th>Qué hay</th></tr></thead>
+  <tbody>
+    <tr><td><code>C:\Videos\crudos\&lt;ID&gt;\</code></td><td>Los originales tal cual llegaron (4K, etc.). <b>Nunca se modifican.</b> Copiá ahí el material antes de abrir el trabajo.</td></tr>
+    <tr><td><code>public\trabajos\&lt;ID&gt;\</code></td><td>Proxies, audio preparado, imágenes y datos del trabajo.</td></tr>
+    <tr><td><code>src\trabajos\&lt;ID&gt;\</code></td><td>Ficha <code>TRABAJO.md</code>, guiones y composiciones.</td></tr>
+    <tr><td><code>out\&lt;ID&gt;\revision\</code></td><td>Cuadros sueltos y hojas de contacto para revisar.</td></tr>
+    <tr><td><code>out\&lt;ID&gt;\final\</code></td><td>Entregas: <code>pieza_9x16_v1.mp4</code>, <code>v2</code>… Nunca se pisa una versión: cada cambio es una nueva.</td></tr>
+  </tbody>
+</table>
+
+<h3>Revisar antes de renderizar</h3>
+<ul>
+  <li>Claude <b>no hace el render completo salvo que se lo pidas</b>: para revisar arma una <b>hoja de revisión automática</b> con los cuadros donde algo cambia de golpe, marcados en rojo (cortes, globos, poses), en <code>out\&lt;ID&gt;\revision\</code>. Mirá esas imágenes y pedí cambios.</li>
+  <li>Para ver el video en movimiento: pedile <i>“abrí el Studio”</i> (o en la terminal <code>npx remotion studio</code>) y se abre en el navegador con la línea de tiempo.</li>
+  <li>Cuando esté aprobado, pedí explícitamente <i>“render final”</i>. El audio sale normalizado a -14 LUFS (el estándar de redes) y con el desfase de Remotion corregido, así la voz queda en sincro con la boca.</li>
+  <li><span class="nuevo">NUEVO</span> Antes de cada entrega, Claude pasa un <b>detector de glitches</b>: avisa si hay cuadros vacíos, congelados o flashes de 1 a 3 cuadros.</li>
+</ul>
+
+<h3>Lo que la suite hace sola (pedilo con tus palabras)</h3>
+<table>
+  <thead><tr><th style="width:46%">Pedido</th><th>Qué usa</th></tr></thead>
+  <tbody>
+    <tr><td>Subtítulos, sacar silencios y muletillas</td><td>Whisper (transcripción local con tiempos por palabra)</td></tr>
+    <tr><td>Elegir los mejores fragmentos de una entrevista larga</td><td>La transcripción + una hoja que descarta tomas desenfocadas, oscuras o sin cara</td></tr>
+    <tr><td>Limpiar ruido de una voz</td><td>DeepFilterNet</td></tr>
+    <tr><td>Pasar un horizontal a vertical siguiendo a la persona</td><td>MediaPipe (detección de caras)</td></tr>
+    <tr><td>Música de fondo y efectos</td><td>Mixkit (gratis, uso comercial). Pedile 2–3 opciones antes de elegir</td></tr>
+    <tr><td>Cortes al ritmo de la música</td><td>Análisis de pulsos (librosa)</td></tr>
+    <tr><td>Motion graphics al compás: títulos que entran con máscara, golpes de cámara, llamado a la acción con rebote <span class="nuevo">NUEVO</span></td><td>Plantilla <code>MotionGraphicRitmo</code></td></tr>
+    <tr><td>Motion blur o “estela” en lo que se mueve rápido (personajes, títulos, logos 3D) <span class="nuevo">NUEVO</span></td><td>Desenfoque de movimiento: solo en los tramos rápidos; quieto, todo queda nítido</td></tr>
+    <tr><td>Voz en off sintética</td><td>Edge TTS (voces argentinas <i>Elena</i> y <i>Tomás</i>, pronuncia bien el voseo; necesita internet) o Piper (sin internet)</td></tr>
+    <tr><td>Personajes animados, lip sync</td><td>Rig por piezas o por poses + Rhubarb; 3D con Blender</td></tr>
+    <tr><td>Que un personaje copie los gestos de una persona filmada</td><td>Captura de movimiento (MediaPipe)</td></tr>
+    <tr><td>Personaje sobre un video con cámara en mano, o detrás de una persona</td><td>Seguimiento de cámara (OpenCV), recorte de personas y mapa de profundidad</td></tr>
+    <tr><td>Borrar a una persona del video <span class="nuevo">NUEVO</span></td><td>LaMa (rellena el fondo; tarda varios minutos por clip)</td></tr>
+    <tr><td>Cámara lenta suave, subir resolución</td><td>RIFE, Real-ESRGAN (lentos: solo tramos cortos)</td></tr>
+    <tr><td>Color con LUT</td><td>ffmpeg (<code>lut3d</code>), con LUTs en <code>C:\Videos\_herramientas\luts</code></td></tr>
+  </tbody>
+</table>
+<p>Servicios pagos o de IA generativa (ElevenLabs para voces más naturales, ChatCut, avatares, música generada) solo se usan si la suite no puede hacerlo, y Claude pregunta antes porque consumen créditos.</p>
+
+<h3>Reels de entrevista o persona hablando</h3>
+<p>Para estos reels hay criterios ya acordados con los clientes (color, planos, zoom, subtítulos, gráficos, audio) en <code>src\plantillas\HablaSubtitulada\CRITERIOS_REEL.md</code>. Claude los aplica de entrada; si un cliente corrige algo nuevo, pedile que lo sume ahí.</p>
+
+<h3>Trabajar en equipo con Git</h3>
+<ul>
+  <li><b>Al empezar el día:</b> pedile <i>“traé lo nuevo del repo”</i> (hace <code>git pull</code>), así tenés lo último que subió Claudio. Si los dos cambiaron cosas, Claude las mezcla sin perder lo tuyo: primero guarda tus cambios y después trae los del otro.</li>
+  <li><b>Al terminar algo:</b> pedile <i>“commiteá y subí los cambios”</i>. Mensajes claros ayudan a saber después qué se hizo.</li>
+  <li>Evitá que los dos trabajen a la vez sobre el mismo trabajo o la misma plantilla; si pasa, Claude puede mezclar los cambios, pero conviene coordinar.</li>
+  <li>Los videos, audios y renders no viajan por Git: si Claudio necesita tus crudos o tus entregas, pasalos por Drive o pendrive.</li>
+</ul>
+
+<h3>Atajos útiles de Claude Code</h3>
+<table>
+  <thead><tr><th style="width:24%">Atajo</th><th>Qué hace</th></tr></thead>
+  <tbody>
+    <tr><td><b>Esc</b></td><td>Frena a Claude en lo que esté haciendo (para corregir el rumbo).</td></tr>
+    <tr><td><b>Shift+Tab</b></td><td>Cambia el modo de permisos (pedir permiso para todo / aceptar ediciones automáticamente / modo plan).</td></tr>
+    <tr><td><code>/clear</code></td><td>Empieza una conversación limpia. Usalo al pasar a otro trabajo distinto.</td></tr>
+    <tr><td><code>! comando</code></td><td>Corre un comando de terminal dentro de la conversación (por ejemplo <code>! git status</code>).</td></tr>
+    <tr><td>Arrastrar archivos</td><td>Podés arrastrar una imagen o captura a la conversación para mostrarle algo.</td></tr>
+  </tbody>
+</table>
+
+<h3>Rendimiento</h3>
+<ul>
+  <li>Todo corre en el procesador: transcribir, renderizar y Blender pueden tardar. Para cosas largas Claude las corre en segundo plano y te avisa al terminar.</li>
+  <li>El motion blur cuesta más o menos el doble de render, pero solo en los tramos rápidos; los borradores lo hacen con la mitad de muestras.</li>
+  <li>Renders muy largos se pueden repartir en partes (y hasta entre dos PC) con <code>render_partes.mjs</code>: pedíselo si un render se hace eterno.</li>
+  <li>Al cerrar un trabajo, <code>/cerrar-trabajo</code> saca el material pesado de <code>public\</code>: así los renders de los demás trabajos siguen rápidos.</li>
+</ul>
+
+<h2><span class="n">8</span>Si algo falla</h2>
+<ul>
+  <li><b>Primero, contale a Claude qué pasó</b> (pegá el error o una captura). Casi siempre lo resuelve.</li>
+  <li>Para chequear que la suite está sana: <code>node scripts/verificar-suite.mjs --rapido</code> (o pedile <i>“verificá la suite”</i>).</li>
+  <li><b>Después de un <code>git pull</code> con cambios grandes:</b> pedile <i>“fijate si hay que instalar algo nuevo”</i>. Corre <code>npm install</code> y la verificación rápida, y si hace falta suma lo que esté en <code>setup/all_requeriments.txt</code>.</li>
+  <li><b>“ffmpeg no se reconoce”</b> en Git Bash: es normal, Git Bash no ve los programas instalados con winget; los scripts usan la ruta fija <code>C:\Videos\_herramientas\ffmpeg</code>. Si Windows actualizó ffmpeg y esa ruta dejó de andar, pedile a Claude que rehaga el acceso fijo.</li>
+  <li><b>Un render falla con “no se encuentra el archivo”:</b> faltan los videos o audios de ese trabajo en <code>public\trabajos\&lt;ID&gt;\</code> (no viajan por Git). Pedíselos a Claudio.</li>
+  <li><b>Git pide usuario y contraseña</b> o dice “repository not found”: el inicio de sesión no quedó hecho con la cuenta de Claudio. Repetilo con <b>Continue with Google</b> y el Gmail de Claudio (paso 4); si quedó guardada otra cuenta, pedile a Claude que borre la credencial de GitHub guardada en Windows.</li>
+  <li>Si nada de eso funciona, avisale a Claudio con el mensaje de error.</li>
+</ul>
+
+</body>
+</html>

@@ -6,6 +6,7 @@
 // lip sync) se dibuja en 2D encima, siguiendo la cabeza: ver caraEnEscena().
 // Coordenadas del modelo: las del .ai (puntos, origen en los pies, y hacia abajo); el grupo raíz invierte la y.
 import { ThreeCanvas } from "@remotion/three";
+import { tramosRapidos } from "../../plantillas/comunes/tramosDesenfoque";
 import React, { useMemo } from "react";
 import * as THREE from "three";
 import { SVGLoader } from "three/examples/jsm/loaders/SVGLoader.js";
@@ -364,6 +365,19 @@ export const EscenaBloomie3D: React.FC<{
     </ThreeCanvas>
   );
 };
+
+// Tramos de desenfoque de movimiento para un giro 3D: se sigue un punto del borde del cuerpo (a `radio` pt del eje,
+// en px del cuadro con la escala) que se corre con sin(rotY) y se acerca/aleja con cos(rotY), más los pies.
+// rotY[f] y pies[f] por cuadro. Uso: <ConDesenfoque tramos={…}><PorCuadro dibujar={(f) => escena y cara} /></ConDesenfoque>
+export const RADIO_GIRO_3D = 150; // pt: medio ancho de Bloomie
+export const tramosDeGiro3D = (rotY: number[], pies: [number, number][], escala: number, umbral?: number) =>
+  tramosRapidos(
+    rotY.map((r, f): [number, number][] => [
+      pies[f],
+      [pies[f][0] + Math.sin(r) * RADIO_GIRO_3D * escala, pies[f][1] + Math.cos(r) * RADIO_GIRO_3D * escala * 0.3],
+    ]),
+    { umbral },
+  );
 
 // Transformación (SVG) para dibujar la cara 2D sobre la cabeza 3D: la cara es un plano a CARA_Z del centro de la
 // cabeza que gira con el cuerpo (se angosta con el coseno y se corre con el seno). De perfil no queda de canto:

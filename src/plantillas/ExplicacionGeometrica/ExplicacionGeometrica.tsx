@@ -10,7 +10,9 @@ import { PersonajeRig, type PersonajeRigProps } from "../PersonajeRig/PersonajeR
 import { poseEn } from "../PersonajeRig/calculos";
 import { type Caja, cajaEnCuadro, cajasEnPose } from "../../rig/cajas";
 import { partirEnCarteles, ubicarCartel, type Ubicacion } from "../comunes/zonaSegura";
-import { PersonajePoses } from "../../rig/PersonajePoses";
+import { type EstadoPoses, PersonajePosesAnimado, tramosDePoses } from "../../rig/PersonajePoses";
+import { type Desenfoque, DesenfoqueMovimiento, opcionesDe, type Tramo } from "../comunes/Desenfoque";
+import { unirTramos } from "../comunes/tramosDesenfoque";
 import { cajasDePose } from "../../rig/poses";
 import { holguraVaiven } from "../../rig/vaiven";
 import { visemaEn, visemasRhubarb, type TramoVisema } from "../../rig/lipsync";
@@ -32,6 +34,7 @@ export const PIZARRA = { x: 40, y: 110, w: 1000, h: 1050 }; // zona de la explic
 const SUB = { x0: 50, ancho: 980, techo: 1140, relleno: 14, interlinea: 1.16, tamanios: [40, 37, 34], maxLineas: 2, muestreo: 3 };
 type ParteSub = { texto: string; desde: number; hasta: number; u: Ubicacion; primera: boolean; inicio: number }; // inicio: índice de su 1.ª palabra en la línea
 const SUB_ENTRA = 5; // frames del fundido de cada subtítulo
+const SUB_SUBE = 36; // px que sube el subtítulo al entrar (solo con desenfoqueEntrada: el blur necesita movimiento)
 // Resaltado palabra por palabra (si la línea trae `palabras` con tiempos): la que se dice lleva un marcador
 // amarillo; las que faltan decir, un poco más claras. El marcador es una sombra: no corre el texto de lugar.
 const MARCADOR = "255,226,122"; // amarillo resaltador (rgb)
@@ -54,16 +57,27 @@ export type PersonajeEnEscena = ConfigPersonaje & {
   posesExtra?: SegmentoPose[];
   movimiento?: Movimiento; // poses intermedias (caminos) y temblor de espera
   piel?: string; // modo poses: tono de piel (carpeta poses_<piel>/ de scripts/rig/tono_piel.py)
+  desenfoque?: Desenfoque; // motion blur del personaje (rig: movimientos rápidos; poses: además el pop de cada cambio)
 };
 
 // Lo que necesita un personaje por poses en cada cuadro (se arma una vez)
-type Animacion = { segs: SegmentoPose[]; bocas: TramoVisema[] };
-const animacionDe = (p: PersonajeEnEscena, t: Tiempos, fps: number): Animacion => ({
-  segs: lineaDePoses(p.nombre, t, p.poseDeGesto ?? {}, p.posesExtra ?? []),
-  bocas: t.lineas.filter((l) => l.quien === p.nombre).flatMap((l) => visemasRhubarb({ mouthCues: l.bocas }, { fps, desde: l.desde })),
-});
+type Animacion = { segs: SegmentoPose[]; bocas: TramoVisema[]; tramos: Tramo[] };
+const estadoPoses = (p: PersonajeEnEscena, a: Omit<Animacion, "tramos">, f: number): EstadoPoses => {
+  const { pose, desdeCambio } = poseEnCuadro(a.segs, f, "neutra", p.movimiento);
+  return { personaje: p.nombre, pose, visema: visemaEn(a.bocas, f), x: p.x, y: p.y, escala: p.escala, espejo: p.espejo, desdeCambio, piel: p.piel };
+};
+const animacionDe = (p: PersonajeEnEscena, t: Tiempos, fps: number): Animacion => {
+  const a = {
+    segs: lineaDePoses(p.nombre, t, p.poseDeGesto ?? {}, p.posesExtra ?? []),
+    bocas: t.lineas.filter((l) => l.quien === p.nombre).flatMap((l) => visemasRhubarb({ mouthCues: l.bocas }, { fps, desde: l.desde })),
+  };
+  const d = opcionesDe(p.desenfoque);
+  const tramos = p.modo === "poses" && d && !d.tramos ? tramosDePoses(Array.from({ length: t.total }, (_, f) => estadoPoses(p, a, f)), d.umbral) : [];
+  return { ...a, tramos };
+};
 
 export type ExplicacionGeometricaProps = {
+  desenfoqueEntrada?: Desenfoque; // los subtítulos entran subiendo con blur (quietos quedan nítidos)
   tiempos: Tiempos;
   personajes: PersonajeEnEscena[];
   pizarra: (t: Tiempos) => React.ReactNode;
@@ -129,7 +143,16 @@ const Palabras: React.FC<{ parte: ParteSub; palabras: { text: string; fromMs: nu
   );
 };
 
-const Subtitulo: React.FC<{ t: Tiempos; personajes: PersonajeEnEscena[]; partes: Map<string, ParteSub[]>; resaltar: Resaltado[] }> = ({ t, personajes, partes, resaltar }) => {
+// Tramos de entrada y salida de cada subtítulo (los mismos cuadros del fundido de Subtitulo)
+const tramosSubtitulos = (partes: Map<string, ParteSub[]>): Tramo[] =>
+  unirTramos(
+    [...partes.values()].flat().flatMap((x) => [
+      { desde: x.desde - 1, hasta: x.desde + SUB_ENTRA + 1 },
+      { desde: x.hasta + 2, hasta: x.hasta + 9 },
+    ]),
+  );
+
+const Subtitulo: React.FC<{ t: Tiempos; personajes: PersonajeEnEscena[]; partes: Map<string, ParteSub[]>; resaltar: Resaltado[]; sube?: boolean }> = ({ t, personajes, partes, resaltar, sube = false }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const l = lineaEn(t, f);
@@ -141,7 +164,7 @@ const Subtitulo: React.FC<{ t: Tiempos; personajes: PersonajeEnEscena[]; partes:
   const u = parte.u;
   const op = interpolate(f, [parte.desde - 1, parte.desde + SUB_ENTRA, parte.hasta + 2, parte.hasta + 8], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
-    <div style={{ position: "absolute", left: SUB.x0, width: SUB.ancho, top: u.top, height: u.alto, display: "flex", alignItems: "flex-end", justifyContent: "center", opacity: op }}>
+    <div style={{ position: "absolute", left: SUB.x0, width: SUB.ancho, top: u.top, height: u.alto, display: "flex", alignItems: "flex-end", justifyContent: "center", opacity: op, transform: sube ? `translateY(${(1 - op) * SUB_SUBE}px)` : undefined }}>
       <div
         style={{
           fontFamily: FUENTE,
@@ -173,6 +196,7 @@ const propsDe = (p: PersonajeEnEscena, t: Tiempos): PersonajeRigProps => ({
   espejo: p.espejo ?? false,
   expresion: p.caraBase ?? "base",
   sombra: true,
+  desenfoque: p.desenfoque ?? false,
   pistas: pistasDe(p, t),
 });
 
@@ -232,21 +256,22 @@ const Personaje: React.FC<{ props: PersonajeRigProps }> = ({ props }) => (
 
 const SOMBRA_POSES = { ancho: 120, alto: 18, opacidad: 0.16 };
 const PersonajeEnPoses: React.FC<{ p: PersonajeEnEscena; a: Animacion }> = ({ p, a }) => {
-  const f = useCurrentFrame();
-  const { pose, desdeCambio } = poseEnCuadro(a.segs, f, "neutra", p.movimiento);
+  const estadoEn = useMemo(() => (f: number) => estadoPoses(p, a, f), [p, a]);
   return (
     <AbsoluteFill>
       <div style={{ position: "absolute", left: p.x - SOMBRA_POSES.ancho, top: p.y - SOMBRA_POSES.alto / 2, width: SOMBRA_POSES.ancho * 2, height: SOMBRA_POSES.alto, borderRadius: "50%", background: "#000", opacity: SOMBRA_POSES.opacidad }} />
-      <PersonajePoses personaje={p.nombre} pose={pose} visema={visemaEn(a.bocas, f)} x={p.x} y={p.y} escala={p.escala} espejo={p.espejo} desdeCambio={desdeCambio} f={f} piel={p.piel} />
+      <PersonajePosesAnimado estadoEn={estadoEn} desenfoque={p.desenfoque} tramos={a.tramos} />
     </AbsoluteFill>
   );
 };
 
-export const ExplicacionGeometrica: React.FC<ExplicacionGeometricaProps> = ({ tiempos: t, personajes, pizarra, musica, efectos = [], subtitulos = true, resaltar = [] }) => {
+export const ExplicacionGeometrica: React.FC<ExplicacionGeometricaProps> = ({ tiempos: t, personajes, pizarra, musica, efectos = [], subtitulos = true, resaltar = [], desenfoqueEntrada }) => {
   const { fps } = useVideoConfig();
   const props = useMemo(() => personajes.map((p) => propsDe(p, t)), [personajes, t]);
   const anim = useMemo(() => personajes.map((p) => animacionDe(p, t, fps)), [personajes, t, fps]);
   const partes = useMemo(() => ubicarSubtitulos(t, personajes, props, anim, fps), [t, personajes, props, anim, fps]);
+  const dSub = opcionesDe(desenfoqueEntrada);
+  const tramosSub = useMemo(() => (dSub && !dSub.tramos ? tramosSubtitulos(partes) : []), [partes, dSub]);
   // Ducking: la música baja mientras hay voz
   const volMusica = (f: number) => {
     if (!musica) return 0;
@@ -263,7 +288,14 @@ export const ExplicacionGeometrica: React.FC<ExplicacionGeometricaProps> = ({ ti
       <Cuaderno />
       <div style={{ position: "absolute", left: PIZARRA.x, top: PIZARRA.y, width: PIZARRA.w, height: PIZARRA.h }}>{pizarra(t)}</div>
       {personajes.map((p, k) => (p.modo === "poses" ? <PersonajeEnPoses key={p.nombre} p={p} a={anim[k]} /> : <Personaje key={p.nombre} props={props[k]} />))}
-      {subtitulos && <Subtitulo t={t} personajes={personajes} partes={partes} resaltar={resaltar} />}
+      {subtitulos &&
+        (dSub ? (
+          <DesenfoqueMovimiento {...dSub} tramos={dSub.tramos ?? tramosSub}>
+            <Subtitulo t={t} personajes={personajes} partes={partes} resaltar={resaltar} sube />
+          </DesenfoqueMovimiento>
+        ) : (
+          <Subtitulo t={t} personajes={personajes} partes={partes} resaltar={resaltar} />
+        ))}
       {t.lineas.map((l) => (
         <Sequence key={l.id} from={l.desde} durationInFrames={l.hasta - l.desde + 15} layout="none" name={`voz ${l.id}`}>
           <Audio src={staticFile(l.audio)} />

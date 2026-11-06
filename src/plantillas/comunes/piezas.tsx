@@ -10,6 +10,7 @@ import {
   useVideoConfig,
 } from "remotion";
 import { conAlfa, MARCAS, type Marca } from "../../marcas";
+import { DesenfoqueEntrada, DesenfoqueMovimiento } from "./Desenfoque";
 
 const DURACION_REVEAL = 20;
 const DURACION_FADE = 14;
@@ -28,14 +29,31 @@ export const useT = () => {
   return (frames: number) => Math.round(frames * f);
 };
 
+const useDuracionEntrada = (duracion: number) => {
+  const t = useT();
+  return Math.max(6, t(duracion));
+};
 const useEntrada = (desde: number, duracion = DURACION_REVEAL) => {
   const frame = useCurrentFrame();
-  const t = useT();
+  const dura = useDuracionEntrada(duracion);
   const { ease } = useMarca();
-  return interpolate(frame, [desde, desde + Math.max(6, t(duracion))], [0, 1], {
+  return interpolate(frame, [desde, desde + dura], [0, 1], {
     ...clamp,
     easing: ease,
   });
+};
+
+// Con desenfoqueEntrada (contexto de la plantilla): motion blur solo mientras entra; quieto queda nítido.
+// La pieza que se mueve calcula su entrada adentro (las muestras del blur la recalculan en otros sub-cuadros).
+const ConBlurEntrada: React.FC<{ desde: number; duracion: number; children: React.ReactNode }> = ({ desde, duracion, children }) => {
+  const d = React.useContext(DesenfoqueEntrada);
+  const dura = useDuracionEntrada(duracion);
+  if (!d) return <>{children}</>;
+  return (
+    <DesenfoqueMovimiento capa="bloque" {...d} tramos={d.tramos ?? [{ desde, hasta: desde + dura + 1 }]}>
+      {children}
+    </DesenfoqueMovimiento>
+  );
 };
 
 // ---------- Texto ----------
@@ -44,15 +62,18 @@ export const Reveal: React.FC<{
   desde: number;
   children: React.ReactNode;
   style?: React.CSSProperties;
-}> = ({ desde, children, style }) => {
-  const p = useEntrada(desde);
-  return (
-    <div style={{ overflow: "hidden", paddingBottom: "0.1em", marginBottom: "-0.1em" }}>
-      <div style={{ transform: `translateY(${(1 - p) * 100}%)`, opacity: p, ...style }}>
+}> = ({ desde, children, style }) => (
+  <div style={{ overflow: "hidden", paddingBottom: "0.1em", marginBottom: "-0.1em" }}>
+    <ConBlurEntrada desde={desde} duracion={DURACION_REVEAL}>
+      <RevealMovil desde={desde} style={style}>
         {children}
-      </div>
-    </div>
-  );
+      </RevealMovil>
+    </ConBlurEntrada>
+  </div>
+);
+const RevealMovil: React.FC<{ desde: number; children: React.ReactNode; style?: React.CSSProperties }> = ({ desde, children, style }) => {
+  const p = useEntrada(desde);
+  return <div style={{ transform: `translateY(${(1 - p) * 100}%)`, opacity: p, ...style }}>{children}</div>;
 };
 
 // Bloque que sube un poco mientras aparece (textos chicos, logos)
@@ -61,12 +82,20 @@ export const Aparece: React.FC<{
   children: React.ReactNode;
   style?: React.CSSProperties;
 }> = ({ desde, children, style }) => {
-  const p = useEntrada(desde, DURACION_FADE + 6);
+  const blur = React.useContext(DesenfoqueEntrada);
+  if (!blur) return <ApareceMovil desde={desde} style={style}>{children}</ApareceMovil>;
+  // Con blur, el lugar (style: position, top…) va afuera y adentro solo lo que se mueve
   return (
-    <div style={{ opacity: p, transform: `translateY(${(1 - p) * 30}px)`, ...style }}>
-      {children}
+    <div style={style}>
+      <ConBlurEntrada desde={desde} duracion={DURACION_FADE + 6}>
+        <ApareceMovil desde={desde}>{children}</ApareceMovil>
+      </ConBlurEntrada>
     </div>
   );
+};
+const ApareceMovil: React.FC<{ desde: number; children: React.ReactNode; style?: React.CSSProperties }> = ({ desde, children, style }) => {
+  const p = useEntrada(desde, DURACION_FADE + 6);
+  return <div style={{ opacity: p, transform: `translateY(${(1 - p) * 30}px)`, ...style }}>{children}</div>;
 };
 
 // Etiqueta en mayúsculas con letras espaciadas

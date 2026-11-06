@@ -27,6 +27,7 @@ import {
   useMarca,
   useT,
 } from "../comunes/piezas";
+import { type Desenfoque, DesenfoqueEntrada, opcionesDe } from "../comunes/Desenfoque";
 
 // ---------- Datos ----------
 type DosLineas = [string, string];
@@ -77,6 +78,7 @@ export type HistoriaMarcaProps = {
   musica: string; // ruta dentro de public/
   ritmo: number; // 1 = tiempos de referencia (~30 s); < 1 acelera las apariciones
   escenas: Escena[];
+  desenfoqueEntrada?: Desenfoque; // los textos entran con motion blur (Reveal y Aparece); quietos, nítidos
 };
 
 export const duracionHistoria = (p: HistoriaMarcaProps) =>
@@ -314,25 +316,27 @@ const RenderEscena: React.FC<{ e: Escena }> = ({ e }) => {
 };
 
 // ---------- Composición ----------
-export const HistoriaMarca: React.FC<HistoriaMarcaProps> = ({ marca, musica, ritmo, escenas }) => {
+export const HistoriaMarca: React.FC<HistoriaMarcaProps> = ({ marca, musica, ritmo, escenas, desenfoqueEntrada }) => {
   const m = MARCAS[marca];
   let desde = 0;
   return (
-    <MarcaContext.Provider value={m}>
-      <Ritmo.Provider value={ritmo}>
-        <AbsoluteFill style={{ background: m.colores.fondo }}>
-          <Audio src={staticFile(musica)} />
-          {escenas.map((e, i) => {
-            const inicio = desde;
-            desde += e.dura;
-            return (
-              <Sequence key={i} from={inicio} durationInFrames={e.dura}>
-                <RenderEscena e={e} />
-              </Sequence>
-            );
-          })}
-        </AbsoluteFill>
-      </Ritmo.Provider>
-    </MarcaContext.Provider>
+    <DesenfoqueEntrada.Provider value={opcionesDe(desenfoqueEntrada)}>
+      <MarcaContext.Provider value={m}>
+        <Ritmo.Provider value={ritmo}>
+          <AbsoluteFill style={{ background: m.colores.fondo }}>
+            <Audio src={staticFile(musica)} />
+            {escenas.map((e, i) => {
+              const inicio = desde;
+              desde += e.dura;
+              return (
+                <Sequence key={i} from={inicio} durationInFrames={e.dura}>
+                  <RenderEscena e={e} />
+                </Sequence>
+              );
+            })}
+          </AbsoluteFill>
+        </Ritmo.Provider>
+      </MarcaContext.Provider>
+    </DesenfoqueEntrada.Provider>
   );
 };

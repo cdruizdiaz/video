@@ -1,0 +1,92 @@
+{
+  "archivo": "voz_3.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1812,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1660,
+      "texto": "Inteligencia aplicada a tu bolsillo."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Intel",
+      "fromMs": 10,
+      "toMs": 260,
+      "dtwMs": 200,
+      "p": 0.59798
+    },
+    {
+      "text": "igen",
+      "fromMs": 260,
+      "toMs": 460,
+      "dtwMs": 400,
+      "p": 0.991932
+    },
+    {
+      "text": "cia",
+      "fromMs": 480,
+      "toMs": 580,
+      "dtwMs": 520,
+      "p": 0.999174
+    },
+    {
+      "text": " aplic",
+      "fromMs": 640,
+      "toMs": 890,
+      "dtwMs": 720,
+      "p": 0.998831
+    },
+    {
+      "text": "ada",
+      "fromMs": 890,
+      "toMs": 1000,
+      "dtwMs": 940,
+      "p": 0.998207
+    },
+    {
+      "text": " a",
+      "fromMs": 1060,
+      "toMs": 1100,
+      "dtwMs": 1060,
+      "p": 0.958027
+    },
+    {
+      "text": " tu",
+      "fromMs": 1100,
+      "toMs": 1200,
+      "dtwMs": 1120,
+      "p": 0.994163
+    },
+    {
+      "text": " bol",
+      "fromMs": 1200,
+      "toMs": 1360,
+      "dtwMs": 1240,
+      "p": 0.991806
+    },
+    {
+      "text": "s",
+      "fromMs": 1360,
+      "toMs": 1410,
+      "dtwMs": 1360,
+      "p": 0.954397
+    },
+    {
+      "text": "illo",
+      "fromMs": 1410,
+      "toMs": 1590,
+      "dtwMs": 1540,
+      "p": 0.999687
+    },
+    {
+      "text": ".",
+      "fromMs": 1660,
+      "toMs": 1660,
+      "dtwMs": 1640,
+      "p": 0.885921
+    }
+  ]
+}
