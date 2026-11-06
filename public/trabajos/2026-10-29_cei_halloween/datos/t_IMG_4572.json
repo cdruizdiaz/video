@@ -1,0 +1,308 @@
+{
+  "archivo": "IMG_4572.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 12940,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3060,
+      "texto": "¿Qué país investigaste?"
+    },
+    {
+      "desdeMs": 3060,
+      "hastaMs": 4060,
+      "texto": "Noruega."
+    },
+    {
+      "desdeMs": 4060,
+      "hastaMs": 7260,
+      "texto": "¿Y qué es la cosa más interesante que encontiste?"
+    },
+    {
+      "desdeMs": 7260,
+      "hastaMs": 11740,
+      "texto": "Que se quemaron el barco con la persona dentro de él."
+    },
+    {
+      "desdeMs": 11740,
+      "hastaMs": 12940,
+      "texto": "Perfecto."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 130,
+      "dtwMs": 1520,
+      "p": 0.735564
+    },
+    {
+      "text": "Qué",
+      "fromMs": 130,
+      "toMs": 510,
+      "dtwMs": 1680,
+      "p": 0.615404
+    },
+    {
+      "text": " país",
+      "fromMs": 510,
+      "toMs": 1050,
+      "dtwMs": 2020,
+      "p": 0.646874
+    },
+    {
+      "text": " investig",
+      "fromMs": 1500,
+      "toMs": 2110,
+      "dtwMs": 2820,
+      "p": 0.520938
+    },
+    {
+      "text": "aste",
+      "fromMs": 2110,
+      "toMs": 2640,
+      "dtwMs": 2900,
+      "p": 0.868132
+    },
+    {
+      "text": "?",
+      "fromMs": 2640,
+      "toMs": 3050,
+      "dtwMs": 3160,
+      "p": 0.736981
+    },
+    {
+      "text": " Nor",
+      "fromMs": 3060,
+      "toMs": 3480,
+      "dtwMs": 3420,
+      "p": 0.536954
+    },
+    {
+      "text": "ue",
+      "fromMs": 3480,
+      "toMs": 3760,
+      "dtwMs": 3600,
+      "p": 0.87279
+    },
+    {
+      "text": "ga",
+      "fromMs": 3760,
+      "toMs": 4060,
+      "dtwMs": 3720,
+      "p": 0.978251
+    },
+    {
+      "text": ".",
+      "fromMs": 4060,
+      "toMs": 4060,
+      "dtwMs": 4440,
+      "p": 0.511202
+    },
+    {
+      "text": " ¿",
+      "fromMs": 4060,
+      "toMs": 4130,
+      "dtwMs": 4540,
+      "p": 0.909127
+    },
+    {
+      "text": "Y",
+      "fromMs": 4130,
+      "toMs": 4200,
+      "dtwMs": 4560,
+      "p": 0.586465
+    },
+    {
+      "text": " qué",
+      "fromMs": 4200,
+      "toMs": 4420,
+      "dtwMs": 4720,
+      "p": 0.595407
+    },
+    {
+      "text": " es",
+      "fromMs": 4420,
+      "toMs": 4560,
+      "dtwMs": 4860,
+      "p": 0.866428
+    },
+    {
+      "text": " la",
+      "fromMs": 4560,
+      "toMs": 4700,
+      "dtwMs": 4980,
+      "p": 0.546434
+    },
+    {
+      "text": " cosa",
+      "fromMs": 4700,
+      "toMs": 4990,
+      "dtwMs": 5180,
+      "p": 0.714604
+    },
+    {
+      "text": " más",
+      "fromMs": 4990,
+      "toMs": 5210,
+      "dtwMs": 5180,
+      "p": 0.983594
+    },
+    {
+      "text": " interesante",
+      "fromMs": 5560,
+      "toMs": 6000,
+      "dtwMs": 5760,
+      "p": 0.872092
+    },
+    {
+      "text": " que",
+      "fromMs": 6060,
+      "toMs": 6230,
+      "dtwMs": 6600,
+      "p": 0.960089
+    },
+    {
+      "text": " encont",
+      "fromMs": 6230,
+      "toMs": 6680,
+      "dtwMs": 6960,
+      "p": 0.650694
+    },
+    {
+      "text": "iste",
+      "fromMs": 6680,
+      "toMs": 6960,
+      "dtwMs": 7120,
+      "p": 0.217664
+    },
+    {
+      "text": "?",
+      "fromMs": 6960,
+      "toMs": 7170,
+      "dtwMs": 7360,
+      "p": 0.978402
+    },
+    {
+      "text": " Que",
+      "fromMs": 7260,
+      "toMs": 7630,
+      "dtwMs": 7840,
+      "p": 0.820332
+    },
+    {
+      "text": " se",
+      "fromMs": 7630,
+      "toMs": 7870,
+      "dtwMs": 8440,
+      "p": 0.389299
+    },
+    {
+      "text": " quem",
+      "fromMs": 7870,
+      "toMs": 8360,
+      "dtwMs": 8440,
+      "p": 0.078974
+    },
+    {
+      "text": "aron",
+      "fromMs": 8760,
+      "toMs": 8850,
+      "dtwMs": 8600,
+      "p": 0.42413
+    },
+    {
+      "text": " el",
+      "fromMs": 8850,
+      "toMs": 9090,
+      "dtwMs": 8900,
+      "p": 0.496661
+    },
+    {
+      "text": " bar",
+      "fromMs": 9090,
+      "toMs": 9460,
+      "dtwMs": 9420,
+      "p": 0.177034
+    },
+    {
+      "text": "co",
+      "fromMs": 9460,
+      "toMs": 9740,
+      "dtwMs": 9660,
+      "p": 0.58461
+    },
+    {
+      "text": " con",
+      "fromMs": 9740,
+      "toMs": 9940,
+      "dtwMs": 10060,
+      "p": 0.787695
+    },
+    {
+      "text": " la",
+      "fromMs": 10070,
+      "toMs": 10210,
+      "dtwMs": 10200,
+      "p": 0.800257
+    },
+    {
+      "text": " persona",
+      "fromMs": 10330,
+      "toMs": 10950,
+      "dtwMs": 10820,
+      "p": 0.497472
+    },
+    {
+      "text": " dentro",
+      "fromMs": 11690,
+      "toMs": 11740,
+      "dtwMs": 11220,
+      "p": 0.17379
+    },
+    {
+      "text": " de",
+      "fromMs": 11740,
+      "toMs": 11740,
+      "dtwMs": 11680,
+      "p": 0.514458
+    },
+    {
+      "text": " él",
+      "fromMs": 11740,
+      "toMs": 11740,
+      "dtwMs": 11680,
+      "p": 0.461296
+    },
+    {
+      "text": ".",
+      "fromMs": 11740,
+      "toMs": 11740,
+      "dtwMs": 12020,
+      "p": 0.895302
+    },
+    {
+      "text": " Perfect",
+      "fromMs": 11740,
+      "toMs": 12790,
+      "dtwMs": 12480,
+      "p": 0.720232
+    },
+    {
+      "text": "o",
+      "fromMs": 12790,
+      "toMs": 12940,
+      "dtwMs": 12780,
+      "p": 0.995463
+    },
+    {
+      "text": ".",
+      "fromMs": 12940,
+      "toMs": 12940,
+      "dtwMs": 12900,
+      "p": 0.812684
+    }
+  ]
+}

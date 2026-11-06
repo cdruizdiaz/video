@@ -1,0 +1,147 @@
+{
+  "archivo": "IMG_4680.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8202,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        759
+      ],
+      [
+        1066,
+        7642
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4607,
+      "texto": "¿Qué color usa la gente en la tradición?"
+    },
+    {
+      "desdeMs": 5607,
+      "hastaMs": 7642,
+      "texto": "Orangelo y negro"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 130,
+      "dtwMs": 1307,
+      "p": 0.662409
+    },
+    {
+      "text": "Qué",
+      "fromMs": 130,
+      "toMs": 510,
+      "dtwMs": 2147,
+      "p": 0.524956
+    },
+    {
+      "text": " color",
+      "fromMs": 510,
+      "toMs": 1177,
+      "dtwMs": 2507,
+      "p": 0.702484
+    },
+    {
+      "text": " usa",
+      "fromMs": 1327,
+      "toMs": 1567,
+      "dtwMs": 2887,
+      "p": 0.302826
+    },
+    {
+      "text": " la",
+      "fromMs": 1567,
+      "toMs": 1827,
+      "dtwMs": 3027,
+      "p": 0.843858
+    },
+    {
+      "text": " gente",
+      "fromMs": 1827,
+      "toMs": 2477,
+      "dtwMs": 3287,
+      "p": 0.81426
+    },
+    {
+      "text": " en",
+      "fromMs": 2477,
+      "toMs": 2607,
+      "dtwMs": 3867,
+      "p": 0.834215
+    },
+    {
+      "text": " la",
+      "fromMs": 2677,
+      "toMs": 2997,
+      "dtwMs": 4047,
+      "p": 0.799122
+    },
+    {
+      "text": " trad",
+      "fromMs": 2997,
+      "toMs": 3517,
+      "dtwMs": 4327,
+      "p": 0.973441
+    },
+    {
+      "text": "ición",
+      "fromMs": 3517,
+      "toMs": 4047,
+      "dtwMs": 4607,
+      "p": 0.994858
+    },
+    {
+      "text": "?",
+      "fromMs": 4157,
+      "toMs": 4597,
+      "dtwMs": 4987,
+      "p": 0.978105
+    },
+    {
+      "text": " Or",
+      "fromMs": 5607,
+      "toMs": 5077,
+      "dtwMs": 6067,
+      "p": 0.649163
+    },
+    {
+      "text": "ang",
+      "fromMs": 5607,
+      "toMs": 5777,
+      "dtwMs": 6407,
+      "p": 0.38122
+    },
+    {
+      "text": "elo",
+      "fromMs": 5777,
+      "toMs": 6347,
+      "dtwMs": 6487,
+      "p": 0.279414
+    },
+    {
+      "text": " y",
+      "fromMs": 6657,
+      "toMs": 6677,
+      "dtwMs": 7067,
+      "p": 0.973283
+    },
+    {
+      "text": " negro",
+      "fromMs": 6937,
+      "toMs": 7642,
+      "dtwMs": 7267,
+      "p": 0.588164
+    }
+  ]
+}

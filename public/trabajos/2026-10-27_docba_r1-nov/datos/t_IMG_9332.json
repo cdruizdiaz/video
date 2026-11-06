@@ -1,0 +1,82 @@
+{
+  "archivo": "IMG_9332.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7270,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        2743,
+        4799
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 2743,
+      "hastaMs": 4543,
+      "texto": "y dejar que pasen las horas."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " y",
+      "fromMs": 2743,
+      "toMs": 2843,
+      "dtwMs": 3043,
+      "p": 0.737711
+    },
+    {
+      "text": " dejar",
+      "fromMs": 2983,
+      "toMs": 3383,
+      "dtwMs": 3363,
+      "p": 0.891101
+    },
+    {
+      "text": " que",
+      "fromMs": 3383,
+      "toMs": 3433,
+      "dtwMs": 4023,
+      "p": 0.959173
+    },
+    {
+      "text": " pas",
+      "fromMs": 3553,
+      "toMs": 3743,
+      "dtwMs": 4223,
+      "p": 0.994741
+    },
+    {
+      "text": "en",
+      "fromMs": 3743,
+      "toMs": 3863,
+      "dtwMs": 4283,
+      "p": 0.999409
+    },
+    {
+      "text": " las",
+      "fromMs": 3983,
+      "toMs": 4043,
+      "dtwMs": 4383,
+      "p": 0.996864
+    },
+    {
+      "text": " horas",
+      "fromMs": 4043,
+      "toMs": 4343,
+      "dtwMs": 4523,
+      "p": 0.992712
+    },
+    {
+      "text": ".",
+      "fromMs": 4343,
+      "toMs": 4543,
+      "dtwMs": 4523,
+      "p": 0.764669
+    }
+  ]
+}

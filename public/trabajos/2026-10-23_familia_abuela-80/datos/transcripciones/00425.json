@@ -1,0 +1,64 @@
+{
+  "archivo": "00425.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 11040,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2600,
+      "texto": "¡Qué miedo, Chis!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 10,
+      "toMs": 140,
+      "dtwMs": 1680,
+      "p": 0.742858
+    },
+    {
+      "text": "Qué",
+      "fromMs": 140,
+      "toMs": 570,
+      "dtwMs": 1680,
+      "p": 0.904306
+    },
+    {
+      "text": " miedo",
+      "fromMs": 570,
+      "toMs": 1290,
+      "dtwMs": 2020,
+      "p": 0.997562
+    },
+    {
+      "text": ",",
+      "fromMs": 1290,
+      "toMs": 1570,
+      "dtwMs": 2160,
+      "p": 0.713181
+    },
+    {
+      "text": " Ch",
+      "fromMs": 1570,
+      "toMs": 1850,
+      "dtwMs": 2340,
+      "p": 0.480262
+    },
+    {
+      "text": "is",
+      "fromMs": 1850,
+      "toMs": 2130,
+      "dtwMs": 2580,
+      "p": 0.474465
+    },
+    {
+      "text": "!",
+      "fromMs": 2130,
+      "toMs": 2600,
+      "dtwMs": 2580,
+      "p": 0.999981
+    }
+  ]
+}

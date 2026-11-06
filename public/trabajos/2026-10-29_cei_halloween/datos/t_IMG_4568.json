@@ -1,0 +1,50 @@
+{
+  "archivo": "IMG_4568.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2550,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2080,
+      "texto": "Paper, paper, money"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Paper",
+      "fromMs": 530,
+      "toMs": 2000,
+      "dtwMs": 1020,
+      "p": 0.0569683
+    },
+    {
+      "text": ",",
+      "fromMs": 2000,
+      "toMs": 2000,
+      "dtwMs": 1080,
+      "p": 0.570858
+    },
+    {
+      "text": " paper",
+      "fromMs": 2010,
+      "toMs": 2030,
+      "dtwMs": 1660,
+      "p": 0.852326
+    },
+    {
+      "text": ",",
+      "fromMs": 2030,
+      "toMs": 2040,
+      "dtwMs": 1680,
+      "p": 0.801646
+    },
+    {
+      "text": " money",
+      "fromMs": 2040,
+      "toMs": 2080,
+      "dtwMs": 2060,
+      "p": 0.943961
+    }
+  ]
+}

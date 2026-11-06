@@ -1,0 +1,155 @@
+{
+  "archivo": "IMG_8443.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5600,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5600,
+      "texto": "¿Qué pasa con tu traducción cuando la llevas a legalizar al colegio?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 90,
+      "dtwMs": 1580,
+      "p": 0.0958989
+    },
+    {
+      "text": "Qué",
+      "fromMs": 90,
+      "toMs": 370,
+      "dtwMs": 2320,
+      "p": 0.888071
+    },
+    {
+      "text": " pasa",
+      "fromMs": 370,
+      "toMs": 690,
+      "dtwMs": 2540,
+      "p": 0.989406
+    },
+    {
+      "text": " con",
+      "fromMs": 740,
+      "toMs": 1020,
+      "dtwMs": 2720,
+      "p": 0.981263
+    },
+    {
+      "text": " tu",
+      "fromMs": 1020,
+      "toMs": 1210,
+      "dtwMs": 2880,
+      "p": 0.954134
+    },
+    {
+      "text": " trad",
+      "fromMs": 1210,
+      "toMs": 1580,
+      "dtwMs": 3100,
+      "p": 0.996248
+    },
+    {
+      "text": "uc",
+      "fromMs": 1580,
+      "toMs": 1760,
+      "dtwMs": 3240,
+      "p": 0.998508
+    },
+    {
+      "text": "ción",
+      "fromMs": 1760,
+      "toMs": 2130,
+      "dtwMs": 3400,
+      "p": 0.982456
+    },
+    {
+      "text": " cuando",
+      "fromMs": 2280,
+      "toMs": 2690,
+      "dtwMs": 3700,
+      "p": 0.944739
+    },
+    {
+      "text": " la",
+      "fromMs": 2690,
+      "toMs": 2880,
+      "dtwMs": 3840,
+      "p": 0.93147
+    },
+    {
+      "text": " lle",
+      "fromMs": 2880,
+      "toMs": 3130,
+      "dtwMs": 3940,
+      "p": 0.961758
+    },
+    {
+      "text": "vas",
+      "fromMs": 3280,
+      "toMs": 3440,
+      "dtwMs": 4040,
+      "p": 0.997223
+    },
+    {
+      "text": " a",
+      "fromMs": 3440,
+      "toMs": 3470,
+      "dtwMs": 4100,
+      "p": 0.980802
+    },
+    {
+      "text": " legal",
+      "fromMs": 3560,
+      "toMs": 4000,
+      "dtwMs": 4280,
+      "p": 0.984145
+    },
+    {
+      "text": "izar",
+      "fromMs": 4000,
+      "toMs": 4370,
+      "dtwMs": 4560,
+      "p": 0.997916
+    },
+    {
+      "text": " al",
+      "fromMs": 4370,
+      "toMs": 4560,
+      "dtwMs": 4720,
+      "p": 0.952568
+    },
+    {
+      "text": " co",
+      "fromMs": 4560,
+      "toMs": 4720,
+      "dtwMs": 4860,
+      "p": 0.952902
+    },
+    {
+      "text": "leg",
+      "fromMs": 4760,
+      "toMs": 4920,
+      "dtwMs": 4960,
+      "p": 0.999979
+    },
+    {
+      "text": "io",
+      "fromMs": 5030,
+      "toMs": 5200,
+      "dtwMs": 5100,
+      "p": 0.999765
+    },
+    {
+      "text": "?",
+      "fromMs": 5200,
+      "toMs": 5590,
+      "dtwMs": 5340,
+      "p": 0.994736
+    }
+  ]
+}

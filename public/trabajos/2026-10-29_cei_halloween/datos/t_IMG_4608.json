@@ -1,0 +1,113 @@
+{
+  "archivo": "IMG_4608.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5965,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7600,
+      "texto": "of parents follow you and the rest you explain it upstairs okay thank you"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " of",
+      "fromMs": 0,
+      "toMs": 120,
+      "dtwMs": 120,
+      "p": 0.030741
+    },
+    {
+      "text": " parents",
+      "fromMs": 120,
+      "toMs": 460,
+      "dtwMs": 460,
+      "p": 0.898252
+    },
+    {
+      "text": " follow",
+      "fromMs": 600,
+      "toMs": 920,
+      "dtwMs": 800,
+      "p": 0.970763
+    },
+    {
+      "text": " you",
+      "fromMs": 920,
+      "toMs": 1090,
+      "dtwMs": 1100,
+      "p": 0.992511
+    },
+    {
+      "text": " and",
+      "fromMs": 1380,
+      "toMs": 1660,
+      "dtwMs": 1660,
+      "p": 0.659722
+    },
+    {
+      "text": " the",
+      "fromMs": 1660,
+      "toMs": 1860,
+      "dtwMs": 1780,
+      "p": 0.980828
+    },
+    {
+      "text": " rest",
+      "fromMs": 1860,
+      "toMs": 2020,
+      "dtwMs": 2080,
+      "p": 0.989104
+    },
+    {
+      "text": " you",
+      "fromMs": 2140,
+      "toMs": 2380,
+      "dtwMs": 2360,
+      "p": 0.583888
+    },
+    {
+      "text": " explain",
+      "fromMs": 2380,
+      "toMs": 2760,
+      "dtwMs": 2700,
+      "p": 0.959395
+    },
+    {
+      "text": " it",
+      "fromMs": 2760,
+      "toMs": 2870,
+      "dtwMs": 2860,
+      "p": 0.990274
+    },
+    {
+      "text": " upstairs",
+      "fromMs": 2870,
+      "toMs": 3320,
+      "dtwMs": 3300,
+      "p": 0.978597
+    },
+    {
+      "text": " okay",
+      "fromMs": 3320,
+      "toMs": 4080,
+      "dtwMs": 4000,
+      "p": 0.462122
+    },
+    {
+      "text": " thank",
+      "fromMs": 4080,
+      "toMs": 5680,
+      "dtwMs": 5260,
+      "p": 0.933438
+    },
+    {
+      "text": " you",
+      "fromMs": 5920,
+      "toMs": 5960,
+      "dtwMs": 5600,
+      "p": 0.997328
+    }
+  ]
+}

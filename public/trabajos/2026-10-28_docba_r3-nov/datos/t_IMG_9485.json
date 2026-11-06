@@ -1,0 +1,173 @@
+{
+  "archivo": "IMG_9485.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 4573,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        630,
+        4573
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 630,
+      "hastaMs": 4570,
+      "texto": "En DOCBA puedes reservar un espacio para hacer el cierre de años con dos equipos."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " En",
+      "fromMs": 630,
+      "toMs": 760,
+      "dtwMs": 1010,
+      "p": 0.254699
+    },
+    {
+      "text": " DO",
+      "fromMs": 860,
+      "toMs": 890,
+      "dtwMs": 1110,
+      "p": 0.746589
+    },
+    {
+      "text": "C",
+      "fromMs": 890,
+      "toMs": 950,
+      "dtwMs": 1190,
+      "p": 0.963989
+    },
+    {
+      "text": "BA",
+      "fromMs": 950,
+      "toMs": 1080,
+      "dtwMs": 1270,
+      "p": 0.913182
+    },
+    {
+      "text": " puedes",
+      "fromMs": 1080,
+      "toMs": 1470,
+      "dtwMs": 1490,
+      "p": 0.570883
+    },
+    {
+      "text": " reserv",
+      "fromMs": 1470,
+      "toMs": 1860,
+      "dtwMs": 1770,
+      "p": 0.982149
+    },
+    {
+      "text": "ar",
+      "fromMs": 1860,
+      "toMs": 1990,
+      "dtwMs": 1870,
+      "p": 0.994698
+    },
+    {
+      "text": " un",
+      "fromMs": 1990,
+      "toMs": 2070,
+      "dtwMs": 2030,
+      "p": 0.920985
+    },
+    {
+      "text": " espacio",
+      "fromMs": 2150,
+      "toMs": 2630,
+      "dtwMs": 2330,
+      "p": 0.991982
+    },
+    {
+      "text": " para",
+      "fromMs": 2630,
+      "toMs": 2780,
+      "dtwMs": 2610,
+      "p": 0.932741
+    },
+    {
+      "text": " hacer",
+      "fromMs": 2780,
+      "toMs": 2970,
+      "dtwMs": 2810,
+      "p": 0.693552
+    },
+    {
+      "text": " el",
+      "fromMs": 2970,
+      "toMs": 3040,
+      "dtwMs": 2870,
+      "p": 0.373161
+    },
+    {
+      "text": " cier",
+      "fromMs": 3050,
+      "toMs": 3190,
+      "dtwMs": 3050,
+      "p": 0.988887
+    },
+    {
+      "text": "re",
+      "fromMs": 3190,
+      "toMs": 3260,
+      "dtwMs": 3150,
+      "p": 0.9995
+    },
+    {
+      "text": " de",
+      "fromMs": 3260,
+      "toMs": 3330,
+      "dtwMs": 3250,
+      "p": 0.960933
+    },
+    {
+      "text": " años",
+      "fromMs": 3330,
+      "toMs": 3530,
+      "dtwMs": 3370,
+      "p": 0.841113
+    },
+    {
+      "text": " con",
+      "fromMs": 3530,
+      "toMs": 3740,
+      "dtwMs": 3610,
+      "p": 0.889368
+    },
+    {
+      "text": " dos",
+      "fromMs": 3790,
+      "toMs": 3990,
+      "dtwMs": 3710,
+      "p": 0.471821
+    },
+    {
+      "text": " equip",
+      "fromMs": 3990,
+      "toMs": 4330,
+      "dtwMs": 3910,
+      "p": 0.82237
+    },
+    {
+      "text": "os",
+      "fromMs": 4330,
+      "toMs": 4570,
+      "dtwMs": 4130,
+      "p": 0.997942
+    },
+    {
+      "text": ".",
+      "fromMs": 4570,
+      "toMs": 4570,
+      "dtwMs": 4350,
+      "p": 0.528666
+    }
+  ]
+}

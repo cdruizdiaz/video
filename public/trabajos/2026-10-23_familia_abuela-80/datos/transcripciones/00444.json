@@ -1,0 +1,1371 @@
+{
+  "archivo": "00444.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 30560,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 2000,
+      "hastaMs": 3000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 3000,
+      "hastaMs": 4000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 4000,
+      "hastaMs": 5000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 5000,
+      "hastaMs": 7000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 7000,
+      "hastaMs": 9000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 9000,
+      "hastaMs": 10000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 10000,
+      "hastaMs": 11000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 11000,
+      "hastaMs": 12000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 12000,
+      "hastaMs": 13000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 13000,
+      "hastaMs": 14000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 14000,
+      "hastaMs": 15000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 15000,
+      "hastaMs": 16000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 16000,
+      "hastaMs": 17000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 17000,
+      "hastaMs": 18000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 18000,
+      "hastaMs": 19000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 19000,
+      "hastaMs": 20000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 20000,
+      "hastaMs": 21000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 21000,
+      "hastaMs": 22000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 22000,
+      "hastaMs": 23000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 23000,
+      "hastaMs": 24000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 24000,
+      "hastaMs": 25000,
+      "texto": "La abuela en la nariz."
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 30240,
+      "texto": "Gracias."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " La",
+      "fromMs": 10,
+      "toMs": 500,
+      "dtwMs": 500,
+      "p": 0.149238
+    },
+    {
+      "text": " ab",
+      "fromMs": 500,
+      "toMs": 1000,
+      "dtwMs": 760,
+      "p": 0.2121
+    },
+    {
+      "text": "uela",
+      "fromMs": 1000,
+      "toMs": 2000,
+      "dtwMs": 840,
+      "p": 0.972021
+    },
+    {
+      "text": " en",
+      "fromMs": 2000,
+      "toMs": 2000,
+      "dtwMs": 980,
+      "p": 0.0379169
+    },
+    {
+      "text": " la",
+      "fromMs": 2000,
+      "toMs": 2000,
+      "dtwMs": 1040,
+      "p": 0.591574
+    },
+    {
+      "text": " nar",
+      "fromMs": 2000,
+      "toMs": 2000,
+      "dtwMs": 1180,
+      "p": 0.0553692
+    },
+    {
+      "text": "iz",
+      "fromMs": 2000,
+      "toMs": 2000,
+      "dtwMs": 1420,
+      "p": 0.962738
+    },
+    {
+      "text": ".",
+      "fromMs": 2000,
+      "toMs": 2000,
+      "dtwMs": 3060,
+      "p": 0.383611
+    },
+    {
+      "text": " La",
+      "fromMs": 2010,
+      "toMs": 2100,
+      "dtwMs": 4060,
+      "p": 0.348415
+    },
+    {
+      "text": " ab",
+      "fromMs": 2100,
+      "toMs": 2200,
+      "dtwMs": 4320,
+      "p": 0.700185
+    },
+    {
+      "text": "uela",
+      "fromMs": 2200,
+      "toMs": 2390,
+      "dtwMs": 4320,
+      "p": 0.978011
+    },
+    {
+      "text": " en",
+      "fromMs": 2390,
+      "toMs": 2490,
+      "dtwMs": 8700,
+      "p": 0.823145
+    },
+    {
+      "text": " la",
+      "fromMs": 2490,
+      "toMs": 2590,
+      "dtwMs": 8700,
+      "p": 0.93786
+    },
+    {
+      "text": " nar",
+      "fromMs": 2590,
+      "toMs": 2740,
+      "dtwMs": 8700,
+      "p": 0.950574
+    },
+    {
+      "text": "iz",
+      "fromMs": 2740,
+      "toMs": 2830,
+      "dtwMs": 8700,
+      "p": 0.998411
+    },
+    {
+      "text": ".",
+      "fromMs": 2830,
+      "toMs": 3000,
+      "dtwMs": 8700,
+      "p": 0.765016
+    },
+    {
+      "text": " La",
+      "fromMs": 3010,
+      "toMs": 3110,
+      "dtwMs": 9540,
+      "p": 0.440985
+    },
+    {
+      "text": " ab",
+      "fromMs": 3110,
+      "toMs": 3220,
+      "dtwMs": 9880,
+      "p": 0.783005
+    },
+    {
+      "text": "uela",
+      "fromMs": 3220,
+      "toMs": 3450,
+      "dtwMs": 9880,
+      "p": 0.988491
+    },
+    {
+      "text": " en",
+      "fromMs": 3450,
+      "toMs": 3560,
+      "dtwMs": 10300,
+      "p": 0.907415
+    },
+    {
+      "text": " la",
+      "fromMs": 3560,
+      "toMs": 3670,
+      "dtwMs": 10300,
+      "p": 0.978848
+    },
+    {
+      "text": " nar",
+      "fromMs": 3670,
+      "toMs": 3840,
+      "dtwMs": 10300,
+      "p": 0.976116
+    },
+    {
+      "text": "iz",
+      "fromMs": 3840,
+      "toMs": 4000,
+      "dtwMs": 10300,
+      "p": 0.99906
+    },
+    {
+      "text": ".",
+      "fromMs": 4000,
+      "toMs": 4000,
+      "dtwMs": 10540,
+      "p": 0.86828
+    },
+    {
+      "text": " La",
+      "fromMs": 4010,
+      "toMs": 4100,
+      "dtwMs": 10540,
+      "p": 0.443501
+    },
+    {
+      "text": " ab",
+      "fromMs": 4100,
+      "toMs": 4200,
+      "dtwMs": 10600,
+      "p": 0.833296
+    },
+    {
+      "text": "uela",
+      "fromMs": 4200,
+      "toMs": 4390,
+      "dtwMs": 10740,
+      "p": 0.990654
+    },
+    {
+      "text": " en",
+      "fromMs": 4390,
+      "toMs": 4490,
+      "dtwMs": 10940,
+      "p": 0.922881
+    },
+    {
+      "text": " la",
+      "fromMs": 4490,
+      "toMs": 4590,
+      "dtwMs": 10940,
+      "p": 0.987443
+    },
+    {
+      "text": " nar",
+      "fromMs": 4590,
+      "toMs": 4740,
+      "dtwMs": 10940,
+      "p": 0.985175
+    },
+    {
+      "text": "iz",
+      "fromMs": 4740,
+      "toMs": 4830,
+      "dtwMs": 10940,
+      "p": 0.999171
+    },
+    {
+      "text": ".",
+      "fromMs": 4830,
+      "toMs": 5000,
+      "dtwMs": 11580,
+      "p": 0.918049
+    },
+    {
+      "text": " La",
+      "fromMs": 5010,
+      "toMs": 5110,
+      "dtwMs": 12080,
+      "p": 0.384834
+    },
+    {
+      "text": " ab",
+      "fromMs": 5110,
+      "toMs": 5220,
+      "dtwMs": 12280,
+      "p": 0.852105
+    },
+    {
+      "text": "uela",
+      "fromMs": 5220,
+      "toMs": 5450,
+      "dtwMs": 12300,
+      "p": 0.993473
+    },
+    {
+      "text": " en",
+      "fromMs": 5450,
+      "toMs": 5560,
+      "dtwMs": 13200,
+      "p": 0.931554
+    },
+    {
+      "text": " la",
+      "fromMs": 5560,
+      "toMs": 5670,
+      "dtwMs": 13200,
+      "p": 0.991465
+    },
+    {
+      "text": " nar",
+      "fromMs": 5670,
+      "toMs": 5840,
+      "dtwMs": 13200,
+      "p": 0.989819
+    },
+    {
+      "text": "iz",
+      "fromMs": 5840,
+      "toMs": 6000,
+      "dtwMs": 13220,
+      "p": 0.999203
+    },
+    {
+      "text": ".",
+      "fromMs": 6000,
+      "toMs": 7000,
+      "dtwMs": 13500,
+      "p": 0.952612
+    },
+    {
+      "text": " La",
+      "fromMs": 7010,
+      "toMs": 7200,
+      "dtwMs": 13500,
+      "p": 0.599951
+    },
+    {
+      "text": " ab",
+      "fromMs": 7200,
+      "toMs": 7400,
+      "dtwMs": 13500,
+      "p": 0.866489
+    },
+    {
+      "text": "uela",
+      "fromMs": 7400,
+      "toMs": 7790,
+      "dtwMs": 13500,
+      "p": 0.995357
+    },
+    {
+      "text": " en",
+      "fromMs": 7790,
+      "toMs": 7990,
+      "dtwMs": 14080,
+      "p": 0.93722
+    },
+    {
+      "text": " la",
+      "fromMs": 7990,
+      "toMs": 8190,
+      "dtwMs": 14080,
+      "p": 0.993301
+    },
+    {
+      "text": " nar",
+      "fromMs": 8190,
+      "toMs": 8490,
+      "dtwMs": 14080,
+      "p": 0.989381
+    },
+    {
+      "text": "iz",
+      "fromMs": 8490,
+      "toMs": 8680,
+      "dtwMs": 14080,
+      "p": 0.999226
+    },
+    {
+      "text": ".",
+      "fromMs": 8680,
+      "toMs": 9000,
+      "dtwMs": 14180,
+      "p": 0.964704
+    },
+    {
+      "text": " La",
+      "fromMs": 9010,
+      "toMs": 9100,
+      "dtwMs": 14180,
+      "p": 0.686128
+    },
+    {
+      "text": " ab",
+      "fromMs": 9100,
+      "toMs": 9200,
+      "dtwMs": 14180,
+      "p": 0.896462
+    },
+    {
+      "text": "uela",
+      "fromMs": 9200,
+      "toMs": 9390,
+      "dtwMs": 14180,
+      "p": 0.996111
+    },
+    {
+      "text": " en",
+      "fromMs": 9390,
+      "toMs": 9490,
+      "dtwMs": 14180,
+      "p": 0.939344
+    },
+    {
+      "text": " la",
+      "fromMs": 9490,
+      "toMs": 9590,
+      "dtwMs": 14180,
+      "p": 0.994767
+    },
+    {
+      "text": " nar",
+      "fromMs": 9590,
+      "toMs": 9740,
+      "dtwMs": 14180,
+      "p": 0.990994
+    },
+    {
+      "text": "iz",
+      "fromMs": 9740,
+      "toMs": 9830,
+      "dtwMs": 14180,
+      "p": 0.999178
+    },
+    {
+      "text": ".",
+      "fromMs": 9830,
+      "toMs": 10000,
+      "dtwMs": 14180,
+      "p": 0.970944
+    },
+    {
+      "text": " La",
+      "fromMs": 10010,
+      "toMs": 10100,
+      "dtwMs": 14180,
+      "p": 0.679224
+    },
+    {
+      "text": " ab",
+      "fromMs": 10100,
+      "toMs": 10200,
+      "dtwMs": 14180,
+      "p": 0.910246
+    },
+    {
+      "text": "uela",
+      "fromMs": 10200,
+      "toMs": 10390,
+      "dtwMs": 14180,
+      "p": 0.996614
+    },
+    {
+      "text": " en",
+      "fromMs": 10390,
+      "toMs": 10490,
+      "dtwMs": 14180,
+      "p": 0.935687
+    },
+    {
+      "text": " la",
+      "fromMs": 10490,
+      "toMs": 10590,
+      "dtwMs": 14180,
+      "p": 0.9947
+    },
+    {
+      "text": " nar",
+      "fromMs": 10590,
+      "toMs": 10740,
+      "dtwMs": 14180,
+      "p": 0.992186
+    },
+    {
+      "text": "iz",
+      "fromMs": 10740,
+      "toMs": 10830,
+      "dtwMs": 14180,
+      "p": 0.999184
+    },
+    {
+      "text": ".",
+      "fromMs": 10830,
+      "toMs": 11000,
+      "dtwMs": 14620,
+      "p": 0.976575
+    },
+    {
+      "text": " La",
+      "fromMs": 11010,
+      "toMs": 11100,
+      "dtwMs": 14680,
+      "p": 0.761145
+    },
+    {
+      "text": " ab",
+      "fromMs": 11100,
+      "toMs": 11200,
+      "dtwMs": 14900,
+      "p": 0.923642
+    },
+    {
+      "text": "uela",
+      "fromMs": 11200,
+      "toMs": 11390,
+      "dtwMs": 14900,
+      "p": 0.996717
+    },
+    {
+      "text": " en",
+      "fromMs": 11390,
+      "toMs": 11490,
+      "dtwMs": 14900,
+      "p": 0.934135
+    },
+    {
+      "text": " la",
+      "fromMs": 11490,
+      "toMs": 11590,
+      "dtwMs": 14900,
+      "p": 0.995433
+    },
+    {
+      "text": " nar",
+      "fromMs": 11590,
+      "toMs": 11740,
+      "dtwMs": 14900,
+      "p": 0.992735
+    },
+    {
+      "text": "iz",
+      "fromMs": 11740,
+      "toMs": 11830,
+      "dtwMs": 14900,
+      "p": 0.999117
+    },
+    {
+      "text": ".",
+      "fromMs": 11830,
+      "toMs": 12000,
+      "dtwMs": 15160,
+      "p": 0.981053
+    },
+    {
+      "text": " La",
+      "fromMs": 12010,
+      "toMs": 12100,
+      "dtwMs": 15160,
+      "p": 0.71253
+    },
+    {
+      "text": " ab",
+      "fromMs": 12100,
+      "toMs": 12200,
+      "dtwMs": 15160,
+      "p": 0.937974
+    },
+    {
+      "text": "uela",
+      "fromMs": 12200,
+      "toMs": 12390,
+      "dtwMs": 15160,
+      "p": 0.997402
+    },
+    {
+      "text": " en",
+      "fromMs": 12390,
+      "toMs": 12490,
+      "dtwMs": 15320,
+      "p": 0.925809
+    },
+    {
+      "text": " la",
+      "fromMs": 12490,
+      "toMs": 12590,
+      "dtwMs": 15320,
+      "p": 0.995344
+    },
+    {
+      "text": " nar",
+      "fromMs": 12590,
+      "toMs": 12740,
+      "dtwMs": 15320,
+      "p": 0.993269
+    },
+    {
+      "text": "iz",
+      "fromMs": 12740,
+      "toMs": 12830,
+      "dtwMs": 15320,
+      "p": 0.999054
+    },
+    {
+      "text": ".",
+      "fromMs": 12830,
+      "toMs": 13000,
+      "dtwMs": 15460,
+      "p": 0.984111
+    },
+    {
+      "text": " La",
+      "fromMs": 13010,
+      "toMs": 13100,
+      "dtwMs": 15800,
+      "p": 0.768779
+    },
+    {
+      "text": " ab",
+      "fromMs": 13100,
+      "toMs": 13200,
+      "dtwMs": 16140,
+      "p": 0.94089
+    },
+    {
+      "text": "uela",
+      "fromMs": 13200,
+      "toMs": 13390,
+      "dtwMs": 16140,
+      "p": 0.996932
+    },
+    {
+      "text": " en",
+      "fromMs": 13390,
+      "toMs": 13490,
+      "dtwMs": 16580,
+      "p": 0.922605
+    },
+    {
+      "text": " la",
+      "fromMs": 13490,
+      "toMs": 13590,
+      "dtwMs": 16580,
+      "p": 0.995499
+    },
+    {
+      "text": " nar",
+      "fromMs": 13590,
+      "toMs": 13740,
+      "dtwMs": 16620,
+      "p": 0.993318
+    },
+    {
+      "text": "iz",
+      "fromMs": 13740,
+      "toMs": 13830,
+      "dtwMs": 16620,
+      "p": 0.998986
+    },
+    {
+      "text": ".",
+      "fromMs": 13830,
+      "toMs": 14000,
+      "dtwMs": 16760,
+      "p": 0.983297
+    },
+    {
+      "text": " La",
+      "fromMs": 14010,
+      "toMs": 14100,
+      "dtwMs": 16780,
+      "p": 0.772622
+    },
+    {
+      "text": " ab",
+      "fromMs": 14100,
+      "toMs": 14200,
+      "dtwMs": 16780,
+      "p": 0.942057
+    },
+    {
+      "text": "uela",
+      "fromMs": 14200,
+      "toMs": 14390,
+      "dtwMs": 16780,
+      "p": 0.996989
+    },
+    {
+      "text": " en",
+      "fromMs": 14390,
+      "toMs": 14490,
+      "dtwMs": 18140,
+      "p": 0.917292
+    },
+    {
+      "text": " la",
+      "fromMs": 14490,
+      "toMs": 14590,
+      "dtwMs": 18140,
+      "p": 0.995416
+    },
+    {
+      "text": " nar",
+      "fromMs": 14590,
+      "toMs": 14740,
+      "dtwMs": 18140,
+      "p": 0.992434
+    },
+    {
+      "text": "iz",
+      "fromMs": 14740,
+      "toMs": 14830,
+      "dtwMs": 18160,
+      "p": 0.999043
+    },
+    {
+      "text": ".",
+      "fromMs": 14830,
+      "toMs": 15000,
+      "dtwMs": 18440,
+      "p": 0.985133
+    },
+    {
+      "text": " La",
+      "fromMs": 15010,
+      "toMs": 15100,
+      "dtwMs": 19060,
+      "p": 0.800392
+    },
+    {
+      "text": " ab",
+      "fromMs": 15100,
+      "toMs": 15200,
+      "dtwMs": 19400,
+      "p": 0.945308
+    },
+    {
+      "text": "uela",
+      "fromMs": 15200,
+      "toMs": 15390,
+      "dtwMs": 19400,
+      "p": 0.997497
+    },
+    {
+      "text": " en",
+      "fromMs": 15390,
+      "toMs": 15490,
+      "dtwMs": 19400,
+      "p": 0.912244
+    },
+    {
+      "text": " la",
+      "fromMs": 15490,
+      "toMs": 15590,
+      "dtwMs": 19400,
+      "p": 0.994928
+    },
+    {
+      "text": " nar",
+      "fromMs": 15590,
+      "toMs": 15740,
+      "dtwMs": 19400,
+      "p": 0.992837
+    },
+    {
+      "text": "iz",
+      "fromMs": 15740,
+      "toMs": 15830,
+      "dtwMs": 19400,
+      "p": 0.999028
+    },
+    {
+      "text": ".",
+      "fromMs": 15830,
+      "toMs": 16000,
+      "dtwMs": 19400,
+      "p": 0.984088
+    },
+    {
+      "text": " La",
+      "fromMs": 16010,
+      "toMs": 16100,
+      "dtwMs": 19520,
+      "p": 0.782708
+    },
+    {
+      "text": " ab",
+      "fromMs": 16100,
+      "toMs": 16200,
+      "dtwMs": 19600,
+      "p": 0.953312
+    },
+    {
+      "text": "uela",
+      "fromMs": 16200,
+      "toMs": 16390,
+      "dtwMs": 19600,
+      "p": 0.997335
+    },
+    {
+      "text": " en",
+      "fromMs": 16390,
+      "toMs": 16490,
+      "dtwMs": 19600,
+      "p": 0.915655
+    },
+    {
+      "text": " la",
+      "fromMs": 16490,
+      "toMs": 16590,
+      "dtwMs": 19600,
+      "p": 0.995465
+    },
+    {
+      "text": " nar",
+      "fromMs": 16590,
+      "toMs": 16740,
+      "dtwMs": 19600,
+      "p": 0.992405
+    },
+    {
+      "text": "iz",
+      "fromMs": 16740,
+      "toMs": 16830,
+      "dtwMs": 19600,
+      "p": 0.999022
+    },
+    {
+      "text": ".",
+      "fromMs": 16830,
+      "toMs": 17000,
+      "dtwMs": 19600,
+      "p": 0.986564
+    },
+    {
+      "text": " La",
+      "fromMs": 17010,
+      "toMs": 17100,
+      "dtwMs": 19600,
+      "p": 0.819758
+    },
+    {
+      "text": " ab",
+      "fromMs": 17100,
+      "toMs": 17200,
+      "dtwMs": 19880,
+      "p": 0.941318
+    },
+    {
+      "text": "uela",
+      "fromMs": 17200,
+      "toMs": 17390,
+      "dtwMs": 19880,
+      "p": 0.997855
+    },
+    {
+      "text": " en",
+      "fromMs": 17390,
+      "toMs": 17490,
+      "dtwMs": 19880,
+      "p": 0.909249
+    },
+    {
+      "text": " la",
+      "fromMs": 17490,
+      "toMs": 17590,
+      "dtwMs": 19880,
+      "p": 0.995169
+    },
+    {
+      "text": " nar",
+      "fromMs": 17590,
+      "toMs": 17740,
+      "dtwMs": 19880,
+      "p": 0.991925
+    },
+    {
+      "text": "iz",
+      "fromMs": 17740,
+      "toMs": 17830,
+      "dtwMs": 19880,
+      "p": 0.999039
+    },
+    {
+      "text": ".",
+      "fromMs": 17830,
+      "toMs": 18000,
+      "dtwMs": 19880,
+      "p": 0.984033
+    },
+    {
+      "text": " La",
+      "fromMs": 18010,
+      "toMs": 18100,
+      "dtwMs": 19880,
+      "p": 0.825538
+    },
+    {
+      "text": " ab",
+      "fromMs": 18100,
+      "toMs": 18200,
+      "dtwMs": 19880,
+      "p": 0.928787
+    },
+    {
+      "text": "uela",
+      "fromMs": 18200,
+      "toMs": 18390,
+      "dtwMs": 19880,
+      "p": 0.998131
+    },
+    {
+      "text": " en",
+      "fromMs": 18390,
+      "toMs": 18490,
+      "dtwMs": 19880,
+      "p": 0.910772
+    },
+    {
+      "text": " la",
+      "fromMs": 18490,
+      "toMs": 18590,
+      "dtwMs": 19880,
+      "p": 0.995433
+    },
+    {
+      "text": " nar",
+      "fromMs": 18590,
+      "toMs": 18740,
+      "dtwMs": 19880,
+      "p": 0.990664
+    },
+    {
+      "text": "iz",
+      "fromMs": 18740,
+      "toMs": 18830,
+      "dtwMs": 19880,
+      "p": 0.999091
+    },
+    {
+      "text": ".",
+      "fromMs": 18830,
+      "toMs": 19000,
+      "dtwMs": 19880,
+      "p": 0.984288
+    },
+    {
+      "text": " La",
+      "fromMs": 19010,
+      "toMs": 19100,
+      "dtwMs": 19880,
+      "p": 0.818343
+    },
+    {
+      "text": " ab",
+      "fromMs": 19100,
+      "toMs": 19200,
+      "dtwMs": 19880,
+      "p": 0.927745
+    },
+    {
+      "text": "uela",
+      "fromMs": 19200,
+      "toMs": 19390,
+      "dtwMs": 19880,
+      "p": 0.998213
+    },
+    {
+      "text": " en",
+      "fromMs": 19390,
+      "toMs": 19490,
+      "dtwMs": 19880,
+      "p": 0.906785
+    },
+    {
+      "text": " la",
+      "fromMs": 19490,
+      "toMs": 19590,
+      "dtwMs": 19880,
+      "p": 0.995706
+    },
+    {
+      "text": " nar",
+      "fromMs": 19590,
+      "toMs": 19740,
+      "dtwMs": 19880,
+      "p": 0.990917
+    },
+    {
+      "text": "iz",
+      "fromMs": 19740,
+      "toMs": 19830,
+      "dtwMs": 19880,
+      "p": 0.999161
+    },
+    {
+      "text": ".",
+      "fromMs": 19830,
+      "toMs": 20000,
+      "dtwMs": 19880,
+      "p": 0.984812
+    },
+    {
+      "text": " La",
+      "fromMs": 20010,
+      "toMs": 20100,
+      "dtwMs": 19880,
+      "p": 0.870961
+    },
+    {
+      "text": " ab",
+      "fromMs": 20100,
+      "toMs": 20200,
+      "dtwMs": 19900,
+      "p": 0.928141
+    },
+    {
+      "text": "uela",
+      "fromMs": 20200,
+      "toMs": 20390,
+      "dtwMs": 19900,
+      "p": 0.998374
+    },
+    {
+      "text": " en",
+      "fromMs": 20390,
+      "toMs": 20490,
+      "dtwMs": 19900,
+      "p": 0.902127
+    },
+    {
+      "text": " la",
+      "fromMs": 20490,
+      "toMs": 20590,
+      "dtwMs": 19900,
+      "p": 0.995642
+    },
+    {
+      "text": " nar",
+      "fromMs": 20590,
+      "toMs": 20740,
+      "dtwMs": 19900,
+      "p": 0.990849
+    },
+    {
+      "text": "iz",
+      "fromMs": 20740,
+      "toMs": 20830,
+      "dtwMs": 19900,
+      "p": 0.99914
+    },
+    {
+      "text": ".",
+      "fromMs": 20830,
+      "toMs": 21000,
+      "dtwMs": 19900,
+      "p": 0.984253
+    },
+    {
+      "text": " La",
+      "fromMs": 21010,
+      "toMs": 21100,
+      "dtwMs": 19900,
+      "p": 0.890553
+    },
+    {
+      "text": " ab",
+      "fromMs": 21100,
+      "toMs": 21200,
+      "dtwMs": 20260,
+      "p": 0.929363
+    },
+    {
+      "text": "uela",
+      "fromMs": 21200,
+      "toMs": 21390,
+      "dtwMs": 20260,
+      "p": 0.998717
+    },
+    {
+      "text": " en",
+      "fromMs": 21390,
+      "toMs": 21490,
+      "dtwMs": 20260,
+      "p": 0.899365
+    },
+    {
+      "text": " la",
+      "fromMs": 21490,
+      "toMs": 21590,
+      "dtwMs": 20260,
+      "p": 0.995642
+    },
+    {
+      "text": " nar",
+      "fromMs": 21590,
+      "toMs": 21740,
+      "dtwMs": 20440,
+      "p": 0.99083
+    },
+    {
+      "text": "iz",
+      "fromMs": 21740,
+      "toMs": 21830,
+      "dtwMs": 20620,
+      "p": 0.999106
+    },
+    {
+      "text": ".",
+      "fromMs": 21830,
+      "toMs": 22000,
+      "dtwMs": 21880,
+      "p": 0.98552
+    },
+    {
+      "text": " La",
+      "fromMs": 22010,
+      "toMs": 22100,
+      "dtwMs": 21880,
+      "p": 0.868441
+    },
+    {
+      "text": " ab",
+      "fromMs": 22100,
+      "toMs": 22200,
+      "dtwMs": 21980,
+      "p": 0.925425
+    },
+    {
+      "text": "uela",
+      "fromMs": 22200,
+      "toMs": 22390,
+      "dtwMs": 21980,
+      "p": 0.998828
+    },
+    {
+      "text": " en",
+      "fromMs": 22390,
+      "toMs": 22490,
+      "dtwMs": 21980,
+      "p": 0.898972
+    },
+    {
+      "text": " la",
+      "fromMs": 22490,
+      "toMs": 22590,
+      "dtwMs": 22020,
+      "p": 0.995699
+    },
+    {
+      "text": " nar",
+      "fromMs": 22590,
+      "toMs": 22740,
+      "dtwMs": 22200,
+      "p": 0.990733
+    },
+    {
+      "text": "iz",
+      "fromMs": 22740,
+      "toMs": 22830,
+      "dtwMs": 22200,
+      "p": 0.999176
+    },
+    {
+      "text": ".",
+      "fromMs": 22830,
+      "toMs": 23000,
+      "dtwMs": 22200,
+      "p": 0.986706
+    },
+    {
+      "text": " La",
+      "fromMs": 23010,
+      "toMs": 23100,
+      "dtwMs": 22200,
+      "p": 0.854886
+    },
+    {
+      "text": " ab",
+      "fromMs": 23100,
+      "toMs": 23200,
+      "dtwMs": 22200,
+      "p": 0.942431
+    },
+    {
+      "text": "uela",
+      "fromMs": 23200,
+      "toMs": 23390,
+      "dtwMs": 22200,
+      "p": 0.998898
+    },
+    {
+      "text": " en",
+      "fromMs": 23390,
+      "toMs": 23490,
+      "dtwMs": 22600,
+      "p": 0.892432
+    },
+    {
+      "text": " la",
+      "fromMs": 23490,
+      "toMs": 23590,
+      "dtwMs": 22600,
+      "p": 0.995374
+    },
+    {
+      "text": " nar",
+      "fromMs": 23590,
+      "toMs": 23740,
+      "dtwMs": 22700,
+      "p": 0.990773
+    },
+    {
+      "text": "iz",
+      "fromMs": 23740,
+      "toMs": 23830,
+      "dtwMs": 23200,
+      "p": 0.999192
+    },
+    {
+      "text": ".",
+      "fromMs": 23830,
+      "toMs": 24000,
+      "dtwMs": 24100,
+      "p": 0.986159
+    },
+    {
+      "text": " La",
+      "fromMs": 24010,
+      "toMs": 24100,
+      "dtwMs": 24640,
+      "p": 0.849922
+    },
+    {
+      "text": " ab",
+      "fromMs": 24100,
+      "toMs": 24200,
+      "dtwMs": 24660,
+      "p": 0.92772
+    },
+    {
+      "text": "uela",
+      "fromMs": 24200,
+      "toMs": 24390,
+      "dtwMs": 24680,
+      "p": 0.998982
+    },
+    {
+      "text": " en",
+      "fromMs": 24390,
+      "toMs": 24490,
+      "dtwMs": 24980,
+      "p": 0.893401
+    },
+    {
+      "text": " la",
+      "fromMs": 24490,
+      "toMs": 24590,
+      "dtwMs": 24980,
+      "p": 0.994894
+    },
+    {
+      "text": " nar",
+      "fromMs": 24590,
+      "toMs": 24740,
+      "dtwMs": 24980,
+      "p": 0.989555
+    },
+    {
+      "text": "iz",
+      "fromMs": 24740,
+      "toMs": 24830,
+      "dtwMs": 24980,
+      "p": 0.999173
+    },
+    {
+      "text": ".",
+      "fromMs": 24830,
+      "toMs": 25000,
+      "dtwMs": 24980,
+      "p": 0.986413
+    },
+    {
+      "text": " Gracias",
+      "fromMs": 30010,
+      "toMs": 30160,
+      "dtwMs": 30220,
+      "p": 0.72414
+    },
+    {
+      "text": ".",
+      "fromMs": 30160,
+      "toMs": 30240,
+      "dtwMs": 30220,
+      "p": 0.877192
+    }
+  ]
+}

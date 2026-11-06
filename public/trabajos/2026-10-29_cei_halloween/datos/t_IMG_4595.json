@@ -1,0 +1,183 @@
+{
+  "archivo": "IMG_4595.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7765,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7760,
+      "texto": "Bueno, otro ejemplo podría ser por ejemplo un pescador, el atabús puede ser de un pescado."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bueno",
+      "fromMs": 110,
+      "toMs": 400,
+      "dtwMs": 280,
+      "p": 0.733802
+    },
+    {
+      "text": ",",
+      "fromMs": 400,
+      "toMs": 500,
+      "dtwMs": 720,
+      "p": 0.890796
+    },
+    {
+      "text": " otro",
+      "fromMs": 710,
+      "toMs": 880,
+      "dtwMs": 1160,
+      "p": 0.973013
+    },
+    {
+      "text": " ejemplo",
+      "fromMs": 880,
+      "toMs": 1410,
+      "dtwMs": 1500,
+      "p": 0.995574
+    },
+    {
+      "text": " podría",
+      "fromMs": 1440,
+      "toMs": 1910,
+      "dtwMs": 1820,
+      "p": 0.849128
+    },
+    {
+      "text": " ser",
+      "fromMs": 1920,
+      "toMs": 2160,
+      "dtwMs": 2080,
+      "p": 0.992663
+    },
+    {
+      "text": " por",
+      "fromMs": 2160,
+      "toMs": 2400,
+      "dtwMs": 2220,
+      "p": 0.26725
+    },
+    {
+      "text": " ejemplo",
+      "fromMs": 2400,
+      "toMs": 2850,
+      "dtwMs": 2540,
+      "p": 0.990711
+    },
+    {
+      "text": " un",
+      "fromMs": 3010,
+      "toMs": 3260,
+      "dtwMs": 3440,
+      "p": 0.696859
+    },
+    {
+      "text": " pes",
+      "fromMs": 3260,
+      "toMs": 3590,
+      "dtwMs": 3640,
+      "p": 0.989359
+    },
+    {
+      "text": "c",
+      "fromMs": 3680,
+      "toMs": 3790,
+      "dtwMs": 3720,
+      "p": 0.999683
+    },
+    {
+      "text": "ador",
+      "fromMs": 3790,
+      "toMs": 4320,
+      "dtwMs": 4100,
+      "p": 0.999838
+    },
+    {
+      "text": ",",
+      "fromMs": 4330,
+      "toMs": 4400,
+      "dtwMs": 4600,
+      "p": 0.740435
+    },
+    {
+      "text": " el",
+      "fromMs": 4420,
+      "toMs": 4740,
+      "dtwMs": 4740,
+      "p": 0.603509
+    },
+    {
+      "text": " at",
+      "fromMs": 4740,
+      "toMs": 4860,
+      "dtwMs": 4860,
+      "p": 0.746087
+    },
+    {
+      "text": "ab",
+      "fromMs": 4860,
+      "toMs": 4970,
+      "dtwMs": 4980,
+      "p": 0.635514
+    },
+    {
+      "text": "ús",
+      "fromMs": 4970,
+      "toMs": 5070,
+      "dtwMs": 5060,
+      "p": 0.49419
+    },
+    {
+      "text": " puede",
+      "fromMs": 5150,
+      "toMs": 5780,
+      "dtwMs": 5220,
+      "p": 0.968642
+    },
+    {
+      "text": " ser",
+      "fromMs": 5810,
+      "toMs": 6210,
+      "dtwMs": 5420,
+      "p": 0.98812
+    },
+    {
+      "text": " de",
+      "fromMs": 6210,
+      "toMs": 6430,
+      "dtwMs": 5540,
+      "p": 0.941893
+    },
+    {
+      "text": " un",
+      "fromMs": 6440,
+      "toMs": 6760,
+      "dtwMs": 5560,
+      "p": 0.991403
+    },
+    {
+      "text": " pes",
+      "fromMs": 6770,
+      "toMs": 7190,
+      "dtwMs": 5760,
+      "p": 0.996647
+    },
+    {
+      "text": "cado",
+      "fromMs": 7190,
+      "toMs": 7760,
+      "dtwMs": 6140,
+      "p": 0.999346
+    },
+    {
+      "text": ".",
+      "fromMs": 7760,
+      "toMs": 7760,
+      "dtwMs": 6740,
+      "p": 0.311113
+    }
+  ]
+}

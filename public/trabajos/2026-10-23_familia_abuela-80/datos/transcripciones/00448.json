@@ -1,0 +1,225 @@
+{
+  "archivo": "00448.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 14528,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 14520,
+      "texto": "- ¿Qué es eso? - Una concha. - ¡Ordinario, quedó grabado! - Qué mejor grabar aquí."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " -",
+      "fromMs": 10,
+      "toMs": 300,
+      "dtwMs": 0,
+      "p": 0.0993851
+    },
+    {
+      "text": " ¿",
+      "fromMs": 300,
+      "toMs": 600,
+      "dtwMs": 720,
+      "p": 0.207069
+    },
+    {
+      "text": "Qué",
+      "fromMs": 600,
+      "toMs": 1520,
+      "dtwMs": 720,
+      "p": 0.69667
+    },
+    {
+      "text": " es",
+      "fromMs": 1520,
+      "toMs": 2130,
+      "dtwMs": 1240,
+      "p": 0.682919
+    },
+    {
+      "text": " eso",
+      "fromMs": 2130,
+      "toMs": 3050,
+      "dtwMs": 1960,
+      "p": 0.880865
+    },
+    {
+      "text": "?",
+      "fromMs": 3050,
+      "toMs": 3980,
+      "dtwMs": 3920,
+      "p": 0.988802
+    },
+    {
+      "text": " -",
+      "fromMs": 4010,
+      "toMs": 4230,
+      "dtwMs": 4920,
+      "p": 0.518936
+    },
+    {
+      "text": " Una",
+      "fromMs": 4230,
+      "toMs": 4920,
+      "dtwMs": 6060,
+      "p": 0.251806
+    },
+    {
+      "text": " con",
+      "fromMs": 4920,
+      "toMs": 5610,
+      "dtwMs": 6300,
+      "p": 0.925507
+    },
+    {
+      "text": "cha",
+      "fromMs": 5610,
+      "toMs": 6300,
+      "dtwMs": 6500,
+      "p": 0.971599
+    },
+    {
+      "text": ".",
+      "fromMs": 6300,
+      "toMs": 7000,
+      "dtwMs": 7880,
+      "p": 0.809188
+    },
+    {
+      "text": " -",
+      "fromMs": 7000,
+      "toMs": 7100,
+      "dtwMs": 7940,
+      "p": 0.522305
+    },
+    {
+      "text": " ¡",
+      "fromMs": 7100,
+      "toMs": 7200,
+      "dtwMs": 8160,
+      "p": 0.324328
+    },
+    {
+      "text": "O",
+      "fromMs": 7200,
+      "toMs": 7300,
+      "dtwMs": 8300,
+      "p": 0.852939
+    },
+    {
+      "text": "rd",
+      "fromMs": 7300,
+      "toMs": 7510,
+      "dtwMs": 8400,
+      "p": 0.942476
+    },
+    {
+      "text": "inar",
+      "fromMs": 7510,
+      "toMs": 7930,
+      "dtwMs": 8600,
+      "p": 0.754383
+    },
+    {
+      "text": "io",
+      "fromMs": 7930,
+      "toMs": 8140,
+      "dtwMs": 8840,
+      "p": 0.659353
+    },
+    {
+      "text": ",",
+      "fromMs": 8140,
+      "toMs": 8350,
+      "dtwMs": 8900,
+      "p": 0.306441
+    },
+    {
+      "text": " qued",
+      "fromMs": 8350,
+      "toMs": 8770,
+      "dtwMs": 9000,
+      "p": 0.945779
+    },
+    {
+      "text": "ó",
+      "fromMs": 8770,
+      "toMs": 8870,
+      "dtwMs": 9080,
+      "p": 0.888488
+    },
+    {
+      "text": " grab",
+      "fromMs": 8870,
+      "toMs": 9290,
+      "dtwMs": 9360,
+      "p": 0.993295
+    },
+    {
+      "text": "ado",
+      "fromMs": 9290,
+      "toMs": 9610,
+      "dtwMs": 9600,
+      "p": 0.988636
+    },
+    {
+      "text": "!",
+      "fromMs": 9610,
+      "toMs": 10000,
+      "dtwMs": 10160,
+      "p": 0.923805
+    },
+    {
+      "text": " -",
+      "fromMs": 10000,
+      "toMs": 10200,
+      "dtwMs": 10800,
+      "p": 0.762822
+    },
+    {
+      "text": " Qué",
+      "fromMs": 10200,
+      "toMs": 10800,
+      "dtwMs": 11000,
+      "p": 0.203587
+    },
+    {
+      "text": " mejor",
+      "fromMs": 10820,
+      "toMs": 11830,
+      "dtwMs": 11280,
+      "p": 0.727647
+    },
+    {
+      "text": " grab",
+      "fromMs": 11830,
+      "toMs": 12650,
+      "dtwMs": 11560,
+      "p": 0.745974
+    },
+    {
+      "text": "ar",
+      "fromMs": 12650,
+      "toMs": 13050,
+      "dtwMs": 11680,
+      "p": 0.337631
+    },
+    {
+      "text": " aquí",
+      "fromMs": 13050,
+      "toMs": 13870,
+      "dtwMs": 11920,
+      "p": 0.603477
+    },
+    {
+      "text": ".",
+      "fromMs": 13870,
+      "toMs": 14500,
+      "dtwMs": 12120,
+      "p": 0.77784
+    }
+  ]
+}

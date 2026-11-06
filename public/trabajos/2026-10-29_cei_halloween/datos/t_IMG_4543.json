@@ -1,0 +1,29 @@
+{
+  "archivo": "IMG_4543.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6403,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2000,
+      "texto": "Gracias."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Gracias",
+      "fromMs": 0,
+      "toMs": 2000,
+      "dtwMs": 1200,
+      "p": 0.209855
+    },
+    {
+      "text": ".",
+      "fromMs": 2000,
+      "toMs": 2000,
+      "dtwMs": 1920,
+      "p": 0.909324
+    }
+  ]
+}

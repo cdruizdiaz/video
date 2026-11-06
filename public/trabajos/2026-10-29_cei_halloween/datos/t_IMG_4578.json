@@ -1,0 +1,204 @@
+{
+  "archivo": "IMG_4578.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6935,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        6177
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1140,
+      "texto": "Chau, pongo el email."
+    },
+    {
+      "desdeMs": 1440,
+      "hastaMs": 3620,
+      "texto": "Ok, chicos, ¿qué país se investiga?"
+    },
+    {
+      "desdeMs": 3920,
+      "hastaMs": 4980,
+      "texto": "¡Indonesia!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Ch",
+      "fromMs": 0,
+      "toMs": 60,
+      "dtwMs": 440,
+      "p": 0.0252796
+    },
+    {
+      "text": "au",
+      "fromMs": 140,
+      "toMs": 240,
+      "dtwMs": 500,
+      "p": 0.625171
+    },
+    {
+      "text": ",",
+      "fromMs": 240,
+      "toMs": 360,
+      "dtwMs": 580,
+      "p": 0.507296
+    },
+    {
+      "text": " p",
+      "fromMs": 360,
+      "toMs": 380,
+      "dtwMs": 640,
+      "p": 0.368628
+    },
+    {
+      "text": "ongo",
+      "fromMs": 430,
+      "toMs": 670,
+      "dtwMs": 720,
+      "p": 0.888586
+    },
+    {
+      "text": " el",
+      "fromMs": 670,
+      "toMs": 790,
+      "dtwMs": 840,
+      "p": 0.563713
+    },
+    {
+      "text": " email",
+      "fromMs": 790,
+      "toMs": 1140,
+      "dtwMs": 1100,
+      "p": 0.459184
+    },
+    {
+      "text": ".",
+      "fromMs": 1140,
+      "toMs": 1140,
+      "dtwMs": 1420,
+      "p": 0.818458
+    },
+    {
+      "text": " Ok",
+      "fromMs": 1440,
+      "toMs": 1440,
+      "dtwMs": 1640,
+      "p": 0.702976
+    },
+    {
+      "text": ",",
+      "fromMs": 1440,
+      "toMs": 1440,
+      "dtwMs": 1760,
+      "p": 0.921591
+    },
+    {
+      "text": " chicos",
+      "fromMs": 1440,
+      "toMs": 1830,
+      "dtwMs": 1920,
+      "p": 0.732275
+    },
+    {
+      "text": ",",
+      "fromMs": 1870,
+      "toMs": 1990,
+      "dtwMs": 2160,
+      "p": 0.555131
+    },
+    {
+      "text": " ¿",
+      "fromMs": 2000,
+      "toMs": 2070,
+      "dtwMs": 2300,
+      "p": 0.604608
+    },
+    {
+      "text": "qué",
+      "fromMs": 2070,
+      "toMs": 2290,
+      "dtwMs": 2480,
+      "p": 0.714485
+    },
+    {
+      "text": " país",
+      "fromMs": 2290,
+      "toMs": 2580,
+      "dtwMs": 2760,
+      "p": 0.592556
+    },
+    {
+      "text": " se",
+      "fromMs": 2580,
+      "toMs": 2710,
+      "dtwMs": 3080,
+      "p": 0.143902
+    },
+    {
+      "text": " investig",
+      "fromMs": 2790,
+      "toMs": 3300,
+      "dtwMs": 3360,
+      "p": 0.509156
+    },
+    {
+      "text": "a",
+      "fromMs": 3300,
+      "toMs": 3370,
+      "dtwMs": 3480,
+      "p": 0.810093
+    },
+    {
+      "text": "?",
+      "fromMs": 3370,
+      "toMs": 3620,
+      "dtwMs": 3780,
+      "p": 0.953058
+    },
+    {
+      "text": " ¡",
+      "fromMs": 3920,
+      "toMs": 3920,
+      "dtwMs": 3920,
+      "p": 0.412742
+    },
+    {
+      "text": "Ind",
+      "fromMs": 3920,
+      "toMs": 3980,
+      "dtwMs": 4280,
+      "p": 0.918165
+    },
+    {
+      "text": "ones",
+      "fromMs": 4070,
+      "toMs": 4440,
+      "dtwMs": 4540,
+      "p": 0.480032
+    },
+    {
+      "text": "ia",
+      "fromMs": 4440,
+      "toMs": 4640,
+      "dtwMs": 4960,
+      "p": 0.971067
+    },
+    {
+      "text": "!",
+      "fromMs": 4640,
+      "toMs": 4980,
+      "dtwMs": 4960,
+      "p": 0.998138
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+[
+ {
+  "palabra": "En",
+  "ini": 0.9,
+  "fin": 0.98
+ },
+ {
+  "palabra": "DOCBA",
+  "ini": 1.02,
+  "fin": 1.26
+ },
+ {
+  "palabra": "podés",
+  "ini": 1.36,
+  "fin": 1.5
+ },
+ {
+  "palabra": "reservar",
+  "ini": 1.54,
+  "fin": 1.82
+ },
+ {
+  "palabra": "un",
+  "ini": 1.96,
+  "fin": 2.0
+ },
+ {
+  "palabra": "espacio",
+  "ini": 2.04,
+  "fin": 2.4
+ },
+ {
+  "palabra": "para",
+  "ini": 2.5,
+  "fin": 2.62
+ },
+ {
+  "palabra": "hacer",
+  "ini": 2.66,
+  "fin": 2.8
+ },
+ {
+  "palabra": "el",
+  "ini": 2.84,
+  "fin": 2.88
+ },
+ {
+  "palabra": "cierre",
+  "ini": 2.92,
+  "fin": 3.14
+ },
+ {
+  "palabra": "de",
+  "ini": 3.18,
+  "fin": 3.22
+ },
+ {
+  "palabra": "año",
+  "ini": 3.24,
+  "fin": 3.38
+ },
+ {
+  "palabra": "con",
+  "ini": 3.48,
+  "fin": 3.6
+ },
+ {
+  "palabra": "tu",
+  "ini": 3.64,
+  "fin": 3.68
+ },
+ {
+  "palabra": "equipo",
+  "ini": 3.74,
+  "fin": 3.98
+ }
+]

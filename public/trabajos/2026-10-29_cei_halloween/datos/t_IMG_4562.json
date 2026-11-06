@@ -1,0 +1,64 @@
+{
+  "archivo": "IMG_4562.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2132,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 800,
+      "texto": "Perfecto, a la cámara."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Perfect",
+      "fromMs": 0,
+      "toMs": 290,
+      "dtwMs": 320,
+      "p": 0.545939
+    },
+    {
+      "text": "o",
+      "fromMs": 290,
+      "toMs": 330,
+      "dtwMs": 420,
+      "p": 0.869888
+    },
+    {
+      "text": ",",
+      "fromMs": 330,
+      "toMs": 360,
+      "dtwMs": 520,
+      "p": 0.861282
+    },
+    {
+      "text": " a",
+      "fromMs": 410,
+      "toMs": 450,
+      "dtwMs": 520,
+      "p": 0.767092
+    },
+    {
+      "text": " la",
+      "fromMs": 450,
+      "toMs": 530,
+      "dtwMs": 560,
+      "p": 0.999119
+    },
+    {
+      "text": " cámara",
+      "fromMs": 530,
+      "toMs": 800,
+      "dtwMs": 780,
+      "p": 0.996103
+    },
+    {
+      "text": ".",
+      "fromMs": 800,
+      "toMs": 800,
+      "dtwMs": 780,
+      "p": 0.888337
+    }
+  ]
+}

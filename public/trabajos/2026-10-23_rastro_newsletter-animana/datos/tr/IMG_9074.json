@@ -1,0 +1,321 @@
+{
+  "archivo": "IMG_9074.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 13407,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6560,
+      "texto": "Nosotras lo armamos en tres pasos: un objetivo único por envío, un CTA claro de lo que queremos"
+    },
+    {
+      "desdeMs": 6560,
+      "hastaMs": 13400,
+      "texto": "que haga la persona y un diseño que se lee en menos de 10 segundos."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Nos",
+      "fromMs": 0,
+      "toMs": 740,
+      "dtwMs": 1700,
+      "p": 0.396702
+    },
+    {
+      "text": "ot",
+      "fromMs": 750,
+      "toMs": 1240,
+      "dtwMs": 1900,
+      "p": 0.98253
+    },
+    {
+      "text": "ras",
+      "fromMs": 1330,
+      "toMs": 2000,
+      "dtwMs": 2000,
+      "p": 0.99225
+    },
+    {
+      "text": " lo",
+      "fromMs": 2150,
+      "toMs": 2150,
+      "dtwMs": 2200,
+      "p": 0.813933
+    },
+    {
+      "text": " arm",
+      "fromMs": 2150,
+      "toMs": 2370,
+      "dtwMs": 2340,
+      "p": 0.98657
+    },
+    {
+      "text": "amos",
+      "fromMs": 2370,
+      "toMs": 2610,
+      "dtwMs": 2500,
+      "p": 0.989319
+    },
+    {
+      "text": " en",
+      "fromMs": 2660,
+      "toMs": 2770,
+      "dtwMs": 2620,
+      "p": 0.976421
+    },
+    {
+      "text": " tres",
+      "fromMs": 2810,
+      "toMs": 3070,
+      "dtwMs": 2740,
+      "p": 0.735326
+    },
+    {
+      "text": " pas",
+      "fromMs": 3080,
+      "toMs": 3330,
+      "dtwMs": 2980,
+      "p": 0.976154
+    },
+    {
+      "text": "os",
+      "fromMs": 3400,
+      "toMs": 3500,
+      "dtwMs": 3140,
+      "p": 0.999666
+    },
+    {
+      "text": ":",
+      "fromMs": 3520,
+      "toMs": 3560,
+      "dtwMs": 3580,
+      "p": 0.572806
+    },
+    {
+      "text": " un",
+      "fromMs": 3570,
+      "toMs": 3650,
+      "dtwMs": 3680,
+      "p": 0.594863
+    },
+    {
+      "text": " objetivo",
+      "fromMs": 3650,
+      "toMs": 4040,
+      "dtwMs": 3980,
+      "p": 0.981919
+    },
+    {
+      "text": " único",
+      "fromMs": 4040,
+      "toMs": 4340,
+      "dtwMs": 4260,
+      "p": 0.915111
+    },
+    {
+      "text": " por",
+      "fromMs": 4340,
+      "toMs": 4650,
+      "dtwMs": 4500,
+      "p": 0.956652
+    },
+    {
+      "text": " env",
+      "fromMs": 4650,
+      "toMs": 4930,
+      "dtwMs": 4700,
+      "p": 0.990263
+    },
+    {
+      "text": "ío",
+      "fromMs": 4960,
+      "toMs": 4960,
+      "dtwMs": 4880,
+      "p": 0.933715
+    },
+    {
+      "text": ",",
+      "fromMs": 5180,
+      "toMs": 5200,
+      "dtwMs": 5120,
+      "p": 0.849669
+    },
+    {
+      "text": " un",
+      "fromMs": 5200,
+      "toMs": 5340,
+      "dtwMs": 5320,
+      "p": 0.906061
+    },
+    {
+      "text": " C",
+      "fromMs": 5370,
+      "toMs": 5440,
+      "dtwMs": 5440,
+      "p": 0.738437
+    },
+    {
+      "text": "TA",
+      "fromMs": 5440,
+      "toMs": 5620,
+      "dtwMs": 5620,
+      "p": 0.97818
+    },
+    {
+      "text": " claro",
+      "fromMs": 5620,
+      "toMs": 6000,
+      "dtwMs": 5960,
+      "p": 0.96353
+    },
+    {
+      "text": " de",
+      "fromMs": 6000,
+      "toMs": 6080,
+      "dtwMs": 6080,
+      "p": 0.934377
+    },
+    {
+      "text": " lo",
+      "fromMs": 6090,
+      "toMs": 6170,
+      "dtwMs": 6180,
+      "p": 0.969673
+    },
+    {
+      "text": " que",
+      "fromMs": 6170,
+      "toMs": 6260,
+      "dtwMs": 6260,
+      "p": 0.979262
+    },
+    {
+      "text": " queremos",
+      "fromMs": 6260,
+      "toMs": 6500,
+      "dtwMs": 6500,
+      "p": 0.670884
+    },
+    {
+      "text": " que",
+      "fromMs": 6560,
+      "toMs": 6730,
+      "dtwMs": 6620,
+      "p": 0.532048
+    },
+    {
+      "text": " haga",
+      "fromMs": 6730,
+      "toMs": 6990,
+      "dtwMs": 6680,
+      "p": 0.99324
+    },
+    {
+      "text": " la",
+      "fromMs": 6990,
+      "toMs": 7110,
+      "dtwMs": 6800,
+      "p": 0.986504
+    },
+    {
+      "text": " persona",
+      "fromMs": 7110,
+      "toMs": 7560,
+      "dtwMs": 7200,
+      "p": 0.999068
+    },
+    {
+      "text": " y",
+      "fromMs": 7560,
+      "toMs": 7700,
+      "dtwMs": 9940,
+      "p": 0.500667
+    },
+    {
+      "text": " un",
+      "fromMs": 7700,
+      "toMs": 7990,
+      "dtwMs": 10640,
+      "p": 0.994835
+    },
+    {
+      "text": " dise",
+      "fromMs": 8110,
+      "toMs": 8560,
+      "dtwMs": 10800,
+      "p": 0.990365
+    },
+    {
+      "text": "ño",
+      "fromMs": 8710,
+      "toMs": 8860,
+      "dtwMs": 10940,
+      "p": 0.993665
+    },
+    {
+      "text": " que",
+      "fromMs": 8860,
+      "toMs": 9290,
+      "dtwMs": 11060,
+      "p": 0.993756
+    },
+    {
+      "text": " se",
+      "fromMs": 9290,
+      "toMs": 9580,
+      "dtwMs": 11180,
+      "p": 0.992197
+    },
+    {
+      "text": " lee",
+      "fromMs": 9580,
+      "toMs": 10010,
+      "dtwMs": 11360,
+      "p": 0.984957
+    },
+    {
+      "text": " en",
+      "fromMs": 10130,
+      "toMs": 10300,
+      "dtwMs": 11560,
+      "p": 0.990709
+    },
+    {
+      "text": " menos",
+      "fromMs": 10300,
+      "toMs": 11020,
+      "dtwMs": 11760,
+      "p": 0.99752
+    },
+    {
+      "text": " de",
+      "fromMs": 11020,
+      "toMs": 11310,
+      "dtwMs": 11900,
+      "p": 0.995366
+    },
+    {
+      "text": " 10",
+      "fromMs": 11310,
+      "toMs": 12180,
+      "dtwMs": 12060,
+      "p": 0.539207
+    },
+    {
+      "text": " segundos",
+      "fromMs": 12180,
+      "toMs": 13350,
+      "dtwMs": 12440,
+      "p": 0.987453
+    },
+    {
+      "text": ".",
+      "fromMs": 13400,
+      "toMs": 13400,
+      "dtwMs": 12620,
+      "p": 0.832942
+    }
+  ]
+}

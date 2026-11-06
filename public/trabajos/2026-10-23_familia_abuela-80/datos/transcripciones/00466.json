@@ -1,0 +1,71 @@
+{
+  "archivo": "00466.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 27552,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 30000,
+      "texto": "¡Dale! ¡Shh!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 10,
+      "toMs": 2010,
+      "dtwMs": 720,
+      "p": 0.708486
+    },
+    {
+      "text": "D",
+      "fromMs": 2010,
+      "toMs": 4000,
+      "dtwMs": 11080,
+      "p": 0.914428
+    },
+    {
+      "text": "ale",
+      "fromMs": 4000,
+      "toMs": 9990,
+      "dtwMs": 15820,
+      "p": 1
+    },
+    {
+      "text": "!",
+      "fromMs": 9990,
+      "toMs": 16000,
+      "dtwMs": 19000,
+      "p": 0.999985
+    },
+    {
+      "text": " ¡",
+      "fromMs": 16000,
+      "toMs": 18010,
+      "dtwMs": 19000,
+      "p": 0.880537
+    },
+    {
+      "text": "S",
+      "fromMs": 18010,
+      "toMs": 20000,
+      "dtwMs": 21460,
+      "p": 0.904979
+    },
+    {
+      "text": "hh",
+      "fromMs": 20000,
+      "toMs": 23990,
+      "dtwMs": 25880,
+      "p": 0.842206
+    },
+    {
+      "text": "!",
+      "fromMs": 23990,
+      "toMs": 27510,
+      "dtwMs": 27520,
+      "p": 0.928839
+    }
+  ]
+}

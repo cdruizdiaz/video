@@ -1,0 +1,482 @@
+{
+  "archivo": "IMG_4647.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 24778,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 9780,
+      "texto": "Aquí estamos en el Museo del Umbral, un proyecto institucional colaborativo que hemos elaborado con todos los grupos y el alumnado del instituto"
+    },
+    {
+      "desdeMs": 9780,
+      "hastaMs": 23380,
+      "texto": "con el objetivo de investigar e interiorizarnos sobre distintos rituales funerarios en el mundo en el contexto de la próxima festividad de Halloween y nada."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Aquí",
+      "fromMs": 0,
+      "toMs": 450,
+      "dtwMs": 1300,
+      "p": 0.798764
+    },
+    {
+      "text": " estamos",
+      "fromMs": 930,
+      "toMs": 1210,
+      "dtwMs": 1640,
+      "p": 0.994893
+    },
+    {
+      "text": " en",
+      "fromMs": 1270,
+      "toMs": 1350,
+      "dtwMs": 2020,
+      "p": 0.969466
+    },
+    {
+      "text": " el",
+      "fromMs": 1470,
+      "toMs": 1680,
+      "dtwMs": 2140,
+      "p": 0.989748
+    },
+    {
+      "text": " Muse",
+      "fromMs": 1680,
+      "toMs": 2130,
+      "dtwMs": 2460,
+      "p": 0.793932
+    },
+    {
+      "text": "o",
+      "fromMs": 2130,
+      "toMs": 2240,
+      "dtwMs": 2620,
+      "p": 0.999657
+    },
+    {
+      "text": " del",
+      "fromMs": 2440,
+      "toMs": 2580,
+      "dtwMs": 2800,
+      "p": 0.505961
+    },
+    {
+      "text": " Um",
+      "fromMs": 2580,
+      "toMs": 2800,
+      "dtwMs": 2960,
+      "p": 0.94219
+    },
+    {
+      "text": "bral",
+      "fromMs": 2800,
+      "toMs": 3300,
+      "dtwMs": 3240,
+      "p": 0.998974
+    },
+    {
+      "text": ",",
+      "fromMs": 3300,
+      "toMs": 3400,
+      "dtwMs": 3840,
+      "p": 0.842772
+    },
+    {
+      "text": " un",
+      "fromMs": 3450,
+      "toMs": 3520,
+      "dtwMs": 3960,
+      "p": 0.911532
+    },
+    {
+      "text": " proyecto",
+      "fromMs": 3810,
+      "toMs": 4280,
+      "dtwMs": 4340,
+      "p": 0.983805
+    },
+    {
+      "text": " instit",
+      "fromMs": 4360,
+      "toMs": 4700,
+      "dtwMs": 4600,
+      "p": 0.983343
+    },
+    {
+      "text": "uc",
+      "fromMs": 4700,
+      "toMs": 4800,
+      "dtwMs": 4820,
+      "p": 0.999451
+    },
+    {
+      "text": "ional",
+      "fromMs": 4840,
+      "toMs": 5100,
+      "dtwMs": 5120,
+      "p": 0.999933
+    },
+    {
+      "text": " colabor",
+      "fromMs": 5100,
+      "toMs": 5640,
+      "dtwMs": 5520,
+      "p": 0.939407
+    },
+    {
+      "text": "ativo",
+      "fromMs": 5640,
+      "toMs": 6040,
+      "dtwMs": 6020,
+      "p": 0.999388
+    },
+    {
+      "text": " que",
+      "fromMs": 6040,
+      "toMs": 6300,
+      "dtwMs": 6300,
+      "p": 0.720831
+    },
+    {
+      "text": " hemos",
+      "fromMs": 6300,
+      "toMs": 6500,
+      "dtwMs": 6480,
+      "p": 0.93674
+    },
+    {
+      "text": " elabor",
+      "fromMs": 6500,
+      "toMs": 6830,
+      "dtwMs": 6760,
+      "p": 0.906941
+    },
+    {
+      "text": "ado",
+      "fromMs": 6830,
+      "toMs": 7000,
+      "dtwMs": 7000,
+      "p": 0.99959
+    },
+    {
+      "text": " con",
+      "fromMs": 7000,
+      "toMs": 7180,
+      "dtwMs": 7240,
+      "p": 0.570557
+    },
+    {
+      "text": " todos",
+      "fromMs": 7390,
+      "toMs": 7620,
+      "dtwMs": 7580,
+      "p": 0.968256
+    },
+    {
+      "text": " los",
+      "fromMs": 7620,
+      "toMs": 7760,
+      "dtwMs": 7800,
+      "p": 0.972847
+    },
+    {
+      "text": " grupos",
+      "fromMs": 7850,
+      "toMs": 8180,
+      "dtwMs": 8180,
+      "p": 0.987187
+    },
+    {
+      "text": " y",
+      "fromMs": 8180,
+      "toMs": 8250,
+      "dtwMs": 8440,
+      "p": 0.901946
+    },
+    {
+      "text": " el",
+      "fromMs": 8250,
+      "toMs": 8250,
+      "dtwMs": 8520,
+      "p": 0.368439
+    },
+    {
+      "text": " alum",
+      "fromMs": 8390,
+      "toMs": 8650,
+      "dtwMs": 8720,
+      "p": 0.995677
+    },
+    {
+      "text": "n",
+      "fromMs": 8650,
+      "toMs": 8650,
+      "dtwMs": 8820,
+      "p": 0.998403
+    },
+    {
+      "text": "ado",
+      "fromMs": 8720,
+      "toMs": 8910,
+      "dtwMs": 8940,
+      "p": 0.999682
+    },
+    {
+      "text": " del",
+      "fromMs": 8910,
+      "toMs": 9070,
+      "dtwMs": 9120,
+      "p": 0.991713
+    },
+    {
+      "text": " instit",
+      "fromMs": 9100,
+      "toMs": 9520,
+      "dtwMs": 9420,
+      "p": 0.573833
+    },
+    {
+      "text": "uto",
+      "fromMs": 9520,
+      "toMs": 9780,
+      "dtwMs": 9780,
+      "p": 0.99987
+    },
+    {
+      "text": " con",
+      "fromMs": 9780,
+      "toMs": 10070,
+      "dtwMs": 10360,
+      "p": 0.935831
+    },
+    {
+      "text": " el",
+      "fromMs": 10070,
+      "toMs": 10270,
+      "dtwMs": 10480,
+      "p": 0.999992
+    },
+    {
+      "text": " objetivo",
+      "fromMs": 10710,
+      "toMs": 11080,
+      "dtwMs": 11000,
+      "p": 0.99996
+    },
+    {
+      "text": " de",
+      "fromMs": 11080,
+      "toMs": 11280,
+      "dtwMs": 11400,
+      "p": 0.999996
+    },
+    {
+      "text": " investig",
+      "fromMs": 11280,
+      "toMs": 12050,
+      "dtwMs": 11980,
+      "p": 0.999712
+    },
+    {
+      "text": "ar",
+      "fromMs": 12220,
+      "toMs": 12280,
+      "dtwMs": 12340,
+      "p": 0.999847
+    },
+    {
+      "text": " e",
+      "fromMs": 12280,
+      "toMs": 12380,
+      "dtwMs": 12980,
+      "p": 0.998915
+    },
+    {
+      "text": " interior",
+      "fromMs": 12380,
+      "toMs": 13170,
+      "dtwMs": 13840,
+      "p": 0.999895
+    },
+    {
+      "text": "iz",
+      "fromMs": 13170,
+      "toMs": 13290,
+      "dtwMs": 14100,
+      "p": 0.992029
+    },
+    {
+      "text": "arnos",
+      "fromMs": 13590,
+      "toMs": 13850,
+      "dtwMs": 14320,
+      "p": 0.996027
+    },
+    {
+      "text": " sobre",
+      "fromMs": 13920,
+      "toMs": 14360,
+      "dtwMs": 14680,
+      "p": 0.999922
+    },
+    {
+      "text": " distintos",
+      "fromMs": 14420,
+      "toMs": 15280,
+      "dtwMs": 15320,
+      "p": 0.985214
+    },
+    {
+      "text": " ritual",
+      "fromMs": 15280,
+      "toMs": 15880,
+      "dtwMs": 15880,
+      "p": 0.999809
+    },
+    {
+      "text": "es",
+      "fromMs": 15880,
+      "toMs": 16080,
+      "dtwMs": 16080,
+      "p": 0.999998
+    },
+    {
+      "text": " fun",
+      "fromMs": 16080,
+      "toMs": 16380,
+      "dtwMs": 16340,
+      "p": 0.998312
+    },
+    {
+      "text": "er",
+      "fromMs": 16380,
+      "toMs": 16580,
+      "dtwMs": 16480,
+      "p": 0.999851
+    },
+    {
+      "text": "arios",
+      "fromMs": 16580,
+      "toMs": 17010,
+      "dtwMs": 16840,
+      "p": 0.999897
+    },
+    {
+      "text": " en",
+      "fromMs": 17170,
+      "toMs": 17280,
+      "dtwMs": 17480,
+      "p": 0.998544
+    },
+    {
+      "text": " el",
+      "fromMs": 17280,
+      "toMs": 17480,
+      "dtwMs": 17620,
+      "p": 0.999985
+    },
+    {
+      "text": " mundo",
+      "fromMs": 17480,
+      "toMs": 18020,
+      "dtwMs": 18020,
+      "p": 0.999901
+    },
+    {
+      "text": " en",
+      "fromMs": 18020,
+      "toMs": 18190,
+      "dtwMs": 18320,
+      "p": 0.865538
+    },
+    {
+      "text": " el",
+      "fromMs": 18190,
+      "toMs": 18360,
+      "dtwMs": 18420,
+      "p": 0.999979
+    },
+    {
+      "text": " contexto",
+      "fromMs": 18360,
+      "toMs": 18990,
+      "dtwMs": 18900,
+      "p": 0.999678
+    },
+    {
+      "text": " de",
+      "fromMs": 19060,
+      "toMs": 19160,
+      "dtwMs": 19240,
+      "p": 0.999409
+    },
+    {
+      "text": " la",
+      "fromMs": 19240,
+      "toMs": 19360,
+      "dtwMs": 19600,
+      "p": 0.999453
+    },
+    {
+      "text": " próxima",
+      "fromMs": 19460,
+      "toMs": 19960,
+      "dtwMs": 20320,
+      "p": 0.997876
+    },
+    {
+      "text": " fest",
+      "fromMs": 20090,
+      "toMs": 20310,
+      "dtwMs": 20700,
+      "p": 0.996584
+    },
+    {
+      "text": "ividad",
+      "fromMs": 20310,
+      "toMs": 20820,
+      "dtwMs": 20980,
+      "p": 0.996841
+    },
+    {
+      "text": " de",
+      "fromMs": 20820,
+      "toMs": 20990,
+      "dtwMs": 21320,
+      "p": 0.996282
+    },
+    {
+      "text": " Halloween",
+      "fromMs": 20990,
+      "toMs": 21780,
+      "dtwMs": 21800,
+      "p": 0.997837
+    },
+    {
+      "text": " y",
+      "fromMs": 21790,
+      "toMs": 22100,
+      "dtwMs": 22760,
+      "p": 0.110689
+    },
+    {
+      "text": " nada",
+      "fromMs": 22100,
+      "toMs": 23380,
+      "dtwMs": 23360,
+      "p": 0.97158
+    },
+    {
+      "text": ".",
+      "fromMs": 23380,
+      "toMs": 23380,
+      "dtwMs": 23360,
+      "p": 0.780697
+    }
+  ]
+}

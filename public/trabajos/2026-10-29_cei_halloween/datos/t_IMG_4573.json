@@ -1,0 +1,108 @@
+{
+  "archivo": "IMG_4573.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6370,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        1129,
+        6370
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 1129,
+      "hastaMs": 3589,
+      "texto": "Hey guys, what country did you research?"
+    },
+    {
+      "desdeMs": 3589,
+      "hastaMs": 6369,
+      "texto": "Norway!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hey",
+      "fromMs": 1179,
+      "toMs": 1309,
+      "dtwMs": 1469,
+      "p": 0.298019
+    },
+    {
+      "text": " guys",
+      "fromMs": 1369,
+      "toMs": 1579,
+      "dtwMs": 1889,
+      "p": 0.57084
+    },
+    {
+      "text": ",",
+      "fromMs": 1579,
+      "toMs": 1709,
+      "dtwMs": 2189,
+      "p": 0.844661
+    },
+    {
+      "text": " what",
+      "fromMs": 1709,
+      "toMs": 1919,
+      "dtwMs": 2309,
+      "p": 0.810167
+    },
+    {
+      "text": " country",
+      "fromMs": 1949,
+      "toMs": 2429,
+      "dtwMs": 2609,
+      "p": 0.941987
+    },
+    {
+      "text": " did",
+      "fromMs": 2429,
+      "toMs": 2619,
+      "dtwMs": 2789,
+      "p": 0.96397
+    },
+    {
+      "text": " you",
+      "fromMs": 2619,
+      "toMs": 2809,
+      "dtwMs": 2889,
+      "p": 0.993638
+    },
+    {
+      "text": " research",
+      "fromMs": 2809,
+      "toMs": 3339,
+      "dtwMs": 3289,
+      "p": 0.995196
+    },
+    {
+      "text": "?",
+      "fromMs": 3339,
+      "toMs": 3589,
+      "dtwMs": 3609,
+      "p": 0.986269
+    },
+    {
+      "text": " Norway",
+      "fromMs": 3829,
+      "toMs": 6369,
+      "dtwMs": 4369,
+      "p": 0.908693
+    },
+    {
+      "text": "!",
+      "fromMs": 6369,
+      "toMs": 6369,
+      "dtwMs": 5289,
+      "p": 0.51042
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "archivo": "IMG_4575.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 9187,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2220,
+      "texto": "¿Qué país investigaste?"
+    },
+    {
+      "desdeMs": 2640,
+      "hastaMs": 3120,
+      "texto": "México."
+    },
+    {
+      "desdeMs": 3920,
+      "hastaMs": 5700,
+      "texto": "¿Y qué es tan especial en general?"
+    },
+    {
+      "desdeMs": 6180,
+      "hastaMs": 7320,
+      "texto": "Es como en el filme, Coco."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 90,
+      "dtwMs": 860,
+      "p": 0.776132
+    },
+    {
+      "text": "Qué",
+      "fromMs": 90,
+      "toMs": 370,
+      "dtwMs": 1080,
+      "p": 0.820015
+    },
+    {
+      "text": " país",
+      "fromMs": 370,
+      "toMs": 750,
+      "dtwMs": 1380,
+      "p": 0.556794
+    },
+    {
+      "text": " investig",
+      "fromMs": 930,
+      "toMs": 1520,
+      "dtwMs": 1960,
+      "p": 0.542684
+    },
+    {
+      "text": "aste",
+      "fromMs": 1520,
+      "toMs": 1900,
+      "dtwMs": 2040,
+      "p": 0.832911
+    },
+    {
+      "text": "?",
+      "fromMs": 1900,
+      "toMs": 2220,
+      "dtwMs": 2340,
+      "p": 0.750523
+    },
+    {
+      "text": " México",
+      "fromMs": 2640,
+      "toMs": 2820,
+      "dtwMs": 3140,
+      "p": 0.902435
+    },
+    {
+      "text": ".",
+      "fromMs": 2820,
+      "toMs": 3120,
+      "dtwMs": 3980,
+      "p": 0.754625
+    },
+    {
+      "text": " ¿",
+      "fromMs": 3920,
+      "toMs": 3920,
+      "dtwMs": 4000,
+      "p": 0.708195
+    },
+    {
+      "text": "Y",
+      "fromMs": 3920,
+      "toMs": 3920,
+      "dtwMs": 4100,
+      "p": 0.714476
+    },
+    {
+      "text": " qué",
+      "fromMs": 3920,
+      "toMs": 3920,
+      "dtwMs": 4280,
+      "p": 0.728158
+    },
+    {
+      "text": " es",
+      "fromMs": 3920,
+      "toMs": 3920,
+      "dtwMs": 4520,
+      "p": 0.856398
+    },
+    {
+      "text": " tan",
+      "fromMs": 3920,
+      "toMs": 4170,
+      "dtwMs": 4640,
+      "p": 0.95258
+    },
+    {
+      "text": " especial",
+      "fromMs": 4170,
+      "toMs": 5080,
+      "dtwMs": 5020,
+      "p": 0.937854
+    },
+    {
+      "text": " en",
+      "fromMs": 5080,
+      "toMs": 5180,
+      "dtwMs": 5280,
+      "p": 0.122771
+    },
+    {
+      "text": " general",
+      "fromMs": 5180,
+      "toMs": 5470,
+      "dtwMs": 5680,
+      "p": 0.850663
+    },
+    {
+      "text": "?",
+      "fromMs": 5510,
+      "toMs": 5700,
+      "dtwMs": 6220,
+      "p": 0.874227
+    },
+    {
+      "text": " Es",
+      "fromMs": 6180,
+      "toMs": 6180,
+      "dtwMs": 6400,
+      "p": 0.76524
+    },
+    {
+      "text": " como",
+      "fromMs": 6180,
+      "toMs": 6180,
+      "dtwMs": 6600,
+      "p": 0.987182
+    },
+    {
+      "text": " en",
+      "fromMs": 6180,
+      "toMs": 6230,
+      "dtwMs": 6700,
+      "p": 0.974479
+    },
+    {
+      "text": " el",
+      "fromMs": 6230,
+      "toMs": 6360,
+      "dtwMs": 6780,
+      "p": 0.803966
+    },
+    {
+      "text": " filme",
+      "fromMs": 6360,
+      "toMs": 6690,
+      "dtwMs": 7000,
+      "p": 0.35101
+    },
+    {
+      "text": ",",
+      "fromMs": 6690,
+      "toMs": 6820,
+      "dtwMs": 7100,
+      "p": 0.803506
+    },
+    {
+      "text": " Coco",
+      "fromMs": 6820,
+      "toMs": 7090,
+      "dtwMs": 7300,
+      "p": 0.756903
+    },
+    {
+      "text": ".",
+      "fromMs": 7110,
+      "toMs": 7320,
+      "dtwMs": 7300,
+      "p": 0.998883
+    }
+  ]
+}

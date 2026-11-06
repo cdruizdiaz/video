@@ -1,0 +1,158 @@
+{
+  "archivo": "IMG_4652.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 9053,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3420,
+      "texto": "¿Qué cultura te tocó investigar?"
+    },
+    {
+      "desdeMs": 3940,
+      "hastaMs": 5080,
+      "texto": "La de Noruega"
+    },
+    {
+      "desdeMs": 5080,
+      "hastaMs": 7680,
+      "texto": "Eh, ¿qué...?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 190,
+      "dtwMs": 1500,
+      "p": 0.691426
+    },
+    {
+      "text": "Qué",
+      "fromMs": 220,
+      "toMs": 760,
+      "dtwMs": 1660,
+      "p": 0.937965
+    },
+    {
+      "text": " cultura",
+      "fromMs": 840,
+      "toMs": 2160,
+      "dtwMs": 2140,
+      "p": 0.996409
+    },
+    {
+      "text": " te",
+      "fromMs": 2160,
+      "toMs": 2230,
+      "dtwMs": 2420,
+      "p": 0.953497
+    },
+    {
+      "text": " toc",
+      "fromMs": 2360,
+      "toMs": 2620,
+      "dtwMs": 2680,
+      "p": 0.991683
+    },
+    {
+      "text": "ó",
+      "fromMs": 2710,
+      "toMs": 2760,
+      "dtwMs": 2760,
+      "p": 0.999979
+    },
+    {
+      "text": " investig",
+      "fromMs": 2760,
+      "toMs": 3160,
+      "dtwMs": 3100,
+      "p": 0.978372
+    },
+    {
+      "text": "ar",
+      "fromMs": 3160,
+      "toMs": 3260,
+      "dtwMs": 3380,
+      "p": 0.999947
+    },
+    {
+      "text": "?",
+      "fromMs": 3260,
+      "toMs": 3380,
+      "dtwMs": 3680,
+      "p": 0.996063
+    },
+    {
+      "text": " La",
+      "fromMs": 3940,
+      "toMs": 3720,
+      "dtwMs": 4140,
+      "p": 0.993997
+    },
+    {
+      "text": " de",
+      "fromMs": 3940,
+      "toMs": 4020,
+      "dtwMs": 4300,
+      "p": 0.993735
+    },
+    {
+      "text": " Nor",
+      "fromMs": 4020,
+      "toMs": 4460,
+      "dtwMs": 4500,
+      "p": 0.846303
+    },
+    {
+      "text": "ue",
+      "fromMs": 4510,
+      "toMs": 4770,
+      "dtwMs": 4780,
+      "p": 0.998035
+    },
+    {
+      "text": "ga",
+      "fromMs": 4770,
+      "toMs": 5070,
+      "dtwMs": 5020,
+      "p": 0.993229
+    },
+    {
+      "text": " Eh",
+      "fromMs": 5240,
+      "toMs": 6140,
+      "dtwMs": 6040,
+      "p": 0.550641
+    },
+    {
+      "text": ",",
+      "fromMs": 6140,
+      "toMs": 6300,
+      "dtwMs": 6380,
+      "p": 0.835019
+    },
+    {
+      "text": " ¿",
+      "fromMs": 6300,
+      "toMs": 6370,
+      "dtwMs": 6560,
+      "p": 0.452815
+    },
+    {
+      "text": "qué",
+      "fromMs": 6640,
+      "toMs": 6640,
+      "dtwMs": 6660,
+      "p": 0.972448
+    },
+    {
+      "text": "...?",
+      "fromMs": 6690,
+      "toMs": 7680,
+      "dtwMs": 7660,
+      "p": 0.513533
+    }
+  ]
+}

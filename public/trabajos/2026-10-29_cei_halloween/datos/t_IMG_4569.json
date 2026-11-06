@@ -1,0 +1,43 @@
+{
+  "archivo": "IMG_4569.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1683,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1680,
+      "texto": "They use flowers."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " They",
+      "fromMs": 270,
+      "toMs": 480,
+      "dtwMs": 380,
+      "p": 0.077807
+    },
+    {
+      "text": " use",
+      "fromMs": 480,
+      "toMs": 800,
+      "dtwMs": 720,
+      "p": 0.824015
+    },
+    {
+      "text": " flowers",
+      "fromMs": 830,
+      "toMs": 1520,
+      "dtwMs": 1300,
+      "p": 0.96585
+    },
+    {
+      "text": ".",
+      "fromMs": 1590,
+      "toMs": 1680,
+      "dtwMs": 1660,
+      "p": 0.681688
+    }
+  ]
+}

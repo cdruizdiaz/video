@@ -1,0 +1,127 @@
+{
+  "archivo": "IMG_4539.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5083,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5080,
+      "texto": "¿Cómo te miras en el video? ¿En el video? No."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 120,
+      "dtwMs": 0,
+      "p": 0.998692
+    },
+    {
+      "text": "Cómo",
+      "fromMs": 120,
+      "toMs": 600,
+      "dtwMs": 0,
+      "p": 0.894314
+    },
+    {
+      "text": " te",
+      "fromMs": 600,
+      "toMs": 840,
+      "dtwMs": 180,
+      "p": 0.509637
+    },
+    {
+      "text": " mir",
+      "fromMs": 840,
+      "toMs": 1200,
+      "dtwMs": 460,
+      "p": 0.999992
+    },
+    {
+      "text": "as",
+      "fromMs": 1200,
+      "toMs": 1440,
+      "dtwMs": 660,
+      "p": 0.999992
+    },
+    {
+      "text": " en",
+      "fromMs": 1440,
+      "toMs": 1680,
+      "dtwMs": 920,
+      "p": 0.999874
+    },
+    {
+      "text": " el",
+      "fromMs": 1680,
+      "toMs": 1920,
+      "dtwMs": 1760,
+      "p": 0.956225
+    },
+    {
+      "text": " video",
+      "fromMs": 1920,
+      "toMs": 2510,
+      "dtwMs": 2000,
+      "p": 0.824469
+    },
+    {
+      "text": "?",
+      "fromMs": 2520,
+      "toMs": 2880,
+      "dtwMs": 2300,
+      "p": 0.983749
+    },
+    {
+      "text": " ¿",
+      "fromMs": 2880,
+      "toMs": 3000,
+      "dtwMs": 2920,
+      "p": 0.99773
+    },
+    {
+      "text": "En",
+      "fromMs": 3000,
+      "toMs": 3240,
+      "dtwMs": 2920,
+      "p": 0.697317
+    },
+    {
+      "text": " el",
+      "fromMs": 3240,
+      "toMs": 3480,
+      "dtwMs": 3100,
+      "p": 0.679635
+    },
+    {
+      "text": " video",
+      "fromMs": 3480,
+      "toMs": 4080,
+      "dtwMs": 3420,
+      "p": 1
+    },
+    {
+      "text": "?",
+      "fromMs": 4080,
+      "toMs": 4430,
+      "dtwMs": 3720,
+      "p": 0.999989
+    },
+    {
+      "text": " No",
+      "fromMs": 4440,
+      "toMs": 4680,
+      "dtwMs": 4040,
+      "p": 0.978112
+    },
+    {
+      "text": ".",
+      "fromMs": 4680,
+      "toMs": 5080,
+      "dtwMs": 4320,
+      "p": 0.748825
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "archivo": "IMG_9480.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 16328,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        1817
+      ],
+      [
+        5527,
+        6942
+      ],
+      [
+        8220,
+        9377
+      ],
+      [
+        9981,
+        11826
+      ],
+      [
+        16078,
+        16328
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1817,
+      "texto": "- Sí - Para que va a ser la chica"
+    },
+    {
+      "desdeMs": 5527,
+      "hastaMs": 8388,
+      "texto": "- ¿Voy? - Dale"
+    },
+    {
+      "desdeMs": 8388,
+      "hastaMs": 9377,
+      "texto": "- Ah, yo te coloco acá"
+    },
+    {
+      "desdeMs": 9981,
+      "hastaMs": 11692,
+      "texto": "Tranqui, nosotros te lo resolvemos"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " -",
+      "fromMs": 120,
+      "toMs": 120,
+      "dtwMs": 200,
+      "p": 0.061562
+    },
+    {
+      "text": " Sí",
+      "fromMs": 360,
+      "toMs": 1000,
+      "dtwMs": 440,
+      "p": 0.0395833
+    },
+    {
+      "text": " -",
+      "fromMs": 1000,
+      "toMs": 1040,
+      "dtwMs": 900,
+      "p": 0.308445
+    },
+    {
+      "text": " Para",
+      "fromMs": 1040,
+      "toMs": 1210,
+      "dtwMs": 1040,
+      "p": 0.603363
+    },
+    {
+      "text": " que",
+      "fromMs": 1270,
+      "toMs": 1370,
+      "dtwMs": 1140,
+      "p": 0.76267
+    },
+    {
+      "text": " va",
+      "fromMs": 1370,
+      "toMs": 1460,
+      "dtwMs": 1220,
+      "p": 0.54781
+    },
+    {
+      "text": " a",
+      "fromMs": 1460,
+      "toMs": 1500,
+      "dtwMs": 1300,
+      "p": 0.852778
+    },
+    {
+      "text": " ser",
+      "fromMs": 1500,
+      "toMs": 1580,
+      "dtwMs": 1300,
+      "p": 0.937298
+    },
+    {
+      "text": " la",
+      "fromMs": 1650,
+      "toMs": 1720,
+      "dtwMs": 1400,
+      "p": 0.927681
+    },
+    {
+      "text": " ch",
+      "fromMs": 1720,
+      "toMs": 1810,
+      "dtwMs": 1480,
+      "p": 0.99076
+    },
+    {
+      "text": "ica",
+      "fromMs": 5527,
+      "toMs": 1817,
+      "dtwMs": 1600,
+      "p": 0.99729
+    },
+    {
+      "text": " -",
+      "fromMs": 5527,
+      "toMs": 5530,
+      "dtwMs": 5730,
+      "p": 0.658307
+    },
+    {
+      "text": " ¿",
+      "fromMs": 5530,
+      "toMs": 5650,
+      "dtwMs": 6290,
+      "p": 0.315263
+    },
+    {
+      "text": "V",
+      "fromMs": 5760,
+      "toMs": 5770,
+      "dtwMs": 6430,
+      "p": 0.714256
+    },
+    {
+      "text": "oy",
+      "fromMs": 5770,
+      "toMs": 6000,
+      "dtwMs": 6470,
+      "p": 0.970276
+    },
+    {
+      "text": "?",
+      "fromMs": 6380,
+      "toMs": 6410,
+      "dtwMs": 6550,
+      "p": 0.978024
+    },
+    {
+      "text": " -",
+      "fromMs": 6410,
+      "toMs": 6610,
+      "dtwMs": 6550,
+      "p": 0.944362
+    },
+    {
+      "text": " Dale",
+      "fromMs": 6610,
+      "toMs": 6942,
+      "dtwMs": 6730,
+      "p": 0.715821
+    },
+    {
+      "text": " -",
+      "fromMs": 8388,
+      "toMs": 8448,
+      "dtwMs": 8488,
+      "p": 0.679295
+    },
+    {
+      "text": " Ah",
+      "fromMs": 8448,
+      "toMs": 8578,
+      "dtwMs": 8608,
+      "p": 0.654904
+    },
+    {
+      "text": ",",
+      "fromMs": 8708,
+      "toMs": 8708,
+      "dtwMs": 8648,
+      "p": 0.795663
+    },
+    {
+      "text": " yo",
+      "fromMs": 8738,
+      "toMs": 8828,
+      "dtwMs": 8728,
+      "p": 0.369998
+    },
+    {
+      "text": " te",
+      "fromMs": 8968,
+      "toMs": 8968,
+      "dtwMs": 8768,
+      "p": 0.52056
+    },
+    {
+      "text": " col",
+      "fromMs": 8968,
+      "toMs": 9168,
+      "dtwMs": 8908,
+      "p": 0.274653
+    },
+    {
+      "text": "oco",
+      "fromMs": 9358,
+      "toMs": 9377,
+      "dtwMs": 8988,
+      "p": 0.791651
+    },
+    {
+      "text": " acá",
+      "fromMs": 9981,
+      "toMs": 9377,
+      "dtwMs": 9188,
+      "p": 0.567138
+    },
+    {
+      "text": " Tran",
+      "fromMs": 9981,
+      "toMs": 10262,
+      "dtwMs": 10332,
+      "p": 0.737156
+    },
+    {
+      "text": "qui",
+      "fromMs": 10662,
+      "toMs": 10692,
+      "dtwMs": 10492,
+      "p": 0.989134
+    },
+    {
+      "text": ",",
+      "fromMs": 10692,
+      "toMs": 10772,
+      "dtwMs": 10692,
+      "p": 0.925734
+    },
+    {
+      "text": " nosotros",
+      "fromMs": 10772,
+      "toMs": 11072,
+      "dtwMs": 10912,
+      "p": 0.923391
+    },
+    {
+      "text": " te",
+      "fromMs": 11142,
+      "toMs": 11182,
+      "dtwMs": 11072,
+      "p": 0.986291
+    },
+    {
+      "text": " lo",
+      "fromMs": 11182,
+      "toMs": 11262,
+      "dtwMs": 11152,
+      "p": 0.934383
+    },
+    {
+      "text": " resolve",
+      "fromMs": 11262,
+      "toMs": 11492,
+      "dtwMs": 11412,
+      "p": 0.983166
+    },
+    {
+      "text": "mos",
+      "fromMs": 11692,
+      "toMs": 11692,
+      "dtwMs": 11672,
+      "p": 0.999891
+    }
+  ]
+}

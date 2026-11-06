@@ -1,0 +1,218 @@
+{
+  "archivo": "IMG_8422.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5552,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5560,
+      "texto": "¿Necesitas un profesional matriculado? Encontralos en nuestro buscador de traductores e intérpretes"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 70,
+      "dtwMs": 1040,
+      "p": 0.794548
+    },
+    {
+      "text": "Ne",
+      "fromMs": 70,
+      "toMs": 210,
+      "dtwMs": 1180,
+      "p": 0.881862
+    },
+    {
+      "text": "ces",
+      "fromMs": 210,
+      "toMs": 420,
+      "dtwMs": 1280,
+      "p": 0.999847
+    },
+    {
+      "text": "itas",
+      "fromMs": 420,
+      "toMs": 700,
+      "dtwMs": 1440,
+      "p": 0.965022
+    },
+    {
+      "text": " un",
+      "fromMs": 700,
+      "toMs": 840,
+      "dtwMs": 1540,
+      "p": 0.979141
+    },
+    {
+      "text": " profesional",
+      "fromMs": 840,
+      "toMs": 1620,
+      "dtwMs": 1980,
+      "p": 0.9762
+    },
+    {
+      "text": " mat",
+      "fromMs": 1620,
+      "toMs": 1820,
+      "dtwMs": 2180,
+      "p": 0.991415
+    },
+    {
+      "text": "ric",
+      "fromMs": 1830,
+      "toMs": 2040,
+      "dtwMs": 2320,
+      "p": 0.998563
+    },
+    {
+      "text": "ul",
+      "fromMs": 2040,
+      "toMs": 2160,
+      "dtwMs": 2460,
+      "p": 0.999487
+    },
+    {
+      "text": "ado",
+      "fromMs": 2180,
+      "toMs": 2390,
+      "dtwMs": 2620,
+      "p": 0.994619
+    },
+    {
+      "text": "?",
+      "fromMs": 2390,
+      "toMs": 2640,
+      "dtwMs": 2840,
+      "p": 0.990634
+    },
+    {
+      "text": " En",
+      "fromMs": 2640,
+      "toMs": 2750,
+      "dtwMs": 3180,
+      "p": 0.591142
+    },
+    {
+      "text": "cont",
+      "fromMs": 2760,
+      "toMs": 3000,
+      "dtwMs": 3320,
+      "p": 0.996571
+    },
+    {
+      "text": "ral",
+      "fromMs": 3000,
+      "toMs": 3180,
+      "dtwMs": 3420,
+      "p": 0.963438
+    },
+    {
+      "text": "os",
+      "fromMs": 3180,
+      "toMs": 3270,
+      "dtwMs": 3580,
+      "p": 0.983316
+    },
+    {
+      "text": " en",
+      "fromMs": 3300,
+      "toMs": 3420,
+      "dtwMs": 3740,
+      "p": 0.987174
+    },
+    {
+      "text": " nuestro",
+      "fromMs": 3420,
+      "toMs": 3850,
+      "dtwMs": 3940,
+      "p": 0.986051
+    },
+    {
+      "text": " bus",
+      "fromMs": 3850,
+      "toMs": 4030,
+      "dtwMs": 4140,
+      "p": 0.954765
+    },
+    {
+      "text": "c",
+      "fromMs": 4030,
+      "toMs": 4070,
+      "dtwMs": 4200,
+      "p": 0.999882
+    },
+    {
+      "text": "ador",
+      "fromMs": 4170,
+      "toMs": 4330,
+      "dtwMs": 4360,
+      "p": 0.999737
+    },
+    {
+      "text": " de",
+      "fromMs": 4330,
+      "toMs": 4490,
+      "dtwMs": 4540,
+      "p": 0.986579
+    },
+    {
+      "text": " trad",
+      "fromMs": 4490,
+      "toMs": 4680,
+      "dtwMs": 4680,
+      "p": 0.366958
+    },
+    {
+      "text": "uct",
+      "fromMs": 4680,
+      "toMs": 4740,
+      "dtwMs": 4820,
+      "p": 0.987982
+    },
+    {
+      "text": "ores",
+      "fromMs": 4810,
+      "toMs": 4980,
+      "dtwMs": 4940,
+      "p": 0.999903
+    },
+    {
+      "text": " e",
+      "fromMs": 4990,
+      "toMs": 5030,
+      "dtwMs": 5080,
+      "p": 0.922521
+    },
+    {
+      "text": " int",
+      "fromMs": 5030,
+      "toMs": 5160,
+      "dtwMs": 5140,
+      "p": 0.952449
+    },
+    {
+      "text": "ér",
+      "fromMs": 5160,
+      "toMs": 5250,
+      "dtwMs": 5260,
+      "p": 0.99783
+    },
+    {
+      "text": "pret",
+      "fromMs": 5250,
+      "toMs": 5430,
+      "dtwMs": 5440,
+      "p": 0.996662
+    },
+    {
+      "text": "es",
+      "fromMs": 5430,
+      "toMs": 5550,
+      "dtwMs": 5520,
+      "p": 0.999981
+    }
+  ]
+}

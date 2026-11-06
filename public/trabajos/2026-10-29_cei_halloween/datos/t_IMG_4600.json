@@ -1,0 +1,197 @@
+{
+  "archivo": "IMG_4600.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8932,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 8940,
+      "texto": "Bueno, este es el proyecto \"El Museo\", llamado \"The Threshold\", es el cierre de un proceso de..."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bueno",
+      "fromMs": 60,
+      "toMs": 560,
+      "dtwMs": 1140,
+      "p": 0.700843
+    },
+    {
+      "text": ",",
+      "fromMs": 560,
+      "toMs": 780,
+      "dtwMs": 1600,
+      "p": 0.883377
+    },
+    {
+      "text": " este",
+      "fromMs": 860,
+      "toMs": 1230,
+      "dtwMs": 1820,
+      "p": 0.960135
+    },
+    {
+      "text": " es",
+      "fromMs": 1230,
+      "toMs": 1450,
+      "dtwMs": 2040,
+      "p": 0.990327
+    },
+    {
+      "text": " el",
+      "fromMs": 1470,
+      "toMs": 1670,
+      "dtwMs": 2160,
+      "p": 0.992163
+    },
+    {
+      "text": " proyecto",
+      "fromMs": 1670,
+      "toMs": 2620,
+      "dtwMs": 2580,
+      "p": 0.969324
+    },
+    {
+      "text": " \"",
+      "fromMs": 2620,
+      "toMs": 2710,
+      "dtwMs": 2820,
+      "p": 0.222916
+    },
+    {
+      "text": "El",
+      "fromMs": 2720,
+      "toMs": 2920,
+      "dtwMs": 2880,
+      "p": 0.902314
+    },
+    {
+      "text": " Muse",
+      "fromMs": 2920,
+      "toMs": 3330,
+      "dtwMs": 3240,
+      "p": 0.80687
+    },
+    {
+      "text": "o",
+      "fromMs": 3330,
+      "toMs": 3430,
+      "dtwMs": 3580,
+      "p": 0.999293
+    },
+    {
+      "text": "\",",
+      "fromMs": 3430,
+      "toMs": 3580,
+      "dtwMs": 3680,
+      "p": 0.617718
+    },
+    {
+      "text": " llamado",
+      "fromMs": 3860,
+      "toMs": 4130,
+      "dtwMs": 4100,
+      "p": 0.900527
+    },
+    {
+      "text": " \"",
+      "fromMs": 4130,
+      "toMs": 4180,
+      "dtwMs": 4240,
+      "p": 0.546511
+    },
+    {
+      "text": "The",
+      "fromMs": 4180,
+      "toMs": 4270,
+      "dtwMs": 4280,
+      "p": 0.975069
+    },
+    {
+      "text": " Th",
+      "fromMs": 4400,
+      "toMs": 4440,
+      "dtwMs": 4440,
+      "p": 0.893989
+    },
+    {
+      "text": "reshold",
+      "fromMs": 4440,
+      "toMs": 4810,
+      "dtwMs": 4840,
+      "p": 0.994994
+    },
+    {
+      "text": "\",",
+      "fromMs": 4810,
+      "toMs": 5000,
+      "dtwMs": 5280,
+      "p": 0.454922
+    },
+    {
+      "text": " es",
+      "fromMs": 5000,
+      "toMs": 5350,
+      "dtwMs": 5520,
+      "p": 0.447692
+    },
+    {
+      "text": " el",
+      "fromMs": 5410,
+      "toMs": 5780,
+      "dtwMs": 6520,
+      "p": 0.926621
+    },
+    {
+      "text": " cier",
+      "fromMs": 5780,
+      "toMs": 6520,
+      "dtwMs": 6780,
+      "p": 0.984973
+    },
+    {
+      "text": "re",
+      "fromMs": 6650,
+      "toMs": 6970,
+      "dtwMs": 6840,
+      "p": 0.998881
+    },
+    {
+      "text": " de",
+      "fromMs": 6980,
+      "toMs": 7920,
+      "dtwMs": 6940,
+      "p": 0.959454
+    },
+    {
+      "text": " un",
+      "fromMs": 8070,
+      "toMs": 8930,
+      "dtwMs": 7020,
+      "p": 0.98782
+    },
+    {
+      "text": " proceso",
+      "fromMs": 8930,
+      "toMs": 8930,
+      "dtwMs": 7560,
+      "p": 0.973485
+    },
+    {
+      "text": " de",
+      "fromMs": 8930,
+      "toMs": 8930,
+      "dtwMs": 7860,
+      "p": 0.735169
+    },
+    {
+      "text": "...",
+      "fromMs": 8930,
+      "toMs": 8930,
+      "dtwMs": 8040,
+      "p": 0.538632
+    }
+  ]
+}

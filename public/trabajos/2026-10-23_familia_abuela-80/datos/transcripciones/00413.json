@@ -1,0 +1,365 @@
+{
+  "archivo": "00413.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 16032,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 30000,
+      "texto": "- ¿Qué te pasa? - Tía, querés dar una merienda rápida? - ¿Y esto, papá? - ¿Qué pasa? - ¿Lo saco? - ¿Lo saco? - ¿Lo saco?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " -",
+      "fromMs": 30,
+      "toMs": 350,
+      "dtwMs": 2340,
+      "p": 0.0962828
+    },
+    {
+      "text": " ¿",
+      "fromMs": 350,
+      "toMs": 660,
+      "dtwMs": 2340,
+      "p": 0.0773308
+    },
+    {
+      "text": "Qué",
+      "fromMs": 700,
+      "toMs": 1690,
+      "dtwMs": 4260,
+      "p": 0.493973
+    },
+    {
+      "text": " te",
+      "fromMs": 1770,
+      "toMs": 2470,
+      "dtwMs": 4340,
+      "p": 0.465633
+    },
+    {
+      "text": " pasa",
+      "fromMs": 2470,
+      "toMs": 3890,
+      "dtwMs": 4660,
+      "p": 0.944601
+    },
+    {
+      "text": "?",
+      "fromMs": 3890,
+      "toMs": 4990,
+      "dtwMs": 4960,
+      "p": 0.892352
+    },
+    {
+      "text": " -",
+      "fromMs": 5010,
+      "toMs": 5050,
+      "dtwMs": 4980,
+      "p": 0.523359
+    },
+    {
+      "text": " T",
+      "fromMs": 5050,
+      "toMs": 5100,
+      "dtwMs": 5060,
+      "p": 0.0834177
+    },
+    {
+      "text": "ía",
+      "fromMs": 5100,
+      "toMs": 5210,
+      "dtwMs": 5180,
+      "p": 0.89979
+    },
+    {
+      "text": ",",
+      "fromMs": 5210,
+      "toMs": 5320,
+      "dtwMs": 5360,
+      "p": 0.796366
+    },
+    {
+      "text": " quer",
+      "fromMs": 5320,
+      "toMs": 5540,
+      "dtwMs": 5620,
+      "p": 0.391729
+    },
+    {
+      "text": "és",
+      "fromMs": 5540,
+      "toMs": 5650,
+      "dtwMs": 5680,
+      "p": 0.907952
+    },
+    {
+      "text": " dar",
+      "fromMs": 5650,
+      "toMs": 5820,
+      "dtwMs": 5780,
+      "p": 0.260744
+    },
+    {
+      "text": " una",
+      "fromMs": 5820,
+      "toMs": 5990,
+      "dtwMs": 5960,
+      "p": 0.870758
+    },
+    {
+      "text": " mer",
+      "fromMs": 5990,
+      "toMs": 6160,
+      "dtwMs": 6140,
+      "p": 0.773137
+    },
+    {
+      "text": "ienda",
+      "fromMs": 6160,
+      "toMs": 6440,
+      "dtwMs": 6280,
+      "p": 0.664111
+    },
+    {
+      "text": " ráp",
+      "fromMs": 6440,
+      "toMs": 6610,
+      "dtwMs": 6560,
+      "p": 0.392676
+    },
+    {
+      "text": "ida",
+      "fromMs": 6610,
+      "toMs": 6780,
+      "dtwMs": 6700,
+      "p": 0.999847
+    },
+    {
+      "text": "?",
+      "fromMs": 6780,
+      "toMs": 7000,
+      "dtwMs": 6980,
+      "p": 0.621709
+    },
+    {
+      "text": " -",
+      "fromMs": 7000,
+      "toMs": 7080,
+      "dtwMs": 6980,
+      "p": 0.484087
+    },
+    {
+      "text": " ¿",
+      "fromMs": 7080,
+      "toMs": 7160,
+      "dtwMs": 7240,
+      "p": 0.330045
+    },
+    {
+      "text": "Y",
+      "fromMs": 7160,
+      "toMs": 7240,
+      "dtwMs": 7240,
+      "p": 0.546394
+    },
+    {
+      "text": " esto",
+      "fromMs": 7240,
+      "toMs": 7570,
+      "dtwMs": 7700,
+      "p": 0.884053
+    },
+    {
+      "text": ",",
+      "fromMs": 7570,
+      "toMs": 7730,
+      "dtwMs": 7900,
+      "p": 0.748063
+    },
+    {
+      "text": " pap",
+      "fromMs": 7730,
+      "toMs": 7980,
+      "dtwMs": 7920,
+      "p": 0.342752
+    },
+    {
+      "text": "á",
+      "fromMs": 7980,
+      "toMs": 8060,
+      "dtwMs": 8140,
+      "p": 0.995209
+    },
+    {
+      "text": "?",
+      "fromMs": 8060,
+      "toMs": 8210,
+      "dtwMs": 8920,
+      "p": 0.993636
+    },
+    {
+      "text": " -",
+      "fromMs": 8210,
+      "toMs": 8460,
+      "dtwMs": 9160,
+      "p": 0.750927
+    },
+    {
+      "text": " ¿",
+      "fromMs": 8460,
+      "toMs": 8580,
+      "dtwMs": 9660,
+      "p": 0.726284
+    },
+    {
+      "text": "Qué",
+      "fromMs": 8580,
+      "toMs": 8960,
+      "dtwMs": 9680,
+      "p": 0.368889
+    },
+    {
+      "text": " pasa",
+      "fromMs": 8960,
+      "toMs": 9470,
+      "dtwMs": 9840,
+      "p": 0.341456
+    },
+    {
+      "text": "?",
+      "fromMs": 9600,
+      "toMs": 9850,
+      "dtwMs": 10180,
+      "p": 0.9972
+    },
+    {
+      "text": " -",
+      "fromMs": 9850,
+      "toMs": 9970,
+      "dtwMs": 10340,
+      "p": 0.907615
+    },
+    {
+      "text": " ¿",
+      "fromMs": 9970,
+      "toMs": 10080,
+      "dtwMs": 10400,
+      "p": 0.432089
+    },
+    {
+      "text": "Lo",
+      "fromMs": 10080,
+      "toMs": 10340,
+      "dtwMs": 10480,
+      "p": 0.614433
+    },
+    {
+      "text": " sac",
+      "fromMs": 10390,
+      "toMs": 10720,
+      "dtwMs": 10820,
+      "p": 0.995453
+    },
+    {
+      "text": "o",
+      "fromMs": 10720,
+      "toMs": 10770,
+      "dtwMs": 11000,
+      "p": 0.982064
+    },
+    {
+      "text": "?",
+      "fromMs": 10830,
+      "toMs": 11280,
+      "dtwMs": 11220,
+      "p": 0.998308
+    },
+    {
+      "text": " -",
+      "fromMs": 11280,
+      "toMs": 11330,
+      "dtwMs": 11740,
+      "p": 0.692649
+    },
+    {
+      "text": " ¿",
+      "fromMs": 11330,
+      "toMs": 11380,
+      "dtwMs": 11740,
+      "p": 0.315157
+    },
+    {
+      "text": "Lo",
+      "fromMs": 11380,
+      "toMs": 11490,
+      "dtwMs": 11740,
+      "p": 0.942189
+    },
+    {
+      "text": " sac",
+      "fromMs": 11490,
+      "toMs": 11660,
+      "dtwMs": 11740,
+      "p": 0.997349
+    },
+    {
+      "text": "o",
+      "fromMs": 11660,
+      "toMs": 11710,
+      "dtwMs": 11740,
+      "p": 0.985983
+    },
+    {
+      "text": "?",
+      "fromMs": 11710,
+      "toMs": 11920,
+      "dtwMs": 11740,
+      "p": 0.995786
+    },
+    {
+      "text": " -",
+      "fromMs": 11920,
+      "toMs": 13570,
+      "dtwMs": 11740,
+      "p": 0.479314
+    },
+    {
+      "text": " ¿",
+      "fromMs": 13570,
+      "toMs": 15220,
+      "dtwMs": 12240,
+      "p": 0.25406
+    },
+    {
+      "text": "Lo",
+      "fromMs": 15220,
+      "toMs": 16000,
+      "dtwMs": 12380,
+      "p": 0.576481
+    },
+    {
+      "text": " sac",
+      "fromMs": 16030,
+      "toMs": 16030,
+      "dtwMs": 12640,
+      "p": 0.964369
+    },
+    {
+      "text": "o",
+      "fromMs": 16030,
+      "toMs": 16030,
+      "dtwMs": 12640,
+      "p": 0.979307
+    },
+    {
+      "text": "?",
+      "fromMs": 16030,
+      "toMs": 16030,
+      "dtwMs": 12640,
+      "p": 0.993248
+    }
+  ]
+}

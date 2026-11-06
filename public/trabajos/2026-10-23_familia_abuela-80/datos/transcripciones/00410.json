@@ -1,0 +1,64 @@
+{
+  "archivo": "00410.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 14016,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2140,
+      "texto": "¡Vamos, Fito!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 10,
+      "toMs": 140,
+      "dtwMs": 1580,
+      "p": 0.991446
+    },
+    {
+      "text": "V",
+      "fromMs": 140,
+      "toMs": 280,
+      "dtwMs": 1640,
+      "p": 0.601689
+    },
+    {
+      "text": "amos",
+      "fromMs": 280,
+      "toMs": 840,
+      "dtwMs": 1720,
+      "p": 0.999575
+    },
+    {
+      "text": ",",
+      "fromMs": 840,
+      "toMs": 1120,
+      "dtwMs": 1820,
+      "p": 0.914395
+    },
+    {
+      "text": " F",
+      "fromMs": 1120,
+      "toMs": 1260,
+      "dtwMs": 1960,
+      "p": 0.65476
+    },
+    {
+      "text": "ito",
+      "fromMs": 1260,
+      "toMs": 1680,
+      "dtwMs": 2120,
+      "p": 0.97523
+    },
+    {
+      "text": "!",
+      "fromMs": 1680,
+      "toMs": 2140,
+      "dtwMs": 2120,
+      "p": 0.999996
+    }
+  ]
+}

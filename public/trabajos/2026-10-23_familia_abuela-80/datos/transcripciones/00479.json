@@ -1,0 +1,337 @@
+{
+  "archivo": "00479.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 20544,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 20520,
+      "texto": "*Muziek* En dat je ogen loopt, dat je loopt, dat je loopt, dat je loopt. Perfait ik ga al zo perfait. *Muziek*"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " *",
+      "fromMs": 0,
+      "toMs": 210,
+      "dtwMs": 1060,
+      "p": 0.33703
+    },
+    {
+      "text": "M",
+      "fromMs": 210,
+      "toMs": 420,
+      "dtwMs": 1060,
+      "p": 0.253534
+    },
+    {
+      "text": "u",
+      "fromMs": 420,
+      "toMs": 630,
+      "dtwMs": 1060,
+      "p": 0.987008
+    },
+    {
+      "text": "zie",
+      "fromMs": 630,
+      "toMs": 1260,
+      "dtwMs": 1060,
+      "p": 0.779172
+    },
+    {
+      "text": "k",
+      "fromMs": 1260,
+      "toMs": 1470,
+      "dtwMs": 1060,
+      "p": 1
+    },
+    {
+      "text": "*",
+      "fromMs": 1470,
+      "toMs": 1680,
+      "dtwMs": 11280,
+      "p": 1
+    },
+    {
+      "text": " En",
+      "fromMs": 1680,
+      "toMs": 2100,
+      "dtwMs": 13200,
+      "p": 0.685533
+    },
+    {
+      "text": " dat",
+      "fromMs": 2100,
+      "toMs": 2740,
+      "dtwMs": 13360,
+      "p": 0.991673
+    },
+    {
+      "text": " je",
+      "fromMs": 2740,
+      "toMs": 3160,
+      "dtwMs": 13440,
+      "p": 0.937576
+    },
+    {
+      "text": " o",
+      "fromMs": 3160,
+      "toMs": 3370,
+      "dtwMs": 13700,
+      "p": 0.999657
+    },
+    {
+      "text": "gen",
+      "fromMs": 3370,
+      "toMs": 4000,
+      "dtwMs": 13860,
+      "p": 0.999969
+    },
+    {
+      "text": " lo",
+      "fromMs": 4000,
+      "toMs": 4410,
+      "dtwMs": 14220,
+      "p": 0.624313
+    },
+    {
+      "text": "opt",
+      "fromMs": 4420,
+      "toMs": 5050,
+      "dtwMs": 14380,
+      "p": 0.999954
+    },
+    {
+      "text": ",",
+      "fromMs": 5050,
+      "toMs": 5470,
+      "dtwMs": 14540,
+      "p": 0.979735
+    },
+    {
+      "text": " dat",
+      "fromMs": 5470,
+      "toMs": 6110,
+      "dtwMs": 14780,
+      "p": 0.47434
+    },
+    {
+      "text": " je",
+      "fromMs": 6110,
+      "toMs": 6530,
+      "dtwMs": 15040,
+      "p": 0.974661
+    },
+    {
+      "text": " lo",
+      "fromMs": 6530,
+      "toMs": 6950,
+      "dtwMs": 15100,
+      "p": 0.999291
+    },
+    {
+      "text": "opt",
+      "fromMs": 6950,
+      "toMs": 7580,
+      "dtwMs": 15240,
+      "p": 1
+    },
+    {
+      "text": ",",
+      "fromMs": 7580,
+      "toMs": 8000,
+      "dtwMs": 15320,
+      "p": 0.999706
+    },
+    {
+      "text": " dat",
+      "fromMs": 8000,
+      "toMs": 8640,
+      "dtwMs": 15500,
+      "p": 1
+    },
+    {
+      "text": " je",
+      "fromMs": 8640,
+      "toMs": 9060,
+      "dtwMs": 15500,
+      "p": 1
+    },
+    {
+      "text": " lo",
+      "fromMs": 9060,
+      "toMs": 9480,
+      "dtwMs": 15660,
+      "p": 1
+    },
+    {
+      "text": "opt",
+      "fromMs": 9480,
+      "toMs": 10110,
+      "dtwMs": 15760,
+      "p": 1
+    },
+    {
+      "text": ",",
+      "fromMs": 10110,
+      "toMs": 10520,
+      "dtwMs": 15760,
+      "p": 0.505104
+    },
+    {
+      "text": " dat",
+      "fromMs": 10520,
+      "toMs": 11170,
+      "dtwMs": 15760,
+      "p": 1
+    },
+    {
+      "text": " je",
+      "fromMs": 11170,
+      "toMs": 11590,
+      "dtwMs": 16000,
+      "p": 1
+    },
+    {
+      "text": " lo",
+      "fromMs": 11590,
+      "toMs": 12010,
+      "dtwMs": 16000,
+      "p": 1
+    },
+    {
+      "text": "opt",
+      "fromMs": 12010,
+      "toMs": 12640,
+      "dtwMs": 16220,
+      "p": 1
+    },
+    {
+      "text": ".",
+      "fromMs": 12640,
+      "toMs": 13270,
+      "dtwMs": 16400,
+      "p": 0.997805
+    },
+    {
+      "text": " Per",
+      "fromMs": 13270,
+      "toMs": 13910,
+      "dtwMs": 16740,
+      "p": 0.786243
+    },
+    {
+      "text": "f",
+      "fromMs": 13910,
+      "toMs": 14120,
+      "dtwMs": 16980,
+      "p": 0.970639
+    },
+    {
+      "text": "ait",
+      "fromMs": 14120,
+      "toMs": 14750,
+      "dtwMs": 17100,
+      "p": 0.997447
+    },
+    {
+      "text": " ik",
+      "fromMs": 14750,
+      "toMs": 15170,
+      "dtwMs": 17260,
+      "p": 0.999474
+    },
+    {
+      "text": " ga",
+      "fromMs": 15170,
+      "toMs": 15590,
+      "dtwMs": 17340,
+      "p": 0.995877
+    },
+    {
+      "text": " al",
+      "fromMs": 15590,
+      "toMs": 16010,
+      "dtwMs": 17440,
+      "p": 0.565888
+    },
+    {
+      "text": " zo",
+      "fromMs": 16010,
+      "toMs": 16430,
+      "dtwMs": 17560,
+      "p": 0.997303
+    },
+    {
+      "text": " per",
+      "fromMs": 16430,
+      "toMs": 17070,
+      "dtwMs": 17800,
+      "p": 0.990312
+    },
+    {
+      "text": "f",
+      "fromMs": 17070,
+      "toMs": 17280,
+      "dtwMs": 18020,
+      "p": 1
+    },
+    {
+      "text": "ait",
+      "fromMs": 17280,
+      "toMs": 17910,
+      "dtwMs": 18200,
+      "p": 1
+    },
+    {
+      "text": ".",
+      "fromMs": 17910,
+      "toMs": 18530,
+      "dtwMs": 18380,
+      "p": 0.994097
+    },
+    {
+      "text": " *",
+      "fromMs": 18540,
+      "toMs": 18750,
+      "dtwMs": 18740,
+      "p": 0.966346
+    },
+    {
+      "text": "M",
+      "fromMs": 18750,
+      "toMs": 18960,
+      "dtwMs": 19060,
+      "p": 0.978125
+    },
+    {
+      "text": "u",
+      "fromMs": 18960,
+      "toMs": 19170,
+      "dtwMs": 19060,
+      "p": 1
+    },
+    {
+      "text": "zie",
+      "fromMs": 19170,
+      "toMs": 19800,
+      "dtwMs": 19240,
+      "p": 1
+    },
+    {
+      "text": "k",
+      "fromMs": 19800,
+      "toMs": 20010,
+      "dtwMs": 19240,
+      "p": 1
+    },
+    {
+      "text": "*",
+      "fromMs": 20010,
+      "toMs": 20500,
+      "dtwMs": 20380,
+      "p": 1
+    }
+  ]
+}

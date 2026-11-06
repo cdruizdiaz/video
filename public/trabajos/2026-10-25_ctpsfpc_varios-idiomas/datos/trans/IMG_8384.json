@@ -1,0 +1,50 @@
+{
+  "archivo": "IMG_8384.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3833,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3840,
+      "texto": "segundo, una ratificación"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " segundo",
+      "fromMs": 0,
+      "toMs": 1120,
+      "dtwMs": 2000,
+      "p": 0.219377
+    },
+    {
+      "text": ",",
+      "fromMs": 1120,
+      "toMs": 1430,
+      "dtwMs": 2320,
+      "p": 0.448511
+    },
+    {
+      "text": " una",
+      "fromMs": 1810,
+      "toMs": 1910,
+      "dtwMs": 2420,
+      "p": 0.968076
+    },
+    {
+      "text": " rat",
+      "fromMs": 1910,
+      "toMs": 2390,
+      "dtwMs": 2660,
+      "p": 0.959781
+    },
+    {
+      "text": "ificación",
+      "fromMs": 2390,
+      "toMs": 3220,
+      "dtwMs": 3080,
+      "p": 0.995617
+    }
+  ]
+}

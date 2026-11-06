@@ -1,0 +1,127 @@
+{
+  "archivo": "IMG_9449.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 20558,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        903
+      ],
+      [
+        1350,
+        2618
+      ],
+      [
+        3922,
+        4422
+      ],
+      [
+        6239,
+        6925
+      ],
+      [
+        8056,
+        8575
+      ],
+      [
+        9328,
+        9833
+      ],
+      [
+        10159,
+        11503
+      ],
+      [
+        13400,
+        14127
+      ],
+      [
+        16092,
+        17573
+      ],
+      [
+        18038,
+        19066
+      ],
+      [
+        20308,
+        20558
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 600,
+      "texto": "Vamos."
+    },
+    {
+      "desdeMs": 10159,
+      "hastaMs": 11159,
+      "texto": "Tomen, tomen."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Vamos",
+      "fromMs": 10,
+      "toMs": 60,
+      "dtwMs": 600,
+      "p": 0.593728
+    },
+    {
+      "text": ".",
+      "fromMs": 380,
+      "toMs": 600,
+      "dtwMs": 903,
+      "p": 0.880831
+    },
+    {
+      "text": " T",
+      "fromMs": 10159,
+      "toMs": 9833,
+      "dtwMs": 6628,
+      "p": 0.948315
+    },
+    {
+      "text": "omen",
+      "fromMs": 10159,
+      "toMs": 9833,
+      "dtwMs": 10699,
+      "p": 0.993394
+    },
+    {
+      "text": ",",
+      "fromMs": 10159,
+      "toMs": 9833,
+      "dtwMs": 10839,
+      "p": 0.994759
+    },
+    {
+      "text": " to",
+      "fromMs": 10159,
+      "toMs": 9833,
+      "dtwMs": 10899,
+      "p": 0.989758
+    },
+    {
+      "text": "men",
+      "fromMs": 10159,
+      "toMs": 9833,
+      "dtwMs": 11079,
+      "p": 0.999075
+    },
+    {
+      "text": ".",
+      "fromMs": 10159,
+      "toMs": 10939,
+      "dtwMs": 11139,
+      "p": 0.999298
+    }
+  ]
+}

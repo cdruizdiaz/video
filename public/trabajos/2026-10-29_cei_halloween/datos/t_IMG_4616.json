@@ -1,0 +1,71 @@
+{
+  "archivo": "IMG_4616.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 9003,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2580,
+      "texto": "Gracias por acompañarnos y bienvenidos."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Gracias",
+      "fromMs": 10,
+      "toMs": 370,
+      "dtwMs": 220,
+      "p": 0.0966862
+    },
+    {
+      "text": " por",
+      "fromMs": 370,
+      "toMs": 470,
+      "dtwMs": 220,
+      "p": 0.986737
+    },
+    {
+      "text": " acompañ",
+      "fromMs": 530,
+      "toMs": 880,
+      "dtwMs": 680,
+      "p": 0.99894
+    },
+    {
+      "text": "arnos",
+      "fromMs": 930,
+      "toMs": 1180,
+      "dtwMs": 1180,
+      "p": 0.999043
+    },
+    {
+      "text": " y",
+      "fromMs": 1180,
+      "toMs": 1800,
+      "dtwMs": 1800,
+      "p": 0.905421
+    },
+    {
+      "text": " bien",
+      "fromMs": 1800,
+      "toMs": 2060,
+      "dtwMs": 2100,
+      "p": 0.980478
+    },
+    {
+      "text": "venidos",
+      "fromMs": 2060,
+      "toMs": 2550,
+      "dtwMs": 2520,
+      "p": 0.993585
+    },
+    {
+      "text": ".",
+      "fromMs": 2550,
+      "toMs": 2560,
+      "dtwMs": 2560,
+      "p": 0.944544
+    }
+  ]
+}

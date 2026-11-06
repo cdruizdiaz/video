@@ -1,0 +1,217 @@
+{
+  "archivo": "IMG_4669.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 10153,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        4810
+      ],
+      [
+        5345,
+        9148
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4620,
+      "texto": "¿Qué país investigaste y dónde está en la matemática?"
+    },
+    {
+      "desdeMs": 5415,
+      "hastaMs": 8815,
+      "texto": "Nos investigamos en Ghana y está en África."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 90,
+      "dtwMs": 1420,
+      "p": 0.778192
+    },
+    {
+      "text": "Qué",
+      "fromMs": 90,
+      "toMs": 380,
+      "dtwMs": 1580,
+      "p": 0.787834
+    },
+    {
+      "text": " país",
+      "fromMs": 390,
+      "toMs": 720,
+      "dtwMs": 1960,
+      "p": 0.670716
+    },
+    {
+      "text": " investig",
+      "fromMs": 1400,
+      "toMs": 1550,
+      "dtwMs": 2280,
+      "p": 0.410963
+    },
+    {
+      "text": "aste",
+      "fromMs": 1550,
+      "toMs": 1880,
+      "dtwMs": 2280,
+      "p": 0.56405
+    },
+    {
+      "text": " y",
+      "fromMs": 1890,
+      "toMs": 2030,
+      "dtwMs": 3320,
+      "p": 0.534595
+    },
+    {
+      "text": " dónde",
+      "fromMs": 2030,
+      "toMs": 2520,
+      "dtwMs": 3660,
+      "p": 0.80903
+    },
+    {
+      "text": " está",
+      "fromMs": 2520,
+      "toMs": 2880,
+      "dtwMs": 4020,
+      "p": 0.968522
+    },
+    {
+      "text": " en",
+      "fromMs": 2900,
+      "toMs": 2970,
+      "dtwMs": 4240,
+      "p": 0.404405
+    },
+    {
+      "text": " la",
+      "fromMs": 3190,
+      "toMs": 3290,
+      "dtwMs": 4360,
+      "p": 0.839101
+    },
+    {
+      "text": " mat",
+      "fromMs": 3290,
+      "toMs": 3580,
+      "dtwMs": 4520,
+      "p": 0.355077
+    },
+    {
+      "text": "em",
+      "fromMs": 3580,
+      "toMs": 3760,
+      "dtwMs": 4680,
+      "p": 0.414517
+    },
+    {
+      "text": "ática",
+      "fromMs": 3770,
+      "toMs": 4260,
+      "dtwMs": 4680,
+      "p": 0.93717
+    },
+    {
+      "text": "?",
+      "fromMs": 4260,
+      "toMs": 4520,
+      "dtwMs": 4810,
+      "p": 0.997086
+    },
+    {
+      "text": " Nos",
+      "fromMs": 5415,
+      "toMs": 4810,
+      "dtwMs": 5795,
+      "p": 0.148905
+    },
+    {
+      "text": " investig",
+      "fromMs": 5415,
+      "toMs": 5995,
+      "dtwMs": 6115,
+      "p": 0.825562
+    },
+    {
+      "text": "amos",
+      "fromMs": 5995,
+      "toMs": 6145,
+      "dtwMs": 6335,
+      "p": 0.992048
+    },
+    {
+      "text": " en",
+      "fromMs": 6435,
+      "toMs": 6605,
+      "dtwMs": 6515,
+      "p": 0.492486
+    },
+    {
+      "text": " Ghana",
+      "fromMs": 6815,
+      "toMs": 7125,
+      "dtwMs": 6795,
+      "p": 0.938344
+    },
+    {
+      "text": " y",
+      "fromMs": 7125,
+      "toMs": 7225,
+      "dtwMs": 7235,
+      "p": 0.912917
+    },
+    {
+      "text": " está",
+      "fromMs": 7225,
+      "toMs": 7635,
+      "dtwMs": 7695,
+      "p": 0.245289
+    },
+    {
+      "text": " en",
+      "fromMs": 7635,
+      "toMs": 7835,
+      "dtwMs": 8275,
+      "p": 0.9926
+    },
+    {
+      "text": " Á",
+      "fromMs": 7835,
+      "toMs": 7935,
+      "dtwMs": 8455,
+      "p": 0.874191
+    },
+    {
+      "text": "f",
+      "fromMs": 7935,
+      "toMs": 8015,
+      "dtwMs": 8575,
+      "p": 0.999771
+    },
+    {
+      "text": "rica",
+      "fromMs": 8025,
+      "toMs": 8385,
+      "dtwMs": 8795,
+      "p": 0.999256
+    },
+    {
+      "text": ".",
+      "fromMs": 8605,
+      "toMs": 8815,
+      "dtwMs": 8795,
+      "p": 0.938155
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "archivo": "IMG_4560.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1498,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        633,
+        1498
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 633,
+      "hastaMs": 1493,
+      "texto": "¡Muy bien!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 633,
+      "toMs": 703,
+      "dtwMs": 1093,
+      "p": 0.272488
+    },
+    {
+      "text": "M",
+      "fromMs": 713,
+      "toMs": 773,
+      "dtwMs": 1093,
+      "p": 0.0822136
+    },
+    {
+      "text": "uy",
+      "fromMs": 803,
+      "toMs": 923,
+      "dtwMs": 1093,
+      "p": 0.368691
+    },
+    {
+      "text": " bien",
+      "fromMs": 923,
+      "toMs": 1233,
+      "dtwMs": 1373,
+      "p": 0.889102
+    },
+    {
+      "text": "!",
+      "fromMs": 1233,
+      "toMs": 1493,
+      "dtwMs": 1473,
+      "p": 0.990872
+    }
+  ]
+}

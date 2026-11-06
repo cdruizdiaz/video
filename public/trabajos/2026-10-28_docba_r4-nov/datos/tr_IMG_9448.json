@@ -1,0 +1,177 @@
+{
+  "archivo": "IMG_9448.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 51932,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        1297,
+        1929
+      ],
+      [
+        12236,
+        13900
+      ],
+      [
+        23856,
+        24412
+      ],
+      [
+        27417,
+        28752
+      ],
+      [
+        35955,
+        36962
+      ],
+      [
+        37381,
+        39111
+      ],
+      [
+        51395,
+        51932
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 1297,
+      "hastaMs": 13664,
+      "texto": "No importa, no importa"
+    },
+    {
+      "desdeMs": 13664,
+      "hastaMs": 28752,
+      "texto": "Saca el celu de ahí, Luca"
+    },
+    {
+      "desdeMs": 35955,
+      "hastaMs": 38807,
+      "texto": "Dale"
+    },
+    {
+      "desdeMs": 38807,
+      "hastaMs": 51791,
+      "texto": "Bien"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " No",
+      "fromMs": 1497,
+      "toMs": 1677,
+      "dtwMs": 12964,
+      "p": 0.363879
+    },
+    {
+      "text": " importa",
+      "fromMs": 12464,
+      "toMs": 13244,
+      "dtwMs": 13224,
+      "p": 0.99623
+    },
+    {
+      "text": ",",
+      "fromMs": 13244,
+      "toMs": 13314,
+      "dtwMs": 13264,
+      "p": 0.761086
+    },
+    {
+      "text": " no",
+      "fromMs": 13314,
+      "toMs": 13384,
+      "dtwMs": 13364,
+      "p": 0.989238
+    },
+    {
+      "text": " importa",
+      "fromMs": 13384,
+      "toMs": 13664,
+      "dtwMs": 13664,
+      "p": 0.999399
+    },
+    {
+      "text": " S",
+      "fromMs": 13864,
+      "toMs": 13864,
+      "dtwMs": 27645,
+      "p": 0.856391
+    },
+    {
+      "text": "aca",
+      "fromMs": 13864,
+      "toMs": 23900,
+      "dtwMs": 27765,
+      "p": 0.964277
+    },
+    {
+      "text": " el",
+      "fromMs": 27417,
+      "toMs": 24412,
+      "dtwMs": 27905,
+      "p": 0.961377
+    },
+    {
+      "text": " cel",
+      "fromMs": 27417,
+      "toMs": 27855,
+      "dtwMs": 28045,
+      "p": 0.957996
+    },
+    {
+      "text": "u",
+      "fromMs": 27855,
+      "toMs": 28085,
+      "dtwMs": 28085,
+      "p": 0.918742
+    },
+    {
+      "text": " de",
+      "fromMs": 28085,
+      "toMs": 28165,
+      "dtwMs": 28165,
+      "p": 0.951963
+    },
+    {
+      "text": " ahí",
+      "fromMs": 28165,
+      "toMs": 28275,
+      "dtwMs": 28285,
+      "p": 0.998946
+    },
+    {
+      "text": ",",
+      "fromMs": 28275,
+      "toMs": 28415,
+      "dtwMs": 28305,
+      "p": 0.791225
+    },
+    {
+      "text": " Luca",
+      "fromMs": 28415,
+      "toMs": 28752,
+      "dtwMs": 28485,
+      "p": 0.94511
+    },
+    {
+      "text": " Dale",
+      "fromMs": 36128,
+      "toMs": 38437,
+      "dtwMs": 37727,
+      "p": 0.301474
+    },
+    {
+      "text": " Bien",
+      "fromMs": 38827,
+      "toMs": 39111,
+      "dtwMs": 51771,
+      "p": 0.953303
+    }
+  ]
+}

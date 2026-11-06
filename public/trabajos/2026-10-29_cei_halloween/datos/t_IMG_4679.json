@@ -1,0 +1,83 @@
+{
+  "archivo": "IMG_4679.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5702,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3680,
+      "texto": "¿Qué país investigasteis?"
+    },
+    {
+      "desdeMs": 3680,
+      "hastaMs": 5700,
+      "texto": "México."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 140,
+      "dtwMs": 1320,
+      "p": 0.696898
+    },
+    {
+      "text": "Qué",
+      "fromMs": 140,
+      "toMs": 580,
+      "dtwMs": 1520,
+      "p": 0.700338
+    },
+    {
+      "text": " país",
+      "fromMs": 580,
+      "toMs": 1160,
+      "dtwMs": 1840,
+      "p": 0.692623
+    },
+    {
+      "text": " investig",
+      "fromMs": 1330,
+      "toMs": 2180,
+      "dtwMs": 2400,
+      "p": 0.412699
+    },
+    {
+      "text": "aste",
+      "fromMs": 2330,
+      "toMs": 2830,
+      "dtwMs": 2400,
+      "p": 0.898694
+    },
+    {
+      "text": "is",
+      "fromMs": 2900,
+      "toMs": 3140,
+      "dtwMs": 2400,
+      "p": 0.37897
+    },
+    {
+      "text": "?",
+      "fromMs": 3170,
+      "toMs": 3660,
+      "dtwMs": 3460,
+      "p": 0.891364
+    },
+    {
+      "text": " México",
+      "fromMs": 5010,
+      "toMs": 5700,
+      "dtwMs": 4480,
+      "p": 0.974088
+    },
+    {
+      "text": ".",
+      "fromMs": 5700,
+      "toMs": 5700,
+      "dtwMs": 4860,
+      "p": 0.535466
+    }
+  ]
+}

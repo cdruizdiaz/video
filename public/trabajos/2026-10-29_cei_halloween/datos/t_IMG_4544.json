@@ -1,0 +1,69 @@
+{
+  "archivo": "IMG_4544.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3950,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1820,
+      "texto": "1, 2, 3"
+    },
+    {
+      "desdeMs": 1820,
+      "hastaMs": 2740,
+      "texto": "Welcome!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " 1",
+      "fromMs": 230,
+      "toMs": 630,
+      "dtwMs": 560,
+      "p": 0.445155
+    },
+    {
+      "text": ",",
+      "fromMs": 630,
+      "toMs": 870,
+      "dtwMs": 600,
+      "p": 0.926127
+    },
+    {
+      "text": " 2",
+      "fromMs": 870,
+      "toMs": 1220,
+      "dtwMs": 1000,
+      "p": 0.975011
+    },
+    {
+      "text": ",",
+      "fromMs": 1220,
+      "toMs": 1450,
+      "dtwMs": 1220,
+      "p": 0.998198
+    },
+    {
+      "text": " 3",
+      "fromMs": 1450,
+      "toMs": 1820,
+      "dtwMs": 1800,
+      "p": 0.997699
+    },
+    {
+      "text": " Welcome",
+      "fromMs": 2050,
+      "toMs": 2740,
+      "dtwMs": 2720,
+      "p": 0.266909
+    },
+    {
+      "text": "!",
+      "fromMs": 2740,
+      "toMs": 2740,
+      "dtwMs": 2720,
+      "p": 0.834077
+    }
+  ]
+}

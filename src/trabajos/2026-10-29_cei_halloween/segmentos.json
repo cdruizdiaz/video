@@ -1,0 +1,89 @@
+{
+ "_nota": "Solo teachers. cortes = tramos (s del clip) que se sacan (muletillas 'ehh'). mayus = el primer subtítulo arranca en mayúscula.",
+ "segmentos": [
+  {
+   "id": "hook",
+   "clip": "IMG_4648",
+   "ventana": [
+    0,
+    18.6
+   ],
+   "previo": "",
+   "chunks": [
+    "Aquí estamos en el Museo El Umbral,",
+    "un trabajo colaborativo que hemos hecho",
+    "con todos los grupos y alumnos del instituto",
+    "con el objetivo de indagar sobre distintos",
+    "rituales funerarios en el contexto de la",
+    "festividad que se avecina, que es Halloween."
+   ],
+   "posterior": "",
+   "cortes": [
+    [
+     14.66,
+     15.48
+    ]
+   ]
+  },
+  {
+   "id": "china",
+   "clip": "IMG_4547",
+   "ventana": [
+    0,
+    16.6
+   ],
+   "previo": "Bueno, hola. Nuestro museo hoy se trata de funerales alrededor del mundo.",
+   "chunks": [
+    "En este caso estamos en China.",
+    "Los chicos estuvieron investigando sobre",
+    "los diferentes festivales que se hacen en China",
+    "una vez que una persona fallece."
+   ],
+   "posterior": "",
+   "cortes": [
+    [
+     13.18,
+     14.12
+    ],
+    [
+     14.88,
+     15.26
+    ]
+   ],
+   "limpiar": true
+  },
+  {
+   "id": "idea",
+   "clip": "IMG_4596",
+   "ventana": [
+    0,
+    8.8
+   ],
+   "previo": "Bueno,",
+   "chunks": [
+    "la idea del museo este año",
+    "es poder mostrarles a todos los papás",
+    "diferentes culturas, cómo ven ellos la muerte."
+   ],
+   "posterior": "",
+   "mayus": true,
+   "limpiar": true
+  },
+  {
+   "id": "finito",
+   "clip": "IMG_4614",
+   "ventana": [
+    70.9,
+    83.2
+   ],
+   "previo": "",
+   "chunks": [
+    "Y al reflexionar sobre la realidad de ser finito,",
+    "nos permite valorar mucho más la vida,",
+    "los afectos y tomar mejores decisiones",
+    "de alguna manera."
+   ],
+   "posterior": ""
+  }
+ ]
+}

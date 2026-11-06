@@ -1,0 +1,188 @@
+{
+  "archivo": "00420.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 11520,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4960,
+      "texto": "Para allá, hice distintos tamaños y pinteros para allá."
+    },
+    {
+      "desdeMs": 4960,
+      "hastaMs": 6960,
+      "texto": "Gracias Mila, qué haríamos sin vos."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Para",
+      "fromMs": 10,
+      "toMs": 500,
+      "dtwMs": 640,
+      "p": 0.174887
+    },
+    {
+      "text": " allá",
+      "fromMs": 500,
+      "toMs": 1000,
+      "dtwMs": 1020,
+      "p": 0.822817
+    },
+    {
+      "text": ",",
+      "fromMs": 1000,
+      "toMs": 2000,
+      "dtwMs": 2140,
+      "p": 0.118997
+    },
+    {
+      "text": " hice",
+      "fromMs": 2000,
+      "toMs": 2290,
+      "dtwMs": 2300,
+      "p": 0.581522
+    },
+    {
+      "text": " distintos",
+      "fromMs": 2290,
+      "toMs": 2950,
+      "dtwMs": 2700,
+      "p": 0.945728
+    },
+    {
+      "text": " tama",
+      "fromMs": 2950,
+      "toMs": 3240,
+      "dtwMs": 3000,
+      "p": 0.99449
+    },
+    {
+      "text": "ños",
+      "fromMs": 3240,
+      "toMs": 3460,
+      "dtwMs": 3280,
+      "p": 0.997265
+    },
+    {
+      "text": " y",
+      "fromMs": 3460,
+      "toMs": 3530,
+      "dtwMs": 3480,
+      "p": 0.853801
+    },
+    {
+      "text": " p",
+      "fromMs": 3530,
+      "toMs": 3600,
+      "dtwMs": 3580,
+      "p": 0.25311
+    },
+    {
+      "text": "inter",
+      "fromMs": 3600,
+      "toMs": 3960,
+      "dtwMs": 3680,
+      "p": 0.302218
+    },
+    {
+      "text": "os",
+      "fromMs": 3960,
+      "toMs": 4100,
+      "dtwMs": 3880,
+      "p": 0.692427
+    },
+    {
+      "text": " para",
+      "fromMs": 4100,
+      "toMs": 4390,
+      "dtwMs": 4040,
+      "p": 0.155075
+    },
+    {
+      "text": " allá",
+      "fromMs": 4390,
+      "toMs": 4680,
+      "dtwMs": 4220,
+      "p": 0.746696
+    },
+    {
+      "text": ".",
+      "fromMs": 4680,
+      "toMs": 4960,
+      "dtwMs": 4780,
+      "p": 0.858187
+    },
+    {
+      "text": " Gracias",
+      "fromMs": 4970,
+      "toMs": 5380,
+      "dtwMs": 5360,
+      "p": 0.856005
+    },
+    {
+      "text": " Mil",
+      "fromMs": 5380,
+      "toMs": 5560,
+      "dtwMs": 5640,
+      "p": 0.807744
+    },
+    {
+      "text": "a",
+      "fromMs": 5560,
+      "toMs": 5620,
+      "dtwMs": 5720,
+      "p": 0.945653
+    },
+    {
+      "text": ",",
+      "fromMs": 5620,
+      "toMs": 5740,
+      "dtwMs": 5840,
+      "p": 0.723167
+    },
+    {
+      "text": " qué",
+      "fromMs": 5740,
+      "toMs": 5920,
+      "dtwMs": 5880,
+      "p": 0.20902
+    },
+    {
+      "text": " har",
+      "fromMs": 5920,
+      "toMs": 6100,
+      "dtwMs": 6000,
+      "p": 0.973528
+    },
+    {
+      "text": "íamos",
+      "fromMs": 6100,
+      "toMs": 6400,
+      "dtwMs": 6140,
+      "p": 0.99694
+    },
+    {
+      "text": " sin",
+      "fromMs": 6400,
+      "toMs": 6580,
+      "dtwMs": 6440,
+      "p": 0.880576
+    },
+    {
+      "text": " vos",
+      "fromMs": 6580,
+      "toMs": 6760,
+      "dtwMs": 6640,
+      "p": 0.958436
+    },
+    {
+      "text": ".",
+      "fromMs": 6760,
+      "toMs": 6960,
+      "dtwMs": 6940,
+      "p": 0.806137
+    }
+  ]
+}

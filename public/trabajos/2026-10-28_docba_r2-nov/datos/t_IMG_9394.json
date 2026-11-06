@@ -1,0 +1,152 @@
+{
+  "archivo": "IMG_9394.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5202,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        1429,
+        4531
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 1429,
+      "hastaMs": 4529,
+      "texto": "reserva tu fin de año en Dogba o simplemente pasen a brindar."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " reserv",
+      "fromMs": 1669,
+      "toMs": 1749,
+      "dtwMs": 1929,
+      "p": 0.508105
+    },
+    {
+      "text": "a",
+      "fromMs": 1819,
+      "toMs": 1819,
+      "dtwMs": 2009,
+      "p": 0.911263
+    },
+    {
+      "text": " tu",
+      "fromMs": 1839,
+      "toMs": 1929,
+      "dtwMs": 2109,
+      "p": 0.971482
+    },
+    {
+      "text": " fin",
+      "fromMs": 1929,
+      "toMs": 2099,
+      "dtwMs": 2229,
+      "p": 0.989635
+    },
+    {
+      "text": " de",
+      "fromMs": 2099,
+      "toMs": 2209,
+      "dtwMs": 2329,
+      "p": 0.99631
+    },
+    {
+      "text": " año",
+      "fromMs": 2209,
+      "toMs": 2379,
+      "dtwMs": 2449,
+      "p": 0.985495
+    },
+    {
+      "text": " en",
+      "fromMs": 2379,
+      "toMs": 2489,
+      "dtwMs": 2549,
+      "p": 0.988963
+    },
+    {
+      "text": " Dog",
+      "fromMs": 2489,
+      "toMs": 2649,
+      "dtwMs": 2669,
+      "p": 0.273536
+    },
+    {
+      "text": "ba",
+      "fromMs": 2669,
+      "toMs": 2809,
+      "dtwMs": 2809,
+      "p": 0.856054
+    },
+    {
+      "text": " o",
+      "fromMs": 2809,
+      "toMs": 2859,
+      "dtwMs": 2989,
+      "p": 0.776046
+    },
+    {
+      "text": " simplemente",
+      "fromMs": 2859,
+      "toMs": 3389,
+      "dtwMs": 3429,
+      "p": 0.977126
+    },
+    {
+      "text": " pas",
+      "fromMs": 3429,
+      "toMs": 3559,
+      "dtwMs": 3809,
+      "p": 0.92727
+    },
+    {
+      "text": "en",
+      "fromMs": 3699,
+      "toMs": 3759,
+      "dtwMs": 3949,
+      "p": 0.998182
+    },
+    {
+      "text": " a",
+      "fromMs": 3849,
+      "toMs": 3919,
+      "dtwMs": 3989,
+      "p": 0.985778
+    },
+    {
+      "text": " br",
+      "fromMs": 3919,
+      "toMs": 4079,
+      "dtwMs": 4109,
+      "p": 0.975015
+    },
+    {
+      "text": "ind",
+      "fromMs": 4079,
+      "toMs": 4279,
+      "dtwMs": 4209,
+      "p": 0.998561
+    },
+    {
+      "text": "ar",
+      "fromMs": 4529,
+      "toMs": 4529,
+      "dtwMs": 4329,
+      "p": 0.996227
+    },
+    {
+      "text": ".",
+      "fromMs": 4529,
+      "toMs": 4529,
+      "dtwMs": 4509,
+      "p": 0.541611
+    }
+  ]
+}

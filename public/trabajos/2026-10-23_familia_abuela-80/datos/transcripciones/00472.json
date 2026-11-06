@@ -1,0 +1,288 @@
+{
+  "archivo": "00472.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 18528,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 30000,
+      "texto": "- ¿Este tema es de la Iglesia? - ¡Paula! ¡Pauli! ¡Lócalo de Iglesia! ¡¡¡¡¡¡¡¡¡¡"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " -",
+      "fromMs": 20,
+      "toMs": 200,
+      "dtwMs": 0,
+      "p": 0.0968844
+    },
+    {
+      "text": " ¿",
+      "fromMs": 200,
+      "toMs": 400,
+      "dtwMs": 1300,
+      "p": 0.0503368
+    },
+    {
+      "text": "E",
+      "fromMs": 400,
+      "toMs": 600,
+      "dtwMs": 4140,
+      "p": 0.542235
+    },
+    {
+      "text": "ste",
+      "fromMs": 600,
+      "toMs": 1200,
+      "dtwMs": 4240,
+      "p": 0.988123
+    },
+    {
+      "text": " tema",
+      "fromMs": 1200,
+      "toMs": 2000,
+      "dtwMs": 4500,
+      "p": 0.981227
+    },
+    {
+      "text": " es",
+      "fromMs": 2000,
+      "toMs": 2400,
+      "dtwMs": 4660,
+      "p": 0.975237
+    },
+    {
+      "text": " de",
+      "fromMs": 2400,
+      "toMs": 2800,
+      "dtwMs": 4780,
+      "p": 0.951844
+    },
+    {
+      "text": " la",
+      "fromMs": 2800,
+      "toMs": 3200,
+      "dtwMs": 4900,
+      "p": 0.977072
+    },
+    {
+      "text": " Ig",
+      "fromMs": 3200,
+      "toMs": 3590,
+      "dtwMs": 5020,
+      "p": 0.370121
+    },
+    {
+      "text": "lesia",
+      "fromMs": 3600,
+      "toMs": 4600,
+      "dtwMs": 5240,
+      "p": 0.996673
+    },
+    {
+      "text": "?",
+      "fromMs": 4600,
+      "toMs": 5240,
+      "dtwMs": 5360,
+      "p": 0.791479
+    },
+    {
+      "text": " -",
+      "fromMs": 5240,
+      "toMs": 5310,
+      "dtwMs": 5360,
+      "p": 0.520686
+    },
+    {
+      "text": " ¡",
+      "fromMs": 5310,
+      "toMs": 5380,
+      "dtwMs": 5420,
+      "p": 0.205911
+    },
+    {
+      "text": "Pa",
+      "fromMs": 5380,
+      "toMs": 5530,
+      "dtwMs": 5540,
+      "p": 0.631858
+    },
+    {
+      "text": "ula",
+      "fromMs": 5530,
+      "toMs": 5750,
+      "dtwMs": 5760,
+      "p": 0.788214
+    },
+    {
+      "text": "!",
+      "fromMs": 5750,
+      "toMs": 6000,
+      "dtwMs": 6180,
+      "p": 0.760988
+    },
+    {
+      "text": " ¡",
+      "fromMs": 6000,
+      "toMs": 6130,
+      "dtwMs": 6340,
+      "p": 0.512212
+    },
+    {
+      "text": "Pa",
+      "fromMs": 6130,
+      "toMs": 6390,
+      "dtwMs": 6480,
+      "p": 0.898803
+    },
+    {
+      "text": "uli",
+      "fromMs": 6390,
+      "toMs": 6780,
+      "dtwMs": 6740,
+      "p": 0.982148
+    },
+    {
+      "text": "!",
+      "fromMs": 6780,
+      "toMs": 7190,
+      "dtwMs": 7060,
+      "p": 0.920554
+    },
+    {
+      "text": " ¡",
+      "fromMs": 7200,
+      "toMs": 7240,
+      "dtwMs": 7200,
+      "p": 0.559011
+    },
+    {
+      "text": "L",
+      "fromMs": 7240,
+      "toMs": 7280,
+      "dtwMs": 7320,
+      "p": 0.483083
+    },
+    {
+      "text": "ó",
+      "fromMs": 7280,
+      "toMs": 7320,
+      "dtwMs": 7360,
+      "p": 0.243617
+    },
+    {
+      "text": "cal",
+      "fromMs": 7320,
+      "toMs": 7440,
+      "dtwMs": 7540,
+      "p": 0.874097
+    },
+    {
+      "text": "o",
+      "fromMs": 7440,
+      "toMs": 7480,
+      "dtwMs": 7620,
+      "p": 0.651625
+    },
+    {
+      "text": " de",
+      "fromMs": 7480,
+      "toMs": 7560,
+      "dtwMs": 7740,
+      "p": 0.815397
+    },
+    {
+      "text": " Ig",
+      "fromMs": 7560,
+      "toMs": 7640,
+      "dtwMs": 7920,
+      "p": 0.257544
+    },
+    {
+      "text": "lesia",
+      "fromMs": 7640,
+      "toMs": 7850,
+      "dtwMs": 8020,
+      "p": 0.867573
+    },
+    {
+      "text": "!",
+      "fromMs": 7850,
+      "toMs": 8000,
+      "dtwMs": 8620,
+      "p": 0.616341
+    },
+    {
+      "text": " ¡",
+      "fromMs": 8000,
+      "toMs": 10210,
+      "dtwMs": 8620,
+      "p": 0.307926
+    },
+    {
+      "text": "¡",
+      "fromMs": 10210,
+      "toMs": 12400,
+      "dtwMs": 8620,
+      "p": 0.0888661
+    },
+    {
+      "text": "¡",
+      "fromMs": 12400,
+      "toMs": 14590,
+      "dtwMs": 8620,
+      "p": 0.569048
+    },
+    {
+      "text": "¡",
+      "fromMs": 14590,
+      "toMs": 16780,
+      "dtwMs": 8620,
+      "p": 0.745784
+    },
+    {
+      "text": "¡",
+      "fromMs": 16780,
+      "toMs": 18510,
+      "dtwMs": 8620,
+      "p": 0.780739
+    },
+    {
+      "text": "¡",
+      "fromMs": 18520,
+      "toMs": 18520,
+      "dtwMs": 8620,
+      "p": 0.775146
+    },
+    {
+      "text": "¡",
+      "fromMs": 18520,
+      "toMs": 18520,
+      "dtwMs": 8640,
+      "p": 0.731708
+    },
+    {
+      "text": "¡",
+      "fromMs": 18520,
+      "toMs": 18520,
+      "dtwMs": 8640,
+      "p": 0.675165
+    },
+    {
+      "text": "¡",
+      "fromMs": 18520,
+      "toMs": 18520,
+      "dtwMs": 8640,
+      "p": 0.638207
+    },
+    {
+      "text": "¡",
+      "fromMs": 18520,
+      "toMs": 18520,
+      "dtwMs": 8680,
+      "p": 0.611238
+    }
+  ]
+}

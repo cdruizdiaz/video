@@ -1,0 +1,448 @@
+{
+  "archivo": "00457.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 22528,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6000,
+      "texto": "Solo porque hay un primero, ¡Carmen!"
+    },
+    {
+      "desdeMs": 9000,
+      "hastaMs": 12000,
+      "texto": "¡Y la perro!"
+    },
+    {
+      "desdeMs": 12000,
+      "hastaMs": 17000,
+      "texto": "¡La heredera, la heredera, la heredera, la heredera!"
+    },
+    {
+      "desdeMs": 17000,
+      "hastaMs": 19000,
+      "texto": "Y la heredera de la categoría es..."
+    },
+    {
+      "desdeMs": 20000,
+      "hastaMs": 22000,
+      "texto": "¡La heredera, la heredera!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Solo",
+      "fromMs": 10,
+      "toMs": 660,
+      "dtwMs": 3120,
+      "p": 0.050095
+    },
+    {
+      "text": " porque",
+      "fromMs": 660,
+      "toMs": 1650,
+      "dtwMs": 3380,
+      "p": 0.65384
+    },
+    {
+      "text": " hay",
+      "fromMs": 1650,
+      "toMs": 2150,
+      "dtwMs": 3540,
+      "p": 0.624773
+    },
+    {
+      "text": " un",
+      "fromMs": 2150,
+      "toMs": 2480,
+      "dtwMs": 3660,
+      "p": 0.632693
+    },
+    {
+      "text": " primero",
+      "fromMs": 2480,
+      "toMs": 3640,
+      "dtwMs": 3880,
+      "p": 0.151956
+    },
+    {
+      "text": ",",
+      "fromMs": 3640,
+      "toMs": 4000,
+      "dtwMs": 4260,
+      "p": 0.414603
+    },
+    {
+      "text": " ¡",
+      "fromMs": 4000,
+      "toMs": 4190,
+      "dtwMs": 4340,
+      "p": 0.362238
+    },
+    {
+      "text": "Car",
+      "fromMs": 4200,
+      "toMs": 4790,
+      "dtwMs": 4440,
+      "p": 0.54902
+    },
+    {
+      "text": "men",
+      "fromMs": 4790,
+      "toMs": 5380,
+      "dtwMs": 4660,
+      "p": 0.967844
+    },
+    {
+      "text": "!",
+      "fromMs": 5380,
+      "toMs": 6000,
+      "dtwMs": 5400,
+      "p": 0.971744
+    },
+    {
+      "text": " ¡",
+      "fromMs": 9000,
+      "toMs": 9000,
+      "dtwMs": 9300,
+      "p": 0.644305
+    },
+    {
+      "text": "Y",
+      "fromMs": 9000,
+      "toMs": 9000,
+      "dtwMs": 9460,
+      "p": 0.527992
+    },
+    {
+      "text": " la",
+      "fromMs": 9000,
+      "toMs": 9000,
+      "dtwMs": 9600,
+      "p": 0.529374
+    },
+    {
+      "text": " per",
+      "fromMs": 9010,
+      "toMs": 9490,
+      "dtwMs": 9760,
+      "p": 0.00681407
+    },
+    {
+      "text": "ro",
+      "fromMs": 9490,
+      "toMs": 10480,
+      "dtwMs": 9920,
+      "p": 0.614182
+    },
+    {
+      "text": "!",
+      "fromMs": 10480,
+      "toMs": 12000,
+      "dtwMs": 12320,
+      "p": 0.977345
+    },
+    {
+      "text": " ¡",
+      "fromMs": 12010,
+      "toMs": 12140,
+      "dtwMs": 12480,
+      "p": 0.511053
+    },
+    {
+      "text": "La",
+      "fromMs": 12140,
+      "toMs": 12420,
+      "dtwMs": 12700,
+      "p": 0.668347
+    },
+    {
+      "text": " her",
+      "fromMs": 12420,
+      "toMs": 12840,
+      "dtwMs": 13240,
+      "p": 0.717991
+    },
+    {
+      "text": "ed",
+      "fromMs": 12840,
+      "toMs": 13120,
+      "dtwMs": 13440,
+      "p": 0.906102
+    },
+    {
+      "text": "era",
+      "fromMs": 13120,
+      "toMs": 13540,
+      "dtwMs": 13760,
+      "p": 0.993932
+    },
+    {
+      "text": ",",
+      "fromMs": 13540,
+      "toMs": 13820,
+      "dtwMs": 13900,
+      "p": 0.140882
+    },
+    {
+      "text": " la",
+      "fromMs": 13820,
+      "toMs": 14100,
+      "dtwMs": 14260,
+      "p": 0.880463
+    },
+    {
+      "text": " her",
+      "fromMs": 14100,
+      "toMs": 14520,
+      "dtwMs": 14540,
+      "p": 0.996232
+    },
+    {
+      "text": "ed",
+      "fromMs": 14520,
+      "toMs": 14800,
+      "dtwMs": 14820,
+      "p": 0.987432
+    },
+    {
+      "text": "era",
+      "fromMs": 14800,
+      "toMs": 15220,
+      "dtwMs": 15120,
+      "p": 0.999859
+    },
+    {
+      "text": ",",
+      "fromMs": 15220,
+      "toMs": 15500,
+      "dtwMs": 15400,
+      "p": 0.548427
+    },
+    {
+      "text": " la",
+      "fromMs": 15500,
+      "toMs": 15780,
+      "dtwMs": 15760,
+      "p": 0.9788
+    },
+    {
+      "text": " her",
+      "fromMs": 15780,
+      "toMs": 16190,
+      "dtwMs": 16020,
+      "p": 0.997907
+    },
+    {
+      "text": "ed",
+      "fromMs": 16200,
+      "toMs": 16480,
+      "dtwMs": 16140,
+      "p": 0.99497
+    },
+    {
+      "text": "era",
+      "fromMs": 16480,
+      "toMs": 17000,
+      "dtwMs": 16520,
+      "p": 0.999876
+    },
+    {
+      "text": ",",
+      "fromMs": 17000,
+      "toMs": 17000,
+      "dtwMs": 16800,
+      "p": 0.274156
+    },
+    {
+      "text": " la",
+      "fromMs": 17000,
+      "toMs": 17000,
+      "dtwMs": 16800,
+      "p": 0.976998
+    },
+    {
+      "text": " her",
+      "fromMs": 17000,
+      "toMs": 17000,
+      "dtwMs": 16800,
+      "p": 0.997435
+    },
+    {
+      "text": "ed",
+      "fromMs": 17000,
+      "toMs": 17000,
+      "dtwMs": 16800,
+      "p": 0.997181
+    },
+    {
+      "text": "era",
+      "fromMs": 17000,
+      "toMs": 17000,
+      "dtwMs": 16800,
+      "p": 0.999865
+    },
+    {
+      "text": "!",
+      "fromMs": 17000,
+      "toMs": 17000,
+      "dtwMs": 16800,
+      "p": 0.806079
+    },
+    {
+      "text": " Y",
+      "fromMs": 17010,
+      "toMs": 17050,
+      "dtwMs": 17140,
+      "p": 0.605152
+    },
+    {
+      "text": " la",
+      "fromMs": 17050,
+      "toMs": 17160,
+      "dtwMs": 17340,
+      "p": 0.382679
+    },
+    {
+      "text": " her",
+      "fromMs": 17160,
+      "toMs": 17330,
+      "dtwMs": 17540,
+      "p": 0.120666
+    },
+    {
+      "text": "ed",
+      "fromMs": 17330,
+      "toMs": 17440,
+      "dtwMs": 17540,
+      "p": 0.990467
+    },
+    {
+      "text": "era",
+      "fromMs": 17440,
+      "toMs": 17610,
+      "dtwMs": 17540,
+      "p": 0.99671
+    },
+    {
+      "text": " de",
+      "fromMs": 17610,
+      "toMs": 17720,
+      "dtwMs": 17720,
+      "p": 0.767524
+    },
+    {
+      "text": " la",
+      "fromMs": 17720,
+      "toMs": 17830,
+      "dtwMs": 17800,
+      "p": 0.172087
+    },
+    {
+      "text": " categor",
+      "fromMs": 17830,
+      "toMs": 18220,
+      "dtwMs": 18040,
+      "p": 0.762329
+    },
+    {
+      "text": "ía",
+      "fromMs": 18220,
+      "toMs": 18330,
+      "dtwMs": 18340,
+      "p": 0.999142
+    },
+    {
+      "text": " es",
+      "fromMs": 18330,
+      "toMs": 18440,
+      "dtwMs": 18880,
+      "p": 0.964183
+    },
+    {
+      "text": "...",
+      "fromMs": 18440,
+      "toMs": 19000,
+      "dtwMs": 19820,
+      "p": 0.515823
+    },
+    {
+      "text": " ¡",
+      "fromMs": 20000,
+      "toMs": 20000,
+      "dtwMs": 20020,
+      "p": 0.944925
+    },
+    {
+      "text": "La",
+      "fromMs": 20000,
+      "toMs": 20000,
+      "dtwMs": 20260,
+      "p": 0.947529
+    },
+    {
+      "text": " her",
+      "fromMs": 20000,
+      "toMs": 20000,
+      "dtwMs": 20460,
+      "p": 0.201815
+    },
+    {
+      "text": "ed",
+      "fromMs": 20000,
+      "toMs": 20000,
+      "dtwMs": 20600,
+      "p": 0.983817
+    },
+    {
+      "text": "era",
+      "fromMs": 20010,
+      "toMs": 20250,
+      "dtwMs": 20600,
+      "p": 0.998852
+    },
+    {
+      "text": ",",
+      "fromMs": 20250,
+      "toMs": 20480,
+      "dtwMs": 21640,
+      "p": 0.302572
+    },
+    {
+      "text": " la",
+      "fromMs": 20480,
+      "toMs": 20700,
+      "dtwMs": 21640,
+      "p": 0.858323
+    },
+    {
+      "text": " her",
+      "fromMs": 20710,
+      "toMs": 21050,
+      "dtwMs": 21640,
+      "p": 0.993986
+    },
+    {
+      "text": "ed",
+      "fromMs": 21050,
+      "toMs": 21280,
+      "dtwMs": 21640,
+      "p": 0.996396
+    },
+    {
+      "text": "era",
+      "fromMs": 21280,
+      "toMs": 21620,
+      "dtwMs": 21640,
+      "p": 0.99976
+    },
+    {
+      "text": "!",
+      "fromMs": 21620,
+      "toMs": 22000,
+      "dtwMs": 21980,
+      "p": 0.930703
+    }
+  ]
+}

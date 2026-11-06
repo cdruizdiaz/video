@@ -1,0 +1,686 @@
+{
+  "archivo": "IMG_4547.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 31482,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 8160,
+      "texto": "Bueno, hola. Nuestro museo hoy se trata de funerales alrededor del mundo. En este caso estamos en China."
+    },
+    {
+      "desdeMs": 8820,
+      "hastaMs": 16360,
+      "texto": "Los chicos estuvieron investigando sobre los diferentes festivales que se hacen en China una vez que una persona fallece."
+    },
+    {
+      "desdeMs": 16840,
+      "hastaMs": 24300,
+      "texto": "En este caso especialmente es el Qingming Festival y estuvimos trabajando un poco sobre los diferentes colores"
+    },
+    {
+      "desdeMs": 24300,
+      "hastaMs": 29300,
+      "texto": "que son muy importantes y las diferentes ofrendas que se hacen para los diferentes festivales."
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 30460,
+      "texto": "Gracias."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bueno",
+      "fromMs": 30,
+      "toMs": 580,
+      "dtwMs": 660,
+      "p": 0.990435
+    },
+    {
+      "text": ",",
+      "fromMs": 580,
+      "toMs": 800,
+      "dtwMs": 1280,
+      "p": 0.997489
+    },
+    {
+      "text": " hol",
+      "fromMs": 800,
+      "toMs": 860,
+      "dtwMs": 1440,
+      "p": 0.997659
+    },
+    {
+      "text": "a",
+      "fromMs": 1270,
+      "toMs": 1270,
+      "dtwMs": 1620,
+      "p": 0.999916
+    },
+    {
+      "text": ".",
+      "fromMs": 1290,
+      "toMs": 1640,
+      "dtwMs": 1700,
+      "p": 0.75785
+    },
+    {
+      "text": " N",
+      "fromMs": 1640,
+      "toMs": 1700,
+      "dtwMs": 2820,
+      "p": 0.932404
+    },
+    {
+      "text": "uest",
+      "fromMs": 1710,
+      "toMs": 2010,
+      "dtwMs": 2920,
+      "p": 0.999939
+    },
+    {
+      "text": "ro",
+      "fromMs": 2010,
+      "toMs": 2160,
+      "dtwMs": 3000,
+      "p": 0.999939
+    },
+    {
+      "text": " muse",
+      "fromMs": 2160,
+      "toMs": 2460,
+      "dtwMs": 3260,
+      "p": 0.998532
+    },
+    {
+      "text": "o",
+      "fromMs": 2460,
+      "toMs": 2530,
+      "dtwMs": 3360,
+      "p": 0.999924
+    },
+    {
+      "text": " hoy",
+      "fromMs": 2530,
+      "toMs": 2750,
+      "dtwMs": 3520,
+      "p": 0.999316
+    },
+    {
+      "text": " se",
+      "fromMs": 2750,
+      "toMs": 2840,
+      "dtwMs": 3640,
+      "p": 0.999908
+    },
+    {
+      "text": " trata",
+      "fromMs": 2920,
+      "toMs": 3270,
+      "dtwMs": 3900,
+      "p": 0.999964
+    },
+    {
+      "text": " de",
+      "fromMs": 3270,
+      "toMs": 3420,
+      "dtwMs": 4060,
+      "p": 0.999708
+    },
+    {
+      "text": " funeral",
+      "fromMs": 3420,
+      "toMs": 3950,
+      "dtwMs": 4420,
+      "p": 0.986875
+    },
+    {
+      "text": "es",
+      "fromMs": 3950,
+      "toMs": 4100,
+      "dtwMs": 4780,
+      "p": 0.999985
+    },
+    {
+      "text": " alrededor",
+      "fromMs": 4100,
+      "toMs": 4720,
+      "dtwMs": 5080,
+      "p": 0.998715
+    },
+    {
+      "text": " del",
+      "fromMs": 4820,
+      "toMs": 5000,
+      "dtwMs": 5340,
+      "p": 0.999201
+    },
+    {
+      "text": " mundo",
+      "fromMs": 5000,
+      "toMs": 5370,
+      "dtwMs": 5620,
+      "p": 0.999779
+    },
+    {
+      "text": ".",
+      "fromMs": 5370,
+      "toMs": 5660,
+      "dtwMs": 5880,
+      "p": 0.808784
+    },
+    {
+      "text": " En",
+      "fromMs": 5660,
+      "toMs": 5800,
+      "dtwMs": 6000,
+      "p": 0.562305
+    },
+    {
+      "text": " este",
+      "fromMs": 5800,
+      "toMs": 6020,
+      "dtwMs": 6120,
+      "p": 0.999807
+    },
+    {
+      "text": " caso",
+      "fromMs": 6100,
+      "toMs": 6400,
+      "dtwMs": 6380,
+      "p": 0.996428
+    },
+    {
+      "text": " estamos",
+      "fromMs": 6400,
+      "toMs": 7080,
+      "dtwMs": 6880,
+      "p": 0.934352
+    },
+    {
+      "text": " en",
+      "fromMs": 7240,
+      "toMs": 7320,
+      "dtwMs": 7680,
+      "p": 0.996614
+    },
+    {
+      "text": " China",
+      "fromMs": 7320,
+      "toMs": 7810,
+      "dtwMs": 8140,
+      "p": 0.997156
+    },
+    {
+      "text": ".",
+      "fromMs": 7900,
+      "toMs": 8160,
+      "dtwMs": 8500,
+      "p": 0.999033
+    },
+    {
+      "text": " Los",
+      "fromMs": 8820,
+      "toMs": 8820,
+      "dtwMs": 8940,
+      "p": 0.999853
+    },
+    {
+      "text": " chicos",
+      "fromMs": 8820,
+      "toMs": 8820,
+      "dtwMs": 9180,
+      "p": 0.999901
+    },
+    {
+      "text": " estuv",
+      "fromMs": 8820,
+      "toMs": 9050,
+      "dtwMs": 9520,
+      "p": 0.988039
+    },
+    {
+      "text": "ieron",
+      "fromMs": 9280,
+      "toMs": 9370,
+      "dtwMs": 9660,
+      "p": 0.999767
+    },
+    {
+      "text": " investig",
+      "fromMs": 9370,
+      "toMs": 9640,
+      "dtwMs": 10020,
+      "p": 0.999966
+    },
+    {
+      "text": "ando",
+      "fromMs": 10090,
+      "toMs": 10130,
+      "dtwMs": 10240,
+      "p": 0.99996
+    },
+    {
+      "text": " sobre",
+      "fromMs": 10130,
+      "toMs": 10450,
+      "dtwMs": 10600,
+      "p": 0.999992
+    },
+    {
+      "text": " los",
+      "fromMs": 10450,
+      "toMs": 10560,
+      "dtwMs": 10860,
+      "p": 0.999954
+    },
+    {
+      "text": " diferentes",
+      "fromMs": 10720,
+      "toMs": 11280,
+      "dtwMs": 11240,
+      "p": 0.999952
+    },
+    {
+      "text": " festival",
+      "fromMs": 11280,
+      "toMs": 11790,
+      "dtwMs": 11680,
+      "p": 0.999495
+    },
+    {
+      "text": "es",
+      "fromMs": 11790,
+      "toMs": 11910,
+      "dtwMs": 11920,
+      "p": 1
+    },
+    {
+      "text": " que",
+      "fromMs": 11910,
+      "toMs": 12100,
+      "dtwMs": 12040,
+      "p": 0.999996
+    },
+    {
+      "text": " se",
+      "fromMs": 12100,
+      "toMs": 12230,
+      "dtwMs": 12220,
+      "p": 0.999996
+    },
+    {
+      "text": " hacen",
+      "fromMs": 12230,
+      "toMs": 12470,
+      "dtwMs": 12480,
+      "p": 0.999947
+    },
+    {
+      "text": " en",
+      "fromMs": 12550,
+      "toMs": 12650,
+      "dtwMs": 12720,
+      "p": 0.999983
+    },
+    {
+      "text": " China",
+      "fromMs": 12690,
+      "toMs": 13100,
+      "dtwMs": 13080,
+      "p": 0.999933
+    },
+    {
+      "text": " una",
+      "fromMs": 13100,
+      "toMs": 13430,
+      "dtwMs": 14320,
+      "p": 0.961986
+    },
+    {
+      "text": " vez",
+      "fromMs": 13430,
+      "toMs": 13760,
+      "dtwMs": 14560,
+      "p": 0.999895
+    },
+    {
+      "text": " que",
+      "fromMs": 13760,
+      "toMs": 14090,
+      "dtwMs": 14780,
+      "p": 0.999026
+    },
+    {
+      "text": " una",
+      "fromMs": 14090,
+      "toMs": 14420,
+      "dtwMs": 15440,
+      "p": 0.999603
+    },
+    {
+      "text": " persona",
+      "fromMs": 14420,
+      "toMs": 15200,
+      "dtwMs": 15780,
+      "p": 0.99967
+    },
+    {
+      "text": " fall",
+      "fromMs": 15200,
+      "toMs": 15640,
+      "dtwMs": 16060,
+      "p": 0.998826
+    },
+    {
+      "text": "e",
+      "fromMs": 15640,
+      "toMs": 15750,
+      "dtwMs": 16220,
+      "p": 0.999729
+    },
+    {
+      "text": "ce",
+      "fromMs": 15750,
+      "toMs": 15900,
+      "dtwMs": 16340,
+      "p": 0.99996
+    },
+    {
+      "text": ".",
+      "fromMs": 16060,
+      "toMs": 16360,
+      "dtwMs": 16560,
+      "p": 0.999815
+    },
+    {
+      "text": " En",
+      "fromMs": 16840,
+      "toMs": 16840,
+      "dtwMs": 16920,
+      "p": 0.999935
+    },
+    {
+      "text": " este",
+      "fromMs": 16840,
+      "toMs": 16850,
+      "dtwMs": 17100,
+      "p": 0.999992
+    },
+    {
+      "text": " caso",
+      "fromMs": 16850,
+      "toMs": 17180,
+      "dtwMs": 17340,
+      "p": 0.999979
+    },
+    {
+      "text": " especialmente",
+      "fromMs": 17300,
+      "toMs": 18270,
+      "dtwMs": 17840,
+      "p": 0.876605
+    },
+    {
+      "text": " es",
+      "fromMs": 18270,
+      "toMs": 18430,
+      "dtwMs": 18340,
+      "p": 0.999767
+    },
+    {
+      "text": " el",
+      "fromMs": 18430,
+      "toMs": 18530,
+      "dtwMs": 18480,
+      "p": 0.999964
+    },
+    {
+      "text": " Qing",
+      "fromMs": 18710,
+      "toMs": 18920,
+      "dtwMs": 18700,
+      "p": 0.718373
+    },
+    {
+      "text": "ming",
+      "fromMs": 18920,
+      "toMs": 19250,
+      "dtwMs": 18940,
+      "p": 0.753112
+    },
+    {
+      "text": " Festival",
+      "fromMs": 19250,
+      "toMs": 19920,
+      "dtwMs": 19460,
+      "p": 0.998753
+    },
+    {
+      "text": " y",
+      "fromMs": 19920,
+      "toMs": 19960,
+      "dtwMs": 20340,
+      "p": 0.656906
+    },
+    {
+      "text": " estuv",
+      "fromMs": 20060,
+      "toMs": 20350,
+      "dtwMs": 21260,
+      "p": 0.999607
+    },
+    {
+      "text": "imos",
+      "fromMs": 20450,
+      "toMs": 20750,
+      "dtwMs": 21460,
+      "p": 0.999979
+    },
+    {
+      "text": " trabajando",
+      "fromMs": 20750,
+      "toMs": 21560,
+      "dtwMs": 21860,
+      "p": 0.999969
+    },
+    {
+      "text": " un",
+      "fromMs": 21660,
+      "toMs": 21740,
+      "dtwMs": 22640,
+      "p": 0.999954
+    },
+    {
+      "text": " poco",
+      "fromMs": 21770,
+      "toMs": 22080,
+      "dtwMs": 22840,
+      "p": 0.999949
+    },
+    {
+      "text": " sobre",
+      "fromMs": 22080,
+      "toMs": 22500,
+      "dtwMs": 23180,
+      "p": 0.999138
+    },
+    {
+      "text": " los",
+      "fromMs": 22500,
+      "toMs": 22640,
+      "dtwMs": 23380,
+      "p": 0.99976
+    },
+    {
+      "text": " diferentes",
+      "fromMs": 22790,
+      "toMs": 23490,
+      "dtwMs": 23780,
+      "p": 0.999802
+    },
+    {
+      "text": " col",
+      "fromMs": 23620,
+      "toMs": 23840,
+      "dtwMs": 24100,
+      "p": 0.998085
+    },
+    {
+      "text": "ores",
+      "fromMs": 23840,
+      "toMs": 24300,
+      "dtwMs": 24300,
+      "p": 0.999952
+    },
+    {
+      "text": " que",
+      "fromMs": 24300,
+      "toMs": 24480,
+      "dtwMs": 24420,
+      "p": 0.81239
+    },
+    {
+      "text": " son",
+      "fromMs": 24480,
+      "toMs": 24650,
+      "dtwMs": 24580,
+      "p": 0.997556
+    },
+    {
+      "text": " muy",
+      "fromMs": 24760,
+      "toMs": 24840,
+      "dtwMs": 24720,
+      "p": 0.999819
+    },
+    {
+      "text": " importantes",
+      "fromMs": 24840,
+      "toMs": 25120,
+      "dtwMs": 25160,
+      "p": 0.999889
+    },
+    {
+      "text": " y",
+      "fromMs": 25570,
+      "toMs": 25570,
+      "dtwMs": 25400,
+      "p": 0.999935
+    },
+    {
+      "text": " las",
+      "fromMs": 25590,
+      "toMs": 25750,
+      "dtwMs": 25540,
+      "p": 0.999865
+    },
+    {
+      "text": " diferentes",
+      "fromMs": 25750,
+      "toMs": 26350,
+      "dtwMs": 26120,
+      "p": 0.999958
+    },
+    {
+      "text": " of",
+      "fromMs": 26350,
+      "toMs": 26470,
+      "dtwMs": 26740,
+      "p": 0.999114
+    },
+    {
+      "text": "rend",
+      "fromMs": 26470,
+      "toMs": 26710,
+      "dtwMs": 26980,
+      "p": 0.999733
+    },
+    {
+      "text": "as",
+      "fromMs": 26710,
+      "toMs": 26830,
+      "dtwMs": 27160,
+      "p": 0.999994
+    },
+    {
+      "text": " que",
+      "fromMs": 26830,
+      "toMs": 26930,
+      "dtwMs": 27320,
+      "p": 0.999969
+    },
+    {
+      "text": " se",
+      "fromMs": 27020,
+      "toMs": 27130,
+      "dtwMs": 27520,
+      "p": 0.999926
+    },
+    {
+      "text": " hacen",
+      "fromMs": 27130,
+      "toMs": 27430,
+      "dtwMs": 27860,
+      "p": 0.999876
+    },
+    {
+      "text": " para",
+      "fromMs": 27520,
+      "toMs": 27670,
+      "dtwMs": 28160,
+      "p": 0.99943
+    },
+    {
+      "text": " los",
+      "fromMs": 27670,
+      "toMs": 27790,
+      "dtwMs": 28740,
+      "p": 0.998763
+    },
+    {
+      "text": " diferentes",
+      "fromMs": 27910,
+      "toMs": 28430,
+      "dtwMs": 29040,
+      "p": 0.999554
+    },
+    {
+      "text": " festival",
+      "fromMs": 28550,
+      "toMs": 28930,
+      "dtwMs": 29280,
+      "p": 0.999119
+    },
+    {
+      "text": "es",
+      "fromMs": 28930,
+      "toMs": 29020,
+      "dtwMs": 29280,
+      "p": 0.999979
+    },
+    {
+      "text": ".",
+      "fromMs": 29120,
+      "toMs": 29300,
+      "dtwMs": 29280,
+      "p": 0.99815
+    },
+    {
+      "text": " Gracias",
+      "fromMs": 30000,
+      "toMs": 30320,
+      "dtwMs": 30440,
+      "p": 0.471115
+    },
+    {
+      "text": ".",
+      "fromMs": 30460,
+      "toMs": 30460,
+      "dtwMs": 30440,
+      "p": 0.922172
+    }
+  ]
+}

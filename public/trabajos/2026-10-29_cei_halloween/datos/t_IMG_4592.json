@@ -1,0 +1,557 @@
+{
+  "archivo": "IMG_4592.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 27965,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 12800,
+      "texto": "Bueno, hola, a nosotros nos tocó Gana y les vamos a hablar sobre los funerales emblemáticos que existen allá."
+    },
+    {
+      "desdeMs": 12800,
+      "hastaMs": 25480,
+      "texto": "Bueno, los funerales en Gana suelen ser temáticos, si, por ejemplo, una persona era pescadora, puede ser un pescado, por ejemplo."
+    },
+    {
+      "desdeMs": 25480,
+      "hastaMs": 27960,
+      "texto": "No, para, para, no, de bueno."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bueno",
+      "fromMs": 0,
+      "toMs": 5000,
+      "dtwMs": 4440,
+      "p": 0.314599
+    },
+    {
+      "text": ",",
+      "fromMs": 5050,
+      "toMs": 5660,
+      "dtwMs": 6320,
+      "p": 0.618053
+    },
+    {
+      "text": " hol",
+      "fromMs": 5660,
+      "toMs": 6660,
+      "dtwMs": 6460,
+      "p": 0.820965
+    },
+    {
+      "text": "a",
+      "fromMs": 6660,
+      "toMs": 7000,
+      "dtwMs": 6720,
+      "p": 0.997959
+    },
+    {
+      "text": ",",
+      "fromMs": 7000,
+      "toMs": 7090,
+      "dtwMs": 6940,
+      "p": 0.482612
+    },
+    {
+      "text": " a",
+      "fromMs": 7090,
+      "toMs": 7130,
+      "dtwMs": 7180,
+      "p": 0.637278
+    },
+    {
+      "text": " nosotros",
+      "fromMs": 7130,
+      "toMs": 7490,
+      "dtwMs": 7280,
+      "p": 0.752688
+    },
+    {
+      "text": " nos",
+      "fromMs": 7490,
+      "toMs": 7540,
+      "dtwMs": 7440,
+      "p": 0.986817
+    },
+    {
+      "text": " toc",
+      "fromMs": 7620,
+      "toMs": 7750,
+      "dtwMs": 7580,
+      "p": 0.916234
+    },
+    {
+      "text": "ó",
+      "fromMs": 7750,
+      "toMs": 7790,
+      "dtwMs": 7700,
+      "p": 0.998875
+    },
+    {
+      "text": " G",
+      "fromMs": 7790,
+      "toMs": 7830,
+      "dtwMs": 7840,
+      "p": 0.647587
+    },
+    {
+      "text": "ana",
+      "fromMs": 7830,
+      "toMs": 8000,
+      "dtwMs": 7980,
+      "p": 0.914536
+    },
+    {
+      "text": " y",
+      "fromMs": 8000,
+      "toMs": 8500,
+      "dtwMs": 8480,
+      "p": 0.54946
+    },
+    {
+      "text": " les",
+      "fromMs": 8500,
+      "toMs": 8680,
+      "dtwMs": 8860,
+      "p": 0.496225
+    },
+    {
+      "text": " vamos",
+      "fromMs": 8680,
+      "toMs": 9000,
+      "dtwMs": 9000,
+      "p": 0.938706
+    },
+    {
+      "text": " a",
+      "fromMs": 9000,
+      "toMs": 9030,
+      "dtwMs": 9020,
+      "p": 0.826369
+    },
+    {
+      "text": " hablar",
+      "fromMs": 9030,
+      "toMs": 9240,
+      "dtwMs": 9280,
+      "p": 0.980473
+    },
+    {
+      "text": " sobre",
+      "fromMs": 9240,
+      "toMs": 10000,
+      "dtwMs": 9960,
+      "p": 0.750264
+    },
+    {
+      "text": " los",
+      "fromMs": 10000,
+      "toMs": 10210,
+      "dtwMs": 10240,
+      "p": 0.914326
+    },
+    {
+      "text": " funeral",
+      "fromMs": 10320,
+      "toMs": 10810,
+      "dtwMs": 10480,
+      "p": 0.852261
+    },
+    {
+      "text": "es",
+      "fromMs": 10830,
+      "toMs": 10940,
+      "dtwMs": 10940,
+      "p": 0.998992
+    },
+    {
+      "text": " emblem",
+      "fromMs": 11080,
+      "toMs": 11610,
+      "dtwMs": 11920,
+      "p": 0.879421
+    },
+    {
+      "text": "át",
+      "fromMs": 11620,
+      "toMs": 11820,
+      "dtwMs": 12120,
+      "p": 0.991403
+    },
+    {
+      "text": "icos",
+      "fromMs": 11820,
+      "toMs": 12240,
+      "dtwMs": 12200,
+      "p": 0.998868
+    },
+    {
+      "text": " que",
+      "fromMs": 12240,
+      "toMs": 12240,
+      "dtwMs": 12280,
+      "p": 0.534735
+    },
+    {
+      "text": " exist",
+      "fromMs": 12430,
+      "toMs": 12490,
+      "dtwMs": 12420,
+      "p": 0.513562
+    },
+    {
+      "text": "en",
+      "fromMs": 12490,
+      "toMs": 12550,
+      "dtwMs": 12540,
+      "p": 0.470357
+    },
+    {
+      "text": " allá",
+      "fromMs": 12550,
+      "toMs": 12680,
+      "dtwMs": 12720,
+      "p": 0.943391
+    },
+    {
+      "text": ".",
+      "fromMs": 12680,
+      "toMs": 12780,
+      "dtwMs": 13540,
+      "p": 0.767579
+    },
+    {
+      "text": " Bueno",
+      "fromMs": 12800,
+      "toMs": 13240,
+      "dtwMs": 13720,
+      "p": 0.791168
+    },
+    {
+      "text": ",",
+      "fromMs": 13450,
+      "toMs": 13720,
+      "dtwMs": 14240,
+      "p": 0.928014
+    },
+    {
+      "text": " los",
+      "fromMs": 13720,
+      "toMs": 14110,
+      "dtwMs": 15500,
+      "p": 0.988985
+    },
+    {
+      "text": " funeral",
+      "fromMs": 14110,
+      "toMs": 15030,
+      "dtwMs": 15840,
+      "p": 0.992581
+    },
+    {
+      "text": "es",
+      "fromMs": 15030,
+      "toMs": 15240,
+      "dtwMs": 16040,
+      "p": 0.99922
+    },
+    {
+      "text": " en",
+      "fromMs": 15330,
+      "toMs": 15550,
+      "dtwMs": 16220,
+      "p": 0.976179
+    },
+    {
+      "text": " G",
+      "fromMs": 15550,
+      "toMs": 15680,
+      "dtwMs": 16300,
+      "p": 0.977331
+    },
+    {
+      "text": "ana",
+      "fromMs": 15680,
+      "toMs": 16070,
+      "dtwMs": 16460,
+      "p": 0.99875
+    },
+    {
+      "text": " su",
+      "fromMs": 16070,
+      "toMs": 16330,
+      "dtwMs": 17000,
+      "p": 0.98081
+    },
+    {
+      "text": "elen",
+      "fromMs": 16330,
+      "toMs": 16850,
+      "dtwMs": 17140,
+      "p": 0.998849
+    },
+    {
+      "text": " ser",
+      "fromMs": 16950,
+      "toMs": 17240,
+      "dtwMs": 17460,
+      "p": 0.997716
+    },
+    {
+      "text": " tem",
+      "fromMs": 17240,
+      "toMs": 17630,
+      "dtwMs": 18160,
+      "p": 0.992692
+    },
+    {
+      "text": "át",
+      "fromMs": 17630,
+      "toMs": 17890,
+      "dtwMs": 18320,
+      "p": 0.997994
+    },
+    {
+      "text": "icos",
+      "fromMs": 17890,
+      "toMs": 18500,
+      "dtwMs": 18500,
+      "p": 0.999796
+    },
+    {
+      "text": ",",
+      "fromMs": 18500,
+      "toMs": 18600,
+      "dtwMs": 18800,
+      "p": 0.246045
+    },
+    {
+      "text": " si",
+      "fromMs": 18670,
+      "toMs": 18960,
+      "dtwMs": 19160,
+      "p": 0.699256
+    },
+    {
+      "text": ",",
+      "fromMs": 19140,
+      "toMs": 19200,
+      "dtwMs": 19260,
+      "p": 0.196253
+    },
+    {
+      "text": " por",
+      "fromMs": 19200,
+      "toMs": 19380,
+      "dtwMs": 19320,
+      "p": 0.976311
+    },
+    {
+      "text": " ejemplo",
+      "fromMs": 19380,
+      "toMs": 19800,
+      "dtwMs": 19500,
+      "p": 0.992027
+    },
+    {
+      "text": ",",
+      "fromMs": 19800,
+      "toMs": 19990,
+      "dtwMs": 20020,
+      "p": 0.862146
+    },
+    {
+      "text": " una",
+      "fromMs": 19990,
+      "toMs": 20290,
+      "dtwMs": 20480,
+      "p": 0.855208
+    },
+    {
+      "text": " persona",
+      "fromMs": 20290,
+      "toMs": 20980,
+      "dtwMs": 21000,
+      "p": 0.993185
+    },
+    {
+      "text": " era",
+      "fromMs": 21190,
+      "toMs": 22120,
+      "dtwMs": 22380,
+      "p": 0.804981
+    },
+    {
+      "text": " pes",
+      "fromMs": 22540,
+      "toMs": 22600,
+      "dtwMs": 22620,
+      "p": 0.855686
+    },
+    {
+      "text": "c",
+      "fromMs": 22600,
+      "toMs": 22660,
+      "dtwMs": 22680,
+      "p": 0.999903
+    },
+    {
+      "text": "adora",
+      "fromMs": 22660,
+      "toMs": 23000,
+      "dtwMs": 22920,
+      "p": 0.996365
+    },
+    {
+      "text": ",",
+      "fromMs": 23000,
+      "toMs": 23240,
+      "dtwMs": 23240,
+      "p": 0.427622
+    },
+    {
+      "text": " puede",
+      "fromMs": 23240,
+      "toMs": 23610,
+      "dtwMs": 23800,
+      "p": 0.55756
+    },
+    {
+      "text": " ser",
+      "fromMs": 23880,
+      "toMs": 24000,
+      "dtwMs": 24140,
+      "p": 0.956047
+    },
+    {
+      "text": " un",
+      "fromMs": 24000,
+      "toMs": 24720,
+      "dtwMs": 24640,
+      "p": 0.957205
+    },
+    {
+      "text": " pes",
+      "fromMs": 24720,
+      "toMs": 24840,
+      "dtwMs": 24820,
+      "p": 0.976577
+    },
+    {
+      "text": "cado",
+      "fromMs": 24840,
+      "toMs": 25000,
+      "dtwMs": 24980,
+      "p": 0.998586
+    },
+    {
+      "text": ",",
+      "fromMs": 25000,
+      "toMs": 25040,
+      "dtwMs": 25120,
+      "p": 0.733323
+    },
+    {
+      "text": " por",
+      "fromMs": 25150,
+      "toMs": 25150,
+      "dtwMs": 25160,
+      "p": 0.946187
+    },
+    {
+      "text": " ejemplo",
+      "fromMs": 25230,
+      "toMs": 25370,
+      "dtwMs": 25400,
+      "p": 0.995507
+    },
+    {
+      "text": ".",
+      "fromMs": 25370,
+      "toMs": 25480,
+      "dtwMs": 26680,
+      "p": 0.752571
+    },
+    {
+      "text": " No",
+      "fromMs": 25480,
+      "toMs": 25610,
+      "dtwMs": 26880,
+      "p": 0.787886
+    },
+    {
+      "text": ",",
+      "fromMs": 25620,
+      "toMs": 25750,
+      "dtwMs": 26960,
+      "p": 0.897274
+    },
+    {
+      "text": " para",
+      "fromMs": 25770,
+      "toMs": 26130,
+      "dtwMs": 27080,
+      "p": 0.735296
+    },
+    {
+      "text": ",",
+      "fromMs": 26130,
+      "toMs": 26280,
+      "dtwMs": 27200,
+      "p": 0.409895
+    },
+    {
+      "text": " para",
+      "fromMs": 26330,
+      "toMs": 26620,
+      "dtwMs": 27300,
+      "p": 0.962567
+    },
+    {
+      "text": ",",
+      "fromMs": 26620,
+      "toMs": 26780,
+      "dtwMs": 27440,
+      "p": 0.803265
+    },
+    {
+      "text": " no",
+      "fromMs": 26780,
+      "toMs": 26940,
+      "dtwMs": 27500,
+      "p": 0.869627
+    },
+    {
+      "text": ",",
+      "fromMs": 26940,
+      "toMs": 27090,
+      "dtwMs": 27580,
+      "p": 0.843668
+    },
+    {
+      "text": " de",
+      "fromMs": 27160,
+      "toMs": 27260,
+      "dtwMs": 27880,
+      "p": 0.518104
+    },
+    {
+      "text": " bueno",
+      "fromMs": 27260,
+      "toMs": 27670,
+      "dtwMs": 27940,
+      "p": 0.403848
+    },
+    {
+      "text": ".",
+      "fromMs": 27670,
+      "toMs": 27920,
+      "dtwMs": 27940,
+      "p": 0.873836
+    }
+  ]
+}

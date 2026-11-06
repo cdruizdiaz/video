@@ -1,0 +1,99 @@
+{
+  "archivo": "IMG_4577.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2367,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2260,
+      "texto": "No, no, no, no, no, no."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " No",
+      "fromMs": 160,
+      "toMs": 600,
+      "dtwMs": 540,
+      "p": 0.122642
+    },
+    {
+      "text": ",",
+      "fromMs": 600,
+      "toMs": 730,
+      "dtwMs": 660,
+      "p": 0.480636
+    },
+    {
+      "text": " no",
+      "fromMs": 740,
+      "toMs": 880,
+      "dtwMs": 1500,
+      "p": 0.824323
+    },
+    {
+      "text": ",",
+      "fromMs": 880,
+      "toMs": 1000,
+      "dtwMs": 1560,
+      "p": 0.482802
+    },
+    {
+      "text": " no",
+      "fromMs": 1030,
+      "toMs": 1150,
+      "dtwMs": 1760,
+      "p": 0.926621
+    },
+    {
+      "text": ",",
+      "fromMs": 1160,
+      "toMs": 1300,
+      "dtwMs": 1760,
+      "p": 0.388898
+    },
+    {
+      "text": " no",
+      "fromMs": 1300,
+      "toMs": 1420,
+      "dtwMs": 1840,
+      "p": 0.933029
+    },
+    {
+      "text": ",",
+      "fromMs": 1430,
+      "toMs": 1580,
+      "dtwMs": 1840,
+      "p": 0.284323
+    },
+    {
+      "text": " no",
+      "fromMs": 1580,
+      "toMs": 1720,
+      "dtwMs": 2040,
+      "p": 0.931307
+    },
+    {
+      "text": ",",
+      "fromMs": 1720,
+      "toMs": 1860,
+      "dtwMs": 2040,
+      "p": 0.278971
+    },
+    {
+      "text": " no",
+      "fromMs": 1860,
+      "toMs": 1990,
+      "dtwMs": 2200,
+      "p": 0.928066
+    },
+    {
+      "text": ".",
+      "fromMs": 1990,
+      "toMs": 2260,
+      "dtwMs": 2200,
+      "p": 0.551579
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "archivo": "IMG_4580.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 10672,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3840,
+      "texto": "La cremación es una parte importante del nagben."
+    },
+    {
+      "desdeMs": 3840,
+      "hastaMs": 10680,
+      "texto": "El nagben es la ceremonia, la ceremonia funeral de Indonesia."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " La",
+      "fromMs": 0,
+      "toMs": 170,
+      "dtwMs": 460,
+      "p": 0.750396
+    },
+    {
+      "text": " cre",
+      "fromMs": 180,
+      "toMs": 430,
+      "dtwMs": 500,
+      "p": 0.965617
+    },
+    {
+      "text": "m",
+      "fromMs": 430,
+      "toMs": 510,
+      "dtwMs": 640,
+      "p": 0.396231
+    },
+    {
+      "text": "ación",
+      "fromMs": 510,
+      "toMs": 940,
+      "dtwMs": 880,
+      "p": 0.903737
+    },
+    {
+      "text": " es",
+      "fromMs": 950,
+      "toMs": 1120,
+      "dtwMs": 1180,
+      "p": 0.979854
+    },
+    {
+      "text": " una",
+      "fromMs": 1120,
+      "toMs": 1380,
+      "dtwMs": 1420,
+      "p": 0.890053
+    },
+    {
+      "text": " parte",
+      "fromMs": 1380,
+      "toMs": 1820,
+      "dtwMs": 1480,
+      "p": 0.971635
+    },
+    {
+      "text": " importante",
+      "fromMs": 1820,
+      "toMs": 2710,
+      "dtwMs": 2300,
+      "p": 0.969954
+    },
+    {
+      "text": " del",
+      "fromMs": 2710,
+      "toMs": 2930,
+      "dtwMs": 2640,
+      "p": 0.360496
+    },
+    {
+      "text": " nag",
+      "fromMs": 2960,
+      "toMs": 3230,
+      "dtwMs": 3120,
+      "p": 0.213388
+    },
+    {
+      "text": "ben",
+      "fromMs": 3230,
+      "toMs": 3420,
+      "dtwMs": 3360,
+      "p": 0.908408
+    },
+    {
+      "text": ".",
+      "fromMs": 3550,
+      "toMs": 3600,
+      "dtwMs": 3720,
+      "p": 0.640947
+    },
+    {
+      "text": " El",
+      "fromMs": 3840,
+      "toMs": 4120,
+      "dtwMs": 4380,
+      "p": 0.293424
+    },
+    {
+      "text": " nag",
+      "fromMs": 4270,
+      "toMs": 4560,
+      "dtwMs": 4500,
+      "p": 0.987547
+    },
+    {
+      "text": "ben",
+      "fromMs": 4560,
+      "toMs": 4990,
+      "dtwMs": 4700,
+      "p": 0.990839
+    },
+    {
+      "text": " es",
+      "fromMs": 4990,
+      "toMs": 5280,
+      "dtwMs": 5060,
+      "p": 0.963907
+    },
+    {
+      "text": " la",
+      "fromMs": 5280,
+      "toMs": 5530,
+      "dtwMs": 5740,
+      "p": 0.830364
+    },
+    {
+      "text": " ceremon",
+      "fromMs": 5600,
+      "toMs": 6580,
+      "dtwMs": 6020,
+      "p": 0.935842
+    },
+    {
+      "text": "ia",
+      "fromMs": 6580,
+      "toMs": 6880,
+      "dtwMs": 6340,
+      "p": 0.994516
+    },
+    {
+      "text": ",",
+      "fromMs": 6880,
+      "toMs": 7120,
+      "dtwMs": 6500,
+      "p": 0.124692
+    },
+    {
+      "text": " la",
+      "fromMs": 7120,
+      "toMs": 7270,
+      "dtwMs": 7780,
+      "p": 0.835096
+    },
+    {
+      "text": " ceremon",
+      "fromMs": 7850,
+      "toMs": 8210,
+      "dtwMs": 7940,
+      "p": 0.989176
+    },
+    {
+      "text": "ia",
+      "fromMs": 8210,
+      "toMs": 8450,
+      "dtwMs": 8580,
+      "p": 0.998631
+    },
+    {
+      "text": " funeral",
+      "fromMs": 8450,
+      "toMs": 9300,
+      "dtwMs": 8580,
+      "p": 0.129634
+    },
+    {
+      "text": " de",
+      "fromMs": 9300,
+      "toMs": 9510,
+      "dtwMs": 8960,
+      "p": 0.928136
+    },
+    {
+      "text": " Indonesia",
+      "fromMs": 9530,
+      "toMs": 10180,
+      "dtwMs": 9820,
+      "p": 0.79816
+    },
+    {
+      "text": ".",
+      "fromMs": 10340,
+      "toMs": 10680,
+      "dtwMs": 10060,
+      "p": 0.847507
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "archivo": "IMG_4561.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 4600,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        939
+      ],
+      [
+        1689,
+        4600
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3390,
+      "texto": "¿Vos sabías que yo lo estoy haciendo?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 170,
+      "dtwMs": 1910,
+      "p": 0.226569
+    },
+    {
+      "text": "V",
+      "fromMs": 170,
+      "toMs": 340,
+      "dtwMs": 2090,
+      "p": 0.428615
+    },
+    {
+      "text": "os",
+      "fromMs": 340,
+      "toMs": 690,
+      "dtwMs": 2190,
+      "p": 0.99184
+    },
+    {
+      "text": " sab",
+      "fromMs": 690,
+      "toMs": 930,
+      "dtwMs": 2410,
+      "p": 0.998981
+    },
+    {
+      "text": "ías",
+      "fromMs": 1690,
+      "toMs": 2190,
+      "dtwMs": 2510,
+      "p": 0.961531
+    },
+    {
+      "text": " que",
+      "fromMs": 2190,
+      "toMs": 2750,
+      "dtwMs": 2730,
+      "p": 0.991584
+    },
+    {
+      "text": " yo",
+      "fromMs": 2750,
+      "toMs": 2810,
+      "dtwMs": 2990,
+      "p": 0.793651
+    },
+    {
+      "text": " lo",
+      "fromMs": 2810,
+      "toMs": 2870,
+      "dtwMs": 3090,
+      "p": 0.0875241
+    },
+    {
+      "text": " estoy",
+      "fromMs": 2870,
+      "toMs": 3030,
+      "dtwMs": 3230,
+      "p": 0.810537
+    },
+    {
+      "text": " haciendo",
+      "fromMs": 3030,
+      "toMs": 3280,
+      "dtwMs": 3370,
+      "p": 0.33796
+    },
+    {
+      "text": "?",
+      "fromMs": 3280,
+      "toMs": 3390,
+      "dtwMs": 3370,
+      "p": 0.376232
+    }
+  ]
+}

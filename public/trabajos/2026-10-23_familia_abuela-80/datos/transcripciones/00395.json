@@ -1,0 +1,799 @@
+{
+  "archivo": "00395.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 59072,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 10380,
+      "texto": "¿Dónde está la gente fiestera? ¿Dónde están las mujeres solteras?"
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 32860,
+      "texto": "¿Viste que toda esa gente viene el cumpleaños de la reina?"
+    },
+    {
+      "desdeMs": 36800,
+      "hastaMs": 38160,
+      "texto": "¡Hola, cumple!"
+    },
+    {
+      "desdeMs": 39080,
+      "hastaMs": 43640,
+      "texto": "Bueno, anuncia, política económica, ahora psicología y social."
+    },
+    {
+      "desdeMs": 45780,
+      "hastaMs": 49600,
+      "texto": "Hay temas que no se pueden tocar, que son, por ejemplo, políticos."
+    },
+    {
+      "desdeMs": 50620,
+      "hastaMs": 51660,
+      "texto": "Pero acá cualquier tema es polémico."
+    },
+    {
+      "desdeMs": 51660,
+      "hastaMs": 53220,
+      "texto": "Político, económico o educativo."
+    },
+    {
+      "desdeMs": 53920,
+      "hastaMs": 55400,
+      "texto": "Cualquier tema es polémico."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 10,
+      "toMs": 160,
+      "dtwMs": 920,
+      "p": 0.60835
+    },
+    {
+      "text": "D",
+      "fromMs": 160,
+      "toMs": 320,
+      "dtwMs": 1580,
+      "p": 0.994287
+    },
+    {
+      "text": "ó",
+      "fromMs": 320,
+      "toMs": 480,
+      "dtwMs": 1720,
+      "p": 0.997244
+    },
+    {
+      "text": "nde",
+      "fromMs": 480,
+      "toMs": 970,
+      "dtwMs": 1820,
+      "p": 1
+    },
+    {
+      "text": " está",
+      "fromMs": 970,
+      "toMs": 1630,
+      "dtwMs": 2160,
+      "p": 0.981961
+    },
+    {
+      "text": " la",
+      "fromMs": 1630,
+      "toMs": 1930,
+      "dtwMs": 2480,
+      "p": 0.999912
+    },
+    {
+      "text": " gente",
+      "fromMs": 2040,
+      "toMs": 2790,
+      "dtwMs": 2960,
+      "p": 0.999952
+    },
+    {
+      "text": " f",
+      "fromMs": 2790,
+      "toMs": 2940,
+      "dtwMs": 3320,
+      "p": 0.997577
+    },
+    {
+      "text": "iest",
+      "fromMs": 2940,
+      "toMs": 3490,
+      "dtwMs": 3740,
+      "p": 0.978874
+    },
+    {
+      "text": "era",
+      "fromMs": 3720,
+      "toMs": 4100,
+      "dtwMs": 4660,
+      "p": 0.997664
+    },
+    {
+      "text": "?",
+      "fromMs": 4100,
+      "toMs": 4660,
+      "dtwMs": 5640,
+      "p": 0.999756
+    },
+    {
+      "text": " ¿",
+      "fromMs": 4660,
+      "toMs": 4840,
+      "dtwMs": 6280,
+      "p": 0.574622
+    },
+    {
+      "text": "D",
+      "fromMs": 4840,
+      "toMs": 5010,
+      "dtwMs": 6340,
+      "p": 0.999495
+    },
+    {
+      "text": "ó",
+      "fromMs": 5010,
+      "toMs": 5180,
+      "dtwMs": 6520,
+      "p": 0.999992
+    },
+    {
+      "text": "nde",
+      "fromMs": 5180,
+      "toMs": 5640,
+      "dtwMs": 6560,
+      "p": 1
+    },
+    {
+      "text": " están",
+      "fromMs": 5780,
+      "toMs": 6600,
+      "dtwMs": 6920,
+      "p": 0.154473
+    },
+    {
+      "text": " las",
+      "fromMs": 6600,
+      "toMs": 7130,
+      "dtwMs": 9060,
+      "p": 0.997917
+    },
+    {
+      "text": " mujeres",
+      "fromMs": 7130,
+      "toMs": 8380,
+      "dtwMs": 9360,
+      "p": 0.999994
+    },
+    {
+      "text": " sol",
+      "fromMs": 8380,
+      "toMs": 8910,
+      "dtwMs": 9760,
+      "p": 0.999981
+    },
+    {
+      "text": "ter",
+      "fromMs": 8910,
+      "toMs": 9440,
+      "dtwMs": 9980,
+      "p": 0.99975
+    },
+    {
+      "text": "as",
+      "fromMs": 9440,
+      "toMs": 9790,
+      "dtwMs": 10360,
+      "p": 1
+    },
+    {
+      "text": "?",
+      "fromMs": 9790,
+      "toMs": 10330,
+      "dtwMs": 10360,
+      "p": 0.999866
+    },
+    {
+      "text": " ¿",
+      "fromMs": 30010,
+      "toMs": 30050,
+      "dtwMs": 30400,
+      "p": 0.406994
+    },
+    {
+      "text": "V",
+      "fromMs": 30050,
+      "toMs": 30100,
+      "dtwMs": 30600,
+      "p": 0.841974
+    },
+    {
+      "text": "iste",
+      "fromMs": 30100,
+      "toMs": 30320,
+      "dtwMs": 30700,
+      "p": 0.997617
+    },
+    {
+      "text": " que",
+      "fromMs": 30320,
+      "toMs": 30480,
+      "dtwMs": 30840,
+      "p": 0.988519
+    },
+    {
+      "text": " toda",
+      "fromMs": 30490,
+      "toMs": 30710,
+      "dtwMs": 31080,
+      "p": 0.964862
+    },
+    {
+      "text": " esa",
+      "fromMs": 30830,
+      "toMs": 30880,
+      "dtwMs": 31240,
+      "p": 0.984149
+    },
+    {
+      "text": " gente",
+      "fromMs": 30880,
+      "toMs": 31160,
+      "dtwMs": 31440,
+      "p": 0.998253
+    },
+    {
+      "text": " viene",
+      "fromMs": 31160,
+      "toMs": 31440,
+      "dtwMs": 31680,
+      "p": 0.907481
+    },
+    {
+      "text": " el",
+      "fromMs": 31440,
+      "toMs": 31550,
+      "dtwMs": 31840,
+      "p": 0.260999
+    },
+    {
+      "text": " cum",
+      "fromMs": 31550,
+      "toMs": 31720,
+      "dtwMs": 32000,
+      "p": 0.950654
+    },
+    {
+      "text": "ple",
+      "fromMs": 31720,
+      "toMs": 31890,
+      "dtwMs": 32080,
+      "p": 0.960362
+    },
+    {
+      "text": "a",
+      "fromMs": 31890,
+      "toMs": 31930,
+      "dtwMs": 32180,
+      "p": 0.975033
+    },
+    {
+      "text": "ños",
+      "fromMs": 32040,
+      "toMs": 32110,
+      "dtwMs": 32260,
+      "p": 0.989851
+    },
+    {
+      "text": " de",
+      "fromMs": 32110,
+      "toMs": 32220,
+      "dtwMs": 32460,
+      "p": 0.641734
+    },
+    {
+      "text": " la",
+      "fromMs": 32220,
+      "toMs": 32330,
+      "dtwMs": 32540,
+      "p": 0.683964
+    },
+    {
+      "text": " re",
+      "fromMs": 32330,
+      "toMs": 32440,
+      "dtwMs": 32720,
+      "p": 0.253803
+    },
+    {
+      "text": "ina",
+      "fromMs": 32440,
+      "toMs": 32580,
+      "dtwMs": 32860,
+      "p": 0.559783
+    },
+    {
+      "text": "?",
+      "fromMs": 32660,
+      "toMs": 32860,
+      "dtwMs": 34000,
+      "p": 0.987365
+    },
+    {
+      "text": " ¡",
+      "fromMs": 36800,
+      "toMs": 36800,
+      "dtwMs": 34140,
+      "p": 0.411956
+    },
+    {
+      "text": "Hola",
+      "fromMs": 36800,
+      "toMs": 36800,
+      "dtwMs": 35740,
+      "p": 0.982688
+    },
+    {
+      "text": ",",
+      "fromMs": 36800,
+      "toMs": 36800,
+      "dtwMs": 35780,
+      "p": 0.538947
+    },
+    {
+      "text": " cum",
+      "fromMs": 36800,
+      "toMs": 36800,
+      "dtwMs": 37880,
+      "p": 0.82623
+    },
+    {
+      "text": "ple",
+      "fromMs": 36820,
+      "toMs": 37150,
+      "dtwMs": 38200,
+      "p": 0.949906
+    },
+    {
+      "text": "!",
+      "fromMs": 37150,
+      "toMs": 38160,
+      "dtwMs": 38980,
+      "p": 0.986824
+    },
+    {
+      "text": " Bueno",
+      "fromMs": 39080,
+      "toMs": 39080,
+      "dtwMs": 39340,
+      "p": 0.984067
+    },
+    {
+      "text": ",",
+      "fromMs": 39090,
+      "toMs": 39260,
+      "dtwMs": 39820,
+      "p": 0.998458
+    },
+    {
+      "text": " an",
+      "fromMs": 39270,
+      "toMs": 39590,
+      "dtwMs": 40080,
+      "p": 0.212026
+    },
+    {
+      "text": "un",
+      "fromMs": 39590,
+      "toMs": 39810,
+      "dtwMs": 40200,
+      "p": 0.603451
+    },
+    {
+      "text": "cia",
+      "fromMs": 39920,
+      "toMs": 40400,
+      "dtwMs": 40380,
+      "p": 0.830479
+    },
+    {
+      "text": ",",
+      "fromMs": 40400,
+      "toMs": 40550,
+      "dtwMs": 41060,
+      "p": 0.260435
+    },
+    {
+      "text": " política",
+      "fromMs": 40550,
+      "toMs": 41170,
+      "dtwMs": 41320,
+      "p": 0.964633
+    },
+    {
+      "text": " económ",
+      "fromMs": 41170,
+      "toMs": 41630,
+      "dtwMs": 41740,
+      "p": 0.73939
+    },
+    {
+      "text": "ica",
+      "fromMs": 41630,
+      "toMs": 41860,
+      "dtwMs": 42040,
+      "p": 0.999926
+    },
+    {
+      "text": ",",
+      "fromMs": 41860,
+      "toMs": 42030,
+      "dtwMs": 42240,
+      "p": 0.962553
+    },
+    {
+      "text": " ahora",
+      "fromMs": 42040,
+      "toMs": 42360,
+      "dtwMs": 42380,
+      "p": 0.956121
+    },
+    {
+      "text": " psic",
+      "fromMs": 42360,
+      "toMs": 42580,
+      "dtwMs": 42620,
+      "p": 0.865533
+    },
+    {
+      "text": "ología",
+      "fromMs": 42800,
+      "toMs": 42990,
+      "dtwMs": 42960,
+      "p": 0.902181
+    },
+    {
+      "text": " y",
+      "fromMs": 42990,
+      "toMs": 43050,
+      "dtwMs": 43300,
+      "p": 0.463433
+    },
+    {
+      "text": " social",
+      "fromMs": 43050,
+      "toMs": 43430,
+      "dtwMs": 43540,
+      "p": 0.948442
+    },
+    {
+      "text": ".",
+      "fromMs": 43430,
+      "toMs": 43640,
+      "dtwMs": 43900,
+      "p": 0.781084
+    },
+    {
+      "text": " Hay",
+      "fromMs": 45780,
+      "toMs": 45780,
+      "dtwMs": 46380,
+      "p": 0.995518
+    },
+    {
+      "text": " temas",
+      "fromMs": 45780,
+      "toMs": 45780,
+      "dtwMs": 47060,
+      "p": 0.999868
+    },
+    {
+      "text": " que",
+      "fromMs": 45780,
+      "toMs": 45780,
+      "dtwMs": 47320,
+      "p": 0.999939
+    },
+    {
+      "text": " no",
+      "fromMs": 45780,
+      "toMs": 45780,
+      "dtwMs": 47420,
+      "p": 0.999683
+    },
+    {
+      "text": " se",
+      "fromMs": 45780,
+      "toMs": 45780,
+      "dtwMs": 47520,
+      "p": 0.999512
+    },
+    {
+      "text": " pueden",
+      "fromMs": 45780,
+      "toMs": 45780,
+      "dtwMs": 47720,
+      "p": 0.996578
+    },
+    {
+      "text": " tocar",
+      "fromMs": 45790,
+      "toMs": 46170,
+      "dtwMs": 48020,
+      "p": 0.9993
+    },
+    {
+      "text": ",",
+      "fromMs": 46170,
+      "toMs": 46350,
+      "dtwMs": 48200,
+      "p": 0.700509
+    },
+    {
+      "text": " que",
+      "fromMs": 46420,
+      "toMs": 46650,
+      "dtwMs": 48260,
+      "p": 0.984155
+    },
+    {
+      "text": " son",
+      "fromMs": 46650,
+      "toMs": 46940,
+      "dtwMs": 48440,
+      "p": 0.999796
+    },
+    {
+      "text": ",",
+      "fromMs": 46940,
+      "toMs": 47130,
+      "dtwMs": 48540,
+      "p": 0.777857
+    },
+    {
+      "text": " por",
+      "fromMs": 47130,
+      "toMs": 47420,
+      "dtwMs": 48640,
+      "p": 0.999945
+    },
+    {
+      "text": " ejemplo",
+      "fromMs": 47420,
+      "toMs": 48110,
+      "dtwMs": 48820,
+      "p": 0.999964
+    },
+    {
+      "text": ",",
+      "fromMs": 48110,
+      "toMs": 48300,
+      "dtwMs": 48920,
+      "p": 0.999893
+    },
+    {
+      "text": " polít",
+      "fromMs": 48300,
+      "toMs": 48790,
+      "dtwMs": 49220,
+      "p": 0.212575
+    },
+    {
+      "text": "icos",
+      "fromMs": 48790,
+      "toMs": 49180,
+      "dtwMs": 49580,
+      "p": 0.997967
+    },
+    {
+      "text": ".",
+      "fromMs": 49180,
+      "toMs": 49600,
+      "dtwMs": 50500,
+      "p": 0.54744
+    },
+    {
+      "text": " Pero",
+      "fromMs": 50620,
+      "toMs": 50620,
+      "dtwMs": 50880,
+      "p": 0.985659
+    },
+    {
+      "text": " acá",
+      "fromMs": 50620,
+      "toMs": 50620,
+      "dtwMs": 51120,
+      "p": 0.999479
+    },
+    {
+      "text": " cualquier",
+      "fromMs": 50620,
+      "toMs": 50620,
+      "dtwMs": 51500,
+      "p": 0.991747
+    },
+    {
+      "text": " tema",
+      "fromMs": 50630,
+      "toMs": 50820,
+      "dtwMs": 51820,
+      "p": 0.995927
+    },
+    {
+      "text": " es",
+      "fromMs": 50820,
+      "toMs": 50940,
+      "dtwMs": 51820,
+      "p": 0.934932
+    },
+    {
+      "text": " pol",
+      "fromMs": 50940,
+      "toMs": 51120,
+      "dtwMs": 51820,
+      "p": 0.981147
+    },
+    {
+      "text": "ém",
+      "fromMs": 51120,
+      "toMs": 51240,
+      "dtwMs": 51820,
+      "p": 0.997786
+    },
+    {
+      "text": "ico",
+      "fromMs": 51240,
+      "toMs": 51390,
+      "dtwMs": 51820,
+      "p": 0.998681
+    },
+    {
+      "text": ".",
+      "fromMs": 51460,
+      "toMs": 51660,
+      "dtwMs": 51820,
+      "p": 0.998525
+    },
+    {
+      "text": " Pol",
+      "fromMs": 51670,
+      "toMs": 51800,
+      "dtwMs": 51820,
+      "p": 0.953824
+    },
+    {
+      "text": "ít",
+      "fromMs": 51800,
+      "toMs": 51890,
+      "dtwMs": 51920,
+      "p": 0.999863
+    },
+    {
+      "text": "ico",
+      "fromMs": 51890,
+      "toMs": 52030,
+      "dtwMs": 52040,
+      "p": 0.990495
+    },
+    {
+      "text": ",",
+      "fromMs": 52030,
+      "toMs": 52120,
+      "dtwMs": 52160,
+      "p": 0.971564
+    },
+    {
+      "text": " económ",
+      "fromMs": 52120,
+      "toMs": 52410,
+      "dtwMs": 52320,
+      "p": 0.999561
+    },
+    {
+      "text": "ico",
+      "fromMs": 52500,
+      "toMs": 52550,
+      "dtwMs": 52620,
+      "p": 0.999975
+    },
+    {
+      "text": " o",
+      "fromMs": 52550,
+      "toMs": 52590,
+      "dtwMs": 52700,
+      "p": 0.740642
+    },
+    {
+      "text": " educ",
+      "fromMs": 52590,
+      "toMs": 52780,
+      "dtwMs": 52880,
+      "p": 0.998418
+    },
+    {
+      "text": "ativo",
+      "fromMs": 52780,
+      "toMs": 53020,
+      "dtwMs": 53200,
+      "p": 0.997632
+    },
+    {
+      "text": ".",
+      "fromMs": 53020,
+      "toMs": 53220,
+      "dtwMs": 53840,
+      "p": 0.999466
+    },
+    {
+      "text": " C",
+      "fromMs": 53920,
+      "toMs": 53920,
+      "dtwMs": 54060,
+      "p": 0.945826
+    },
+    {
+      "text": "ual",
+      "fromMs": 53920,
+      "toMs": 53920,
+      "dtwMs": 54160,
+      "p": 0.999268
+    },
+    {
+      "text": "quier",
+      "fromMs": 53930,
+      "toMs": 53960,
+      "dtwMs": 54420,
+      "p": 0.999344
+    },
+    {
+      "text": " tema",
+      "fromMs": 53960,
+      "toMs": 54290,
+      "dtwMs": 54700,
+      "p": 0.999844
+    },
+    {
+      "text": " es",
+      "fromMs": 54290,
+      "toMs": 54450,
+      "dtwMs": 54800,
+      "p": 0.999945
+    },
+    {
+      "text": " pol",
+      "fromMs": 54450,
+      "toMs": 54690,
+      "dtwMs": 55020,
+      "p": 0.999693
+    },
+    {
+      "text": "ém",
+      "fromMs": 54760,
+      "toMs": 54860,
+      "dtwMs": 55200,
+      "p": 0.999655
+    },
+    {
+      "text": "ico",
+      "fromMs": 54860,
+      "toMs": 55110,
+      "dtwMs": 55380,
+      "p": 0.999937
+    },
+    {
+      "text": ".",
+      "fromMs": 55120,
+      "toMs": 55400,
+      "dtwMs": 55380,
+      "p": 0.999781
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "archivo": "IMG_4709.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7237,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2900,
+      "texto": "Agarra la Mariana, agarra la Cintia"
+    },
+    {
+      "desdeMs": 2900,
+      "hastaMs": 4960,
+      "texto": "Sí, las de antes"
+    },
+    {
+      "desdeMs": 4960,
+      "hastaMs": 5980,
+      "texto": "Son todas repiolas"
+    },
+    {
+      "desdeMs": 5980,
+      "hastaMs": 7240,
+      "texto": "A Parol"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Ag",
+      "fromMs": 0,
+      "toMs": 210,
+      "dtwMs": 720,
+      "p": 0.307184
+    },
+    {
+      "text": "ar",
+      "fromMs": 210,
+      "toMs": 420,
+      "dtwMs": 800,
+      "p": 0.834668
+    },
+    {
+      "text": "ra",
+      "fromMs": 420,
+      "toMs": 630,
+      "dtwMs": 840,
+      "p": 0.547518
+    },
+    {
+      "text": " la",
+      "fromMs": 630,
+      "toMs": 840,
+      "dtwMs": 960,
+      "p": 0.776021
+    },
+    {
+      "text": " Mar",
+      "fromMs": 840,
+      "toMs": 1120,
+      "dtwMs": 1200,
+      "p": 0.986049
+    },
+    {
+      "text": "iana",
+      "fromMs": 1150,
+      "toMs": 1570,
+      "dtwMs": 1560,
+      "p": 0.998812
+    },
+    {
+      "text": ",",
+      "fromMs": 1580,
+      "toMs": 1670,
+      "dtwMs": 1680,
+      "p": 0.821106
+    },
+    {
+      "text": " ag",
+      "fromMs": 1670,
+      "toMs": 1740,
+      "dtwMs": 1740,
+      "p": 0.947364
+    },
+    {
+      "text": "ar",
+      "fromMs": 1760,
+      "toMs": 1850,
+      "dtwMs": 1800,
+      "p": 0.998852
+    },
+    {
+      "text": "ra",
+      "fromMs": 1850,
+      "toMs": 1940,
+      "dtwMs": 1820,
+      "p": 0.999979
+    },
+    {
+      "text": " la",
+      "fromMs": 1940,
+      "toMs": 2000,
+      "dtwMs": 2020,
+      "p": 0.99039
+    },
+    {
+      "text": " C",
+      "fromMs": 2150,
+      "toMs": 2180,
+      "dtwMs": 2240,
+      "p": 0.92696
+    },
+    {
+      "text": "int",
+      "fromMs": 2180,
+      "toMs": 2600,
+      "dtwMs": 2600,
+      "p": 0.992937
+    },
+    {
+      "text": "ia",
+      "fromMs": 2630,
+      "toMs": 2900,
+      "dtwMs": 2860,
+      "p": 0.999491
+    },
+    {
+      "text": " Sí",
+      "fromMs": 2900,
+      "toMs": 4500,
+      "dtwMs": 4500,
+      "p": 0.675669
+    },
+    {
+      "text": ",",
+      "fromMs": 4500,
+      "toMs": 4570,
+      "dtwMs": 4600,
+      "p": 0.94107
+    },
+    {
+      "text": " las",
+      "fromMs": 4570,
+      "toMs": 4680,
+      "dtwMs": 4680,
+      "p": 0.997411
+    },
+    {
+      "text": " de",
+      "fromMs": 4680,
+      "toMs": 4750,
+      "dtwMs": 4820,
+      "p": 0.629644
+    },
+    {
+      "text": " antes",
+      "fromMs": 4750,
+      "toMs": 4880,
+      "dtwMs": 4960,
+      "p": 0.539572
+    },
+    {
+      "text": " Son",
+      "fromMs": 4960,
+      "toMs": 5130,
+      "dtwMs": 5180,
+      "p": 0.720108
+    },
+    {
+      "text": " todas",
+      "fromMs": 5150,
+      "toMs": 5460,
+      "dtwMs": 5400,
+      "p": 0.997944
+    },
+    {
+      "text": " rep",
+      "fromMs": 5460,
+      "toMs": 5650,
+      "dtwMs": 5680,
+      "p": 0.609738
+    },
+    {
+      "text": "i",
+      "fromMs": 5650,
+      "toMs": 5710,
+      "dtwMs": 5780,
+      "p": 0.998919
+    },
+    {
+      "text": "olas",
+      "fromMs": 5710,
+      "toMs": 5960,
+      "dtwMs": 5980,
+      "p": 0.711921
+    },
+    {
+      "text": " A",
+      "fromMs": 5980,
+      "toMs": 6190,
+      "dtwMs": 6960,
+      "p": 0.895657
+    },
+    {
+      "text": " Par",
+      "fromMs": 6190,
+      "toMs": 6820,
+      "dtwMs": 7120,
+      "p": 0.221175
+    },
+    {
+      "text": "ol",
+      "fromMs": 6820,
+      "toMs": 7240,
+      "dtwMs": 7200,
+      "p": 0.37743
+    }
+  ]
+}

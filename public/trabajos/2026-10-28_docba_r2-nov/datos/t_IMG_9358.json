@@ -1,0 +1,61 @@
+{
+  "archivo": "IMG_9358.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3500,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        979,
+        2857
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 979,
+      "hastaMs": 2857,
+      "texto": "es el lugar indicado"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " es",
+      "fromMs": 1199,
+      "toMs": 1199,
+      "dtwMs": 1739,
+      "p": 0.295102
+    },
+    {
+      "text": " el",
+      "fromMs": 1249,
+      "toMs": 1419,
+      "dtwMs": 1879,
+      "p": 0.992258
+    },
+    {
+      "text": " lugar",
+      "fromMs": 1419,
+      "toMs": 1969,
+      "dtwMs": 2099,
+      "p": 0.992235
+    },
+    {
+      "text": " indic",
+      "fromMs": 1969,
+      "toMs": 2509,
+      "dtwMs": 2319,
+      "p": 0.993891
+    },
+    {
+      "text": "ado",
+      "fromMs": 2509,
+      "toMs": 2599,
+      "dtwMs": 2579,
+      "p": 0.994353
+    }
+  ]
+}

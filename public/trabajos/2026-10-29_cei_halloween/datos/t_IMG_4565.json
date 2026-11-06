@@ -1,0 +1,22 @@
+{
+  "archivo": "IMG_4565.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1867,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1540,
+      "texto": "China"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " China",
+      "fromMs": 430,
+      "toMs": 1540,
+      "dtwMs": 1520,
+      "p": 0.937478
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+[
+ {
+  "palabra": "¿Necesitás",
+  "ini": 0.16,
+  "fin": 0.64
+ },
+ {
+  "palabra": "un",
+  "ini": 0.68,
+  "fin": 0.74
+ },
+ {
+  "palabra": "espacio",
+  "ini": 0.78,
+  "fin": 1.12
+ },
+ {
+  "palabra": "para",
+  "ini": 1.18,
+  "fin": 1.3
+ },
+ {
+  "palabra": "cerrar",
+  "ini": 1.4,
+  "fin": 1.64
+ },
+ {
+  "palabra": "el",
+  "ini": 1.7,
+  "fin": 1.74
+ },
+ {
+  "palabra": "año",
+  "ini": 1.78,
+  "fin": 1.92
+ },
+ {
+  "palabra": "con",
+  "ini": 1.96,
+  "fin": 2.06
+ },
+ {
+  "palabra": "tu",
+  "ini": 2.08,
+  "fin": 2.12
+ },
+ {
+  "palabra": "equipo?",
+  "ini": 2.16,
+  "fin": 2.4
+ },
+ {
+  "palabra": "DOCBA",
+  "ini": 2.7,
+  "fin": 2.96
+ },
+ {
+  "palabra": "es",
+  "ini": 3.14,
+  "fin": 3.18
+ },
+ {
+  "palabra": "el",
+  "ini": 3.24,
+  "fin": 3.3
+ },
+ {
+  "palabra": "lugar",
+  "ini": 3.34,
+  "fin": 3.54
+ },
+ {
+  "palabra": "indicado.",
+  "ini": 3.6,
+  "fin": 3.98
+ },
+ {
+  "palabra": "Hay",
+  "ini": 4.92,
+  "fin": 5.02
+ },
+ {
+  "palabra": "proyectos",
+  "ini": 5.06,
+  "fin": 5.44
+ },
+ {
+  "palabra": "que",
+  "ini": 5.48,
+  "fin": 5.56
+ },
+ {
+  "palabra": "nacieron,",
+  "ini": 5.6,
+  "fin": 6.08
+ },
+ {
+  "palabra": "otros",
+  "ini": 6.32,
+  "fin": 6.5
+ },
+ {
+  "palabra": "que",
+  "ini": 6.56,
+  "fin": 6.62
+ },
+ {
+  "palabra": "tuvieron",
+  "ini": 6.66,
+  "fin": 6.94
+ },
+ {
+  "palabra": "obstáculos",
+  "ini": 7.0,
+  "fin": 7.58
+ },
+ {
+  "palabra": "y",
+  "ini": 7.78,
+  "fin": 7.8
+ },
+ {
+  "palabra": "otros",
+  "ini": 7.86,
+  "fin": 8.18
+ },
+ {
+  "palabra": "que",
+  "ini": 8.32,
+  "fin": 8.38
+ },
+ {
+  "palabra": "llegaron",
+  "ini": 8.44,
+  "fin": 8.72
+ },
+ {
+  "palabra": "a",
+  "ini": 8.78,
+  "fin": 8.8
+ },
+ {
+  "palabra": "su",
+  "ini": 8.84,
+  "fin": 8.92
+ },
+ {
+  "palabra": "fin.",
+  "ini": 9.0,
+  "fin": 9.14
+ },
+ {
+  "palabra": "Todos",
+  "ini": 9.68,
+  "fin": 10.0
+ },
+ {
+  "palabra": "merecen",
+  "ini": 10.24,
+  "fin": 10.56
+ },
+ {
+  "palabra": "una",
+  "ini": 10.62,
+  "fin": 10.7
+ },
+ {
+  "palabra": "celebración.",
+  "ini": 10.78,
+  "fin": 11.32
+ },
+ {
+  "palabra": "En",
+  "ini": 11.58,
+  "fin": 11.64
+ },
+ {
+  "palabra": "DOCBA",
+  "ini": 11.7,
+  "fin": 11.92
+ },
+ {
+  "palabra": "tenemos",
+  "ini": 11.98,
+  "fin": 12.22
+ },
+ {
+  "palabra": "un",
+  "ini": 12.28,
+  "fin": 12.34
+ },
+ {
+  "palabra": "espacio",
+  "ini": 12.38,
+  "fin": 12.7
+ },
+ {
+  "palabra": "amplio,",
+  "ini": 12.78,
+  "fin": 13.04
+ },
+ {
+  "palabra": "variedad",
+  "ini": 13.1,
+  "fin": 13.34
+ },
+ {
+  "palabra": "gastronómica",
+  "ini": 13.42,
+  "fin": 13.98
+ },
+ {
+  "palabra": "y",
+  "ini": 14.1,
+  "fin": 14.12
+ },
+ {
+  "palabra": "un",
+  "ini": 14.18,
+  "fin": 14.22
+ },
+ {
+  "palabra": "servicio",
+  "ini": 14.26,
+  "fin": 14.68
+ },
+ {
+  "palabra": "con",
+  "ini": 14.78,
+  "fin": 14.86
+ },
+ {
+  "palabra": "todas",
+  "ini": 14.94,
+  "fin": 15.12
+ },
+ {
+  "palabra": "las",
+  "ini": 15.16,
+  "fin": 15.24
+ },
+ {
+  "palabra": "comodidades.",
+  "ini": 15.3,
+  "fin": 15.88
+ },
+ {
+  "palabra": "Como",
+  "ini": 16.92,
+  "fin": 17.04
+ },
+ {
+  "palabra": "en",
+  "ini": 17.08,
+  "fin": 17.12
+ },
+ {
+  "palabra": "casa,",
+  "ini": 17.16,
+  "fin": 17.4
+ },
+ {
+  "palabra": "pero",
+  "ini": 17.52,
+  "fin": 17.64
+ },
+ {
+  "palabra": "sin",
+  "ini": 17.74,
+  "fin": 17.84
+ },
+ {
+  "palabra": "lavar",
+  "ini": 17.9,
+  "fin": 18.06
+ },
+ {
+  "palabra": "un",
+  "ini": 18.1,
+  "fin": 18.14
+ },
+ {
+  "palabra": "plato.",
+  "ini": 18.18,
+  "fin": 18.42
+ },
+ {
+  "palabra": "Reservá",
+  "ini": 18.64,
+  "fin": 18.96
+ },
+ {
+  "palabra": "tu",
+  "ini": 19.02,
+  "fin": 19.06
+ },
+ {
+  "palabra": "fin",
+  "ini": 19.12,
+  "fin": 19.22
+ },
+ {
+  "palabra": "de",
+  "ini": 19.24,
+  "fin": 19.28
+ },
+ {
+  "palabra": "año",
+  "ini": 19.32,
+  "fin": 19.42
+ },
+ {
+  "palabra": "en",
+  "ini": 19.44,
+  "fin": 19.48
+ },
+ {
+  "palabra": "DOCBA,",
+  "ini": 19.52,
+  "fin": 19.76
+ },
+ {
+  "palabra": "o",
+  "ini": 19.9,
+  "fin": 19.92
+ },
+ {
+  "palabra": "simplemente",
+  "ini": 20.0,
+  "fin": 20.44
+ },
+ {
+  "palabra": "pasen",
+  "ini": 20.64,
+  "fin": 20.9
+ },
+ {
+  "palabra": "a",
+  "ini": 20.94,
+  "fin": 20.96
+ },
+ {
+  "palabra": "brindar.",
+  "ini": 20.98,
+  "fin": 21.26
+ }
+]

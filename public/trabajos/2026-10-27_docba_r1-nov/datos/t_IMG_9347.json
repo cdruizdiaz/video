@@ -1,0 +1,187 @@
+{
+  "archivo": "IMG_9347.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6037,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        811,
+        6037
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 811,
+      "hastaMs": 6031,
+      "texto": "En Dogma tenés espacio de sobra para estar cómodo y una carta que no se parece a ninguna"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " En",
+      "fromMs": 811,
+      "toMs": 931,
+      "dtwMs": 1191,
+      "p": 0.696132
+    },
+    {
+      "text": " Dog",
+      "fromMs": 1051,
+      "toMs": 1111,
+      "dtwMs": 1331,
+      "p": 0.453905
+    },
+    {
+      "text": "ma",
+      "fromMs": 1111,
+      "toMs": 1221,
+      "dtwMs": 1471,
+      "p": 0.992384
+    },
+    {
+      "text": " ten",
+      "fromMs": 1221,
+      "toMs": 1401,
+      "dtwMs": 1651,
+      "p": 0.612463
+    },
+    {
+      "text": "és",
+      "fromMs": 1401,
+      "toMs": 1501,
+      "dtwMs": 1711,
+      "p": 0.692714
+    },
+    {
+      "text": " espacio",
+      "fromMs": 1561,
+      "toMs": 1881,
+      "dtwMs": 1971,
+      "p": 0.930002
+    },
+    {
+      "text": " de",
+      "fromMs": 1941,
+      "toMs": 2031,
+      "dtwMs": 2091,
+      "p": 0.962439
+    },
+    {
+      "text": " so",
+      "fromMs": 2151,
+      "toMs": 2161,
+      "dtwMs": 2231,
+      "p": 0.479544
+    },
+    {
+      "text": "bra",
+      "fromMs": 2161,
+      "toMs": 2361,
+      "dtwMs": 2311,
+      "p": 0.986508
+    },
+    {
+      "text": " para",
+      "fromMs": 2361,
+      "toMs": 2671,
+      "dtwMs": 2471,
+      "p": 0.946658
+    },
+    {
+      "text": " estar",
+      "fromMs": 2731,
+      "toMs": 3041,
+      "dtwMs": 2651,
+      "p": 0.9852
+    },
+    {
+      "text": " có",
+      "fromMs": 3271,
+      "toMs": 3271,
+      "dtwMs": 2871,
+      "p": 0.99476
+    },
+    {
+      "text": "mod",
+      "fromMs": 3271,
+      "toMs": 3511,
+      "dtwMs": 2931,
+      "p": 0.999683
+    },
+    {
+      "text": "o",
+      "fromMs": 3511,
+      "toMs": 3611,
+      "dtwMs": 3091,
+      "p": 0.980473
+    },
+    {
+      "text": " y",
+      "fromMs": 3611,
+      "toMs": 3681,
+      "dtwMs": 3851,
+      "p": 0.457916
+    },
+    {
+      "text": " una",
+      "fromMs": 3821,
+      "toMs": 3911,
+      "dtwMs": 3991,
+      "p": 0.982932
+    },
+    {
+      "text": " carta",
+      "fromMs": 3911,
+      "toMs": 4311,
+      "dtwMs": 4251,
+      "p": 0.989411
+    },
+    {
+      "text": " que",
+      "fromMs": 4311,
+      "toMs": 4451,
+      "dtwMs": 4431,
+      "p": 0.967759
+    },
+    {
+      "text": " no",
+      "fromMs": 4451,
+      "toMs": 4541,
+      "dtwMs": 4531,
+      "p": 0.992896
+    },
+    {
+      "text": " se",
+      "fromMs": 4601,
+      "toMs": 4611,
+      "dtwMs": 4631,
+      "p": 0.986431
+    },
+    {
+      "text": " parece",
+      "fromMs": 4671,
+      "toMs": 5241,
+      "dtwMs": 4871,
+      "p": 0.97082
+    },
+    {
+      "text": " a",
+      "fromMs": 5241,
+      "toMs": 5321,
+      "dtwMs": 5151,
+      "p": 0.986316
+    },
+    {
+      "text": " ninguna",
+      "fromMs": 5321,
+      "toMs": 5551,
+      "dtwMs": 5491,
+      "p": 0.995675
+    }
+  ]
+}

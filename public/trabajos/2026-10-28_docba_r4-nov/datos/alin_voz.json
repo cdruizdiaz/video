@@ -1,0 +1,272 @@
+[
+ {
+  "palabra": "A",
+  "ini": 0.72,
+  "fin": 0.74
+ },
+ {
+  "palabra": "DOCBA",
+  "ini": 0.82,
+  "fin": 1.12
+ },
+ {
+  "palabra": "no",
+  "ini": 1.34,
+  "fin": 1.38
+ },
+ {
+  "palabra": "hace",
+  "ini": 1.42,
+  "fin": 1.56
+ },
+ {
+  "palabra": "falta",
+  "ini": 1.62,
+  "fin": 1.84
+ },
+ {
+  "palabra": "venir",
+  "ini": 1.88,
+  "fin": 2.08
+ },
+ {
+  "palabra": "con",
+  "ini": 2.14,
+  "fin": 2.22
+ },
+ {
+  "palabra": "un",
+  "ini": 2.28,
+  "fin": 2.32
+ },
+ {
+  "palabra": "plan.",
+  "ini": 2.36,
+  "fin": 2.54
+ },
+ {
+  "palabra": "Venís,",
+  "ini": 3.08,
+  "fin": 3.46
+ },
+ {
+  "palabra": "te",
+  "ini": 3.56,
+  "fin": 3.64
+ },
+ {
+  "palabra": "sentás,",
+  "ini": 3.7,
+  "fin": 4.1
+ },
+ {
+  "palabra": "comés",
+  "ini": 4.22,
+  "fin": 4.4
+ },
+ {
+  "palabra": "algo",
+  "ini": 4.44,
+  "fin": 4.56
+ },
+ {
+  "palabra": "rico",
+  "ini": 4.64,
+  "fin": 4.84
+ },
+ {
+  "palabra": "mientras",
+  "ini": 4.9,
+  "fin": 5.12
+ },
+ {
+  "palabra": "te",
+  "ini": 5.14,
+  "fin": 5.2
+ },
+ {
+  "palabra": "tomás",
+  "ini": 5.24,
+  "fin": 5.42
+ },
+ {
+  "palabra": "un",
+  "ini": 5.44,
+  "fin": 5.5
+ },
+ {
+  "palabra": "café.",
+  "ini": 5.54,
+  "fin": 5.76
+ },
+ {
+  "palabra": "Y",
+  "ini": 6.48,
+  "fin": 6.5
+ },
+ {
+  "palabra": "si",
+  "ini": 6.64,
+  "fin": 6.72
+ },
+ {
+  "palabra": "se",
+  "ini": 6.76,
+  "fin": 6.8
+ },
+ {
+  "palabra": "te",
+  "ini": 6.82,
+  "fin": 6.86
+ },
+ {
+  "palabra": "activa",
+  "ini": 6.88,
+  "fin": 7.1
+ },
+ {
+  "palabra": "el",
+  "ini": 7.12,
+  "fin": 7.18
+ },
+ {
+  "palabra": "laburo,",
+  "ini": 7.22,
+  "fin": 7.52
+ },
+ {
+  "palabra": "el",
+  "ini": 7.74,
+  "fin": 7.8
+ },
+ {
+  "palabra": "espacio",
+  "ini": 7.84,
+  "fin": 8.18
+ },
+ {
+  "palabra": "te",
+  "ini": 8.26,
+  "fin": 8.3
+ },
+ {
+  "palabra": "acompaña.",
+  "ini": 8.34,
+  "fin": 8.76
+ },
+ {
+  "palabra": "O",
+  "ini": 9.52,
+  "fin": 9.54
+ },
+ {
+  "palabra": "te",
+  "ini": 9.72,
+  "fin": 9.8
+ },
+ {
+  "palabra": "quedás,",
+  "ini": 9.84,
+  "fin": 10.16
+ },
+ {
+  "palabra": "porque",
+  "ini": 10.3,
+  "fin": 10.48
+ },
+ {
+  "palabra": "cuando",
+  "ini": 10.52,
+  "fin": 10.7
+ },
+ {
+  "palabra": "cae",
+  "ini": 10.74,
+  "fin": 10.88
+ },
+ {
+  "palabra": "la",
+  "ini": 10.96,
+  "fin": 11.0
+ },
+ {
+  "palabra": "noche,",
+  "ini": 11.04,
+  "fin": 11.26
+ },
+ {
+  "palabra": "también",
+  "ini": 11.4,
+  "fin": 11.72
+ },
+ {
+  "palabra": "podés",
+  "ini": 11.78,
+  "fin": 11.92
+ },
+ {
+  "palabra": "disfrutar",
+  "ini": 11.94,
+  "fin": 12.3
+ },
+ {
+  "palabra": "de",
+  "ini": 12.4,
+  "fin": 12.44
+ },
+ {
+  "palabra": "una",
+  "ini": 12.48,
+  "fin": 12.56
+ },
+ {
+  "palabra": "copita.",
+  "ini": 12.62,
+  "fin": 12.94
+ },
+ {
+  "palabra": "Y",
+  "ini": 13.68,
+  "fin": 13.7
+ },
+ {
+  "palabra": "entre",
+  "ini": 13.76,
+  "fin": 13.92
+ },
+ {
+  "palabra": "medio,",
+  "ini": 13.96,
+  "fin": 14.22
+ },
+ {
+  "palabra": "un",
+  "ini": 14.44,
+  "fin": 14.48
+ },
+ {
+  "palabra": "montón",
+  "ini": 14.52,
+  "fin": 14.82
+ },
+ {
+  "palabra": "de",
+  "ini": 14.84,
+  "fin": 14.88
+ },
+ {
+  "palabra": "detalles",
+  "ini": 14.94,
+  "fin": 15.34
+ },
+ {
+  "palabra": "para",
+  "ini": 15.44,
+  "fin": 15.56
+ },
+ {
+  "palabra": "descubrir.",
+  "ini": 15.6,
+  "fin": 16.0
+ }
+]

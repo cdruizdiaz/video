@@ -1,0 +1,42 @@
+[
+ {
+  "palabra": "La",
+  "ini": 0.28,
+  "fin": 0.32
+ },
+ {
+  "palabra": "cremación",
+  "ini": 0.38,
+  "fin": 0.9
+ },
+ {
+  "palabra": "es",
+  "ini": 1.06,
+  "fin": 1.18
+ },
+ {
+  "palabra": "una",
+  "ini": 1.32,
+  "fin": 1.4
+ },
+ {
+  "palabra": "parte",
+  "ini": 1.56,
+  "fin": 1.8
+ },
+ {
+  "palabra": "importante",
+  "ini": 1.88,
+  "fin": 2.54
+ },
+ {
+  "palabra": "del",
+  "ini": 2.62,
+  "fin": 2.88
+ },
+ {
+  "palabra": "ngaben.",
+  "ini": 2.96,
+  "fin": 3.38
+ }
+]

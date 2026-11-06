@@ -1,0 +1,157 @@
+{
+  "archivo": "IMG_4658.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8337,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        804,
+        6702
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 804,
+      "hastaMs": 4264,
+      "texto": "¿Qué color usan las personas en esta tradición?"
+    },
+    {
+      "desdeMs": 4983,
+      "hastaMs": 6524,
+      "texto": "Yellow, red y white."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 804,
+      "toMs": 884,
+      "dtwMs": 1364,
+      "p": 0.964517
+    },
+    {
+      "text": "Qué",
+      "fromMs": 1044,
+      "toMs": 1124,
+      "dtwMs": 1784,
+      "p": 0.714106
+    },
+    {
+      "text": " color",
+      "fromMs": 1264,
+      "toMs": 1444,
+      "dtwMs": 2184,
+      "p": 0.769577
+    },
+    {
+      "text": " us",
+      "fromMs": 1624,
+      "toMs": 1694,
+      "dtwMs": 2624,
+      "p": 0.272448
+    },
+    {
+      "text": "an",
+      "fromMs": 1694,
+      "toMs": 1854,
+      "dtwMs": 2684,
+      "p": 0.9439
+    },
+    {
+      "text": " las",
+      "fromMs": 1994,
+      "toMs": 2094,
+      "dtwMs": 2864,
+      "p": 0.423975
+    },
+    {
+      "text": " personas",
+      "fromMs": 2094,
+      "toMs": 2684,
+      "dtwMs": 2984,
+      "p": 0.920774
+    },
+    {
+      "text": " en",
+      "fromMs": 2794,
+      "toMs": 2894,
+      "dtwMs": 3524,
+      "p": 0.929214
+    },
+    {
+      "text": " esta",
+      "fromMs": 2964,
+      "toMs": 3224,
+      "dtwMs": 3764,
+      "p": 0.965874
+    },
+    {
+      "text": " trad",
+      "fromMs": 3224,
+      "toMs": 3544,
+      "dtwMs": 4024,
+      "p": 0.992754
+    },
+    {
+      "text": "ición",
+      "fromMs": 3544,
+      "toMs": 3954,
+      "dtwMs": 4264,
+      "p": 0.996687
+    },
+    {
+      "text": "?",
+      "fromMs": 3954,
+      "toMs": 4254,
+      "dtwMs": 4684,
+      "p": 0.992576
+    },
+    {
+      "text": " Yellow",
+      "fromMs": 4983,
+      "toMs": 5044,
+      "dtwMs": 5304,
+      "p": 0.378291
+    },
+    {
+      "text": ",",
+      "fromMs": 5224,
+      "toMs": 5313,
+      "dtwMs": 5584,
+      "p": 0.999173
+    },
+    {
+      "text": " red",
+      "fromMs": 5444,
+      "toMs": 5624,
+      "dtwMs": 5724,
+      "p": 0.933912
+    },
+    {
+      "text": " y",
+      "fromMs": 5813,
+      "toMs": 5834,
+      "dtwMs": 6104,
+      "p": 0.650747
+    },
+    {
+      "text": " white",
+      "fromMs": 5834,
+      "toMs": 6483,
+      "dtwMs": 6504,
+      "p": 0.214966
+    },
+    {
+      "text": ".",
+      "fromMs": 6524,
+      "toMs": 6524,
+      "dtwMs": 6504,
+      "p": 0.895577
+    }
+  ]
+}

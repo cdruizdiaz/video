@@ -1,0 +1,44 @@
+{
+  "archivo": "IMG_4624.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2032,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        1272
+      ],
+      [
+        1782,
+        2032
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 500,
+      "texto": "Gracias."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Gracias",
+      "fromMs": 0,
+      "toMs": 350,
+      "dtwMs": 480,
+      "p": 0.556254
+    },
+    {
+      "text": ".",
+      "fromMs": 350,
+      "toMs": 500,
+      "dtwMs": 480,
+      "p": 0.804422
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "archivo": "00468.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1024,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1000,
+      "texto": "Fila Vertical."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " F",
+      "fromMs": 20,
+      "toMs": 80,
+      "dtwMs": 160,
+      "p": 0.161756
+    },
+    {
+      "text": "ila",
+      "fromMs": 80,
+      "toMs": 310,
+      "dtwMs": 300,
+      "p": 0.435414
+    },
+    {
+      "text": " Vert",
+      "fromMs": 310,
+      "toMs": 640,
+      "dtwMs": 620,
+      "p": 0.65799
+    },
+    {
+      "text": "ical",
+      "fromMs": 640,
+      "toMs": 990,
+      "dtwMs": 920,
+      "p": 0.673319
+    },
+    {
+      "text": ".",
+      "fromMs": 1000,
+      "toMs": 1000,
+      "dtwMs": 980,
+      "p": 0.52314
+    }
+  ]
+}

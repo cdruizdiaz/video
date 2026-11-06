@@ -1,0 +1,64 @@
+{
+  "archivo": "IMG_4618.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2832,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 620,
+      "texto": "la batería de chino."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " la",
+      "fromMs": 0,
+      "toMs": 60,
+      "dtwMs": 80,
+      "p": 0.978894
+    },
+    {
+      "text": " bater",
+      "fromMs": 60,
+      "toMs": 210,
+      "dtwMs": 240,
+      "p": 1
+    },
+    {
+      "text": "ía",
+      "fromMs": 210,
+      "toMs": 280,
+      "dtwMs": 340,
+      "p": 1
+    },
+    {
+      "text": " de",
+      "fromMs": 280,
+      "toMs": 340,
+      "dtwMs": 440,
+      "p": 0.874873
+    },
+    {
+      "text": " ch",
+      "fromMs": 340,
+      "toMs": 400,
+      "dtwMs": 540,
+      "p": 0.999977
+    },
+    {
+      "text": "ino",
+      "fromMs": 400,
+      "toMs": 490,
+      "dtwMs": 600,
+      "p": 0.921855
+    },
+    {
+      "text": ".",
+      "fromMs": 490,
+      "toMs": 620,
+      "dtwMs": 600,
+      "p": 0.998917
+    }
+  ]
+}

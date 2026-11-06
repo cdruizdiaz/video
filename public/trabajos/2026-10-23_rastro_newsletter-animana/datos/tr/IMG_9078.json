@@ -1,0 +1,204 @@
+{
+  "archivo": "IMG_9078.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8637,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 8640,
+      "texto": "Segundo, el CTR, el click sobre los enviados. Te dice si el botón funcionó y convence."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Seg",
+      "fromMs": 0,
+      "toMs": 910,
+      "dtwMs": 3060,
+      "p": 0.156883
+    },
+    {
+      "text": "undo",
+      "fromMs": 910,
+      "toMs": 2120,
+      "dtwMs": 3300,
+      "p": 0.986054
+    },
+    {
+      "text": ",",
+      "fromMs": 2120,
+      "toMs": 2720,
+      "dtwMs": 3520,
+      "p": 0.573425
+    },
+    {
+      "text": " el",
+      "fromMs": 2800,
+      "toMs": 3330,
+      "dtwMs": 3580,
+      "p": 0.912477
+    },
+    {
+      "text": " CT",
+      "fromMs": 3330,
+      "toMs": 3920,
+      "dtwMs": 3740,
+      "p": 0.965703
+    },
+    {
+      "text": "R",
+      "fromMs": 3930,
+      "toMs": 4230,
+      "dtwMs": 4000,
+      "p": 0.993997
+    },
+    {
+      "text": ",",
+      "fromMs": 4360,
+      "toMs": 4500,
+      "dtwMs": 4360,
+      "p": 0.572024
+    },
+    {
+      "text": " el",
+      "fromMs": 4500,
+      "toMs": 4500,
+      "dtwMs": 4520,
+      "p": 0.92963
+    },
+    {
+      "text": " click",
+      "fromMs": 4590,
+      "toMs": 4700,
+      "dtwMs": 4720,
+      "p": 0.4982
+    },
+    {
+      "text": " sobre",
+      "fromMs": 4820,
+      "toMs": 5000,
+      "dtwMs": 4960,
+      "p": 0.97156
+    },
+    {
+      "text": " los",
+      "fromMs": 5000,
+      "toMs": 5140,
+      "dtwMs": 5120,
+      "p": 0.973768
+    },
+    {
+      "text": " env",
+      "fromMs": 5140,
+      "toMs": 5370,
+      "dtwMs": 5300,
+      "p": 0.957965
+    },
+    {
+      "text": "i",
+      "fromMs": 5370,
+      "toMs": 5440,
+      "dtwMs": 5380,
+      "p": 0.99586
+    },
+    {
+      "text": "ados",
+      "fromMs": 5440,
+      "toMs": 5530,
+      "dtwMs": 5560,
+      "p": 0.99831
+    },
+    {
+      "text": ".",
+      "fromMs": 5780,
+      "toMs": 5850,
+      "dtwMs": 5700,
+      "p": 0.319585
+    },
+    {
+      "text": " Te",
+      "fromMs": 5850,
+      "toMs": 5910,
+      "dtwMs": 5840,
+      "p": 0.71032
+    },
+    {
+      "text": " dice",
+      "fromMs": 5910,
+      "toMs": 6040,
+      "dtwMs": 6020,
+      "p": 0.985809
+    },
+    {
+      "text": " si",
+      "fromMs": 6040,
+      "toMs": 6180,
+      "dtwMs": 6180,
+      "p": 0.942779
+    },
+    {
+      "text": " el",
+      "fromMs": 6180,
+      "toMs": 6300,
+      "dtwMs": 6260,
+      "p": 0.981343
+    },
+    {
+      "text": " bot",
+      "fromMs": 6300,
+      "toMs": 6510,
+      "dtwMs": 6480,
+      "p": 0.972202
+    },
+    {
+      "text": "ón",
+      "fromMs": 6510,
+      "toMs": 6650,
+      "dtwMs": 6580,
+      "p": 0.979598
+    },
+    {
+      "text": " funcion",
+      "fromMs": 6760,
+      "toMs": 7110,
+      "dtwMs": 6960,
+      "p": 0.790018
+    },
+    {
+      "text": "ó",
+      "fromMs": 7110,
+      "toMs": 7180,
+      "dtwMs": 7200,
+      "p": 0.939392
+    },
+    {
+      "text": " y",
+      "fromMs": 7180,
+      "toMs": 7260,
+      "dtwMs": 7340,
+      "p": 0.92332
+    },
+    {
+      "text": " conven",
+      "fromMs": 7260,
+      "toMs": 7810,
+      "dtwMs": 7620,
+      "p": 0.926082
+    },
+    {
+      "text": "ce",
+      "fromMs": 7990,
+      "toMs": 8630,
+      "dtwMs": 7820,
+      "p": 0.986786
+    },
+    {
+      "text": ".",
+      "fromMs": 8630,
+      "toMs": 8630,
+      "dtwMs": 7980,
+      "p": 0.845501
+    }
+  ]
+}

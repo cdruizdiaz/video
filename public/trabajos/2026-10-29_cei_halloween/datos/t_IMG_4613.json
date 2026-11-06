@@ -1,0 +1,78 @@
+{
+  "archivo": "IMG_4613.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5535,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5500,
+      "texto": "¡Suscríbete al canal!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 0,
+      "toMs": 260,
+      "dtwMs": 2620,
+      "p": 0.106686
+    },
+    {
+      "text": "S",
+      "fromMs": 260,
+      "toMs": 520,
+      "dtwMs": 5460,
+      "p": 0.130411
+    },
+    {
+      "text": "us",
+      "fromMs": 520,
+      "toMs": 1040,
+      "dtwMs": 5460,
+      "p": 0.880479
+    },
+    {
+      "text": "cr",
+      "fromMs": 1040,
+      "toMs": 1560,
+      "dtwMs": 5460,
+      "p": 0.993726
+    },
+    {
+      "text": "íb",
+      "fromMs": 1560,
+      "toMs": 2080,
+      "dtwMs": 5460,
+      "p": 0.993401
+    },
+    {
+      "text": "ete",
+      "fromMs": 2080,
+      "toMs": 2860,
+      "dtwMs": 5460,
+      "p": 0.998698
+    },
+    {
+      "text": " al",
+      "fromMs": 2860,
+      "toMs": 3380,
+      "dtwMs": 5460,
+      "p": 0.748299
+    },
+    {
+      "text": " canal",
+      "fromMs": 3380,
+      "toMs": 4690,
+      "dtwMs": 5460,
+      "p": 0.995979
+    },
+    {
+      "text": "!",
+      "fromMs": 4690,
+      "toMs": 5500,
+      "dtwMs": 5460,
+      "p": 0.992442
+    }
+  ]
+}

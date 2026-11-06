@@ -1,0 +1,354 @@
+{
+  "archivo": "00404.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 39040,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4500,
+      "texto": "Siempre en rojo."
+    },
+    {
+      "desdeMs": 4500,
+      "hastaMs": 8000,
+      "texto": "Combina con el uniforme de amparo."
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 36020,
+      "texto": "¡No! ¡No! ¡No! ¡No! ¡No! ¡No! ¡No! ¡No! ¡No! ¡No!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Sie",
+      "fromMs": 10,
+      "toMs": 1030,
+      "dtwMs": 3420,
+      "p": 0.175901
+    },
+    {
+      "text": "mpre",
+      "fromMs": 1030,
+      "toMs": 2410,
+      "dtwMs": 3680,
+      "p": 0.99376
+    },
+    {
+      "text": " en",
+      "fromMs": 2410,
+      "toMs": 3100,
+      "dtwMs": 3840,
+      "p": 0.782575
+    },
+    {
+      "text": " ro",
+      "fromMs": 3100,
+      "toMs": 3790,
+      "dtwMs": 4040,
+      "p": 0.755452
+    },
+    {
+      "text": "jo",
+      "fromMs": 3790,
+      "toMs": 4500,
+      "dtwMs": 4320,
+      "p": 0.993998
+    },
+    {
+      "text": ".",
+      "fromMs": 4500,
+      "toMs": 4500,
+      "dtwMs": 4540,
+      "p": 0.705119
+    },
+    {
+      "text": " Comb",
+      "fromMs": 4510,
+      "toMs": 5000,
+      "dtwMs": 5680,
+      "p": 0.47263
+    },
+    {
+      "text": "ina",
+      "fromMs": 5000,
+      "toMs": 5370,
+      "dtwMs": 5860,
+      "p": 0.948453
+    },
+    {
+      "text": " con",
+      "fromMs": 5370,
+      "toMs": 5740,
+      "dtwMs": 6760,
+      "p": 0.975782
+    },
+    {
+      "text": " el",
+      "fromMs": 5740,
+      "toMs": 5990,
+      "dtwMs": 6900,
+      "p": 0.967226
+    },
+    {
+      "text": " uniform",
+      "fromMs": 5990,
+      "toMs": 6860,
+      "dtwMs": 7160,
+      "p": 0.857136
+    },
+    {
+      "text": "e",
+      "fromMs": 6860,
+      "toMs": 6980,
+      "dtwMs": 7320,
+      "p": 0.997638
+    },
+    {
+      "text": " de",
+      "fromMs": 6980,
+      "toMs": 7230,
+      "dtwMs": 7420,
+      "p": 0.948601
+    },
+    {
+      "text": " am",
+      "fromMs": 7230,
+      "toMs": 7480,
+      "dtwMs": 7480,
+      "p": 0.923536
+    },
+    {
+      "text": "par",
+      "fromMs": 7480,
+      "toMs": 7850,
+      "dtwMs": 7640,
+      "p": 0.983344
+    },
+    {
+      "text": "o",
+      "fromMs": 7850,
+      "toMs": 8000,
+      "dtwMs": 7720,
+      "p": 0.978639
+    },
+    {
+      "text": ".",
+      "fromMs": 8000,
+      "toMs": 8000,
+      "dtwMs": 7980,
+      "p": 0.951706
+    },
+    {
+      "text": " ¡",
+      "fromMs": 30010,
+      "toMs": 30160,
+      "dtwMs": 30360,
+      "p": 0.275712
+    },
+    {
+      "text": "No",
+      "fromMs": 30160,
+      "toMs": 30490,
+      "dtwMs": 30360,
+      "p": 0.0754406
+    },
+    {
+      "text": "!",
+      "fromMs": 30490,
+      "toMs": 31000,
+      "dtwMs": 30720,
+      "p": 0.790552
+    },
+    {
+      "text": " ¡",
+      "fromMs": 31000,
+      "toMs": 31160,
+      "dtwMs": 30860,
+      "p": 0.759948
+    },
+    {
+      "text": "No",
+      "fromMs": 31160,
+      "toMs": 31490,
+      "dtwMs": 31100,
+      "p": 0.865518
+    },
+    {
+      "text": "!",
+      "fromMs": 31490,
+      "toMs": 32000,
+      "dtwMs": 31580,
+      "p": 0.972336
+    },
+    {
+      "text": " ¡",
+      "fromMs": 32000,
+      "toMs": 32080,
+      "dtwMs": 31860,
+      "p": 0.629206
+    },
+    {
+      "text": "No",
+      "fromMs": 32080,
+      "toMs": 32240,
+      "dtwMs": 31860,
+      "p": 0.911407
+    },
+    {
+      "text": "!",
+      "fromMs": 32240,
+      "toMs": 32490,
+      "dtwMs": 32000,
+      "p": 0.973106
+    },
+    {
+      "text": " ¡",
+      "fromMs": 32490,
+      "toMs": 32570,
+      "dtwMs": 32000,
+      "p": 0.544235
+    },
+    {
+      "text": "No",
+      "fromMs": 32570,
+      "toMs": 32730,
+      "dtwMs": 32180,
+      "p": 0.835364
+    },
+    {
+      "text": "!",
+      "fromMs": 32730,
+      "toMs": 32980,
+      "dtwMs": 32840,
+      "p": 0.955485
+    },
+    {
+      "text": " ¡",
+      "fromMs": 32980,
+      "toMs": 33060,
+      "dtwMs": 33160,
+      "p": 0.626496
+    },
+    {
+      "text": "No",
+      "fromMs": 33060,
+      "toMs": 33220,
+      "dtwMs": 33340,
+      "p": 0.813005
+    },
+    {
+      "text": "!",
+      "fromMs": 33220,
+      "toMs": 33470,
+      "dtwMs": 33560,
+      "p": 0.94881
+    },
+    {
+      "text": " ¡",
+      "fromMs": 33470,
+      "toMs": 33550,
+      "dtwMs": 33560,
+      "p": 0.7039
+    },
+    {
+      "text": "No",
+      "fromMs": 33550,
+      "toMs": 33710,
+      "dtwMs": 33560,
+      "p": 0.816981
+    },
+    {
+      "text": "!",
+      "fromMs": 33710,
+      "toMs": 33960,
+      "dtwMs": 33800,
+      "p": 0.950438
+    },
+    {
+      "text": " ¡",
+      "fromMs": 33960,
+      "toMs": 34040,
+      "dtwMs": 33800,
+      "p": 0.759209
+    },
+    {
+      "text": "No",
+      "fromMs": 34040,
+      "toMs": 34200,
+      "dtwMs": 33800,
+      "p": 0.842685
+    },
+    {
+      "text": "!",
+      "fromMs": 34200,
+      "toMs": 34450,
+      "dtwMs": 34300,
+      "p": 0.957232
+    },
+    {
+      "text": " ¡",
+      "fromMs": 34450,
+      "toMs": 34530,
+      "dtwMs": 34300,
+      "p": 0.810994
+    },
+    {
+      "text": "No",
+      "fromMs": 34530,
+      "toMs": 34690,
+      "dtwMs": 34580,
+      "p": 0.861479
+    },
+    {
+      "text": "!",
+      "fromMs": 34690,
+      "toMs": 34940,
+      "dtwMs": 35140,
+      "p": 0.965714
+    },
+    {
+      "text": " ¡",
+      "fromMs": 34940,
+      "toMs": 35020,
+      "dtwMs": 35460,
+      "p": 0.835242
+    },
+    {
+      "text": "No",
+      "fromMs": 35020,
+      "toMs": 35180,
+      "dtwMs": 35460,
+      "p": 0.886836
+    },
+    {
+      "text": "!",
+      "fromMs": 35180,
+      "toMs": 35430,
+      "dtwMs": 35460,
+      "p": 0.972293
+    },
+    {
+      "text": " ¡",
+      "fromMs": 35430,
+      "toMs": 35510,
+      "dtwMs": 35520,
+      "p": 0.865386
+    },
+    {
+      "text": "No",
+      "fromMs": 35510,
+      "toMs": 35670,
+      "dtwMs": 36000,
+      "p": 0.904404
+    },
+    {
+      "text": "!",
+      "fromMs": 35670,
+      "toMs": 36020,
+      "dtwMs": 36000,
+      "p": 0.976318
+    }
+  ]
+}

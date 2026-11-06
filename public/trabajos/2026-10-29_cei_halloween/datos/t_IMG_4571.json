@@ -1,0 +1,338 @@
+{
+  "archivo": "IMG_4571.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 12923,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4000,
+      "texto": "Bueno, ¿qué país investigaste?"
+    },
+    {
+      "desdeMs": 4000,
+      "hastaMs": 5000,
+      "texto": "Núria."
+    },
+    {
+      "desdeMs": 5000,
+      "hastaMs": 8000,
+      "texto": "¿Qué es lo especial de funerals en este país?"
+    },
+    {
+      "desdeMs": 8000,
+      "hastaMs": 12920,
+      "texto": "Porque la gente quiere celebrar un día y preparar el día para el día de hoy."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bueno",
+      "fromMs": 0,
+      "toMs": 2000,
+      "dtwMs": 0,
+      "p": 0.0422632
+    },
+    {
+      "text": ",",
+      "fromMs": 2000,
+      "toMs": 2080,
+      "dtwMs": 2360,
+      "p": 0.683638
+    },
+    {
+      "text": " ¿",
+      "fromMs": 2130,
+      "toMs": 2230,
+      "dtwMs": 2580,
+      "p": 0.596515
+    },
+    {
+      "text": "qué",
+      "fromMs": 2460,
+      "toMs": 2460,
+      "dtwMs": 2660,
+      "p": 0.767399
+    },
+    {
+      "text": " país",
+      "fromMs": 2500,
+      "toMs": 2780,
+      "dtwMs": 2980,
+      "p": 0.125956
+    },
+    {
+      "text": " investig",
+      "fromMs": 2780,
+      "toMs": 3420,
+      "dtwMs": 3620,
+      "p": 0.236612
+    },
+    {
+      "text": "aste",
+      "fromMs": 3420,
+      "toMs": 3730,
+      "dtwMs": 3860,
+      "p": 0.638035
+    },
+    {
+      "text": "?",
+      "fromMs": 3730,
+      "toMs": 4000,
+      "dtwMs": 4040,
+      "p": 0.828629
+    },
+    {
+      "text": " N",
+      "fromMs": 4000,
+      "toMs": 4190,
+      "dtwMs": 4440,
+      "p": 0.615138
+    },
+    {
+      "text": "ú",
+      "fromMs": 4190,
+      "toMs": 4390,
+      "dtwMs": 4540,
+      "p": 0.762915
+    },
+    {
+      "text": "ria",
+      "fromMs": 4390,
+      "toMs": 4990,
+      "dtwMs": 4640,
+      "p": 0.52702
+    },
+    {
+      "text": ".",
+      "fromMs": 5000,
+      "toMs": 5000,
+      "dtwMs": 5640,
+      "p": 0.608653
+    },
+    {
+      "text": " ¿",
+      "fromMs": 5000,
+      "toMs": 5070,
+      "dtwMs": 5640,
+      "p": 0.940467
+    },
+    {
+      "text": "Qué",
+      "fromMs": 5070,
+      "toMs": 5260,
+      "dtwMs": 5740,
+      "p": 0.886149
+    },
+    {
+      "text": " es",
+      "fromMs": 5270,
+      "toMs": 5450,
+      "dtwMs": 5860,
+      "p": 0.775594
+    },
+    {
+      "text": " lo",
+      "fromMs": 5450,
+      "toMs": 5600,
+      "dtwMs": 6200,
+      "p": 0.481934
+    },
+    {
+      "text": " especial",
+      "fromMs": 5610,
+      "toMs": 6160,
+      "dtwMs": 6300,
+      "p": 0.562437
+    },
+    {
+      "text": " de",
+      "fromMs": 6200,
+      "toMs": 6360,
+      "dtwMs": 6680,
+      "p": 0.350405
+    },
+    {
+      "text": " fun",
+      "fromMs": 6500,
+      "toMs": 6590,
+      "dtwMs": 7000,
+      "p": 0.186356
+    },
+    {
+      "text": "er",
+      "fromMs": 6660,
+      "toMs": 6740,
+      "dtwMs": 7240,
+      "p": 0.993383
+    },
+    {
+      "text": "als",
+      "fromMs": 6740,
+      "toMs": 6950,
+      "dtwMs": 7480,
+      "p": 0.292304
+    },
+    {
+      "text": " en",
+      "fromMs": 6950,
+      "toMs": 7070,
+      "dtwMs": 7660,
+      "p": 0.815573
+    },
+    {
+      "text": " este",
+      "fromMs": 7120,
+      "toMs": 7160,
+      "dtwMs": 7820,
+      "p": 0.960083
+    },
+    {
+      "text": " país",
+      "fromMs": 7500,
+      "toMs": 7710,
+      "dtwMs": 8120,
+      "p": 0.971975
+    },
+    {
+      "text": "?",
+      "fromMs": 7770,
+      "toMs": 7920,
+      "dtwMs": 8380,
+      "p": 0.998254
+    },
+    {
+      "text": " Porque",
+      "fromMs": 8000,
+      "toMs": 8420,
+      "dtwMs": 8720,
+      "p": 0.811601
+    },
+    {
+      "text": " la",
+      "fromMs": 8430,
+      "toMs": 8580,
+      "dtwMs": 9180,
+      "p": 0.741049
+    },
+    {
+      "text": " gente",
+      "fromMs": 8580,
+      "toMs": 8950,
+      "dtwMs": 9180,
+      "p": 0.98637
+    },
+    {
+      "text": " quiere",
+      "fromMs": 8950,
+      "toMs": 9360,
+      "dtwMs": 9500,
+      "p": 0.492242
+    },
+    {
+      "text": " celebr",
+      "fromMs": 9660,
+      "toMs": 9830,
+      "dtwMs": 9900,
+      "p": 0.0809228
+    },
+    {
+      "text": "ar",
+      "fromMs": 9830,
+      "toMs": 9950,
+      "dtwMs": 9900,
+      "p": 0.890664
+    },
+    {
+      "text": " un",
+      "fromMs": 9950,
+      "toMs": 10080,
+      "dtwMs": 9900,
+      "p": 0.120097
+    },
+    {
+      "text": " día",
+      "fromMs": 10080,
+      "toMs": 10280,
+      "dtwMs": 10100,
+      "p": 0.622136
+    },
+    {
+      "text": " y",
+      "fromMs": 10420,
+      "toMs": 10420,
+      "dtwMs": 10520,
+      "p": 0.383142
+    },
+    {
+      "text": " prepar",
+      "fromMs": 10500,
+      "toMs": 10840,
+      "dtwMs": 10720,
+      "p": 0.823236
+    },
+    {
+      "text": "ar",
+      "fromMs": 10840,
+      "toMs": 10920,
+      "dtwMs": 10840,
+      "p": 0.939087
+    },
+    {
+      "text": " el",
+      "fromMs": 11000,
+      "toMs": 11140,
+      "dtwMs": 10880,
+      "p": 0.163933
+    },
+    {
+      "text": " día",
+      "fromMs": 11140,
+      "toMs": 11350,
+      "dtwMs": 11060,
+      "p": 0.90166
+    },
+    {
+      "text": " para",
+      "fromMs": 11350,
+      "toMs": 11530,
+      "dtwMs": 11320,
+      "p": 0.36281
+    },
+    {
+      "text": " el",
+      "fromMs": 11660,
+      "toMs": 11770,
+      "dtwMs": 11440,
+      "p": 0.299463
+    },
+    {
+      "text": " día",
+      "fromMs": 11770,
+      "toMs": 12000,
+      "dtwMs": 11740,
+      "p": 0.210608
+    },
+    {
+      "text": " de",
+      "fromMs": 12000,
+      "toMs": 12210,
+      "dtwMs": 11740,
+      "p": 0.283839
+    },
+    {
+      "text": " hoy",
+      "fromMs": 12320,
+      "toMs": 12570,
+      "dtwMs": 11740,
+      "p": 0.275606
+    },
+    {
+      "text": ".",
+      "fromMs": 12570,
+      "toMs": 12680,
+      "dtwMs": 12280,
+      "p": 0.864517
+    }
+  ]
+}

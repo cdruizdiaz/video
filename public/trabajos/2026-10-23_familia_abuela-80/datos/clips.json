@@ -1,0 +1,626 @@
+{
+ "fps": 30,
+ "clips": [
+  {
+   "clip": "00387",
+   "desdeMs": 59700,
+   "hastaMs": 104000,
+   "bloque": "Víspera",
+   "nota": "Rastro Internacional, private equity, Shark Tank",
+   "cuadros": 1329,
+   "aclarar": true
+  },
+  {
+   "clip": "00388",
+   "desdeMs": 20000,
+   "hastaMs": 58000,
+   "bloque": "Víspera",
+   "nota": "Beltrán, el algoritmo de gatitos, pedirle Aitana a la Alexa",
+   "cuadros": 1140,
+   "aclarar": true
+  },
+  {
+   "clip": "00390",
+   "desdeMs": 80000,
+   "hastaMs": 124300,
+   "bloque": "Víspera",
+   "nota": "Entrevista a la abuela: interrumpiste el momento sentimental",
+   "cuadros": 1329,
+   "aclarar": false
+  },
+  {
+   "clip": "00390",
+   "desdeMs": 219000,
+   "hastaMs": 264000,
+   "bloque": "Víspera",
+   "nota": "Anda un poco renga → homenaje de la Renga",
+   "cuadros": 1350,
+   "aclarar": false
+  },
+  {
+   "clip": "00391",
+   "desdeMs": 0,
+   "hastaMs": 45000,
+   "bloque": "Víspera",
+   "nota": "El cura, ¿apto para todo público?, que no sigan pecando",
+   "cuadros": 1350,
+   "aclarar": false
+  },
+  {
+   "clip": "00392",
+   "desdeMs": 0,
+   "hastaMs": 58467,
+   "bloque": "Mañana",
+   "nota": "Buen día vlog, primas haters, el desayuno, Emilia del futuro",
+   "cuadros": 1754,
+   "aclarar": false
+  },
+  {
+   "clip": "00392",
+   "desdeMs": 79490,
+   "hastaMs": 115623,
+   "bloque": "Mañana",
+   "nota": "Estresada: la tablet, el top negro, el busito",
+   "cuadros": 1084,
+   "aclarar": false
+  },
+  {
+   "clip": "00392",
+   "desdeMs": 139790,
+   "hastaMs": 153957,
+   "bloque": "Mañana",
+   "nota": "La carta para la abuela",
+   "cuadros": 425,
+   "aclarar": false
+  },
+  {
+   "clip": "00393",
+   "desdeMs": 0,
+   "hastaMs": 13900,
+   "bloque": "Mañana",
+   "nota": "¿Por qué la recibe Emilia?",
+   "cuadros": 417,
+   "aclarar": false
+  },
+  {
+   "clip": "00395",
+   "desdeMs": 0,
+   "hastaMs": 10667,
+   "bloque": "Mañana",
+   "nota": "¿Dónde está la gente fiestera?",
+   "cuadros": 320,
+   "aclarar": false
+  },
+  {
+   "clip": "00395",
+   "desdeMs": 36500,
+   "hastaMs": 55700,
+   "bloque": "Mañana",
+   "nota": "Hola cumple; cualquier tema es polémico",
+   "cuadros": 576,
+   "aclarar": false
+  },
+  {
+   "clip": "00396",
+   "desdeMs": 0,
+   "hastaMs": 26300,
+   "bloque": "Mañana",
+   "nota": "Las empanadas; ¡robá cámara!",
+   "cuadros": 789,
+   "aclarar": false
+  },
+  {
+   "clip": "00397",
+   "desdeMs": 52500,
+   "hastaMs": 79600,
+   "bloque": "Mañana",
+   "nota": "Ya está la previa, la Luli baila",
+   "cuadros": 813,
+   "aclarar": false
+  },
+  {
+   "clip": "00398",
+   "desdeMs": 0,
+   "hastaMs": 32000,
+   "bloque": "Básquet",
+   "nota": "Escapada a ver a Amparo; perdón Emilia del futuro",
+   "cuadros": 960,
+   "aclarar": false
+  },
+  {
+   "clip": "00399",
+   "desdeMs": 0,
+   "hastaMs": 21000,
+   "bloque": "Básquet",
+   "nota": "¿Dónde está Amparo?",
+   "cuadros": 630,
+   "aclarar": false
+  },
+  {
+   "clip": "00400",
+   "desdeMs": 0,
+   "hastaMs": 17667,
+   "bloque": "Básquet",
+   "nota": "¡Dale Amparo!",
+   "cuadros": 530,
+   "aclarar": false
+  },
+  {
+   "clip": "00403",
+   "desdeMs": 0,
+   "hastaMs": 23933,
+   "bloque": "Básquet",
+   "nota": "Tanteador, la media roja Nike",
+   "cuadros": 718,
+   "aclarar": false
+  },
+  {
+   "clip": "00408",
+   "desdeMs": 0,
+   "hastaMs": 16433,
+   "bloque": "Básquet",
+   "nota": "Preguntas de reglamento",
+   "cuadros": 493,
+   "aclarar": false
+  },
+  {
+   "clip": "00409",
+   "desdeMs": 12460,
+   "hastaMs": 18593,
+   "bloque": "Básquet",
+   "nota": "¡Vale, triple!",
+   "cuadros": 184,
+   "aclarar": false
+  },
+  {
+   "clip": "00414",
+   "desdeMs": 0,
+   "hastaMs": 19933,
+   "bloque": "Preparativos",
+   "nota": "Sector maquillaje",
+   "cuadros": 598,
+   "aclarar": false
+  },
+  {
+   "clip": "00415",
+   "desdeMs": 0,
+   "hastaMs": 28000,
+   "bloque": "Preparativos",
+   "nota": "Maquillaje artístico; el olor del tío Javi",
+   "cuadros": 840,
+   "aclarar": false
+  },
+  {
+   "clip": "00416",
+   "desdeMs": 0,
+   "hastaMs": 36967,
+   "bloque": "Preparativos",
+   "nota": "Rodeada de tomates; el sahumerio",
+   "cuadros": 1109,
+   "aclarar": true
+  },
+  {
+   "clip": "00417",
+   "desdeMs": 0,
+   "hastaMs": 32033,
+   "bloque": "Preparativos",
+   "nota": "Ya ensayamos la canción",
+   "cuadros": 961,
+   "aclarar": false
+  },
+  {
+   "clip": "00418",
+   "desdeMs": 0,
+   "hastaMs": 23000,
+   "bloque": "Preparativos",
+   "nota": "¿Dónde está la reina? Buddy nunca haría esto",
+   "cuadros": 690,
+   "aclarar": false
+  },
+  {
+   "clip": "00419",
+   "desdeMs": 0,
+   "hastaMs": 20000,
+   "bloque": "Preparativos",
+   "nota": "Diosa, única, bonita",
+   "cuadros": 600,
+   "aclarar": false
+  },
+  {
+   "clip": "00420",
+   "desdeMs": 0,
+   "hastaMs": 7000,
+   "bloque": "Preparativos",
+   "nota": "Gracias Mila, qué haríamos sin vos",
+   "cuadros": 210,
+   "aclarar": false
+  },
+  {
+   "clip": "00421",
+   "desdeMs": 0,
+   "hastaMs": 33433,
+   "bloque": "Llegada",
+   "nota": "Abuela, ¿te tienen encerrada? En la gatera",
+   "cuadros": 1003,
+   "aclarar": true
+  },
+  {
+   "clip": "00421",
+   "desdeMs": 50200,
+   "hastaMs": 65533,
+   "bloque": "Llegada",
+   "nota": "El cura me vio robarme un sándwich",
+   "cuadros": 460,
+   "aclarar": true
+  },
+  {
+   "clip": "00422",
+   "desdeMs": 0,
+   "hastaMs": 55900,
+   "bloque": "Llegada",
+   "nota": "Bienvenidos al cumple: sector DJ, mesa de las nietas, tías",
+   "cuadros": 1677,
+   "aclarar": false
+  },
+  {
+   "clip": "00422",
+   "desdeMs": 78600,
+   "hastaMs": 100400,
+   "bloque": "Llegada",
+   "nota": "Los abuelos, centro de mesa, sector dulce, la torta de los 80",
+   "cuadros": 654,
+   "aclarar": false
+  },
+  {
+   "clip": "00422",
+   "desdeMs": 157950,
+   "hastaMs": 175417,
+   "bloque": "Llegada",
+   "nota": "Pablo: un video para ver en 30 años; ese outfit",
+   "cuadros": 524,
+   "aclarar": false
+  },
+  {
+   "clip": "00424",
+   "desdeMs": 30000,
+   "hastaMs": 53967,
+   "bloque": "Llegada",
+   "nota": "¿Dónde está el tío Javi?",
+   "cuadros": 719,
+   "aclarar": false
+  },
+  {
+   "clip": "00426",
+   "desdeMs": 0,
+   "hastaMs": 26000,
+   "bloque": "Llegada",
+   "nota": "La abuela encerrada en el auto hace más de una hora",
+   "cuadros": 780,
+   "aclarar": false
+  },
+  {
+   "clip": "00429",
+   "desdeMs": 0,
+   "hastaMs": 38000,
+   "bloque": "Comida",
+   "nota": "Declaraciones de la comida: tenderism",
+   "cuadros": 1140,
+   "aclarar": false
+  },
+  {
+   "clip": "00430",
+   "desdeMs": 0,
+   "hastaMs": 51867,
+   "bloque": "Comida",
+   "nota": "¿Cómo estuvo la comida? Dos pollos, el hielo y el gas",
+   "cuadros": 1556,
+   "aclarar": false
+  },
+  {
+   "clip": "00431",
+   "desdeMs": 0,
+   "hastaMs": 45000,
+   "bloque": "Comida",
+   "nota": "Pa, ¿cocinaste vos? Cuando querés, podés",
+   "cuadros": 1350,
+   "aclarar": false
+  },
+  {
+   "clip": "00432",
+   "desdeMs": 0,
+   "hastaMs": 16433,
+   "bloque": "Comida",
+   "nota": "¿Aprobamos la comida?",
+   "cuadros": 493,
+   "aclarar": false
+  },
+  {
+   "clip": "00439",
+   "desdeMs": 0,
+   "hastaMs": 21000,
+   "bloque": "Canción",
+   "nota": "La entrega de la canción: no se lee hasta que arranquemos",
+   "cuadros": 630,
+   "aclarar": false
+  },
+  {
+   "clip": "00439",
+   "desdeMs": 45000,
+   "hastaMs": 57000,
+   "bloque": "Canción",
+   "nota": "Una canción creada para vos; música maestro",
+   "cuadros": 360,
+   "aclarar": false
+  },
+  {
+   "clip": "00439",
+   "desdeMs": 124000,
+   "hastaMs": 236000,
+   "bloque": "Canción",
+   "nota": "La canción de los nietos: ochenta años, historias por contar",
+   "cuadros": 3360,
+   "aclarar": false
+  },
+  {
+   "clip": "00439",
+   "desdeMs": 269000,
+   "hastaMs": 296000,
+   "bloque": "Canción",
+   "nota": "Final de la canción",
+   "cuadros": 810,
+   "aclarar": false
+  },
+  {
+   "clip": "00440",
+   "desdeMs": 0,
+   "hastaMs": 24833,
+   "bloque": "Canción",
+   "nota": "La abuela: muchas gracias por este espectáculo",
+   "cuadros": 745,
+   "aclarar": false
+  },
+  {
+   "clip": "00441",
+   "desdeMs": 8000,
+   "hastaMs": 32000,
+   "bloque": "Torta",
+   "nota": "Guitarra y canto para la abuela",
+   "cuadros": 720,
+   "aclarar": false
+  },
+  {
+   "clip": "00441",
+   "desdeMs": 462000,
+   "hastaMs": 584000,
+   "bloque": "Torta",
+   "nota": "La abuela canta, la torta con las velas de 80, abrazos",
+   "cuadros": 3660,
+   "aclarar": false
+  },
+  {
+   "clip": "00443",
+   "desdeMs": 0,
+   "hastaMs": 28433,
+   "bloque": "Show",
+   "nota": "Canción: tú, la que es tranquila",
+   "cuadros": 853,
+   "aclarar": false
+  },
+  {
+   "clip": "00448",
+   "desdeMs": 0,
+   "hastaMs": 14433,
+   "bloque": "Show",
+   "nota": "¿Qué es eso? Una concha. ¡Quedó grabado!",
+   "cuadros": 433,
+   "aclarar": false
+  },
+  {
+   "clip": "00449",
+   "desdeMs": 8000,
+   "hastaMs": 68000,
+   "bloque": "Show",
+   "nota": "El show de las monjas",
+   "cuadros": 1800,
+   "aclarar": false
+  },
+  {
+   "clip": "00451",
+   "desdeMs": 40190,
+   "hastaMs": 62657,
+   "bloque": "Show",
+   "nota": "Al gran pueblo argentino, ¡salud!",
+   "cuadros": 674,
+   "aclarar": false
+  },
+  {
+   "clip": "00452",
+   "desdeMs": 0,
+   "hastaMs": 15933,
+   "bloque": "Premios",
+   "nota": "Presentación de las categorías",
+   "cuadros": 478,
+   "aclarar": false
+  },
+  {
+   "clip": "00454",
+   "desdeMs": 0,
+   "hastaMs": 25433,
+   "bloque": "Premios",
+   "nota": "Cómo conoció al abuelo",
+   "cuadros": 763,
+   "aclarar": false
+  },
+  {
+   "clip": "00455",
+   "desdeMs": 0,
+   "hastaMs": 33567,
+   "bloque": "Premios",
+   "nota": "Anécdotas: el carrito de las mellis, el fuego al tío Javi, 4 horas caminando",
+   "cuadros": 1007,
+   "aclarar": false
+  },
+  {
+   "clip": "00456",
+   "desdeMs": 0,
+   "hastaMs": 29300,
+   "bloque": "Premios",
+   "nota": "La impuntual: Amalia",
+   "cuadros": 879,
+   "aclarar": false
+  },
+  {
+   "clip": "00458",
+   "desdeMs": 0,
+   "hastaMs": 11433,
+   "bloque": "Premios",
+   "nota": "Me llamaron para el premio y yo estaba en el baño",
+   "cuadros": 343,
+   "aclarar": false
+  },
+  {
+   "clip": "00458",
+   "desdeMs": 103000,
+   "hastaMs": 138000,
+   "bloque": "Premios",
+   "nota": "Claudio Ruiz Díaz con su hijo Walter",
+   "cuadros": 1050,
+   "aclarar": false
+  },
+  {
+   "clip": "00459",
+   "desdeMs": 18810,
+   "hastaMs": 82510,
+   "bloque": "Premios",
+   "nota": "La próxima millonaria: Serena (aguanta Rastro)",
+   "cuadros": 1911,
+   "aclarar": false
+  },
+  {
+   "clip": "00460",
+   "desdeMs": 12220,
+   "hastaMs": 36553,
+   "bloque": "Premios",
+   "nota": "La pelada con luz propia: Claudio",
+   "cuadros": 730,
+   "aclarar": false
+  },
+  {
+   "clip": "00461",
+   "desdeMs": 0,
+   "hastaMs": 34467,
+   "bloque": "Premios",
+   "nota": "Con la tía Vero no hay negociación",
+   "cuadros": 1034,
+   "aclarar": false
+  },
+  {
+   "clip": "00462",
+   "desdeMs": 0,
+   "hastaMs": 48000,
+   "bloque": "Premios",
+   "nota": "La ganadora fue Lucía",
+   "cuadros": 1440,
+   "aclarar": false
+  },
+  {
+   "clip": "00463",
+   "desdeMs": 0,
+   "hastaMs": 39000,
+   "bloque": "Premios",
+   "nota": "Novela turca: Milagros",
+   "cuadros": 1170,
+   "aclarar": false
+  },
+  {
+   "clip": "00464",
+   "desdeMs": 0,
+   "hastaMs": 35967,
+   "bloque": "Premios",
+   "nota": "Las inseparables",
+   "cuadros": 1079,
+   "aclarar": false
+  },
+  {
+   "clip": "00465",
+   "desdeMs": 46000,
+   "hastaMs": 71767,
+   "bloque": "Premios",
+   "nota": "El favorito: Ramón",
+   "cuadros": 773,
+   "aclarar": false
+  },
+  {
+   "clip": "00467",
+   "desdeMs": 73510,
+   "hastaMs": 122510,
+   "bloque": "Premios",
+   "nota": "Los que siempre quieren tener razón: todos",
+   "cuadros": 1470,
+   "aclarar": false
+  },
+  {
+   "clip": "00469",
+   "desdeMs": 0,
+   "hastaMs": 26000,
+   "bloque": "Bingo",
+   "nota": "¿Tengo línea? ¡Tengo bingo!",
+   "cuadros": 780,
+   "aclarar": false
+  },
+  {
+   "clip": "00471",
+   "desdeMs": 0,
+   "hastaMs": 27600,
+   "bloque": "Bingo",
+   "nota": "Abuela, ¿cuántos terrenos tenés? Javi es una florcita",
+   "cuadros": 828,
+   "aclarar": false
+  },
+  {
+   "clip": "00473",
+   "desdeMs": 0,
+   "hastaMs": 30367,
+   "bloque": "Bingo",
+   "nota": "La reina y las princesas",
+   "cuadros": 911,
+   "aclarar": false
+  },
+  {
+   "clip": "00476",
+   "desdeMs": 18030,
+   "hastaMs": 52897,
+   "bloque": "Bingo",
+   "nota": "Aviso parroquial, cartón lleno",
+   "cuadros": 1046,
+   "aclarar": false
+  },
+  {
+   "clip": "00478",
+   "desdeMs": 0,
+   "hastaMs": 43800,
+   "bloque": "Cierre",
+   "nota": "Karaoke",
+   "cuadros": 1314,
+   "aclarar": false
+  },
+  {
+   "clip": "00478",
+   "desdeMs": 118000,
+   "hastaMs": 136000,
+   "bloque": "Cierre",
+   "nota": "¡Pero estamos divirtiéndonos!",
+   "cuadros": 540,
+   "aclarar": false
+  },
+  {
+   "clip": "00480",
+   "desdeMs": 0,
+   "hastaMs": 38300,
+   "bloque": "Cierre",
+   "nota": "Últimas declaraciones de la abuela",
+   "cuadros": 1149,
+   "aclarar": false
+  }
+ ]
+}

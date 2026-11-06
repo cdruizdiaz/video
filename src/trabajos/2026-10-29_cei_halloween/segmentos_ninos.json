@@ -1,0 +1,261 @@
+{
+ "_nota": "Video de los chicos. lengua en = alinear_en.py (el chico habla inglés: subtítulo en inglés naranja + español chico debajo, chunk.es); es = alinear.py. previo = palabras dichas antes de la primera que se usa. primera = tiempo manual de la primera palabra.",
+ "segmentos": [
+  {
+   "id": "china1",
+   "pais": "CHINA",
+   "clip": "IMG_4556",
+   "lengua": "en",
+   "ventana": [
+    0,
+    3.3
+   ],
+   "chunks": [
+    {
+     "t": "They burn paper",
+     "es": "Queman papel"
+    },
+    {
+     "t": "to celebrate.",
+     "es": "para celebrar."
+    }
+   ]
+  },
+  {
+   "id": "china2",
+   "pais": "CHINA",
+   "clip": "IMG_4568",
+   "lengua": "en",
+   "ventana": [
+    0,
+    2.5
+   ],
+   "chunks": [
+    {
+     "t": "They burn",
+     "es": "Queman"
+    },
+    {
+     "t": "paper money.",
+     "es": "dinero de papel."
+    }
+   ]
+  },
+  {
+   "id": "china3",
+   "pais": "CHINA",
+   "clip": "IMG_4553",
+   "lengua": "en",
+   "ventana": [
+    0,
+    7.0
+   ],
+   "primera": 0.6,
+   "chunks": [
+    {
+     "t": "The people bring",
+     "es": "La gente trae"
+    },
+    {
+     "t": "food and flowers",
+     "es": "comida y flores"
+    },
+    {
+     "t": "and show respect.",
+     "es": "y muestra respeto."
+    }
+   ]
+  },
+  {
+   "id": "noruega",
+   "pais": "NORWAY",
+   "clip": "IMG_4572",
+   "lengua": "en",
+   "ventana": [
+    6.9,
+    12.3
+   ],
+   "chunks": [
+    {
+     "t": "That they burn",
+     "es": "Que queman"
+    },
+    {
+     "t": "the boat with",
+     "es": "el barco con"
+    },
+    {
+     "t": "the dead person",
+     "es": "la persona muerta"
+    },
+    {
+     "t": "inside it.",
+     "es": "adentro."
+    }
+   ]
+  },
+  {
+   "id": "noruega2",
+   "pais": "NORWAY",
+   "clip": "IMG_4654",
+   "lengua": "es",
+   "ventana": [
+    2.4,
+    6.9
+   ],
+   "previo": "",
+   "chunks": [
+    {
+     "t": "Usa la gente vestimenta de ropa de pieles de animales."
+    }
+   ]
+  },
+  {
+   "id": "noruega3",
+   "pais": "NORWAY",
+   "clip": "IMG_4655",
+   "lengua": "es",
+   "ventana": [
+    5.5,
+    14.7
+   ],
+   "previo": "",
+   "chunks": [
+    {
+     "t": "Es enterrándolos en un barco con sus objetos y con cosas alrededor."
+    }
+   ],
+   "sinPausas": true,
+   "primera": 5.62
+  },
+  {
+   "id": "mexico",
+   "pais": "MEXICO",
+   "clip": "IMG_4575",
+   "lengua": "en",
+   "ventana": [
+    5.6,
+    7.9
+   ],
+   "chunks": [
+    {
+     "t": "It's like in",
+     "es": "Es como en"
+    },
+    {
+     "t": "the movie, Coco.",
+     "es": "la película Coco."
+    }
+   ]
+  },
+  {
+   "id": "indonesia1",
+   "pais": "INDONESIA",
+   "clip": "IMG_4580",
+   "lengua": "en",
+   "ventana": [
+    0,
+    4.2
+   ],
+   "chunks": [
+    {
+     "t": "Cremation is an",
+     "es": "La cremación es una"
+    },
+    {
+     "t": "important part",
+     "es": "parte importante"
+    },
+    {
+     "t": "of the Ngaben.",
+     "es": "del Ngaben."
+    }
+   ]
+  },
+  {
+   "id": "indonesia2",
+   "pais": "INDONESIA",
+   "clip": "IMG_4579",
+   "lengua": "es",
+   "ventana": [
+    0,
+    9.6
+   ],
+   "previo": "",
+   "chunks": [
+    {
+     "t": "Cuando muere alguien lo queman"
+    },
+    {
+     "t": "porque creen que hace un viaje"
+    },
+    {
+     "t": "y reencarna en otro cuerpo"
+    }
+   ]
+  },
+  {
+   "id": "madagascar1",
+   "pais": "MADAGASCAR",
+   "clip": "IMG_4590",
+   "lengua": "es",
+   "ventana": [
+    4.8,
+    9.9
+   ],
+   "previo": "Bueno,",
+   "chunks": [
+    {
+     "t": "los desentierran, le sacan"
+    },
+    {
+     "t": "la tela que tienen,"
+    }
+   ],
+   "mayus": true
+  },
+  {
+   "id": "madagascar2",
+   "pais": "MADAGASCAR",
+   "clip": "IMG_4590",
+   "lengua": "es",
+   "ventana": [
+    10.9,
+    15.2
+   ],
+   "previo": "",
+   "chunks": [
+    {
+     "t": "le ponen una tela toda pintada"
+    },
+    {
+     "t": "y lo vuelven a enterrar."
+    }
+   ]
+  },
+  {
+   "id": "ghana",
+   "pais": "GHANA",
+   "clip": "IMG_4592",
+   "lengua": "es",
+   "ventana": [
+    12.5,
+    25.9
+   ],
+   "previo": "Bueno, los funerales en Ghana",
+   "chunks": [
+    {
+     "t": "suelen ser temáticos,"
+    },
+    {
+     "t": "si por ejemplo una persona era pescadora,"
+    },
+    {
+     "t": "puede ser un pescado"
+    }
+   ],
+   "posterior": "por ejemplo.",
+   "mayus": true
+  }
+ ]
+}

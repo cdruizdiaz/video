@@ -1,0 +1,99 @@
+{
+  "archivo": "IMG_8500.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8033,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2500,
+      "texto": "¿Tenés que legalizar una traducción?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 70,
+      "dtwMs": 1140,
+      "p": 0.532198
+    },
+    {
+      "text": "T",
+      "fromMs": 70,
+      "toMs": 140,
+      "dtwMs": 1200,
+      "p": 0.881792
+    },
+    {
+      "text": "en",
+      "fromMs": 140,
+      "toMs": 280,
+      "dtwMs": 1280,
+      "p": 0.978651
+    },
+    {
+      "text": "és",
+      "fromMs": 280,
+      "toMs": 420,
+      "dtwMs": 1340,
+      "p": 0.990033
+    },
+    {
+      "text": " que",
+      "fromMs": 420,
+      "toMs": 640,
+      "dtwMs": 1420,
+      "p": 0.997758
+    },
+    {
+      "text": " legal",
+      "fromMs": 640,
+      "toMs": 1000,
+      "dtwMs": 1680,
+      "p": 0.998317
+    },
+    {
+      "text": "izar",
+      "fromMs": 1170,
+      "toMs": 1290,
+      "dtwMs": 1860,
+      "p": 0.99963
+    },
+    {
+      "text": " una",
+      "fromMs": 1290,
+      "toMs": 1510,
+      "dtwMs": 2020,
+      "p": 0.997033
+    },
+    {
+      "text": " trad",
+      "fromMs": 1510,
+      "toMs": 1720,
+      "dtwMs": 2220,
+      "p": 0.998936
+    },
+    {
+      "text": "uc",
+      "fromMs": 1830,
+      "toMs": 1940,
+      "dtwMs": 2360,
+      "p": 0.999533
+    },
+    {
+      "text": "ción",
+      "fromMs": 1940,
+      "toMs": 2230,
+      "dtwMs": 2480,
+      "p": 0.999512
+    },
+    {
+      "text": "?",
+      "fromMs": 2230,
+      "toMs": 2500,
+      "dtwMs": 2480,
+      "p": 0.996255
+    }
+  ]
+}

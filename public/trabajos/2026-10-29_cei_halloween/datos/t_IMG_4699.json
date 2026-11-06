@@ -1,0 +1,186 @@
+{
+  "archivo": "IMG_4699.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3132,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 740,
+      "texto": "¿Cuál es el espacio?"
+    },
+    {
+      "desdeMs": 940,
+      "hastaMs": 1920,
+      "texto": "Si te llamó la parte."
+    },
+    {
+      "desdeMs": 2080,
+      "hastaMs": 2880,
+      "texto": "Sí, pero tú, tú, tú."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 30,
+      "dtwMs": 240,
+      "p": 0.129059
+    },
+    {
+      "text": "Cu",
+      "fromMs": 30,
+      "toMs": 100,
+      "dtwMs": 240,
+      "p": 0.581185
+    },
+    {
+      "text": "ál",
+      "fromMs": 100,
+      "toMs": 170,
+      "dtwMs": 300,
+      "p": 0.969209
+    },
+    {
+      "text": " es",
+      "fromMs": 170,
+      "toMs": 240,
+      "dtwMs": 480,
+      "p": 0.890584
+    },
+    {
+      "text": " el",
+      "fromMs": 240,
+      "toMs": 310,
+      "dtwMs": 680,
+      "p": 0.225937
+    },
+    {
+      "text": " espacio",
+      "fromMs": 310,
+      "toMs": 580,
+      "dtwMs": 800,
+      "p": 0.921442
+    },
+    {
+      "text": "?",
+      "fromMs": 580,
+      "toMs": 740,
+      "dtwMs": 1040,
+      "p": 0.649344
+    },
+    {
+      "text": " Si",
+      "fromMs": 940,
+      "toMs": 880,
+      "dtwMs": 1040,
+      "p": 0.334604
+    },
+    {
+      "text": " te",
+      "fromMs": 940,
+      "toMs": 1020,
+      "dtwMs": 1200,
+      "p": 0.0783793
+    },
+    {
+      "text": " llam",
+      "fromMs": 1020,
+      "toMs": 1310,
+      "dtwMs": 1360,
+      "p": 0.583997
+    },
+    {
+      "text": "ó",
+      "fromMs": 1310,
+      "toMs": 1380,
+      "dtwMs": 1440,
+      "p": 0.733352
+    },
+    {
+      "text": " la",
+      "fromMs": 1380,
+      "toMs": 1520,
+      "dtwMs": 1640,
+      "p": 0.874098
+    },
+    {
+      "text": " parte",
+      "fromMs": 1520,
+      "toMs": 1920,
+      "dtwMs": 1920,
+      "p": 0.794941
+    },
+    {
+      "text": ".",
+      "fromMs": 1920,
+      "toMs": 1920,
+      "dtwMs": 2040,
+      "p": 0.429949
+    },
+    {
+      "text": " Sí",
+      "fromMs": 2080,
+      "toMs": 2010,
+      "dtwMs": 2180,
+      "p": 0.0972573
+    },
+    {
+      "text": ",",
+      "fromMs": 2080,
+      "toMs": 2100,
+      "dtwMs": 2280,
+      "p": 0.957233
+    },
+    {
+      "text": " pero",
+      "fromMs": 2100,
+      "toMs": 2280,
+      "dtwMs": 2380,
+      "p": 0.418247
+    },
+    {
+      "text": " tú",
+      "fromMs": 2280,
+      "toMs": 2370,
+      "dtwMs": 2660,
+      "p": 0.339471
+    },
+    {
+      "text": ",",
+      "fromMs": 2370,
+      "toMs": 2460,
+      "dtwMs": 2760,
+      "p": 0.543651
+    },
+    {
+      "text": " tú",
+      "fromMs": 2460,
+      "toMs": 2550,
+      "dtwMs": 2860,
+      "p": 0.973394
+    },
+    {
+      "text": ",",
+      "fromMs": 2550,
+      "toMs": 2640,
+      "dtwMs": 2860,
+      "p": 0.851473
+    },
+    {
+      "text": " tú",
+      "fromMs": 2640,
+      "toMs": 2730,
+      "dtwMs": 2860,
+      "p": 0.94509
+    },
+    {
+      "text": ".",
+      "fromMs": 2730,
+      "toMs": 2880,
+      "dtwMs": 2860,
+      "p": 0.691254
+    }
+  ]
+}

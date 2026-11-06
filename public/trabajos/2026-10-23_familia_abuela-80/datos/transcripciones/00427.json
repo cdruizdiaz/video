@@ -1,0 +1,113 @@
+{
+  "archivo": "00427.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 10016,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4140,
+      "texto": "...allá en fondo, al revés, nos sentamos..."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ...",
+      "fromMs": 10,
+      "toMs": 580,
+      "dtwMs": 280,
+      "p": 0.0943887
+    },
+    {
+      "text": "all",
+      "fromMs": 580,
+      "toMs": 770,
+      "dtwMs": 440,
+      "p": 0.455863
+    },
+    {
+      "text": "á",
+      "fromMs": 770,
+      "toMs": 830,
+      "dtwMs": 480,
+      "p": 0.988024
+    },
+    {
+      "text": " en",
+      "fromMs": 830,
+      "toMs": 950,
+      "dtwMs": 640,
+      "p": 0.901748
+    },
+    {
+      "text": " fondo",
+      "fromMs": 950,
+      "toMs": 1270,
+      "dtwMs": 1080,
+      "p": 0.925027
+    },
+    {
+      "text": ",",
+      "fromMs": 1270,
+      "toMs": 1390,
+      "dtwMs": 1400,
+      "p": 0.743534
+    },
+    {
+      "text": " al",
+      "fromMs": 1390,
+      "toMs": 1510,
+      "dtwMs": 1600,
+      "p": 0.121915
+    },
+    {
+      "text": " rev",
+      "fromMs": 1510,
+      "toMs": 1700,
+      "dtwMs": 1820,
+      "p": 0.882163
+    },
+    {
+      "text": "és",
+      "fromMs": 1700,
+      "toMs": 1820,
+      "dtwMs": 2000,
+      "p": 0.934132
+    },
+    {
+      "text": ",",
+      "fromMs": 1820,
+      "toMs": 2000,
+      "dtwMs": 2660,
+      "p": 0.682825
+    },
+    {
+      "text": " nos",
+      "fromMs": 2000,
+      "toMs": 2530,
+      "dtwMs": 2900,
+      "p": 0.895617
+    },
+    {
+      "text": " sent",
+      "fromMs": 2540,
+      "toMs": 3260,
+      "dtwMs": 3160,
+      "p": 0.659149
+    },
+    {
+      "text": "amos",
+      "fromMs": 3260,
+      "toMs": 3980,
+      "dtwMs": 3500,
+      "p": 0.986002
+    },
+    {
+      "text": "...",
+      "fromMs": 3980,
+      "toMs": 4140,
+      "dtwMs": 4120,
+      "p": 0.649077
+    }
+  ]
+}

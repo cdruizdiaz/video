@@ -1,0 +1,61 @@
+{
+  "archivo": "IMG_9444.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5835,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        3440,
+        3941
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 3440,
+      "hastaMs": 3920,
+      "texto": "¡Gracias!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 3440,
+      "toMs": 3460,
+      "dtwMs": 3900,
+      "p": 0.054226
+    },
+    {
+      "text": "G",
+      "fromMs": 3480,
+      "toMs": 3520,
+      "dtwMs": 3900,
+      "p": 0.489109
+    },
+    {
+      "text": "rac",
+      "fromMs": 3520,
+      "toMs": 3650,
+      "dtwMs": 3900,
+      "p": 0.988262
+    },
+    {
+      "text": "ias",
+      "fromMs": 3650,
+      "toMs": 3780,
+      "dtwMs": 3900,
+      "p": 0.99553
+    },
+    {
+      "text": "!",
+      "fromMs": 3780,
+      "toMs": 3920,
+      "dtwMs": 3900,
+      "p": 0.947214
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "archivo": "00477.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 18528,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1000,
+      "texto": "¡Suscríbete!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 10,
+      "toMs": 70,
+      "dtwMs": 60,
+      "p": 0.805269
+    },
+    {
+      "text": "S",
+      "fromMs": 70,
+      "toMs": 140,
+      "dtwMs": 320,
+      "p": 0.404585
+    },
+    {
+      "text": "us",
+      "fromMs": 140,
+      "toMs": 280,
+      "dtwMs": 500,
+      "p": 0.990297
+    },
+    {
+      "text": "cr",
+      "fromMs": 280,
+      "toMs": 420,
+      "dtwMs": 500,
+      "p": 0.9991
+    },
+    {
+      "text": "íb",
+      "fromMs": 420,
+      "toMs": 560,
+      "dtwMs": 620,
+      "p": 0.999992
+    },
+    {
+      "text": "ete",
+      "fromMs": 560,
+      "toMs": 770,
+      "dtwMs": 780,
+      "p": 0.999998
+    },
+    {
+      "text": "!",
+      "fromMs": 770,
+      "toMs": 1000,
+      "dtwMs": 900,
+      "p": 0.467915
+    }
+  ]
+}

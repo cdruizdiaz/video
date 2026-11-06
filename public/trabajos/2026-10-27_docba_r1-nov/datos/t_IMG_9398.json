@@ -1,0 +1,82 @@
+{
+  "archivo": "IMG_9398.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3767,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        673,
+        2365
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 673,
+      "hastaMs": 2093,
+      "texto": "y te esperamos en DOCBA"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " y",
+      "fromMs": 673,
+      "toMs": 743,
+      "dtwMs": 973,
+      "p": 0.484764
+    },
+    {
+      "text": " te",
+      "fromMs": 883,
+      "toMs": 883,
+      "dtwMs": 1073,
+      "p": 0.968119
+    },
+    {
+      "text": " esper",
+      "fromMs": 913,
+      "toMs": 1253,
+      "dtwMs": 1293,
+      "p": 0.990166
+    },
+    {
+      "text": "amos",
+      "fromMs": 1253,
+      "toMs": 1483,
+      "dtwMs": 1533,
+      "p": 0.996525
+    },
+    {
+      "text": " en",
+      "fromMs": 1683,
+      "toMs": 1683,
+      "dtwMs": 1833,
+      "p": 0.984581
+    },
+    {
+      "text": " DO",
+      "fromMs": 1683,
+      "toMs": 1823,
+      "dtwMs": 1933,
+      "p": 0.529553
+    },
+    {
+      "text": "C",
+      "fromMs": 1823,
+      "toMs": 1893,
+      "dtwMs": 2013,
+      "p": 0.962136
+    },
+    {
+      "text": "BA",
+      "fromMs": 1893,
+      "toMs": 2093,
+      "dtwMs": 2073,
+      "p": 0.892738
+    }
+  ]
+}

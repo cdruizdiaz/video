@@ -1,0 +1,117 @@
+[
+ {
+  "palabra": "Is",
+  "ini": 1.44,
+  "fin": 1.5
+ },
+ {
+  "palabra": "this",
+  "ini": 1.62,
+  "fin": 1.78
+ },
+ {
+  "palabra": "a",
+  "ini": 1.88,
+  "fin": 1.9
+ },
+ {
+  "palabra": "sad",
+  "ini": 1.96,
+  "fin": 2.76
+ },
+ {
+  "palabra": "moment",
+  "ini": 2.86,
+  "fin": 3.16
+ },
+ {
+  "palabra": "or",
+  "ini": 3.28,
+  "fin": 3.34
+ },
+ {
+  "palabra": "a",
+  "ini": 3.44,
+  "fin": 3.46
+ },
+ {
+  "palabra": "celebration",
+  "ini": 3.52,
+  "fin": 4.02
+ },
+ {
+  "palabra": "of",
+  "ini": 4.1,
+  "fin": 4.14
+ },
+ {
+  "palabra": "life?",
+  "ini": 4.28,
+  "fin": 4.46
+ },
+ {
+  "palabra": "It's",
+  "ini": 5.2,
+  "fin": 5.32
+ },
+ {
+  "palabra": "a",
+  "ini": 5.36,
+  "fin": 5.38
+ },
+ {
+  "palabra": "happy",
+  "ini": 5.46,
+  "fin": 5.7
+ },
+ {
+  "palabra": "moment",
+  "ini": 5.76,
+  "fin": 6.08
+ },
+ {
+  "palabra": "because",
+  "ini": 6.14,
+  "fin": 6.52
+ },
+ {
+  "palabra": "the",
+  "ini": 6.62,
+  "fin": 6.72
+ },
+ {
+  "palabra": "family",
+  "ini": 6.78,
+  "fin": 7.1
+ },
+ {
+  "palabra": "remembers",
+  "ini": 7.22,
+  "fin": 7.6
+ },
+ {
+  "palabra": "the",
+  "ini": 7.64,
+  "fin": 7.72
+ },
+ {
+  "palabra": "person",
+  "ini": 7.8,
+  "fin": 8.36
+ },
+ {
+  "palabra": "singing",
+  "ini": 9.56,
+  "fin": 9.92
+ },
+ {
+  "palabra": "and",
+  "ini": 9.98,
+  "fin": 10.08
+ },
+ {
+  "palabra": "dancing.",
+  "ini": 10.1,
+  "fin": 10.46
+ }
+]

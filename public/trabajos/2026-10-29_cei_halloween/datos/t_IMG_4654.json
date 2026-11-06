@@ -1,0 +1,195 @@
+{
+  "archivo": "IMG_4654.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7570,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2220,
+      "texto": "¿Qué vestimenta usa la gente?"
+    },
+    {
+      "desdeMs": 2680,
+      "hastaMs": 6280,
+      "texto": "Usa la gente vestimenta de ropa de pieles de animales."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 80,
+      "dtwMs": 680,
+      "p": 0.925759
+    },
+    {
+      "text": "Qué",
+      "fromMs": 80,
+      "toMs": 320,
+      "dtwMs": 800,
+      "p": 0.958946
+    },
+    {
+      "text": " vest",
+      "fromMs": 320,
+      "toMs": 620,
+      "dtwMs": 1080,
+      "p": 0.999085
+    },
+    {
+      "text": "iment",
+      "fromMs": 760,
+      "toMs": 980,
+      "dtwMs": 1280,
+      "p": 0.999613
+    },
+    {
+      "text": "a",
+      "fromMs": 1070,
+      "toMs": 1130,
+      "dtwMs": 1440,
+      "p": 0.984196
+    },
+    {
+      "text": " usa",
+      "fromMs": 1130,
+      "toMs": 1340,
+      "dtwMs": 1680,
+      "p": 0.939144
+    },
+    {
+      "text": " la",
+      "fromMs": 1390,
+      "toMs": 1530,
+      "dtwMs": 1820,
+      "p": 0.995537
+    },
+    {
+      "text": " gente",
+      "fromMs": 1530,
+      "toMs": 1830,
+      "dtwMs": 2200,
+      "p": 0.999214
+    },
+    {
+      "text": "?",
+      "fromMs": 1940,
+      "toMs": 2220,
+      "dtwMs": 2460,
+      "p": 0.99878
+    },
+    {
+      "text": " Us",
+      "fromMs": 2680,
+      "toMs": 2450,
+      "dtwMs": 2960,
+      "p": 0.950981
+    },
+    {
+      "text": "a",
+      "fromMs": 2680,
+      "toMs": 2560,
+      "dtwMs": 3060,
+      "p": 0.99644
+    },
+    {
+      "text": " la",
+      "fromMs": 2680,
+      "toMs": 2790,
+      "dtwMs": 3160,
+      "p": 0.999666
+    },
+    {
+      "text": " gente",
+      "fromMs": 2910,
+      "toMs": 3020,
+      "dtwMs": 3580,
+      "p": 0.999928
+    },
+    {
+      "text": " vest",
+      "fromMs": 3440,
+      "toMs": 3830,
+      "dtwMs": 3840,
+      "p": 0.959208
+    },
+    {
+      "text": "iment",
+      "fromMs": 3830,
+      "toMs": 4400,
+      "dtwMs": 4100,
+      "p": 0.999853
+    },
+    {
+      "text": "a",
+      "fromMs": 4400,
+      "toMs": 4520,
+      "dtwMs": 4440,
+      "p": 0.999624
+    },
+    {
+      "text": " de",
+      "fromMs": 4630,
+      "toMs": 4680,
+      "dtwMs": 4760,
+      "p": 0.945731
+    },
+    {
+      "text": " ro",
+      "fromMs": 4680,
+      "toMs": 4820,
+      "dtwMs": 4980,
+      "p": 0.998167
+    },
+    {
+      "text": "pa",
+      "fromMs": 4820,
+      "toMs": 4960,
+      "dtwMs": 5120,
+      "p": 0.998237
+    },
+    {
+      "text": " de",
+      "fromMs": 4960,
+      "toMs": 5010,
+      "dtwMs": 5360,
+      "p": 0.997006
+    },
+    {
+      "text": " piel",
+      "fromMs": 5390,
+      "toMs": 5390,
+      "dtwMs": 5720,
+      "p": 0.998872
+    },
+    {
+      "text": "es",
+      "fromMs": 5430,
+      "toMs": 5530,
+      "dtwMs": 5800,
+      "p": 0.894379
+    },
+    {
+      "text": " de",
+      "fromMs": 5530,
+      "toMs": 5670,
+      "dtwMs": 5900,
+      "p": 0.998258
+    },
+    {
+      "text": " animales",
+      "fromMs": 5670,
+      "toMs": 6280,
+      "dtwMs": 6260,
+      "p": 0.999886
+    },
+    {
+      "text": ".",
+      "fromMs": 6280,
+      "toMs": 6280,
+      "dtwMs": 6260,
+      "p": 0.880689
+    }
+  ]
+}

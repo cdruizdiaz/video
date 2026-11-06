@@ -1,0 +1,43 @@
+{
+  "archivo": "IMG_4642.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2098,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2100,
+      "texto": "si se fueron todos"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " si",
+      "fromMs": 0,
+      "toMs": 200,
+      "dtwMs": 980,
+      "p": 0.608439
+    },
+    {
+      "text": " se",
+      "fromMs": 290,
+      "toMs": 290,
+      "dtwMs": 1680,
+      "p": 0.974561
+    },
+    {
+      "text": " fueron",
+      "fromMs": 870,
+      "toMs": 1390,
+      "dtwMs": 1860,
+      "p": 0.847686
+    },
+    {
+      "text": " todos",
+      "fromMs": 1390,
+      "toMs": 2090,
+      "dtwMs": 2060,
+      "p": 0.996571
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "archivo": "IMG_4586.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5518,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        1449
+      ],
+      [
+        2188,
+        2811
+      ],
+      [
+        3724,
+        4820
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4792,
+      "texto": "Gracias por ver el video."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Gracias",
+      "fromMs": 0,
+      "toMs": 2439,
+      "dtwMs": 2359,
+      "p": 0.468954
+    },
+    {
+      "text": " por",
+      "fromMs": 2439,
+      "toMs": 2809,
+      "dtwMs": 4752,
+      "p": 0.193152
+    },
+    {
+      "text": " ver",
+      "fromMs": 3724,
+      "toMs": 3852,
+      "dtwMs": 4752,
+      "p": 0.979821
+    },
+    {
+      "text": " el",
+      "fromMs": 3852,
+      "toMs": 4112,
+      "dtwMs": 4752,
+      "p": 0.970641
+    },
+    {
+      "text": " video",
+      "fromMs": 4112,
+      "toMs": 4792,
+      "dtwMs": 4752,
+      "p": 0.89587
+    },
+    {
+      "text": ".",
+      "fromMs": 4792,
+      "toMs": 4792,
+      "dtwMs": 4752,
+      "p": 0.911494
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "archivo": "IMG_4711.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7998,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 8000,
+      "texto": "¿Qué es tu ritual? China. China. China. Your classmates are in China. Go there."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 110,
+      "dtwMs": 840,
+      "p": 0.804155
+    },
+    {
+      "text": "Qué",
+      "fromMs": 110,
+      "toMs": 450,
+      "dtwMs": 920,
+      "p": 0.364271
+    },
+    {
+      "text": " es",
+      "fromMs": 460,
+      "toMs": 670,
+      "dtwMs": 1000,
+      "p": 0.908131
+    },
+    {
+      "text": " tu",
+      "fromMs": 780,
+      "toMs": 920,
+      "dtwMs": 1140,
+      "p": 0.760811
+    },
+    {
+      "text": " ritual",
+      "fromMs": 920,
+      "toMs": 1620,
+      "dtwMs": 1660,
+      "p": 0.92303
+    },
+    {
+      "text": "?",
+      "fromMs": 1620,
+      "toMs": 1990,
+      "dtwMs": 2160,
+      "p": 0.600521
+    },
+    {
+      "text": " China",
+      "fromMs": 2110,
+      "toMs": 3950,
+      "dtwMs": 3280,
+      "p": 0.373461
+    },
+    {
+      "text": ".",
+      "fromMs": 3990,
+      "toMs": 4150,
+      "dtwMs": 3880,
+      "p": 0.367751
+    },
+    {
+      "text": " China",
+      "fromMs": 4150,
+      "toMs": 4400,
+      "dtwMs": 4860,
+      "p": 0.700727
+    },
+    {
+      "text": ".",
+      "fromMs": 4500,
+      "toMs": 4560,
+      "dtwMs": 5180,
+      "p": 0.512908
+    },
+    {
+      "text": " China",
+      "fromMs": 4560,
+      "toMs": 4820,
+      "dtwMs": 5320,
+      "p": 0.484602
+    },
+    {
+      "text": ".",
+      "fromMs": 4820,
+      "toMs": 5000,
+      "dtwMs": 5660,
+      "p": 0.942779
+    },
+    {
+      "text": " Your",
+      "fromMs": 5000,
+      "toMs": 5280,
+      "dtwMs": 5740,
+      "p": 0.181953
+    },
+    {
+      "text": " classmates",
+      "fromMs": 5280,
+      "toMs": 6000,
+      "dtwMs": 6180,
+      "p": 0.990556
+    },
+    {
+      "text": " are",
+      "fromMs": 6000,
+      "toMs": 6460,
+      "dtwMs": 6460,
+      "p": 0.831815
+    },
+    {
+      "text": " in",
+      "fromMs": 6460,
+      "toMs": 6630,
+      "dtwMs": 6620,
+      "p": 0.979748
+    },
+    {
+      "text": " China",
+      "fromMs": 6780,
+      "toMs": 7520,
+      "dtwMs": 7040,
+      "p": 0.992301
+    },
+    {
+      "text": ".",
+      "fromMs": 7520,
+      "toMs": 7840,
+      "dtwMs": 7200,
+      "p": 0.843171
+    },
+    {
+      "text": " Go",
+      "fromMs": 7980,
+      "toMs": 7990,
+      "dtwMs": 7280,
+      "p": 0.781538
+    },
+    {
+      "text": " there",
+      "fromMs": 7990,
+      "toMs": 7990,
+      "dtwMs": 7560,
+      "p": 0.980491
+    },
+    {
+      "text": ".",
+      "fromMs": 7990,
+      "toMs": 7990,
+      "dtwMs": 7960,
+      "p": 0.984896
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+ "video": [
+  {
+   "clip": "IMG_4556",
+   "ini": 0.74,
+   "dur": 2.31,
+   "flash": true
+  },
+  {
+   "clip": "IMG_4568",
+   "ini": 0.48,
+   "dur": 1.88,
+   "rot": 0.77,
+   "esc": 1.034
+  },
+  {
+   "clip": "IMG_4553",
+   "ini": 0.56,
+   "dur": 5.66
+  },
+  {
+   "clip": "IMG_4572",
+   "ini": 7.58,
+   "dur": 4.03,
+   "rot": 1.45,
+   "esc": 1.055
+  },
+  {
+   "clip": "IMG_4654",
+   "ini": 2.72,
+   "dur": 3.73,
+   "rot": 1.56,
+   "esc": 1.058
+  },
+  {
+   "clip": "IMG_4655",
+   "ini": 5.58,
+   "dur": 2.7
+  },
+  {
+   "clip": "IMG_4655",
+   "ini": 8.7,
+   "dur": 1.04
+  },
+  {
+   "clip": "IMG_4655",
+   "ini": 12.18,
+   "dur": 1.57
+  },
+  {
+   "clip": "IMG_4575",
+   "ini": 6.25,
+   "dur": 1.26,
+   "rot": 1.85,
+   "esc": 1.067
+  },
+  {
+   "clip": "IMG_4580",
+   "ini": 0.38,
+   "dur": 3.11
+  },
+  {
+   "clip": "IMG_4579",
+   "ini": 3.34,
+   "dur": 6.27,
+   "rot": 5.0,
+   "esc": 1.161
+  },
+  {
+   "clip": "IMG_4590",
+   "ini": 5.82,
+   "dur": 3.92,
+   "rot": 1.01,
+   "esc": 1.041
+  },
+  {
+   "clip": "IMG_4590",
+   "ini": 11.11,
+   "dur": 3.77,
+   "rot": 1.01,
+   "esc": 1.041
+  },
+  {
+   "clip": "IMG_4592",
+   "ini": 16.86,
+   "dur": 8.18,
+   "rot": 1.99,
+   "esc": 1.071
+  }
+ ],
+ "audio": [
+  {
+   "id": "n_china1",
+   "desde": 2.0,
+   "dur": 2.31,
+   "gananciaDb": -2.3,
+   "fade": 3
+  },
+  {
+   "id": "n_china2",
+   "desde": 4.31,
+   "dur": 1.88,
+   "gananciaDb": 0.6,
+   "fade": 3
+  },
+  {
+   "id": "n_china3",
+   "desde": 6.19,
+   "dur": 5.66,
+   "gananciaDb": -0.4,
+   "fade": 3
+  },
+  {
+   "id": "n_noruega",
+   "desde": 11.85,
+   "dur": 4.03,
+   "gananciaDb": 5.7,
+   "fade": 3
+  },
+  {
+   "id": "n_noruega2",
+   "desde": 15.88,
+   "dur": 3.73,
+   "gananciaDb": 5.8,
+   "fade": 3
+  },
+  {
+   "id": "n_noruega3_0",
+   "desde": 19.61,
+   "dur": 2.7,
+   "gananciaDb": -0.5,
+   "fade": 3
+  },
+  {
+   "id": "n_noruega3_1",
+   "desde": 22.31,
+   "dur": 1.04,
+   "gananciaDb": 3.8,
+   "fade": 3
+  },
+  {
+   "id": "n_noruega3_2",
+   "desde": 23.35,
+   "dur": 1.57,
+   "gananciaDb": 3.6,
+   "fade": 3
+  },
+  {
+   "id": "n_mexico",
+   "desde": 24.92,
+   "dur": 1.26,
+   "gananciaDb": -1.4,
+   "fade": 3
+  },
+  {
+   "id": "n_indonesia1",
+   "desde": 26.18,
+   "dur": 3.11,
+   "gananciaDb": 3.6,
+   "fade": 3
+  },
+  {
+   "id": "n_indonesia2",
+   "desde": 29.29,
+   "dur": 6.27,
+   "gananciaDb": 4.9,
+   "fade": 3
+  },
+  {
+   "id": "n_madagascar1",
+   "desde": 35.56,
+   "dur": 3.92,
+   "gananciaDb": 0.3,
+   "fade": 3
+  },
+  {
+   "id": "n_madagascar2",
+   "desde": 39.48,
+   "dur": 3.77,
+   "gananciaDb": 2.8,
+   "fade": 3
+  },
+  {
+   "id": "n_ghana",
+   "desde": 43.25,
+   "dur": 8.18,
+   "gananciaDb": 0.4,
+   "fade": 3
+  }
+ ],
+ "subs": [
+  {
+   "t": "They burn paper",
+   "desde": 2.01,
+   "hasta": 3.47,
+   "es": "Queman papel"
+  },
+  {
+   "t": "to celebrate.",
+   "desde": 3.47,
+   "hasta": 4.31,
+   "es": "para celebrar."
+  },
+  {
+   "t": "They burn",
+   "desde": 4.32,
+   "hasta": 5.18,
+   "es": "Queman"
+  },
+  {
+   "t": "paper money.",
+   "desde": 5.18,
+   "hasta": 6.19,
+   "es": "dinero de papel."
+  },
+  {
+   "t": "The people bring",
+   "desde": 6.2,
+   "hasta": 7.8,
+   "es": "La gente trae"
+  },
+  {
+   "t": "food and flowers",
+   "desde": 7.8,
+   "hasta": 9.34,
+   "es": "comida y flores"
+  },
+  {
+   "t": "and show respect.",
+   "desde": 9.9,
+   "hasta": 11.85,
+   "es": "y muestra respeto."
+  },
+  {
+   "t": "That they burn",
+   "desde": 11.88,
+   "hasta": 12.9,
+   "es": "Que queman"
+  },
+  {
+   "t": "the boat with",
+   "desde": 12.9,
+   "hasta": 14.36,
+   "es": "el barco con"
+  },
+  {
+   "t": "the dead person",
+   "desde": 14.36,
+   "hasta": 15.3,
+   "es": "la persona muerta"
+  },
+  {
+   "t": "inside it.",
+   "desde": 15.3,
+   "hasta": 15.88,
+   "es": "adentro."
+  },
+  {
+   "t": "Usa la gente",
+   "desde": 15.91,
+   "hasta": 16.79
+  },
+  {
+   "t": "vestimenta de ropa",
+   "desde": 16.79,
+   "hasta": 18.41
+  },
+  {
+   "t": "de pieles de",
+   "desde": 18.41,
+   "hasta": 19.03
+  },
+  {
+   "t": "animales.",
+   "desde": 19.03,
+   "hasta": 19.61
+  },
+  {
+   "t": "Es enterrándolos en",
+   "desde": 19.62,
+   "hasta": 21.32
+  },
+  {
+   "t": "un barco con",
+   "desde": 21.32,
+   "hasta": 22.36
+  },
+  {
+   "t": "sus objetos y",
+   "desde": 22.36,
+   "hasta": 23.4
+  },
+  {
+   "t": "con cosas alrededor.",
+   "desde": 23.4,
+   "hasta": 24.92
+  },
+  {
+   "t": "It's like in",
+   "desde": 24.96,
+   "hasta": 25.36,
+   "es": "Es como en"
+  },
+  {
+   "t": "the movie, Coco.",
+   "desde": 25.36,
+   "hasta": 26.18,
+   "es": "la película Coco."
+  },
+  {
+   "t": "Cremation is an",
+   "desde": 26.18,
+   "hasta": 27.23,
+   "es": "La cremación es una"
+  },
+  {
+   "t": "important part",
+   "desde": 27.23,
+   "hasta": 28.25,
+   "es": "parte importante"
+  },
+  {
+   "t": "of the Ngaben.",
+   "desde": 28.25,
+   "hasta": 29.29,
+   "es": "del Ngaben."
+  },
+  {
+   "t": "Cuando muere alguien",
+   "desde": 29.29,
+   "hasta": 30.6
+  },
+  {
+   "t": "lo queman",
+   "desde": 31.16,
+   "hasta": 31.66
+  },
+  {
+   "t": "porque creen que",
+   "desde": 31.66,
+   "hasta": 32.5
+  },
+  {
+   "t": "hace un viaje",
+   "desde": 32.5,
+   "hasta": 33.64
+  },
+  {
+   "t": "y reencarna en",
+   "desde": 33.64,
+   "hasta": 34.52
+  },
+  {
+   "t": "otro cuerpo",
+   "desde": 34.52,
+   "hasta": 35.56
+  },
+  {
+   "t": "Los desentierran,",
+   "desde": 35.63,
+   "hasta": 37.35
+  },
+  {
+   "t": "le sacan",
+   "desde": 37.35,
+   "hasta": 38.17
+  },
+  {
+   "t": "la tela que",
+   "desde": 38.17,
+   "hasta": 38.87
+  },
+  {
+   "t": "tienen,",
+   "desde": 38.87,
+   "hasta": 39.48
+  },
+  {
+   "t": "le ponen una",
+   "desde": 39.52,
+   "hasta": 40.34
+  },
+  {
+   "t": "tela toda pintada",
+   "desde": 40.34,
+   "hasta": 41.8
+  },
+  {
+   "t": "y lo vuelven",
+   "desde": 41.8,
+   "hasta": 42.48
+  },
+  {
+   "t": "a enterrar.",
+   "desde": 42.48,
+   "hasta": 43.25
+  },
+  {
+   "t": "Suelen ser temáticos,",
+   "desde": 43.26,
+   "hasta": 45.42
+  },
+  {
+   "t": "si por ejemplo",
+   "desde": 45.42,
+   "hasta": 46.16
+  },
+  {
+   "t": "una persona era",
+   "desde": 46.72,
+   "hasta": 48.84
+  },
+  {
+   "t": "pescadora,",
+   "desde": 48.84,
+   "hasta": 49.5
+  },
+  {
+   "t": "puede ser un",
+   "desde": 50.0,
+   "hasta": 51.06
+  },
+  {
+   "t": "pescado",
+   "desde": 51.06,
+   "hasta": 51.43
+  }
+ ],
+ "tags": [
+  {
+   "t": "CHINA",
+   "desde": 2.0,
+   "hasta": 4.31,
+   "y": 270
+  },
+  {
+   "t": "CHINA",
+   "desde": 4.31,
+   "hasta": 6.19,
+   "y": 270
+  },
+  {
+   "t": "CHINA",
+   "desde": 6.19,
+   "hasta": 11.85,
+   "y": 270
+  },
+  {
+   "t": "NORWAY",
+   "desde": 11.85,
+   "hasta": 15.88,
+   "y": 270
+  },
+  {
+   "t": "NORWAY",
+   "desde": 15.88,
+   "hasta": 19.61,
+   "y": 270
+  },
+  {
+   "t": "NORWAY",
+   "desde": 19.61,
+   "hasta": 23.35,
+   "y": 270
+  },
+  {
+   "t": "NORWAY",
+   "desde": 23.35,
+   "hasta": 24.92,
+   "y": 270
+  },
+  {
+   "t": "MEXICO",
+   "desde": 24.92,
+   "hasta": 26.18,
+   "y": 270
+  },
+  {
+   "t": "INDONESIA",
+   "desde": 26.18,
+   "hasta": 29.29,
+   "y": 270
+  },
+  {
+   "t": "INDONESIA",
+   "desde": 29.29,
+   "hasta": 35.56,
+   "y": 270
+  },
+  {
+   "t": "MADAGASCAR",
+   "desde": 35.56,
+   "hasta": 39.48,
+   "y": 270
+  },
+  {
+   "t": "MADAGASCAR",
+   "desde": 39.48,
+   "hasta": 43.25,
+   "y": 270
+  },
+  {
+   "t": "GHANA",
+   "desde": 43.25,
+   "hasta": 51.43,
+   "y": 270
+  }
+ ],
+ "musicaSola": [
+  {
+   "desde": 0.0,
+   "hasta": 2.0,
+   "nivel": 0.26
+  }
+ ],
+ "titulo": 2.0,
+ "finTomas": 51.43
+}

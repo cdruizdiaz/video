@@ -1,0 +1,221 @@
+{
+  "archivo": "IMG_4611.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 19758,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5960,
+      "texto": "A ver que salga lindo, eh. Ojo con las rastas ahí, eh."
+    },
+    {
+      "desdeMs": 6460,
+      "hastaMs": 7540,
+      "texto": "Ok, let's go."
+    },
+    {
+      "desdeMs": 19540,
+      "hastaMs": 19760,
+      "texto": "Ok."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " A",
+      "fromMs": 0,
+      "toMs": 220,
+      "dtwMs": 1300,
+      "p": 0.0367585
+    },
+    {
+      "text": " ver",
+      "fromMs": 220,
+      "toMs": 900,
+      "dtwMs": 2280,
+      "p": 0.985408
+    },
+    {
+      "text": " que",
+      "fromMs": 1130,
+      "toMs": 1580,
+      "dtwMs": 3120,
+      "p": 0.412064
+    },
+    {
+      "text": " sal",
+      "fromMs": 1580,
+      "toMs": 2210,
+      "dtwMs": 3320,
+      "p": 0.575115
+    },
+    {
+      "text": "ga",
+      "fromMs": 2210,
+      "toMs": 2710,
+      "dtwMs": 3420,
+      "p": 0.756714
+    },
+    {
+      "text": " lindo",
+      "fromMs": 2710,
+      "toMs": 3880,
+      "dtwMs": 3860,
+      "p": 0.993427
+    },
+    {
+      "text": ",",
+      "fromMs": 3880,
+      "toMs": 4070,
+      "dtwMs": 4080,
+      "p": 0.753497
+    },
+    {
+      "text": " eh",
+      "fromMs": 4070,
+      "toMs": 4260,
+      "dtwMs": 4180,
+      "p": 0.405455
+    },
+    {
+      "text": ".",
+      "fromMs": 4270,
+      "toMs": 4430,
+      "dtwMs": 4340,
+      "p": 0.526277
+    },
+    {
+      "text": " O",
+      "fromMs": 4430,
+      "toMs": 4450,
+      "dtwMs": 4440,
+      "p": 0.694933
+    },
+    {
+      "text": "jo",
+      "fromMs": 4520,
+      "toMs": 4560,
+      "dtwMs": 4560,
+      "p": 0.988446
+    },
+    {
+      "text": " con",
+      "fromMs": 4630,
+      "toMs": 4730,
+      "dtwMs": 4720,
+      "p": 0.999662
+    },
+    {
+      "text": " las",
+      "fromMs": 4730,
+      "toMs": 4880,
+      "dtwMs": 4860,
+      "p": 0.998279
+    },
+    {
+      "text": " r",
+      "fromMs": 4940,
+      "toMs": 4960,
+      "dtwMs": 5040,
+      "p": 0.942907
+    },
+    {
+      "text": "ast",
+      "fromMs": 4960,
+      "toMs": 5100,
+      "dtwMs": 5240,
+      "p": 0.999146
+    },
+    {
+      "text": "as",
+      "fromMs": 5250,
+      "toMs": 5280,
+      "dtwMs": 5360,
+      "p": 0.981218
+    },
+    {
+      "text": " ahí",
+      "fromMs": 5280,
+      "toMs": 5470,
+      "dtwMs": 5640,
+      "p": 0.994017
+    },
+    {
+      "text": ",",
+      "fromMs": 5470,
+      "toMs": 5590,
+      "dtwMs": 5740,
+      "p": 0.992261
+    },
+    {
+      "text": " eh",
+      "fromMs": 5600,
+      "toMs": 5730,
+      "dtwMs": 5900,
+      "p": 0.998498
+    },
+    {
+      "text": ".",
+      "fromMs": 5730,
+      "toMs": 5960,
+      "dtwMs": 6460,
+      "p": 0.99951
+    },
+    {
+      "text": " Ok",
+      "fromMs": 6460,
+      "toMs": 6180,
+      "dtwMs": 6720,
+      "p": 0.944561
+    },
+    {
+      "text": ",",
+      "fromMs": 6460,
+      "toMs": 6400,
+      "dtwMs": 6840,
+      "p": 0.998296
+    },
+    {
+      "text": " let",
+      "fromMs": 6460,
+      "toMs": 6730,
+      "dtwMs": 6960,
+      "p": 0.832699
+    },
+    {
+      "text": "'s",
+      "fromMs": 6730,
+      "toMs": 6910,
+      "dtwMs": 7080,
+      "p": 0.999041
+    },
+    {
+      "text": " go",
+      "fromMs": 6940,
+      "toMs": 7170,
+      "dtwMs": 7460,
+      "p": 0.999969
+    },
+    {
+      "text": ".",
+      "fromMs": 7170,
+      "toMs": 7540,
+      "dtwMs": 9320,
+      "p": 0.997756
+    },
+    {
+      "text": " Ok",
+      "fromMs": 19540,
+      "toMs": 12440,
+      "dtwMs": 17360,
+      "p": 0.113126
+    },
+    {
+      "text": ".",
+      "fromMs": 19540,
+      "toMs": 19760,
+      "dtwMs": 17640,
+      "p": 0.988122
+    }
+  ]
+}

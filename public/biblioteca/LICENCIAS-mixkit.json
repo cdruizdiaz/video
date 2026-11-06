@@ -577,5 +577,53 @@
     "fuente": "https://assets.mixkit.co/music/1168/1168.mp3",
     "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
     "descargado": "2026-10-20"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-440-infinity.mp3",
+    "id": "440",
+    "tipo": "musica",
+    "titulo": "Infinity",
+    "autor": "Arulo",
+    "duracionSeg": 102.9,
+    "sha256": "b39a014450d406cfb5dc59dedb41823e44c0f9c89ca228c44b52ed63c8a39861",
+    "fuente": "https://assets.mixkit.co/music/440/440.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-25"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-33-motivating-mornings.mp3",
+    "id": "33",
+    "tipo": "musica",
+    "titulo": "Motivating Mornings",
+    "autor": "Ahjay Stelino",
+    "duracionSeg": 96.2,
+    "sha256": "9b433f0fa9f16f1dbc0a5fb374945eeb858d9441087eeadb540636622f056e86",
+    "fuente": "https://assets.mixkit.co/music/33/33.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-25"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-821-at-the-playhouse.mp3",
+    "id": "821",
+    "tipo": "musica",
+    "titulo": "At the Playhouse",
+    "autor": "Michael Ramir C.",
+    "duracionSeg": 90.9,
+    "sha256": "a3a3bda4dc20cf6a35ce86849ae495fd14cbf71174a55ebd79ae254da2093608",
+    "fuente": "https://assets.mixkit.co/music/821/821.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-10-29"
+  },
+  {
+    "archivo": "public/biblioteca/musica/mixkit/mixkit-1076-smile.mp3",
+    "id": "1076",
+    "tipo": "musica",
+    "titulo": "Smile",
+    "autor": "Michael Ramir C.",
+    "duracionSeg": 96.6,
+    "sha256": "0f582b05625f07762b551757097d0d15412bc2e9154781508b59060dea5a58a5",
+    "fuente": "https://assets.mixkit.co/music/1076/1076.mp3",
+    "licencia": "Mixkit Stock Music Free License — https://mixkit.co/license/#musicFree",
+    "descargado": "2026-11-03"
   }
 ]

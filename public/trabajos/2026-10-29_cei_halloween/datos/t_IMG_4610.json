@@ -1,0 +1,127 @@
+{
+  "archivo": "IMG_4610.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2798,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2800,
+      "texto": "Sí, sí, sí. Los guías los va a sacar cotis."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Sí",
+      "fromMs": 10,
+      "toMs": 150,
+      "dtwMs": 380,
+      "p": 0.598675
+    },
+    {
+      "text": ",",
+      "fromMs": 250,
+      "toMs": 300,
+      "dtwMs": 640,
+      "p": 0.97385
+    },
+    {
+      "text": " sí",
+      "fromMs": 300,
+      "toMs": 450,
+      "dtwMs": 760,
+      "p": 0.917327
+    },
+    {
+      "text": ",",
+      "fromMs": 450,
+      "toMs": 570,
+      "dtwMs": 840,
+      "p": 0.794589
+    },
+    {
+      "text": " sí",
+      "fromMs": 640,
+      "toMs": 750,
+      "dtwMs": 960,
+      "p": 0.81673
+    },
+    {
+      "text": ".",
+      "fromMs": 750,
+      "toMs": 970,
+      "dtwMs": 1040,
+      "p": 0.785469
+    },
+    {
+      "text": " Los",
+      "fromMs": 1050,
+      "toMs": 1120,
+      "dtwMs": 1220,
+      "p": 0.212263
+    },
+    {
+      "text": " gu",
+      "fromMs": 1120,
+      "toMs": 1190,
+      "dtwMs": 1280,
+      "p": 0.938653
+    },
+    {
+      "text": "ías",
+      "fromMs": 1200,
+      "toMs": 1340,
+      "dtwMs": 1340,
+      "p": 0.932928
+    },
+    {
+      "text": " los",
+      "fromMs": 1340,
+      "toMs": 1600,
+      "dtwMs": 1520,
+      "p": 0.270655
+    },
+    {
+      "text": " va",
+      "fromMs": 1600,
+      "toMs": 1760,
+      "dtwMs": 1720,
+      "p": 0.122263
+    },
+    {
+      "text": " a",
+      "fromMs": 1790,
+      "toMs": 1850,
+      "dtwMs": 2080,
+      "p": 0.994009
+    },
+    {
+      "text": " sacar",
+      "fromMs": 1880,
+      "toMs": 2330,
+      "dtwMs": 2280,
+      "p": 0.985316
+    },
+    {
+      "text": " cot",
+      "fromMs": 2330,
+      "toMs": 2590,
+      "dtwMs": 2660,
+      "p": 0.143446
+    },
+    {
+      "text": "is",
+      "fromMs": 2690,
+      "toMs": 2790,
+      "dtwMs": 2760,
+      "p": 0.290681
+    },
+    {
+      "text": ".",
+      "fromMs": 2790,
+      "toMs": 2790,
+      "dtwMs": 2760,
+      "p": 0.643997
+    }
+  ]
+}

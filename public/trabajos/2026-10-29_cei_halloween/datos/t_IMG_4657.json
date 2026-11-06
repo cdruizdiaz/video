@@ -1,0 +1,83 @@
+{
+  "archivo": "IMG_4657.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5485,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4000,
+      "texto": "¿Cuál país investigaste?"
+    },
+    {
+      "desdeMs": 4000,
+      "hastaMs": 5480,
+      "texto": "China."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 160,
+      "dtwMs": 1120,
+      "p": 0.698731
+    },
+    {
+      "text": "Cu",
+      "fromMs": 160,
+      "toMs": 490,
+      "dtwMs": 1220,
+      "p": 0.152181
+    },
+    {
+      "text": "ál",
+      "fromMs": 490,
+      "toMs": 820,
+      "dtwMs": 1320,
+      "p": 0.872902
+    },
+    {
+      "text": " país",
+      "fromMs": 1100,
+      "toMs": 1480,
+      "dtwMs": 1640,
+      "p": 0.829274
+    },
+    {
+      "text": " investig",
+      "fromMs": 1480,
+      "toMs": 2810,
+      "dtwMs": 2960,
+      "p": 0.459453
+    },
+    {
+      "text": "aste",
+      "fromMs": 2810,
+      "toMs": 3390,
+      "dtwMs": 3160,
+      "p": 0.924792
+    },
+    {
+      "text": "?",
+      "fromMs": 3440,
+      "toMs": 3710,
+      "dtwMs": 3620,
+      "p": 0.781385
+    },
+    {
+      "text": " China",
+      "fromMs": 5090,
+      "toMs": 5480,
+      "dtwMs": 4380,
+      "p": 0.832563
+    },
+    {
+      "text": ".",
+      "fromMs": 5480,
+      "toMs": 5480,
+      "dtwMs": 4900,
+      "p": 0.517477
+    }
+  ]
+}

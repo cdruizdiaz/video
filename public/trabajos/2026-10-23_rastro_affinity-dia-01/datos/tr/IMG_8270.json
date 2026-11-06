@@ -1,0 +1,449 @@
+{
+  "archivo": "IMG_8270.MOV",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 25282,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 25280,
+      "texto": "que era día 1 de 20 probando Affinity y todos van, día 1, esto me quitó atrás de la oreja, querés que me ponga gel, vos porque no viste la primera toma, lo despegaba que estaba, se lo clavó en el horno."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " que",
+      "fromMs": 80,
+      "toMs": 700,
+      "dtwMs": 1980,
+      "p": 0.198256
+    },
+    {
+      "text": " era",
+      "fromMs": 700,
+      "toMs": 1160,
+      "dtwMs": 2140,
+      "p": 0.744478
+    },
+    {
+      "text": " día",
+      "fromMs": 1460,
+      "toMs": 2100,
+      "dtwMs": 2400,
+      "p": 0.725342
+    },
+    {
+      "text": " 1",
+      "fromMs": 2100,
+      "toMs": 2800,
+      "dtwMs": 2740,
+      "p": 0.645224
+    },
+    {
+      "text": " de",
+      "fromMs": 2800,
+      "toMs": 2880,
+      "dtwMs": 3760,
+      "p": 0.949822
+    },
+    {
+      "text": " 20",
+      "fromMs": 3680,
+      "toMs": 4060,
+      "dtwMs": 4040,
+      "p": 0.975611
+    },
+    {
+      "text": " prob",
+      "fromMs": 4060,
+      "toMs": 4290,
+      "dtwMs": 4340,
+      "p": 0.79793
+    },
+    {
+      "text": "ando",
+      "fromMs": 4290,
+      "toMs": 4510,
+      "dtwMs": 4520,
+      "p": 0.997305
+    },
+    {
+      "text": " Aff",
+      "fromMs": 4510,
+      "toMs": 4690,
+      "dtwMs": 4700,
+      "p": 0.25361
+    },
+    {
+      "text": "inity",
+      "fromMs": 4690,
+      "toMs": 4970,
+      "dtwMs": 4880,
+      "p": 0.94804
+    },
+    {
+      "text": " y",
+      "fromMs": 5180,
+      "toMs": 5480,
+      "dtwMs": 6820,
+      "p": 0.0613215
+    },
+    {
+      "text": " todos",
+      "fromMs": 6710,
+      "toMs": 7630,
+      "dtwMs": 8980,
+      "p": 0.842016
+    },
+    {
+      "text": " van",
+      "fromMs": 8000,
+      "toMs": 9480,
+      "dtwMs": 9300,
+      "p": 0.809456
+    },
+    {
+      "text": ",",
+      "fromMs": 9780,
+      "toMs": 9870,
+      "dtwMs": 9700,
+      "p": 0.0807435
+    },
+    {
+      "text": " día",
+      "fromMs": 9870,
+      "toMs": 10320,
+      "dtwMs": 9940,
+      "p": 0.25362
+    },
+    {
+      "text": " 1",
+      "fromMs": 10430,
+      "toMs": 11000,
+      "dtwMs": 10340,
+      "p": 0.878664
+    },
+    {
+      "text": ",",
+      "fromMs": 11000,
+      "toMs": 11350,
+      "dtwMs": 10340,
+      "p": 0.186942
+    },
+    {
+      "text": " esto",
+      "fromMs": 11350,
+      "toMs": 12060,
+      "dtwMs": 12740,
+      "p": 0.0510382
+    },
+    {
+      "text": " me",
+      "fromMs": 12060,
+      "toMs": 12410,
+      "dtwMs": 12960,
+      "p": 0.780641
+    },
+    {
+      "text": " quit",
+      "fromMs": 12410,
+      "toMs": 13040,
+      "dtwMs": 13100,
+      "p": 0.0193379
+    },
+    {
+      "text": "ó",
+      "fromMs": 13140,
+      "toMs": 13320,
+      "dtwMs": 13360,
+      "p": 0.985344
+    },
+    {
+      "text": " atrás",
+      "fromMs": 13320,
+      "toMs": 14430,
+      "dtwMs": 14540,
+      "p": 0.50887
+    },
+    {
+      "text": " de",
+      "fromMs": 14520,
+      "toMs": 14760,
+      "dtwMs": 14700,
+      "p": 0.826594
+    },
+    {
+      "text": " la",
+      "fromMs": 14760,
+      "toMs": 14880,
+      "dtwMs": 14800,
+      "p": 0.86316
+    },
+    {
+      "text": " ore",
+      "fromMs": 14880,
+      "toMs": 15060,
+      "dtwMs": 14940,
+      "p": 0.303801
+    },
+    {
+      "text": "ja",
+      "fromMs": 15110,
+      "toMs": 15160,
+      "dtwMs": 15060,
+      "p": 0.981594
+    },
+    {
+      "text": ",",
+      "fromMs": 15180,
+      "toMs": 15200,
+      "dtwMs": 15140,
+      "p": 0.475282
+    },
+    {
+      "text": " quer",
+      "fromMs": 15200,
+      "toMs": 15260,
+      "dtwMs": 15260,
+      "p": 0.346765
+    },
+    {
+      "text": "és",
+      "fromMs": 15260,
+      "toMs": 15300,
+      "dtwMs": 15340,
+      "p": 0.902464
+    },
+    {
+      "text": " que",
+      "fromMs": 15300,
+      "toMs": 15430,
+      "dtwMs": 15420,
+      "p": 0.797363
+    },
+    {
+      "text": " me",
+      "fromMs": 15430,
+      "toMs": 15520,
+      "dtwMs": 15460,
+      "p": 0.981452
+    },
+    {
+      "text": " pong",
+      "fromMs": 15520,
+      "toMs": 15690,
+      "dtwMs": 15620,
+      "p": 0.987598
+    },
+    {
+      "text": "a",
+      "fromMs": 15690,
+      "toMs": 15730,
+      "dtwMs": 15740,
+      "p": 0.817401
+    },
+    {
+      "text": " gel",
+      "fromMs": 15850,
+      "toMs": 16000,
+      "dtwMs": 16020,
+      "p": 0.828703
+    },
+    {
+      "text": ",",
+      "fromMs": 16000,
+      "toMs": 16050,
+      "dtwMs": 16220,
+      "p": 0.526019
+    },
+    {
+      "text": " vos",
+      "fromMs": 16050,
+      "toMs": 16540,
+      "dtwMs": 17580,
+      "p": 0.887948
+    },
+    {
+      "text": " porque",
+      "fromMs": 16560,
+      "toMs": 17520,
+      "dtwMs": 17800,
+      "p": 0.294062
+    },
+    {
+      "text": " no",
+      "fromMs": 17520,
+      "toMs": 17840,
+      "dtwMs": 17920,
+      "p": 0.895466
+    },
+    {
+      "text": " v",
+      "fromMs": 17840,
+      "toMs": 18000,
+      "dtwMs": 18040,
+      "p": 0.94062
+    },
+    {
+      "text": "iste",
+      "fromMs": 18000,
+      "toMs": 18650,
+      "dtwMs": 18140,
+      "p": 0.993557
+    },
+    {
+      "text": " la",
+      "fromMs": 18650,
+      "toMs": 19000,
+      "dtwMs": 18380,
+      "p": 0.964923
+    },
+    {
+      "text": " primera",
+      "fromMs": 19000,
+      "toMs": 19450,
+      "dtwMs": 18740,
+      "p": 0.678034
+    },
+    {
+      "text": " toma",
+      "fromMs": 19460,
+      "toMs": 19740,
+      "dtwMs": 19740,
+      "p": 0.952047
+    },
+    {
+      "text": ",",
+      "fromMs": 19740,
+      "toMs": 19840,
+      "dtwMs": 19860,
+      "p": 0.55389
+    },
+    {
+      "text": " lo",
+      "fromMs": 19840,
+      "toMs": 19940,
+      "dtwMs": 19920,
+      "p": 0.841201
+    },
+    {
+      "text": " des",
+      "fromMs": 19940,
+      "toMs": 20090,
+      "dtwMs": 20080,
+      "p": 0.350679
+    },
+    {
+      "text": "pe",
+      "fromMs": 20090,
+      "toMs": 20190,
+      "dtwMs": 20180,
+      "p": 0.723775
+    },
+    {
+      "text": "g",
+      "fromMs": 20190,
+      "toMs": 20240,
+      "dtwMs": 20260,
+      "p": 0.517754
+    },
+    {
+      "text": "aba",
+      "fromMs": 20240,
+      "toMs": 20390,
+      "dtwMs": 20360,
+      "p": 0.54795
+    },
+    {
+      "text": " que",
+      "fromMs": 20390,
+      "toMs": 20530,
+      "dtwMs": 20520,
+      "p": 0.841162
+    },
+    {
+      "text": " estaba",
+      "fromMs": 20650,
+      "toMs": 20900,
+      "dtwMs": 20780,
+      "p": 0.769885
+    },
+    {
+      "text": ",",
+      "fromMs": 20900,
+      "toMs": 21330,
+      "dtwMs": 21160,
+      "p": 0.86852
+    },
+    {
+      "text": " se",
+      "fromMs": 21330,
+      "toMs": 21760,
+      "dtwMs": 23620,
+      "p": 0.351731
+    },
+    {
+      "text": " lo",
+      "fromMs": 21760,
+      "toMs": 22190,
+      "dtwMs": 24420,
+      "p": 0.980978
+    },
+    {
+      "text": " cl",
+      "fromMs": 22190,
+      "toMs": 22620,
+      "dtwMs": 24600,
+      "p": 0.988279
+    },
+    {
+      "text": "av",
+      "fromMs": 22620,
+      "toMs": 23050,
+      "dtwMs": 24720,
+      "p": 0.657805
+    },
+    {
+      "text": "ó",
+      "fromMs": 23050,
+      "toMs": 23260,
+      "dtwMs": 24780,
+      "p": 0.99759
+    },
+    {
+      "text": " en",
+      "fromMs": 23440,
+      "toMs": 23690,
+      "dtwMs": 24900,
+      "p": 0.998887
+    },
+    {
+      "text": " el",
+      "fromMs": 23690,
+      "toMs": 24110,
+      "dtwMs": 25040,
+      "p": 0.982323
+    },
+    {
+      "text": " hor",
+      "fromMs": 24120,
+      "toMs": 24770,
+      "dtwMs": 25240,
+      "p": 0.462234
+    },
+    {
+      "text": "no",
+      "fromMs": 24770,
+      "toMs": 25280,
+      "dtwMs": 25240,
+      "p": 0.899501
+    },
+    {
+      "text": ".",
+      "fromMs": 25280,
+      "toMs": 25280,
+      "dtwMs": 25240,
+      "p": 0.376369
+    }
+  ]
+}

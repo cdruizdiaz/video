@@ -1,0 +1,82 @@
+[
+ {
+  "palabra": "Bueno,",
+  "ini": 0.1,
+  "fin": 0.3
+ },
+ {
+  "palabra": "otro",
+  "ini": 1.02,
+  "fin": 1.16
+ },
+ {
+  "palabra": "ejemplo",
+  "ini": 1.2,
+  "fin": 1.54
+ },
+ {
+  "palabra": "podría",
+  "ini": 1.64,
+  "fin": 1.88
+ },
+ {
+  "palabra": "ser",
+  "ini": 1.96,
+  "fin": 2.06
+ },
+ {
+  "palabra": "por",
+  "ini": 2.12,
+  "fin": 2.18
+ },
+ {
+  "palabra": "ejemplo",
+  "ini": 2.22,
+  "fin": 2.62
+ },
+ {
+  "palabra": "un",
+  "ini": 3.4,
+  "fin": 3.46
+ },
+ {
+  "palabra": "pescador,",
+  "ini": 3.5,
+  "fin": 4.1
+ },
+ {
+  "palabra": "el",
+  "ini": 4.6,
+  "fin": 4.68
+ },
+ {
+  "palabra": "ataúd",
+  "ini": 4.74,
+  "fin": 5.04
+ },
+ {
+  "palabra": "puede",
+  "ini": 5.12,
+  "fin": 5.26
+ },
+ {
+  "palabra": "ser",
+  "ini": 5.3,
+  "fin": 5.4
+ },
+ {
+  "palabra": "de",
+  "ini": 5.44,
+  "fin": 5.5
+ },
+ {
+  "palabra": "un",
+  "ini": 5.54,
+  "fin": 5.58
+ },
+ {
+  "palabra": "pescado.",
+  "ini": 5.62,
+  "fin": 6.12
+ }
+]

@@ -1,0 +1,211 @@
+{
+  "archivo": "IMG_9082.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7803,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7800,
+      "texto": "Así en Google Analytics ves quién llegó desde ese mail y qué hizo después. Compró, tocó un botón o se fue."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Así",
+      "fromMs": 0,
+      "toMs": 370,
+      "dtwMs": 1500,
+      "p": 0.763733
+    },
+    {
+      "text": " en",
+      "fromMs": 370,
+      "toMs": 620,
+      "dtwMs": 1780,
+      "p": 0.63078
+    },
+    {
+      "text": " Google",
+      "fromMs": 620,
+      "toMs": 1350,
+      "dtwMs": 1980,
+      "p": 0.918225
+    },
+    {
+      "text": " Analytics",
+      "fromMs": 1460,
+      "toMs": 2440,
+      "dtwMs": 2420,
+      "p": 0.964051
+    },
+    {
+      "text": " ves",
+      "fromMs": 2650,
+      "toMs": 2760,
+      "dtwMs": 2840,
+      "p": 0.830467
+    },
+    {
+      "text": " quién",
+      "fromMs": 2760,
+      "toMs": 3200,
+      "dtwMs": 3160,
+      "p": 0.802391
+    },
+    {
+      "text": " llegó",
+      "fromMs": 3200,
+      "toMs": 3500,
+      "dtwMs": 3460,
+      "p": 0.930651
+    },
+    {
+      "text": " desde",
+      "fromMs": 3500,
+      "toMs": 3720,
+      "dtwMs": 3640,
+      "p": 0.878991
+    },
+    {
+      "text": " ese",
+      "fromMs": 3720,
+      "toMs": 3900,
+      "dtwMs": 3880,
+      "p": 0.941921
+    },
+    {
+      "text": " mail",
+      "fromMs": 3900,
+      "toMs": 4180,
+      "dtwMs": 4080,
+      "p": 0.799773
+    },
+    {
+      "text": " y",
+      "fromMs": 4180,
+      "toMs": 4280,
+      "dtwMs": 4260,
+      "p": 0.659287
+    },
+    {
+      "text": " qué",
+      "fromMs": 4280,
+      "toMs": 4360,
+      "dtwMs": 4360,
+      "p": 0.796393
+    },
+    {
+      "text": " hizo",
+      "fromMs": 4360,
+      "toMs": 4540,
+      "dtwMs": 4500,
+      "p": 0.804843
+    },
+    {
+      "text": " después",
+      "fromMs": 4540,
+      "toMs": 4820,
+      "dtwMs": 4860,
+      "p": 0.933748
+    },
+    {
+      "text": ".",
+      "fromMs": 4900,
+      "toMs": 5200,
+      "dtwMs": 5100,
+      "p": 0.421699
+    },
+    {
+      "text": " Com",
+      "fromMs": 5280,
+      "toMs": 5480,
+      "dtwMs": 5380,
+      "p": 0.397274
+    },
+    {
+      "text": "pr",
+      "fromMs": 5480,
+      "toMs": 5630,
+      "dtwMs": 5500,
+      "p": 0.997164
+    },
+    {
+      "text": "ó",
+      "fromMs": 5760,
+      "toMs": 5760,
+      "dtwMs": 5580,
+      "p": 0.99923
+    },
+    {
+      "text": ",",
+      "fromMs": 5790,
+      "toMs": 5820,
+      "dtwMs": 5700,
+      "p": 0.903512
+    },
+    {
+      "text": " toc",
+      "fromMs": 5820,
+      "toMs": 5920,
+      "dtwMs": 5860,
+      "p": 0.882208
+    },
+    {
+      "text": "ó",
+      "fromMs": 5920,
+      "toMs": 5960,
+      "dtwMs": 5940,
+      "p": 0.999748
+    },
+    {
+      "text": " un",
+      "fromMs": 5960,
+      "toMs": 6000,
+      "dtwMs": 6000,
+      "p": 0.535421
+    },
+    {
+      "text": " bot",
+      "fromMs": 6000,
+      "toMs": 6200,
+      "dtwMs": 6180,
+      "p": 0.876769
+    },
+    {
+      "text": "ón",
+      "fromMs": 6200,
+      "toMs": 6340,
+      "dtwMs": 6320,
+      "p": 0.997721
+    },
+    {
+      "text": " o",
+      "fromMs": 6340,
+      "toMs": 6380,
+      "dtwMs": 6520,
+      "p": 0.784803
+    },
+    {
+      "text": " se",
+      "fromMs": 6470,
+      "toMs": 6660,
+      "dtwMs": 6660,
+      "p": 0.99204
+    },
+    {
+      "text": " fue",
+      "fromMs": 6660,
+      "toMs": 7800,
+      "dtwMs": 6800,
+      "p": 0.94757
+    },
+    {
+      "text": ".",
+      "fromMs": 7800,
+      "toMs": 7800,
+      "dtwMs": 6980,
+      "p": 0.829186
+    }
+  ]
+}

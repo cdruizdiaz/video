@@ -1,0 +1,65 @@
+{
+  "archivo": "IMG_4574.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2432,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        930
+      ],
+      [
+        1702,
+        2432
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2431,
+      "texto": "¿Paraste bien?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 130,
+      "dtwMs": 2031,
+      "p": 0.372354
+    },
+    {
+      "text": "Par",
+      "fromMs": 130,
+      "toMs": 520,
+      "dtwMs": 2031,
+      "p": 0.292648
+    },
+    {
+      "text": "aste",
+      "fromMs": 520,
+      "toMs": 920,
+      "dtwMs": 2231,
+      "p": 0.981396
+    },
+    {
+      "text": " bien",
+      "fromMs": 1941,
+      "toMs": 2031,
+      "dtwMs": 2411,
+      "p": 0.991189
+    },
+    {
+      "text": "?",
+      "fromMs": 2031,
+      "toMs": 2421,
+      "dtwMs": 2411,
+      "p": 0.999662
+    }
+  ]
+}

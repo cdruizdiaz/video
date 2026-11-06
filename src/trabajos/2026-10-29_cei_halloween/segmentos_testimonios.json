@@ -1,0 +1,134 @@
+{
+ "_nota": "Testimonios (Halloween): alumnas, alumna y padres que cuentan qué les pareció la actividad. Todo en español: subtítulo simple. omitir = se alinea pero se corta.",
+ "segmentos": [
+  {
+   "id": "madre",
+   "clip": "IMG_4717",
+   "desde": 0,
+   "fin": 16.8,
+   "chunks": [
+    {
+     "t": "Bueno, la verdad que, sobre todo de mis hijos, no me lo esperaba.",
+     "omitir": true
+    },
+    {
+     "t": "Muy linda la propuesta y hermoso todo: la decoración, los chicos vestidos y todo el contenido teórico que todos expusieron.",
+     "frases": [
+      "Muy linda la propuesta y hermoso todo:",
+      "la decoración, los chicos vestidos",
+      "y todo el contenido teórico",
+      "que todos expusieron."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "padre",
+   "clip": "IMG_4717",
+   "desde": 17.9,
+   "fin": 33.6,
+   "chunks": [
+    {
+     "t": "Bueno, la verdad que",
+     "omitir": true
+    },
+    {
+     "t": "Muy lindo, muy linda la exposición de los chicos. Me llama la atención la buena pronunciación que tienen la mayoría. Eso es importante, saber eso en inglés.",
+     "frases": [
+      "Muy lindo, muy linda",
+      "la exposición de los chicos.",
+      "Me llama la atención",
+      "la buena pronunciación",
+      "que tienen la mayoría.",
+      "Eso es importante,",
+      "saber eso en inglés."
+     ]
+    },
+    {
+     "t": "y nada, la verdad que muy lindo y bueno, ahora vamos a seguir viendo lo que tienen preparados los chicos.",
+     "omitir": true
+    }
+   ],
+   "finExacto": 27.7
+  },
+  {
+   "id": "alumna",
+   "clip": "IMG_4639",
+   "desde": 0,
+   "fin": 18.0,
+   "chunks": [
+    {
+     "t": "Para mí, la actividad estuvo muy buena porque estuvo muy lindo que pudimos ver otros stands, que vinieron nuestros padres, que pudimos compartir con nuestras amigas para hacer todo, por ejemplo, la fogata, el barco, todo eso. Además, eso es lo lindo, por ejemplo, de venir a Inglés y compartir con amigas.",
+     "frases": [
+      "Para mí, la actividad estuvo muy buena",
+      "porque estuvo muy lindo",
+      "que pudimos ver otros stands,",
+      "que vinieron nuestros padres,",
+      "que pudimos compartir",
+      "con nuestras amigas",
+      "para hacer todo,",
+      "por ejemplo, la fogata,",
+      "el barco, todo eso.",
+      "Además, eso es lo lindo,",
+      "por ejemplo, de venir a Inglés",
+      "y compartir con amigas."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "alumnas",
+   "clip": "IMG_4641",
+   "desde": 0,
+   "fin": 14.5,
+   "chunks": [
+    {
+     "t": "La actividad estuvo muy buena y dinámica.",
+     "frases": [
+      "La actividad estuvo muy buena y dinámica."
+     ]
+    },
+    {
+     "t": "Todos nos vestimos de nuestra cultura y todos estuvimos muy lindos.",
+     "frases": [
+      "Todos nos vestimos de nuestra cultura",
+      "y todos estuvimos muy lindos."
+     ]
+    },
+    {
+     "t": "Tuvimos que explicar sobre la temática de cada país de los Días de los Muertos.",
+     "omitir": true
+    },
+    {
+     "t": "Gracias a todos por venir. Espero que les haya gustado.",
+     "frases": [
+      "Gracias a todos por venir.",
+      "Espero que les haya gustado."
+     ]
+    }
+   ]
+  }
+ ],
+ "inserts": [
+  {
+   "clip": "IMG_4577",
+   "ini": 0.4,
+   "dur": 1.6
+  },
+  {
+   "clip": "IMG_4581",
+   "ini": 0.3,
+   "dur": 1.6
+  },
+  {
+   "clip": "IMG_4616",
+   "ini": 1.5,
+   "dur": 1.5
+  },
+  {
+   "clip": "IMG_4624",
+   "ini": 0.2,
+   "dur": 1.6
+  }
+ ]
+}

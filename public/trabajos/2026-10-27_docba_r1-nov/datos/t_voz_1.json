@@ -1,0 +1,286 @@
+{
+  "archivo": "voz_1.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8960,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5340,
+      "texto": "Encontras productos como matcha latte, croissant de poche y guacamole, tostand proteico de masa madre"
+    },
+    {
+      "desdeMs": 5340,
+      "hastaMs": 8960,
+      "texto": "y cuando se acerca la noche aparece la copa de vino"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " En",
+      "fromMs": 40,
+      "toMs": 120,
+      "dtwMs": 780,
+      "p": 0.883987
+    },
+    {
+      "text": "cont",
+      "fromMs": 120,
+      "toMs": 360,
+      "dtwMs": 900,
+      "p": 0.9976
+    },
+    {
+      "text": "ras",
+      "fromMs": 360,
+      "toMs": 540,
+      "dtwMs": 1000,
+      "p": 0.607649
+    },
+    {
+      "text": " productos",
+      "fromMs": 660,
+      "toMs": 1080,
+      "dtwMs": 1320,
+      "p": 0.984171
+    },
+    {
+      "text": " como",
+      "fromMs": 1080,
+      "toMs": 1230,
+      "dtwMs": 1560,
+      "p": 0.979496
+    },
+    {
+      "text": " match",
+      "fromMs": 1310,
+      "toMs": 1620,
+      "dtwMs": 1820,
+      "p": 0.980232
+    },
+    {
+      "text": "a",
+      "fromMs": 1620,
+      "toMs": 1680,
+      "dtwMs": 1900,
+      "p": 0.998988
+    },
+    {
+      "text": " latte",
+      "fromMs": 1680,
+      "toMs": 2000,
+      "dtwMs": 2140,
+      "p": 0.984915
+    },
+    {
+      "text": ",",
+      "fromMs": 2000,
+      "toMs": 2020,
+      "dtwMs": 2340,
+      "p": 0.957761
+    },
+    {
+      "text": " cro",
+      "fromMs": 2120,
+      "toMs": 2240,
+      "dtwMs": 2440,
+      "p": 0.457874
+    },
+    {
+      "text": "issant",
+      "fromMs": 2320,
+      "toMs": 2600,
+      "dtwMs": 2620,
+      "p": 0.900366
+    },
+    {
+      "text": " de",
+      "fromMs": 2600,
+      "toMs": 2710,
+      "dtwMs": 2760,
+      "p": 0.989997
+    },
+    {
+      "text": " po",
+      "fromMs": 2710,
+      "toMs": 2760,
+      "dtwMs": 2900,
+      "p": 0.996622
+    },
+    {
+      "text": "che",
+      "fromMs": 2830,
+      "toMs": 3000,
+      "dtwMs": 3040,
+      "p": 0.117925
+    },
+    {
+      "text": " y",
+      "fromMs": 3000,
+      "toMs": 3100,
+      "dtwMs": 3180,
+      "p": 0.868211
+    },
+    {
+      "text": " gu",
+      "fromMs": 3100,
+      "toMs": 3240,
+      "dtwMs": 3240,
+      "p": 0.53974
+    },
+    {
+      "text": "acam",
+      "fromMs": 3310,
+      "toMs": 3690,
+      "dtwMs": 3420,
+      "p": 0.981452
+    },
+    {
+      "text": "ole",
+      "fromMs": 3690,
+      "toMs": 4000,
+      "dtwMs": 3680,
+      "p": 0.999773
+    },
+    {
+      "text": ",",
+      "fromMs": 4000,
+      "toMs": 4060,
+      "dtwMs": 3960,
+      "p": 0.776274
+    },
+    {
+      "text": " to",
+      "fromMs": 4130,
+      "toMs": 4160,
+      "dtwMs": 4020,
+      "p": 0.953902
+    },
+    {
+      "text": "stand",
+      "fromMs": 4160,
+      "toMs": 4360,
+      "dtwMs": 4180,
+      "p": 0.0113076
+    },
+    {
+      "text": " prote",
+      "fromMs": 4360,
+      "toMs": 4560,
+      "dtwMs": 4420,
+      "p": 0.992175
+    },
+    {
+      "text": "ico",
+      "fromMs": 4560,
+      "toMs": 4700,
+      "dtwMs": 4660,
+      "p": 0.996141
+    },
+    {
+      "text": " de",
+      "fromMs": 4700,
+      "toMs": 4800,
+      "dtwMs": 4820,
+      "p": 0.922417
+    },
+    {
+      "text": " masa",
+      "fromMs": 4800,
+      "toMs": 5000,
+      "dtwMs": 4980,
+      "p": 0.98867
+    },
+    {
+      "text": " madre",
+      "fromMs": 5000,
+      "toMs": 5340,
+      "dtwMs": 5280,
+      "p": 0.973102
+    },
+    {
+      "text": " y",
+      "fromMs": 5380,
+      "toMs": 5420,
+      "dtwMs": 5680,
+      "p": 0.719247
+    },
+    {
+      "text": " cuando",
+      "fromMs": 5450,
+      "toMs": 5940,
+      "dtwMs": 5880,
+      "p": 0.984968
+    },
+    {
+      "text": " se",
+      "fromMs": 5990,
+      "toMs": 6080,
+      "dtwMs": 6000,
+      "p": 0.995545
+    },
+    {
+      "text": " acerca",
+      "fromMs": 6110,
+      "toMs": 6570,
+      "dtwMs": 6260,
+      "p": 0.989649
+    },
+    {
+      "text": " la",
+      "fromMs": 6650,
+      "toMs": 6720,
+      "dtwMs": 6380,
+      "p": 0.978808
+    },
+    {
+      "text": " noche",
+      "fromMs": 6810,
+      "toMs": 7240,
+      "dtwMs": 6620,
+      "p": 0.998927
+    },
+    {
+      "text": " aparece",
+      "fromMs": 7240,
+      "toMs": 7830,
+      "dtwMs": 7140,
+      "p": 0.785101
+    },
+    {
+      "text": " la",
+      "fromMs": 7850,
+      "toMs": 8020,
+      "dtwMs": 7480,
+      "p": 0.980699
+    },
+    {
+      "text": " cop",
+      "fromMs": 8020,
+      "toMs": 8270,
+      "dtwMs": 7660,
+      "p": 0.970362
+    },
+    {
+      "text": "a",
+      "fromMs": 8290,
+      "toMs": 8360,
+      "dtwMs": 7720,
+      "p": 0.991516
+    },
+    {
+      "text": " de",
+      "fromMs": 8360,
+      "toMs": 8530,
+      "dtwMs": 7800,
+      "p": 0.994918
+    },
+    {
+      "text": " vino",
+      "fromMs": 8530,
+      "toMs": 8960,
+      "dtwMs": 8000,
+      "p": 0.996888
+    }
+  ]
+}

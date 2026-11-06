@@ -1,0 +1,218 @@
+{
+  "archivo": "IMG_4593.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6998,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5600,
+      "texto": "Bueno, por ejemplo, si vos antes eras dentista, te lo hicieran Cotabud como un cepillo de dientes."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bueno",
+      "fromMs": 130,
+      "toMs": 310,
+      "dtwMs": 240,
+      "p": 0.569687
+    },
+    {
+      "text": ",",
+      "fromMs": 460,
+      "toMs": 570,
+      "dtwMs": 440,
+      "p": 0.860165
+    },
+    {
+      "text": " por",
+      "fromMs": 570,
+      "toMs": 820,
+      "dtwMs": 560,
+      "p": 0.990826
+    },
+    {
+      "text": " ejemplo",
+      "fromMs": 820,
+      "toMs": 1400,
+      "dtwMs": 900,
+      "p": 0.997291
+    },
+    {
+      "text": ",",
+      "fromMs": 1400,
+      "toMs": 1560,
+      "dtwMs": 1240,
+      "p": 0.713914
+    },
+    {
+      "text": " si",
+      "fromMs": 1560,
+      "toMs": 1640,
+      "dtwMs": 1300,
+      "p": 0.982943
+    },
+    {
+      "text": " vos",
+      "fromMs": 1670,
+      "toMs": 2000,
+      "dtwMs": 1600,
+      "p": 0.986081
+    },
+    {
+      "text": " antes",
+      "fromMs": 2000,
+      "toMs": 2290,
+      "dtwMs": 2180,
+      "p": 0.868219
+    },
+    {
+      "text": " er",
+      "fromMs": 2290,
+      "toMs": 2400,
+      "dtwMs": 2360,
+      "p": 0.901554
+    },
+    {
+      "text": "as",
+      "fromMs": 2400,
+      "toMs": 2510,
+      "dtwMs": 2440,
+      "p": 0.9422
+    },
+    {
+      "text": " dent",
+      "fromMs": 2510,
+      "toMs": 2740,
+      "dtwMs": 2680,
+      "p": 0.990027
+    },
+    {
+      "text": "ista",
+      "fromMs": 2740,
+      "toMs": 3000,
+      "dtwMs": 3040,
+      "p": 0.999375
+    },
+    {
+      "text": ",",
+      "fromMs": 3000,
+      "toMs": 3100,
+      "dtwMs": 3460,
+      "p": 0.619539
+    },
+    {
+      "text": " te",
+      "fromMs": 3200,
+      "toMs": 3280,
+      "dtwMs": 3560,
+      "p": 0.604448
+    },
+    {
+      "text": " lo",
+      "fromMs": 3280,
+      "toMs": 3420,
+      "dtwMs": 3620,
+      "p": 0.736218
+    },
+    {
+      "text": " hic",
+      "fromMs": 3480,
+      "toMs": 3630,
+      "dtwMs": 3760,
+      "p": 0.983429
+    },
+    {
+      "text": "ieran",
+      "fromMs": 3630,
+      "toMs": 3990,
+      "dtwMs": 3940,
+      "p": 0.957249
+    },
+    {
+      "text": " C",
+      "fromMs": 3990,
+      "toMs": 4090,
+      "dtwMs": 4320,
+      "p": 0.193785
+    },
+    {
+      "text": "ot",
+      "fromMs": 4090,
+      "toMs": 4130,
+      "dtwMs": 4420,
+      "p": 0.878268
+    },
+    {
+      "text": "ab",
+      "fromMs": 4280,
+      "toMs": 4450,
+      "dtwMs": 4560,
+      "p": 0.282497
+    },
+    {
+      "text": "ud",
+      "fromMs": 4450,
+      "toMs": 4640,
+      "dtwMs": 4640,
+      "p": 0.701477
+    },
+    {
+      "text": " como",
+      "fromMs": 4640,
+      "toMs": 4860,
+      "dtwMs": 4820,
+      "p": 0.890406
+    },
+    {
+      "text": " un",
+      "fromMs": 4860,
+      "toMs": 4920,
+      "dtwMs": 4960,
+      "p": 0.903719
+    },
+    {
+      "text": " cep",
+      "fromMs": 4980,
+      "toMs": 5030,
+      "dtwMs": 5100,
+      "p": 0.980836
+    },
+    {
+      "text": "illo",
+      "fromMs": 5030,
+      "toMs": 5170,
+      "dtwMs": 5200,
+      "p": 0.95423
+    },
+    {
+      "text": " de",
+      "fromMs": 5170,
+      "toMs": 5240,
+      "dtwMs": 5320,
+      "p": 0.983441
+    },
+    {
+      "text": " di",
+      "fromMs": 5240,
+      "toMs": 5310,
+      "dtwMs": 5420,
+      "p": 0.851138
+    },
+    {
+      "text": "entes",
+      "fromMs": 5310,
+      "toMs": 5470,
+      "dtwMs": 5580,
+      "p": 0.998628
+    },
+    {
+      "text": ".",
+      "fromMs": 5470,
+      "toMs": 5600,
+      "dtwMs": 5580,
+      "p": 0.83917
+    }
+  ]
+}

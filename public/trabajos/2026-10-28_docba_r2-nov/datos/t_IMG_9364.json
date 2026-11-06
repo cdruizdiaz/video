@@ -1,0 +1,201 @@
+{
+  "archivo": "IMG_9364.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6470,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        5665
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5660,
+      "texto": "En DOCBA tenemos un espacio amplio, variedad gastronómica y un servicio con todas las comodidades"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " En",
+      "fromMs": 0,
+      "toMs": 170,
+      "dtwMs": 1080,
+      "p": 0.482521
+    },
+    {
+      "text": " DO",
+      "fromMs": 170,
+      "toMs": 340,
+      "dtwMs": 1180,
+      "p": 0.420214
+    },
+    {
+      "text": "C",
+      "fromMs": 340,
+      "toMs": 420,
+      "dtwMs": 1260,
+      "p": 0.931095
+    },
+    {
+      "text": "BA",
+      "fromMs": 420,
+      "toMs": 590,
+      "dtwMs": 1340,
+      "p": 0.940308
+    },
+    {
+      "text": " tenemos",
+      "fromMs": 960,
+      "toMs": 1190,
+      "dtwMs": 1580,
+      "p": 0.976951
+    },
+    {
+      "text": " un",
+      "fromMs": 1280,
+      "toMs": 1350,
+      "dtwMs": 1760,
+      "p": 0.985359
+    },
+    {
+      "text": " espacio",
+      "fromMs": 1350,
+      "toMs": 1950,
+      "dtwMs": 2040,
+      "p": 0.995207
+    },
+    {
+      "text": " ampl",
+      "fromMs": 2060,
+      "toMs": 2280,
+      "dtwMs": 2320,
+      "p": 0.977935
+    },
+    {
+      "text": "io",
+      "fromMs": 2330,
+      "toMs": 2500,
+      "dtwMs": 2440,
+      "p": 0.998578
+    },
+    {
+      "text": ",",
+      "fromMs": 2500,
+      "toMs": 2560,
+      "dtwMs": 2560,
+      "p": 0.847034
+    },
+    {
+      "text": " varied",
+      "fromMs": 2560,
+      "toMs": 2760,
+      "dtwMs": 2680,
+      "p": 0.970616
+    },
+    {
+      "text": "ad",
+      "fromMs": 2760,
+      "toMs": 2840,
+      "dtwMs": 2820,
+      "p": 0.994272
+    },
+    {
+      "text": " gast",
+      "fromMs": 2840,
+      "toMs": 3010,
+      "dtwMs": 3000,
+      "p": 0.942603
+    },
+    {
+      "text": "ron",
+      "fromMs": 3030,
+      "toMs": 3150,
+      "dtwMs": 3100,
+      "p": 0.99548
+    },
+    {
+      "text": "óm",
+      "fromMs": 3150,
+      "toMs": 3240,
+      "dtwMs": 3220,
+      "p": 0.978988
+    },
+    {
+      "text": "ica",
+      "fromMs": 3240,
+      "toMs": 3400,
+      "dtwMs": 3360,
+      "p": 0.997227
+    },
+    {
+      "text": " y",
+      "fromMs": 3400,
+      "toMs": 3500,
+      "dtwMs": 3520,
+      "p": 0.751766
+    },
+    {
+      "text": " un",
+      "fromMs": 3500,
+      "toMs": 3590,
+      "dtwMs": 3640,
+      "p": 0.960733
+    },
+    {
+      "text": " servicio",
+      "fromMs": 3590,
+      "toMs": 4080,
+      "dtwMs": 4020,
+      "p": 0.946241
+    },
+    {
+      "text": " con",
+      "fromMs": 4170,
+      "toMs": 4220,
+      "dtwMs": 4280,
+      "p": 0.867128
+    },
+    {
+      "text": " todas",
+      "fromMs": 4220,
+      "toMs": 4560,
+      "dtwMs": 4500,
+      "p": 0.973372
+    },
+    {
+      "text": " las",
+      "fromMs": 4560,
+      "toMs": 4640,
+      "dtwMs": 4660,
+      "p": 0.95531
+    },
+    {
+      "text": " com",
+      "fromMs": 4730,
+      "toMs": 4960,
+      "dtwMs": 4840,
+      "p": 0.949874
+    },
+    {
+      "text": "od",
+      "fromMs": 4960,
+      "toMs": 5130,
+      "dtwMs": 4940,
+      "p": 0.999718
+    },
+    {
+      "text": "idades",
+      "fromMs": 5130,
+      "toMs": 5370,
+      "dtwMs": 5260,
+      "p": 0.999626
+    }
+  ]
+}

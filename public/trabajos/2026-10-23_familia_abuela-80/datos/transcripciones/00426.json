@@ -1,0 +1,1040 @@
+{
+  "archivo": "00426.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 31552,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5000,
+      "texto": "Tenemos a la abuela encerrada en el auto, hace cuándo chicas?"
+    },
+    {
+      "desdeMs": 5000,
+      "hastaMs": 7000,
+      "texto": "No, más de una hora."
+    },
+    {
+      "desdeMs": 7000,
+      "hastaMs": 8000,
+      "texto": "Más de una hora?"
+    },
+    {
+      "desdeMs": 8000,
+      "hastaMs": 10000,
+      "texto": "Será que Pobre está encerrada?"
+    },
+    {
+      "desdeMs": 10000,
+      "hastaMs": 12000,
+      "texto": "Estamos esperando a dos tipos."
+    },
+    {
+      "desdeMs": 12000,
+      "hastaMs": 14000,
+      "texto": "A dos tipos y un lechón."
+    },
+    {
+      "desdeMs": 14000,
+      "hastaMs": 15000,
+      "texto": "Y la este."
+    },
+    {
+      "desdeMs": 15000,
+      "hastaMs": 17000,
+      "texto": "Dos lechón es algo."
+    },
+    {
+      "desdeMs": 17000,
+      "hastaMs": 20000,
+      "texto": "Pero tienen el asado, entonces es como el que importa que hay."
+    },
+    {
+      "desdeMs": 20000,
+      "hastaMs": 23000,
+      "texto": "Tengo todo llenado, pero estoy tomando dinero con la pancha vacía."
+    },
+    {
+      "desdeMs": 23000,
+      "hastaMs": 26000,
+      "texto": "Ya vamos con los agulleros."
+    },
+    {
+      "desdeMs": 26000,
+      "hastaMs": 27000,
+      "texto": "¡Mira!"
+    },
+    {
+      "desdeMs": 27000,
+      "hastaMs": 28000,
+      "texto": "¡Mira!"
+    },
+    {
+      "desdeMs": 28000,
+      "hastaMs": 29000,
+      "texto": "¡Mira!"
+    },
+    {
+      "desdeMs": 29000,
+      "hastaMs": 30000,
+      "texto": "¡Mira!"
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 31000,
+      "texto": "¡Mira!"
+    },
+    {
+      "desdeMs": 31000,
+      "hastaMs": 32000,
+      "texto": "No tengo tantas..."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Tenemos",
+      "fromMs": 10,
+      "toMs": 640,
+      "dtwMs": 2820,
+      "p": 0.110641
+    },
+    {
+      "text": " a",
+      "fromMs": 640,
+      "toMs": 730,
+      "dtwMs": 3020,
+      "p": 0.926931
+    },
+    {
+      "text": " la",
+      "fromMs": 730,
+      "toMs": 910,
+      "dtwMs": 3060,
+      "p": 0.99962
+    },
+    {
+      "text": " ab",
+      "fromMs": 910,
+      "toMs": 1090,
+      "dtwMs": 3200,
+      "p": 0.998477
+    },
+    {
+      "text": "uela",
+      "fromMs": 1090,
+      "toMs": 1450,
+      "dtwMs": 3280,
+      "p": 0.998868
+    },
+    {
+      "text": " en",
+      "fromMs": 1450,
+      "toMs": 1630,
+      "dtwMs": 3420,
+      "p": 0.999804
+    },
+    {
+      "text": "cer",
+      "fromMs": 1630,
+      "toMs": 1900,
+      "dtwMs": 3540,
+      "p": 0.999996
+    },
+    {
+      "text": "rada",
+      "fromMs": 1900,
+      "toMs": 2260,
+      "dtwMs": 3660,
+      "p": 0.999504
+    },
+    {
+      "text": " en",
+      "fromMs": 2260,
+      "toMs": 2440,
+      "dtwMs": 3800,
+      "p": 0.999415
+    },
+    {
+      "text": " el",
+      "fromMs": 2440,
+      "toMs": 2620,
+      "dtwMs": 3900,
+      "p": 0.999981
+    },
+    {
+      "text": " auto",
+      "fromMs": 2620,
+      "toMs": 2990,
+      "dtwMs": 4120,
+      "p": 0.999847
+    },
+    {
+      "text": ",",
+      "fromMs": 2990,
+      "toMs": 3170,
+      "dtwMs": 4160,
+      "p": 0.406419
+    },
+    {
+      "text": " hace",
+      "fromMs": 3170,
+      "toMs": 3540,
+      "dtwMs": 4340,
+      "p": 0.610871
+    },
+    {
+      "text": " cu",
+      "fromMs": 3540,
+      "toMs": 3720,
+      "dtwMs": 4540,
+      "p": 0.526216
+    },
+    {
+      "text": "ánd",
+      "fromMs": 3720,
+      "toMs": 3990,
+      "dtwMs": 4660,
+      "p": 0.928706
+    },
+    {
+      "text": "o",
+      "fromMs": 3990,
+      "toMs": 4080,
+      "dtwMs": 4700,
+      "p": 0.999996
+    },
+    {
+      "text": " ch",
+      "fromMs": 4080,
+      "toMs": 4260,
+      "dtwMs": 4880,
+      "p": 0.528894
+    },
+    {
+      "text": "icas",
+      "fromMs": 4260,
+      "toMs": 4620,
+      "dtwMs": 5040,
+      "p": 0.994078
+    },
+    {
+      "text": "?",
+      "fromMs": 4620,
+      "toMs": 5000,
+      "dtwMs": 5320,
+      "p": 0.997571
+    },
+    {
+      "text": " No",
+      "fromMs": 5010,
+      "toMs": 5250,
+      "dtwMs": 5500,
+      "p": 0.478864
+    },
+    {
+      "text": ",",
+      "fromMs": 5250,
+      "toMs": 5490,
+      "dtwMs": 5640,
+      "p": 0.964941
+    },
+    {
+      "text": " más",
+      "fromMs": 5490,
+      "toMs": 5860,
+      "dtwMs": 5800,
+      "p": 0.876625
+    },
+    {
+      "text": " de",
+      "fromMs": 5860,
+      "toMs": 6110,
+      "dtwMs": 5920,
+      "p": 0.999983
+    },
+    {
+      "text": " una",
+      "fromMs": 6110,
+      "toMs": 6480,
+      "dtwMs": 6100,
+      "p": 0.935494
+    },
+    {
+      "text": " hora",
+      "fromMs": 6480,
+      "toMs": 7000,
+      "dtwMs": 6320,
+      "p": 0.999899
+    },
+    {
+      "text": ".",
+      "fromMs": 7000,
+      "toMs": 7000,
+      "dtwMs": 6400,
+      "p": 0.774632
+    },
+    {
+      "text": " M",
+      "fromMs": 7010,
+      "toMs": 7060,
+      "dtwMs": 6500,
+      "p": 0.615634
+    },
+    {
+      "text": "ás",
+      "fromMs": 7060,
+      "toMs": 7190,
+      "dtwMs": 6560,
+      "p": 0.999996
+    },
+    {
+      "text": " de",
+      "fromMs": 7190,
+      "toMs": 7320,
+      "dtwMs": 6640,
+      "p": 0.999969
+    },
+    {
+      "text": " una",
+      "fromMs": 7320,
+      "toMs": 7520,
+      "dtwMs": 6760,
+      "p": 0.998479
+    },
+    {
+      "text": " hora",
+      "fromMs": 7520,
+      "toMs": 7780,
+      "dtwMs": 7020,
+      "p": 0.999987
+    },
+    {
+      "text": "?",
+      "fromMs": 7780,
+      "toMs": 8000,
+      "dtwMs": 7380,
+      "p": 0.935701
+    },
+    {
+      "text": " Será",
+      "fromMs": 8010,
+      "toMs": 8280,
+      "dtwMs": 7960,
+      "p": 0.746504
+    },
+    {
+      "text": " que",
+      "fromMs": 8280,
+      "toMs": 8490,
+      "dtwMs": 8140,
+      "p": 0.99934
+    },
+    {
+      "text": " P",
+      "fromMs": 8490,
+      "toMs": 8560,
+      "dtwMs": 8320,
+      "p": 0.494509
+    },
+    {
+      "text": "ob",
+      "fromMs": 8560,
+      "toMs": 8700,
+      "dtwMs": 8420,
+      "p": 0.828081
+    },
+    {
+      "text": "re",
+      "fromMs": 8700,
+      "toMs": 8840,
+      "dtwMs": 8500,
+      "p": 0.997077
+    },
+    {
+      "text": " está",
+      "fromMs": 8840,
+      "toMs": 9120,
+      "dtwMs": 8660,
+      "p": 0.940812
+    },
+    {
+      "text": " en",
+      "fromMs": 9120,
+      "toMs": 9260,
+      "dtwMs": 8820,
+      "p": 0.999979
+    },
+    {
+      "text": "cer",
+      "fromMs": 9260,
+      "toMs": 9470,
+      "dtwMs": 8980,
+      "p": 0.999992
+    },
+    {
+      "text": "rada",
+      "fromMs": 9470,
+      "toMs": 9750,
+      "dtwMs": 9220,
+      "p": 0.999969
+    },
+    {
+      "text": "?",
+      "fromMs": 9750,
+      "toMs": 10000,
+      "dtwMs": 9480,
+      "p": 0.912092
+    },
+    {
+      "text": " Estamos",
+      "fromMs": 10010,
+      "toMs": 10550,
+      "dtwMs": 9760,
+      "p": 0.998428
+    },
+    {
+      "text": " esperando",
+      "fromMs": 10550,
+      "toMs": 11260,
+      "dtwMs": 10300,
+      "p": 0.999611
+    },
+    {
+      "text": " a",
+      "fromMs": 11260,
+      "toMs": 11340,
+      "dtwMs": 10620,
+      "p": 0.743903
+    },
+    {
+      "text": " dos",
+      "fromMs": 11340,
+      "toMs": 11580,
+      "dtwMs": 10780,
+      "p": 0.934966
+    },
+    {
+      "text": " tipos",
+      "fromMs": 11580,
+      "toMs": 12000,
+      "dtwMs": 11140,
+      "p": 0.988889
+    },
+    {
+      "text": ".",
+      "fromMs": 12000,
+      "toMs": 12000,
+      "dtwMs": 11880,
+      "p": 0.502394
+    },
+    {
+      "text": " A",
+      "fromMs": 12010,
+      "toMs": 12090,
+      "dtwMs": 13060,
+      "p": 0.320712
+    },
+    {
+      "text": " dos",
+      "fromMs": 12090,
+      "toMs": 12370,
+      "dtwMs": 13320,
+      "p": 0.997037
+    },
+    {
+      "text": " tipos",
+      "fromMs": 12370,
+      "toMs": 12840,
+      "dtwMs": 13500,
+      "p": 0.99759
+    },
+    {
+      "text": " y",
+      "fromMs": 12840,
+      "toMs": 12930,
+      "dtwMs": 13620,
+      "p": 0.970687
+    },
+    {
+      "text": " un",
+      "fromMs": 12930,
+      "toMs": 13120,
+      "dtwMs": 13720,
+      "p": 0.839861
+    },
+    {
+      "text": " le",
+      "fromMs": 13120,
+      "toMs": 13310,
+      "dtwMs": 13900,
+      "p": 0.994143
+    },
+    {
+      "text": "ch",
+      "fromMs": 13310,
+      "toMs": 13490,
+      "dtwMs": 13980,
+      "p": 0.999992
+    },
+    {
+      "text": "ón",
+      "fromMs": 13490,
+      "toMs": 13670,
+      "dtwMs": 14120,
+      "p": 0.992256
+    },
+    {
+      "text": ".",
+      "fromMs": 13670,
+      "toMs": 14000,
+      "dtwMs": 14620,
+      "p": 0.972787
+    },
+    {
+      "text": " Y",
+      "fromMs": 14010,
+      "toMs": 14100,
+      "dtwMs": 14620,
+      "p": 0.788891
+    },
+    {
+      "text": " la",
+      "fromMs": 14100,
+      "toMs": 14300,
+      "dtwMs": 14760,
+      "p": 0.734258
+    },
+    {
+      "text": " este",
+      "fromMs": 14300,
+      "toMs": 14690,
+      "dtwMs": 14940,
+      "p": 0.765853
+    },
+    {
+      "text": ".",
+      "fromMs": 14690,
+      "toMs": 15000,
+      "dtwMs": 15220,
+      "p": 0.445743
+    },
+    {
+      "text": " Dos",
+      "fromMs": 15010,
+      "toMs": 15330,
+      "dtwMs": 15580,
+      "p": 0.961265
+    },
+    {
+      "text": " le",
+      "fromMs": 15330,
+      "toMs": 15550,
+      "dtwMs": 15740,
+      "p": 0.999966
+    },
+    {
+      "text": "ch",
+      "fromMs": 15550,
+      "toMs": 15770,
+      "dtwMs": 15860,
+      "p": 0.981392
+    },
+    {
+      "text": "ón",
+      "fromMs": 15770,
+      "toMs": 15990,
+      "dtwMs": 15980,
+      "p": 0.497635
+    },
+    {
+      "text": " es",
+      "fromMs": 15990,
+      "toMs": 16210,
+      "dtwMs": 16160,
+      "p": 0.478955
+    },
+    {
+      "text": " algo",
+      "fromMs": 16210,
+      "toMs": 16650,
+      "dtwMs": 16320,
+      "p": 0.957974
+    },
+    {
+      "text": ".",
+      "fromMs": 16650,
+      "toMs": 17000,
+      "dtwMs": 16640,
+      "p": 0.940394
+    },
+    {
+      "text": " Pero",
+      "fromMs": 17010,
+      "toMs": 17220,
+      "dtwMs": 17680,
+      "p": 0.384198
+    },
+    {
+      "text": " tienen",
+      "fromMs": 17220,
+      "toMs": 17550,
+      "dtwMs": 17940,
+      "p": 0.997307
+    },
+    {
+      "text": " el",
+      "fromMs": 17550,
+      "toMs": 17660,
+      "dtwMs": 18160,
+      "p": 0.999438
+    },
+    {
+      "text": " as",
+      "fromMs": 17660,
+      "toMs": 17770,
+      "dtwMs": 18360,
+      "p": 0.999962
+    },
+    {
+      "text": "ado",
+      "fromMs": 17770,
+      "toMs": 17930,
+      "dtwMs": 18480,
+      "p": 0.999962
+    },
+    {
+      "text": ",",
+      "fromMs": 17930,
+      "toMs": 18040,
+      "dtwMs": 18560,
+      "p": 0.662947
+    },
+    {
+      "text": " entonces",
+      "fromMs": 18040,
+      "toMs": 18480,
+      "dtwMs": 18660,
+      "p": 0.971197
+    },
+    {
+      "text": " es",
+      "fromMs": 18480,
+      "toMs": 18590,
+      "dtwMs": 18840,
+      "p": 0.975923
+    },
+    {
+      "text": " como",
+      "fromMs": 18590,
+      "toMs": 18810,
+      "dtwMs": 18980,
+      "p": 0.991815
+    },
+    {
+      "text": " el",
+      "fromMs": 18810,
+      "toMs": 18920,
+      "dtwMs": 19160,
+      "p": 0.786244
+    },
+    {
+      "text": " que",
+      "fromMs": 18920,
+      "toMs": 19080,
+      "dtwMs": 19240,
+      "p": 0.996158
+    },
+    {
+      "text": " importa",
+      "fromMs": 19080,
+      "toMs": 19460,
+      "dtwMs": 19560,
+      "p": 0.999195
+    },
+    {
+      "text": " que",
+      "fromMs": 19460,
+      "toMs": 19620,
+      "dtwMs": 19740,
+      "p": 0.984617
+    },
+    {
+      "text": " hay",
+      "fromMs": 19620,
+      "toMs": 19780,
+      "dtwMs": 19860,
+      "p": 0.976837
+    },
+    {
+      "text": ".",
+      "fromMs": 19780,
+      "toMs": 20000,
+      "dtwMs": 20120,
+      "p": 0.996103
+    },
+    {
+      "text": " T",
+      "fromMs": 20010,
+      "toMs": 20050,
+      "dtwMs": 20500,
+      "p": 0.425397
+    },
+    {
+      "text": "engo",
+      "fromMs": 20050,
+      "toMs": 20250,
+      "dtwMs": 20660,
+      "p": 0.993229
+    },
+    {
+      "text": " todo",
+      "fromMs": 20250,
+      "toMs": 20450,
+      "dtwMs": 20860,
+      "p": 0.954689
+    },
+    {
+      "text": " ll",
+      "fromMs": 20450,
+      "toMs": 20550,
+      "dtwMs": 21040,
+      "p": 0.771113
+    },
+    {
+      "text": "en",
+      "fromMs": 20550,
+      "toMs": 20650,
+      "dtwMs": 21160,
+      "p": 0.993316
+    },
+    {
+      "text": "ado",
+      "fromMs": 20650,
+      "toMs": 20800,
+      "dtwMs": 21280,
+      "p": 0.86038
+    },
+    {
+      "text": ",",
+      "fromMs": 20800,
+      "toMs": 20900,
+      "dtwMs": 21380,
+      "p": 0.676525
+    },
+    {
+      "text": " pero",
+      "fromMs": 20900,
+      "toMs": 21100,
+      "dtwMs": 21440,
+      "p": 0.987027
+    },
+    {
+      "text": " estoy",
+      "fromMs": 21100,
+      "toMs": 21350,
+      "dtwMs": 21600,
+      "p": 0.9995
+    },
+    {
+      "text": " tom",
+      "fromMs": 21350,
+      "toMs": 21500,
+      "dtwMs": 21800,
+      "p": 0.999949
+    },
+    {
+      "text": "ando",
+      "fromMs": 21500,
+      "toMs": 21700,
+      "dtwMs": 21940,
+      "p": 0.997295
+    },
+    {
+      "text": " dinero",
+      "fromMs": 21700,
+      "toMs": 22000,
+      "dtwMs": 22100,
+      "p": 0.880516
+    },
+    {
+      "text": " con",
+      "fromMs": 22000,
+      "toMs": 22150,
+      "dtwMs": 22260,
+      "p": 0.953455
+    },
+    {
+      "text": " la",
+      "fromMs": 22150,
+      "toMs": 22250,
+      "dtwMs": 22400,
+      "p": 0.996381
+    },
+    {
+      "text": " pan",
+      "fromMs": 22250,
+      "toMs": 22400,
+      "dtwMs": 22540,
+      "p": 0.998953
+    },
+    {
+      "text": "cha",
+      "fromMs": 22400,
+      "toMs": 22550,
+      "dtwMs": 22660,
+      "p": 0.534721
+    },
+    {
+      "text": " vac",
+      "fromMs": 22550,
+      "toMs": 22700,
+      "dtwMs": 23000,
+      "p": 0.996288
+    },
+    {
+      "text": "ía",
+      "fromMs": 22700,
+      "toMs": 22800,
+      "dtwMs": 23160,
+      "p": 0.993915
+    },
+    {
+      "text": ".",
+      "fromMs": 22800,
+      "toMs": 23000,
+      "dtwMs": 24140,
+      "p": 0.99732
+    },
+    {
+      "text": " Ya",
+      "fromMs": 23010,
+      "toMs": 23240,
+      "dtwMs": 24460,
+      "p": 0.353031
+    },
+    {
+      "text": " vamos",
+      "fromMs": 23240,
+      "toMs": 23840,
+      "dtwMs": 24620,
+      "p": 0.914848
+    },
+    {
+      "text": " con",
+      "fromMs": 23840,
+      "toMs": 24200,
+      "dtwMs": 24740,
+      "p": 0.74727
+    },
+    {
+      "text": " los",
+      "fromMs": 24200,
+      "toMs": 24560,
+      "dtwMs": 24920,
+      "p": 0.463245
+    },
+    {
+      "text": " ag",
+      "fromMs": 24560,
+      "toMs": 24790,
+      "dtwMs": 25240,
+      "p": 0.711303
+    },
+    {
+      "text": "ull",
+      "fromMs": 24800,
+      "toMs": 25150,
+      "dtwMs": 25420,
+      "p": 0.513074
+    },
+    {
+      "text": "eros",
+      "fromMs": 25150,
+      "toMs": 25620,
+      "dtwMs": 25540,
+      "p": 0.956473
+    },
+    {
+      "text": ".",
+      "fromMs": 25620,
+      "toMs": 26000,
+      "dtwMs": 25980,
+      "p": 0.99728
+    },
+    {
+      "text": " ¡",
+      "fromMs": 26010,
+      "toMs": 26120,
+      "dtwMs": 26200,
+      "p": 0.0815171
+    },
+    {
+      "text": "M",
+      "fromMs": 26120,
+      "toMs": 26240,
+      "dtwMs": 27300,
+      "p": 0.34807
+    },
+    {
+      "text": "ira",
+      "fromMs": 26240,
+      "toMs": 26610,
+      "dtwMs": 27460,
+      "p": 0.460977
+    },
+    {
+      "text": "!",
+      "fromMs": 26610,
+      "toMs": 27000,
+      "dtwMs": 27620,
+      "p": 0.523801
+    },
+    {
+      "text": " ¡",
+      "fromMs": 27010,
+      "toMs": 27120,
+      "dtwMs": 27780,
+      "p": 0.692395
+    },
+    {
+      "text": "M",
+      "fromMs": 27120,
+      "toMs": 27240,
+      "dtwMs": 27780,
+      "p": 0.471146
+    },
+    {
+      "text": "ira",
+      "fromMs": 27240,
+      "toMs": 27610,
+      "dtwMs": 27780,
+      "p": 0.930969
+    },
+    {
+      "text": "!",
+      "fromMs": 27610,
+      "toMs": 28000,
+      "dtwMs": 28000,
+      "p": 0.660351
+    },
+    {
+      "text": " ¡",
+      "fromMs": 28010,
+      "toMs": 28120,
+      "dtwMs": 28000,
+      "p": 0.801274
+    },
+    {
+      "text": "M",
+      "fromMs": 28120,
+      "toMs": 28240,
+      "dtwMs": 28180,
+      "p": 0.561127
+    },
+    {
+      "text": "ira",
+      "fromMs": 28240,
+      "toMs": 28610,
+      "dtwMs": 28320,
+      "p": 0.974447
+    },
+    {
+      "text": "!",
+      "fromMs": 28610,
+      "toMs": 29000,
+      "dtwMs": 28660,
+      "p": 0.79781
+    },
+    {
+      "text": " ¡",
+      "fromMs": 29010,
+      "toMs": 29120,
+      "dtwMs": 28660,
+      "p": 0.624736
+    },
+    {
+      "text": "M",
+      "fromMs": 29120,
+      "toMs": 29240,
+      "dtwMs": 28660,
+      "p": 0.597921
+    },
+    {
+      "text": "ira",
+      "fromMs": 29240,
+      "toMs": 29610,
+      "dtwMs": 28800,
+      "p": 0.987843
+    },
+    {
+      "text": "!",
+      "fromMs": 29610,
+      "toMs": 30000,
+      "dtwMs": 29080,
+      "p": 0.889518
+    },
+    {
+      "text": " ¡",
+      "fromMs": 30010,
+      "toMs": 30120,
+      "dtwMs": 29080,
+      "p": 0.446763
+    },
+    {
+      "text": "M",
+      "fromMs": 30120,
+      "toMs": 30240,
+      "dtwMs": 29180,
+      "p": 0.424375
+    },
+    {
+      "text": "ira",
+      "fromMs": 30240,
+      "toMs": 30610,
+      "dtwMs": 29280,
+      "p": 0.988016
+    },
+    {
+      "text": "!",
+      "fromMs": 30610,
+      "toMs": 31000,
+      "dtwMs": 30080,
+      "p": 0.929566
+    },
+    {
+      "text": " No",
+      "fromMs": 31010,
+      "toMs": 31090,
+      "dtwMs": 30980,
+      "p": 0.586661
+    },
+    {
+      "text": " tengo",
+      "fromMs": 31090,
+      "toMs": 31310,
+      "dtwMs": 31180,
+      "p": 0.951971
+    },
+    {
+      "text": " tant",
+      "fromMs": 31310,
+      "toMs": 31490,
+      "dtwMs": 31420,
+      "p": 0.44146
+    },
+    {
+      "text": "as",
+      "fromMs": 31490,
+      "toMs": 31580,
+      "dtwMs": 31520,
+      "p": 0.918319
+    },
+    {
+      "text": "...",
+      "fromMs": 31580,
+      "toMs": 32000,
+      "dtwMs": 31520,
+      "p": 0.192865
+    }
+  ]
+}

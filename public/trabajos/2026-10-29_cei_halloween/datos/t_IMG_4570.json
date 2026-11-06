@@ -1,0 +1,43 @@
+{
+  "archivo": "IMG_4570.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2182,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1440,
+      "texto": "They have offerings."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " They",
+      "fromMs": 0,
+      "toMs": 280,
+      "dtwMs": 300,
+      "p": 0.422789
+    },
+    {
+      "text": " have",
+      "fromMs": 280,
+      "toMs": 560,
+      "dtwMs": 740,
+      "p": 0.920747
+    },
+    {
+      "text": " offerings",
+      "fromMs": 560,
+      "toMs": 1090,
+      "dtwMs": 1420,
+      "p": 0.982683
+    },
+    {
+      "text": ".",
+      "fromMs": 1190,
+      "toMs": 1440,
+      "dtwMs": 1420,
+      "p": 0.828035
+    }
+  ]
+}

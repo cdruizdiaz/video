@@ -1,0 +1,78 @@
+{
+  "archivo": "IMG_4615.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3967,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3960,
+      "texto": "Madagascar, México, China."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Mad",
+      "fromMs": 80,
+      "toMs": 370,
+      "dtwMs": 260,
+      "p": 0.914017
+    },
+    {
+      "text": "ag",
+      "fromMs": 370,
+      "toMs": 620,
+      "dtwMs": 520,
+      "p": 0.963827
+    },
+    {
+      "text": "asc",
+      "fromMs": 620,
+      "toMs": 900,
+      "dtwMs": 720,
+      "p": 0.998016
+    },
+    {
+      "text": "ar",
+      "fromMs": 990,
+      "toMs": 1260,
+      "dtwMs": 880,
+      "p": 0.999754
+    },
+    {
+      "text": ",",
+      "fromMs": 1340,
+      "toMs": 1480,
+      "dtwMs": 1080,
+      "p": 0.894923
+    },
+    {
+      "text": " México",
+      "fromMs": 1480,
+      "toMs": 2160,
+      "dtwMs": 1920,
+      "p": 0.917467
+    },
+    {
+      "text": ",",
+      "fromMs": 2160,
+      "toMs": 2670,
+      "dtwMs": 2380,
+      "p": 0.740196
+    },
+    {
+      "text": " China",
+      "fromMs": 2670,
+      "toMs": 3940,
+      "dtwMs": 3780,
+      "p": 0.900891
+    },
+    {
+      "text": ".",
+      "fromMs": 3960,
+      "toMs": 3960,
+      "dtwMs": 3780,
+      "p": 0.377786
+    }
+  ]
+}

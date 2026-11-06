@@ -19,9 +19,8 @@ export type Grafico =
   | { tipo: "etiquetasAHS"; y: number; beatsMs: number[] }
   | { tipo: "noTeCases"; y: number; cada: number }
   | { tipo: "factoria"; y: number }
-  | { tipo: "fotoYolanda"; x: number; y: number }
   | { tipo: "ventanaDiseno"; y: number; escala: number }
-  | { tipo: "discoLali" | "tapaAudiolibro" | "comentario"; y: number };
+  | { tipo: "discoLali" | "comentario"; y: number };
 
 export type Inserto = {
   toma: number;
@@ -31,9 +30,24 @@ export type Inserto = {
   sonidos: { ms: number; src: string; volumen?: number }[]; // ms del clip; volumen: × efectosVolumen
 };
 
+// personaje que asoma DETRÁS de la persona (CapaDetras de HablaSubtitulada). Va como datos y el JSX se arma acá:
+// las props de la composición se serializan y un elemento de React no sobrevive (error #31 al renderizar)
+export type Asoma = {
+  clip: string;
+  desdeMs: number;
+  hastaMs: number;
+  recorte: string; // en carpetaVideos (scripts/mascaras.py)
+  recorteDesdeMs: number;
+  desde: { x: number; y: number };
+  hasta: { x: number; y: number };
+  escondeMs: number; // ms del clip en que vuelve detrás
+  sonido?: string; // suena al empezar a asomar
+};
+
 export type ReelConsumosProps = HablaSubtituladaProps & {
   insertos: Inserto[];
   efectosVolumen: number;
+  asoma?: Asoma;
 };
 
 const aCuadros = (ms: number) => Math.round((ms / 1000) * FPS);
@@ -55,14 +69,10 @@ const Dibujo: React.FC<{ g: Grafico; desdeMs: number }> = ({ g, desdeMs }) => {
       return <G.NoTeCases y={g.y} cada={g.cada} />;
     case "factoria":
       return <G.Factoria y={g.y} />;
-    case "fotoYolanda":
-      return <G.FotoYolanda x={g.x} y={g.y} />;
     case "ventanaDiseno":
       return <G.VentanaDiseno y={g.y} escala={g.escala} />;
     case "discoLali":
       return <G.DiscoLali y={g.y} />;
-    case "tapaAudiolibro":
-      return <G.TapaAudiolibro y={g.y} />;
     case "comentario":
       return <G.Comentario y={g.y} />;
   }
@@ -71,6 +81,7 @@ const Dibujo: React.FC<{ g: Grafico; desdeMs: number }> = ({ g, desdeMs }) => {
 export const ReelConsumos: React.FC<ReelConsumosProps> = ({
   insertos,
   efectosVolumen,
+  asoma,
   ...p
 }) => {
   const inicios: number[] = [];
@@ -80,8 +91,16 @@ export const ReelConsumos: React.FC<ReelConsumosProps> = ({
   }, 0);
   const enSalida = (toma: number, ms: number) =>
     inicios[toma] + aCuadros(ms - p.tomas[toma].desdeMs);
+  const tomaAsoma = asoma
+    ? p.tomas.findIndex((t) => t.clip === asoma.clip)
+    : -1;
   const capa = (
     <AbsoluteFill>
+      {asoma?.sonido && tomaAsoma >= 0 ? (
+        <Sequence from={enSalida(tomaAsoma, asoma.desdeMs)} name="sonido asoma">
+          <Audio src={staticFile(asoma.sonido)} volume={() => efectosVolumen} />
+        </Sequence>
+      ) : null}
       {insertos.map((ins, i) => {
         const desde = enSalida(ins.toma, ins.ms);
         const fin =
@@ -116,5 +135,23 @@ export const ReelConsumos: React.FC<ReelConsumosProps> = ({
       )}
     </AbsoluteFill>
   );
-  return <HablaSubtitulada {...p} sobreVideo={capa} />;
+  const detras = asoma
+    ? [
+        {
+          clip: asoma.clip,
+          desdeMs: asoma.desdeMs,
+          hastaMs: asoma.hastaMs,
+          recorte: asoma.recorte,
+          recorteDesdeMs: asoma.recorteDesdeMs,
+          contenido: (
+            <G.PauAsoma
+              desde={asoma.desde}
+              hasta={asoma.hasta}
+              escondeEn={aCuadros(asoma.escondeMs - asoma.desdeMs)}
+            />
+          ),
+        },
+      ]
+    : p.detrasDePersona;
+  return <HablaSubtitulada {...p} detrasDePersona={detras} sobreVideo={capa} />;
 };

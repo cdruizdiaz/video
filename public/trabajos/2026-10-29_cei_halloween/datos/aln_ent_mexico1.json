@@ -1,0 +1,32 @@
+[
+ {
+  "palabra": "What",
+  "ini": 1.32,
+  "fin": 1.42
+ },
+ {
+  "palabra": "country",
+  "ini": 1.58,
+  "fin": 1.96
+ },
+ {
+  "palabra": "did",
+  "ini": 2.1,
+  "fin": 2.24
+ },
+ {
+  "palabra": "you",
+  "ini": 2.36,
+  "fin": 2.52
+ },
+ {
+  "palabra": "research?",
+  "ini": 2.76,
+  "fin": 3.2
+ },
+ {
+  "palabra": "Mexico.",
+  "ini": 4.24,
+  "fin": 4.6
+ }
+]

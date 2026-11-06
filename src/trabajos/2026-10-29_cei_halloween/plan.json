@@ -1,0 +1,426 @@
+{
+ "video": [
+  {
+   "clip": "IMG_4544",
+   "ini": 2.0,
+   "dur": 1.5
+  },
+  {
+   "clip": "IMG_4648",
+   "ini": 0.91,
+   "dur": 2.96,
+   "flash": true
+  },
+  {
+   "clip": "IMG_4611",
+   "ini": 6.0,
+   "dur": 2.722,
+   "rot": 1.05,
+   "esc": 1.042
+  },
+  {
+   "clip": "IMG_4612",
+   "ini": 12.0,
+   "dur": 2.722,
+   "rot": 2.44,
+   "esc": 1.085,
+   "luz": 1.13
+  },
+  {
+   "clip": "IMG_4615",
+   "ini": 0.5,
+   "dur": 2.722,
+   "rot": 3.55,
+   "esc": 1.118
+  },
+  {
+   "clip": "IMG_4613",
+   "ini": 1.0,
+   "dur": 2.722,
+   "rot": 2.01,
+   "esc": 1.072,
+   "luz": 1.17
+  },
+  {
+   "clip": "IMG_4559",
+   "ini": 0.3,
+   "dur": 2.722,
+   "rot": -1.01,
+   "esc": 1.041
+  },
+  {
+   "clip": "IMG_4547",
+   "ini": 5.7,
+   "dur": 3.13,
+   "flash": true
+  },
+  {
+   "clip": "IMG_4618",
+   "ini": 0.2,
+   "dur": 1.613,
+   "luz": 1.12
+  },
+  {
+   "clip": "IMG_4576",
+   "ini": 0.2,
+   "dur": 1.613,
+   "rot": 2.86,
+   "esc": 1.097
+  },
+  {
+   "clip": "IMG_4584",
+   "ini": 0.5,
+   "dur": 1.613,
+   "luz": 1.09
+  },
+  {
+   "clip": "IMG_4634",
+   "ini": 10.0,
+   "dur": 1.613,
+   "rot": -4.38,
+   "esc": 1.143,
+   "luz": 1.51
+  },
+  {
+   "clip": "IMG_4606",
+   "ini": 0.3,
+   "dur": 1.175
+  },
+  {
+   "clip": "IMG_4622",
+   "ini": 3.0,
+   "dur": 1.175,
+   "luz": 1.37
+  },
+  {
+   "clip": "IMG_4596",
+   "ini": 0.58,
+   "dur": 4.77,
+   "flash": true
+  },
+  {
+   "clip": "IMG_4638",
+   "ini": 0.5,
+   "dur": 2.042
+  },
+  {
+   "clip": "IMG_4560",
+   "ini": 0.0,
+   "dur": 1.328,
+   "luz": 1.12
+  },
+  {
+   "clip": "IMG_4614",
+   "ini": 71.03,
+   "dur": 3.44,
+   "flash": true
+  },
+  {
+   "clip": "IMG_4582",
+   "ini": 2.0,
+   "dur": 2.46,
+   "luz": 1.26
+  },
+  {
+   "clip": "IMG_4583",
+   "ini": 0.8,
+   "dur": 2.46,
+   "luz": 1.15
+  },
+  {
+   "clip": "IMG_4578",
+   "ini": 1.5,
+   "dur": 2.46
+  },
+  {
+   "clip": "IMG_4614",
+   "ini": 81.85,
+   "dur": 1.148
+  }
+ ],
+ "audio": [
+  {
+   "id": "apertura_0",
+   "desde": 0.0,
+   "dur": 1.5,
+   "gananciaDb": -10.4,
+   "fade": 2
+  },
+  {
+   "id": "hook_0",
+   "desde": 1.5,
+   "dur": 13.75,
+   "gananciaDb": 9.7,
+   "fade": 2
+  },
+  {
+   "id": "hook_1",
+   "desde": 15.25,
+   "dur": 2.82,
+   "gananciaDb": 9.7,
+   "fade": 2
+  },
+  {
+   "id": "china_0",
+   "desde": 18.07,
+   "dur": 7.48,
+   "gananciaDb": 1.5,
+   "fade": 2
+  },
+  {
+   "id": "china_1",
+   "desde": 25.55,
+   "dur": 0.76,
+   "gananciaDb": 1.5,
+   "fade": 2
+  },
+  {
+   "id": "china_2",
+   "desde": 26.31,
+   "dur": 1.34,
+   "gananciaDb": 1.5,
+   "fade": 2
+  },
+  {
+   "id": "idea_0",
+   "desde": 30.0,
+   "dur": 8.14,
+   "gananciaDb": 1.2,
+   "fade": 3
+  },
+  {
+   "id": "finito_0",
+   "desde": 38.14,
+   "dur": 11.97,
+   "gananciaDb": 2.8,
+   "fade": 3
+  }
+ ],
+ "subs": [
+  {
+   "t": "Aquí estamos en",
+   "desde": 1.82,
+   "hasta": 2.62
+  },
+  {
+   "t": "el Museo",
+   "desde": 2.62,
+   "hasta": 3.28
+  },
+  {
+   "t": "El Umbral,",
+   "desde": 3.28,
+   "hasta": 4.19
+  },
+  {
+   "t": "un trabajo colaborativo",
+   "desde": 4.46,
+   "hasta": 5.96
+  },
+  {
+   "t": "que hemos hecho",
+   "desde": 5.96,
+   "hasta": 6.66
+  },
+  {
+   "t": "con todos los",
+   "desde": 6.66,
+   "hasta": 7.4
+  },
+  {
+   "t": "grupos y alumnos",
+   "desde": 7.4,
+   "hasta": 8.38
+  },
+  {
+   "t": "del instituto",
+   "desde": 8.38,
+   "hasta": 9.56
+  },
+  {
+   "t": "con el objetivo",
+   "desde": 9.56,
+   "hasta": 10.46
+  },
+  {
+   "t": "de indagar",
+   "desde": 10.46,
+   "hasta": 11.24
+  },
+  {
+   "t": "sobre distintos",
+   "desde": 11.24,
+   "hasta": 12.48
+  },
+  {
+   "t": "rituales funerarios en",
+   "desde": 12.48,
+   "hasta": 14.02
+  },
+  {
+   "t": "el contexto",
+   "desde": 14.02,
+   "hasta": 14.82
+  },
+  {
+   "t": "de la",
+   "desde": 14.82,
+   "hasta": 15.25
+  },
+  {
+   "t": "festividad que se",
+   "desde": 15.28,
+   "hasta": 16.02
+  },
+  {
+   "t": "avecina, que",
+   "desde": 16.02,
+   "hasta": 16.92
+  },
+  {
+   "t": "es Halloween.",
+   "desde": 16.92,
+   "hasta": 18.09
+  },
+  {
+   "t": "En este caso",
+   "desde": 18.26,
+   "hasta": 19.0
+  },
+  {
+   "t": "estamos en China.",
+   "desde": 19.0,
+   "hasta": 20.83
+  },
+  {
+   "t": "Los chicos estuvieron",
+   "desde": 21.2,
+   "hasta": 22.08
+  },
+  {
+   "t": "investigando sobre",
+   "desde": 22.08,
+   "hasta": 23.12
+  },
+  {
+   "t": "los diferentes festivales",
+   "desde": 23.12,
+   "hasta": 24.3
+  },
+  {
+   "t": "que se hacen",
+   "desde": 24.3,
+   "hasta": 24.98
+  },
+  {
+   "t": "en China",
+   "desde": 24.98,
+   "hasta": 25.55
+  },
+  {
+   "t": "una vez que",
+   "desde": 25.62,
+   "hasta": 26.31
+  },
+  {
+   "t": "una persona fallece.",
+   "desde": 26.36,
+   "hasta": 27.67
+  },
+  {
+   "t": "La idea del",
+   "desde": 30.05,
+   "hasta": 30.69
+  },
+  {
+   "t": "museo este año",
+   "desde": 30.69,
+   "hasta": 31.93
+  },
+  {
+   "t": "es poder mostrarles",
+   "desde": 31.93,
+   "hasta": 33.69
+  },
+  {
+   "t": "a todos",
+   "desde": 33.69,
+   "hasta": 34.03
+  },
+  {
+   "t": "los papás",
+   "desde": 34.03,
+   "hasta": 34.77
+  },
+  {
+   "t": "diferentes culturas, cómo",
+   "desde": 34.77,
+   "hasta": 36.83
+  },
+  {
+   "t": "ven ellos",
+   "desde": 36.83,
+   "hasta": 37.31
+  },
+  {
+   "t": "la muerte.",
+   "desde": 37.31,
+   "hasta": 38.16
+  },
+  {
+   "t": "Y al reflexionar",
+   "desde": 38.46,
+   "hasta": 39.58
+  },
+  {
+   "t": "sobre la realidad",
+   "desde": 39.58,
+   "hasta": 40.66
+  },
+  {
+   "t": "de ser finito,",
+   "desde": 40.66,
+   "hasta": 41.58
+  },
+  {
+   "t": "nos permite valorar",
+   "desde": 41.58,
+   "hasta": 43.16
+  },
+  {
+   "t": "mucho más",
+   "desde": 43.16,
+   "hasta": 43.66
+  },
+  {
+   "t": "la vida,",
+   "desde": 43.66,
+   "hasta": 44.45
+  },
+  {
+   "t": "los afectos y",
+   "desde": 44.94,
+   "hasta": 47.34
+  },
+  {
+   "t": "tomar mejores decisiones",
+   "desde": 47.34,
+   "hasta": 48.96
+  },
+  {
+   "t": "de alguna manera.",
+   "desde": 48.96,
+   "hasta": 50.13
+  }
+ ],
+ "tags": [],
+ "musicaSola": [
+  {
+   "desde": 27.65,
+   "hasta": 30.0,
+   "nivel": 0.4
+  }
+ ],
+ "musicaDesde": 1.5,
+ "finTomas": 50.11
+}

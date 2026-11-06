@@ -1,0 +1,44 @@
+{
+  "archivo": "IMG_9356.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2748,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        1261
+      ],
+      [
+        2498,
+        2748
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1000,
+      "texto": "Gracias."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Gracias",
+      "fromMs": 0,
+      "toMs": 700,
+      "dtwMs": 200,
+      "p": 0.98801
+    },
+    {
+      "text": ".",
+      "fromMs": 700,
+      "toMs": 1000,
+      "dtwMs": 980,
+      "p": 0.985004
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "archivo": "IMG_9324.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7537,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        608,
+        1238
+      ],
+      [
+        2963,
+        5810
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 608,
+      "hastaMs": 5533,
+      "texto": "¿Por qué andar con tu café de un lado para el otro si podes entrar?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 608,
+      "toMs": 688,
+      "dtwMs": 3093,
+      "p": 0.126449
+    },
+    {
+      "text": "Por",
+      "fromMs": 698,
+      "toMs": 968,
+      "dtwMs": 3273,
+      "p": 0.801019
+    },
+    {
+      "text": " qué",
+      "fromMs": 968,
+      "toMs": 998,
+      "dtwMs": 3373,
+      "p": 0.843045
+    },
+    {
+      "text": " andar",
+      "fromMs": 3133,
+      "toMs": 3133,
+      "dtwMs": 3533,
+      "p": 0.992966
+    },
+    {
+      "text": " con",
+      "fromMs": 3213,
+      "toMs": 3413,
+      "dtwMs": 3673,
+      "p": 0.973825
+    },
+    {
+      "text": " tu",
+      "fromMs": 3413,
+      "toMs": 3553,
+      "dtwMs": 3773,
+      "p": 0.987142
+    },
+    {
+      "text": " café",
+      "fromMs": 3613,
+      "toMs": 3993,
+      "dtwMs": 3993,
+      "p": 0.974324
+    },
+    {
+      "text": " de",
+      "fromMs": 3993,
+      "toMs": 4073,
+      "dtwMs": 4113,
+      "p": 0.949471
+    },
+    {
+      "text": " un",
+      "fromMs": 4073,
+      "toMs": 4153,
+      "dtwMs": 4133,
+      "p": 0.983249
+    },
+    {
+      "text": " lado",
+      "fromMs": 4153,
+      "toMs": 4293,
+      "dtwMs": 4253,
+      "p": 0.995735
+    },
+    {
+      "text": " para",
+      "fromMs": 4333,
+      "toMs": 4493,
+      "dtwMs": 4413,
+      "p": 0.948987
+    },
+    {
+      "text": " el",
+      "fromMs": 4493,
+      "toMs": 4573,
+      "dtwMs": 4533,
+      "p": 0.989259
+    },
+    {
+      "text": " otro",
+      "fromMs": 4573,
+      "toMs": 4783,
+      "dtwMs": 4713,
+      "p": 0.995577
+    },
+    {
+      "text": " si",
+      "fromMs": 4783,
+      "toMs": 4793,
+      "dtwMs": 4933,
+      "p": 0.756377
+    },
+    {
+      "text": " pod",
+      "fromMs": 4913,
+      "toMs": 4943,
+      "dtwMs": 5093,
+      "p": 0.835333
+    },
+    {
+      "text": "es",
+      "fromMs": 5013,
+      "toMs": 5103,
+      "dtwMs": 5173,
+      "p": 0.552718
+    },
+    {
+      "text": " entrar",
+      "fromMs": 5103,
+      "toMs": 5373,
+      "dtwMs": 5473,
+      "p": 0.992599
+    },
+    {
+      "text": "?",
+      "fromMs": 5373,
+      "toMs": 5513,
+      "dtwMs": 5513,
+      "p": 0.986718
+    }
+  ]
+}

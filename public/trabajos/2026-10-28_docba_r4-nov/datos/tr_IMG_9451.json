@@ -1,0 +1,77 @@
+{
+  "archivo": "IMG_9451.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 23263,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        9627,
+        11304
+      ],
+      [
+        12364,
+        12873
+      ],
+      [
+        15208,
+        15708
+      ],
+      [
+        17125,
+        17639
+      ],
+      [
+        19848,
+        20367
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 9627,
+      "hastaMs": 11047,
+      "texto": "Como recortes."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Como",
+      "fromMs": 9857,
+      "toMs": 9907,
+      "dtwMs": 10147,
+      "p": 0.306744
+    },
+    {
+      "text": " rec",
+      "fromMs": 10007,
+      "toMs": 10277,
+      "dtwMs": 10647,
+      "p": 0.376499
+    },
+    {
+      "text": "ort",
+      "fromMs": 10277,
+      "toMs": 10507,
+      "dtwMs": 10807,
+      "p": 0.978666
+    },
+    {
+      "text": "es",
+      "fromMs": 10597,
+      "toMs": 10737,
+      "dtwMs": 11027,
+      "p": 0.9979
+    },
+    {
+      "text": ".",
+      "fromMs": 10737,
+      "toMs": 10927,
+      "dtwMs": 11027,
+      "p": 0.80772
+    }
+  ]
+}

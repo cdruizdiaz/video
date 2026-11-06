@@ -1,0 +1,123 @@
+{
+  "archivo": "IMG_4612.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 34718,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 14920,
+      "texto": "¡Me muero ya!"
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 31480,
+      "texto": "Hay un montón de gente."
+    },
+    {
+      "desdeMs": 31980,
+      "hastaMs": 32180,
+      "texto": "Sí."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 0,
+      "toMs": 1140,
+      "dtwMs": 11080,
+      "p": 0.143315
+    },
+    {
+      "text": "Me",
+      "fromMs": 1370,
+      "toMs": 3440,
+      "dtwMs": 14060,
+      "p": 0.740669
+    },
+    {
+      "text": " mu",
+      "fromMs": 3440,
+      "toMs": 5740,
+      "dtwMs": 14400,
+      "p": 0.996088
+    },
+    {
+      "text": "ero",
+      "fromMs": 5740,
+      "toMs": 9170,
+      "dtwMs": 14640,
+      "p": 0.994907
+    },
+    {
+      "text": " ya",
+      "fromMs": 9170,
+      "toMs": 11460,
+      "dtwMs": 14900,
+      "p": 0.981017
+    },
+    {
+      "text": "!",
+      "fromMs": 11560,
+      "toMs": 14920,
+      "dtwMs": 14900,
+      "p": 0.999479
+    },
+    {
+      "text": " Hay",
+      "fromMs": 30000,
+      "toMs": 30210,
+      "dtwMs": 30820,
+      "p": 0.507412
+    },
+    {
+      "text": " un",
+      "fromMs": 30210,
+      "toMs": 30350,
+      "dtwMs": 30960,
+      "p": 0.969449
+    },
+    {
+      "text": " montón",
+      "fromMs": 30350,
+      "toMs": 30770,
+      "dtwMs": 31080,
+      "p": 0.992275
+    },
+    {
+      "text": " de",
+      "fromMs": 30770,
+      "toMs": 30910,
+      "dtwMs": 31240,
+      "p": 0.99025
+    },
+    {
+      "text": " gente",
+      "fromMs": 30910,
+      "toMs": 31260,
+      "dtwMs": 31460,
+      "p": 0.802447
+    },
+    {
+      "text": ".",
+      "fromMs": 31360,
+      "toMs": 31480,
+      "dtwMs": 31860,
+      "p": 0.682473
+    },
+    {
+      "text": " Sí",
+      "fromMs": 31980,
+      "toMs": 31760,
+      "dtwMs": 32160,
+      "p": 0.8129
+    },
+    {
+      "text": ".",
+      "fromMs": 31980,
+      "toMs": 32180,
+      "dtwMs": 32160,
+      "p": 0.969888
+    }
+  ]
+}

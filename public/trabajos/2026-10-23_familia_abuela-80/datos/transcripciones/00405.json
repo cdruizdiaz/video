@@ -1,0 +1,216 @@
+{
+  "archivo": "00405.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 34048,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4240,
+      "texto": "¡Vamos, venga! ¡Vamos, venga!"
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 33420,
+      "texto": "Sixteen, sixteen, sixteen, we have to get it back."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 10,
+      "toMs": 250,
+      "dtwMs": 480,
+      "p": 0.172179
+    },
+    {
+      "text": "V",
+      "fromMs": 250,
+      "toMs": 490,
+      "dtwMs": 2840,
+      "p": 0.928567
+    },
+    {
+      "text": "amos",
+      "fromMs": 490,
+      "toMs": 1480,
+      "dtwMs": 2940,
+      "p": 0.923257
+    },
+    {
+      "text": ",",
+      "fromMs": 1480,
+      "toMs": 1970,
+      "dtwMs": 3080,
+      "p": 0.570294
+    },
+    {
+      "text": " v",
+      "fromMs": 1970,
+      "toMs": 2220,
+      "dtwMs": 3120,
+      "p": 0.0988928
+    },
+    {
+      "text": "enga",
+      "fromMs": 2220,
+      "toMs": 3210,
+      "dtwMs": 3240,
+      "p": 0.879257
+    },
+    {
+      "text": "!",
+      "fromMs": 3210,
+      "toMs": 4000,
+      "dtwMs": 3320,
+      "p": 0.50949
+    },
+    {
+      "text": " ¡",
+      "fromMs": 4000,
+      "toMs": 4010,
+      "dtwMs": 3360,
+      "p": 0.604393
+    },
+    {
+      "text": "V",
+      "fromMs": 4010,
+      "toMs": 4020,
+      "dtwMs": 3420,
+      "p": 0.975688
+    },
+    {
+      "text": "amos",
+      "fromMs": 4020,
+      "toMs": 4070,
+      "dtwMs": 3540,
+      "p": 0.982512
+    },
+    {
+      "text": ",",
+      "fromMs": 4070,
+      "toMs": 4090,
+      "dtwMs": 3640,
+      "p": 0.941686
+    },
+    {
+      "text": " v",
+      "fromMs": 4090,
+      "toMs": 4100,
+      "dtwMs": 3720,
+      "p": 0.834381
+    },
+    {
+      "text": "enga",
+      "fromMs": 4100,
+      "toMs": 4150,
+      "dtwMs": 3880,
+      "p": 0.999653
+    },
+    {
+      "text": "!",
+      "fromMs": 4150,
+      "toMs": 4240,
+      "dtwMs": 4200,
+      "p": 0.986807
+    },
+    {
+      "text": " Sixt",
+      "fromMs": 30010,
+      "toMs": 30340,
+      "dtwMs": 30360,
+      "p": 0.0527635
+    },
+    {
+      "text": "een",
+      "fromMs": 30340,
+      "toMs": 30600,
+      "dtwMs": 30540,
+      "p": 0.994983
+    },
+    {
+      "text": ",",
+      "fromMs": 30600,
+      "toMs": 30750,
+      "dtwMs": 30680,
+      "p": 0.70149
+    },
+    {
+      "text": " sixteen",
+      "fromMs": 30750,
+      "toMs": 31280,
+      "dtwMs": 31200,
+      "p": 0.813336
+    },
+    {
+      "text": ",",
+      "fromMs": 31280,
+      "toMs": 31430,
+      "dtwMs": 31460,
+      "p": 0.927511
+    },
+    {
+      "text": " sixteen",
+      "fromMs": 31430,
+      "toMs": 32000,
+      "dtwMs": 31920,
+      "p": 0.903846
+    },
+    {
+      "text": ",",
+      "fromMs": 32000,
+      "toMs": 32140,
+      "dtwMs": 32000,
+      "p": 0.322464
+    },
+    {
+      "text": " we",
+      "fromMs": 32140,
+      "toMs": 32280,
+      "dtwMs": 32200,
+      "p": 0.0881582
+    },
+    {
+      "text": " have",
+      "fromMs": 32280,
+      "toMs": 32570,
+      "dtwMs": 32460,
+      "p": 0.368986
+    },
+    {
+      "text": " to",
+      "fromMs": 32570,
+      "toMs": 32710,
+      "dtwMs": 32720,
+      "p": 0.950398
+    },
+    {
+      "text": " get",
+      "fromMs": 32710,
+      "toMs": 32930,
+      "dtwMs": 32960,
+      "p": 0.911065
+    },
+    {
+      "text": " it",
+      "fromMs": 32930,
+      "toMs": 33070,
+      "dtwMs": 33140,
+      "p": 0.904459
+    },
+    {
+      "text": " back",
+      "fromMs": 33070,
+      "toMs": 33420,
+      "dtwMs": 33400,
+      "p": 0.428562
+    },
+    {
+      "text": ".",
+      "fromMs": 33420,
+      "toMs": 33420,
+      "dtwMs": 33400,
+      "p": 0.712334
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "archivo": "IMG_4672.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 18808,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5000,
+      "texto": "¿Puedes mostrarnos objetos especiales para tu exhibición?"
+    },
+    {
+      "desdeMs": 5000,
+      "hastaMs": 18800,
+      "texto": "Los objetos especiales son los cofines, porque son realmente extraños porque dependen de la persona, el trabajo y la personalidad de la persona que muere."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 80,
+      "toMs": 80,
+      "dtwMs": 1160,
+      "p": 0.579466
+    },
+    {
+      "text": "P",
+      "fromMs": 80,
+      "toMs": 180,
+      "dtwMs": 1200,
+      "p": 0.518978
+    },
+    {
+      "text": "ued",
+      "fromMs": 180,
+      "toMs": 380,
+      "dtwMs": 1280,
+      "p": 0.960143
+    },
+    {
+      "text": "es",
+      "fromMs": 430,
+      "toMs": 640,
+      "dtwMs": 1380,
+      "p": 0.71595
+    },
+    {
+      "text": " most",
+      "fromMs": 640,
+      "toMs": 1010,
+      "dtwMs": 1560,
+      "p": 0.111092
+    },
+    {
+      "text": "r",
+      "fromMs": 1100,
+      "toMs": 1100,
+      "dtwMs": 1580,
+      "p": 0.752988
+    },
+    {
+      "text": "arnos",
+      "fromMs": 1160,
+      "toMs": 1570,
+      "dtwMs": 1760,
+      "p": 0.943962
+    },
+    {
+      "text": " objetos",
+      "fromMs": 1570,
+      "toMs": 2220,
+      "dtwMs": 2100,
+      "p": 0.615289
+    },
+    {
+      "text": " especial",
+      "fromMs": 2220,
+      "toMs": 2830,
+      "dtwMs": 2240,
+      "p": 0.693709
+    },
+    {
+      "text": "es",
+      "fromMs": 2980,
+      "toMs": 3160,
+      "dtwMs": 3060,
+      "p": 0.9214
+    },
+    {
+      "text": " para",
+      "fromMs": 3160,
+      "toMs": 3480,
+      "dtwMs": 3200,
+      "p": 0.894365
+    },
+    {
+      "text": " tu",
+      "fromMs": 3670,
+      "toMs": 3710,
+      "dtwMs": 3400,
+      "p": 0.755391
+    },
+    {
+      "text": " exhib",
+      "fromMs": 3710,
+      "toMs": 3880,
+      "dtwMs": 3700,
+      "p": 0.643634
+    },
+    {
+      "text": "ición",
+      "fromMs": 4180,
+      "toMs": 4650,
+      "dtwMs": 3960,
+      "p": 0.810676
+    },
+    {
+      "text": "?",
+      "fromMs": 4650,
+      "toMs": 4990,
+      "dtwMs": 4560,
+      "p": 0.976062
+    },
+    {
+      "text": " Los",
+      "fromMs": 5070,
+      "toMs": 5360,
+      "dtwMs": 5500,
+      "p": 0.70856
+    },
+    {
+      "text": " objetos",
+      "fromMs": 5850,
+      "toMs": 6200,
+      "dtwMs": 5840,
+      "p": 0.991146
+    },
+    {
+      "text": " especial",
+      "fromMs": 6200,
+      "toMs": 7160,
+      "dtwMs": 5900,
+      "p": 0.977976
+    },
+    {
+      "text": "es",
+      "fromMs": 7160,
+      "toMs": 7400,
+      "dtwMs": 6180,
+      "p": 0.996447
+    },
+    {
+      "text": " son",
+      "fromMs": 7400,
+      "toMs": 7760,
+      "dtwMs": 7200,
+      "p": 0.980187
+    },
+    {
+      "text": " los",
+      "fromMs": 7760,
+      "toMs": 7980,
+      "dtwMs": 7580,
+      "p": 0.698881
+    },
+    {
+      "text": " co",
+      "fromMs": 8150,
+      "toMs": 8360,
+      "dtwMs": 7800,
+      "p": 0.812095
+    },
+    {
+      "text": "f",
+      "fromMs": 8360,
+      "toMs": 8480,
+      "dtwMs": 7920,
+      "p": 0.742407
+    },
+    {
+      "text": "ines",
+      "fromMs": 8480,
+      "toMs": 8880,
+      "dtwMs": 8040,
+      "p": 0.422348
+    },
+    {
+      "text": ",",
+      "fromMs": 9010,
+      "toMs": 9040,
+      "dtwMs": 8240,
+      "p": 0.386601
+    },
+    {
+      "text": " porque",
+      "fromMs": 9040,
+      "toMs": 9150,
+      "dtwMs": 8440,
+      "p": 0.852491
+    },
+    {
+      "text": " son",
+      "fromMs": 9170,
+      "toMs": 9260,
+      "dtwMs": 9140,
+      "p": 0.736859
+    },
+    {
+      "text": " realmente",
+      "fromMs": 9260,
+      "toMs": 9500,
+      "dtwMs": 9540,
+      "p": 0.507565
+    },
+    {
+      "text": " extra",
+      "fromMs": 9500,
+      "toMs": 9810,
+      "dtwMs": 9800,
+      "p": 0.188032
+    },
+    {
+      "text": "ños",
+      "fromMs": 9810,
+      "toMs": 9990,
+      "dtwMs": 10060,
+      "p": 0.750847
+    },
+    {
+      "text": " porque",
+      "fromMs": 10300,
+      "toMs": 10850,
+      "dtwMs": 10900,
+      "p": 0.486392
+    },
+    {
+      "text": " depend",
+      "fromMs": 10850,
+      "toMs": 11680,
+      "dtwMs": 11560,
+      "p": 0.796253
+    },
+    {
+      "text": "en",
+      "fromMs": 11720,
+      "toMs": 11720,
+      "dtwMs": 11920,
+      "p": 0.941005
+    },
+    {
+      "text": " de",
+      "fromMs": 12030,
+      "toMs": 12460,
+      "dtwMs": 12340,
+      "p": 0.697144
+    },
+    {
+      "text": " la",
+      "fromMs": 12480,
+      "toMs": 12500,
+      "dtwMs": 12580,
+      "p": 0.731043
+    },
+    {
+      "text": " persona",
+      "fromMs": 12500,
+      "toMs": 13000,
+      "dtwMs": 13000,
+      "p": 0.903035
+    },
+    {
+      "text": ",",
+      "fromMs": 13000,
+      "toMs": 13180,
+      "dtwMs": 13320,
+      "p": 0.890347
+    },
+    {
+      "text": " el",
+      "fromMs": 13180,
+      "toMs": 13300,
+      "dtwMs": 13440,
+      "p": 0.268343
+    },
+    {
+      "text": " trabajo",
+      "fromMs": 13400,
+      "toMs": 14000,
+      "dtwMs": 13780,
+      "p": 0.983903
+    },
+    {
+      "text": " y",
+      "fromMs": 14000,
+      "toMs": 14060,
+      "dtwMs": 14040,
+      "p": 0.793481
+    },
+    {
+      "text": " la",
+      "fromMs": 14060,
+      "toMs": 14190,
+      "dtwMs": 14220,
+      "p": 0.93723
+    },
+    {
+      "text": " personal",
+      "fromMs": 14190,
+      "toMs": 14570,
+      "dtwMs": 14620,
+      "p": 0.814692
+    },
+    {
+      "text": "idad",
+      "fromMs": 14730,
+      "toMs": 14990,
+      "dtwMs": 15240,
+      "p": 0.996006
+    },
+    {
+      "text": " de",
+      "fromMs": 14990,
+      "toMs": 15310,
+      "dtwMs": 15780,
+      "p": 0.894544
+    },
+    {
+      "text": " la",
+      "fromMs": 15630,
+      "toMs": 15800,
+      "dtwMs": 16800,
+      "p": 0.972134
+    },
+    {
+      "text": " persona",
+      "fromMs": 15800,
+      "toMs": 16890,
+      "dtwMs": 17100,
+      "p": 0.976602
+    },
+    {
+      "text": " que",
+      "fromMs": 17230,
+      "toMs": 17790,
+      "dtwMs": 17560,
+      "p": 0.946548
+    },
+    {
+      "text": " mu",
+      "fromMs": 17790,
+      "toMs": 18190,
+      "dtwMs": 17680,
+      "p": 0.534197
+    },
+    {
+      "text": "ere",
+      "fromMs": 18190,
+      "toMs": 18750,
+      "dtwMs": 17940,
+      "p": 0.612583
+    },
+    {
+      "text": ".",
+      "fromMs": 18800,
+      "toMs": 18800,
+      "dtwMs": 18180,
+      "p": 0.901898
+    }
+  ]
+}

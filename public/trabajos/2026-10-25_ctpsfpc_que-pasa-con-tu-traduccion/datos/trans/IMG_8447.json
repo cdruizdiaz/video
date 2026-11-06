@@ -1,0 +1,148 @@
+{
+  "archivo": "IMG_8447.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5035,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4180,
+      "texto": "1. Verificamos que la matrícula del traductor esté vigente."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " 1",
+      "fromMs": 0,
+      "toMs": 230,
+      "dtwMs": 1640,
+      "p": 0.405643
+    },
+    {
+      "text": ".",
+      "fromMs": 230,
+      "toMs": 460,
+      "dtwMs": 1860,
+      "p": 0.670339
+    },
+    {
+      "text": " Ver",
+      "fromMs": 460,
+      "toMs": 690,
+      "dtwMs": 2000,
+      "p": 0.975392
+    },
+    {
+      "text": "ific",
+      "fromMs": 690,
+      "toMs": 1000,
+      "dtwMs": 2160,
+      "p": 0.997607
+    },
+    {
+      "text": "amos",
+      "fromMs": 1000,
+      "toMs": 1310,
+      "dtwMs": 2320,
+      "p": 0.998091
+    },
+    {
+      "text": " que",
+      "fromMs": 1500,
+      "toMs": 1540,
+      "dtwMs": 2440,
+      "p": 0.995663
+    },
+    {
+      "text": " la",
+      "fromMs": 1540,
+      "toMs": 1690,
+      "dtwMs": 2520,
+      "p": 0.994677
+    },
+    {
+      "text": " mat",
+      "fromMs": 1690,
+      "toMs": 1920,
+      "dtwMs": 2700,
+      "p": 0.968804
+    },
+    {
+      "text": "r",
+      "fromMs": 1920,
+      "toMs": 1990,
+      "dtwMs": 2740,
+      "p": 0.858048
+    },
+    {
+      "text": "ícul",
+      "fromMs": 1990,
+      "toMs": 2300,
+      "dtwMs": 2820,
+      "p": 0.999914
+    },
+    {
+      "text": "a",
+      "fromMs": 2300,
+      "toMs": 2320,
+      "dtwMs": 2920,
+      "p": 0.999949
+    },
+    {
+      "text": " del",
+      "fromMs": 2410,
+      "toMs": 2600,
+      "dtwMs": 3020,
+      "p": 0.869515
+    },
+    {
+      "text": " trad",
+      "fromMs": 2600,
+      "toMs": 2910,
+      "dtwMs": 3180,
+      "p": 0.927952
+    },
+    {
+      "text": "u",
+      "fromMs": 2910,
+      "toMs": 2980,
+      "dtwMs": 3260,
+      "p": 0.593903
+    },
+    {
+      "text": "ctor",
+      "fromMs": 2980,
+      "toMs": 3400,
+      "dtwMs": 3400,
+      "p": 0.999945
+    },
+    {
+      "text": " esté",
+      "fromMs": 3400,
+      "toMs": 3620,
+      "dtwMs": 3760,
+      "p": 0.854204
+    },
+    {
+      "text": " vig",
+      "fromMs": 3620,
+      "toMs": 3780,
+      "dtwMs": 3960,
+      "p": 0.997817
+    },
+    {
+      "text": "ente",
+      "fromMs": 3780,
+      "toMs": 4000,
+      "dtwMs": 4160,
+      "p": 0.99996
+    },
+    {
+      "text": ".",
+      "fromMs": 4000,
+      "toMs": 4170,
+      "dtwMs": 4160,
+      "p": 0.682582
+    }
+  ]
+}

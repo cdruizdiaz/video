@@ -1,0 +1,176 @@
+{
+  "archivo": "voz_1.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5888,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5000,
+      "texto": "Hay proyectos que nacieron, otros que tuvieron obstáculos y otros que llegaron a su fin."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hay",
+      "fromMs": 50,
+      "toMs": 260,
+      "dtwMs": 840,
+      "p": 0.771165
+    },
+    {
+      "text": " proyect",
+      "fromMs": 260,
+      "toMs": 860,
+      "dtwMs": 1120,
+      "p": 0.9936
+    },
+    {
+      "text": "os",
+      "fromMs": 900,
+      "toMs": 1030,
+      "dtwMs": 1280,
+      "p": 0.999863
+    },
+    {
+      "text": " que",
+      "fromMs": 1030,
+      "toMs": 1250,
+      "dtwMs": 1380,
+      "p": 0.996826
+    },
+    {
+      "text": " nac",
+      "fromMs": 1330,
+      "toMs": 1550,
+      "dtwMs": 1580,
+      "p": 0.996926
+    },
+    {
+      "text": "ieron",
+      "fromMs": 1590,
+      "toMs": 1960,
+      "dtwMs": 1860,
+      "p": 0.999655
+    },
+    {
+      "text": ",",
+      "fromMs": 2080,
+      "toMs": 2080,
+      "dtwMs": 2140,
+      "p": 0.759382
+    },
+    {
+      "text": " otros",
+      "fromMs": 2130,
+      "toMs": 2220,
+      "dtwMs": 2340,
+      "p": 0.960034
+    },
+    {
+      "text": " que",
+      "fromMs": 2290,
+      "toMs": 2330,
+      "dtwMs": 2460,
+      "p": 0.994406
+    },
+    {
+      "text": " tuv",
+      "fromMs": 2430,
+      "toMs": 2530,
+      "dtwMs": 2600,
+      "p": 0.992409
+    },
+    {
+      "text": "ieron",
+      "fromMs": 2530,
+      "toMs": 2760,
+      "dtwMs": 2760,
+      "p": 0.999237
+    },
+    {
+      "text": " obst",
+      "fromMs": 2760,
+      "toMs": 2830,
+      "dtwMs": 3040,
+      "p": 0.966519
+    },
+    {
+      "text": "á",
+      "fromMs": 3010,
+      "toMs": 3050,
+      "dtwMs": 3160,
+      "p": 0.965125
+    },
+    {
+      "text": "culos",
+      "fromMs": 3050,
+      "toMs": 3360,
+      "dtwMs": 3320,
+      "p": 0.998414
+    },
+    {
+      "text": " y",
+      "fromMs": 3360,
+      "toMs": 3440,
+      "dtwMs": 3640,
+      "p": 0.74143
+    },
+    {
+      "text": " otros",
+      "fromMs": 3580,
+      "toMs": 3930,
+      "dtwMs": 3940,
+      "p": 0.996269
+    },
+    {
+      "text": " que",
+      "fromMs": 3930,
+      "toMs": 4240,
+      "dtwMs": 4220,
+      "p": 0.987551
+    },
+    {
+      "text": " lleg",
+      "fromMs": 4240,
+      "toMs": 4450,
+      "dtwMs": 4380,
+      "p": 0.984532
+    },
+    {
+      "text": "aron",
+      "fromMs": 4450,
+      "toMs": 4630,
+      "dtwMs": 4540,
+      "p": 0.999312
+    },
+    {
+      "text": " a",
+      "fromMs": 4650,
+      "toMs": 4690,
+      "dtwMs": 4640,
+      "p": 0.99497
+    },
+    {
+      "text": " su",
+      "fromMs": 4740,
+      "toMs": 4750,
+      "dtwMs": 4780,
+      "p": 0.996443
+    },
+    {
+      "text": " fin",
+      "fromMs": 4840,
+      "toMs": 5000,
+      "dtwMs": 4980,
+      "p": 0.994692
+    },
+    {
+      "text": ".",
+      "fromMs": 5000,
+      "toMs": 5000,
+      "dtwMs": 4980,
+      "p": 0.651633
+    }
+  ]
+}

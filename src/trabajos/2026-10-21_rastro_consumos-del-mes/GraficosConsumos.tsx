@@ -4,14 +4,13 @@
 //   StickerGuilty     Blackie Books (Música de mierda), como etiqueta de libro: "guilty pleasure"
 //   PosterAHS         American Horror Story 13: blanco y negro, rojo sangre; entra parpadeando
 //   EtiquetasAHS      ídem: vestuario / música / edición, una debajo de la otra, cada una parpadea en su palabra
-//   FotoEvan          ídem: la cara en un círculo con aro rojo, en blanco y negro
+//   FotoEvan          ídem: la cara en un círculo, en blanco y negro, sin el aro rojo (pedido 2026-10-23)
 //   Factoria          "La Fábrica" se tacha y aparece "*la Factoria" sobre resaltador rosa
 //   NoTeCases         Factoria: tarjeta con degradé magenta-violeta, la etiqueta rosa "NO TE CASES" y las miniaturas
 //                     del cliente pasando una tras otra
 //   VentanaDiseno     programa de diseño oscuro genérico (sin logo de Adobe): se traza una curva con la pluma
 //   DiscoLali         No vayas a atender…: cromo, strass y la estrella de la hebilla
-//   TapaAudiolibro    la tarjeta de Spotify del audiolibro (captura del cliente)
-//   FotoYolanda       la cara de Yolanda Reyes en un círculo (foto del cliente)
+//   PauAsoma          "su creatipa de confianza": su personaje digital asoma detrás de ella
 //   Comentario        RASTRO: comentario de Instagram con el pedido a la comunidad
 // Todos los textos en Inter, con los colores de cada estética (pedido 2026-10-21), centrados. Todo va en el aire de
 // arriba de la cabeza: `y` es el BORDE DE ABAJO del gráfico, a la misma distancia de la cabeza en todos (ver
@@ -278,49 +277,24 @@ export const EtiquetasAHS: React.FC<{ y: number; beats: number[] }> = ({
   );
 };
 
-// foto redonda con aro
-const Circulo: React.FC<{
-  src: string;
-  lado: number;
-  aro: string;
-  posicion?: string;
-  filtro?: string;
-}> = ({ src, lado, aro, posicion = "50% 50%", filtro }) => (
-  <div
-    style={{
-      width: lado,
-      height: lado,
-      borderRadius: "50%",
-      padding: 8,
-      background: aro,
-      boxShadow: SOMBRA,
-    }}
-  >
-    <Img
-      src={src}
-      style={{
-        width: lado,
-        height: lado,
-        borderRadius: "50%",
-        objectFit: "cover",
-        objectPosition: posicion,
-        filter: filtro,
-        display: "block",
-      }}
-    />
-  </div>
-);
-
+// en un círculo, sin el aro rojo que sobresalía (pedido 2026-10-23: "dejala como antes, dentro de un círculo")
+const EVAN_LADO = 350;
 export const FotoEvan: React.FC<{ y: number }> = ({ y }) => {
   const f = useCurrentFrame();
   return (
     <Pop x={540} y={y} s={entra(f)}>
-      <Circulo
+      <Img
         src={img("evan_peters.jpg")}
-        lado={350}
-        aro={AHS.rojo}
-        posicion="45% 25%"
-        filtro="grayscale(1) contrast(1.15)"
+        style={{
+          width: EVAN_LADO,
+          height: EVAN_LADO,
+          borderRadius: "50%",
+          objectFit: "cover",
+          objectPosition: "45% 25%",
+          filter: "grayscale(1) contrast(1.15)",
+          boxShadow: SOMBRA,
+          display: "block",
+        }}
       />
     </Pop>
   );
@@ -375,8 +349,8 @@ export const Factoria: React.FC<{ y: number }> = ({ y }) => {
             style={{
               position: "absolute",
               left: 0,
-              top: 16,
-              height: 64,
+              top: 2,
+              bottom: -4, // todo el alto del texto, con las bajantes (antes top 16 / alto 64: abajo quedaba al aire)
               width: `${raya * 100}%`,
               background: FACTORIA.rosa,
               opacity: 0.9,
@@ -430,12 +404,13 @@ export const NoTeCases: React.FC<{ y: number; cada: number }> = ({
             color: "#fff",
             fontFamily: INTER,
             fontWeight: 700,
-            fontSize: 38,
-            padding: "6px 20px",
+            fontSize: 32,
+            padding: "6px 18px",
             transform: "rotate(-4deg)",
+            whiteSpace: "nowrap",
           }}
         >
-          NO TE CASES
+          NO TE CASES NI TE EMBARQUES
         </div>
       </div>
     </Pop>
@@ -647,36 +622,6 @@ export const DiscoLali: React.FC<{ y: number }> = ({ y }) => {
   );
 };
 
-// ---------- Audiolibros Por qué leer ----------
-// la tarjeta de Spotify (captura del cliente, 922×440)
-export const TapaAudiolibro: React.FC<{ y: number }> = ({ y }) => {
-  const f = useCurrentFrame();
-  const ancho = 760;
-  return (
-    <Pop x={540} y={y} s={entra(f)} giro={-2}>
-      <Img
-        src={img("dar_de_leer_spotify.jpg")}
-        style={{
-          width: ancho,
-          height: (ancho * 440) / 922,
-          display: "block",
-          borderRadius: 34,
-          boxShadow: SOMBRA,
-        }}
-      />
-    </Pop>
-  );
-};
-
-export const FotoYolanda: React.FC<{ x: number; y: number }> = ({ x, y }) => {
-  const f = useCurrentFrame();
-  return (
-    <Pop x={x} y={y} s={entra(f)}>
-      <Circulo src={img("yolanda_reyes.jpg")} lado={210} aro="#ffffff" />
-    </Pop>
-  );
-};
-
 const Corazon: React.FC<{ lado: number; color: string; trazo?: boolean }> = ({
   lado,
   color,
@@ -746,5 +691,48 @@ export const Comentario: React.FC<{ y: number }> = ({ y }) => {
         <Corazon lado={46} color={R.bordo} trazo />
       </div>
     </Pop>
+  );
+};
+
+// ---------- Pau personaje: asoma detrás de ella ----------
+// "su creatipa de confianza" (2026-10-23): su personaje digital (pau_personaje.png, el sticker del cliente) sale de
+// detrás de su cabeza en diagonal hacia arriba a la derecha, se inclina, se balancea apenas y vuelve a esconderse.
+// Va DETRÁS de la persona (CapaDetras de HablaSubtitulada, recorte crudos/IMG_9085_persona.webm): x, y del centro.
+const ASOMA_DURA = 11; // cuadros en que sale
+const ESCONDE_DURA = 9; // cuadros en que vuelve detrás
+const ASOMA_ALTO = 680; // px del personaje (más grande: toma la esquina, pedido 2026-10-23)
+const ASOMA_GIRO = 16; // grados que se inclina al asomar
+export const PauAsoma: React.FC<{
+  desde: { x: number; y: number }; // centro escondido (detrás de la cabeza)
+  hasta: { x: number; y: number }; // centro asomado
+  escondeEn: number; // cuadro en que empieza a volver
+}> = ({ desde, hasta, escondeEn }) => {
+  const f = useCurrentFrame();
+  const sale = interpolate(f, [0, ASOMA_DURA], [0, 1], {
+    ...clamp,
+    easing: Easing.out(Easing.back(1.4)),
+  });
+  const vuelve = interpolate(f, [escondeEn, escondeEn + ESCONDE_DURA], [0, 1], {
+    ...clamp,
+    easing: Easing.in(Easing.cubic),
+  });
+  const t = sale * (1 - vuelve);
+  const vaiven = Math.sin(Math.max(0, f - ASOMA_DURA) / 7) * 3 * (1 - vuelve); // balanceo suave mientras está
+  const x = desde.x + (hasta.x - desde.x) * t;
+  const y = desde.y + (hasta.y - desde.y) * t;
+  const ancho = (ASOMA_ALTO * 1122) / 1402;
+  return (
+    <Img
+      src={img("pau_personaje.png")}
+      style={{
+        position: "absolute",
+        left: x - ancho / 2,
+        top: y - ASOMA_ALTO / 2,
+        width: ancho,
+        height: ASOMA_ALTO,
+        transform: `rotate(${ASOMA_GIRO * t + vaiven}deg)`,
+        transformOrigin: "50% 80%",
+      }}
+    />
   );
 };

@@ -1,0 +1,91 @@
+{
+  "archivo": "IMG_9450.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 11755,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        720
+      ],
+      [
+        3996,
+        5046
+      ],
+      [
+        6250,
+        8130
+      ],
+      [
+        8859,
+        9381
+      ],
+      [
+        10961,
+        11755
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7140,
+      "texto": "No, Pauli, no."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " No",
+      "fromMs": 0,
+      "toMs": 470,
+      "dtwMs": 6620,
+      "p": 0.24747
+    },
+    {
+      "text": ",",
+      "fromMs": 680,
+      "toMs": 4357,
+      "dtwMs": 6740,
+      "p": 0.87396
+    },
+    {
+      "text": " Paul",
+      "fromMs": 4357,
+      "toMs": 6640,
+      "dtwMs": 6880,
+      "p": 0.503936
+    },
+    {
+      "text": "i",
+      "fromMs": 6640,
+      "toMs": 7000,
+      "dtwMs": 7000,
+      "p": 0.485402
+    },
+    {
+      "text": ",",
+      "fromMs": 7000,
+      "toMs": 7050,
+      "dtwMs": 7020,
+      "p": 0.731554
+    },
+    {
+      "text": " no",
+      "fromMs": 7050,
+      "toMs": 7120,
+      "dtwMs": 7120,
+      "p": 0.970481
+    },
+    {
+      "text": ".",
+      "fromMs": 7120,
+      "toMs": 7140,
+      "dtwMs": 7120,
+      "p": 0.665631
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "archivo": "IMG_9452.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 12488,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        788,
+        6177
+      ],
+      [
+        10610,
+        11141
+      ],
+      [
+        12101,
+        12488
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 788,
+      "hastaMs": 5968,
+      "texto": "Ay, ¿cómo irás? Vení, como quieras. Vení, como quieras, quédate lo que quieras. Te esperamos en Dogba."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Ay",
+      "fromMs": 788,
+      "toMs": 878,
+      "dtwMs": 1188,
+      "p": 0.503631
+    },
+    {
+      "text": ",",
+      "fromMs": 958,
+      "toMs": 958,
+      "dtwMs": 1188,
+      "p": 0.986423
+    },
+    {
+      "text": " ¿",
+      "fromMs": 998,
+      "toMs": 998,
+      "dtwMs": 1248,
+      "p": 0.951455
+    },
+    {
+      "text": "cómo",
+      "fromMs": 1028,
+      "toMs": 1168,
+      "dtwMs": 1348,
+      "p": 0.983888
+    },
+    {
+      "text": " ir",
+      "fromMs": 1168,
+      "toMs": 1208,
+      "dtwMs": 1448,
+      "p": 0.299175
+    },
+    {
+      "text": "ás",
+      "fromMs": 1278,
+      "toMs": 1338,
+      "dtwMs": 1488,
+      "p": 0.401321
+    },
+    {
+      "text": "?",
+      "fromMs": 1338,
+      "toMs": 1498,
+      "dtwMs": 1628,
+      "p": 0.389569
+    },
+    {
+      "text": " Ven",
+      "fromMs": 1528,
+      "toMs": 1638,
+      "dtwMs": 1708,
+      "p": 0.746957
+    },
+    {
+      "text": "í",
+      "fromMs": 1638,
+      "toMs": 1678,
+      "dtwMs": 1768,
+      "p": 0.98714
+    },
+    {
+      "text": ",",
+      "fromMs": 1678,
+      "toMs": 1768,
+      "dtwMs": 1888,
+      "p": 0.680052
+    },
+    {
+      "text": " como",
+      "fromMs": 1768,
+      "toMs": 1948,
+      "dtwMs": 1968,
+      "p": 0.811356
+    },
+    {
+      "text": " quier",
+      "fromMs": 1948,
+      "toMs": 2158,
+      "dtwMs": 2148,
+      "p": 0.996997
+    },
+    {
+      "text": "as",
+      "fromMs": 2158,
+      "toMs": 2168,
+      "dtwMs": 2268,
+      "p": 0.998913
+    },
+    {
+      "text": ".",
+      "fromMs": 2278,
+      "toMs": 2338,
+      "dtwMs": 2428,
+      "p": 0.912473
+    },
+    {
+      "text": " Ven",
+      "fromMs": 2338,
+      "toMs": 2648,
+      "dtwMs": 3008,
+      "p": 0.660569
+    },
+    {
+      "text": "í",
+      "fromMs": 2648,
+      "toMs": 2708,
+      "dtwMs": 3048,
+      "p": 0.99914
+    },
+    {
+      "text": ",",
+      "fromMs": 2828,
+      "toMs": 2828,
+      "dtwMs": 3128,
+      "p": 0.781792
+    },
+    {
+      "text": " como",
+      "fromMs": 2888,
+      "toMs": 3058,
+      "dtwMs": 3188,
+      "p": 0.994799
+    },
+    {
+      "text": " quier",
+      "fromMs": 3098,
+      "toMs": 3368,
+      "dtwMs": 3448,
+      "p": 0.999243
+    },
+    {
+      "text": "as",
+      "fromMs": 3368,
+      "toMs": 3488,
+      "dtwMs": 3628,
+      "p": 0.999971
+    },
+    {
+      "text": ",",
+      "fromMs": 3488,
+      "toMs": 3568,
+      "dtwMs": 3768,
+      "p": 0.915545
+    },
+    {
+      "text": " qu",
+      "fromMs": 3728,
+      "toMs": 3728,
+      "dtwMs": 3808,
+      "p": 0.905853
+    },
+    {
+      "text": "éd",
+      "fromMs": 3768,
+      "toMs": 3808,
+      "dtwMs": 3888,
+      "p": 0.999207
+    },
+    {
+      "text": "ate",
+      "fromMs": 3808,
+      "toMs": 3908,
+      "dtwMs": 3988,
+      "p": 0.999926
+    },
+    {
+      "text": " lo",
+      "fromMs": 3968,
+      "toMs": 4008,
+      "dtwMs": 4108,
+      "p": 0.995099
+    },
+    {
+      "text": " que",
+      "fromMs": 4008,
+      "toMs": 4108,
+      "dtwMs": 4208,
+      "p": 0.999798
+    },
+    {
+      "text": " quier",
+      "fromMs": 4158,
+      "toMs": 4358,
+      "dtwMs": 4388,
+      "p": 0.999567
+    },
+    {
+      "text": "as",
+      "fromMs": 4358,
+      "toMs": 4438,
+      "dtwMs": 4588,
+      "p": 0.99999
+    },
+    {
+      "text": ".",
+      "fromMs": 4438,
+      "toMs": 4468,
+      "dtwMs": 4868,
+      "p": 0.992417
+    },
+    {
+      "text": " Te",
+      "fromMs": 4468,
+      "toMs": 4718,
+      "dtwMs": 5008,
+      "p": 0.917936
+    },
+    {
+      "text": " esper",
+      "fromMs": 4968,
+      "toMs": 5038,
+      "dtwMs": 5188,
+      "p": 0.997664
+    },
+    {
+      "text": "amos",
+      "fromMs": 5098,
+      "toMs": 5298,
+      "dtwMs": 5428,
+      "p": 0.999941
+    },
+    {
+      "text": " en",
+      "fromMs": 5298,
+      "toMs": 5388,
+      "dtwMs": 5648,
+      "p": 0.993356
+    },
+    {
+      "text": " Dog",
+      "fromMs": 5538,
+      "toMs": 5608,
+      "dtwMs": 5788,
+      "p": 0.402894
+    },
+    {
+      "text": "ba",
+      "fromMs": 5608,
+      "toMs": 5728,
+      "dtwMs": 5948,
+      "p": 0.619303
+    },
+    {
+      "text": ".",
+      "fromMs": 5728,
+      "toMs": 5928,
+      "dtwMs": 5948,
+      "p": 0.997767
+    }
+  ]
+}

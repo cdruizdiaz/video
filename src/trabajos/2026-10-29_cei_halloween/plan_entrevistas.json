@@ -1,0 +1,526 @@
+{
+ "video": [
+  {
+   "clip": "IMG_4679",
+   "ini": 1.29,
+   "dur": 3.43
+  },
+  {
+   "clip": "IMG_4680",
+   "ini": 1.97,
+   "dur": 2.71
+  },
+  {
+   "clip": "IMG_4680",
+   "ini": 5.78,
+   "dur": 1.6
+  },
+  {
+   "clip": "IMG_4669",
+   "ini": 1.37,
+   "dur": 3.21,
+   "rot": -3.91,
+   "esc": 1.129
+  },
+  {
+   "clip": "IMG_4669",
+   "ini": 5.55,
+   "dur": 3.36,
+   "rot": -3.91,
+   "esc": 1.129
+  },
+  {
+   "clip": "IMG_4682",
+   "ini": 1.34,
+   "dur": 3.15
+  },
+  {
+   "clip": "IMG_4682",
+   "ini": 5.07,
+   "dur": 3.37
+  },
+  {
+   "clip": "IMG_4682",
+   "ini": 9.55,
+   "dur": 0.97
+  },
+  {
+   "clip": "IMG_4661",
+   "ini": 1.42,
+   "dur": 2.33,
+   "rot": -1.51,
+   "esc": 1.056
+  },
+  {
+   "clip": "IMG_4661",
+   "ini": 3.99,
+   "dur": 0.77,
+   "rot": -1.51,
+   "esc": 1.056
+  },
+  {
+   "clip": "IMG_4661",
+   "ini": 5.3,
+   "dur": 4.13,
+   "rot": -1.51,
+   "esc": 1.056
+  },
+  {
+   "clip": "IMG_4661",
+   "ini": 10.7,
+   "dur": 1.25,
+   "rot": -1.51,
+   "esc": 1.056
+  },
+  {
+   "clip": "IMG_4661",
+   "ini": 12.24,
+   "dur": 1.7,
+   "rot": -1.51,
+   "esc": 1.056
+  },
+  {
+   "clip": "IMG_4675",
+   "ini": 1.05,
+   "dur": 2.67
+  },
+  {
+   "clip": "IMG_4675",
+   "ini": 4.04,
+   "dur": 0.99
+  },
+  {
+   "clip": "IMG_4675",
+   "ini": 5.86,
+   "dur": 5.44
+  },
+  {
+   "clip": "IMG_4675",
+   "ini": 11.3,
+   "dur": 2.92,
+   "rate": 1.0
+  }
+ ],
+ "audio": [
+  {
+   "id": "e_mexico1_0",
+   "desde": 0.0,
+   "dur": 3.43,
+   "gananciaDb": -4.4,
+   "fade": 3
+  },
+  {
+   "id": "e_mexico2_0",
+   "desde": 3.43,
+   "dur": 2.71,
+   "gananciaDb": -2.6,
+   "fade": 3
+  },
+  {
+   "id": "e_mexico2_1",
+   "desde": 6.14,
+   "dur": 1.6,
+   "gananciaDb": -2.9,
+   "fade": 3
+  },
+  {
+   "id": "e_ghana_0",
+   "desde": 7.74,
+   "dur": 3.21,
+   "gananciaDb": 0.1,
+   "fade": 3
+  },
+  {
+   "id": "e_ghana_1",
+   "desde": 10.95,
+   "dur": 3.36,
+   "gananciaDb": 0.3,
+   "fade": 3
+  },
+  {
+   "id": "e_mexico4_0",
+   "desde": 14.31,
+   "dur": 3.15,
+   "gananciaDb": 0.0,
+   "fade": 3
+  },
+  {
+   "id": "e_mexico4_1",
+   "desde": 17.46,
+   "dur": 3.37,
+   "gananciaDb": 11.6,
+   "fade": 3
+  },
+  {
+   "id": "e_mexico4_2",
+   "desde": 20.83,
+   "dur": 0.97,
+   "gananciaDb": 11.3,
+   "fade": 3
+  },
+  {
+   "id": "e_china_0",
+   "desde": 21.8,
+   "dur": 2.33,
+   "gananciaDb": 5.5,
+   "fade": 3
+  },
+  {
+   "id": "e_china_1",
+   "desde": 24.13,
+   "dur": 0.77,
+   "gananciaDb": 11.3,
+   "fade": 3
+  },
+  {
+   "id": "e_china_2",
+   "desde": 24.9,
+   "dur": 4.13,
+   "gananciaDb": -4.5,
+   "fade": 3
+  },
+  {
+   "id": "e_china_3",
+   "desde": 29.03,
+   "dur": 1.25,
+   "gananciaDb": -1.1,
+   "fade": 3
+  },
+  {
+   "id": "e_china_4",
+   "desde": 30.28,
+   "dur": 1.7,
+   "gananciaDb": 3.5,
+   "fade": 3
+  },
+  {
+   "id": "e_mexico3_0",
+   "desde": 31.98,
+   "dur": 2.67,
+   "gananciaDb": 4.7,
+   "fade": 3
+  },
+  {
+   "id": "e_mexico3_1",
+   "desde": 34.65,
+   "dur": 0.99,
+   "gananciaDb": 15.1,
+   "fade": 3
+  },
+  {
+   "id": "e_mexico3_2",
+   "desde": 35.64,
+   "dur": 5.44,
+   "gananciaDb": 4.3,
+   "fade": 3
+  }
+ ],
+ "subs": [
+  {
+   "t": "What country",
+   "es": "¿Qué país",
+   "desde": 0.0,
+   "hasta": 0.78
+  },
+  {
+   "t": "did you research?",
+   "es": "investigaste?",
+   "desde": 0.78,
+   "hasta": 2.06
+  },
+  {
+   "t": "Mexico.",
+   "es": "México.",
+   "desde": 2.92,
+   "hasta": 3.43
+  },
+  {
+   "t": "What colors do",
+   "es": "¿Qué colores usa",
+   "desde": 3.43,
+   "hasta": 4.33
+  },
+  {
+   "t": "people use",
+   "es": "la gente",
+   "desde": 4.33,
+   "hasta": 4.88
+  },
+  {
+   "t": "in the tradition?",
+   "es": "en la tradición?",
+   "desde": 4.88,
+   "hasta": 6.18
+  },
+  {
+   "t": "Orange and black.",
+   "es": "Naranja y negro.",
+   "desde": 6.18,
+   "hasta": 7.74
+  },
+  {
+   "t": "What country did",
+   "es": "¿Qué país",
+   "desde": 7.74,
+   "hasta": 8.66
+  },
+  {
+   "t": "you research and",
+   "es": "investigaste y",
+   "desde": 8.66,
+   "hasta": 9.8
+  },
+  {
+   "t": "where is it",
+   "es": "dónde queda",
+   "desde": 9.8,
+   "hasta": 10.48
+  },
+  {
+   "t": "on the map?",
+   "es": "en el mapa?",
+   "desde": 10.48,
+   "hasta": 10.97
+  },
+  {
+   "t": "We researched",
+   "es": "Investigamos",
+   "desde": 10.97,
+   "hasta": 11.83
+  },
+  {
+   "t": "Ghana and",
+   "es": "Ghana y",
+   "desde": 11.83,
+   "hasta": 12.83
+  },
+  {
+   "t": "it's in Africa.",
+   "es": "está en África.",
+   "desde": 12.83,
+   "hasta": 14.31
+  },
+  {
+   "t": "Is this a sad moment",
+   "es": "¿Es un momento triste",
+   "desde": 14.38,
+   "hasta": 16.22
+  },
+  {
+   "t": "or a celebration",
+   "es": "o una celebración",
+   "desde": 16.22,
+   "hasta": 17.04
+  },
+  {
+   "t": "of life?",
+   "es": "de la vida?",
+   "desde": 17.04,
+   "hasta": 17.56
+  },
+  {
+   "t": "It's a happy moment",
+   "es": "Es un momento feliz",
+   "desde": 17.56,
+   "hasta": 18.5
+  },
+  {
+   "t": "because the family",
+   "es": "porque la familia",
+   "desde": 18.5,
+   "hasta": 19.58
+  },
+  {
+   "t": "remembers the person",
+   "es": "recuerda a la persona",
+   "desde": 19.58,
+   "hasta": 20.83
+  },
+  {
+   "t": "singing and dancing.",
+   "es": "cantando y bailando.",
+   "desde": 20.83,
+   "hasta": 21.8
+  },
+  {
+   "t": "What do people do",
+   "es": "¿Qué hace la gente",
+   "desde": 21.81,
+   "hasta": 23.01
+  },
+  {
+   "t": "during funerals",
+   "es": "durante los funerales",
+   "desde": 23.01,
+   "hasta": 24.19
+  },
+  {
+   "t": "in China?",
+   "es": "en China?",
+   "desde": 24.19,
+   "hasta": 24.97
+  },
+  {
+   "t": "In China they put",
+   "es": "En China ponen",
+   "desde": 24.97,
+   "hasta": 26.87
+  },
+  {
+   "t": "flowers, money,",
+   "es": "flores, dinero,",
+   "desde": 26.87,
+   "hasta": 28.63
+  },
+  {
+   "t": "tea and fruits",
+   "es": "té y frutas",
+   "desde": 29.03,
+   "hasta": 31.01
+  },
+  {
+   "t": "in the crowd.",
+   "es": "en la multitud.",
+   "desde": 31.01,
+   "hasta": 31.98
+  },
+  {
+   "t": "Is this ceremony",
+   "es": "¿Esta ceremonia",
+   "desde": 32.06,
+   "hasta": 33.44
+  },
+  {
+   "t": "a sad moment",
+   "es": "es un momento triste",
+   "desde": 33.44,
+   "hasta": 34.14
+  },
+  {
+   "t": "or a celebration",
+   "es": "o una celebración",
+   "desde": 34.14,
+   "hasta": 35.28
+  },
+  {
+   "t": "of life?",
+   "es": "de la vida?",
+   "desde": 35.28,
+   "hasta": 35.79
+  },
+  {
+   "t": "This ceremony",
+   "es": "Esta ceremonia",
+   "desde": 35.81,
+   "hasta": 37.55
+  },
+  {
+   "t": "is really happy",
+   "es": "es muy feliz",
+   "desde": 37.55,
+   "hasta": 38.77
+  },
+  {
+   "t": "because they dance",
+   "es": "porque bailan",
+   "desde": 38.77,
+   "hasta": 40.03
+  },
+  {
+   "t": "like in the video.",
+   "es": "como en el video.",
+   "desde": 40.03,
+   "hasta": 43.08
+  }
+ ],
+ "tags": [
+  {
+   "t": "MEXICO",
+   "desde": 0.0,
+   "hasta": 7.74,
+   "y": 270
+  },
+  {
+   "t": "GHANA",
+   "desde": 7.74,
+   "hasta": 14.31,
+   "y": 270
+  },
+  {
+   "t": "MEXICO",
+   "desde": 14.31,
+   "hasta": 21.8,
+   "y": 270
+  },
+  {
+   "t": "CHINA",
+   "desde": 21.8,
+   "hasta": 31.98,
+   "y": 270
+  },
+  {
+   "t": "GHANA",
+   "desde": 31.98,
+   "hasta": 44.0,
+   "y": 270
+  }
+ ],
+ "inserts": [
+  {
+   "clip": "IMG_4540",
+   "ini": 3.5,
+   "dur": 1.5,
+   "flash": true,
+   "rot": 2.09,
+   "esc": 1.074
+  },
+  {
+   "clip": "IMG_4711",
+   "ini": 3.0,
+   "dur": 1.6,
+   "rot": -2.93,
+   "esc": 1.1
+  },
+  {
+   "clip": "IMG_4611",
+   "ini": 7.5,
+   "dur": 1.5,
+   "rot": 1.57,
+   "esc": 1.058
+  },
+  {
+   "clip": "IMG_4683",
+   "ini": 0.5,
+   "dur": 1.5
+  },
+  {
+   "clip": "IMG_4618",
+   "ini": 0.6,
+   "dur": 1.6
+  },
+  {
+   "clip": "IMG_4700",
+   "ini": 0.6,
+   "dur": 1.5,
+   "rot": 2.95,
+   "esc": 1.1
+  },
+  {
+   "clip": "IMG_4585",
+   "ini": 1.2,
+   "dur": 1.6,
+   "rot": 3.55,
+   "esc": 1.118
+  },
+  {
+   "clip": "IMG_4708",
+   "ini": 2.0,
+   "dur": 1.6,
+   "rot": -2.13,
+   "esc": 1.075
+  }
+ ],
+ "finEntrevistas": 44.0,
+ "finHabla": 41.08,
+ "finInserts": 56.4
+}

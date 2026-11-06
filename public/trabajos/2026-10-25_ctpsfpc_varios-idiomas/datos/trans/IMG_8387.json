@@ -1,0 +1,309 @@
+{
+  "archivo": "IMG_8387.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7885,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6780,
+      "texto": "Con su firma y sello, el matriculado asume la responsabilidad de una traducción realizada por otro traductor matriculado en su mismo par de idiomas."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Con",
+      "fromMs": 0,
+      "toMs": 170,
+      "dtwMs": 700,
+      "p": 0.935642
+    },
+    {
+      "text": " su",
+      "fromMs": 170,
+      "toMs": 280,
+      "dtwMs": 900,
+      "p": 0.996924
+    },
+    {
+      "text": " fir",
+      "fromMs": 280,
+      "toMs": 450,
+      "dtwMs": 1000,
+      "p": 0.999165
+    },
+    {
+      "text": "ma",
+      "fromMs": 560,
+      "toMs": 560,
+      "dtwMs": 1080,
+      "p": 0.706091
+    },
+    {
+      "text": " y",
+      "fromMs": 620,
+      "toMs": 620,
+      "dtwMs": 1180,
+      "p": 0.990503
+    },
+    {
+      "text": " se",
+      "fromMs": 650,
+      "toMs": 730,
+      "dtwMs": 1260,
+      "p": 0.998393
+    },
+    {
+      "text": "llo",
+      "fromMs": 730,
+      "toMs": 850,
+      "dtwMs": 1400,
+      "p": 0.951622
+    },
+    {
+      "text": ",",
+      "fromMs": 930,
+      "toMs": 1010,
+      "dtwMs": 1480,
+      "p": 0.65528
+    },
+    {
+      "text": " el",
+      "fromMs": 1010,
+      "toMs": 1120,
+      "dtwMs": 1480,
+      "p": 0.984031
+    },
+    {
+      "text": " mat",
+      "fromMs": 1120,
+      "toMs": 1290,
+      "dtwMs": 1620,
+      "p": 0.970271
+    },
+    {
+      "text": "ric",
+      "fromMs": 1290,
+      "toMs": 1460,
+      "dtwMs": 1780,
+      "p": 0.998978
+    },
+    {
+      "text": "ul",
+      "fromMs": 1460,
+      "toMs": 1570,
+      "dtwMs": 1900,
+      "p": 0.999802
+    },
+    {
+      "text": "ado",
+      "fromMs": 1570,
+      "toMs": 1700,
+      "dtwMs": 1980,
+      "p": 0.99866
+    },
+    {
+      "text": " as",
+      "fromMs": 1760,
+      "toMs": 1850,
+      "dtwMs": 2140,
+      "p": 0.972751
+    },
+    {
+      "text": "ume",
+      "fromMs": 1850,
+      "toMs": 2020,
+      "dtwMs": 2260,
+      "p": 0.994734
+    },
+    {
+      "text": " la",
+      "fromMs": 2020,
+      "toMs": 2030,
+      "dtwMs": 2360,
+      "p": 0.99052
+    },
+    {
+      "text": " responsabil",
+      "fromMs": 2140,
+      "toMs": 2680,
+      "dtwMs": 2760,
+      "p": 0.980984
+    },
+    {
+      "text": "idad",
+      "fromMs": 2780,
+      "toMs": 3160,
+      "dtwMs": 3120,
+      "p": 0.999051
+    },
+    {
+      "text": " de",
+      "fromMs": 3160,
+      "toMs": 3250,
+      "dtwMs": 3260,
+      "p": 0.865396
+    },
+    {
+      "text": " una",
+      "fromMs": 3250,
+      "toMs": 3390,
+      "dtwMs": 3380,
+      "p": 0.985658
+    },
+    {
+      "text": " trad",
+      "fromMs": 3400,
+      "toMs": 3570,
+      "dtwMs": 3580,
+      "p": 0.987952
+    },
+    {
+      "text": "uc",
+      "fromMs": 3570,
+      "toMs": 3630,
+      "dtwMs": 3700,
+      "p": 0.998913
+    },
+    {
+      "text": "ción",
+      "fromMs": 3750,
+      "toMs": 3840,
+      "dtwMs": 3820,
+      "p": 0.999706
+    },
+    {
+      "text": " realiz",
+      "fromMs": 3840,
+      "toMs": 4030,
+      "dtwMs": 4060,
+      "p": 0.817114
+    },
+    {
+      "text": "ada",
+      "fromMs": 4150,
+      "toMs": 4280,
+      "dtwMs": 4260,
+      "p": 0.999592
+    },
+    {
+      "text": " por",
+      "fromMs": 4280,
+      "toMs": 4480,
+      "dtwMs": 4460,
+      "p": 0.657975
+    },
+    {
+      "text": " otro",
+      "fromMs": 4480,
+      "toMs": 4660,
+      "dtwMs": 4660,
+      "p": 0.965809
+    },
+    {
+      "text": " trad",
+      "fromMs": 4660,
+      "toMs": 4850,
+      "dtwMs": 4860,
+      "p": 0.980962
+    },
+    {
+      "text": "u",
+      "fromMs": 4850,
+      "toMs": 4890,
+      "dtwMs": 4940,
+      "p": 0.993235
+    },
+    {
+      "text": "ctor",
+      "fromMs": 4890,
+      "toMs": 5080,
+      "dtwMs": 5040,
+      "p": 0.999924
+    },
+    {
+      "text": " mat",
+      "fromMs": 5080,
+      "toMs": 5210,
+      "dtwMs": 5200,
+      "p": 0.988852
+    },
+    {
+      "text": "ric",
+      "fromMs": 5240,
+      "toMs": 5360,
+      "dtwMs": 5360,
+      "p": 0.9995
+    },
+    {
+      "text": "ul",
+      "fromMs": 5360,
+      "toMs": 5450,
+      "dtwMs": 5480,
+      "p": 0.999935
+    },
+    {
+      "text": "ado",
+      "fromMs": 5450,
+      "toMs": 5640,
+      "dtwMs": 5620,
+      "p": 0.999748
+    },
+    {
+      "text": " en",
+      "fromMs": 5640,
+      "toMs": 5650,
+      "dtwMs": 5840,
+      "p": 0.913802
+    },
+    {
+      "text": " su",
+      "fromMs": 5760,
+      "toMs": 5820,
+      "dtwMs": 5940,
+      "p": 0.995469
+    },
+    {
+      "text": " mismo",
+      "fromMs": 5820,
+      "toMs": 6050,
+      "dtwMs": 6140,
+      "p": 0.997858
+    },
+    {
+      "text": " par",
+      "fromMs": 6050,
+      "toMs": 6170,
+      "dtwMs": 6300,
+      "p": 0.997124
+    },
+    {
+      "text": " de",
+      "fromMs": 6220,
+      "toMs": 6280,
+      "dtwMs": 6400,
+      "p": 0.999653
+    },
+    {
+      "text": " idi",
+      "fromMs": 6280,
+      "toMs": 6420,
+      "dtwMs": 6560,
+      "p": 0.999874
+    },
+    {
+      "text": "omas",
+      "fromMs": 6420,
+      "toMs": 6600,
+      "dtwMs": 6760,
+      "p": 0.999771
+    },
+    {
+      "text": ".",
+      "fromMs": 6600,
+      "toMs": 6720,
+      "dtwMs": 6760,
+      "p": 0.892195
+    }
+  ]
+}

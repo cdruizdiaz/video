@@ -1,0 +1,250 @@
+{
+  "archivo": "IMG_4579.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 13940,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4540,
+      "texto": "cuando muere alguien"
+    },
+    {
+      "desdeMs": 4540,
+      "hastaMs": 7300,
+      "texto": "lo queman porque creen que hace un viaje"
+    },
+    {
+      "desdeMs": 7300,
+      "hastaMs": 9340,
+      "texto": "y reencarna en otro cuerpo"
+    },
+    {
+      "desdeMs": 9340,
+      "hastaMs": 11040,
+      "texto": "y así"
+    },
+    {
+      "desdeMs": 11040,
+      "hastaMs": 12440,
+      "texto": "todo el tiempo"
+    },
+    {
+      "desdeMs": 12440,
+      "hastaMs": 13940,
+      "texto": "¿no?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " cuando",
+      "fromMs": 0,
+      "toMs": 3600,
+      "dtwMs": 3580,
+      "p": 0.387775
+    },
+    {
+      "text": " mu",
+      "fromMs": 3600,
+      "toMs": 3740,
+      "dtwMs": 3820,
+      "p": 0.95139
+    },
+    {
+      "text": "ere",
+      "fromMs": 3740,
+      "toMs": 3960,
+      "dtwMs": 3940,
+      "p": 0.999607
+    },
+    {
+      "text": " alguien",
+      "fromMs": 3960,
+      "toMs": 4540,
+      "dtwMs": 4520,
+      "p": 0.896358
+    },
+    {
+      "text": " lo",
+      "fromMs": 4540,
+      "toMs": 4830,
+      "dtwMs": 5340,
+      "p": 0.997141
+    },
+    {
+      "text": " quem",
+      "fromMs": 4830,
+      "toMs": 5410,
+      "dtwMs": 5560,
+      "p": 0.9996
+    },
+    {
+      "text": "an",
+      "fromMs": 5410,
+      "toMs": 5700,
+      "dtwMs": 5680,
+      "p": 0.99983
+    },
+    {
+      "text": " porque",
+      "fromMs": 5700,
+      "toMs": 5900,
+      "dtwMs": 5920,
+      "p": 0.957415
+    },
+    {
+      "text": " cre",
+      "fromMs": 5950,
+      "toMs": 6180,
+      "dtwMs": 6200,
+      "p": 0.981253
+    },
+    {
+      "text": "en",
+      "fromMs": 6180,
+      "toMs": 6360,
+      "dtwMs": 6340,
+      "p": 0.999918
+    },
+    {
+      "text": " que",
+      "fromMs": 6360,
+      "toMs": 6490,
+      "dtwMs": 6540,
+      "p": 0.811609
+    },
+    {
+      "text": " hace",
+      "fromMs": 6550,
+      "toMs": 6740,
+      "dtwMs": 6740,
+      "p": 0.81546
+    },
+    {
+      "text": " un",
+      "fromMs": 6850,
+      "toMs": 6860,
+      "dtwMs": 6880,
+      "p": 0.7668
+    },
+    {
+      "text": " viaje",
+      "fromMs": 6930,
+      "toMs": 7300,
+      "dtwMs": 7300,
+      "p": 0.797081
+    },
+    {
+      "text": " y",
+      "fromMs": 7300,
+      "toMs": 7390,
+      "dtwMs": 7780,
+      "p": 0.999697
+    },
+    {
+      "text": " re",
+      "fromMs": 7390,
+      "toMs": 7570,
+      "dtwMs": 8040,
+      "p": 0.998742
+    },
+    {
+      "text": "en",
+      "fromMs": 7570,
+      "toMs": 7740,
+      "dtwMs": 8100,
+      "p": 0.896321
+    },
+    {
+      "text": "car",
+      "fromMs": 7740,
+      "toMs": 8030,
+      "dtwMs": 8240,
+      "p": 0.999504
+    },
+    {
+      "text": "na",
+      "fromMs": 8030,
+      "toMs": 8200,
+      "dtwMs": 8420,
+      "p": 0.999537
+    },
+    {
+      "text": " en",
+      "fromMs": 8200,
+      "toMs": 8240,
+      "dtwMs": 8560,
+      "p": 0.989596
+    },
+    {
+      "text": " otro",
+      "fromMs": 8450,
+      "toMs": 8800,
+      "dtwMs": 8780,
+      "p": 0.975517
+    },
+    {
+      "text": " cuerpo",
+      "fromMs": 8800,
+      "toMs": 9250,
+      "dtwMs": 9300,
+      "p": 0.956093
+    },
+    {
+      "text": " y",
+      "fromMs": 9340,
+      "toMs": 9750,
+      "dtwMs": 10700,
+      "p": 0.998618
+    },
+    {
+      "text": " así",
+      "fromMs": 9750,
+      "toMs": 11010,
+      "dtwMs": 11020,
+      "p": 0.998247
+    },
+    {
+      "text": " todo",
+      "fromMs": 11040,
+      "toMs": 11470,
+      "dtwMs": 12040,
+      "p": 0.98356
+    },
+    {
+      "text": " el",
+      "fromMs": 11590,
+      "toMs": 11730,
+      "dtwMs": 12140,
+      "p": 0.999886
+    },
+    {
+      "text": " tiempo",
+      "fromMs": 11730,
+      "toMs": 12370,
+      "dtwMs": 12400,
+      "p": 0.999861
+    },
+    {
+      "text": " ¿",
+      "fromMs": 12440,
+      "toMs": 12690,
+      "dtwMs": 13900,
+      "p": 0.139402
+    },
+    {
+      "text": "no",
+      "fromMs": 12690,
+      "toMs": 13120,
+      "dtwMs": 13900,
+      "p": 0.292304
+    },
+    {
+      "text": "?",
+      "fromMs": 13120,
+      "toMs": 13940,
+      "dtwMs": 13900,
+      "p": 0.993799
+    }
+  ]
+}

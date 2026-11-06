@@ -1,0 +1,75 @@
+{
+  "archivo": "voz_2.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3755,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        2747
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2740,
+      "texto": "Todos merecen una celebración."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Todos",
+      "fromMs": 30,
+      "toMs": 520,
+      "dtwMs": 1060,
+      "p": 0.882807
+    },
+    {
+      "text": " mere",
+      "fromMs": 800,
+      "toMs": 940,
+      "dtwMs": 1500,
+      "p": 0.978036
+    },
+    {
+      "text": "cen",
+      "fromMs": 940,
+      "toMs": 1150,
+      "dtwMs": 1660,
+      "p": 0.998504
+    },
+    {
+      "text": " una",
+      "fromMs": 1300,
+      "toMs": 1540,
+      "dtwMs": 1820,
+      "p": 0.99559
+    },
+    {
+      "text": " celebr",
+      "fromMs": 1560,
+      "toMs": 2190,
+      "dtwMs": 2060,
+      "p": 0.995429
+    },
+    {
+      "text": "ación",
+      "fromMs": 2190,
+      "toMs": 2640,
+      "dtwMs": 2440,
+      "p": 0.978054
+    },
+    {
+      "text": ".",
+      "fromMs": 2640,
+      "toMs": 2740,
+      "dtwMs": 2640,
+      "p": 0.546168
+    }
+  ]
+}

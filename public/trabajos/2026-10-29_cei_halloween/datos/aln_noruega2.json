@@ -1,0 +1,52 @@
+[
+ {
+  "palabra": "Usa",
+  "ini": 2.78,
+  "fin": 3.0
+ },
+ {
+  "palabra": "la",
+  "ini": 3.08,
+  "fin": 3.16
+ },
+ {
+  "palabra": "gente",
+  "ini": 3.28,
+  "fin": 3.6
+ },
+ {
+  "palabra": "vestimenta",
+  "ini": 3.66,
+  "fin": 4.36
+ },
+ {
+  "palabra": "de",
+  "ini": 4.66,
+  "fin": 4.74
+ },
+ {
+  "palabra": "ropa",
+  "ini": 4.88,
+  "fin": 5.1
+ },
+ {
+  "palabra": "de",
+  "ini": 5.28,
+  "fin": 5.34
+ },
+ {
+  "palabra": "pieles",
+  "ini": 5.48,
+  "fin": 5.76
+ },
+ {
+  "palabra": "de",
+  "ini": 5.8,
+  "fin": 5.86
+ },
+ {
+  "palabra": "animales.",
+  "ini": 5.9,
+  "fin": 6.44
+ }
+]

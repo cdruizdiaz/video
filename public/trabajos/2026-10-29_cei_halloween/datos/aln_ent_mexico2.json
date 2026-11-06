@@ -1,0 +1,57 @@
+[
+ {
+  "palabra": "What",
+  "ini": 2.0,
+  "fin": 2.16
+ },
+ {
+  "palabra": "colors",
+  "ini": 2.28,
+  "fin": 2.64
+ },
+ {
+  "palabra": "do",
+  "ini": 2.72,
+  "fin": 2.82
+ },
+ {
+  "palabra": "people",
+  "ini": 2.9,
+  "fin": 3.22
+ },
+ {
+  "palabra": "use",
+  "ini": 3.54,
+  "fin": 3.62
+ },
+ {
+  "palabra": "in",
+  "ini": 3.82,
+  "fin": 3.86
+ },
+ {
+  "palabra": "the",
+  "ini": 3.94,
+  "fin": 4.02
+ },
+ {
+  "palabra": "tradition?",
+  "ini": 4.14,
+  "fin": 5.56
+ },
+ {
+  "palabra": "Orange",
+  "ini": 5.96,
+  "fin": 6.38
+ },
+ {
+  "palabra": "and",
+  "ini": 6.88,
+  "fin": 7.06
+ },
+ {
+  "palabra": "black.",
+  "ini": 7.12,
+  "fin": 7.32
+ }
+]

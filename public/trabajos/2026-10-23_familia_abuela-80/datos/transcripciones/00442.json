@@ -1,0 +1,146 @@
+{
+  "archivo": "00442.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 35552,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 29980,
+      "texto": "¡Suscríbete al canal!"
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 34500,
+      "texto": "¡Suscríbete al canal!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 10,
+      "toMs": 1430,
+      "dtwMs": 2460,
+      "p": 0.186825
+    },
+    {
+      "text": "S",
+      "fromMs": 1430,
+      "toMs": 2850,
+      "dtwMs": 12160,
+      "p": 0.129671
+    },
+    {
+      "text": "us",
+      "fromMs": 2850,
+      "toMs": 5700,
+      "dtwMs": 12380,
+      "p": 0.919297
+    },
+    {
+      "text": "cr",
+      "fromMs": 5700,
+      "toMs": 8550,
+      "dtwMs": 17760,
+      "p": 0.98923
+    },
+    {
+      "text": "íb",
+      "fromMs": 8550,
+      "toMs": 11400,
+      "dtwMs": 17780,
+      "p": 0.999943
+    },
+    {
+      "text": "ete",
+      "fromMs": 11400,
+      "toMs": 15670,
+      "dtwMs": 18080,
+      "p": 1
+    },
+    {
+      "text": " al",
+      "fromMs": 15670,
+      "toMs": 18530,
+      "dtwMs": 26860,
+      "p": 0.821276
+    },
+    {
+      "text": " canal",
+      "fromMs": 18530,
+      "toMs": 25660,
+      "dtwMs": 26880,
+      "p": 0.999998
+    },
+    {
+      "text": "!",
+      "fromMs": 25670,
+      "toMs": 29980,
+      "dtwMs": 29960,
+      "p": 0.999689
+    },
+    {
+      "text": " ¡",
+      "fromMs": 30010,
+      "toMs": 30210,
+      "dtwMs": 31660,
+      "p": 0.879066
+    },
+    {
+      "text": "S",
+      "fromMs": 30210,
+      "toMs": 30420,
+      "dtwMs": 31680,
+      "p": 0.974042
+    },
+    {
+      "text": "us",
+      "fromMs": 30420,
+      "toMs": 30840,
+      "dtwMs": 31680,
+      "p": 0.99968
+    },
+    {
+      "text": "cr",
+      "fromMs": 30840,
+      "toMs": 31260,
+      "dtwMs": 32680,
+      "p": 0.999956
+    },
+    {
+      "text": "íb",
+      "fromMs": 31260,
+      "toMs": 31680,
+      "dtwMs": 32780,
+      "p": 0.999777
+    },
+    {
+      "text": "ete",
+      "fromMs": 31680,
+      "toMs": 32320,
+      "dtwMs": 32900,
+      "p": 0.999952
+    },
+    {
+      "text": " al",
+      "fromMs": 32320,
+      "toMs": 32750,
+      "dtwMs": 33480,
+      "p": 0.997327
+    },
+    {
+      "text": " canal",
+      "fromMs": 32750,
+      "toMs": 33820,
+      "dtwMs": 33760,
+      "p": 0.999866
+    },
+    {
+      "text": "!",
+      "fromMs": 33820,
+      "toMs": 34500,
+      "dtwMs": 34420,
+      "p": 0.99908
+    }
+  ]
+}

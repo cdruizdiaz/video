@@ -1,0 +1,237 @@
+{
+  "archivo": "IMG_4682.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 11305,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5000,
+      "texto": "¿Es este momento triste o una celebración de la vida?"
+    },
+    {
+      "desdeMs": 5000,
+      "hastaMs": 11300,
+      "texto": "Es un momento feliz porque la familia recuerda a la persona cantando y bailando."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 100,
+      "dtwMs": 1380,
+      "p": 0.441661
+    },
+    {
+      "text": "Es",
+      "fromMs": 100,
+      "toMs": 310,
+      "dtwMs": 1560,
+      "p": 0.805896
+    },
+    {
+      "text": " este",
+      "fromMs": 310,
+      "toMs": 740,
+      "dtwMs": 1800,
+      "p": 0.644077
+    },
+    {
+      "text": " momento",
+      "fromMs": 1250,
+      "toMs": 1500,
+      "dtwMs": 2180,
+      "p": 0.426746
+    },
+    {
+      "text": " triste",
+      "fromMs": 1500,
+      "toMs": 2150,
+      "dtwMs": 2720,
+      "p": 0.2312
+    },
+    {
+      "text": " o",
+      "fromMs": 2150,
+      "toMs": 2250,
+      "dtwMs": 3320,
+      "p": 0.838953
+    },
+    {
+      "text": " una",
+      "fromMs": 2250,
+      "toMs": 2490,
+      "dtwMs": 3500,
+      "p": 0.498575
+    },
+    {
+      "text": " celebr",
+      "fromMs": 2630,
+      "toMs": 3160,
+      "dtwMs": 3720,
+      "p": 0.833612
+    },
+    {
+      "text": "ación",
+      "fromMs": 3260,
+      "toMs": 3760,
+      "dtwMs": 4040,
+      "p": 0.998386
+    },
+    {
+      "text": " de",
+      "fromMs": 3760,
+      "toMs": 3960,
+      "dtwMs": 4180,
+      "p": 0.982533
+    },
+    {
+      "text": " la",
+      "fromMs": 3960,
+      "toMs": 4120,
+      "dtwMs": 4320,
+      "p": 0.540008
+    },
+    {
+      "text": " vida",
+      "fromMs": 4220,
+      "toMs": 4600,
+      "dtwMs": 4460,
+      "p": 0.986788
+    },
+    {
+      "text": "?",
+      "fromMs": 4600,
+      "toMs": 5000,
+      "dtwMs": 4820,
+      "p": 0.964033
+    },
+    {
+      "text": " Es",
+      "fromMs": 5000,
+      "toMs": 5120,
+      "dtwMs": 5260,
+      "p": 0.829955
+    },
+    {
+      "text": " un",
+      "fromMs": 5120,
+      "toMs": 5240,
+      "dtwMs": 5480,
+      "p": 0.919136
+    },
+    {
+      "text": " momento",
+      "fromMs": 5240,
+      "toMs": 5660,
+      "dtwMs": 5500,
+      "p": 0.991062
+    },
+    {
+      "text": " feliz",
+      "fromMs": 5680,
+      "toMs": 6000,
+      "dtwMs": 5980,
+      "p": 0.857298
+    },
+    {
+      "text": " porque",
+      "fromMs": 6260,
+      "toMs": 6520,
+      "dtwMs": 6320,
+      "p": 0.824643
+    },
+    {
+      "text": " la",
+      "fromMs": 6530,
+      "toMs": 6690,
+      "dtwMs": 6800,
+      "p": 0.883832
+    },
+    {
+      "text": " familia",
+      "fromMs": 6690,
+      "toMs": 7290,
+      "dtwMs": 7040,
+      "p": 0.98452
+    },
+    {
+      "text": " recuer",
+      "fromMs": 7290,
+      "toMs": 7810,
+      "dtwMs": 7360,
+      "p": 0.892281
+    },
+    {
+      "text": "da",
+      "fromMs": 7810,
+      "toMs": 8000,
+      "dtwMs": 7580,
+      "p": 0.965998
+    },
+    {
+      "text": " a",
+      "fromMs": 8000,
+      "toMs": 8100,
+      "dtwMs": 7720,
+      "p": 0.732915
+    },
+    {
+      "text": " la",
+      "fromMs": 8100,
+      "toMs": 8300,
+      "dtwMs": 7760,
+      "p": 0.880881
+    },
+    {
+      "text": " persona",
+      "fromMs": 8300,
+      "toMs": 9000,
+      "dtwMs": 8340,
+      "p": 0.869504
+    },
+    {
+      "text": " cant",
+      "fromMs": 9000,
+      "toMs": 9420,
+      "dtwMs": 9740,
+      "p": 0.703505
+    },
+    {
+      "text": "ando",
+      "fromMs": 9540,
+      "toMs": 10000,
+      "dtwMs": 9900,
+      "p": 0.947049
+    },
+    {
+      "text": " y",
+      "fromMs": 10000,
+      "toMs": 10140,
+      "dtwMs": 10080,
+      "p": 0.925348
+    },
+    {
+      "text": " bail",
+      "fromMs": 10140,
+      "toMs": 10710,
+      "dtwMs": 10200,
+      "p": 0.460525
+    },
+    {
+      "text": "ando",
+      "fromMs": 10710,
+      "toMs": 11210,
+      "dtwMs": 10280,
+      "p": 0.989995
+    },
+    {
+      "text": ".",
+      "fromMs": 11300,
+      "toMs": 11300,
+      "dtwMs": 10640,
+      "p": 0.806984
+    }
+  ]
+}

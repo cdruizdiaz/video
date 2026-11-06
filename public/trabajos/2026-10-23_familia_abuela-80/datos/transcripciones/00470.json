@@ -1,0 +1,113 @@
+{
+  "archivo": "00470.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 20544,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 17820,
+      "texto": "No va a sonar solamente el estribillo de la canción."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " No",
+      "fromMs": 10,
+      "toMs": 850,
+      "dtwMs": 1460,
+      "p": 0.0849606
+    },
+    {
+      "text": " va",
+      "fromMs": 850,
+      "toMs": 1700,
+      "dtwMs": 15200,
+      "p": 0.309325
+    },
+    {
+      "text": " a",
+      "fromMs": 1700,
+      "toMs": 2120,
+      "dtwMs": 15320,
+      "p": 0.999678
+    },
+    {
+      "text": " son",
+      "fromMs": 2120,
+      "toMs": 3390,
+      "dtwMs": 15520,
+      "p": 0.999788
+    },
+    {
+      "text": "ar",
+      "fromMs": 3390,
+      "toMs": 4230,
+      "dtwMs": 15640,
+      "p": 0.999985
+    },
+    {
+      "text": " solamente",
+      "fromMs": 4230,
+      "toMs": 8040,
+      "dtwMs": 16160,
+      "p": 0.997206
+    },
+    {
+      "text": " el",
+      "fromMs": 8040,
+      "toMs": 8880,
+      "dtwMs": 16400,
+      "p": 0.995835
+    },
+    {
+      "text": " est",
+      "fromMs": 8890,
+      "toMs": 10160,
+      "dtwMs": 16580,
+      "p": 0.979238
+    },
+    {
+      "text": "rib",
+      "fromMs": 10160,
+      "toMs": 11420,
+      "dtwMs": 16680,
+      "p": 0.943941
+    },
+    {
+      "text": "illo",
+      "fromMs": 11420,
+      "toMs": 13110,
+      "dtwMs": 16920,
+      "p": 0.999821
+    },
+    {
+      "text": " de",
+      "fromMs": 13110,
+      "toMs": 13960,
+      "dtwMs": 17060,
+      "p": 0.995731
+    },
+    {
+      "text": " la",
+      "fromMs": 13960,
+      "toMs": 14800,
+      "dtwMs": 17180,
+      "p": 0.999903
+    },
+    {
+      "text": " canción",
+      "fromMs": 14810,
+      "toMs": 17820,
+      "dtwMs": 17700,
+      "p": 0.999872
+    },
+    {
+      "text": ".",
+      "fromMs": 17820,
+      "toMs": 17820,
+      "dtwMs": 17800,
+      "p": 0.565907
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "archivo": "IMG_9080.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 9738,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 9740,
+      "texto": "C-T-O-R, ok, y si me dice sobre los cabrieros se llaman C-T-O-R y es más bonito."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " C",
+      "fromMs": 0,
+      "toMs": 530,
+      "dtwMs": 2420,
+      "p": 0.157887
+    },
+    {
+      "text": "-",
+      "fromMs": 530,
+      "toMs": 1000,
+      "dtwMs": 2760,
+      "p": 0.321858
+    },
+    {
+      "text": "T",
+      "fromMs": 1050,
+      "toMs": 1570,
+      "dtwMs": 2860,
+      "p": 0.864382
+    },
+    {
+      "text": "-",
+      "fromMs": 1570,
+      "toMs": 2090,
+      "dtwMs": 2880,
+      "p": 0.984006
+    },
+    {
+      "text": "O",
+      "fromMs": 2090,
+      "toMs": 2600,
+      "dtwMs": 3300,
+      "p": 0.945453
+    },
+    {
+      "text": "-",
+      "fromMs": 2760,
+      "toMs": 2970,
+      "dtwMs": 3560,
+      "p": 0.982503
+    },
+    {
+      "text": "R",
+      "fromMs": 3130,
+      "toMs": 3670,
+      "dtwMs": 3580,
+      "p": 0.995017
+    },
+    {
+      "text": ",",
+      "fromMs": 3720,
+      "toMs": 3840,
+      "dtwMs": 3700,
+      "p": 0.340959
+    },
+    {
+      "text": " ok",
+      "fromMs": 3840,
+      "toMs": 3980,
+      "dtwMs": 3900,
+      "p": 0.414036
+    },
+    {
+      "text": ",",
+      "fromMs": 4000,
+      "toMs": 4900,
+      "dtwMs": 4940,
+      "p": 0.194361
+    },
+    {
+      "text": " y",
+      "fromMs": 4900,
+      "toMs": 4960,
+      "dtwMs": 5020,
+      "p": 0.878485
+    },
+    {
+      "text": " si",
+      "fromMs": 4970,
+      "toMs": 5040,
+      "dtwMs": 5160,
+      "p": 0.837961
+    },
+    {
+      "text": " me",
+      "fromMs": 5110,
+      "toMs": 5220,
+      "dtwMs": 5260,
+      "p": 0.961469
+    },
+    {
+      "text": " dice",
+      "fromMs": 5220,
+      "toMs": 5390,
+      "dtwMs": 5440,
+      "p": 0.821235
+    },
+    {
+      "text": " sobre",
+      "fromMs": 5500,
+      "toMs": 5740,
+      "dtwMs": 5720,
+      "p": 0.319219
+    },
+    {
+      "text": " los",
+      "fromMs": 5740,
+      "toMs": 5840,
+      "dtwMs": 5900,
+      "p": 0.928906
+    },
+    {
+      "text": " cab",
+      "fromMs": 5950,
+      "toMs": 6030,
+      "dtwMs": 6040,
+      "p": 0.897786
+    },
+    {
+      "text": "rier",
+      "fromMs": 6030,
+      "toMs": 6200,
+      "dtwMs": 6140,
+      "p": 0.532184
+    },
+    {
+      "text": "os",
+      "fromMs": 6200,
+      "toMs": 6300,
+      "dtwMs": 6280,
+      "p": 0.913971
+    },
+    {
+      "text": " se",
+      "fromMs": 6300,
+      "toMs": 6410,
+      "dtwMs": 6420,
+      "p": 0.850898
+    },
+    {
+      "text": " ll",
+      "fromMs": 6490,
+      "toMs": 6540,
+      "dtwMs": 6540,
+      "p": 0.60159
+    },
+    {
+      "text": "aman",
+      "fromMs": 6540,
+      "toMs": 6800,
+      "dtwMs": 6700,
+      "p": 0.99685
+    },
+    {
+      "text": " C",
+      "fromMs": 6800,
+      "toMs": 6960,
+      "dtwMs": 6980,
+      "p": 0.924954
+    },
+    {
+      "text": "-",
+      "fromMs": 6960,
+      "toMs": 7070,
+      "dtwMs": 7200,
+      "p": 0.942079
+    },
+    {
+      "text": "T",
+      "fromMs": 7190,
+      "toMs": 7260,
+      "dtwMs": 7280,
+      "p": 0.994628
+    },
+    {
+      "text": "-",
+      "fromMs": 7260,
+      "toMs": 7350,
+      "dtwMs": 7440,
+      "p": 0.997541
+    },
+    {
+      "text": "O",
+      "fromMs": 7440,
+      "toMs": 7560,
+      "dtwMs": 7580,
+      "p": 0.996519
+    },
+    {
+      "text": "-",
+      "fromMs": 7560,
+      "toMs": 7710,
+      "dtwMs": 7840,
+      "p": 0.997413
+    },
+    {
+      "text": "R",
+      "fromMs": 7710,
+      "toMs": 7920,
+      "dtwMs": 7880,
+      "p": 0.999817
+    },
+    {
+      "text": " y",
+      "fromMs": 7920,
+      "toMs": 7990,
+      "dtwMs": 8180,
+      "p": 0.613286
+    },
+    {
+      "text": " es",
+      "fromMs": 8150,
+      "toMs": 8300,
+      "dtwMs": 8280,
+      "p": 0.991248
+    },
+    {
+      "text": " más",
+      "fromMs": 8300,
+      "toMs": 8560,
+      "dtwMs": 8400,
+      "p": 0.877154
+    },
+    {
+      "text": " bonito",
+      "fromMs": 8620,
+      "toMs": 9730,
+      "dtwMs": 8640,
+      "p": 0.599335
+    },
+    {
+      "text": ".",
+      "fromMs": 9730,
+      "toMs": 9730,
+      "dtwMs": 8920,
+      "p": 0.552832
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "archivo": "voz_2.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5803,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5800,
+      "texto": "También si sos de nuestros clientes gluten free, encuentras productos Sintac"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " También",
+      "fromMs": 50,
+      "toMs": 520,
+      "dtwMs": 1240,
+      "p": 0.391259
+    },
+    {
+      "text": " si",
+      "fromMs": 520,
+      "toMs": 670,
+      "dtwMs": 1460,
+      "p": 0.719114
+    },
+    {
+      "text": " sos",
+      "fromMs": 890,
+      "toMs": 890,
+      "dtwMs": 1600,
+      "p": 0.961165
+    },
+    {
+      "text": " de",
+      "fromMs": 920,
+      "toMs": 1040,
+      "dtwMs": 1700,
+      "p": 0.993851
+    },
+    {
+      "text": " nuestros",
+      "fromMs": 1040,
+      "toMs": 1630,
+      "dtwMs": 1880,
+      "p": 0.965131
+    },
+    {
+      "text": " client",
+      "fromMs": 1630,
+      "toMs": 2070,
+      "dtwMs": 2100,
+      "p": 0.980568
+    },
+    {
+      "text": "es",
+      "fromMs": 2070,
+      "toMs": 2170,
+      "dtwMs": 2300,
+      "p": 0.995332
+    },
+    {
+      "text": " gluten",
+      "fromMs": 2210,
+      "toMs": 2650,
+      "dtwMs": 2620,
+      "p": 0.903542
+    },
+    {
+      "text": " free",
+      "fromMs": 2650,
+      "toMs": 3000,
+      "dtwMs": 2920,
+      "p": 0.813812
+    },
+    {
+      "text": ",",
+      "fromMs": 3000,
+      "toMs": 3200,
+      "dtwMs": 3060,
+      "p": 0.445502
+    },
+    {
+      "text": " encuent",
+      "fromMs": 3200,
+      "toMs": 3920,
+      "dtwMs": 3240,
+      "p": 0.540668
+    },
+    {
+      "text": "ras",
+      "fromMs": 3920,
+      "toMs": 4230,
+      "dtwMs": 3460,
+      "p": 0.995668
+    },
+    {
+      "text": " productos",
+      "fromMs": 4230,
+      "toMs": 5020,
+      "dtwMs": 3820,
+      "p": 0.989839
+    },
+    {
+      "text": " S",
+      "fromMs": 5160,
+      "toMs": 5260,
+      "dtwMs": 4180,
+      "p": 0.264775
+    },
+    {
+      "text": "int",
+      "fromMs": 5260,
+      "toMs": 5570,
+      "dtwMs": 4340,
+      "p": 0.596919
+    },
+    {
+      "text": "ac",
+      "fromMs": 5570,
+      "toMs": 5800,
+      "dtwMs": 4520,
+      "p": 0.923743
+    }
+  ]
+}

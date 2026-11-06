@@ -21,7 +21,7 @@ export const rastro: Marca = {
   },
   ease: Easing.bezier(0.16, 1, 0.3, 1), // --ease: cubic-bezier(.16,1,.3,1)
   margen: 90,
-  logo: "marcas/rastro/logo.png",
+  logo: "marcas/rastro/logo.png", // la "A" es chica: en animaciones, la figurita en alta (figurita-positivo/negativo.png)
   logoFiltroSobreClaro: "brightness(0.35)",
   logoFiltroSobreOscuro: "invert(1) brightness(2.2)",
 };

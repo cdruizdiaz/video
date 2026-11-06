@@ -1,0 +1,71 @@
+{
+  "archivo": "IMG_8369.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2398,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2400,
+      "texto": "Primero, una traducción."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Prim",
+      "fromMs": 0,
+      "toMs": 430,
+      "dtwMs": 820,
+      "p": 0.723251
+    },
+    {
+      "text": "ero",
+      "fromMs": 660,
+      "toMs": 750,
+      "dtwMs": 980,
+      "p": 0.997274
+    },
+    {
+      "text": ",",
+      "fromMs": 750,
+      "toMs": 960,
+      "dtwMs": 1240,
+      "p": 0.694248
+    },
+    {
+      "text": " una",
+      "fromMs": 960,
+      "toMs": 1280,
+      "dtwMs": 1340,
+      "p": 0.989855
+    },
+    {
+      "text": " trad",
+      "fromMs": 1280,
+      "toMs": 1710,
+      "dtwMs": 1520,
+      "p": 0.959836
+    },
+    {
+      "text": "uc",
+      "fromMs": 1710,
+      "toMs": 1860,
+      "dtwMs": 1680,
+      "p": 0.999281
+    },
+    {
+      "text": "ción",
+      "fromMs": 1910,
+      "toMs": 2390,
+      "dtwMs": 1820,
+      "p": 0.996881
+    },
+    {
+      "text": ".",
+      "fromMs": 2390,
+      "toMs": 2390,
+      "dtwMs": 2120,
+      "p": 0.451496
+    }
+  ]
+}

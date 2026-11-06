@@ -1,0 +1,173 @@
+{
+  "archivo": "IMG_9491.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7502,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        2640,
+        7502
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 2640,
+      "hastaMs": 6720,
+      "texto": "y cuando llega la hora del After Office siguen disfrutando, todo bajo un mismo techo."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " y",
+      "fromMs": 2640,
+      "toMs": 2700,
+      "dtwMs": 2940,
+      "p": 0.44832
+    },
+    {
+      "text": " cuando",
+      "fromMs": 2880,
+      "toMs": 3070,
+      "dtwMs": 3100,
+      "p": 0.979142
+    },
+    {
+      "text": " llega",
+      "fromMs": 3070,
+      "toMs": 3380,
+      "dtwMs": 3320,
+      "p": 0.533449
+    },
+    {
+      "text": " la",
+      "fromMs": 3380,
+      "toMs": 3500,
+      "dtwMs": 3440,
+      "p": 0.978692
+    },
+    {
+      "text": " hora",
+      "fromMs": 3500,
+      "toMs": 3750,
+      "dtwMs": 3600,
+      "p": 0.988531
+    },
+    {
+      "text": " del",
+      "fromMs": 3750,
+      "toMs": 3810,
+      "dtwMs": 3760,
+      "p": 0.876543
+    },
+    {
+      "text": " After",
+      "fromMs": 3930,
+      "toMs": 4240,
+      "dtwMs": 3940,
+      "p": 0.392293
+    },
+    {
+      "text": " Office",
+      "fromMs": 4240,
+      "toMs": 4320,
+      "dtwMs": 4280,
+      "p": 0.897177
+    },
+    {
+      "text": " sig",
+      "fromMs": 4640,
+      "toMs": 4790,
+      "dtwMs": 4720,
+      "p": 0.537647
+    },
+    {
+      "text": "uen",
+      "fromMs": 4790,
+      "toMs": 4940,
+      "dtwMs": 4780,
+      "p": 0.975733
+    },
+    {
+      "text": " disfr",
+      "fromMs": 4940,
+      "toMs": 5190,
+      "dtwMs": 4940,
+      "p": 0.982593
+    },
+    {
+      "text": "ut",
+      "fromMs": 5190,
+      "toMs": 5260,
+      "dtwMs": 5080,
+      "p": 0.997044
+    },
+    {
+      "text": "ando",
+      "fromMs": 5260,
+      "toMs": 5370,
+      "dtwMs": 5260,
+      "p": 0.992657
+    },
+    {
+      "text": ",",
+      "fromMs": 5620,
+      "toMs": 5620,
+      "dtwMs": 5700,
+      "p": 0.361385
+    },
+    {
+      "text": " todo",
+      "fromMs": 5670,
+      "toMs": 5820,
+      "dtwMs": 5840,
+      "p": 0.704937
+    },
+    {
+      "text": " bajo",
+      "fromMs": 5820,
+      "toMs": 5930,
+      "dtwMs": 6180,
+      "p": 0.966866
+    },
+    {
+      "text": " un",
+      "fromMs": 6020,
+      "toMs": 6120,
+      "dtwMs": 6300,
+      "p": 0.553794
+    },
+    {
+      "text": " mismo",
+      "fromMs": 6120,
+      "toMs": 6370,
+      "dtwMs": 6440,
+      "p": 0.992462
+    },
+    {
+      "text": " te",
+      "fromMs": 6370,
+      "toMs": 6450,
+      "dtwMs": 6560,
+      "p": 0.994597
+    },
+    {
+      "text": "cho",
+      "fromMs": 6510,
+      "toMs": 6570,
+      "dtwMs": 6700,
+      "p": 0.999634
+    },
+    {
+      "text": ".",
+      "fromMs": 6640,
+      "toMs": 6710,
+      "dtwMs": 6700,
+      "p": 0.618429
+    }
+  ]
+}

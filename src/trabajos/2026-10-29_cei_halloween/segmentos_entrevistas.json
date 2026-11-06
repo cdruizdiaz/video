@@ -1,0 +1,312 @@
+{
+ "_nota": "Entrevistas entre chicos (Halloween día 2). Todo en inglés (pregunta y respuesta): doble subtítulo; chunk.es = traducción. fin = s hasta donde se mira el clip. inserts = tomas de la actividad (sin sonido).",
+ "segmentos": [
+  {
+   "id": "mexico1",
+   "pais": "MEXICO",
+   "clip": "IMG_4679",
+   "fin": 5.7,
+   "chunks": [
+    {
+     "t": "What country",
+     "es": "¿Qué país"
+    },
+    {
+     "t": "did you research?",
+     "es": "investigaste?"
+    },
+    {
+     "t": "Mexico.",
+     "es": "México."
+    }
+   ]
+  },
+  {
+   "id": "mexico2",
+   "pais": "MEXICO",
+   "clip": "IMG_4680",
+   "fin": 7.8,
+   "chunks": [
+    {
+     "t": "What colors do",
+     "es": "¿Qué colores usa"
+    },
+    {
+     "t": "people use",
+     "es": "la gente"
+    },
+    {
+     "t": "in the tradition?",
+     "es": "en la tradición?"
+    },
+    {
+     "t": "Orange and black.",
+     "es": "Naranja y negro."
+    }
+   ],
+   "tramos": [
+    [
+     1.97,
+     4.68
+    ],
+    [
+     5.78,
+     7.38
+    ]
+   ],
+   "palabras": [
+    [
+     "What",
+     1.97,
+     2.2
+    ],
+    [
+     "colors",
+     2.2,
+     2.6
+    ],
+    [
+     "do",
+     2.7,
+     2.85
+    ],
+    [
+     "people",
+     2.9,
+     3.1
+    ],
+    [
+     "use",
+     3.15,
+     3.3
+    ],
+    [
+     "in",
+     3.45,
+     3.6
+    ],
+    [
+     "the",
+     3.75,
+     3.9
+    ],
+    [
+     "tradition?",
+     3.95,
+     4.65
+    ],
+    [
+     "Orange",
+     5.85,
+     6.4
+    ],
+    [
+     "and",
+     6.6,
+     6.85
+    ],
+    [
+     "black.",
+     7.1,
+     7.35
+    ]
+   ]
+  },
+  {
+   "id": "ghana",
+   "pais": "GHANA",
+   "clip": "IMG_4669",
+   "fin": 9.2,
+   "chunks": [
+    {
+     "t": "What country did",
+     "es": "¿Qué país"
+    },
+    {
+     "t": "you research and",
+     "es": "investigaste y"
+    },
+    {
+     "t": "where is it",
+     "es": "dónde queda"
+    },
+    {
+     "t": "on the map?",
+     "es": "en el mapa?"
+    },
+    {
+     "t": "We researched",
+     "es": "Investigamos"
+    },
+    {
+     "t": "Ghana and",
+     "es": "Ghana y"
+    },
+    {
+     "t": "it's in Africa.",
+     "es": "está en África."
+    }
+   ]
+  },
+  {
+   "id": "mexico4",
+   "pais": "MEXICO",
+   "clip": "IMG_4682",
+   "fin": 11.4,
+   "chunks": [
+    {
+     "t": "Is this a sad moment",
+     "es": "¿Es un momento triste"
+    },
+    {
+     "t": "or a celebration",
+     "es": "o una celebración"
+    },
+    {
+     "t": "of life?",
+     "es": "de la vida?"
+    },
+    {
+     "t": "It's a happy moment",
+     "es": "Es un momento feliz"
+    },
+    {
+     "t": "because the family",
+     "es": "porque la familia"
+    },
+    {
+     "t": "remembers the person",
+     "es": "recuerda a la persona"
+    },
+    {
+     "t": "singing and dancing.",
+     "es": "cantando y bailando."
+    }
+   ]
+  },
+  {
+   "id": "china",
+   "pais": "CHINA",
+   "clip": "IMG_4661",
+   "fin": 15.0,
+   "chunks": [
+    {
+     "t": "What do people do",
+     "es": "¿Qué hace la gente"
+    },
+    {
+     "t": "during funerals",
+     "es": "durante los funerales"
+    },
+    {
+     "t": "in China?",
+     "es": "en China?"
+    },
+    {
+     "t": "In China they put",
+     "es": "En China ponen"
+    },
+    {
+     "t": "flowers, money,",
+     "es": "flores, dinero,"
+    },
+    {
+     "t": "tea and fruits",
+     "es": "té y frutas"
+    },
+    {
+     "t": "in the crowd.",
+     "es": "en la multitud."
+    }
+   ]
+  },
+  {
+   "id": "mexico3",
+   "pais": "GHANA",
+   "clip": "IMG_4675",
+   "fin": 16.4,
+   "chunks": [
+    {
+     "t": "Is this ceremony",
+     "es": "¿Esta ceremonia"
+    },
+    {
+     "t": "a sad moment",
+     "es": "es un momento triste"
+    },
+    {
+     "t": "or a celebration",
+     "es": "o una celebración"
+    },
+    {
+     "t": "of life?",
+     "es": "de la vida?"
+    },
+    {
+     "t": "This ceremony",
+     "es": "Esta ceremonia"
+    },
+    {
+     "t": "is really happy",
+     "es": "es muy feliz"
+    },
+    {
+     "t": "because they dance",
+     "es": "porque bailan"
+    },
+    {
+     "t": "like in the video.",
+     "es": "como en el video."
+    }
+   ],
+   "cola": {
+    "ini": 11.3,
+    "hastaPantalla": 44.0,
+    "rate": 1.0
+   },
+   "subExtra": 2.0
+  }
+ ],
+ "inserts": [
+  {
+   "clip": "IMG_4540",
+   "ini": 3.5,
+   "dur": 1.5
+  },
+  {
+   "clip": "IMG_4711",
+   "ini": 3.0,
+   "dur": 1.6
+  },
+  {
+   "clip": "IMG_4611",
+   "ini": 7.5,
+   "dur": 1.5
+  },
+  {
+   "clip": "IMG_4683",
+   "ini": 0.5,
+   "dur": 1.5
+  },
+  {
+   "clip": "IMG_4618",
+   "ini": 0.6,
+   "dur": 1.6
+  },
+  {
+   "clip": "IMG_4700",
+   "ini": 0.6,
+   "dur": 1.5
+  },
+  {
+   "clip": "IMG_4585",
+   "ini": 1.2,
+   "dur": 1.6
+  },
+  {
+   "clip": "IMG_4708",
+   "ini": 2.0,
+   "dur": 1.6
+  }
+ ]
+}

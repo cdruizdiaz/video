@@ -195,7 +195,7 @@ const LOGO_Y = 404;
 const CABEZA_LOGO: Pt = [170, 35]; // cabeza de la figurita sobre la "A"
 const CABEZA: Pt = [LOGO_X + CABEZA_LOGO[0] * LOGO_K, LOGO_Y + CABEZA_LOGO[1] * LOGO_K];
 // Trazos que dibujan cada letra (coordenadas del logo original)
-const TRAZOS_LOGO = [
+export const TRAZOS_LOGO = [
   { d: "M10,172 L10,76 C40,74 70,76 76,98 C80,118 50,124 14,122 M42,122 L78,172", nace: 4 },
   { d: "M332,86 C320,70 296,66 280,72 C258,82 260,108 290,120 C320,130 338,140 334,160 C328,178 284,182 262,160", nace: 10 },
   { d: "M356,74 L440,75 M398,75 L398,174", nace: 16 },

@@ -1,0 +1,232 @@
+{
+  "archivo": "IMG_8500.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8033,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7220,
+      "texto": "¿Tenés que legalizar una traducción? Consulta horarios y requisitos en www.traductoresantafe.org.ar"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 70,
+      "dtwMs": 1140,
+      "p": 0.561694
+    },
+    {
+      "text": "T",
+      "fromMs": 70,
+      "toMs": 140,
+      "dtwMs": 1200,
+      "p": 0.980714
+    },
+    {
+      "text": "en",
+      "fromMs": 140,
+      "toMs": 280,
+      "dtwMs": 1280,
+      "p": 0.985468
+    },
+    {
+      "text": "és",
+      "fromMs": 280,
+      "toMs": 420,
+      "dtwMs": 1340,
+      "p": 0.822842
+    },
+    {
+      "text": " que",
+      "fromMs": 420,
+      "toMs": 640,
+      "dtwMs": 1420,
+      "p": 0.99559
+    },
+    {
+      "text": " legal",
+      "fromMs": 640,
+      "toMs": 1000,
+      "dtwMs": 1680,
+      "p": 0.997955
+    },
+    {
+      "text": "izar",
+      "fromMs": 1170,
+      "toMs": 1290,
+      "dtwMs": 1860,
+      "p": 0.998551
+    },
+    {
+      "text": " una",
+      "fromMs": 1290,
+      "toMs": 1510,
+      "dtwMs": 2020,
+      "p": 0.997449
+    },
+    {
+      "text": " trad",
+      "fromMs": 1510,
+      "toMs": 1720,
+      "dtwMs": 2220,
+      "p": 0.999058
+    },
+    {
+      "text": "uc",
+      "fromMs": 1830,
+      "toMs": 1940,
+      "dtwMs": 2360,
+      "p": 0.99201
+    },
+    {
+      "text": "ción",
+      "fromMs": 1940,
+      "toMs": 2230,
+      "dtwMs": 2500,
+      "p": 0.992848
+    },
+    {
+      "text": "?",
+      "fromMs": 2230,
+      "toMs": 2500,
+      "dtwMs": 2660,
+      "p": 0.989047
+    },
+    {
+      "text": " Consult",
+      "fromMs": 2500,
+      "toMs": 2950,
+      "dtwMs": 3140,
+      "p": 0.711249
+    },
+    {
+      "text": "a",
+      "fromMs": 2950,
+      "toMs": 2980,
+      "dtwMs": 3340,
+      "p": 0.923076
+    },
+    {
+      "text": " hor",
+      "fromMs": 3070,
+      "toMs": 3170,
+      "dtwMs": 3460,
+      "p": 0.927394
+    },
+    {
+      "text": "arios",
+      "fromMs": 3230,
+      "toMs": 3520,
+      "dtwMs": 3640,
+      "p": 0.991263
+    },
+    {
+      "text": " y",
+      "fromMs": 3520,
+      "toMs": 3580,
+      "dtwMs": 3740,
+      "p": 0.983928
+    },
+    {
+      "text": " requis",
+      "fromMs": 3580,
+      "toMs": 3960,
+      "dtwMs": 3980,
+      "p": 0.989325
+    },
+    {
+      "text": "itos",
+      "fromMs": 3960,
+      "toMs": 4240,
+      "dtwMs": 4220,
+      "p": 0.998214
+    },
+    {
+      "text": " en",
+      "fromMs": 4240,
+      "toMs": 4380,
+      "dtwMs": 4400,
+      "p": 0.920886
+    },
+    {
+      "text": " www",
+      "fromMs": 4450,
+      "toMs": 4660,
+      "dtwMs": 4740,
+      "p": 0.943486
+    },
+    {
+      "text": ".",
+      "fromMs": 4660,
+      "toMs": 4900,
+      "dtwMs": 5260,
+      "p": 0.999683
+    },
+    {
+      "text": "trad",
+      "fromMs": 4900,
+      "toMs": 5200,
+      "dtwMs": 5440,
+      "p": 0.980191
+    },
+    {
+      "text": "uct",
+      "fromMs": 5230,
+      "toMs": 5460,
+      "dtwMs": 5620,
+      "p": 0.957145
+    },
+    {
+      "text": "ores",
+      "fromMs": 5460,
+      "toMs": 5740,
+      "dtwMs": 5740,
+      "p": 0.999699
+    },
+    {
+      "text": "anta",
+      "fromMs": 5830,
+      "toMs": 6100,
+      "dtwMs": 5940,
+      "p": 0.98887
+    },
+    {
+      "text": "fe",
+      "fromMs": 6100,
+      "toMs": 6260,
+      "dtwMs": 6100,
+      "p": 0.999794
+    },
+    {
+      "text": ".",
+      "fromMs": 6260,
+      "toMs": 6500,
+      "dtwMs": 6360,
+      "p": 0.999868
+    },
+    {
+      "text": "org",
+      "fromMs": 6500,
+      "toMs": 6670,
+      "dtwMs": 6720,
+      "p": 0.999333
+    },
+    {
+      "text": ".",
+      "fromMs": 6860,
+      "toMs": 6960,
+      "dtwMs": 6940,
+      "p": 0.999783
+    },
+    {
+      "text": "ar",
+      "fromMs": 6980,
+      "toMs": 7140,
+      "dtwMs": 7200,
+      "p": 0.998174
+    }
+  ]
+}

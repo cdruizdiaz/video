@@ -1,0 +1,109 @@
+{
+  "archivo": "00445.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 72096,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 29980,
+      "texto": "Buenas noches"
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 59980,
+      "texto": "Buenas noches"
+    },
+    {
+      "desdeMs": 60000,
+      "hastaMs": 72000,
+      "texto": "Buenas noches"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bu",
+      "fromMs": 10,
+      "toMs": 5010,
+      "dtwMs": 840,
+      "p": 0.469649
+    },
+    {
+      "text": "enas",
+      "fromMs": 5010,
+      "toMs": 14980,
+      "dtwMs": 1040,
+      "p": 0.936543
+    },
+    {
+      "text": " noch",
+      "fromMs": 14980,
+      "toMs": 24980,
+      "dtwMs": 1340,
+      "p": 0.693704
+    },
+    {
+      "text": "es",
+      "fromMs": 24980,
+      "toMs": 29980,
+      "dtwMs": 1340,
+      "p": 0.999924
+    },
+    {
+      "text": " Bu",
+      "fromMs": 30010,
+      "toMs": 35010,
+      "dtwMs": 43280,
+      "p": 0.976608
+    },
+    {
+      "text": "enas",
+      "fromMs": 35010,
+      "toMs": 44980,
+      "dtwMs": 44580,
+      "p": 0.998904
+    },
+    {
+      "text": " noch",
+      "fromMs": 44980,
+      "toMs": 54980,
+      "dtwMs": 52320,
+      "p": 0.998147
+    },
+    {
+      "text": "es",
+      "fromMs": 54980,
+      "toMs": 59980,
+      "dtwMs": 52400,
+      "p": 0.999872
+    },
+    {
+      "text": " Bu",
+      "fromMs": 60010,
+      "toMs": 62000,
+      "dtwMs": 62100,
+      "p": 0.981713
+    },
+    {
+      "text": "enas",
+      "fromMs": 62000,
+      "toMs": 65980,
+      "dtwMs": 67220,
+      "p": 0.997425
+    },
+    {
+      "text": " noch",
+      "fromMs": 65990,
+      "toMs": 69990,
+      "dtwMs": 67300,
+      "p": 0.984106
+    },
+    {
+      "text": "es",
+      "fromMs": 69990,
+      "toMs": 72000,
+      "dtwMs": 67840,
+      "p": 0.999777
+    }
+  ]
+}

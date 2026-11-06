@@ -1,0 +1,50 @@
+{
+  "archivo": "IMG_4607.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1832,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 940,
+      "texto": "para mí este año."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " para",
+      "fromMs": 0,
+      "toMs": 200,
+      "dtwMs": 260,
+      "p": 0.196786
+    },
+    {
+      "text": " mí",
+      "fromMs": 290,
+      "toMs": 420,
+      "dtwMs": 540,
+      "p": 0.873052
+    },
+    {
+      "text": " este",
+      "fromMs": 420,
+      "toMs": 700,
+      "dtwMs": 680,
+      "p": 0.980125
+    },
+    {
+      "text": " año",
+      "fromMs": 700,
+      "toMs": 940,
+      "dtwMs": 920,
+      "p": 0.998245
+    },
+    {
+      "text": ".",
+      "fromMs": 940,
+      "toMs": 940,
+      "dtwMs": 920,
+      "p": 0.799931
+    }
+  ]
+}

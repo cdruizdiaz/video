@@ -1,0 +1,130 @@
+{
+  "archivo": "IMG_4551.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 6102,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 500,
+      "texto": "¡Hello!"
+    },
+    {
+      "desdeMs": 1420,
+      "hastaMs": 2720,
+      "texto": "¿What time do you reserve?"
+    },
+    {
+      "desdeMs": 3120,
+      "hastaMs": 4940,
+      "texto": "¡We reserve China!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 0,
+      "toMs": 50,
+      "dtwMs": 360,
+      "p": 0.457915
+    },
+    {
+      "text": "Hello",
+      "fromMs": 50,
+      "toMs": 320,
+      "dtwMs": 580,
+      "p": 0.121126
+    },
+    {
+      "text": "!",
+      "fromMs": 320,
+      "toMs": 500,
+      "dtwMs": 1320,
+      "p": 0.976972
+    },
+    {
+      "text": " ¿",
+      "fromMs": 1420,
+      "toMs": 1420,
+      "dtwMs": 1480,
+      "p": 0.505491
+    },
+    {
+      "text": "What",
+      "fromMs": 1420,
+      "toMs": 1420,
+      "dtwMs": 1640,
+      "p": 0.100565
+    },
+    {
+      "text": " time",
+      "fromMs": 1420,
+      "toMs": 1420,
+      "dtwMs": 1880,
+      "p": 0.539542
+    },
+    {
+      "text": " do",
+      "fromMs": 1420,
+      "toMs": 1500,
+      "dtwMs": 2020,
+      "p": 0.260322
+    },
+    {
+      "text": " you",
+      "fromMs": 1500,
+      "toMs": 1770,
+      "dtwMs": 2280,
+      "p": 0.944971
+    },
+    {
+      "text": " reserve",
+      "fromMs": 1770,
+      "toMs": 2410,
+      "dtwMs": 2720,
+      "p": 0.319344
+    },
+    {
+      "text": "?",
+      "fromMs": 2410,
+      "toMs": 2570,
+      "dtwMs": 2940,
+      "p": 0.996639
+    },
+    {
+      "text": " ¡",
+      "fromMs": 3120,
+      "toMs": 3120,
+      "dtwMs": 3140,
+      "p": 0.774708
+    },
+    {
+      "text": "We",
+      "fromMs": 3120,
+      "toMs": 3120,
+      "dtwMs": 3640,
+      "p": 0.875137
+    },
+    {
+      "text": " reserve",
+      "fromMs": 3190,
+      "toMs": 3940,
+      "dtwMs": 4220,
+      "p": 0.959647
+    },
+    {
+      "text": " China",
+      "fromMs": 3940,
+      "toMs": 4230,
+      "dtwMs": 4920,
+      "p": 0.76438
+    },
+    {
+      "text": "!",
+      "fromMs": 4570,
+      "toMs": 4940,
+      "dtwMs": 4920,
+      "p": 0.999464
+    }
+  ]
+}

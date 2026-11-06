@@ -1,0 +1,57 @@
+[
+ {
+  "palabra": "Que",
+  "ini": 7.62,
+  "fin": 7.82
+ },
+ {
+  "palabra": "se",
+  "ini": 7.98,
+  "fin": 8.08
+ },
+ {
+  "palabra": "quemaron",
+  "ini": 8.24,
+  "fin": 8.52
+ },
+ {
+  "palabra": "el",
+  "ini": 8.76,
+  "fin": 9.16
+ },
+ {
+  "palabra": "barco",
+  "ini": 9.22,
+  "fin": 10.02
+ },
+ {
+  "palabra": "con",
+  "ini": 10.08,
+  "fin": 10.18
+ },
+ {
+  "palabra": "la",
+  "ini": 10.22,
+  "fin": 10.32
+ },
+ {
+  "palabra": "persona",
+  "ini": 10.6,
+  "fin": 10.98
+ },
+ {
+  "palabra": "dentro",
+  "ini": 11.0,
+  "fin": 11.38
+ },
+ {
+  "palabra": "de",
+  "ini": 11.46,
+  "fin": 11.52
+ },
+ {
+  "palabra": "él.",
+  "ini": 11.6,
+  "fin": 12.28
+ }
+]

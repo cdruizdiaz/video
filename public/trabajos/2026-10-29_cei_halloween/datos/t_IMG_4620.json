@@ -1,0 +1,241 @@
+{
+  "archivo": "IMG_4620.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 12632,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4480,
+      "texto": "Aplausos."
+    },
+    {
+      "desdeMs": 4480,
+      "hastaMs": 6480,
+      "texto": "Aplausos."
+    },
+    {
+      "desdeMs": 6480,
+      "hastaMs": 7480,
+      "texto": "- Hello."
+    },
+    {
+      "desdeMs": 7480,
+      "hastaMs": 8440,
+      "texto": "- Hello."
+    },
+    {
+      "desdeMs": 8440,
+      "hastaMs": 9340,
+      "texto": "- How are you doing?"
+    },
+    {
+      "desdeMs": 9340,
+      "hastaMs": 10720,
+      "texto": "- Fine?"
+    },
+    {
+      "desdeMs": 10720,
+      "hastaMs": 12640,
+      "texto": "- Fantastic."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " A",
+      "fromMs": 0,
+      "toMs": 250,
+      "dtwMs": 480,
+      "p": 0.0107854
+    },
+    {
+      "text": "pl",
+      "fromMs": 250,
+      "toMs": 740,
+      "dtwMs": 500,
+      "p": 0.172114
+    },
+    {
+      "text": "aus",
+      "fromMs": 740,
+      "toMs": 1480,
+      "dtwMs": 520,
+      "p": 0.932713
+    },
+    {
+      "text": "os",
+      "fromMs": 1480,
+      "toMs": 2000,
+      "dtwMs": 520,
+      "p": 0.991683
+    },
+    {
+      "text": ".",
+      "fromMs": 2000,
+      "toMs": 4470,
+      "dtwMs": 800,
+      "p": 0.370963
+    },
+    {
+      "text": " A",
+      "fromMs": 4480,
+      "toMs": 4660,
+      "dtwMs": 800,
+      "p": 0.265565
+    },
+    {
+      "text": "pl",
+      "fromMs": 4660,
+      "toMs": 5020,
+      "dtwMs": 800,
+      "p": 0.998624
+    },
+    {
+      "text": "aus",
+      "fromMs": 5020,
+      "toMs": 5560,
+      "dtwMs": 4120,
+      "p": 0.999733
+    },
+    {
+      "text": "os",
+      "fromMs": 5560,
+      "toMs": 5920,
+      "dtwMs": 4120,
+      "p": 0.999609
+    },
+    {
+      "text": ".",
+      "fromMs": 5920,
+      "toMs": 6480,
+      "dtwMs": 4200,
+      "p": 0.996042
+    },
+    {
+      "text": " -",
+      "fromMs": 6480,
+      "toMs": 6590,
+      "dtwMs": 4340,
+      "p": 0.120367
+    },
+    {
+      "text": " Hello",
+      "fromMs": 6590,
+      "toMs": 7140,
+      "dtwMs": 6980,
+      "p": 0.53875
+    },
+    {
+      "text": ".",
+      "fromMs": 7140,
+      "toMs": 7480,
+      "dtwMs": 7560,
+      "p": 0.89122
+    },
+    {
+      "text": " -",
+      "fromMs": 7480,
+      "toMs": 7580,
+      "dtwMs": 7640,
+      "p": 0.970246
+    },
+    {
+      "text": " Hello",
+      "fromMs": 7580,
+      "toMs": 8110,
+      "dtwMs": 8140,
+      "p": 0.921758
+    },
+    {
+      "text": ".",
+      "fromMs": 8110,
+      "toMs": 8440,
+      "dtwMs": 8140,
+      "p": 0.930557
+    },
+    {
+      "text": " -",
+      "fromMs": 8440,
+      "toMs": 8490,
+      "dtwMs": 8140,
+      "p": 0.953486
+    },
+    {
+      "text": " How",
+      "fromMs": 8490,
+      "toMs": 8640,
+      "dtwMs": 8440,
+      "p": 0.798135
+    },
+    {
+      "text": " are",
+      "fromMs": 8640,
+      "toMs": 8790,
+      "dtwMs": 8620,
+      "p": 0.93757
+    },
+    {
+      "text": " you",
+      "fromMs": 8790,
+      "toMs": 8940,
+      "dtwMs": 8680,
+      "p": 0.99529
+    },
+    {
+      "text": " doing",
+      "fromMs": 8940,
+      "toMs": 9180,
+      "dtwMs": 9020,
+      "p": 0.962654
+    },
+    {
+      "text": "?",
+      "fromMs": 9180,
+      "toMs": 9340,
+      "dtwMs": 9180,
+      "p": 0.875589
+    },
+    {
+      "text": " -",
+      "fromMs": 9340,
+      "toMs": 9510,
+      "dtwMs": 9260,
+      "p": 0.847229
+    },
+    {
+      "text": " Fine",
+      "fromMs": 9510,
+      "toMs": 10200,
+      "dtwMs": 9440,
+      "p": 0.881122
+    },
+    {
+      "text": "?",
+      "fromMs": 10200,
+      "toMs": 10720,
+      "dtwMs": 9740,
+      "p": 0.624116
+    },
+    {
+      "text": " -",
+      "fromMs": 10720,
+      "toMs": 10860,
+      "dtwMs": 9740,
+      "p": 0.91187
+    },
+    {
+      "text": " Fantastic",
+      "fromMs": 10860,
+      "toMs": 12180,
+      "dtwMs": 10940,
+      "p": 0.497662
+    },
+    {
+      "text": ".",
+      "fromMs": 12180,
+      "toMs": 12640,
+      "dtwMs": 11600,
+      "p": 0.981938
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+ "video": [
+  {
+   "clip": "IMG_4717",
+   "ini": 6.0,
+   "dur": 1.53,
+   "rot": 4.09,
+   "esc": 1.134
+  },
+  {
+   "clip": "IMG_4717",
+   "ini": 7.99,
+   "dur": 3.94,
+   "rot": 4.09,
+   "esc": 1.134
+  },
+  {
+   "clip": "IMG_4717",
+   "ini": 12.27,
+   "dur": 2.92,
+   "rot": 4.09,
+   "esc": 1.134
+  },
+  {
+   "clip": "IMG_4717",
+   "ini": 15.52,
+   "dur": 1.29,
+   "rot": 4.09,
+   "esc": 1.134
+  },
+  {
+   "clip": "IMG_4717",
+   "ini": 18.96,
+   "dur": 2.35,
+   "rot": 4.09,
+   "esc": 1.134
+  },
+  {
+   "clip": "IMG_4717",
+   "ini": 21.88,
+   "dur": 5.82,
+   "rot": 4.09,
+   "esc": 1.134
+  },
+  {
+   "clip": "IMG_4639",
+   "ini": 0.84,
+   "dur": 5.77,
+   "rot": 2.42,
+   "esc": 1.084
+  },
+  {
+   "clip": "IMG_4639",
+   "ini": 7.03,
+   "dur": 2.22,
+   "rot": 2.42,
+   "esc": 1.084
+  },
+  {
+   "clip": "IMG_4639",
+   "ini": 9.93,
+   "dur": 3.29,
+   "rot": 2.42,
+   "esc": 1.084
+  },
+  {
+   "clip": "IMG_4639",
+   "ini": 13.89,
+   "dur": 3.47,
+   "rot": 2.42,
+   "esc": 1.084
+  },
+  {
+   "clip": "IMG_4641",
+   "ini": 0.72,
+   "dur": 1.77
+  },
+  {
+   "clip": "IMG_4641",
+   "ini": 3.0,
+   "dur": 2.68
+  },
+  {
+   "clip": "IMG_4641",
+   "ini": 10.86,
+   "dur": 2.61
+  }
+ ],
+ "audio": [
+  {
+   "id": "../voz_testimonios",
+   "desde": 0,
+   "dur": 39.66,
+   "gananciaDb": 0,
+   "fade": 1
+  }
+ ],
+ "subs": [
+  {
+   "t": "Muy linda la propuesta y hermoso todo:",
+   "desde": 0.09,
+   "hasta": 3.01
+  },
+  {
+   "t": "la decoración, los chicos vestidos",
+   "desde": 3.01,
+   "hasta": 5.47
+  },
+  {
+   "t": "y todo el contenido teórico",
+   "desde": 5.85,
+   "hasta": 7.99
+  },
+  {
+   "t": "que todos expusieron.",
+   "desde": 8.39,
+   "hasta": 9.68
+  },
+  {
+   "t": "Muy lindo, muy linda",
+   "desde": 9.68,
+   "hasta": 10.83
+  },
+  {
+   "t": "la exposición de los chicos.",
+   "desde": 10.83,
+   "hasta": 12.03
+  },
+  {
+   "t": "Me llama la atención",
+   "desde": 12.52,
+   "hasta": 13.32
+  },
+  {
+   "t": "la buena pronunciación",
+   "desde": 13.32,
+   "hasta": 14.36
+  },
+  {
+   "t": "que tienen la mayoría.",
+   "desde": 14.36,
+   "hasta": 15.66
+  },
+  {
+   "t": "Eso es importante,",
+   "desde": 15.66,
+   "hasta": 16.9
+  },
+  {
+   "t": "saber eso en inglés.",
+   "desde": 16.9,
+   "hasta": 17.85
+  },
+  {
+   "t": "Para mí, la actividad estuvo muy buena",
+   "desde": 17.85,
+   "hasta": 19.4
+  },
+  {
+   "t": "porque estuvo muy lindo",
+   "desde": 19.4,
+   "hasta": 20.76
+  },
+  {
+   "t": "que pudimos ver otros stands,",
+   "desde": 20.76,
+   "hasta": 22.32
+  },
+  {
+   "t": "que vinieron nuestros padres,",
+   "desde": 22.32,
+   "hasta": 23.62
+  },
+  {
+   "t": "que pudimos compartir",
+   "desde": 23.62,
+   "hasta": 24.5
+  },
+  {
+   "t": "con nuestras amigas",
+   "desde": 24.5,
+   "hasta": 25.5
+  },
+  {
+   "t": "para hacer todo,",
+   "desde": 25.5,
+   "hasta": 26.1
+  },
+  {
+   "t": "por ejemplo, la fogata,",
+   "desde": 26.1,
+   "hasta": 27.54
+  },
+  {
+   "t": "el barco, todo eso.",
+   "desde": 27.54,
+   "hasta": 29.13
+  },
+  {
+   "t": "Además, eso es lo lindo,",
+   "desde": 29.13,
+   "hasta": 30.41
+  },
+  {
+   "t": "por ejemplo, de venir a Inglés",
+   "desde": 30.41,
+   "hasta": 31.49
+  },
+  {
+   "t": "y compartir con amigas.",
+   "desde": 31.49,
+   "hasta": 32.6
+  },
+  {
+   "t": "La actividad estuvo muy buena y dinámica.",
+   "desde": 32.6,
+   "hasta": 34.37
+  },
+  {
+   "t": "Todos nos vestimos de nuestra cultura",
+   "desde": 34.37,
+   "hasta": 35.82
+  },
+  {
+   "t": "y todos estuvimos muy lindos.",
+   "desde": 35.82,
+   "hasta": 37.05
+  },
+  {
+   "t": "Gracias a todos por venir.",
+   "desde": 37.05,
+   "hasta": 38.18
+  },
+  {
+   "t": "Espero que les haya gustado.",
+   "desde": 38.18,
+   "hasta": 39.66
+  }
+ ],
+ "tags": [],
+ "inserts": [
+  {
+   "clip": "IMG_4577",
+   "ini": 0.4,
+   "dur": 1.6,
+   "flash": true,
+   "rot": -2.47,
+   "esc": 1.086
+  },
+  {
+   "clip": "IMG_4581",
+   "ini": 0.3,
+   "dur": 1.6
+  },
+  {
+   "clip": "IMG_4616",
+   "ini": 1.5,
+   "dur": 1.5
+  },
+  {
+   "clip": "IMG_4624",
+   "ini": 0.2,
+   "dur": 1.6
+  }
+ ],
+ "finEntrevistas": 39.66,
+ "finHabla": 39.66,
+ "finInserts": 45.96
+}

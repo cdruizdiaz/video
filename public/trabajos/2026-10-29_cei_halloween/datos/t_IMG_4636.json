@@ -1,0 +1,50 @@
+{
+  "archivo": "IMG_4636.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 4035,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2000,
+      "texto": "¡Gracias!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 0,
+      "toMs": 180,
+      "dtwMs": 740,
+      "p": 0.104025
+    },
+    {
+      "text": "G",
+      "fromMs": 180,
+      "toMs": 250,
+      "dtwMs": 740,
+      "p": 0.196095
+    },
+    {
+      "text": "rac",
+      "fromMs": 310,
+      "toMs": 890,
+      "dtwMs": 740,
+      "p": 0.980401
+    },
+    {
+      "text": "ias",
+      "fromMs": 920,
+      "toMs": 1440,
+      "dtwMs": 740,
+      "p": 0.995104
+    },
+    {
+      "text": "!",
+      "fromMs": 1470,
+      "toMs": 2000,
+      "dtwMs": 1980,
+      "p": 0.751391
+    }
+  ]
+}

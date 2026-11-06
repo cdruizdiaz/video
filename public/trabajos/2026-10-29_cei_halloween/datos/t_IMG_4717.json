@@ -1,0 +1,804 @@
+{
+  "archivo": "IMG_4717.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 35035,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 16560,
+      "texto": "Bueno, la verdad que sobre todo de mis hijos no me lo esperaba, muy linda la propuesta y hermoso todo, la decoración, los chicos vestidos y todo el contenido teórico que todos expusieron."
+    },
+    {
+      "desdeMs": 18100,
+      "hastaMs": 33380,
+      "texto": "Bueno, la verdad que muy lindo, muy linda la exposición de los chicos, me llama la atención la buena pronunciación que tienen la mayoría, eso es importante saber eso en inglés y nada, la verdad que muy lindo y bueno, ahora vamos a seguir viendo lo que tienen preparados los chicos."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bueno",
+      "fromMs": 170,
+      "toMs": 960,
+      "dtwMs": 2360,
+      "p": 0.223886
+    },
+    {
+      "text": ",",
+      "fromMs": 990,
+      "toMs": 1340,
+      "dtwMs": 2620,
+      "p": 0.845345
+    },
+    {
+      "text": " la",
+      "fromMs": 1340,
+      "toMs": 1720,
+      "dtwMs": 2660,
+      "p": 0.983836
+    },
+    {
+      "text": " verdad",
+      "fromMs": 1720,
+      "toMs": 2900,
+      "dtwMs": 2900,
+      "p": 0.999119
+    },
+    {
+      "text": " que",
+      "fromMs": 2900,
+      "toMs": 3460,
+      "dtwMs": 3200,
+      "p": 0.983815
+    },
+    {
+      "text": " sobre",
+      "fromMs": 3460,
+      "toMs": 3850,
+      "dtwMs": 4320,
+      "p": 0.60404
+    },
+    {
+      "text": " todo",
+      "fromMs": 4230,
+      "toMs": 4620,
+      "dtwMs": 4600,
+      "p": 0.996858
+    },
+    {
+      "text": " de",
+      "fromMs": 4620,
+      "toMs": 4730,
+      "dtwMs": 4760,
+      "p": 0.979015
+    },
+    {
+      "text": " mis",
+      "fromMs": 4730,
+      "toMs": 4900,
+      "dtwMs": 4940,
+      "p": 0.987183
+    },
+    {
+      "text": " hijos",
+      "fromMs": 4900,
+      "toMs": 5200,
+      "dtwMs": 5180,
+      "p": 0.991116
+    },
+    {
+      "text": " no",
+      "fromMs": 5200,
+      "toMs": 5310,
+      "dtwMs": 5340,
+      "p": 0.851255
+    },
+    {
+      "text": " me",
+      "fromMs": 5310,
+      "toMs": 5420,
+      "dtwMs": 5420,
+      "p": 0.99568
+    },
+    {
+      "text": " lo",
+      "fromMs": 5420,
+      "toMs": 5530,
+      "dtwMs": 5520,
+      "p": 0.992877
+    },
+    {
+      "text": " esper",
+      "fromMs": 5530,
+      "toMs": 5810,
+      "dtwMs": 5740,
+      "p": 0.994913
+    },
+    {
+      "text": "aba",
+      "fromMs": 5810,
+      "toMs": 6000,
+      "dtwMs": 5960,
+      "p": 0.977976
+    },
+    {
+      "text": ",",
+      "fromMs": 6000,
+      "toMs": 6120,
+      "dtwMs": 6180,
+      "p": 0.578741
+    },
+    {
+      "text": " muy",
+      "fromMs": 6120,
+      "toMs": 6300,
+      "dtwMs": 6280,
+      "p": 0.745318
+    },
+    {
+      "text": " l",
+      "fromMs": 6300,
+      "toMs": 6360,
+      "dtwMs": 6440,
+      "p": 0.996711
+    },
+    {
+      "text": "inda",
+      "fromMs": 6380,
+      "toMs": 6620,
+      "dtwMs": 6600,
+      "p": 0.999771
+    },
+    {
+      "text": " la",
+      "fromMs": 6620,
+      "toMs": 6750,
+      "dtwMs": 6760,
+      "p": 0.966002
+    },
+    {
+      "text": " prop",
+      "fromMs": 6820,
+      "toMs": 7030,
+      "dtwMs": 7020,
+      "p": 0.960211
+    },
+    {
+      "text": "uesta",
+      "fromMs": 7030,
+      "toMs": 7360,
+      "dtwMs": 7360,
+      "p": 0.999811
+    },
+    {
+      "text": " y",
+      "fromMs": 7360,
+      "toMs": 7470,
+      "dtwMs": 8200,
+      "p": 0.660056
+    },
+    {
+      "text": " her",
+      "fromMs": 8030,
+      "toMs": 8410,
+      "dtwMs": 8720,
+      "p": 0.878577
+    },
+    {
+      "text": "mos",
+      "fromMs": 8550,
+      "toMs": 8870,
+      "dtwMs": 8900,
+      "p": 0.999971
+    },
+    {
+      "text": "o",
+      "fromMs": 8890,
+      "toMs": 9050,
+      "dtwMs": 9040,
+      "p": 0.981512
+    },
+    {
+      "text": " todo",
+      "fromMs": 9140,
+      "toMs": 9240,
+      "dtwMs": 9300,
+      "p": 0.881984
+    },
+    {
+      "text": ",",
+      "fromMs": 9240,
+      "toMs": 9340,
+      "dtwMs": 9440,
+      "p": 0.926949
+    },
+    {
+      "text": " la",
+      "fromMs": 9340,
+      "toMs": 9450,
+      "dtwMs": 9560,
+      "p": 0.614282
+    },
+    {
+      "text": " decor",
+      "fromMs": 9450,
+      "toMs": 9800,
+      "dtwMs": 9820,
+      "p": 0.99923
+    },
+    {
+      "text": "ación",
+      "fromMs": 9810,
+      "toMs": 10150,
+      "dtwMs": 10240,
+      "p": 0.999947
+    },
+    {
+      "text": ",",
+      "fromMs": 10150,
+      "toMs": 10300,
+      "dtwMs": 10440,
+      "p": 0.998866
+    },
+    {
+      "text": " los",
+      "fromMs": 10300,
+      "toMs": 10550,
+      "dtwMs": 10780,
+      "p": 0.967842
+    },
+    {
+      "text": " chicos",
+      "fromMs": 10550,
+      "toMs": 11060,
+      "dtwMs": 11040,
+      "p": 0.999624
+    },
+    {
+      "text": " vest",
+      "fromMs": 11060,
+      "toMs": 11400,
+      "dtwMs": 11380,
+      "p": 0.999537
+    },
+    {
+      "text": "idos",
+      "fromMs": 11400,
+      "toMs": 11760,
+      "dtwMs": 11720,
+      "p": 0.999928
+    },
+    {
+      "text": " y",
+      "fromMs": 11760,
+      "toMs": 11800,
+      "dtwMs": 12720,
+      "p": 0.897477
+    },
+    {
+      "text": " todo",
+      "fromMs": 11830,
+      "toMs": 12330,
+      "dtwMs": 12980,
+      "p": 0.999971
+    },
+    {
+      "text": " el",
+      "fromMs": 12330,
+      "toMs": 12560,
+      "dtwMs": 13420,
+      "p": 0.999968
+    },
+    {
+      "text": " contenido",
+      "fromMs": 12560,
+      "toMs": 13610,
+      "dtwMs": 13980,
+      "p": 0.999842
+    },
+    {
+      "text": " te",
+      "fromMs": 13610,
+      "toMs": 13840,
+      "dtwMs": 14380,
+      "p": 0.999478
+    },
+    {
+      "text": "ó",
+      "fromMs": 13840,
+      "toMs": 13950,
+      "dtwMs": 14420,
+      "p": 0.99991
+    },
+    {
+      "text": "rico",
+      "fromMs": 13950,
+      "toMs": 14410,
+      "dtwMs": 14620,
+      "p": 0.999697
+    },
+    {
+      "text": " que",
+      "fromMs": 14410,
+      "toMs": 14730,
+      "dtwMs": 14940,
+      "p": 0.999763
+    },
+    {
+      "text": " todos",
+      "fromMs": 14760,
+      "toMs": 15240,
+      "dtwMs": 15820,
+      "p": 0.982231
+    },
+    {
+      "text": " exp",
+      "fromMs": 15560,
+      "toMs": 15610,
+      "dtwMs": 16140,
+      "p": 0.998595
+    },
+    {
+      "text": "us",
+      "fromMs": 15700,
+      "toMs": 15920,
+      "dtwMs": 16280,
+      "p": 0.999777
+    },
+    {
+      "text": "ieron",
+      "fromMs": 15920,
+      "toMs": 16560,
+      "dtwMs": 16540,
+      "p": 0.999775
+    },
+    {
+      "text": ".",
+      "fromMs": 16560,
+      "toMs": 16560,
+      "dtwMs": 16740,
+      "p": 0.938573
+    },
+    {
+      "text": " Bueno",
+      "fromMs": 18100,
+      "toMs": 18410,
+      "dtwMs": 18500,
+      "p": 0.982862
+    },
+    {
+      "text": ",",
+      "fromMs": 18410,
+      "toMs": 18530,
+      "dtwMs": 18560,
+      "p": 0.99926
+    },
+    {
+      "text": " la",
+      "fromMs": 18530,
+      "toMs": 18650,
+      "dtwMs": 18640,
+      "p": 0.999863
+    },
+    {
+      "text": " verdad",
+      "fromMs": 18650,
+      "toMs": 19030,
+      "dtwMs": 18800,
+      "p": 0.999992
+    },
+    {
+      "text": " que",
+      "fromMs": 19030,
+      "toMs": 19220,
+      "dtwMs": 18900,
+      "p": 0.999908
+    },
+    {
+      "text": " muy",
+      "fromMs": 19220,
+      "toMs": 19410,
+      "dtwMs": 19060,
+      "p": 0.859488
+    },
+    {
+      "text": " lindo",
+      "fromMs": 19410,
+      "toMs": 19720,
+      "dtwMs": 19380,
+      "p": 0.773424
+    },
+    {
+      "text": ",",
+      "fromMs": 19720,
+      "toMs": 19840,
+      "dtwMs": 19600,
+      "p": 0.972784
+    },
+    {
+      "text": " muy",
+      "fromMs": 19840,
+      "toMs": 20030,
+      "dtwMs": 19920,
+      "p": 0.997628
+    },
+    {
+      "text": " l",
+      "fromMs": 20030,
+      "toMs": 20080,
+      "dtwMs": 19980,
+      "p": 0.999544
+    },
+    {
+      "text": "inda",
+      "fromMs": 20320,
+      "toMs": 20340,
+      "dtwMs": 20060,
+      "p": 0.999855
+    },
+    {
+      "text": " la",
+      "fromMs": 20340,
+      "toMs": 20460,
+      "dtwMs": 20180,
+      "p": 0.999943
+    },
+    {
+      "text": " expos",
+      "fromMs": 20460,
+      "toMs": 20770,
+      "dtwMs": 20380,
+      "p": 0.999178
+    },
+    {
+      "text": "ición",
+      "fromMs": 20770,
+      "toMs": 21050,
+      "dtwMs": 20660,
+      "p": 0.999483
+    },
+    {
+      "text": " de",
+      "fromMs": 21190,
+      "toMs": 21200,
+      "dtwMs": 20780,
+      "p": 0.999638
+    },
+    {
+      "text": " los",
+      "fromMs": 21200,
+      "toMs": 21390,
+      "dtwMs": 20880,
+      "p": 0.999805
+    },
+    {
+      "text": " chicos",
+      "fromMs": 21390,
+      "toMs": 21770,
+      "dtwMs": 21160,
+      "p": 0.99995
+    },
+    {
+      "text": ",",
+      "fromMs": 21770,
+      "toMs": 21890,
+      "dtwMs": 21960,
+      "p": 0.836301
+    },
+    {
+      "text": " me",
+      "fromMs": 21890,
+      "toMs": 21950,
+      "dtwMs": 22460,
+      "p": 0.999971
+    },
+    {
+      "text": " llama",
+      "fromMs": 22000,
+      "toMs": 22040,
+      "dtwMs": 22640,
+      "p": 0.990822
+    },
+    {
+      "text": " la",
+      "fromMs": 22330,
+      "toMs": 22440,
+      "dtwMs": 22740,
+      "p": 0.999903
+    },
+    {
+      "text": " atención",
+      "fromMs": 22440,
+      "toMs": 22950,
+      "dtwMs": 23000,
+      "p": 0.999531
+    },
+    {
+      "text": " la",
+      "fromMs": 22950,
+      "toMs": 23070,
+      "dtwMs": 23300,
+      "p": 0.999748
+    },
+    {
+      "text": " buena",
+      "fromMs": 23070,
+      "toMs": 23380,
+      "dtwMs": 23540,
+      "p": 0.999739
+    },
+    {
+      "text": " pron",
+      "fromMs": 23380,
+      "toMs": 23630,
+      "dtwMs": 23820,
+      "p": 0.998205
+    },
+    {
+      "text": "unci",
+      "fromMs": 23630,
+      "toMs": 23880,
+      "dtwMs": 23960,
+      "p": 0.998628
+    },
+    {
+      "text": "ación",
+      "fromMs": 23880,
+      "toMs": 24130,
+      "dtwMs": 24160,
+      "p": 0.999897
+    },
+    {
+      "text": " que",
+      "fromMs": 24190,
+      "toMs": 24380,
+      "dtwMs": 24340,
+      "p": 0.999996
+    },
+    {
+      "text": " tienen",
+      "fromMs": 24380,
+      "toMs": 24750,
+      "dtwMs": 24500,
+      "p": 0.539175
+    },
+    {
+      "text": " la",
+      "fromMs": 24760,
+      "toMs": 24850,
+      "dtwMs": 24640,
+      "p": 0.99354
+    },
+    {
+      "text": " mayoría",
+      "fromMs": 24920,
+      "toMs": 25270,
+      "dtwMs": 25000,
+      "p": 0.999945
+    },
+    {
+      "text": ",",
+      "fromMs": 25410,
+      "toMs": 25440,
+      "dtwMs": 25480,
+      "p": 0.999239
+    },
+    {
+      "text": " eso",
+      "fromMs": 25440,
+      "toMs": 25570,
+      "dtwMs": 25680,
+      "p": 0.94359
+    },
+    {
+      "text": " es",
+      "fromMs": 25750,
+      "toMs": 25750,
+      "dtwMs": 25800,
+      "p": 0.987596
+    },
+    {
+      "text": " importante",
+      "fromMs": 26120,
+      "toMs": 26380,
+      "dtwMs": 26220,
+      "p": 0.996964
+    },
+    {
+      "text": " saber",
+      "fromMs": 26380,
+      "toMs": 26690,
+      "dtwMs": 26980,
+      "p": 0.568761
+    },
+    {
+      "text": " eso",
+      "fromMs": 26690,
+      "toMs": 26880,
+      "dtwMs": 27180,
+      "p": 0.984301
+    },
+    {
+      "text": " en",
+      "fromMs": 26880,
+      "toMs": 26970,
+      "dtwMs": 27280,
+      "p": 0.99907
+    },
+    {
+      "text": " inglés",
+      "fromMs": 27120,
+      "toMs": 27380,
+      "dtwMs": 27580,
+      "p": 0.974282
+    },
+    {
+      "text": " y",
+      "fromMs": 27380,
+      "toMs": 27440,
+      "dtwMs": 27800,
+      "p": 0.963003
+    },
+    {
+      "text": " nada",
+      "fromMs": 27440,
+      "toMs": 27690,
+      "dtwMs": 28000,
+      "p": 0.993585
+    },
+    {
+      "text": ",",
+      "fromMs": 27690,
+      "toMs": 27740,
+      "dtwMs": 28340,
+      "p": 0.995215
+    },
+    {
+      "text": " la",
+      "fromMs": 27840,
+      "toMs": 27930,
+      "dtwMs": 28520,
+      "p": 0.999846
+    },
+    {
+      "text": " verdad",
+      "fromMs": 27930,
+      "toMs": 28310,
+      "dtwMs": 28640,
+      "p": 0.999992
+    },
+    {
+      "text": " que",
+      "fromMs": 28310,
+      "toMs": 28500,
+      "dtwMs": 28740,
+      "p": 0.99996
+    },
+    {
+      "text": " muy",
+      "fromMs": 28500,
+      "toMs": 28680,
+      "dtwMs": 28860,
+      "p": 0.975654
+    },
+    {
+      "text": " lindo",
+      "fromMs": 28680,
+      "toMs": 28980,
+      "dtwMs": 29100,
+      "p": 0.991454
+    },
+    {
+      "text": " y",
+      "fromMs": 29000,
+      "toMs": 29040,
+      "dtwMs": 29680,
+      "p": 0.999316
+    },
+    {
+      "text": " bueno",
+      "fromMs": 29100,
+      "toMs": 29340,
+      "dtwMs": 30040,
+      "p": 0.969411
+    },
+    {
+      "text": ",",
+      "fromMs": 29490,
+      "toMs": 29490,
+      "dtwMs": 30100,
+      "p": 0.889493
+    },
+    {
+      "text": " ahora",
+      "fromMs": 29490,
+      "toMs": 29800,
+      "dtwMs": 30220,
+      "p": 0.664057
+    },
+    {
+      "text": " vamos",
+      "fromMs": 29800,
+      "toMs": 29910,
+      "dtwMs": 30320,
+      "p": 0.999375
+    },
+    {
+      "text": " a",
+      "fromMs": 30040,
+      "toMs": 30170,
+      "dtwMs": 30400,
+      "p": 0.999901
+    },
+    {
+      "text": " seguir",
+      "fromMs": 30400,
+      "toMs": 30550,
+      "dtwMs": 30560,
+      "p": 0.99958
+    },
+    {
+      "text": " viendo",
+      "fromMs": 30550,
+      "toMs": 30810,
+      "dtwMs": 30840,
+      "p": 0.952841
+    },
+    {
+      "text": " lo",
+      "fromMs": 30930,
+      "toMs": 31050,
+      "dtwMs": 31340,
+      "p": 0.655306
+    },
+    {
+      "text": " que",
+      "fromMs": 31050,
+      "toMs": 31240,
+      "dtwMs": 32600,
+      "p": 0.999197
+    },
+    {
+      "text": " tienen",
+      "fromMs": 31240,
+      "toMs": 31620,
+      "dtwMs": 32740,
+      "p": 0.967401
+    },
+    {
+      "text": " prepar",
+      "fromMs": 31620,
+      "toMs": 32000,
+      "dtwMs": 32940,
+      "p": 0.999563
+    },
+    {
+      "text": "ados",
+      "fromMs": 32000,
+      "toMs": 32250,
+      "dtwMs": 33020,
+      "p": 0.44979
+    },
+    {
+      "text": " los",
+      "fromMs": 32250,
+      "toMs": 32440,
+      "dtwMs": 33160,
+      "p": 0.979387
+    },
+    {
+      "text": " chicos",
+      "fromMs": 32440,
+      "toMs": 32820,
+      "dtwMs": 33360,
+      "p": 0.999846
+    },
+    {
+      "text": ".",
+      "fromMs": 32820,
+      "toMs": 33340,
+      "dtwMs": 33360,
+      "p": 0.999855
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+{
+ "IMG_8443": [
+  {
+   "text": "¿Qué",
+   "startMs": 2180,
+   "endMs": 2320
+  },
+  {
+   "text": "pasa",
+   "startMs": 2320,
+   "endMs": 2540
+  },
+  {
+   "text": "con",
+   "startMs": 2540,
+   "endMs": 2720
+  },
+  {
+   "text": "tu",
+   "startMs": 2720,
+   "endMs": 2880
+  },
+  {
+   "text": "traducción",
+   "startMs": 2880,
+   "endMs": 3400
+  },
+  {
+   "text": "cuando",
+   "startMs": 3400,
+   "endMs": 3700
+  },
+  {
+   "text": "la",
+   "startMs": 3700,
+   "endMs": 3840
+  },
+  {
+   "text": "llevas",
+   "startMs": 3840,
+   "endMs": 4040
+  },
+  {
+   "text": "a",
+   "startMs": 4040,
+   "endMs": 4100
+  },
+  {
+   "text": "legalizar",
+   "startMs": 4100,
+   "endMs": 4560
+  },
+  {
+   "text": "al",
+   "startMs": 4560,
+   "endMs": 4720
+  },
+  {
+   "text": "colegio?",
+   "startMs": 4720,
+   "endMs": 5050
+  }
+ ],
+ "IMG_8447": [
+  {
+   "text": "Uno:",
+   "startMs": 1490,
+   "endMs": 1860
+  },
+  {
+   "text": "Verificamos",
+   "startMs": 1860,
+   "endMs": 2320
+  },
+  {
+   "text": "que",
+   "startMs": 2320,
+   "endMs": 2440
+  },
+  {
+   "text": "la",
+   "startMs": 2440,
+   "endMs": 2520
+  },
+  {
+   "text": "matrícula",
+   "startMs": 2520,
+   "endMs": 2920
+  },
+  {
+   "text": "del",
+   "startMs": 2920,
+   "endMs": 3020
+  },
+  {
+   "text": "traductor",
+   "startMs": 3020,
+   "endMs": 3400
+  },
+  {
+   "text": "esté",
+   "startMs": 3610,
+   "endMs": 3760
+  },
+  {
+   "text": "vigente.",
+   "startMs": 3760,
+   "endMs": 4100
+  }
+ ],
+ "IMG_8456": [
+  {
+   "text": "Dos:",
+   "startMs": 1130,
+   "endMs": 1500
+  },
+  {
+   "text": "Comparamos",
+   "startMs": 1500,
+   "endMs": 1860
+  },
+  {
+   "text": "su",
+   "startMs": 1860,
+   "endMs": 2020
+  },
+  {
+   "text": "firma",
+   "startMs": 2020,
+   "endMs": 2200
+  },
+  {
+   "text": "y",
+   "startMs": 2200,
+   "endMs": 2280
+  },
+  {
+   "text": "su",
+   "startMs": 2280,
+   "endMs": 2360
+  },
+  {
+   "text": "sello",
+   "startMs": 2360,
+   "endMs": 2600
+  },
+  {
+   "text": "con",
+   "startMs": 2600,
+   "endMs": 2760
+  },
+  {
+   "text": "los",
+   "startMs": 2760,
+   "endMs": 2860
+  },
+  {
+   "text": "que",
+   "startMs": 2860,
+   "endMs": 2980
+  },
+  {
+   "text": "obran",
+   "startMs": 2980,
+   "endMs": 3260
+  },
+  {
+   "text": "en",
+   "startMs": 3260,
+   "endMs": 3360
+  },
+  {
+   "text": "nuestro",
+   "startMs": 3360,
+   "endMs": 3580
+  },
+  {
+   "text": "registro",
+   "startMs": 3580,
+   "endMs": 3700
+  }
+ ],
+ "IMG_8479": [
+  {
+   "text": "Tres:",
+   "startMs": 1050,
+   "endMs": 1420
+  },
+  {
+   "text": "Realizamos",
+   "startMs": 1420,
+   "endMs": 1860
+  },
+  {
+   "text": "el",
+   "startMs": 1860,
+   "endMs": 2000
+  },
+  {
+   "text": "control",
+   "startMs": 2170,
+   "endMs": 2320
+  },
+  {
+   "text": "formal",
+   "startMs": 2570,
+   "endMs": 2720
+  },
+  {
+   "text": "de",
+   "startMs": 2720,
+   "endMs": 2840
+  },
+  {
+   "text": "los",
+   "startMs": 2840,
+   "endMs": 2960
+  },
+  {
+   "text": "requisitos",
+   "startMs": 2960,
+   "endMs": 3420
+  },
+  {
+   "text": "de",
+   "startMs": 3420,
+   "endMs": 3500
+  },
+  {
+   "text": "legalización",
+   "startMs": 3500,
+   "endMs": 4200
+  }
+ ],
+ "IMG_8481": [
+  {
+   "text": "y",
+   "startMs": 1030,
+   "endMs": 1180
+  },
+  {
+   "text": "verificamos",
+   "startMs": 1180,
+   "endMs": 1700
+  },
+  {
+   "text": "que",
+   "startMs": 1700,
+   "endMs": 1820
+  },
+  {
+   "text": "se",
+   "startMs": 1820,
+   "endMs": 1940
+  },
+  {
+   "text": "haya",
+   "startMs": 1940,
+   "endMs": 2080
+  },
+  {
+   "text": "realizado",
+   "startMs": 2080,
+   "endMs": 2480
+  },
+  {
+   "text": "el",
+   "startMs": 2480,
+   "endMs": 2600
+  },
+  {
+   "text": "pago",
+   "startMs": 2600,
+   "endMs": 2760
+  },
+  {
+   "text": "por",
+   "startMs": 2760,
+   "endMs": 2920
+  },
+  {
+   "text": "los",
+   "startMs": 2920,
+   "endMs": 3020
+  },
+  {
+   "text": "medios",
+   "startMs": 3020,
+   "endMs": 3200
+  },
+  {
+   "text": "electrónicos",
+   "startMs": 3200,
+   "endMs": 3760
+  },
+  {
+   "text": "habilitados.",
+   "startMs": 3760,
+   "endMs": 4350
+  }
+ ],
+ "IMG_8488": [
+  {
+   "text": "Cuatro:",
+   "startMs": 1290,
+   "endMs": 1720
+  },
+  {
+   "text": "Vinculamos",
+   "startMs": 1720,
+   "endMs": 2180
+  },
+  {
+   "text": "la",
+   "startMs": 2180,
+   "endMs": 2300
+  },
+  {
+   "text": "hoja",
+   "startMs": 2300,
+   "endMs": 2520
+  },
+  {
+   "text": "de",
+   "startMs": 2520,
+   "endMs": 2600
+  },
+  {
+   "text": "legalización",
+   "startMs": 2600,
+   "endMs": 3160
+  },
+  {
+   "text": "y",
+   "startMs": 3160,
+   "endMs": 3440
+  },
+  {
+   "text": "le",
+   "startMs": 3440,
+   "endMs": 3560
+  },
+  {
+   "text": "devolvemos",
+   "startMs": 3560,
+   "endMs": 4060
+  },
+  {
+   "text": "la",
+   "startMs": 4060,
+   "endMs": 4180
+  },
+  {
+   "text": "traducción",
+   "startMs": 4180,
+   "endMs": 4600
+  },
+  {
+   "text": "legalizada",
+   "startMs": 4600,
+   "endMs": 5080
+  },
+  {
+   "text": "a",
+   "startMs": 5080,
+   "endMs": 5200
+  },
+  {
+   "text": "la",
+   "startMs": 5200,
+   "endMs": 5260
+  },
+  {
+   "text": "persona",
+   "startMs": 5260,
+   "endMs": 5560
+  },
+  {
+   "text": "que",
+   "startMs": 5560,
+   "endMs": 5700
+  },
+  {
+   "text": "haya",
+   "startMs": 5700,
+   "endMs": 5840
+  },
+  {
+   "text": "concurrido",
+   "startMs": 5840,
+   "endMs": 6340
+  },
+  {
+   "text": "a",
+   "startMs": 6340,
+   "endMs": 6500
+  },
+  {
+   "text": "realizar",
+   "startMs": 6500,
+   "endMs": 6760
+  },
+  {
+   "text": "el",
+   "startMs": 6760,
+   "endMs": 6960
+  },
+  {
+   "text": "trámite",
+   "startMs": 6960,
+   "endMs": 7300
+  }
+ ],
+ "IMG_8497": [
+  {
+   "text": "Importante,",
+   "startMs": 1170,
+   "endMs": 1820
+  },
+  {
+   "text": "el",
+   "startMs": 1820,
+   "endMs": 1960
+  },
+  {
+   "text": "colegio",
+   "startMs": 1960,
+   "endMs": 2320
+  },
+  {
+   "text": "certifica",
+   "startMs": 2490,
+   "endMs": 2920
+  },
+  {
+   "text": "la",
+   "startMs": 2920,
+   "endMs": 3020
+  },
+  {
+   "text": "firma",
+   "startMs": 3020,
+   "endMs": 3320
+  },
+  {
+   "text": "y",
+   "startMs": 3320,
+   "endMs": 3420
+  },
+  {
+   "text": "el",
+   "startMs": 3420,
+   "endMs": 3520
+  },
+  {
+   "text": "sello",
+   "startMs": 3520,
+   "endMs": 3700
+  },
+  {
+   "text": "del",
+   "startMs": 3700,
+   "endMs": 3840
+  },
+  {
+   "text": "traductor.",
+   "startMs": 3840,
+   "endMs": 4480
+  },
+  {
+   "text": "No",
+   "startMs": 4480,
+   "endMs": 4780
+  },
+  {
+   "text": "se",
+   "startMs": 4780,
+   "endMs": 4900
+  },
+  {
+   "text": "expide",
+   "startMs": 4900,
+   "endMs": 5220
+  },
+  {
+   "text": "sobre",
+   "startMs": 5220,
+   "endMs": 5440
+  },
+  {
+   "text": "el",
+   "startMs": 5440,
+   "endMs": 5580
+  },
+  {
+   "text": "contenido",
+   "startMs": 5810,
+   "endMs": 5960
+  },
+  {
+   "text": "del",
+   "startMs": 5960,
+   "endMs": 6100
+  },
+  {
+   "text": "documento.",
+   "startMs": 6100,
+   "endMs": 6550
+  }
+ ],
+ "IMG_8500": [
+  {
+   "text": "¿Tenés",
+   "startMs": 990,
+   "endMs": 1340
+  },
+  {
+   "text": "que",
+   "startMs": 1340,
+   "endMs": 1420
+  },
+  {
+   "text": "legalizar",
+   "startMs": 1420,
+   "endMs": 1860
+  },
+  {
+   "text": "una",
+   "startMs": 1860,
+   "endMs": 2020
+  },
+  {
+   "text": "traducción?",
+   "startMs": 2020,
+   "endMs": 2660
+  },
+  {
+   "text": "Consulta",
+   "startMs": 2990,
+   "endMs": 3340
+  },
+  {
+   "text": "horarios",
+   "startMs": 3340,
+   "endMs": 3640
+  },
+  {
+   "text": "y",
+   "startMs": 3640,
+   "endMs": 3740
+  },
+  {
+   "text": "requisitos",
+   "startMs": 3740,
+   "endMs": 4220
+  },
+  {
+   "text": "en",
+   "startMs": 4220,
+   "endMs": 4400
+  },
+  {
+   "text": "www.traductoresantafe.org.ar",
+   "startMs": 4590,
+   "endMs": 7250
+  }
+ ]
+}

@@ -1,0 +1,652 @@
+{
+  "archivo": "00451.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 66592,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 26340,
+      "texto": "A su trono dignísimo abieres las provincias unidas de su mundo y los libres del mundo responden al gran pueblo argentino ¡salud!"
+    },
+    {
+      "desdeMs": 26340,
+      "hastaMs": 32340,
+      "texto": "Al gran pueblo argentino ¡salud!"
+    },
+    {
+      "desdeMs": 32340,
+      "hastaMs": 40340,
+      "texto": "Si los libres del mundo responden"
+    },
+    {
+      "desdeMs": 40340,
+      "hastaMs": 41340,
+      "texto": "¡Turrum!"
+    },
+    {
+      "desdeMs": 41340,
+      "hastaMs": 47340,
+      "texto": "Al gran pueblo argentino ¡salud!"
+    },
+    {
+      "desdeMs": 47340,
+      "hastaMs": 53340,
+      "texto": "Si los libres del mundo responden"
+    },
+    {
+      "desdeMs": 53340,
+      "hastaMs": 61340,
+      "texto": "Al gran pueblo argentino ¡salud!"
+    },
+    {
+      "desdeMs": 61340,
+      "hastaMs": 62340,
+      "texto": "¡Bravo!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " A",
+      "fromMs": 10,
+      "toMs": 250,
+      "dtwMs": 400,
+      "p": 0.589238
+    },
+    {
+      "text": " su",
+      "fromMs": 250,
+      "toMs": 750,
+      "dtwMs": 720,
+      "p": 0.849944
+    },
+    {
+      "text": " tr",
+      "fromMs": 750,
+      "toMs": 1250,
+      "dtwMs": 1060,
+      "p": 0.896742
+    },
+    {
+      "text": "ono",
+      "fromMs": 1250,
+      "toMs": 1990,
+      "dtwMs": 1940,
+      "p": 0.99943
+    },
+    {
+      "text": " dign",
+      "fromMs": 1990,
+      "toMs": 2990,
+      "dtwMs": 2740,
+      "p": 0.662473
+    },
+    {
+      "text": "ísimo",
+      "fromMs": 2990,
+      "toMs": 4230,
+      "dtwMs": 4120,
+      "p": 0.986404
+    },
+    {
+      "text": " ab",
+      "fromMs": 4230,
+      "toMs": 4730,
+      "dtwMs": 4520,
+      "p": 0.307792
+    },
+    {
+      "text": "ier",
+      "fromMs": 4730,
+      "toMs": 5470,
+      "dtwMs": 4900,
+      "p": 0.438549
+    },
+    {
+      "text": "es",
+      "fromMs": 5470,
+      "toMs": 6000,
+      "dtwMs": 6360,
+      "p": 0.140023
+    },
+    {
+      "text": " las",
+      "fromMs": 6000,
+      "toMs": 6620,
+      "dtwMs": 7320,
+      "p": 0.195579
+    },
+    {
+      "text": " provin",
+      "fromMs": 6850,
+      "toMs": 7920,
+      "dtwMs": 7940,
+      "p": 0.870845
+    },
+    {
+      "text": "cias",
+      "fromMs": 7920,
+      "toMs": 8770,
+      "dtwMs": 8880,
+      "p": 0.997193
+    },
+    {
+      "text": " un",
+      "fromMs": 8770,
+      "toMs": 9190,
+      "dtwMs": 9600,
+      "p": 0.948116
+    },
+    {
+      "text": "idas",
+      "fromMs": 9190,
+      "toMs": 10040,
+      "dtwMs": 10460,
+      "p": 0.98683
+    },
+    {
+      "text": " de",
+      "fromMs": 10040,
+      "toMs": 10460,
+      "dtwMs": 11020,
+      "p": 0.778789
+    },
+    {
+      "text": " su",
+      "fromMs": 10460,
+      "toMs": 10880,
+      "dtwMs": 11320,
+      "p": 0.940453
+    },
+    {
+      "text": " mundo",
+      "fromMs": 10880,
+      "toMs": 12000,
+      "dtwMs": 12160,
+      "p": 0.401426
+    },
+    {
+      "text": " y",
+      "fromMs": 12000,
+      "toMs": 12290,
+      "dtwMs": 13760,
+      "p": 0.592144
+    },
+    {
+      "text": " los",
+      "fromMs": 12290,
+      "toMs": 13170,
+      "dtwMs": 14320,
+      "p": 0.968599
+    },
+    {
+      "text": " lib",
+      "fromMs": 13170,
+      "toMs": 14050,
+      "dtwMs": 14680,
+      "p": 0.267652
+    },
+    {
+      "text": "res",
+      "fromMs": 14050,
+      "toMs": 14930,
+      "dtwMs": 15520,
+      "p": 0.997541
+    },
+    {
+      "text": " del",
+      "fromMs": 14930,
+      "toMs": 15810,
+      "dtwMs": 16060,
+      "p": 0.973535
+    },
+    {
+      "text": " mundo",
+      "fromMs": 15810,
+      "toMs": 17290,
+      "dtwMs": 16920,
+      "p": 0.985147
+    },
+    {
+      "text": " respond",
+      "fromMs": 17290,
+      "toMs": 19350,
+      "dtwMs": 17940,
+      "p": 0.918323
+    },
+    {
+      "text": "en",
+      "fromMs": 19350,
+      "toMs": 19870,
+      "dtwMs": 19340,
+      "p": 0.95053
+    },
+    {
+      "text": " al",
+      "fromMs": 20180,
+      "toMs": 20420,
+      "dtwMs": 20780,
+      "p": 0.404318
+    },
+    {
+      "text": " gran",
+      "fromMs": 20420,
+      "toMs": 21260,
+      "dtwMs": 21020,
+      "p": 0.951639
+    },
+    {
+      "text": " pueblo",
+      "fromMs": 21260,
+      "toMs": 22520,
+      "dtwMs": 22080,
+      "p": 0.940209
+    },
+    {
+      "text": " argent",
+      "fromMs": 22520,
+      "toMs": 23780,
+      "dtwMs": 22640,
+      "p": 0.978982
+    },
+    {
+      "text": "ino",
+      "fromMs": 23780,
+      "toMs": 24410,
+      "dtwMs": 23780,
+      "p": 0.998053
+    },
+    {
+      "text": " ¡",
+      "fromMs": 24410,
+      "toMs": 24620,
+      "dtwMs": 24620,
+      "p": 0.260203
+    },
+    {
+      "text": "sal",
+      "fromMs": 24620,
+      "toMs": 25250,
+      "dtwMs": 24620,
+      "p": 0.518077
+    },
+    {
+      "text": "ud",
+      "fromMs": 25250,
+      "toMs": 25670,
+      "dtwMs": 25140,
+      "p": 0.978902
+    },
+    {
+      "text": "!",
+      "fromMs": 25670,
+      "toMs": 26320,
+      "dtwMs": 26320,
+      "p": 0.949619
+    },
+    {
+      "text": " Al",
+      "fromMs": 26350,
+      "toMs": 26740,
+      "dtwMs": 27440,
+      "p": 0.0583984
+    },
+    {
+      "text": " gran",
+      "fromMs": 26740,
+      "toMs": 27540,
+      "dtwMs": 27860,
+      "p": 0.982337
+    },
+    {
+      "text": " pueblo",
+      "fromMs": 27540,
+      "toMs": 28740,
+      "dtwMs": 28940,
+      "p": 0.997689
+    },
+    {
+      "text": " argent",
+      "fromMs": 28740,
+      "toMs": 29940,
+      "dtwMs": 29720,
+      "p": 0.986469
+    },
+    {
+      "text": "ino",
+      "fromMs": 29940,
+      "toMs": 30530,
+      "dtwMs": 30800,
+      "p": 0.998609
+    },
+    {
+      "text": " ¡",
+      "fromMs": 30530,
+      "toMs": 30730,
+      "dtwMs": 31660,
+      "p": 0.958125
+    },
+    {
+      "text": "sal",
+      "fromMs": 30730,
+      "toMs": 31320,
+      "dtwMs": 31660,
+      "p": 0.996447
+    },
+    {
+      "text": "ud",
+      "fromMs": 31320,
+      "toMs": 31710,
+      "dtwMs": 32260,
+      "p": 0.998891
+    },
+    {
+      "text": "!",
+      "fromMs": 31710,
+      "toMs": 32340,
+      "dtwMs": 33620,
+      "p": 0.996092
+    },
+    {
+      "text": " Si",
+      "fromMs": 32350,
+      "toMs": 32910,
+      "dtwMs": 34200,
+      "p": 0.37098
+    },
+    {
+      "text": " los",
+      "fromMs": 32910,
+      "toMs": 33760,
+      "dtwMs": 34940,
+      "p": 0.866863
+    },
+    {
+      "text": " lib",
+      "fromMs": 33760,
+      "toMs": 34610,
+      "dtwMs": 35660,
+      "p": 0.99253
+    },
+    {
+      "text": "res",
+      "fromMs": 34610,
+      "toMs": 35460,
+      "dtwMs": 36420,
+      "p": 0.999989
+    },
+    {
+      "text": " del",
+      "fromMs": 35460,
+      "toMs": 36310,
+      "dtwMs": 36960,
+      "p": 0.992964
+    },
+    {
+      "text": " mundo",
+      "fromMs": 36310,
+      "toMs": 37730,
+      "dtwMs": 37880,
+      "p": 0.991633
+    },
+    {
+      "text": " respond",
+      "fromMs": 37730,
+      "toMs": 39720,
+      "dtwMs": 39000,
+      "p": 0.972764
+    },
+    {
+      "text": "en",
+      "fromMs": 39720,
+      "toMs": 40340,
+      "dtwMs": 40020,
+      "p": 0.996845
+    },
+    {
+      "text": " ¡",
+      "fromMs": 40350,
+      "toMs": 40440,
+      "dtwMs": 40240,
+      "p": 0.418245
+    },
+    {
+      "text": "T",
+      "fromMs": 40440,
+      "toMs": 40530,
+      "dtwMs": 40360,
+      "p": 0.326813
+    },
+    {
+      "text": "ur",
+      "fromMs": 40530,
+      "toMs": 40720,
+      "dtwMs": 40480,
+      "p": 0.835421
+    },
+    {
+      "text": "rum",
+      "fromMs": 40720,
+      "toMs": 41010,
+      "dtwMs": 40700,
+      "p": 0.87316
+    },
+    {
+      "text": "!",
+      "fromMs": 41010,
+      "toMs": 41340,
+      "dtwMs": 41200,
+      "p": 0.982391
+    },
+    {
+      "text": " Al",
+      "fromMs": 41350,
+      "toMs": 41740,
+      "dtwMs": 41780,
+      "p": 0.925067
+    },
+    {
+      "text": " gran",
+      "fromMs": 41740,
+      "toMs": 42540,
+      "dtwMs": 42200,
+      "p": 0.999182
+    },
+    {
+      "text": " pueblo",
+      "fromMs": 42540,
+      "toMs": 43740,
+      "dtwMs": 42880,
+      "p": 0.998974
+    },
+    {
+      "text": " argent",
+      "fromMs": 43740,
+      "toMs": 44940,
+      "dtwMs": 43920,
+      "p": 0.989992
+    },
+    {
+      "text": "ino",
+      "fromMs": 44940,
+      "toMs": 45530,
+      "dtwMs": 45140,
+      "p": 0.999636
+    },
+    {
+      "text": " ¡",
+      "fromMs": 45530,
+      "toMs": 45730,
+      "dtwMs": 45480,
+      "p": 0.986239
+    },
+    {
+      "text": "sal",
+      "fromMs": 45730,
+      "toMs": 46320,
+      "dtwMs": 45920,
+      "p": 0.997986
+    },
+    {
+      "text": "ud",
+      "fromMs": 46320,
+      "toMs": 46710,
+      "dtwMs": 46340,
+      "p": 0.998744
+    },
+    {
+      "text": "!",
+      "fromMs": 46710,
+      "toMs": 47340,
+      "dtwMs": 47300,
+      "p": 0.999367
+    },
+    {
+      "text": " Si",
+      "fromMs": 47350,
+      "toMs": 47760,
+      "dtwMs": 48200,
+      "p": 0.799501
+    },
+    {
+      "text": " los",
+      "fromMs": 47760,
+      "toMs": 48400,
+      "dtwMs": 49080,
+      "p": 0.996647
+    },
+    {
+      "text": " lib",
+      "fromMs": 48400,
+      "toMs": 49040,
+      "dtwMs": 49500,
+      "p": 0.998176
+    },
+    {
+      "text": "res",
+      "fromMs": 49040,
+      "toMs": 49680,
+      "dtwMs": 50280,
+      "p": 0.999981
+    },
+    {
+      "text": " del",
+      "fromMs": 49680,
+      "toMs": 50320,
+      "dtwMs": 50900,
+      "p": 0.995849
+    },
+    {
+      "text": " mundo",
+      "fromMs": 50320,
+      "toMs": 51390,
+      "dtwMs": 51800,
+      "p": 0.994657
+    },
+    {
+      "text": " respond",
+      "fromMs": 51390,
+      "toMs": 52880,
+      "dtwMs": 52880,
+      "p": 0.974925
+    },
+    {
+      "text": "en",
+      "fromMs": 52880,
+      "toMs": 53340,
+      "dtwMs": 53320,
+      "p": 0.998919
+    },
+    {
+      "text": " Al",
+      "fromMs": 53350,
+      "toMs": 53870,
+      "dtwMs": 55680,
+      "p": 0.108645
+    },
+    {
+      "text": " gran",
+      "fromMs": 53870,
+      "toMs": 54930,
+      "dtwMs": 56100,
+      "p": 0.996022
+    },
+    {
+      "text": " pueblo",
+      "fromMs": 54930,
+      "toMs": 56530,
+      "dtwMs": 57180,
+      "p": 0.997999
+    },
+    {
+      "text": " argent",
+      "fromMs": 56530,
+      "toMs": 58130,
+      "dtwMs": 57760,
+      "p": 0.989526
+    },
+    {
+      "text": "ino",
+      "fromMs": 58130,
+      "toMs": 58920,
+      "dtwMs": 58980,
+      "p": 0.997653
+    },
+    {
+      "text": " ¡",
+      "fromMs": 58920,
+      "toMs": 59180,
+      "dtwMs": 59780,
+      "p": 0.978514
+    },
+    {
+      "text": "sal",
+      "fromMs": 59180,
+      "toMs": 59950,
+      "dtwMs": 59780,
+      "p": 0.995782
+    },
+    {
+      "text": "ud",
+      "fromMs": 59980,
+      "toMs": 60500,
+      "dtwMs": 60300,
+      "p": 0.979643
+    },
+    {
+      "text": "!",
+      "fromMs": 60500,
+      "toMs": 61340,
+      "dtwMs": 61600,
+      "p": 0.995395
+    },
+    {
+      "text": " ¡",
+      "fromMs": 61350,
+      "toMs": 61450,
+      "dtwMs": 61600,
+      "p": 0.814605
+    },
+    {
+      "text": "Bra",
+      "fromMs": 61450,
+      "toMs": 61780,
+      "dtwMs": 61880,
+      "p": 0.197502
+    },
+    {
+      "text": "vo",
+      "fromMs": 61780,
+      "toMs": 62000,
+      "dtwMs": 62320,
+      "p": 0.960664
+    },
+    {
+      "text": "!",
+      "fromMs": 62000,
+      "toMs": 62340,
+      "dtwMs": 62320,
+      "p": 0.980712
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "archivo": "IMG_8418.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7652,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6860,
+      "texto": "En los tres casos, cuando el organismo así lo exige, el colegio legaliza la firma y el sello del traductor."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " En",
+      "fromMs": 0,
+      "toMs": 210,
+      "dtwMs": 2580,
+      "p": 0.323012
+    },
+    {
+      "text": " los",
+      "fromMs": 210,
+      "toMs": 520,
+      "dtwMs": 2720,
+      "p": 0.967451
+    },
+    {
+      "text": " tres",
+      "fromMs": 520,
+      "toMs": 940,
+      "dtwMs": 2860,
+      "p": 0.828651
+    },
+    {
+      "text": " casos",
+      "fromMs": 940,
+      "toMs": 1460,
+      "dtwMs": 3120,
+      "p": 0.99475
+    },
+    {
+      "text": ",",
+      "fromMs": 1460,
+      "toMs": 1660,
+      "dtwMs": 3240,
+      "p": 0.66791
+    },
+    {
+      "text": " cuando",
+      "fromMs": 1660,
+      "toMs": 2300,
+      "dtwMs": 3360,
+      "p": 0.977124
+    },
+    {
+      "text": " el",
+      "fromMs": 2510,
+      "toMs": 2510,
+      "dtwMs": 3460,
+      "p": 0.986845
+    },
+    {
+      "text": " organ",
+      "fromMs": 2540,
+      "toMs": 3020,
+      "dtwMs": 3660,
+      "p": 0.974354
+    },
+    {
+      "text": "ismo",
+      "fromMs": 3100,
+      "toMs": 3450,
+      "dtwMs": 3860,
+      "p": 0.999445
+    },
+    {
+      "text": " así",
+      "fromMs": 3450,
+      "toMs": 3750,
+      "dtwMs": 4060,
+      "p": 0.882376
+    },
+    {
+      "text": " lo",
+      "fromMs": 3810,
+      "toMs": 3890,
+      "dtwMs": 4180,
+      "p": 0.991119
+    },
+    {
+      "text": " ex",
+      "fromMs": 4050,
+      "toMs": 4180,
+      "dtwMs": 4340,
+      "p": 0.993744
+    },
+    {
+      "text": "ige",
+      "fromMs": 4180,
+      "toMs": 4540,
+      "dtwMs": 4500,
+      "p": 0.999142
+    },
+    {
+      "text": ",",
+      "fromMs": 4540,
+      "toMs": 4640,
+      "dtwMs": 4660,
+      "p": 0.798908
+    },
+    {
+      "text": " el",
+      "fromMs": 4640,
+      "toMs": 4690,
+      "dtwMs": 4700,
+      "p": 0.693581
+    },
+    {
+      "text": " co",
+      "fromMs": 4760,
+      "toMs": 4840,
+      "dtwMs": 4840,
+      "p": 0.802704
+    },
+    {
+      "text": "leg",
+      "fromMs": 4840,
+      "toMs": 4910,
+      "dtwMs": 4940,
+      "p": 0.999983
+    },
+    {
+      "text": "io",
+      "fromMs": 5020,
+      "toMs": 5090,
+      "dtwMs": 5040,
+      "p": 0.999569
+    },
+    {
+      "text": " legal",
+      "fromMs": 5090,
+      "toMs": 5340,
+      "dtwMs": 5280,
+      "p": 0.986327
+    },
+    {
+      "text": "iza",
+      "fromMs": 5340,
+      "toMs": 5500,
+      "dtwMs": 5480,
+      "p": 0.996563
+    },
+    {
+      "text": " la",
+      "fromMs": 5500,
+      "toMs": 5620,
+      "dtwMs": 5640,
+      "p": 0.978756
+    },
+    {
+      "text": " fir",
+      "fromMs": 5620,
+      "toMs": 5800,
+      "dtwMs": 5820,
+      "p": 0.993295
+    },
+    {
+      "text": "ma",
+      "fromMs": 5800,
+      "toMs": 5920,
+      "dtwMs": 5900,
+      "p": 0.999826
+    },
+    {
+      "text": " y",
+      "fromMs": 5920,
+      "toMs": 6000,
+      "dtwMs": 6000,
+      "p": 0.951183
+    },
+    {
+      "text": " el",
+      "fromMs": 6000,
+      "toMs": 6070,
+      "dtwMs": 6120,
+      "p": 0.938308
+    },
+    {
+      "text": " se",
+      "fromMs": 6180,
+      "toMs": 6220,
+      "dtwMs": 6220,
+      "p": 0.961427
+    },
+    {
+      "text": "llo",
+      "fromMs": 6220,
+      "toMs": 6340,
+      "dtwMs": 6320,
+      "p": 0.999748
+    },
+    {
+      "text": " del",
+      "fromMs": 6340,
+      "toMs": 6440,
+      "dtwMs": 6440,
+      "p": 0.962662
+    },
+    {
+      "text": " trad",
+      "fromMs": 6530,
+      "toMs": 6570,
+      "dtwMs": 6640,
+      "p": 0.941792
+    },
+    {
+      "text": "u",
+      "fromMs": 6570,
+      "toMs": 6600,
+      "dtwMs": 6700,
+      "p": 0.909995
+    },
+    {
+      "text": "ctor",
+      "fromMs": 6600,
+      "toMs": 6700,
+      "dtwMs": 6840,
+      "p": 0.999949
+    },
+    {
+      "text": ".",
+      "fromMs": 6780,
+      "toMs": 6830,
+      "dtwMs": 6840,
+      "p": 0.749543
+    }
+  ]
+}

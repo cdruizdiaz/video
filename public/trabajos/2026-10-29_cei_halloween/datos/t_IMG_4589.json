@@ -1,0 +1,57 @@
+{
+  "archivo": "IMG_4589.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 815,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 780,
+      "texto": "CC por Antarctica Films Argentina"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " CC",
+      "fromMs": 0,
+      "toMs": 50,
+      "dtwMs": 760,
+      "p": 0.0510662
+    },
+    {
+      "text": " por",
+      "fromMs": 50,
+      "toMs": 130,
+      "dtwMs": 760,
+      "p": 0.997592
+    },
+    {
+      "text": " Antarctica",
+      "fromMs": 130,
+      "toMs": 390,
+      "dtwMs": 760,
+      "p": 0.99922
+    },
+    {
+      "text": " Fil",
+      "fromMs": 390,
+      "toMs": 460,
+      "dtwMs": 760,
+      "p": 0.998618
+    },
+    {
+      "text": "ms",
+      "fromMs": 470,
+      "toMs": 520,
+      "dtwMs": 760,
+      "p": 0.998241
+    },
+    {
+      "text": " Argentina",
+      "fromMs": 520,
+      "toMs": 780,
+      "dtwMs": 760,
+      "p": 0.998988
+    }
+  ]
+}

@@ -25,11 +25,23 @@ import { composiciones as rastroBloomiePlantada } from "./2026-10-06_rastro_bloo
 import { composiciones as voltoFashionWeek } from "./2026-10-06_volto_fashion-week/composiciones";
 import { composiciones as laencinaErosFilosofia } from "./2026-10-13_laencina_eros-filosofia/composiciones";
 import { composiciones as ceiDiaDeLaMadre } from "./2026-10-15_cei_dia-de-la-madre/composiciones";
+import { composiciones as ceiHalloween } from "./2026-10-29_cei_halloween/composiciones";
+import { composiciones as ceiVisitaCementerio } from "./2026-11-03_cei_visita-cementerio/composiciones";
 import { composiciones as voltoRadio } from "./2026-10-19_volto_radio/composiciones";
 import { composiciones as rastroPauMascota } from "./2026-10-21_rastro_pau-mascota/composiciones";
 import { composiciones as rastroConsumosDelMes } from "./2026-10-21_rastro_consumos-del-mes/composiciones";
 import { composiciones as claudioMotionGraphicPrueba } from "./2026-10-20_claudio_motion-graphic-prueba/composiciones";
 import { composiciones as claudioPruebaMotionblur } from "./2026-10-23_claudio_prueba-motionblur/composiciones";
+import { composiciones as rastroPlacaCierre } from "./2026-10-23_rastro_placa-cierre/composiciones";
+import { composiciones as rastroNewsletterAnimana } from "./2026-10-23_rastro_newsletter-animana/composiciones";
+import { composiciones as rastroAffinityDia01 } from "./2026-10-23_rastro_affinity-dia-01/composiciones";
+import { composiciones as ctpsfpcVariosIdiomas } from "./2026-10-25_ctpsfpc_varios-idiomas/composiciones";
+import { composiciones as ctpsfpcQuePasaConTuTraduccion } from "./2026-10-25_ctpsfpc_que-pasa-con-tu-traduccion/composiciones";
+import { composiciones as animanaMantaDalma } from "./2026-10-27_animana_manta-dalma-bdw/composiciones";
+import { composiciones as docbaR1Nov } from "./2026-10-27_docba_r1-nov/composiciones";
+import { composiciones as docbaR3Nov } from "./2026-10-28_docba_r3-nov/composiciones";
+import { composiciones as docbaR2Nov } from "./2026-10-28_docba_r2-nov/composiciones";
+import { composiciones as docbaR4Nov } from "./2026-10-28_docba_r4-nov/composiciones";
 import type { Trabajo } from "./tipos";
 
 export const TRABAJOS: Trabajo[] = [
@@ -59,9 +71,21 @@ export const TRABAJOS: Trabajo[] = [
   { id: "2026-10-06_volto_fashion-week", composiciones: voltoFashionWeek },
   { id: "2026-10-13_laencina_eros-filosofia", composiciones: laencinaErosFilosofia },
   { id: "2026-10-15_cei_dia-de-la-madre", composiciones: ceiDiaDeLaMadre },
+  { id: "2026-10-29_cei_halloween", composiciones: ceiHalloween },
+  { id: "2026-11-03_cei_visita-cementerio", composiciones: ceiVisitaCementerio },
   { id: "2026-10-19_volto_radio", composiciones: voltoRadio },
   { id: "2026-10-21_rastro_pau-mascota", composiciones: rastroPauMascota },
   { id: "2026-10-21_rastro_consumos-del-mes", composiciones: rastroConsumosDelMes },
   { id: "2026-10-20_claudio_motion-graphic-prueba", composiciones: claudioMotionGraphicPrueba },
   { id: "2026-10-23_claudio_prueba-motionblur", composiciones: claudioPruebaMotionblur },
+  { id: "2026-10-23_rastro_placa-cierre", composiciones: rastroPlacaCierre },
+  { id: "2026-10-23_rastro_newsletter-animana", composiciones: rastroNewsletterAnimana },
+  { id: "2026-10-23_rastro_affinity-dia-01", composiciones: rastroAffinityDia01 },
+  { id: "2026-10-25_ctpsfpc_varios-idiomas", composiciones: ctpsfpcVariosIdiomas },
+  { id: "2026-10-25_ctpsfpc_que-pasa-con-tu-traduccion", composiciones: ctpsfpcQuePasaConTuTraduccion },
+  { id: "2026-10-27_animana_manta-dalma-bdw", composiciones: animanaMantaDalma },
+  { id: "2026-10-27_docba_r1-nov", composiciones: docbaR1Nov },
+  { id: "2026-10-28_docba_r3-nov", composiciones: docbaR3Nov },
+  { id: "2026-10-28_docba_r2-nov", composiciones: docbaR2Nov },
+  { id: "2026-10-28_docba_r4-nov", composiciones: docbaR4Nov },
 ];

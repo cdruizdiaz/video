@@ -1,0 +1,176 @@
+{
+  "archivo": "00453.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 9024,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 9000,
+      "texto": "¡Cármen Gáñáñá! ¡Esta! ¡Ay, ya que vuelve!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 210,
+      "toMs": 210,
+      "dtwMs": 260,
+      "p": 0.984266
+    },
+    {
+      "text": "C",
+      "fromMs": 260,
+      "toMs": 410,
+      "dtwMs": 380,
+      "p": 0.514495
+    },
+    {
+      "text": "ár",
+      "fromMs": 410,
+      "toMs": 820,
+      "dtwMs": 780,
+      "p": 0.992828
+    },
+    {
+      "text": "men",
+      "fromMs": 820,
+      "toMs": 1440,
+      "dtwMs": 940,
+      "p": 0.999832
+    },
+    {
+      "text": " G",
+      "fromMs": 1440,
+      "toMs": 1650,
+      "dtwMs": 1200,
+      "p": 0.86588
+    },
+    {
+      "text": "á",
+      "fromMs": 1650,
+      "toMs": 1850,
+      "dtwMs": 1380,
+      "p": 0.99992
+    },
+    {
+      "text": "ñ",
+      "fromMs": 1850,
+      "toMs": 2050,
+      "dtwMs": 1500,
+      "p": 0.999886
+    },
+    {
+      "text": "á",
+      "fromMs": 2050,
+      "toMs": 2250,
+      "dtwMs": 1600,
+      "p": 0.498158
+    },
+    {
+      "text": "ñ",
+      "fromMs": 2250,
+      "toMs": 2450,
+      "dtwMs": 1980,
+      "p": 1
+    },
+    {
+      "text": "á",
+      "fromMs": 2450,
+      "toMs": 2650,
+      "dtwMs": 2040,
+      "p": 0.999336
+    },
+    {
+      "text": "!",
+      "fromMs": 2650,
+      "toMs": 3270,
+      "dtwMs": 4840,
+      "p": 0.95647
+    },
+    {
+      "text": " ¡",
+      "fromMs": 3270,
+      "toMs": 3480,
+      "dtwMs": 5400,
+      "p": 0.999997
+    },
+    {
+      "text": "E",
+      "fromMs": 3480,
+      "toMs": 3680,
+      "dtwMs": 5740,
+      "p": 0.7863
+    },
+    {
+      "text": "sta",
+      "fromMs": 3680,
+      "toMs": 4300,
+      "dtwMs": 6020,
+      "p": 0.971532
+    },
+    {
+      "text": "!",
+      "fromMs": 4300,
+      "toMs": 4920,
+      "dtwMs": 6960,
+      "p": 1
+    },
+    {
+      "text": " ¡",
+      "fromMs": 4920,
+      "toMs": 5130,
+      "dtwMs": 7500,
+      "p": 0.999997
+    },
+    {
+      "text": "Ay",
+      "fromMs": 5130,
+      "toMs": 5540,
+      "dtwMs": 7500,
+      "p": 0.836944
+    },
+    {
+      "text": ",",
+      "fromMs": 5540,
+      "toMs": 5950,
+      "dtwMs": 7540,
+      "p": 0.999886
+    },
+    {
+      "text": " ya",
+      "fromMs": 5950,
+      "toMs": 6360,
+      "dtwMs": 7660,
+      "p": 1
+    },
+    {
+      "text": " que",
+      "fromMs": 6360,
+      "toMs": 6980,
+      "dtwMs": 7760,
+      "p": 0.986425
+    },
+    {
+      "text": " vuel",
+      "fromMs": 6980,
+      "toMs": 7820,
+      "dtwMs": 7980,
+      "p": 0.569911
+    },
+    {
+      "text": "ve",
+      "fromMs": 7820,
+      "toMs": 8230,
+      "dtwMs": 8100,
+      "p": 0.999886
+    },
+    {
+      "text": "!",
+      "fromMs": 8230,
+      "toMs": 8990,
+      "dtwMs": 8560,
+      "p": 0.999996
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+ {
+  "palabra": "They",
+  "ini": 0.52,
+  "fin": 0.7
+ },
+ {
+  "palabra": "burn",
+  "ini": 0.8,
+  "fin": 0.98
+ },
+ {
+  "palabra": "paper",
+  "ini": 1.38,
+  "fin": 1.78
+ },
+ {
+  "palabra": "money.",
+  "ini": 1.88,
+  "fin": 2.26
+ }
+]

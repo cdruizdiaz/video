@@ -1,0 +1,253 @@
+{
+  "archivo": "IMG_4675.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 19810,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        5262
+      ],
+      [
+        5651,
+        11485
+      ],
+      [
+        14916,
+        15416
+      ],
+      [
+        15782,
+        16313
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5040,
+      "texto": "¿Es esta ceremonia un momento triste o una celebración de la vida?"
+    },
+    {
+      "desdeMs": 5929,
+      "hastaMs": 16313,
+      "texto": "Esta ceremonia está muy feliz porque danan como en el video."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 20,
+      "toMs": 80,
+      "dtwMs": 1100,
+      "p": 0.517286
+    },
+    {
+      "text": "Es",
+      "fromMs": 80,
+      "toMs": 250,
+      "dtwMs": 1260,
+      "p": 0.493678
+    },
+    {
+      "text": " esta",
+      "fromMs": 250,
+      "toMs": 380,
+      "dtwMs": 1580,
+      "p": 0.887043
+    },
+    {
+      "text": " ceremon",
+      "fromMs": 1090,
+      "toMs": 1210,
+      "dtwMs": 2100,
+      "p": 0.836782
+    },
+    {
+      "text": "ia",
+      "fromMs": 1210,
+      "toMs": 1380,
+      "dtwMs": 2320,
+      "p": 0.996776
+    },
+    {
+      "text": " un",
+      "fromMs": 1380,
+      "toMs": 1520,
+      "dtwMs": 2700,
+      "p": 0.80621
+    },
+    {
+      "text": " momento",
+      "fromMs": 1810,
+      "toMs": 2160,
+      "dtwMs": 3020,
+      "p": 0.912276
+    },
+    {
+      "text": " triste",
+      "fromMs": 2160,
+      "toMs": 2690,
+      "dtwMs": 3100,
+      "p": 0.633568
+    },
+    {
+      "text": " o",
+      "fromMs": 2690,
+      "toMs": 2750,
+      "dtwMs": 3300,
+      "p": 0.937273
+    },
+    {
+      "text": " una",
+      "fromMs": 2770,
+      "toMs": 3030,
+      "dtwMs": 3560,
+      "p": 0.815973
+    },
+    {
+      "text": " celebr",
+      "fromMs": 3030,
+      "toMs": 3560,
+      "dtwMs": 4260,
+      "p": 0.918337
+    },
+    {
+      "text": "ación",
+      "fromMs": 3560,
+      "toMs": 3720,
+      "dtwMs": 4600,
+      "p": 0.997164
+    },
+    {
+      "text": " de",
+      "fromMs": 4070,
+      "toMs": 4170,
+      "dtwMs": 4780,
+      "p": 0.97791
+    },
+    {
+      "text": " la",
+      "fromMs": 4170,
+      "toMs": 4340,
+      "dtwMs": 4920,
+      "p": 0.631714
+    },
+    {
+      "text": " vida",
+      "fromMs": 4340,
+      "toMs": 4690,
+      "dtwMs": 5100,
+      "p": 0.965063
+    },
+    {
+      "text": "?",
+      "fromMs": 4690,
+      "toMs": 5030,
+      "dtwMs": 5262,
+      "p": 0.990578
+    },
+    {
+      "text": " Esta",
+      "fromMs": 5929,
+      "toMs": 5929,
+      "dtwMs": 6289,
+      "p": 0.913793
+    },
+    {
+      "text": " ceremon",
+      "fromMs": 5929,
+      "toMs": 6279,
+      "dtwMs": 7209,
+      "p": 0.983245
+    },
+    {
+      "text": "ia",
+      "fromMs": 7019,
+      "toMs": 7179,
+      "dtwMs": 7529,
+      "p": 0.998542
+    },
+    {
+      "text": " está",
+      "fromMs": 7239,
+      "toMs": 7889,
+      "dtwMs": 7889,
+      "p": 0.493769
+    },
+    {
+      "text": " muy",
+      "fromMs": 7889,
+      "toMs": 8249,
+      "dtwMs": 8369,
+      "p": 0.543301
+    },
+    {
+      "text": " feliz",
+      "fromMs": 8429,
+      "toMs": 9189,
+      "dtwMs": 8809,
+      "p": 0.788996
+    },
+    {
+      "text": " porque",
+      "fromMs": 9189,
+      "toMs": 10159,
+      "dtwMs": 9229,
+      "p": 0.909135
+    },
+    {
+      "text": " dan",
+      "fromMs": 10159,
+      "toMs": 10639,
+      "dtwMs": 9889,
+      "p": 0.585236
+    },
+    {
+      "text": "an",
+      "fromMs": 10639,
+      "toMs": 10959,
+      "dtwMs": 10129,
+      "p": 0.828051
+    },
+    {
+      "text": " como",
+      "fromMs": 10959,
+      "toMs": 11485,
+      "dtwMs": 10429,
+      "p": 0.82031
+    },
+    {
+      "text": " en",
+      "fromMs": 14916,
+      "toMs": 15069,
+      "dtwMs": 10629,
+      "p": 0.900987
+    },
+    {
+      "text": " el",
+      "fromMs": 15069,
+      "toMs": 15389,
+      "dtwMs": 10789,
+      "p": 0.926619
+    },
+    {
+      "text": " video",
+      "fromMs": 15389,
+      "toMs": 16313,
+      "dtwMs": 11149,
+      "p": 0.858271
+    },
+    {
+      "text": ".",
+      "fromMs": 16313,
+      "toMs": 16313,
+      "dtwMs": 11449,
+      "p": 0.69179
+    }
+  ]
+}

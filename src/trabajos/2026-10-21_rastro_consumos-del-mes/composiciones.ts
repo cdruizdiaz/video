@@ -25,10 +25,9 @@ const TR = transcripcion as Record<string, PalabraFuente[]>;
 // ms de cada clip, cortadas en los silencios (energía de la voz). IMG_9092: solo la segunda toma (la primera se corta en
 // "el audiolibro"). Planos (CRITERIOS_REEL): abierto 1,08 anclado abajo; cerrado 1,45 anclado más arriba (60 %) para
 // que quede aire sobre la cabeza: ahí van todos los gráficos (pedido 2026-10-21: "no la tapes"). Un cambio de plano
-// en cada corte. "dar tiempo": recorte seco a un plano más cercano, en lugar de gráfico.
+// en cada corte.
 const ABIERTO = { zoom: 1.08, origen: "50% 92%" };
 const CERRADO = { zoom: 1.45, origen: "50% 60%", fijo: true };
-const MUY_CERRADO = { zoom: 1.7, origen: "50% 47%", fijo: true };
 const tomas: Toma[] = [
   // 0 "Buenas, buenas, acá Pau… cuando no está en redes."
   {
@@ -104,34 +103,16 @@ const tomas: Toma[] = [
     hastaMs: 8850,
     planos: [{ desdeMs: 4220, ...CERRADO }],
   },
-  // 10 "Y por último… Dar de leer a los niños, de Yolanda Reyes"
-  {
-    clip: "IMG_9092",
-    desdeMs: 8660,
-    hastaMs: 14420,
-    planos: [{ desdeMs: 8660, ...ABIERTO }],
-  },
-  // 11 "porque bueno… Día de la Madre… / y este audiolibro… / dar tiempo." (respira 0,4 s al final)
-  {
-    clip: "IMG_9093",
-    desdeMs: 1200,
-    hastaMs: 8480,
-    pausaMs: 400,
-    ambienteMs: 8700,
-    planos: [
-      { desdeMs: 1200, ...CERRADO },
-      { desdeMs: 4380, ...ABIERTO },
-      { desdeMs: 7860, ...MUY_CERRADO }, // "dar tiempo"
-    ],
-  },
-  // 12 "y ahora en esta comunidad creativa… en los comentarios."
+  // (se sacaron "Y por último… Yolanda Reyes" y "porque bueno… dar tiempo", IMG_9092–9093: pedido 2026-10-23)
+  // 10 "y ahora en esta comunidad creativa… en los comentarios." En el abierto: viene del cerrado de "alguien
+  //    tenía que diseñar" (un cambio de plano en cada corte)
   {
     clip: "IMG_9094",
     desdeMs: 1080,
     hastaMs: 7050,
     pausaMs: 300,
     ambienteMs: 300,
-    planos: [{ desdeMs: 1080, ...CERRADO }],
+    planos: [{ desdeMs: 1080, ...ABIERTO }],
   },
 ];
 
@@ -149,6 +130,7 @@ const s = (n: string) => `${AUDIO}/${n}.wav`;
 // Todos a la misma distancia de la cabeza (pedido 2026-10-21): `y` es el borde de abajo del gráfico, AIRE px arriba
 // del pelo, medido en un cuadro de cada gráfico (out/<ID>/revision/graficos_d.png).
 const AIRE = 80;
+const ABIERTO_PELO_9094 = 530; // pelo en el abierto (medido en el borrador F; antes, en el cerrado: 400)
 const sobre = (pelo: number) => pelo - AIRE;
 const insertos: Inserto[] = [
   // "qué consume su diseñadora": libros, series, podcasts y música (RASTRO), uno tras otro; pops más bajos (pedido)
@@ -226,23 +208,10 @@ const insertos: Inserto[] = [
     grafico: { tipo: "discoLali", y: sobre(520) },
     sonidos: [{ ms: en("IMG_9091", "no"), src: s("seco_1") }],
   },
-  // "Dar de leer a los niños": la tarjeta de Spotify; "de Yolanda Reyes": su cara en un círculo, sobre la esquina
   {
     toma: 10,
-    ms: en("IMG_9092", "dar", 8000),
-    grafico: { tipo: "tapaAudiolibro", y: sobre(560) },
-    sonidos: [{ ms: en("IMG_9092", "dar", 8000), src: s("seco_2") }],
-  },
-  {
-    toma: 10,
-    ms: en("IMG_9092", "yolanda", 8000),
-    grafico: { tipo: "fotoYolanda", x: 840, y: sobre(560) + 40 }, // sobre la esquina de la tarjeta
-    sonidos: [{ ms: en("IMG_9092", "yolanda", 8000), src: s("pop_4") }],
-  },
-  {
-    toma: 12,
     ms: en("IMG_9094", "consumiendo"),
-    grafico: { tipo: "comentario", y: sobre(400) },
+    grafico: { tipo: "comentario", y: sobre(ABIERTO_PELO_9094) },
     sonidos: [{ ms: en("IMG_9094", "consumiendo"), src: s("pop_5") }],
   },
 ];
@@ -259,8 +228,6 @@ const reel: ReelConsumosProps = {
       "IMG_9088",
       "IMG_9089",
       "IMG_9091",
-      "IMG_9092",
-      "IMG_9093",
       "IMG_9094",
     ].map((c) => [c, `${AUDIO}/voz/${c}.wav`]),
   ),
@@ -319,20 +286,6 @@ const reel: ReelConsumosProps = {
       "y me arrepiento",
       "de no haber ido a River,",
       "pero alguien tenía que diseñar.",
-      "Y por último,",
-      "pero no menos importante,",
-      "cada tanto vuelvo a escuchar",
-      "el audiolibro",
-      "Dar de leer a los niños,",
-      "de Yolanda Reyes,",
-      "porque, bueno,",
-      "en este mes",
-      "del día de la madre",
-      "me puse melancólica,",
-      "y este audiolibro habla",
-      "del acto de amor más grande",
-      "que hay,",
-      "que es dar tiempo.",
       "Y ahora,",
       "en esta comunidad de~creatipas,",
       "me interesaría saber",
@@ -340,6 +293,21 @@ const reel: ReelConsumosProps = {
       "¿qué están consumiendo?",
       "Me lo dejan en los comentarios.",
     ],
+  },
+  // "su creatipa de confianza": su personaje digital asoma detrás de ella (pedido 2026-10-23). Recorte de la
+  // persona con scripts/mascaras.py (crudos/IMG_9085_persona.webm, 1,8–4,0 s del clip)
+  asoma: {
+    clip: "IMG_9085",
+    desdeMs: en("IMG_9085", "su"),
+    hastaMs: en("IMG_9085", "viene") + 400,
+    recorte: "IMG_9085_persona.webm",
+    recorteDesdeMs: 1800,
+    // más grande y más arriba, tomando la esquina de arriba a la derecha (pedido 2026-10-23), pero siempre saliendo
+    // de detrás de ella: arranca escondido detrás de su cuerpo y sube por detrás de su cabeza hasta la esquina
+    desde: { x: 520, y: 1010 },
+    hasta: { x: 760, y: 470 }, // abajo a la izquierda queda detrás de su cabeza y su pelo
+    sonido: `${AUDIO}/asoma.wav`, // silbato que sube (sonido_asoma.py)
+    escondeMs: en("IMG_9085", "viene") - 150, // vuelve detrás apenas termina "confianza"
   },
   // sin placa de cierre: termina en "Me lo dejan en los comentarios" (pedido 2026-10-21)
 };

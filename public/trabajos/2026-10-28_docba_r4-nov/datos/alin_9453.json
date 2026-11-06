@@ -1,0 +1,57 @@
+[
+ {
+  "palabra": "Vení",
+  "ini": 2.9,
+  "fin": 3.08
+ },
+ {
+  "palabra": "como",
+  "ini": 3.12,
+  "fin": 3.26
+ },
+ {
+  "palabra": "quieras,",
+  "ini": 3.32,
+  "fin": 3.62
+ },
+ {
+  "palabra": "quedate",
+  "ini": 3.8,
+  "fin": 4.06
+ },
+ {
+  "palabra": "lo",
+  "ini": 4.1,
+  "fin": 4.16
+ },
+ {
+  "palabra": "que",
+  "ini": 4.18,
+  "fin": 4.26
+ },
+ {
+  "palabra": "quieras.",
+  "ini": 4.3,
+  "fin": 4.6
+ },
+ {
+  "palabra": "Te",
+  "ini": 4.94,
+  "fin": 5.0
+ },
+ {
+  "palabra": "esperamos",
+  "ini": 5.02,
+  "fin": 5.42
+ },
+ {
+  "palabra": "en",
+  "ini": 5.54,
+  "fin": 5.6
+ },
+ {
+  "palabra": "DOCBA.",
+  "ini": 5.66,
+  "fin": 5.94
+ }
+]

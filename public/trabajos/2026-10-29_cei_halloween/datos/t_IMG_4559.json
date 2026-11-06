@@ -1,0 +1,85 @@
+{
+  "archivo": "IMG_4559.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3300,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3300,
+      "texto": "¡Cuidado con los cigarros!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 0,
+      "toMs": 130,
+      "dtwMs": 420,
+      "p": 0.216586
+    },
+    {
+      "text": "Cu",
+      "fromMs": 130,
+      "toMs": 380,
+      "dtwMs": 500,
+      "p": 0.199413
+    },
+    {
+      "text": "id",
+      "fromMs": 380,
+      "toMs": 590,
+      "dtwMs": 740,
+      "p": 0.821429
+    },
+    {
+      "text": "ado",
+      "fromMs": 670,
+      "toMs": 1040,
+      "dtwMs": 860,
+      "p": 0.83178
+    },
+    {
+      "text": " con",
+      "fromMs": 1040,
+      "toMs": 1420,
+      "dtwMs": 2460,
+      "p": 0.102918
+    },
+    {
+      "text": " los",
+      "fromMs": 1500,
+      "toMs": 1820,
+      "dtwMs": 2600,
+      "p": 0.745826
+    },
+    {
+      "text": " cig",
+      "fromMs": 1820,
+      "toMs": 2210,
+      "dtwMs": 2840,
+      "p": 0.386834
+    },
+    {
+      "text": "arr",
+      "fromMs": 2210,
+      "toMs": 2580,
+      "dtwMs": 3020,
+      "p": 0.919714
+    },
+    {
+      "text": "os",
+      "fromMs": 2710,
+      "toMs": 2860,
+      "dtwMs": 3120,
+      "p": 0.805644
+    },
+    {
+      "text": "!",
+      "fromMs": 2860,
+      "toMs": 3290,
+      "dtwMs": 3260,
+      "p": 0.969586
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "archivo": "IMG_8389.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3483,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2760,
+      "texto": "y tercero, un dictamen."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " y",
+      "fromMs": 0,
+      "toMs": 120,
+      "dtwMs": 1600,
+      "p": 0.646065
+    },
+    {
+      "text": " tercer",
+      "fromMs": 120,
+      "toMs": 820,
+      "dtwMs": 1840,
+      "p": 0.730743
+    },
+    {
+      "text": "o",
+      "fromMs": 820,
+      "toMs": 940,
+      "dtwMs": 2060,
+      "p": 0.996852
+    },
+    {
+      "text": ",",
+      "fromMs": 940,
+      "toMs": 1170,
+      "dtwMs": 2300,
+      "p": 0.660053
+    },
+    {
+      "text": " un",
+      "fromMs": 1170,
+      "toMs": 1410,
+      "dtwMs": 2360,
+      "p": 0.963211
+    },
+    {
+      "text": " dict",
+      "fromMs": 1540,
+      "toMs": 1890,
+      "dtwMs": 2560,
+      "p": 0.99113
+    },
+    {
+      "text": "amen",
+      "fromMs": 1890,
+      "toMs": 2360,
+      "dtwMs": 2740,
+      "p": 0.993199
+    },
+    {
+      "text": ".",
+      "fromMs": 2360,
+      "toMs": 2740,
+      "dtwMs": 2740,
+      "p": 0.859331
+    }
+  ]
+}

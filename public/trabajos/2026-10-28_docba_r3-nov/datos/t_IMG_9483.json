@@ -1,0 +1,139 @@
+{
+  "archivo": "IMG_9483.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 12750,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        1317,
+        2457
+      ],
+      [
+        3586,
+        6546
+      ],
+      [
+        7106,
+        9037
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 1317,
+      "hastaMs": 9037,
+      "texto": "- Voy? - Dale - Tranqui, nosotros te lo resolvamos"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " -",
+      "fromMs": 1557,
+      "toMs": 1567,
+      "dtwMs": 1397,
+      "p": 0.109561
+    },
+    {
+      "text": " Voy",
+      "fromMs": 1567,
+      "toMs": 2237,
+      "dtwMs": 1697,
+      "p": 0.203467
+    },
+    {
+      "text": "?",
+      "fromMs": 2347,
+      "toMs": 2387,
+      "dtwMs": 2037,
+      "p": 0.263905
+    },
+    {
+      "text": " -",
+      "fromMs": 3586,
+      "toMs": 2457,
+      "dtwMs": 2037,
+      "p": 0.592835
+    },
+    {
+      "text": " Dale",
+      "fromMs": 3586,
+      "toMs": 3636,
+      "dtwMs": 2217,
+      "p": 0.218165
+    },
+    {
+      "text": " -",
+      "fromMs": 3636,
+      "toMs": 3696,
+      "dtwMs": 3606,
+      "p": 0.0829116
+    },
+    {
+      "text": " Tran",
+      "fromMs": 3826,
+      "toMs": 3946,
+      "dtwMs": 3946,
+      "p": 0.981336
+    },
+    {
+      "text": "qui",
+      "fromMs": 3946,
+      "toMs": 4116,
+      "dtwMs": 4146,
+      "p": 0.961155
+    },
+    {
+      "text": ",",
+      "fromMs": 4266,
+      "toMs": 4266,
+      "dtwMs": 4366,
+      "p": 0.731118
+    },
+    {
+      "text": " nosotros",
+      "fromMs": 4376,
+      "toMs": 4756,
+      "dtwMs": 4626,
+      "p": 0.740706
+    },
+    {
+      "text": " te",
+      "fromMs": 4866,
+      "toMs": 4956,
+      "dtwMs": 4906,
+      "p": 0.776958
+    },
+    {
+      "text": " lo",
+      "fromMs": 4956,
+      "toMs": 5116,
+      "dtwMs": 4986,
+      "p": 0.872103
+    },
+    {
+      "text": " resol",
+      "fromMs": 5256,
+      "toMs": 6296,
+      "dtwMs": 5186,
+      "p": 0.29971
+    },
+    {
+      "text": "v",
+      "fromMs": 7346,
+      "toMs": 7586,
+      "dtwMs": 5246,
+      "p": 0.536904
+    },
+    {
+      "text": "amos",
+      "fromMs": 7586,
+      "toMs": 8816,
+      "dtwMs": 5246,
+      "p": 0.828999
+    }
+  ]
+}

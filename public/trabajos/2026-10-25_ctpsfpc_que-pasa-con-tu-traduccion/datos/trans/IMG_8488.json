@@ -1,0 +1,267 @@
+{
+  "archivo": "IMG_8488.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8403,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 8400,
+      "texto": "4. Vinculamos la hoja de legalización y le devolvemos la traducción legalizada a la persona que haya concurrido a realizar el trámite"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " 4",
+      "fromMs": 0,
+      "toMs": 280,
+      "dtwMs": 1440,
+      "p": 0.335129
+    },
+    {
+      "text": ".",
+      "fromMs": 280,
+      "toMs": 560,
+      "dtwMs": 1720,
+      "p": 0.637505
+    },
+    {
+      "text": " Vin",
+      "fromMs": 560,
+      "toMs": 830,
+      "dtwMs": 1900,
+      "p": 0.892441
+    },
+    {
+      "text": "cul",
+      "fromMs": 840,
+      "toMs": 1120,
+      "dtwMs": 2020,
+      "p": 0.995822
+    },
+    {
+      "text": "amos",
+      "fromMs": 1320,
+      "toMs": 1480,
+      "dtwMs": 2180,
+      "p": 0.997632
+    },
+    {
+      "text": " la",
+      "fromMs": 1510,
+      "toMs": 1640,
+      "dtwMs": 2300,
+      "p": 0.993966
+    },
+    {
+      "text": " ho",
+      "fromMs": 1700,
+      "toMs": 1850,
+      "dtwMs": 2440,
+      "p": 0.971762
+    },
+    {
+      "text": "ja",
+      "fromMs": 1850,
+      "toMs": 2030,
+      "dtwMs": 2520,
+      "p": 0.999371
+    },
+    {
+      "text": " de",
+      "fromMs": 2030,
+      "toMs": 2210,
+      "dtwMs": 2600,
+      "p": 0.986376
+    },
+    {
+      "text": " legal",
+      "fromMs": 2210,
+      "toMs": 2670,
+      "dtwMs": 2800,
+      "p": 0.856204
+    },
+    {
+      "text": "ización",
+      "fromMs": 2670,
+      "toMs": 3280,
+      "dtwMs": 3160,
+      "p": 0.994983
+    },
+    {
+      "text": " y",
+      "fromMs": 3390,
+      "toMs": 3440,
+      "dtwMs": 3440,
+      "p": 0.897046
+    },
+    {
+      "text": " le",
+      "fromMs": 3440,
+      "toMs": 3540,
+      "dtwMs": 3560,
+      "p": 0.910595
+    },
+    {
+      "text": " dev",
+      "fromMs": 3540,
+      "toMs": 3700,
+      "dtwMs": 3720,
+      "p": 0.982816
+    },
+    {
+      "text": "olve",
+      "fromMs": 3700,
+      "toMs": 3920,
+      "dtwMs": 3880,
+      "p": 0.996407
+    },
+    {
+      "text": "mos",
+      "fromMs": 3920,
+      "toMs": 4050,
+      "dtwMs": 4060,
+      "p": 0.999794
+    },
+    {
+      "text": " la",
+      "fromMs": 4090,
+      "toMs": 4180,
+      "dtwMs": 4180,
+      "p": 0.935517
+    },
+    {
+      "text": " trad",
+      "fromMs": 4180,
+      "toMs": 4360,
+      "dtwMs": 4360,
+      "p": 0.962379
+    },
+    {
+      "text": "uc",
+      "fromMs": 4360,
+      "toMs": 4410,
+      "dtwMs": 4500,
+      "p": 0.99879
+    },
+    {
+      "text": "ción",
+      "fromMs": 4530,
+      "toMs": 4640,
+      "dtwMs": 4600,
+      "p": 0.996643
+    },
+    {
+      "text": " legal",
+      "fromMs": 4640,
+      "toMs": 4870,
+      "dtwMs": 4800,
+      "p": 0.968538
+    },
+    {
+      "text": "izada",
+      "fromMs": 4870,
+      "toMs": 5100,
+      "dtwMs": 5080,
+      "p": 0.992256
+    },
+    {
+      "text": " a",
+      "fromMs": 5100,
+      "toMs": 5220,
+      "dtwMs": 5200,
+      "p": 0.82895
+    },
+    {
+      "text": " la",
+      "fromMs": 5220,
+      "toMs": 5240,
+      "dtwMs": 5260,
+      "p": 0.925714
+    },
+    {
+      "text": " persona",
+      "fromMs": 5240,
+      "toMs": 5600,
+      "dtwMs": 5560,
+      "p": 0.875439
+    },
+    {
+      "text": " que",
+      "fromMs": 5600,
+      "toMs": 5720,
+      "dtwMs": 5700,
+      "p": 0.797941
+    },
+    {
+      "text": " haya",
+      "fromMs": 5720,
+      "toMs": 5920,
+      "dtwMs": 5840,
+      "p": 0.977886
+    },
+    {
+      "text": " concur",
+      "fromMs": 5920,
+      "toMs": 6220,
+      "dtwMs": 6060,
+      "p": 0.993306
+    },
+    {
+      "text": "r",
+      "fromMs": 6220,
+      "toMs": 6260,
+      "dtwMs": 6200,
+      "p": 0.999457
+    },
+    {
+      "text": "ido",
+      "fromMs": 6260,
+      "toMs": 6370,
+      "dtwMs": 6340,
+      "p": 0.999548
+    },
+    {
+      "text": " a",
+      "fromMs": 6460,
+      "toMs": 6510,
+      "dtwMs": 6500,
+      "p": 0.927579
+    },
+    {
+      "text": " realizar",
+      "fromMs": 6530,
+      "toMs": 7280,
+      "dtwMs": 6760,
+      "p": 0.994949
+    },
+    {
+      "text": " el",
+      "fromMs": 7390,
+      "toMs": 7620,
+      "dtwMs": 6960,
+      "p": 0.995207
+    },
+    {
+      "text": " tr",
+      "fromMs": 7620,
+      "toMs": 7840,
+      "dtwMs": 7040,
+      "p": 0.968157
+    },
+    {
+      "text": "ám",
+      "fromMs": 7840,
+      "toMs": 8050,
+      "dtwMs": 7120,
+      "p": 0.997824
+    },
+    {
+      "text": "ite",
+      "fromMs": 8050,
+      "toMs": 8400,
+      "dtwMs": 7220,
+      "p": 0.998628
+    }
+  ]
+}

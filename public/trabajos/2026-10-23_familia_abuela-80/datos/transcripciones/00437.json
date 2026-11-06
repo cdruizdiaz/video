@@ -1,0 +1,29 @@
+{
+  "archivo": "00437.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 1504,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1500,
+      "texto": "Gracias."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Gracias",
+      "fromMs": 20,
+      "toMs": 1050,
+      "dtwMs": 1260,
+      "p": 0.894816
+    },
+    {
+      "text": ".",
+      "fromMs": 1050,
+      "toMs": 1490,
+      "dtwMs": 1480,
+      "p": 0.997954
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "archivo": "IMG_4556.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3267,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 3260,
+      "texto": "\"The burn paper to celebrate\"."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " \"",
+      "fromMs": 0,
+      "toMs": 130,
+      "dtwMs": 780,
+      "p": 0.0493829
+    },
+    {
+      "text": "The",
+      "fromMs": 190,
+      "toMs": 530,
+      "dtwMs": 860,
+      "p": 0.648007
+    },
+    {
+      "text": " burn",
+      "fromMs": 790,
+      "toMs": 1070,
+      "dtwMs": 1120,
+      "p": 0.201194
+    },
+    {
+      "text": " paper",
+      "fromMs": 1070,
+      "toMs": 1700,
+      "dtwMs": 1560,
+      "p": 0.703412
+    },
+    {
+      "text": " to",
+      "fromMs": 1750,
+      "toMs": 1770,
+      "dtwMs": 2300,
+      "p": 0.885556
+    },
+    {
+      "text": " celebrate",
+      "fromMs": 2240,
+      "toMs": 2980,
+      "dtwMs": 2800,
+      "p": 0.987507
+    },
+    {
+      "text": "\".",
+      "fromMs": 3260,
+      "toMs": 3260,
+      "dtwMs": 3140,
+      "p": 0.33878
+    }
+  ]
+}

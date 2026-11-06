@@ -1,0 +1,77 @@
+{
+  "archivo": "IMG_4623.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 4665,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        2437
+      ],
+      [
+        3422,
+        4665
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 1420,
+      "texto": "You will discover"
+    },
+    {
+      "desdeMs": 1420,
+      "hastaMs": 4665,
+      "texto": "You will discover"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " You",
+      "fromMs": 30,
+      "toMs": 250,
+      "dtwMs": 160,
+      "p": 0.079943
+    },
+    {
+      "text": " will",
+      "fromMs": 250,
+      "toMs": 600,
+      "dtwMs": 580,
+      "p": 0.989827
+    },
+    {
+      "text": " discover",
+      "fromMs": 600,
+      "toMs": 1420,
+      "dtwMs": 1340,
+      "p": 0.97274
+    },
+    {
+      "text": " You",
+      "fromMs": 1450,
+      "toMs": 1920,
+      "dtwMs": 2437,
+      "p": 0.553929
+    },
+    {
+      "text": " will",
+      "fromMs": 1920,
+      "toMs": 2437,
+      "dtwMs": 3965,
+      "p": 0.998232
+    },
+    {
+      "text": " discover",
+      "fromMs": 3422,
+      "toMs": 4535,
+      "dtwMs": 4585,
+      "p": 0.999234
+    }
+  ]
+}

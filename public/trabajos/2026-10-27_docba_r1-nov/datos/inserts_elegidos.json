@@ -1,0 +1,42 @@
+{
+ "matcha": {
+  "toma": "0050",
+  "desde": 4.29,
+  "largo": 2.34,
+  "score": 0.212,
+  "hf": 0.134,
+  "gelatina": 0.07
+ },
+ "croissant": {
+  "toma": "0126",
+  "desde": 0.67,
+  "largo": 1.54,
+  "score": 0.125,
+  "hf": 0.058,
+  "gelatina": 0.049
+ },
+ "guacamole": {
+  "toma": "0062",
+  "desde": 4.12,
+  "largo": 1.3,
+  "score": 0.086,
+  "hf": 0.259,
+  "gelatina": 0.106
+ },
+ "toston": {
+  "toma": "0076",
+  "desde": 0.75,
+  "largo": 2.27,
+  "score": 0.127,
+  "hf": 0.038,
+  "gelatina": 0.05
+ },
+ "vino": {
+  "toma": "0129",
+  "desde": 1.62,
+  "largo": 3.12,
+  "score": 0.102,
+  "hf": 0.036,
+  "gelatina": 0.035
+ }
+}

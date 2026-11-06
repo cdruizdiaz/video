@@ -1,0 +1,270 @@
+{
+  "archivo": "00436.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 36544,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 29980,
+      "texto": "La abuela. Se ha apagado el permante."
+    },
+    {
+      "desdeMs": 29980,
+      "hastaMs": 33500,
+      "texto": "Esta canción es el olor a Cable y Lucía."
+    },
+    {
+      "desdeMs": 33500,
+      "hastaMs": 34560,
+      "texto": "Se ha apagado el palante."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " La",
+      "fromMs": 10,
+      "toMs": 720,
+      "dtwMs": 3240,
+      "p": 0.251167
+    },
+    {
+      "text": " ab",
+      "fromMs": 720,
+      "toMs": 1440,
+      "dtwMs": 3440,
+      "p": 0.986171
+    },
+    {
+      "text": "uela",
+      "fromMs": 1440,
+      "toMs": 2890,
+      "dtwMs": 3720,
+      "p": 0.999752
+    },
+    {
+      "text": ".",
+      "fromMs": 2890,
+      "toMs": 4000,
+      "dtwMs": 4520,
+      "p": 0.660121
+    },
+    {
+      "text": " Se",
+      "fromMs": 4000,
+      "toMs": 6170,
+      "dtwMs": 28980,
+      "p": 0.222537
+    },
+    {
+      "text": " ha",
+      "fromMs": 6170,
+      "toMs": 8340,
+      "dtwMs": 29020,
+      "p": 0.684218
+    },
+    {
+      "text": " ap",
+      "fromMs": 8340,
+      "toMs": 10510,
+      "dtwMs": 29140,
+      "p": 0.995414
+    },
+    {
+      "text": "ag",
+      "fromMs": 10510,
+      "toMs": 12670,
+      "dtwMs": 29220,
+      "p": 1
+    },
+    {
+      "text": "ado",
+      "fromMs": 12670,
+      "toMs": 15910,
+      "dtwMs": 29300,
+      "p": 1
+    },
+    {
+      "text": " el",
+      "fromMs": 15910,
+      "toMs": 18080,
+      "dtwMs": 29400,
+      "p": 0.999992
+    },
+    {
+      "text": " perm",
+      "fromMs": 18080,
+      "toMs": 22410,
+      "dtwMs": 29560,
+      "p": 0.834194
+    },
+    {
+      "text": "ante",
+      "fromMs": 22410,
+      "toMs": 26730,
+      "dtwMs": 29780,
+      "p": 0.986658
+    },
+    {
+      "text": ".",
+      "fromMs": 26730,
+      "toMs": 29980,
+      "dtwMs": 29900,
+      "p": 0.999615
+    },
+    {
+      "text": " Esta",
+      "fromMs": 29990,
+      "toMs": 30360,
+      "dtwMs": 30280,
+      "p": 0.739509
+    },
+    {
+      "text": " canción",
+      "fromMs": 30360,
+      "toMs": 31030,
+      "dtwMs": 30800,
+      "p": 0.958795
+    },
+    {
+      "text": " es",
+      "fromMs": 31030,
+      "toMs": 31220,
+      "dtwMs": 31020,
+      "p": 0.964945
+    },
+    {
+      "text": " el",
+      "fromMs": 31220,
+      "toMs": 31410,
+      "dtwMs": 31180,
+      "p": 0.282181
+    },
+    {
+      "text": " ol",
+      "fromMs": 31410,
+      "toMs": 31600,
+      "dtwMs": 31360,
+      "p": 0.813052
+    },
+    {
+      "text": "or",
+      "fromMs": 31600,
+      "toMs": 31790,
+      "dtwMs": 31500,
+      "p": 0.992526
+    },
+    {
+      "text": " a",
+      "fromMs": 31790,
+      "toMs": 31880,
+      "dtwMs": 31700,
+      "p": 0.926352
+    },
+    {
+      "text": " C",
+      "fromMs": 31880,
+      "toMs": 31970,
+      "dtwMs": 31780,
+      "p": 0.184526
+    },
+    {
+      "text": "able",
+      "fromMs": 31970,
+      "toMs": 32350,
+      "dtwMs": 31920,
+      "p": 0.227454
+    },
+    {
+      "text": " y",
+      "fromMs": 32350,
+      "toMs": 32440,
+      "dtwMs": 32140,
+      "p": 0.398884
+    },
+    {
+      "text": " Luc",
+      "fromMs": 32440,
+      "toMs": 32730,
+      "dtwMs": 32340,
+      "p": 0.181276
+    },
+    {
+      "text": "ía",
+      "fromMs": 32730,
+      "toMs": 32980,
+      "dtwMs": 32640,
+      "p": 0.992561
+    },
+    {
+      "text": ".",
+      "fromMs": 32980,
+      "toMs": 33500,
+      "dtwMs": 33300,
+      "p": 0.918407
+    },
+    {
+      "text": " Se",
+      "fromMs": 33510,
+      "toMs": 33590,
+      "dtwMs": 33640,
+      "p": 0.318289
+    },
+    {
+      "text": " ha",
+      "fromMs": 33590,
+      "toMs": 33680,
+      "dtwMs": 33660,
+      "p": 0.920757
+    },
+    {
+      "text": " ap",
+      "fromMs": 33680,
+      "toMs": 33770,
+      "dtwMs": 33820,
+      "p": 0.573944
+    },
+    {
+      "text": "ag",
+      "fromMs": 33770,
+      "toMs": 33860,
+      "dtwMs": 33880,
+      "p": 0.994146
+    },
+    {
+      "text": "ado",
+      "fromMs": 33860,
+      "toMs": 33990,
+      "dtwMs": 33960,
+      "p": 0.99943
+    },
+    {
+      "text": " el",
+      "fromMs": 33990,
+      "toMs": 34080,
+      "dtwMs": 34100,
+      "p": 0.676026
+    },
+    {
+      "text": " pal",
+      "fromMs": 34080,
+      "toMs": 34210,
+      "dtwMs": 34220,
+      "p": 0.612766
+    },
+    {
+      "text": "ante",
+      "fromMs": 34210,
+      "toMs": 34390,
+      "dtwMs": 34540,
+      "p": 0.990465
+    },
+    {
+      "text": ".",
+      "fromMs": 34390,
+      "toMs": 34560,
+      "dtwMs": 34540,
+      "p": 0.962762
+    }
+  ]
+}

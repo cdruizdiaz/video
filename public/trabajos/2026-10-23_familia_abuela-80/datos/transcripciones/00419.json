@@ -1,0 +1,371 @@
+{
+  "archivo": "00419.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 20544,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7260,
+      "texto": "Aaaaah, viene ahí."
+    },
+    {
+      "desdeMs": 7260,
+      "hastaMs": 10000,
+      "texto": "Diosa, Diosa, única, bonita. Vení."
+    },
+    {
+      "desdeMs": 10000,
+      "hastaMs": 13000,
+      "texto": "Me dijiste grabar, ¿no?"
+    },
+    {
+      "desdeMs": 15000,
+      "hastaMs": 17000,
+      "texto": "Mostrame."
+    },
+    {
+      "desdeMs": 17000,
+      "hastaMs": 20000,
+      "texto": "Bueno, a mí me quiere que mostremos la de cacheta."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " A",
+      "fromMs": 10,
+      "toMs": 430,
+      "dtwMs": 1360,
+      "p": 0.0374942
+    },
+    {
+      "text": "aaa",
+      "fromMs": 430,
+      "toMs": 1720,
+      "dtwMs": 3040,
+      "p": 0.15626
+    },
+    {
+      "text": "ah",
+      "fromMs": 1720,
+      "toMs": 2580,
+      "dtwMs": 6240,
+      "p": 0.311237
+    },
+    {
+      "text": ",",
+      "fromMs": 2580,
+      "toMs": 3440,
+      "dtwMs": 6240,
+      "p": 0.383254
+    },
+    {
+      "text": " viene",
+      "fromMs": 3440,
+      "toMs": 5600,
+      "dtwMs": 6520,
+      "p": 0.318753
+    },
+    {
+      "text": " ahí",
+      "fromMs": 5600,
+      "toMs": 6920,
+      "dtwMs": 6800,
+      "p": 0.809995
+    },
+    {
+      "text": ".",
+      "fromMs": 6920,
+      "toMs": 7260,
+      "dtwMs": 7300,
+      "p": 0.617969
+    },
+    {
+      "text": " Dios",
+      "fromMs": 7270,
+      "toMs": 7550,
+      "dtwMs": 7680,
+      "p": 0.203704
+    },
+    {
+      "text": "a",
+      "fromMs": 7550,
+      "toMs": 7620,
+      "dtwMs": 7880,
+      "p": 0.990745
+    },
+    {
+      "text": ",",
+      "fromMs": 7620,
+      "toMs": 7760,
+      "dtwMs": 8140,
+      "p": 0.655634
+    },
+    {
+      "text": " Dios",
+      "fromMs": 7760,
+      "toMs": 8050,
+      "dtwMs": 8480,
+      "p": 0.541516
+    },
+    {
+      "text": "a",
+      "fromMs": 8050,
+      "toMs": 8120,
+      "dtwMs": 8580,
+      "p": 0.997533
+    },
+    {
+      "text": ",",
+      "fromMs": 8120,
+      "toMs": 8260,
+      "dtwMs": 8740,
+      "p": 0.854682
+    },
+    {
+      "text": " única",
+      "fromMs": 8260,
+      "toMs": 8630,
+      "dtwMs": 8880,
+      "p": 0.771509
+    },
+    {
+      "text": ",",
+      "fromMs": 8630,
+      "toMs": 8770,
+      "dtwMs": 8980,
+      "p": 0.85469
+    },
+    {
+      "text": " bon",
+      "fromMs": 8770,
+      "toMs": 8990,
+      "dtwMs": 9100,
+      "p": 0.988223
+    },
+    {
+      "text": "ita",
+      "fromMs": 8990,
+      "toMs": 9210,
+      "dtwMs": 9280,
+      "p": 0.999096
+    },
+    {
+      "text": ".",
+      "fromMs": 9210,
+      "toMs": 9480,
+      "dtwMs": 9480,
+      "p": 0.818602
+    },
+    {
+      "text": " Ven",
+      "fromMs": 9480,
+      "toMs": 9700,
+      "dtwMs": 9540,
+      "p": 0.597697
+    },
+    {
+      "text": "í",
+      "fromMs": 9700,
+      "toMs": 9770,
+      "dtwMs": 9700,
+      "p": 0.856153
+    },
+    {
+      "text": ".",
+      "fromMs": 9770,
+      "toMs": 10000,
+      "dtwMs": 10500,
+      "p": 0.907958
+    },
+    {
+      "text": " Me",
+      "fromMs": 10010,
+      "toMs": 10260,
+      "dtwMs": 10740,
+      "p": 0.383846
+    },
+    {
+      "text": " dij",
+      "fromMs": 10260,
+      "toMs": 10650,
+      "dtwMs": 10980,
+      "p": 0.98113
+    },
+    {
+      "text": "iste",
+      "fromMs": 10650,
+      "toMs": 11170,
+      "dtwMs": 11120,
+      "p": 0.999422
+    },
+    {
+      "text": " grab",
+      "fromMs": 11170,
+      "toMs": 11690,
+      "dtwMs": 11380,
+      "p": 0.415026
+    },
+    {
+      "text": "ar",
+      "fromMs": 11690,
+      "toMs": 11950,
+      "dtwMs": 11540,
+      "p": 0.603933
+    },
+    {
+      "text": ",",
+      "fromMs": 11950,
+      "toMs": 12210,
+      "dtwMs": 11580,
+      "p": 0.247683
+    },
+    {
+      "text": " ¿",
+      "fromMs": 12210,
+      "toMs": 12340,
+      "dtwMs": 11660,
+      "p": 0.374416
+    },
+    {
+      "text": "no",
+      "fromMs": 12340,
+      "toMs": 12600,
+      "dtwMs": 11740,
+      "p": 0.829048
+    },
+    {
+      "text": "?",
+      "fromMs": 12600,
+      "toMs": 13000,
+      "dtwMs": 13300,
+      "p": 0.992006
+    },
+    {
+      "text": " Most",
+      "fromMs": 15000,
+      "toMs": 15000,
+      "dtwMs": 15400,
+      "p": 0.744289
+    },
+    {
+      "text": "r",
+      "fromMs": 15010,
+      "toMs": 15490,
+      "dtwMs": 15520,
+      "p": 0.938373
+    },
+    {
+      "text": "ame",
+      "fromMs": 15490,
+      "toMs": 17000,
+      "dtwMs": 15720,
+      "p": 0.974568
+    },
+    {
+      "text": ".",
+      "fromMs": 17000,
+      "toMs": 17000,
+      "dtwMs": 16980,
+      "p": 0.781428
+    },
+    {
+      "text": " Bueno",
+      "fromMs": 17010,
+      "toMs": 17340,
+      "dtwMs": 17600,
+      "p": 0.955221
+    },
+    {
+      "text": ",",
+      "fromMs": 17340,
+      "toMs": 17470,
+      "dtwMs": 17640,
+      "p": 0.950182
+    },
+    {
+      "text": " a",
+      "fromMs": 17470,
+      "toMs": 17530,
+      "dtwMs": 17740,
+      "p": 0.308675
+    },
+    {
+      "text": " mí",
+      "fromMs": 17530,
+      "toMs": 17660,
+      "dtwMs": 17820,
+      "p": 0.831741
+    },
+    {
+      "text": " me",
+      "fromMs": 17660,
+      "toMs": 17790,
+      "dtwMs": 17880,
+      "p": 0.418859
+    },
+    {
+      "text": " quiere",
+      "fromMs": 17790,
+      "toMs": 18190,
+      "dtwMs": 18080,
+      "p": 0.577852
+    },
+    {
+      "text": " que",
+      "fromMs": 18190,
+      "toMs": 18390,
+      "dtwMs": 18220,
+      "p": 0.750992
+    },
+    {
+      "text": " most",
+      "fromMs": 18390,
+      "toMs": 18660,
+      "dtwMs": 18400,
+      "p": 0.899664
+    },
+    {
+      "text": "remos",
+      "fromMs": 18660,
+      "toMs": 19000,
+      "dtwMs": 18540,
+      "p": 0.372173
+    },
+    {
+      "text": " la",
+      "fromMs": 19000,
+      "toMs": 19130,
+      "dtwMs": 18660,
+      "p": 0.733707
+    },
+    {
+      "text": " de",
+      "fromMs": 19130,
+      "toMs": 19260,
+      "dtwMs": 18820,
+      "p": 0.307376
+    },
+    {
+      "text": " cach",
+      "fromMs": 19260,
+      "toMs": 19530,
+      "dtwMs": 18980,
+      "p": 0.35136
+    },
+    {
+      "text": "eta",
+      "fromMs": 19530,
+      "toMs": 19730,
+      "dtwMs": 19160,
+      "p": 0.547793
+    },
+    {
+      "text": ".",
+      "fromMs": 19730,
+      "toMs": 20000,
+      "dtwMs": 19380,
+      "p": 0.394947
+    }
+  ]
+}

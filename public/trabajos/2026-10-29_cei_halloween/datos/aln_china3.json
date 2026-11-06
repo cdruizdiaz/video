@@ -1,0 +1,47 @@
+[
+ {
+  "palabra": "The",
+  "ini": 0.98,
+  "fin": 1.08
+ },
+ {
+  "palabra": "people",
+  "ini": 1.2,
+  "fin": 1.56
+ },
+ {
+  "palabra": "bring",
+  "ini": 1.72,
+  "fin": 1.96
+ },
+ {
+  "palabra": "food",
+  "ini": 2.2,
+  "fin": 2.48
+ },
+ {
+  "palabra": "and",
+  "ini": 2.84,
+  "fin": 2.94
+ },
+ {
+  "palabra": "flowers",
+  "ini": 3.06,
+  "fin": 3.56
+ },
+ {
+  "palabra": "and",
+  "ini": 4.3,
+  "fin": 4.4
+ },
+ {
+  "palabra": "show",
+  "ini": 5.08,
+  "fin": 5.28
+ },
+ {
+  "palabra": "respect.",
+  "ini": 5.78,
+  "fin": 6.2
+ }
+]

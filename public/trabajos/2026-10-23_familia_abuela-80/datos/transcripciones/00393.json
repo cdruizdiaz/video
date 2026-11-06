@@ -1,0 +1,216 @@
+{
+  "archivo": "00393.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 14016,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 11960,
+      "texto": "La gente normal la recibe y Emilia, ¿por qué la recibe?"
+    },
+    {
+      "desdeMs": 11960,
+      "hastaMs": 13960,
+      "texto": "De mi chica, boludo, recibe."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " La",
+      "fromMs": 10,
+      "toMs": 710,
+      "dtwMs": 2060,
+      "p": 0.109423
+    },
+    {
+      "text": " gente",
+      "fromMs": 710,
+      "toMs": 2480,
+      "dtwMs": 7060,
+      "p": 0.252048
+    },
+    {
+      "text": " normal",
+      "fromMs": 2490,
+      "toMs": 4630,
+      "dtwMs": 8240,
+      "p": 0.737537
+    },
+    {
+      "text": " la",
+      "fromMs": 4630,
+      "toMs": 5340,
+      "dtwMs": 8460,
+      "p": 0.146583
+    },
+    {
+      "text": " reci",
+      "fromMs": 5340,
+      "toMs": 6750,
+      "dtwMs": 8740,
+      "p": 0.705559
+    },
+    {
+      "text": "be",
+      "fromMs": 6750,
+      "toMs": 7450,
+      "dtwMs": 9000,
+      "p": 0.685468
+    },
+    {
+      "text": " y",
+      "fromMs": 7460,
+      "toMs": 7820,
+      "dtwMs": 9220,
+      "p": 0.285055
+    },
+    {
+      "text": " Em",
+      "fromMs": 7820,
+      "toMs": 8530,
+      "dtwMs": 9380,
+      "p": 0.544934
+    },
+    {
+      "text": "ilia",
+      "fromMs": 8530,
+      "toMs": 9810,
+      "dtwMs": 9600,
+      "p": 0.988608
+    },
+    {
+      "text": ",",
+      "fromMs": 9810,
+      "toMs": 10190,
+      "dtwMs": 10220,
+      "p": 0.0750296
+    },
+    {
+      "text": " ¿",
+      "fromMs": 10190,
+      "toMs": 10190,
+      "dtwMs": 10680,
+      "p": 0.291437
+    },
+    {
+      "text": "por",
+      "fromMs": 10290,
+      "toMs": 10560,
+      "dtwMs": 10880,
+      "p": 0.721136
+    },
+    {
+      "text": " qué",
+      "fromMs": 10580,
+      "toMs": 10860,
+      "dtwMs": 10960,
+      "p": 0.9617
+    },
+    {
+      "text": " la",
+      "fromMs": 10860,
+      "toMs": 11050,
+      "dtwMs": 11060,
+      "p": 0.300072
+    },
+    {
+      "text": " reci",
+      "fromMs": 11050,
+      "toMs": 11440,
+      "dtwMs": 11220,
+      "p": 0.855153
+    },
+    {
+      "text": "be",
+      "fromMs": 11440,
+      "toMs": 11630,
+      "dtwMs": 11400,
+      "p": 0.903864
+    },
+    {
+      "text": "?",
+      "fromMs": 11630,
+      "toMs": 11960,
+      "dtwMs": 11700,
+      "p": 0.69535
+    },
+    {
+      "text": " De",
+      "fromMs": 11970,
+      "toMs": 12100,
+      "dtwMs": 12140,
+      "p": 0.240712
+    },
+    {
+      "text": " mi",
+      "fromMs": 12100,
+      "toMs": 12240,
+      "dtwMs": 12260,
+      "p": 0.825199
+    },
+    {
+      "text": " ch",
+      "fromMs": 12240,
+      "toMs": 12380,
+      "dtwMs": 12480,
+      "p": 0.968992
+    },
+    {
+      "text": "ica",
+      "fromMs": 12380,
+      "toMs": 12590,
+      "dtwMs": 12660,
+      "p": 0.995123
+    },
+    {
+      "text": ",",
+      "fromMs": 12590,
+      "toMs": 12730,
+      "dtwMs": 12820,
+      "p": 0.377312
+    },
+    {
+      "text": " bol",
+      "fromMs": 12730,
+      "toMs": 12940,
+      "dtwMs": 12920,
+      "p": 0.930962
+    },
+    {
+      "text": "udo",
+      "fromMs": 12940,
+      "toMs": 13150,
+      "dtwMs": 13040,
+      "p": 0.795901
+    },
+    {
+      "text": ",",
+      "fromMs": 13150,
+      "toMs": 13290,
+      "dtwMs": 13060,
+      "p": 0.555444
+    },
+    {
+      "text": " reci",
+      "fromMs": 13290,
+      "toMs": 13570,
+      "dtwMs": 13360,
+      "p": 0.781598
+    },
+    {
+      "text": "be",
+      "fromMs": 13570,
+      "toMs": 13710,
+      "dtwMs": 13580,
+      "p": 0.2828
+    },
+    {
+      "text": ".",
+      "fromMs": 13710,
+      "toMs": 13960,
+      "dtwMs": 13840,
+      "p": 0.709609
+    }
+  ]
+}

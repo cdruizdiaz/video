@@ -1,0 +1,244 @@
+{
+  "archivo": "IMG_4634.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 52863,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 11960,
+      "texto": "No se ven hasta las 6, boludo, no ven hasta las 6."
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 52860,
+      "texto": "No se ven hasta las 6, boludo, no ven hasta las 6."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " No",
+      "fromMs": 0,
+      "toMs": 2000,
+      "dtwMs": 8980,
+      "p": 0.0323649
+    },
+    {
+      "text": " se",
+      "fromMs": 2000,
+      "toMs": 3000,
+      "dtwMs": 9120,
+      "p": 0.156554
+    },
+    {
+      "text": " ven",
+      "fromMs": 3000,
+      "toMs": 4500,
+      "dtwMs": 9300,
+      "p": 0.233393
+    },
+    {
+      "text": " hasta",
+      "fromMs": 4520,
+      "toMs": 6990,
+      "dtwMs": 9560,
+      "p": 0.755645
+    },
+    {
+      "text": " las",
+      "fromMs": 6990,
+      "toMs": 8490,
+      "dtwMs": 9720,
+      "p": 0.982353
+    },
+    {
+      "text": " 6",
+      "fromMs": 8490,
+      "toMs": 10000,
+      "dtwMs": 9960,
+      "p": 0.6548
+    },
+    {
+      "text": ",",
+      "fromMs": 10000,
+      "toMs": 10070,
+      "dtwMs": 10020,
+      "p": 0.393562
+    },
+    {
+      "text": " bol",
+      "fromMs": 10070,
+      "toMs": 10180,
+      "dtwMs": 10180,
+      "p": 0.906781
+    },
+    {
+      "text": "udo",
+      "fromMs": 10180,
+      "toMs": 10300,
+      "dtwMs": 10340,
+      "p": 0.97335
+    },
+    {
+      "text": ",",
+      "fromMs": 10300,
+      "toMs": 10450,
+      "dtwMs": 11180,
+      "p": 0.0687327
+    },
+    {
+      "text": " no",
+      "fromMs": 10450,
+      "toMs": 10600,
+      "dtwMs": 11360,
+      "p": 0.693272
+    },
+    {
+      "text": " ven",
+      "fromMs": 10600,
+      "toMs": 10830,
+      "dtwMs": 11380,
+      "p": 0.500994
+    },
+    {
+      "text": " hasta",
+      "fromMs": 10830,
+      "toMs": 11220,
+      "dtwMs": 11540,
+      "p": 0.997788
+    },
+    {
+      "text": " las",
+      "fromMs": 11220,
+      "toMs": 11450,
+      "dtwMs": 11660,
+      "p": 0.998302
+    },
+    {
+      "text": " 6",
+      "fromMs": 11450,
+      "toMs": 11680,
+      "dtwMs": 11940,
+      "p": 0.996485
+    },
+    {
+      "text": ".",
+      "fromMs": 11680,
+      "toMs": 11950,
+      "dtwMs": 11940,
+      "p": 0.653262
+    },
+    {
+      "text": " No",
+      "fromMs": 30000,
+      "toMs": 30970,
+      "dtwMs": 31060,
+      "p": 0.11036
+    },
+    {
+      "text": " se",
+      "fromMs": 30970,
+      "toMs": 31940,
+      "dtwMs": 31260,
+      "p": 0.410453
+    },
+    {
+      "text": " ven",
+      "fromMs": 31940,
+      "toMs": 33390,
+      "dtwMs": 31560,
+      "p": 0.971433
+    },
+    {
+      "text": " hasta",
+      "fromMs": 33410,
+      "toMs": 35830,
+      "dtwMs": 31560,
+      "p": 0.809965
+    },
+    {
+      "text": " las",
+      "fromMs": 35830,
+      "toMs": 37290,
+      "dtwMs": 32040,
+      "p": 0.938952
+    },
+    {
+      "text": " 6",
+      "fromMs": 37290,
+      "toMs": 38750,
+      "dtwMs": 32080,
+      "p": 0.489886
+    },
+    {
+      "text": ",",
+      "fromMs": 38750,
+      "toMs": 39670,
+      "dtwMs": 32120,
+      "p": 0.352788
+    },
+    {
+      "text": " bol",
+      "fromMs": 39760,
+      "toMs": 41170,
+      "dtwMs": 32140,
+      "p": 0.808357
+    },
+    {
+      "text": "udo",
+      "fromMs": 41170,
+      "toMs": 42630,
+      "dtwMs": 32320,
+      "p": 0.988427
+    },
+    {
+      "text": ",",
+      "fromMs": 42630,
+      "toMs": 43600,
+      "dtwMs": 32320,
+      "p": 0.782834
+    },
+    {
+      "text": " no",
+      "fromMs": 43600,
+      "toMs": 44570,
+      "dtwMs": 33900,
+      "p": 0.931546
+    },
+    {
+      "text": " ven",
+      "fromMs": 44570,
+      "toMs": 46030,
+      "dtwMs": 36420,
+      "p": 0.763409
+    },
+    {
+      "text": " hasta",
+      "fromMs": 46030,
+      "toMs": 48460,
+      "dtwMs": 42160,
+      "p": 0.953245
+    },
+    {
+      "text": " las",
+      "fromMs": 48460,
+      "toMs": 49920,
+      "dtwMs": 43400,
+      "p": 0.953834
+    },
+    {
+      "text": " 6",
+      "fromMs": 49920,
+      "toMs": 51380,
+      "dtwMs": 44180,
+      "p": 0.594416
+    },
+    {
+      "text": ".",
+      "fromMs": 51380,
+      "toMs": 52850,
+      "dtwMs": 50060,
+      "p": 0.544237
+    }
+  ]
+}

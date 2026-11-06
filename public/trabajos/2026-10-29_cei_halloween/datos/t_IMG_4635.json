@@ -1,0 +1,342 @@
+{
+  "archivo": "IMG_4635.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 12273,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4200,
+      "texto": "Hola a todos, bienvenidos a nuestra sala de bicicletas de bicicletas."
+    },
+    {
+      "desdeMs": 4200,
+      "hastaMs": 12280,
+      "texto": "Por favor, escanezamos nuestra pantalla de bicicletas para descubrir más información sobre los bicicletas."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Hola",
+      "fromMs": 0,
+      "toMs": 800,
+      "dtwMs": 1680,
+      "p": 0.310125
+    },
+    {
+      "text": " a",
+      "fromMs": 950,
+      "toMs": 1150,
+      "dtwMs": 1920,
+      "p": 0.82401
+    },
+    {
+      "text": " todos",
+      "fromMs": 1510,
+      "toMs": 2300,
+      "dtwMs": 2140,
+      "p": 0.960948
+    },
+    {
+      "text": ",",
+      "fromMs": 2360,
+      "toMs": 2410,
+      "dtwMs": 2380,
+      "p": 0.477195
+    },
+    {
+      "text": " bien",
+      "fromMs": 2410,
+      "toMs": 2600,
+      "dtwMs": 2540,
+      "p": 0.879584
+    },
+    {
+      "text": "venidos",
+      "fromMs": 2600,
+      "toMs": 2930,
+      "dtwMs": 2740,
+      "p": 0.863422
+    },
+    {
+      "text": " a",
+      "fromMs": 2930,
+      "toMs": 2970,
+      "dtwMs": 2900,
+      "p": 0.913155
+    },
+    {
+      "text": " nuestra",
+      "fromMs": 2970,
+      "toMs": 3300,
+      "dtwMs": 3140,
+      "p": 0.403239
+    },
+    {
+      "text": " sala",
+      "fromMs": 3300,
+      "toMs": 3490,
+      "dtwMs": 3260,
+      "p": 0.150279
+    },
+    {
+      "text": " de",
+      "fromMs": 3490,
+      "toMs": 3580,
+      "dtwMs": 3300,
+      "p": 0.881932
+    },
+    {
+      "text": " bic",
+      "fromMs": 3580,
+      "toMs": 3720,
+      "dtwMs": 3380,
+      "p": 0.417587
+    },
+    {
+      "text": "ic",
+      "fromMs": 3720,
+      "toMs": 3790,
+      "dtwMs": 3560,
+      "p": 0.559253
+    },
+    {
+      "text": "let",
+      "fromMs": 3790,
+      "toMs": 3900,
+      "dtwMs": 3680,
+      "p": 0.932814
+    },
+    {
+      "text": "as",
+      "fromMs": 3950,
+      "toMs": 4100,
+      "dtwMs": 3720,
+      "p": 0.22833
+    },
+    {
+      "text": " de",
+      "fromMs": 4100,
+      "toMs": 4110,
+      "dtwMs": 3720,
+      "p": 0.0722255
+    },
+    {
+      "text": " bic",
+      "fromMs": 4110,
+      "toMs": 4130,
+      "dtwMs": 3720,
+      "p": 0.36205
+    },
+    {
+      "text": "ic",
+      "fromMs": 4130,
+      "toMs": 4140,
+      "dtwMs": 3720,
+      "p": 0.915007
+    },
+    {
+      "text": "let",
+      "fromMs": 4140,
+      "toMs": 4150,
+      "dtwMs": 3720,
+      "p": 0.999336
+    },
+    {
+      "text": "as",
+      "fromMs": 4150,
+      "toMs": 4160,
+      "dtwMs": 3900,
+      "p": 0.707504
+    },
+    {
+      "text": ".",
+      "fromMs": 4160,
+      "toMs": 4200,
+      "dtwMs": 4020,
+      "p": 0.616387
+    },
+    {
+      "text": " Por",
+      "fromMs": 4200,
+      "toMs": 4350,
+      "dtwMs": 4520,
+      "p": 0.561001
+    },
+    {
+      "text": " favor",
+      "fromMs": 4350,
+      "toMs": 4610,
+      "dtwMs": 4640,
+      "p": 0.98783
+    },
+    {
+      "text": ",",
+      "fromMs": 4610,
+      "toMs": 4680,
+      "dtwMs": 4820,
+      "p": 0.316358
+    },
+    {
+      "text": " esc",
+      "fromMs": 4750,
+      "toMs": 4860,
+      "dtwMs": 4920,
+      "p": 0.504985
+    },
+    {
+      "text": "ane",
+      "fromMs": 4860,
+      "toMs": 5010,
+      "dtwMs": 5060,
+      "p": 0.164965
+    },
+    {
+      "text": "z",
+      "fromMs": 5010,
+      "toMs": 5050,
+      "dtwMs": 5240,
+      "p": 0.374773
+    },
+    {
+      "text": "amos",
+      "fromMs": 5050,
+      "toMs": 5270,
+      "dtwMs": 5240,
+      "p": 0.16977
+    },
+    {
+      "text": " nuestra",
+      "fromMs": 5400,
+      "toMs": 5630,
+      "dtwMs": 5240,
+      "p": 0.165764
+    },
+    {
+      "text": " pantalla",
+      "fromMs": 5710,
+      "toMs": 6100,
+      "dtwMs": 5420,
+      "p": 0.0679267
+    },
+    {
+      "text": " de",
+      "fromMs": 6100,
+      "toMs": 6170,
+      "dtwMs": 5700,
+      "p": 0.324167
+    },
+    {
+      "text": " bic",
+      "fromMs": 6170,
+      "toMs": 6280,
+      "dtwMs": 5860,
+      "p": 0.319524
+    },
+    {
+      "text": "ic",
+      "fromMs": 6280,
+      "toMs": 6340,
+      "dtwMs": 5860,
+      "p": 0.995963
+    },
+    {
+      "text": "let",
+      "fromMs": 6340,
+      "toMs": 6460,
+      "dtwMs": 5860,
+      "p": 0.99958
+    },
+    {
+      "text": "as",
+      "fromMs": 6490,
+      "toMs": 6500,
+      "dtwMs": 6020,
+      "p": 0.917517
+    },
+    {
+      "text": " para",
+      "fromMs": 6560,
+      "toMs": 6680,
+      "dtwMs": 6240,
+      "p": 0.631154
+    },
+    {
+      "text": " descub",
+      "fromMs": 6680,
+      "toMs": 6910,
+      "dtwMs": 6500,
+      "p": 0.630336
+    },
+    {
+      "text": "rir",
+      "fromMs": 6910,
+      "toMs": 6980,
+      "dtwMs": 6700,
+      "p": 0.980845
+    },
+    {
+      "text": " más",
+      "fromMs": 7040,
+      "toMs": 7130,
+      "dtwMs": 6820,
+      "p": 0.935879
+    },
+    {
+      "text": " información",
+      "fromMs": 7130,
+      "toMs": 7530,
+      "dtwMs": 7340,
+      "p": 0.966492
+    },
+    {
+      "text": " sobre",
+      "fromMs": 7640,
+      "toMs": 7930,
+      "dtwMs": 7900,
+      "p": 0.870498
+    },
+    {
+      "text": " los",
+      "fromMs": 8500,
+      "toMs": 8980,
+      "dtwMs": 8160,
+      "p": 0.854451
+    },
+    {
+      "text": " bic",
+      "fromMs": 9070,
+      "toMs": 9960,
+      "dtwMs": 8340,
+      "p": 0.542367
+    },
+    {
+      "text": "ic",
+      "fromMs": 9960,
+      "toMs": 10560,
+      "dtwMs": 8520,
+      "p": 0.985035
+    },
+    {
+      "text": "let",
+      "fromMs": 10660,
+      "toMs": 11560,
+      "dtwMs": 8560,
+      "p": 0.998896
+    },
+    {
+      "text": "as",
+      "fromMs": 11670,
+      "toMs": 12280,
+      "dtwMs": 8720,
+      "p": 0.996569
+    },
+    {
+      "text": ".",
+      "fromMs": 12280,
+      "toMs": 12280,
+      "dtwMs": 9240,
+      "p": 0.854897
+    }
+  ]
+}

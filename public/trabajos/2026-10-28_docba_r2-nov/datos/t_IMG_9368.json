@@ -1,0 +1,103 @@
+{
+  "archivo": "IMG_9368.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3887,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        1046,
+        3120
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 1046,
+      "hastaMs": 3120,
+      "texto": "Como en casa, pero sin lavar un plato"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Como",
+      "fromMs": 1306,
+      "toMs": 1306,
+      "dtwMs": 1406,
+      "p": 0.513342
+    },
+    {
+      "text": " en",
+      "fromMs": 1316,
+      "toMs": 1436,
+      "dtwMs": 1506,
+      "p": 0.996143
+    },
+    {
+      "text": " casa",
+      "fromMs": 1436,
+      "toMs": 1606,
+      "dtwMs": 1746,
+      "p": 0.995604
+    },
+    {
+      "text": ",",
+      "fromMs": 1706,
+      "toMs": 1826,
+      "dtwMs": 1966,
+      "p": 0.679294
+    },
+    {
+      "text": " pero",
+      "fromMs": 1826,
+      "toMs": 2076,
+      "dtwMs": 2046,
+      "p": 0.967597
+    },
+    {
+      "text": " sin",
+      "fromMs": 2206,
+      "toMs": 2286,
+      "dtwMs": 2246,
+      "p": 0.973624
+    },
+    {
+      "text": " la",
+      "fromMs": 2286,
+      "toMs": 2416,
+      "dtwMs": 2406,
+      "p": 0.635486
+    },
+    {
+      "text": "var",
+      "fromMs": 2416,
+      "toMs": 2606,
+      "dtwMs": 2506,
+      "p": 0.996974
+    },
+    {
+      "text": " un",
+      "fromMs": 2606,
+      "toMs": 2746,
+      "dtwMs": 2626,
+      "p": 0.980521
+    },
+    {
+      "text": " pl",
+      "fromMs": 2746,
+      "toMs": 2876,
+      "dtwMs": 2726,
+      "p": 0.990371
+    },
+    {
+      "text": "ato",
+      "fromMs": 2876,
+      "toMs": 3106,
+      "dtwMs": 2846,
+      "p": 0.999866
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "archivo": "IMG_9072.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 14538,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 14540,
+      "texto": "¿Cómo saber si funcionó tu campaña de email marketing o Newsletter?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 550,
+      "dtwMs": 8700,
+      "p": 0.0974462
+    },
+    {
+      "text": "Cómo",
+      "fromMs": 550,
+      "toMs": 2730,
+      "dtwMs": 10140,
+      "p": 0.732667
+    },
+    {
+      "text": " saber",
+      "fromMs": 2730,
+      "toMs": 5470,
+      "dtwMs": 10400,
+      "p": 0.939175
+    },
+    {
+      "text": " si",
+      "fromMs": 5470,
+      "toMs": 6560,
+      "dtwMs": 10540,
+      "p": 0.958556
+    },
+    {
+      "text": " funcion",
+      "fromMs": 6560,
+      "toMs": 10390,
+      "dtwMs": 10780,
+      "p": 0.916853
+    },
+    {
+      "text": "ó",
+      "fromMs": 10390,
+      "toMs": 10960,
+      "dtwMs": 10940,
+      "p": 0.949568
+    },
+    {
+      "text": " tu",
+      "fromMs": 10960,
+      "toMs": 11120,
+      "dtwMs": 11120,
+      "p": 0.948826
+    },
+    {
+      "text": " campa",
+      "fromMs": 11120,
+      "toMs": 11390,
+      "dtwMs": 11340,
+      "p": 0.928932
+    },
+    {
+      "text": "ña",
+      "fromMs": 11390,
+      "toMs": 11500,
+      "dtwMs": 11520,
+      "p": 0.999245
+    },
+    {
+      "text": " de",
+      "fromMs": 11500,
+      "toMs": 11690,
+      "dtwMs": 11660,
+      "p": 0.916117
+    },
+    {
+      "text": " email",
+      "fromMs": 11700,
+      "toMs": 11940,
+      "dtwMs": 11880,
+      "p": 0.782422
+    },
+    {
+      "text": " marketing",
+      "fromMs": 11940,
+      "toMs": 12380,
+      "dtwMs": 12280,
+      "p": 0.860145
+    },
+    {
+      "text": " o",
+      "fromMs": 12380,
+      "toMs": 12520,
+      "dtwMs": 12740,
+      "p": 0.589386
+    },
+    {
+      "text": " News",
+      "fromMs": 12680,
+      "toMs": 13120,
+      "dtwMs": 12900,
+      "p": 0.0354189
+    },
+    {
+      "text": "letter",
+      "fromMs": 13120,
+      "toMs": 14050,
+      "dtwMs": 13120,
+      "p": 0.977305
+    },
+    {
+      "text": "?",
+      "fromMs": 14230,
+      "toMs": 14530,
+      "dtwMs": 13360,
+      "p": 0.984655
+    }
+  ]
+}

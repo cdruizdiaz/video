@@ -1,0 +1,102 @@
+[
+ {
+  "palabra": "What",
+  "ini": 1.46,
+  "fin": 1.58
+ },
+ {
+  "palabra": "do",
+  "ini": 1.66,
+  "fin": 1.74
+ },
+ {
+  "palabra": "people",
+  "ini": 1.86,
+  "fin": 2.16
+ },
+ {
+  "palabra": "do",
+  "ini": 2.24,
+  "fin": 2.42
+ },
+ {
+  "palabra": "during",
+  "ini": 2.66,
+  "fin": 3.0
+ },
+ {
+  "palabra": "funerals",
+  "ini": 3.12,
+  "fin": 3.7
+ },
+ {
+  "palabra": "in",
+  "ini": 4.08,
+  "fin": 4.14
+ },
+ {
+  "palabra": "China?",
+  "ini": 4.34,
+  "fin": 4.68
+ },
+ {
+  "palabra": "In",
+  "ini": 5.4,
+  "fin": 5.44
+ },
+ {
+  "palabra": "China",
+  "ini": 5.56,
+  "fin": 5.9
+ },
+ {
+  "palabra": "they",
+  "ini": 6.76,
+  "fin": 6.88
+ },
+ {
+  "palabra": "put",
+  "ini": 6.96,
+  "fin": 7.18
+ },
+ {
+  "palabra": "flowers,",
+  "ini": 7.3,
+  "fin": 7.9
+ },
+ {
+  "palabra": "money,",
+  "ini": 8.5,
+  "fin": 8.88
+ },
+ {
+  "palabra": "tea",
+  "ini": 10.72,
+  "fin": 11.4
+ },
+ {
+  "palabra": "and",
+  "ini": 12.36,
+  "fin": 12.44
+ },
+ {
+  "palabra": "fruits",
+  "ini": 12.52,
+  "fin": 12.82
+ },
+ {
+  "palabra": "in",
+  "ini": 13.0,
+  "fin": 13.04
+ },
+ {
+  "palabra": "the",
+  "ini": 13.1,
+  "fin": 13.18
+ },
+ {
+  "palabra": "crowd.",
+  "ini": 13.26,
+  "fin": 13.58
+ }
+]

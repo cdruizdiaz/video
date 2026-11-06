@@ -1,0 +1,131 @@
+{
+  "archivo": "IMG_9353.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 3620,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        777,
+        3620
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 777,
+      "hastaMs": 3617,
+      "texto": "¿Necesitas un espacio para cerrar el año con tu equipo?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 777,
+      "toMs": 837,
+      "dtwMs": 997,
+      "p": 0.696293
+    },
+    {
+      "text": "Ne",
+      "fromMs": 957,
+      "toMs": 957,
+      "dtwMs": 1117,
+      "p": 0.885982
+    },
+    {
+      "text": "ces",
+      "fromMs": 1007,
+      "toMs": 1107,
+      "dtwMs": 1237,
+      "p": 0.999819
+    },
+    {
+      "text": "itas",
+      "fromMs": 1187,
+      "toMs": 1347,
+      "dtwMs": 1477,
+      "p": 0.668997
+    },
+    {
+      "text": " un",
+      "fromMs": 1387,
+      "toMs": 1507,
+      "dtwMs": 1617,
+      "p": 0.985024
+    },
+    {
+      "text": " espacio",
+      "fromMs": 1507,
+      "toMs": 1977,
+      "dtwMs": 1937,
+      "p": 0.987527
+    },
+    {
+      "text": " para",
+      "fromMs": 1977,
+      "toMs": 2187,
+      "dtwMs": 2177,
+      "p": 0.970933
+    },
+    {
+      "text": " cer",
+      "fromMs": 2307,
+      "toMs": 2357,
+      "dtwMs": 2417,
+      "p": 0.98982
+    },
+    {
+      "text": "rar",
+      "fromMs": 2357,
+      "toMs": 2517,
+      "dtwMs": 2497,
+      "p": 0.992953
+    },
+    {
+      "text": " el",
+      "fromMs": 2517,
+      "toMs": 2627,
+      "dtwMs": 2617,
+      "p": 0.988359
+    },
+    {
+      "text": " año",
+      "fromMs": 2627,
+      "toMs": 2777,
+      "dtwMs": 2757,
+      "p": 0.972874
+    },
+    {
+      "text": " con",
+      "fromMs": 2837,
+      "toMs": 2927,
+      "dtwMs": 2897,
+      "p": 0.97508
+    },
+    {
+      "text": " tu",
+      "fromMs": 2957,
+      "toMs": 3017,
+      "dtwMs": 2997,
+      "p": 0.991534
+    },
+    {
+      "text": " equipo",
+      "fromMs": 3077,
+      "toMs": 3347,
+      "dtwMs": 3217,
+      "p": 0.99131
+    },
+    {
+      "text": "?",
+      "fromMs": 3617,
+      "toMs": 3617,
+      "dtwMs": 3457,
+      "p": 0.993335
+    }
+  ]
+}

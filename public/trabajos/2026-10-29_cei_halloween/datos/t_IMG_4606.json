@@ -1,0 +1,155 @@
+{
+  "archivo": "IMG_4606.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2765,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 2740,
+      "texto": "Ahí dicen, Jaime de Agascar, y yo les digo, y ahí van a entender."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Ahí",
+      "fromMs": 0,
+      "toMs": 160,
+      "dtwMs": 160,
+      "p": 0.58499
+    },
+    {
+      "text": " dicen",
+      "fromMs": 160,
+      "toMs": 350,
+      "dtwMs": 520,
+      "p": 0.972513
+    },
+    {
+      "text": ",",
+      "fromMs": 450,
+      "toMs": 540,
+      "dtwMs": 700,
+      "p": 0.242257
+    },
+    {
+      "text": " Jaime",
+      "fromMs": 540,
+      "toMs": 830,
+      "dtwMs": 860,
+      "p": 0.349379
+    },
+    {
+      "text": " de",
+      "fromMs": 830,
+      "toMs": 940,
+      "dtwMs": 980,
+      "p": 0.116238
+    },
+    {
+      "text": " Ag",
+      "fromMs": 940,
+      "toMs": 1020,
+      "dtwMs": 1100,
+      "p": 0.559405
+    },
+    {
+      "text": "asc",
+      "fromMs": 1200,
+      "toMs": 1220,
+      "dtwMs": 1240,
+      "p": 0.529822
+    },
+    {
+      "text": "ar",
+      "fromMs": 1220,
+      "toMs": 1360,
+      "dtwMs": 1360,
+      "p": 0.97579
+    },
+    {
+      "text": ",",
+      "fromMs": 1360,
+      "toMs": 1430,
+      "dtwMs": 1400,
+      "p": 0.725678
+    },
+    {
+      "text": " y",
+      "fromMs": 1430,
+      "toMs": 1470,
+      "dtwMs": 1480,
+      "p": 0.904822
+    },
+    {
+      "text": " yo",
+      "fromMs": 1480,
+      "toMs": 1560,
+      "dtwMs": 1560,
+      "p": 0.750747
+    },
+    {
+      "text": " les",
+      "fromMs": 1560,
+      "toMs": 1680,
+      "dtwMs": 1720,
+      "p": 0.993139
+    },
+    {
+      "text": " digo",
+      "fromMs": 1680,
+      "toMs": 1850,
+      "dtwMs": 1920,
+      "p": 0.301298
+    },
+    {
+      "text": ",",
+      "fromMs": 1850,
+      "toMs": 1960,
+      "dtwMs": 1980,
+      "p": 0.896348
+    },
+    {
+      "text": " y",
+      "fromMs": 1960,
+      "toMs": 2000,
+      "dtwMs": 2100,
+      "p": 0.835755
+    },
+    {
+      "text": " ahí",
+      "fromMs": 2000,
+      "toMs": 2120,
+      "dtwMs": 2260,
+      "p": 0.995406
+    },
+    {
+      "text": " van",
+      "fromMs": 2120,
+      "toMs": 2240,
+      "dtwMs": 2420,
+      "p": 0.983759
+    },
+    {
+      "text": " a",
+      "fromMs": 2240,
+      "toMs": 2280,
+      "dtwMs": 2500,
+      "p": 0.997695
+    },
+    {
+      "text": " entender",
+      "fromMs": 2280,
+      "toMs": 2600,
+      "dtwMs": 2720,
+      "p": 0.978102
+    },
+    {
+      "text": ".",
+      "fromMs": 2600,
+      "toMs": 2740,
+      "dtwMs": 2720,
+      "p": 0.594683
+    }
+  ]
+}

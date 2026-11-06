@@ -1,0 +1,239 @@
+{
+  "archivo": "IMG_8497.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7567,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 6580,
+      "texto": "Importante, el colegio certifica la firma y el sello del traductor. No se expide sobre el contenido del documento."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Import",
+      "fromMs": 0,
+      "toMs": 430,
+      "dtwMs": 1320,
+      "p": 0.2561
+    },
+    {
+      "text": "ante",
+      "fromMs": 440,
+      "toMs": 730,
+      "dtwMs": 1580,
+      "p": 0.999508
+    },
+    {
+      "text": ",",
+      "fromMs": 730,
+      "toMs": 870,
+      "dtwMs": 1820,
+      "p": 0.731152
+    },
+    {
+      "text": " el",
+      "fromMs": 950,
+      "toMs": 1000,
+      "dtwMs": 1960,
+      "p": 0.98904
+    },
+    {
+      "text": " co",
+      "fromMs": 1060,
+      "toMs": 1150,
+      "dtwMs": 2100,
+      "p": 0.834773
+    },
+    {
+      "text": "leg",
+      "fromMs": 1150,
+      "toMs": 1370,
+      "dtwMs": 2220,
+      "p": 0.99999
+    },
+    {
+      "text": "io",
+      "fromMs": 1370,
+      "toMs": 1490,
+      "dtwMs": 2320,
+      "p": 0.998574
+    },
+    {
+      "text": " certific",
+      "fromMs": 1540,
+      "toMs": 2100,
+      "dtwMs": 2640,
+      "p": 0.996807
+    },
+    {
+      "text": "a",
+      "fromMs": 2100,
+      "toMs": 2160,
+      "dtwMs": 2920,
+      "p": 0.998572
+    },
+    {
+      "text": " la",
+      "fromMs": 2280,
+      "toMs": 2310,
+      "dtwMs": 3020,
+      "p": 0.986476
+    },
+    {
+      "text": " fir",
+      "fromMs": 2310,
+      "toMs": 2530,
+      "dtwMs": 3240,
+      "p": 0.997706
+    },
+    {
+      "text": "ma",
+      "fromMs": 2530,
+      "toMs": 2670,
+      "dtwMs": 3320,
+      "p": 0.999773
+    },
+    {
+      "text": " y",
+      "fromMs": 2670,
+      "toMs": 2730,
+      "dtwMs": 3420,
+      "p": 0.990327
+    },
+    {
+      "text": " el",
+      "fromMs": 2760,
+      "toMs": 2880,
+      "dtwMs": 3520,
+      "p": 0.932641
+    },
+    {
+      "text": " se",
+      "fromMs": 2880,
+      "toMs": 3020,
+      "dtwMs": 3600,
+      "p": 0.992621
+    },
+    {
+      "text": "llo",
+      "fromMs": 3020,
+      "toMs": 3240,
+      "dtwMs": 3700,
+      "p": 0.999903
+    },
+    {
+      "text": " del",
+      "fromMs": 3240,
+      "toMs": 3460,
+      "dtwMs": 3840,
+      "p": 0.984023
+    },
+    {
+      "text": " trad",
+      "fromMs": 3460,
+      "toMs": 3750,
+      "dtwMs": 4000,
+      "p": 0.972146
+    },
+    {
+      "text": "u",
+      "fromMs": 3750,
+      "toMs": 3820,
+      "dtwMs": 4120,
+      "p": 0.793752
+    },
+    {
+      "text": "ctor",
+      "fromMs": 3820,
+      "toMs": 4230,
+      "dtwMs": 4260,
+      "p": 0.999929
+    },
+    {
+      "text": ".",
+      "fromMs": 4260,
+      "toMs": 4470,
+      "dtwMs": 4480,
+      "p": 0.624172
+    },
+    {
+      "text": " No",
+      "fromMs": 4630,
+      "toMs": 4630,
+      "dtwMs": 4780,
+      "p": 0.800381
+    },
+    {
+      "text": " se",
+      "fromMs": 4660,
+      "toMs": 4780,
+      "dtwMs": 4900,
+      "p": 0.99865
+    },
+    {
+      "text": " exp",
+      "fromMs": 4780,
+      "toMs": 4910,
+      "dtwMs": 5120,
+      "p": 0.99728
+    },
+    {
+      "text": "ide",
+      "fromMs": 5090,
+      "toMs": 5240,
+      "dtwMs": 5220,
+      "p": 0.995129
+    },
+    {
+      "text": " sobre",
+      "fromMs": 5240,
+      "toMs": 5500,
+      "dtwMs": 5440,
+      "p": 0.960206
+    },
+    {
+      "text": " el",
+      "fromMs": 5500,
+      "toMs": 5610,
+      "dtwMs": 5580,
+      "p": 0.80608
+    },
+    {
+      "text": " contenido",
+      "fromMs": 5630,
+      "toMs": 5970,
+      "dtwMs": 5960,
+      "p": 0.962071
+    },
+    {
+      "text": " del",
+      "fromMs": 5970,
+      "toMs": 6090,
+      "dtwMs": 6100,
+      "p": 0.989138
+    },
+    {
+      "text": " document",
+      "fromMs": 6090,
+      "toMs": 6400,
+      "dtwMs": 6340,
+      "p": 0.998386
+    },
+    {
+      "text": "o",
+      "fromMs": 6400,
+      "toMs": 6440,
+      "dtwMs": 6560,
+      "p": 0.999969
+    },
+    {
+      "text": ".",
+      "fromMs": 6440,
+      "toMs": 6580,
+      "dtwMs": 6560,
+      "p": 0.865177
+    }
+  ]
+}

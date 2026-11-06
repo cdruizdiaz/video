@@ -13,7 +13,7 @@
 - **Formato(s):** 9:16 1080×1920 · 30 fps
 - **Modo de animación:** no lleva personaje animado.
 - **Luz de la escena:** no aplica (sin personaje 2,5D/3D).
-- **Duración:** 55,2 s (1657 cuadros), sin placa: termina en "Me lo dejan en los comentarios" (pedido 2026-10-21; antes 57,1 s con 2 s de placa).
+- **Duración:** 41,8 s (1254 cuadros) desde el borrador F (2026-10-23: se sacó del audiolibro al día de la madre); antes 55,2 s, sin placa: termina en "Me lo dejan en los comentarios" (pedido 2026-10-21; antes 57,1 s con 2 s de placa).
 - **Tono / estilo:** dinámico y entretenido; acercamientos y cambios de plano según `CRITERIOS_REEL.md`.
 - **Gráficos de referencia:** a medida que habla, imágenes o gráficos de lo que menciona:
   - obras conocidas (p. ej. **American Horror Story**): la **portada o póster real**, sacada de internet;
@@ -70,12 +70,24 @@
   - sin efectos de sonido en "La Fábrica" / "No te cases";
   - "No te cases" otra vez como tarjeta (degradé, etiqueta, miniaturas), en la toma de "Juli y Catona" (en el cerrado de "La Fábrica" no entraban los dos centrados);
   - Yolanda Reyes con la foto del cliente (`yolanda.jpg`; original en `carpetaCrudos/<ID>/yolanda_cliente.jpg`).
+- **Revisión del borrador D (2026-10-23, pedido del cliente):**
+  - "su creatipa de confianza": su **personaje digital asoma detrás de ella** ("como si duplicaras la capa de Pau"): el sticker del cliente (`Documents/RASTRO/pau.png` → `img/pau_personaje.png`; copia en `carpetaCrudos/<ID>/pau_personaje.png`) sale de detrás de su cabeza y asoma por el costado derecho, inclinado, y se esconde al terminar "confianza". Recorte de la persona con `scripts/mascaras.py` (`crudos/IMG_9085_persona.webm`, 1,8–4,0 s) y la capa `detrasDePersona` de HablaSubtitulada (prop `asoma` de `ReelConsumos`: el JSX se arma adentro, porque las props de la composición se serializan y un elemento de React daba el error #31).
+  - Evan Peters: círculo con aro rojo → **solo su foto recortada** (`recortar_fotos.py`: MediaPipe selfie_multiclass, solo pelo/piel/ropa: la botella de agua de la foto caía en "otros"), en blanco y negro y fundida abajo.
+  - "*la Factoria": el resaltador cubre todo el alto del texto (antes `top 16 / alto 64`: la parte de abajo quedaba al aire).
+  - Tarjeta de los programas: "NO TE CASES" → **"NO TE CASES NI TE EMBARQUES"**.
+  - "Y por último… de Yolanda Reyes" (Pau lee de la tablet): **placa de RASTRO a pantalla completa** (`PlacaAudiolibro`), sin que se la vea leyendo: frases grandes con "importante" subrayada en turquesa, auriculares con ondas, la tarjeta de Spotify y **Yolanda recortada** (foto del cliente, sin círculo). Sin subtítulos en "Y por último," / "pero no menos importante," (los muestra la placa). Fuera los gráficos sueltos de esa toma (`TapaAudiolibro`, `FotoYolanda`).
+- **Revisión del borrador E (2026-10-23, pedido del cliente):**
+  - el personaje: "más arriba y más grande, que tome esa esquina superior derecha, pero que no deje de asomarse detrás de Pau" → 460 → **680 px**, sale de detrás de su cuerpo (centro 520, 1010) y queda en la esquina (760, 470) con la parte de abajo a la izquierda detrás de su cabeza y su pelo; **sonido de asomarse**: silbato que sube, compuesto por código (`sonido_asoma.py` → `audio/asoma.wav`), al empezar a asomar;
+  - Evan Peters: recorte sin fondo → **otra vez en un círculo**, en blanco y negro, **sin el aro rojo** ("no quería que sobresalga ese círculo rojo, nada más");
+  - **fuera de "Y por último…" hasta "…dar tiempo"** (IMG_9092 e IMG_9093: el audiolibro y el día de la madre, con su placa); de "pero alguien tenía que diseñar" se pasa a "Y ahora, en esta comunidad…", que va en el abierto (un cambio de plano en el corte) con el comentario a 80 px del pelo (530). Duración 55,2 → **41,8 s**.
 - **Revisión:** `revision/revisar_rastro-consumos-del-mes-reel.png`, `graficos_a.png` (cada gráfico en su punto), `clips.png`.
 - **Borradores:**
   - `revision/borrador_consumos-del-mes_9x16_a.mp4` (2026-10-21, 57,2 s, −14 LUFS, pico −1,3 dBFS): primer borrador completo.
   - `revision/borrador_consumos-del-mes_9x16_b.mp4` (2026-10-21, 57,2 s, −14 LUFS, pico −1,3 dBFS): placa con "@somos_rastro".
   - `revision/borrador_consumos-del-mes_9x16_c.mp4` (2026-10-21, 55,2 s, −14 LUFS, pico −1,4 dBFS): la revisión del B (arriba). Hojas: `revisar_rastro-consumos-del-mes-reel.png`, `graficos_c.png`.
   - `revision/borrador_consumos-del-mes_9x16_d.mp4` (2026-10-21, 55,2 s, −14 LUFS, pico −1,4 dBFS): la revisión del C (arriba). Hoja: `graficos_d.png`.
+  - `revision/borrador_consumos-del-mes_9x16_e.mp4` (2026-10-23, 55,2 s, −14,0 LUFS, pico −1,4 dBFS): la revisión del D (arriba).
+  - `revision/borrador_consumos-del-mes_9x16_f.mp4` (2026-10-23, 41,8 s, −14,0 LUFS, pico −1,4 dBFS): la revisión del E (arriba).
 
 ## Entregas
 | Archivo (`out/2026-10-21_rastro_consumos-del-mes/final/`) | Fecha | Cambios respecto de la versión anterior |

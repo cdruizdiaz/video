@@ -1,0 +1,50 @@
+{
+  "archivo": "00446.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5024,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5000,
+      "texto": "Aplausos."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " A",
+      "fromMs": 10,
+      "toMs": 450,
+      "dtwMs": 620,
+      "p": 0.270472
+    },
+    {
+      "text": "pl",
+      "fromMs": 450,
+      "toMs": 1350,
+      "dtwMs": 680,
+      "p": 1
+    },
+    {
+      "text": "aus",
+      "fromMs": 1350,
+      "toMs": 2710,
+      "dtwMs": 760,
+      "p": 1
+    },
+    {
+      "text": "os",
+      "fromMs": 2710,
+      "toMs": 3610,
+      "dtwMs": 780,
+      "p": 1
+    },
+    {
+      "text": ".",
+      "fromMs": 3610,
+      "toMs": 4990,
+      "dtwMs": 1020,
+      "p": 0.998317
+    }
+  ]
+}

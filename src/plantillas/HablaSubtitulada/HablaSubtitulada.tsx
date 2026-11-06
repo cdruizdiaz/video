@@ -69,6 +69,7 @@ const REEL_MAX_CARACTERES = 22;
 const REEL_Y = 1545; // más abajo que el reel de referencia: en el plano abierto de B el logo de la remera llega a y≈1470
 const REEL_TAMANO = 66;
 const REEL_ANCHO = 940;
+const REEL_PALABRA_MAX = 960; // con tamaño fijo: si una sola palabra es más ancha (p. ej. una web), ese grupo se achica
 const REEL_ANCHO_DOS = 680; // con tamaño fijo: ancho de renglón antes de pasar a dos (renglones cortos, como el reel de referencia)
 const REEL_INTERLINEA_DOS = 1.08;
 const REEL_SOMBRA_SUAVE = "0 6px 16px rgba(0, 0, 0, 0.5)";
@@ -165,6 +166,10 @@ export type HablaSubtituladaProps = {
     seco?: boolean; // "reel": entran y salen sin animación
     peso?: number; // "reel": grosor de la letra (por defecto REEL_PESO)
     sinBorde?: boolean; // "reel": sin el trazo negro ni la sombra paralela, solo una sombra difusa
+    fuente?: string; // "reel": tipografía propia de los subtítulos (por defecto la de títulos de la marca)
+    sombra?: string; // "reel" con sinBorde: text-shadow propio (p. ej. la sombra de CapCut del cliente)
+    y?: number; // "reel": centro vertical en px (por defecto REEL_Y)
+    colaMs?: number; // cuánto queda cada grupo tras su última palabra (por defecto COLA_SUBTITULO_MS)
   };
   apertura?: { titulo: string; subtitulo?: string; duracion: number }; // duracion en frames
   ubicacion?: { texto: string; duracion: number }; // rótulo con pin que entra desde la izquierda (frames)
@@ -312,18 +317,20 @@ const agrupar = (
 
 // cada grupo queda hasta que entra el siguiente o poco después de su última palabra; los que duran
 // muy poco para leerlos toman tiempo de los vecinos
-const conFin = (grupos: Grupo[]): Grupo[] => {
+const conFin = (grupos: Grupo[], colaMs = COLA_SUBTITULO_MS): Grupo[] => {
   grupos.forEach((g, i) => {
-    const fin =
-      g.palabras[g.palabras.length - 1].hasta +
-      (COLA_SUBTITULO_MS / 1000) * FPS;
+    const fin = g.palabras[g.palabras.length - 1].hasta + (colaMs / 1000) * FPS;
     g.hasta = i + 1 < grupos.length ? Math.min(grupos[i + 1].desde, fin) : fin;
   });
   return alargarCortos(grupos, SUB_MINIMO, SUB_ADELANTO, SUB_RETRASO);
 };
 
 // grupos escritos a mano: el texto y el amarillo salen del guion de subtítulos; los tiempos, de lo dicho
-const agruparManual = (palabras: Palabra[], textos: string[]): Grupo[] => {
+const agruparManual = (
+  palabras: Palabra[],
+  textos: string[],
+  colaMs?: number,
+): Grupo[] => {
   const grupos: Grupo[] = [];
   let i = 0;
   for (const g of gruposManuales(
@@ -344,7 +351,7 @@ const agruparManual = (palabras: Palabra[], textos: string[]): Grupo[] => {
         unRenglon: g.unRenglon,
       });
   }
-  return conFin(grupos);
+  return conFin(grupos, colaMs);
 };
 
 // ---------- Piezas ----------
@@ -626,7 +633,21 @@ const SubtituloReel: React.FC<{
   seco?: boolean;
   peso?: number;
   sinBorde?: boolean;
-}> = ({ g, m, minusculas, tamanoFijo, seco, peso = REEL_PESO, sinBorde }) => {
+  fuente?: string;
+  sombraPropia?: string;
+  y?: number;
+}> = ({
+  g,
+  m,
+  minusculas,
+  tamanoFijo,
+  seco,
+  peso = REEL_PESO,
+  sinBorde,
+  fuente,
+  sombraPropia,
+  y = REEL_Y,
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const entrada = spring({
@@ -637,7 +658,7 @@ const SubtituloReel: React.FC<{
   });
   const opacidad = seco ? 1 : interpolate(frame, [0, 2], [0, 1], clamp);
   const escala = seco ? 1 : 0.9 + 0.1 * entrada;
-  const familia = m.fuenteTitulos ?? m.fuente;
+  const familia = fuente ?? m.fuenteTitulos ?? m.fuente;
   const tamanoAjustado = React.useMemo(
     () =>
       tamanoReel(
@@ -646,10 +667,25 @@ const SubtituloReel: React.FC<{
       ),
     [g.palabras, familia],
   );
-  const tamano = tamanoFijo ?? tamanoAjustado;
   const textos = g.palabras.map((w) =>
     minusculas ? w.text.toLowerCase() : w.text,
   );
+  // con tamaño fijo, una palabra que no entra en el ancho (una web dicha de corrido) achica solo su grupo
+  const tamano = React.useMemo(() => {
+    if (!tamanoFijo) return tamanoAjustado;
+    const ctx =
+      typeof document === "undefined"
+        ? null
+        : document.createElement("canvas").getContext("2d");
+    if (!ctx) return tamanoFijo;
+    ctx.font = `${peso} ${tamanoFijo}px ${familia}`;
+    const ancho = Math.max(
+      ...textos.map((t) => ctx.measureText(t).width + 0.02 * tamanoFijo * t.length),
+    );
+    return ancho > REEL_PALABRA_MAX
+      ? Math.floor((tamanoFijo * REEL_PALABRA_MAX) / ancho)
+      : tamanoFijo;
+  }, [textos.join(" "), tamanoFijo, tamanoAjustado, familia, peso]); // eslint-disable-line react-hooks/exhaustive-deps
   // con tamaño fijo, si no entra en un renglón: dos, en forma de pirámide
   const corte = React.useMemo(() => {
     if (!tamanoFijo || g.unRenglon) return 0;
@@ -669,7 +705,7 @@ const SubtituloReel: React.FC<{
     );
   }, [textos.join(" "), tamanoFijo, familia, g.unRenglon, peso]); // eslint-disable-line react-hooks/exhaustive-deps
   const sombra = sinBorde
-    ? REEL_SOMBRA_SIN_BORDE
+    ? (sombraPropia ?? REEL_SOMBRA_SIN_BORDE)
     : tamanoFijo
     ? `${REEL_SOMBRA_PARALELA}, ${REEL_SOMBRA_SUAVE}`
     : `${REEL_SOMBRA}px ${REEL_SOMBRA}px 0 ${REEL_TINTA}`;
@@ -694,7 +730,7 @@ const SubtituloReel: React.FC<{
         position: "absolute",
         left: 0,
         right: 0,
-        top: REEL_Y,
+        top: y,
         transform: `translateY(-50%) scale(${escala})`,
         opacity: opacidad,
         textAlign: "center",
@@ -1067,7 +1103,11 @@ export const HablaSubtitulada: React.FC<HablaSubtituladaProps> = (p) => {
   const finTomas = framesTomas(p);
   const reel = p.subtitulos?.estilo === "reel";
   const grupos = p.subtitulos?.grupos
-    ? agruparManual(palabrasMontadas(p), p.subtitulos.grupos)
+    ? agruparManual(
+        palabrasMontadas(p),
+        p.subtitulos.grupos,
+        p.subtitulos.colaMs,
+      )
     : agrupar(
         palabrasMontadas(p),
         reel ? REEL_MAX_PALABRAS : MAX_PALABRAS,
@@ -1216,6 +1256,9 @@ export const HablaSubtitulada: React.FC<HablaSubtituladaProps> = (p) => {
               seco={p.subtitulos?.seco}
               peso={p.subtitulos?.peso}
               sinBorde={p.subtitulos?.sinBorde}
+              fuente={p.subtitulos?.fuente}
+              sombraPropia={p.subtitulos?.sombra}
+              y={p.subtitulos?.y}
             />
           ) : (
             <Subtitulo g={{ ...g, desde: Math.round(g.desde) }} m={m} />

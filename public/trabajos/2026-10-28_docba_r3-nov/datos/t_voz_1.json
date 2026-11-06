@@ -1,0 +1,202 @@
+{
+  "archivo": "voz_1.wav",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 8533,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 4220,
+      "texto": "Acompañado de un montón de opciones de carta para compartir"
+    },
+    {
+      "desdeMs": 4220,
+      "hastaMs": 7160,
+      "texto": "Porque todos los proyectos merecen un brindis"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " A",
+      "fromMs": 30,
+      "toMs": 130,
+      "dtwMs": 1780,
+      "p": 0.197459
+    },
+    {
+      "text": "com",
+      "fromMs": 130,
+      "toMs": 520,
+      "dtwMs": 1940,
+      "p": 0.951374
+    },
+    {
+      "text": "pa",
+      "fromMs": 520,
+      "toMs": 780,
+      "dtwMs": 2040,
+      "p": 0.990121
+    },
+    {
+      "text": "ñ",
+      "fromMs": 780,
+      "toMs": 910,
+      "dtwMs": 2120,
+      "p": 0.995908
+    },
+    {
+      "text": "ado",
+      "fromMs": 910,
+      "toMs": 1300,
+      "dtwMs": 2220,
+      "p": 0.914648
+    },
+    {
+      "text": " de",
+      "fromMs": 1300,
+      "toMs": 1560,
+      "dtwMs": 2320,
+      "p": 0.955614
+    },
+    {
+      "text": " un",
+      "fromMs": 1690,
+      "toMs": 1820,
+      "dtwMs": 2380,
+      "p": 0.980761
+    },
+    {
+      "text": " montón",
+      "fromMs": 1820,
+      "toMs": 2610,
+      "dtwMs": 2620,
+      "p": 0.953556
+    },
+    {
+      "text": " de",
+      "fromMs": 2610,
+      "toMs": 2700,
+      "dtwMs": 2740,
+      "p": 0.979667
+    },
+    {
+      "text": " op",
+      "fromMs": 2700,
+      "toMs": 2780,
+      "dtwMs": 2880,
+      "p": 0.991618
+    },
+    {
+      "text": "ciones",
+      "fromMs": 2780,
+      "toMs": 3020,
+      "dtwMs": 3020,
+      "p": 0.996797
+    },
+    {
+      "text": " de",
+      "fromMs": 3020,
+      "toMs": 3150,
+      "dtwMs": 3180,
+      "p": 0.917396
+    },
+    {
+      "text": " carta",
+      "fromMs": 3150,
+      "toMs": 3500,
+      "dtwMs": 3480,
+      "p": 0.761728
+    },
+    {
+      "text": " para",
+      "fromMs": 3500,
+      "toMs": 3720,
+      "dtwMs": 3780,
+      "p": 0.922935
+    },
+    {
+      "text": " compartir",
+      "fromMs": 3720,
+      "toMs": 4220,
+      "dtwMs": 4180,
+      "p": 0.986839
+    },
+    {
+      "text": " Porque",
+      "fromMs": 4250,
+      "toMs": 4670,
+      "dtwMs": 5300,
+      "p": 0.656155
+    },
+    {
+      "text": " todos",
+      "fromMs": 4670,
+      "toMs": 5040,
+      "dtwMs": 5520,
+      "p": 0.999592
+    },
+    {
+      "text": " los",
+      "fromMs": 5040,
+      "toMs": 5260,
+      "dtwMs": 5660,
+      "p": 0.9995
+    },
+    {
+      "text": " proyect",
+      "fromMs": 5260,
+      "toMs": 5780,
+      "dtwMs": 5940,
+      "p": 0.999712
+    },
+    {
+      "text": "os",
+      "fromMs": 5780,
+      "toMs": 5930,
+      "dtwMs": 6160,
+      "p": 0.999994
+    },
+    {
+      "text": " mere",
+      "fromMs": 5930,
+      "toMs": 6230,
+      "dtwMs": 6420,
+      "p": 0.998721
+    },
+    {
+      "text": "cen",
+      "fromMs": 6230,
+      "toMs": 6450,
+      "dtwMs": 6580,
+      "p": 0.99991
+    },
+    {
+      "text": " un",
+      "fromMs": 6450,
+      "toMs": 6600,
+      "dtwMs": 6700,
+      "p": 0.999626
+    },
+    {
+      "text": " br",
+      "fromMs": 6600,
+      "toMs": 6740,
+      "dtwMs": 6840,
+      "p": 0.96966
+    },
+    {
+      "text": "ind",
+      "fromMs": 6750,
+      "toMs": 6970,
+      "dtwMs": 6960,
+      "p": 0.999634
+    },
+    {
+      "text": "is",
+      "fromMs": 6970,
+      "toMs": 7160,
+      "dtwMs": 7140,
+      "p": 0.998919
+    }
+  ]
+}

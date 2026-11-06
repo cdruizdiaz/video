@@ -1,0 +1,230 @@
+{
+  "archivo": "IMG_4655.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 14657,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5640,
+      "texto": "¿Cómo es la ceremonia de los vikingos?"
+    },
+    {
+      "desdeMs": 5640,
+      "hastaMs": 14660,
+      "texto": "Es enterrándolos en un marco con sus objetos y con cosas alrededor."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 0,
+      "toMs": 160,
+      "dtwMs": 1400,
+      "p": 0.373473
+    },
+    {
+      "text": "Cómo",
+      "fromMs": 160,
+      "toMs": 800,
+      "dtwMs": 1740,
+      "p": 0.827663
+    },
+    {
+      "text": " es",
+      "fromMs": 800,
+      "toMs": 1100,
+      "dtwMs": 1960,
+      "p": 0.974461
+    },
+    {
+      "text": " la",
+      "fromMs": 1140,
+      "toMs": 1440,
+      "dtwMs": 2080,
+      "p": 0.990503
+    },
+    {
+      "text": " ceremon",
+      "fromMs": 1540,
+      "toMs": 2590,
+      "dtwMs": 2580,
+      "p": 0.988854
+    },
+    {
+      "text": "ia",
+      "fromMs": 2590,
+      "toMs": 2940,
+      "dtwMs": 2920,
+      "p": 0.996706
+    },
+    {
+      "text": " de",
+      "fromMs": 2940,
+      "toMs": 3270,
+      "dtwMs": 3140,
+      "p": 0.500184
+    },
+    {
+      "text": " los",
+      "fromMs": 3270,
+      "toMs": 3770,
+      "dtwMs": 4440,
+      "p": 0.83467
+    },
+    {
+      "text": " v",
+      "fromMs": 3770,
+      "toMs": 3940,
+      "dtwMs": 4600,
+      "p": 0.704416
+    },
+    {
+      "text": "iking",
+      "fromMs": 3940,
+      "toMs": 4770,
+      "dtwMs": 4820,
+      "p": 0.995619
+    },
+    {
+      "text": "os",
+      "fromMs": 4770,
+      "toMs": 5110,
+      "dtwMs": 5300,
+      "p": 0.992038
+    },
+    {
+      "text": "?",
+      "fromMs": 5110,
+      "toMs": 5640,
+      "dtwMs": 5460,
+      "p": 0.957098
+    },
+    {
+      "text": " Es",
+      "fromMs": 5640,
+      "toMs": 5820,
+      "dtwMs": 6340,
+      "p": 0.84807
+    },
+    {
+      "text": " enter",
+      "fromMs": 5820,
+      "toMs": 6270,
+      "dtwMs": 6680,
+      "p": 0.978999
+    },
+    {
+      "text": "r",
+      "fromMs": 6270,
+      "toMs": 6360,
+      "dtwMs": 6780,
+      "p": 0.946624
+    },
+    {
+      "text": "ánd",
+      "fromMs": 6360,
+      "toMs": 6590,
+      "dtwMs": 6920,
+      "p": 0.998409
+    },
+    {
+      "text": "ol",
+      "fromMs": 6630,
+      "toMs": 6810,
+      "dtwMs": 7080,
+      "p": 0.912243
+    },
+    {
+      "text": "os",
+      "fromMs": 6810,
+      "toMs": 6990,
+      "dtwMs": 7160,
+      "p": 0.999945
+    },
+    {
+      "text": " en",
+      "fromMs": 7170,
+      "toMs": 7170,
+      "dtwMs": 7300,
+      "p": 0.961513
+    },
+    {
+      "text": " un",
+      "fromMs": 7190,
+      "toMs": 7350,
+      "dtwMs": 7360,
+      "p": 0.989262
+    },
+    {
+      "text": " mar",
+      "fromMs": 7350,
+      "toMs": 7620,
+      "dtwMs": 7660,
+      "p": 0.586027
+    },
+    {
+      "text": "co",
+      "fromMs": 7620,
+      "toMs": 7840,
+      "dtwMs": 7820,
+      "p": 0.999786
+    },
+    {
+      "text": " con",
+      "fromMs": 7840,
+      "toMs": 8600,
+      "dtwMs": 8240,
+      "p": 0.88858
+    },
+    {
+      "text": " sus",
+      "fromMs": 8600,
+      "toMs": 8870,
+      "dtwMs": 8900,
+      "p": 0.713599
+    },
+    {
+      "text": " objetos",
+      "fromMs": 8870,
+      "toMs": 9500,
+      "dtwMs": 9400,
+      "p": 0.991659
+    },
+    {
+      "text": " y",
+      "fromMs": 9500,
+      "toMs": 11600,
+      "dtwMs": 9700,
+      "p": 0.868991
+    },
+    {
+      "text": " con",
+      "fromMs": 11600,
+      "toMs": 12240,
+      "dtwMs": 10080,
+      "p": 0.921337
+    },
+    {
+      "text": " cosas",
+      "fromMs": 12240,
+      "toMs": 13100,
+      "dtwMs": 12680,
+      "p": 0.825484
+    },
+    {
+      "text": " alrededor",
+      "fromMs": 13100,
+      "toMs": 14660,
+      "dtwMs": 13240,
+      "p": 0.961056
+    },
+    {
+      "text": ".",
+      "fromMs": 14660,
+      "toMs": 14660,
+      "dtwMs": 13600,
+      "p": 0.672061
+    }
+  ]
+}

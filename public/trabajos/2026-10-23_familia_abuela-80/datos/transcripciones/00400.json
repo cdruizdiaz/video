@@ -1,0 +1,291 @@
+{
+  "archivo": "00400.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 63584,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 17360,
+      "texto": "¡Dale, Amparo! ¡Dale! ¡Dale! ¡Dale! ¡Sí!"
+    },
+    {
+      "desdeMs": 30000,
+      "hastaMs": 32000,
+      "texto": "¡Aplausos!"
+    },
+    {
+      "desdeMs": 60000,
+      "hastaMs": 61560,
+      "texto": "¡Gracias por ver el video!"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¡",
+      "fromMs": 20,
+      "toMs": 830,
+      "dtwMs": 120,
+      "p": 0.999626
+    },
+    {
+      "text": "D",
+      "fromMs": 830,
+      "toMs": 1650,
+      "dtwMs": 8700,
+      "p": 0.785704
+    },
+    {
+      "text": "ale",
+      "fromMs": 1650,
+      "toMs": 4120,
+      "dtwMs": 8860,
+      "p": 0.999773
+    },
+    {
+      "text": ",",
+      "fromMs": 4120,
+      "toMs": 5760,
+      "dtwMs": 8940,
+      "p": 0.263306
+    },
+    {
+      "text": " Am",
+      "fromMs": 5760,
+      "toMs": 7410,
+      "dtwMs": 9100,
+      "p": 0.999134
+    },
+    {
+      "text": "par",
+      "fromMs": 7410,
+      "toMs": 9880,
+      "dtwMs": 10620,
+      "p": 0.999981
+    },
+    {
+      "text": "o",
+      "fromMs": 9880,
+      "toMs": 10700,
+      "dtwMs": 10800,
+      "p": 1
+    },
+    {
+      "text": "!",
+      "fromMs": 10700,
+      "toMs": 13200,
+      "dtwMs": 11480,
+      "p": 0.704128
+    },
+    {
+      "text": " ¡",
+      "fromMs": 13200,
+      "toMs": 13300,
+      "dtwMs": 12580,
+      "p": 0.955088
+    },
+    {
+      "text": "D",
+      "fromMs": 13300,
+      "toMs": 13390,
+      "dtwMs": 12580,
+      "p": 0.99959
+    },
+    {
+      "text": "ale",
+      "fromMs": 13390,
+      "toMs": 13680,
+      "dtwMs": 14180,
+      "p": 1
+    },
+    {
+      "text": "!",
+      "fromMs": 13680,
+      "toMs": 14000,
+      "dtwMs": 15100,
+      "p": 0.911167
+    },
+    {
+      "text": " ¡",
+      "fromMs": 14000,
+      "toMs": 14100,
+      "dtwMs": 15380,
+      "p": 0.645772
+    },
+    {
+      "text": "D",
+      "fromMs": 14100,
+      "toMs": 14200,
+      "dtwMs": 15540,
+      "p": 0.855249
+    },
+    {
+      "text": "ale",
+      "fromMs": 14200,
+      "toMs": 14500,
+      "dtwMs": 15680,
+      "p": 1
+    },
+    {
+      "text": "!",
+      "fromMs": 14500,
+      "toMs": 14800,
+      "dtwMs": 16300,
+      "p": 0.959521
+    },
+    {
+      "text": " ¡",
+      "fromMs": 14800,
+      "toMs": 14900,
+      "dtwMs": 16300,
+      "p": 0.887842
+    },
+    {
+      "text": "D",
+      "fromMs": 14900,
+      "toMs": 15000,
+      "dtwMs": 16300,
+      "p": 0.611276
+    },
+    {
+      "text": "ale",
+      "fromMs": 15000,
+      "toMs": 15300,
+      "dtwMs": 16640,
+      "p": 1
+    },
+    {
+      "text": "!",
+      "fromMs": 15300,
+      "toMs": 15640,
+      "dtwMs": 16640,
+      "p": 0.995169
+    },
+    {
+      "text": " ¡",
+      "fromMs": 15640,
+      "toMs": 15920,
+      "dtwMs": 17120,
+      "p": 0.93573
+    },
+    {
+      "text": "Sí",
+      "fromMs": 15920,
+      "toMs": 16490,
+      "dtwMs": 17340,
+      "p": 0.610859
+    },
+    {
+      "text": "!",
+      "fromMs": 16490,
+      "toMs": 17360,
+      "dtwMs": 17340,
+      "p": 0.999838
+    },
+    {
+      "text": " ¡",
+      "fromMs": 30010,
+      "toMs": 30160,
+      "dtwMs": 30420,
+      "p": 0.978862
+    },
+    {
+      "text": "A",
+      "fromMs": 30170,
+      "toMs": 30320,
+      "dtwMs": 30440,
+      "p": 0.121121
+    },
+    {
+      "text": "pl",
+      "fromMs": 30320,
+      "toMs": 30650,
+      "dtwMs": 30440,
+      "p": 0.913708
+    },
+    {
+      "text": "aus",
+      "fromMs": 30650,
+      "toMs": 31140,
+      "dtwMs": 30440,
+      "p": 0.99984
+    },
+    {
+      "text": "os",
+      "fromMs": 31140,
+      "toMs": 31470,
+      "dtwMs": 30640,
+      "p": 0.999958
+    },
+    {
+      "text": "!",
+      "fromMs": 31470,
+      "toMs": 32000,
+      "dtwMs": 31980,
+      "p": 0.999487
+    },
+    {
+      "text": " ¡",
+      "fromMs": 60010,
+      "toMs": 60060,
+      "dtwMs": 60620,
+      "p": 0.418138
+    },
+    {
+      "text": "G",
+      "fromMs": 60060,
+      "toMs": 60120,
+      "dtwMs": 60680,
+      "p": 0.185527
+    },
+    {
+      "text": "rac",
+      "fromMs": 60120,
+      "toMs": 60310,
+      "dtwMs": 60680,
+      "p": 0.929585
+    },
+    {
+      "text": "ias",
+      "fromMs": 60310,
+      "toMs": 60500,
+      "dtwMs": 60680,
+      "p": 0.996605
+    },
+    {
+      "text": " por",
+      "fromMs": 60500,
+      "toMs": 60690,
+      "dtwMs": 61000,
+      "p": 0.134234
+    },
+    {
+      "text": " ver",
+      "fromMs": 60690,
+      "toMs": 60880,
+      "dtwMs": 61000,
+      "p": 0.98868
+    },
+    {
+      "text": " el",
+      "fromMs": 60880,
+      "toMs": 61010,
+      "dtwMs": 61240,
+      "p": 0.75249
+    },
+    {
+      "text": " video",
+      "fromMs": 61010,
+      "toMs": 61330,
+      "dtwMs": 61240,
+      "p": 0.968557
+    },
+    {
+      "text": "!",
+      "fromMs": 61330,
+      "toMs": 61560,
+      "dtwMs": 61240,
+      "p": 0.988628
+    }
+  ]
+}

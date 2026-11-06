@@ -1,0 +1,216 @@
+{
+  "archivo": "IMG_4596.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 10332,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 5200,
+      "texto": "Bueno, la idea del museo este año es poder mostrarles a todos los papás"
+    },
+    {
+      "desdeMs": 5200,
+      "hastaMs": 8400,
+      "texto": "diferentes culturas, cómo ven ellos la muerte."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Bueno",
+      "fromMs": 0,
+      "toMs": 410,
+      "dtwMs": 540,
+      "p": 0.971669
+    },
+    {
+      "text": ",",
+      "fromMs": 420,
+      "toMs": 570,
+      "dtwMs": 600,
+      "p": 0.991439
+    },
+    {
+      "text": " la",
+      "fromMs": 570,
+      "toMs": 730,
+      "dtwMs": 740,
+      "p": 0.999855
+    },
+    {
+      "text": " idea",
+      "fromMs": 730,
+      "toMs": 1060,
+      "dtwMs": 1020,
+      "p": 0.999941
+    },
+    {
+      "text": " del",
+      "fromMs": 1060,
+      "toMs": 1300,
+      "dtwMs": 1280,
+      "p": 0.99979
+    },
+    {
+      "text": " muse",
+      "fromMs": 1300,
+      "toMs": 1630,
+      "dtwMs": 1540,
+      "p": 0.972477
+    },
+    {
+      "text": "o",
+      "fromMs": 1630,
+      "toMs": 1710,
+      "dtwMs": 1720,
+      "p": 0.999971
+    },
+    {
+      "text": " este",
+      "fromMs": 1710,
+      "toMs": 2040,
+      "dtwMs": 1980,
+      "p": 0.887878
+    },
+    {
+      "text": " año",
+      "fromMs": 2040,
+      "toMs": 2320,
+      "dtwMs": 2320,
+      "p": 0.999628
+    },
+    {
+      "text": " es",
+      "fromMs": 2320,
+      "toMs": 2540,
+      "dtwMs": 2620,
+      "p": 0.982947
+    },
+    {
+      "text": " poder",
+      "fromMs": 2540,
+      "toMs": 3090,
+      "dtwMs": 3040,
+      "p": 0.998685
+    },
+    {
+      "text": " mostrar",
+      "fromMs": 3090,
+      "toMs": 3870,
+      "dtwMs": 3900,
+      "p": 0.992447
+    },
+    {
+      "text": "les",
+      "fromMs": 3870,
+      "toMs": 4140,
+      "dtwMs": 4180,
+      "p": 0.999819
+    },
+    {
+      "text": " a",
+      "fromMs": 4280,
+      "toMs": 4290,
+      "dtwMs": 4340,
+      "p": 0.974212
+    },
+    {
+      "text": " todos",
+      "fromMs": 4290,
+      "toMs": 4630,
+      "dtwMs": 4540,
+      "p": 0.999451
+    },
+    {
+      "text": " los",
+      "fromMs": 4630,
+      "toMs": 4720,
+      "dtwMs": 4740,
+      "p": 0.996763
+    },
+    {
+      "text": " pap",
+      "fromMs": 4840,
+      "toMs": 5050,
+      "dtwMs": 5000,
+      "p": 0.998988
+    },
+    {
+      "text": "ás",
+      "fromMs": 5050,
+      "toMs": 5120,
+      "dtwMs": 5180,
+      "p": 0.999868
+    },
+    {
+      "text": " diferentes",
+      "fromMs": 5200,
+      "toMs": 5940,
+      "dtwMs": 5920,
+      "p": 0.992142
+    },
+    {
+      "text": " cult",
+      "fromMs": 5940,
+      "toMs": 6230,
+      "dtwMs": 6400,
+      "p": 0.991369
+    },
+    {
+      "text": "uras",
+      "fromMs": 6230,
+      "toMs": 6520,
+      "dtwMs": 6740,
+      "p": 0.999969
+    },
+    {
+      "text": ",",
+      "fromMs": 6520,
+      "toMs": 6640,
+      "dtwMs": 6760,
+      "p": 0.881963
+    },
+    {
+      "text": " cómo",
+      "fromMs": 6660,
+      "toMs": 6950,
+      "dtwMs": 7340,
+      "p": 0.866069
+    },
+    {
+      "text": " ven",
+      "fromMs": 6950,
+      "toMs": 7030,
+      "dtwMs": 7580,
+      "p": 0.999075
+    },
+    {
+      "text": " ellos",
+      "fromMs": 7170,
+      "toMs": 7540,
+      "dtwMs": 7780,
+      "p": 0.954096
+    },
+    {
+      "text": " la",
+      "fromMs": 7540,
+      "toMs": 7650,
+      "dtwMs": 7980,
+      "p": 0.999758
+    },
+    {
+      "text": " muerte",
+      "fromMs": 7720,
+      "toMs": 8120,
+      "dtwMs": 8380,
+      "p": 0.999975
+    },
+    {
+      "text": ".",
+      "fromMs": 8120,
+      "toMs": 8290,
+      "dtwMs": 8380,
+      "p": 0.994958
+    }
+  ]
+}

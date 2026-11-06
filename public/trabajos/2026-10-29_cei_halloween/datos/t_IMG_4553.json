@@ -1,0 +1,92 @@
+{
+  "archivo": "IMG_4553.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7018,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7020,
+      "texto": "The people bring food and flowers and make shows respect."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " The",
+      "fromMs": 0,
+      "toMs": 380,
+      "dtwMs": 1080,
+      "p": 0.152387
+    },
+    {
+      "text": " people",
+      "fromMs": 600,
+      "toMs": 1150,
+      "dtwMs": 1540,
+      "p": 0.996012
+    },
+    {
+      "text": " bring",
+      "fromMs": 1150,
+      "toMs": 1790,
+      "dtwMs": 2000,
+      "p": 0.984741
+    },
+    {
+      "text": " food",
+      "fromMs": 1790,
+      "toMs": 2300,
+      "dtwMs": 2520,
+      "p": 0.997115
+    },
+    {
+      "text": " and",
+      "fromMs": 2300,
+      "toMs": 2530,
+      "dtwMs": 2940,
+      "p": 0.998058
+    },
+    {
+      "text": " flowers",
+      "fromMs": 2740,
+      "toMs": 3490,
+      "dtwMs": 3480,
+      "p": 0.998079
+    },
+    {
+      "text": " and",
+      "fromMs": 3980,
+      "toMs": 4150,
+      "dtwMs": 4460,
+      "p": 0.622496
+    },
+    {
+      "text": " make",
+      "fromMs": 4150,
+      "toMs": 4860,
+      "dtwMs": 4940,
+      "p": 0.993201
+    },
+    {
+      "text": " shows",
+      "fromMs": 4860,
+      "toMs": 5360,
+      "dtwMs": 5360,
+      "p": 0.827734
+    },
+    {
+      "text": " respect",
+      "fromMs": 5730,
+      "toMs": 6890,
+      "dtwMs": 6120,
+      "p": 0.835978
+    },
+    {
+      "text": ".",
+      "fromMs": 6970,
+      "toMs": 7010,
+      "dtwMs": 6500,
+      "p": 0.538475
+    }
+  ]
+}
