@@ -4,9 +4,9 @@
 |---|---|
 | Cliente / marca | familia (sin kit de marca: video personal) |
 | Pieza | abuela-80 |
-| Estado | 🟡 En curso |
+| Estado | 🟢 Cerrado (2026-11-17) |
 | Abierto | 2026-10-23 |
-| Cerrado | — |
+| Cerrado | 2026-11-17 |
 
 ## Brief
 - **Objetivo:** video largo para YouTube del cumpleaños 80 de la abuela, con todo el material del 18/10/2026.
@@ -36,6 +36,7 @@
 - **Audio (2026-10-24):** elegida la muestra **B_suave** de `out/<ID>/revision/prueba_audio/` (DeepFilterNet con atenuación limitada, mezclado con el original). Receta (reproducida y comparada con la muestra: diferencia nula): `deepFilter --atten-lim 10` + `highpass=f=70,acompressor=threshold=-22dB:ratio=2:attack=15:release=250:makeup=2`; loudnorm -14 LUFS en dos pasadas sobre el video entero (sin el adelanto de 42,7 ms de `terminar_audio.sh`: ese relleno es de los AAC de Remotion).
 - **Montaje (2026-10-24):** `montaje.py cortes` ajusta cada tramo de `candidatos.json` al borde de las frases de Whisper (salvo los tramos con música) → `datos/clips.json`; `montaje.py armar` corta desde los originales a 30 fps, cortes directos dentro de cada bloque, fundido a negro de 0,4 s entre bloques y de 1 s en las puntas, micro-fundido de audio de 20 ms en cada corte. Video libx264 crf 18 slow.
 - **Noche en el auto (00387, 00388, 00416, 00421):** `curves=all='0/0 0.06/0.10 0.25/0.42 1/1',eq=saturation=1.15,hqdn3d` (con `eq=gamma` quedaba gris y lavado). Partes de 00387 y el arranque de 00388 son negro puro en el original: ahí solo se oye la charla.
+- **Medición final (2026-11-17, ebur128 sobre `abuela-80_16x9_v1.mp4`):** −14,0 LUFS integrado, pico verdadero −1,3 dBFS; 36:50 (2209,9 s), 2,4 GB.
 - **Otras:** selección de tramos leyendo las transcripciones de Whisper (risas y reacciones detectadas por los huecos y el volumen), en orden cronológico.
 
 ## Entregas
@@ -44,6 +45,6 @@
 | `abuela-80_16x9_v1.mp4` | 2026-10-24 | Primera versión: 69 tramos, 36:50, -14,0 LUFS. Glitches: solo fundidos de bloque, negro original del auto y movimientos de cámara en mano (revisado en `revision/glitches_v1.png`). |
 
 ## Cómo rehacerlo
-1. Restaurar `public/trabajos/2026-10-23_familia_abuela-80/` desde `C:/Videos/archivo/2026-10-23_familia_abuela-80/` (si el trabajo está cerrado).
+1. Trabajo cerrado y archivado el 2026-11-17: restaurar `public/trabajos/2026-10-23_familia_abuela-80/` desde `C:/Videos/archivo/2026-10-23_familia_abuela-80/public/` (ver `ARCHIVADO.txt`). Las entregas están copiadas en `C:/Videos/archivo/2026-10-23_familia_abuela-80/final/`. El montaje corta desde los originales de `C:/Videos/crudos/2026-10-23_familia_abuela-80/`: tienen que seguir ahí.
 2. `bash src/trabajos/2026-10-23_familia_abuela-80/preparar_proxies.sh` y los scripts de audio del trabajo.
 3. `node src/trabajos/2026-10-23_familia_abuela-80/seleccion.mjs` → `python src/trabajos/2026-10-23_familia_abuela-80/montaje.py cortes` → `python src/trabajos/2026-10-23_familia_abuela-80/montaje.py armar out/2026-10-23_familia_abuela-80/final/abuela-80_16x9_vN.mp4` (borrar antes `out/<ID>/revision/v1_partes/` si cambian los tramos: las partes se reusan por número).

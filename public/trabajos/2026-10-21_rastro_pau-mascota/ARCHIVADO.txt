@@ -1,0 +1,12 @@
+Trabajo 2026-10-21_rastro_pau-mascota cerrado y archivado el 2026-11-17.
+
+Material pesado (proxies, audio, imágenes): C:/Videos/archivo/2026-10-21_rastro_pau-mascota/public/
+Sin entrega final: copia de out/2026-10-21_rastro_pau-mascota/revision/ (borradores) en C:/Videos/archivo/2026-10-21_rastro_pau-mascota/revision/
+Originales de Mixkit usados: mixkit-1142-gummies.mp3 mixkit-2356-dry-pop-up-notification-alert.wav mixkit-2357-bubble-pop-up-alert-notification.wav -> C:/Videos/archivo/2026-10-21_rastro_pau-mascota/biblioteca/
+Originales de cámara (sin tocar): C:/Videos/crudos/2026-10-21_rastro_pau-mascota/
+Código y TRABAJO.md: src/trabajos/2026-10-21_rastro_pau-mascota/ (en el repo)
+
+Para restaurar (desde la raíz del proyecto, Git Bash):
+  rm -rf public/trabajos/2026-10-21_rastro_pau-mascota
+  cp -r "C:/Videos/archivo/2026-10-21_rastro_pau-mascota/public" public/trabajos/2026-10-21_rastro_pau-mascota
+Después seguir "Cómo rehacerlo" en src/trabajos/2026-10-21_rastro_pau-mascota/TRABAJO.md.

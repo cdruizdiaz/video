@@ -1,0 +1,12 @@
+Trabajo 2026-10-06_volto_fashion-week cerrado y archivado el 2026-11-17.
+
+Material pesado (proxies, audio, imágenes): C:/Videos/archivo/2026-10-06_volto_fashion-week/public/
+Copia de las entregas: C:/Videos/archivo/2026-10-06_volto_fashion-week/final/
+Originales de Mixkit usados: mixkit-175-digital-clouds.mp3 mixkit-371-cat-walk.mp3 mixkit-130-tech-house-vibes.mp3 mixkit-2542.wav mixkit-2574-software-interface-start.wav mixkit-1113-mouse-click-close.wav mixkit-1492-cinematic-whoosh-fast-transition.wav mixkit-1060.wav mixkit-2356-dry-pop-up-notification-alert.wav mixkit-2357-bubble-pop-up-alert-notification.wav mixkit-2568.wav mixkit-3005-explainer-video-pops-whoosh-light-pop.wav mixkit-3122.wav mixkit-2964.wav mixkit-2870.wav mixkit-2531.wav -> C:/Videos/archivo/2026-10-06_volto_fashion-week/biblioteca/
+Originales de cámara (sin tocar): C:/Videos/crudos/2026-10-06_volto_fashion-week/
+Código y TRABAJO.md: src/trabajos/2026-10-06_volto_fashion-week/ (en el repo)
+
+Para restaurar (desde la raíz del proyecto, Git Bash):
+  rm -rf public/trabajos/2026-10-06_volto_fashion-week
+  cp -r "C:/Videos/archivo/2026-10-06_volto_fashion-week/public" public/trabajos/2026-10-06_volto_fashion-week
+Después seguir "Cómo rehacerlo" en src/trabajos/2026-10-06_volto_fashion-week/TRABAJO.md.

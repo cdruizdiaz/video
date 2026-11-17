@@ -1,0 +1,12 @@
+Trabajo 2026-10-15_cei_dia-de-la-madre cerrado y archivado el 2026-11-17.
+
+Material pesado (proxies, audio, imágenes): C:/Videos/archivo/2026-10-15_cei_dia-de-la-madre/public/
+Sin entrega final: copia de out/2026-10-15_cei_dia-de-la-madre/revision/ (borradores) en C:/Videos/archivo/2026-10-15_cei_dia-de-la-madre/revision/
+Originales de Mixkit usados: mixkit-1037-my-little-star.mp3 mixkit-1081-we-ll-be-okay.mp3 mixkit-1060.wav -> C:/Videos/archivo/2026-10-15_cei_dia-de-la-madre/biblioteca/
+Originales de cámara (sin tocar): C:/Videos/crudos/2026-10-15_cei_dia-de-la-madre/
+Código y TRABAJO.md: src/trabajos/2026-10-15_cei_dia-de-la-madre/ (en el repo)
+
+Para restaurar (desde la raíz del proyecto, Git Bash):
+  rm -rf public/trabajos/2026-10-15_cei_dia-de-la-madre
+  cp -r "C:/Videos/archivo/2026-10-15_cei_dia-de-la-madre/public" public/trabajos/2026-10-15_cei_dia-de-la-madre
+Después seguir "Cómo rehacerlo" en src/trabajos/2026-10-15_cei_dia-de-la-madre/TRABAJO.md.

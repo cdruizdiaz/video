@@ -4,9 +4,9 @@
 |---|---|
 | Cliente / marca | CEI — Centro de Enseñanza de Inglés (`src/marcas/cei`) |
 | Pieza | Halloween: las teachers cuentan la actividad |
-| Estado | 🟡 En curso |
+| Estado | 🟢 Cerrado (2026-11-17): 4 piezas entregadas (museo v1, niños v2, entrevistas v2, testimonios v1) |
 | Abierto | 2026-10-29 |
-| Cerrado | — |
+| Cerrado | 2026-11-17 |
 
 ## Brief
 - **Objetivo:** video del CEI donde las teachers cuentan la actividad de Halloween. Narrativa armada con varias voces, entendible (qué hicieron, cómo, cómo lo vivieron los chicos). En algún momento las teachers van solas a cámara y después entran inserts de la actividad.
@@ -117,11 +117,28 @@ Total: 72 clips, 12.6 min.
 ## Entregas
 | Archivo (`out/2026-10-29_cei_halloween/final/`) | Fecha | Cambios respecto de la versión anterior |
 |---|---|---|
+| `museo-umbral_9x16_v1.mp4` | 2026-10-29 | Pieza 1 "Museo del Umbral" (teachers), 56,8 s, −14,3 LUFS, pico −1,4 |
+| `ninos-umbral_9x16_v1.mp4` | 2026-10-30 | Pieza 2 "Los chicos", 55,9 s |
+| `ninos-umbral_9x16_v2.mp4` | 2026-10-30 | Cartel de país más grande (72 px, bandera 112 px). −14,0 LUFS, pico −1,4 |
+| `entrevistas-umbral_9x16_v1.mp4` | 2026-10-30 | Pieza 3 "Entrevistas", 61,7 s |
+| `entrevistas-umbral_9x16_v2.mp4` | 2026-10-30 | Subtítulo "What colors do". −14,0 LUFS, pico −1,0 |
+| `testimonios-umbral_9x16_v1.mp4` | 2026-10-31 | Pieza 4 "Testimonios", 51,2 s, −14,0 LUFS, pico −1,4 |
+
+(Detalle de cada borrador y entrega más abajo, en las secciones de cada pieza. LUFS remedidos con ebur128 el 2026-11-17.)
+
+**Decisiones finales:**
+- Composiciones `cei-halloween-museo`, `cei-halloween-ninos`, `cei-halloween-entrevistas` y `cei-halloween-testimonios` (`MuseoUmbral.tsx`, `NinosUmbral.tsx`, `EntrevistasUmbral.tsx`).
+- Música de las entregas, **no** de Mixkit, archivos de Descargas preparados en `audio/`. Por los nombres parecen de Pixabay (licencia de Pixabay, sin atribución obligatoria; ⚠️ no verificado):
+  - museo: `music_for_videos-energetic-uplifting-pop-110058` (la pasó el cliente);
+  - niños: `lnplusmusic-educational-educational-music-612245`;
+  - entrevistas: `atlasaudio-educational-promo-593041`;
+  - testimonios: `starostin-education-education-music-585717`.
+- Mixkit solo en el borrador B del museo: 801 "Happy Home", Michael Ramir C. (sha256 `76b82159ba1d`).
 
 ## Cómo rehacerlo
-1. Restaurar `public/trabajos/2026-10-29_cei_halloween/` desde `C:/Videos/archivo/2026-10-29_cei_halloween/` (si el trabajo está cerrado).
-2. Regenerar audios preparados con los scripts de `src/trabajos/2026-10-29_cei_halloween/` (si los hay).
-3. `npx remotion render src/index.ts <id-composición> out/2026-10-29_cei_halloween/final/<salida>_vN.mp4 --crf=18`
+1. Trabajo cerrado y archivado el 2026-11-17: restaurar `public/trabajos/2026-10-29_cei_halloween/` desde `C:/Videos/archivo/2026-10-29_cei_halloween/public/` (ver `ARCHIVADO.txt`). Ahí están también los audios preparados: la música de Descargas no tiene script en el repo.
+2. Proxies (HDR → SDR): `bash src/trabajos/2026-10-29_cei_halloween/hacer_proxies.sh`. Planes: `alinear_todo.py` → `armar_plan.py` (museo), `alinear_ninos.py` → `armar_plan_ninos.py`, `armar_plan_entrevistas.py` / `armar_plan_testimonios.py` → `retoques_ninos.py <plan>` y `ubicar_carteles.py`.
+3. `npx remotion render src/index.ts cei-halloween-<museo|ninos|entrevistas|testimonios> <tmp>.mp4 --crf=18` → `bash scripts/terminar_audio.sh <tmp>.mp4 out/2026-10-29_cei_halloween/final/<pieza>_9x16_v<N>.mp4`.
 
 ## Análisis del material (2026-10-29)
 - No es una fiesta de disfraces: es el **Museo "The Threshold / El Umbral"**, proyecto de todos los cursos sobre rituales funerarios de 6 culturas (China, Noruega, México, Indonesia, Madagascar, Ghana) en vísperas de Halloween.

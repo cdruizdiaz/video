@@ -4,9 +4,9 @@
 |---|---|
 | Cliente / marca | VOLTO (`src/marcas/volto`) |
 | Pieza | Fashion Week: serie de reels con el material del desfile |
-| Estado | 🟡 En curso (al 2026-10-09: pieza 6 entregada en v2; pieza 1 rehecha, borrador `_n` en revisión; piezas 2, 3, 4 y 7 en preview; la 5 descartada). 2026-10-13: pieza 5 retomada, preview v5 aprobada; borrador completo `revision/borrador_veni-seguime_9x16_a.mp4` en revisión |
+| Estado | 🟢 Cerrado (2026-11-17). Entregadas: pieza 6 "Entrevista de radio" v2 y pieza 5 "Vení, seguime" v3, más las previews de las piezas 1–7. Las piezas 1–4 y 7 no se editaron completas. Historial: (al 2026-10-09: pieza 6 entregada en v2; pieza 1 rehecha, borrador `_n` en revisión; piezas 2, 3, 4 y 7 en preview; la 5 descartada). 2026-10-13: pieza 5 retomada, preview v5 aprobada; borrador completo `revision/borrador_veni-seguime_9x16_a.mp4` en revisión |
 | Abierto | 2026-10-06 |
-| Cerrado | — |
+| Cerrado | 2026-11-17 |
 
 ## Brief
 - **Pedido:** el cliente "no sabe lo que quiere": ver qué se puede sacar del material de la Argentina Fashion Week (3 de octubre de 2026). Varias piezas, las que propongamos.
@@ -122,7 +122,16 @@
 
 Después de la v2 (no se renderizó: el cliente no lo necesitó; queda en el borrador `revision/borrador_entrevista-radio_9x16_t.mp4` y en el código): en "lo conectamos a las redes sociales", red con el asterisco de Volto al centro conectado a WhatsApp, Instagram, Facebook y TikTok (`InsertoRed`; íconos de Simple Icons, CC0).
 
+## Decisiones finales (cierre 2026-11-17)
+- **Plantillas:** `HablaSubtitulada` + `EntrevistaRadio` (con insertos de `comunes/Insertos.tsx` y los de vidrio).
+- **Volumen de las últimas versiones (ebur128, 2026-11-17):** `entrevista-radio_v2` −14,0 LUFS / pico −1,2; `veni-seguime_v3` −14,0 / −1,5; `preview-veni-seguime_v5` −14,0 / −1,6; previews de las piezas 1–4 y 7 entre −14,0 y −14,4 / ≤ −1,2.
+- **Mixkit usado** (licencia libre de Mixkit; sha256, primeros 12):
+  - Música: 175 "Digital Clouds", Alejandro Magaña (`71cd4ea39edc`); 371 "Cat Walk", Arulo (`e241cba000ce`); 130 "Tech House vibes", Alejandro Magaña (`95972c602ff0`).
+  - Efectos: 2542 (`1658f41d4a3e`), 2574 (`7323c6ced960`), 1113 (`fe535fd085fe`), 1492 (`02b8cd40b376`), 1060 (`66efe4ce5e0b`), 2356 (`aa1085ba2eb7`), 2357 (`78040d4d9f09`), 2568 (`248312c2ef61`), 3005 (`2ae8c9395cb0`), 3122 (`485f7e8bb143`), 2964 (`f46551149198`), 2870 (`084b78463e30`), 2531 (`0e9e5026be70`).
+  - Originales copiados a `C:/Videos/archivo/2026-10-06_volto_fashion-week/biblioteca/`.
+
 ## Cómo rehacerlo
-1. Restaurar `public/trabajos/2026-10-06_volto_fashion-week/` desde `C:/Videos/archivo/2026-10-06_volto_fashion-week/` (si el trabajo está cerrado).
+1. Trabajo cerrado y archivado el 2026-11-17: restaurar `public/trabajos/2026-10-06_volto_fashion-week/` desde `C:/Videos/archivo/2026-10-06_volto_fashion-week/public/` (ver `ARCHIVADO.txt`). El proxy de "Vení, seguime" (`IMG_6977n`) y el de la cám. B retocada por el cliente (`IMG_6982r`) se hicieron aparte del script: están en el archivo.
 2. Proxies: `bash src/trabajos/2026-10-06_volto_fashion-week/preparar_crudos.sh`
-3. `npx remotion render src/index.ts <id-composición> out/2026-10-06_volto_fashion-week/final/<salida>_vN.mp4 --crf=18`
+3. Voz, música y efectos: `preparar_voz_entrevista.sh`, `preparar_musica.sh`, `preparar_sonidos_entrevista.sh`, `preparar_sonidos_marca-ropa.sh` (todos en `src/trabajos/2026-10-06_volto_fashion-week/`).
+4. Previews: `bash src/trabajos/2026-10-06_volto_fashion-week/render_previews.sh`. Piezas: `npx remotion render src/index.ts volto-fashion-week-entrevista-radio|volto-fashion-week-veni-seguime <tmp>.mp4 --crf=18` → `bash scripts/terminar_audio.sh <tmp>.mp4 out/2026-10-06_volto_fashion-week/final/<pieza>_9x16_v<N>.mp4`.

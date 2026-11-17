@@ -1,0 +1,12 @@
+Trabajo 2026-10-29_cei_halloween cerrado y archivado el 2026-11-17.
+
+Material pesado (proxies, audio, imágenes): C:/Videos/archivo/2026-10-29_cei_halloween/public/
+Copia de las entregas: C:/Videos/archivo/2026-10-29_cei_halloween/final/
+Originales de Mixkit usados: mixkit-801-happy-home.mp3 -> C:/Videos/archivo/2026-10-29_cei_halloween/biblioteca/
+Originales de cámara (sin tocar): C:/Videos/crudos/2026-10-29_cei_halloween/
+Código y TRABAJO.md: src/trabajos/2026-10-29_cei_halloween/ (en el repo)
+
+Para restaurar (desde la raíz del proyecto, Git Bash):
+  rm -rf public/trabajos/2026-10-29_cei_halloween
+  cp -r "C:/Videos/archivo/2026-10-29_cei_halloween/public" public/trabajos/2026-10-29_cei_halloween
+Después seguir "Cómo rehacerlo" en src/trabajos/2026-10-29_cei_halloween/TRABAJO.md.

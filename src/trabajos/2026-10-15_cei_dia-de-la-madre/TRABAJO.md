@@ -4,7 +4,7 @@
 |---|---|
 | Cliente / marca | CEI — Centro de Enseñanza de Inglés (`src/marcas/cei`, **por crear**) |
 | Pieza | Día de la Madre: cada alumno agradece a su mamá por algo |
-| Estado | 🟢 Cerrado el 2026-10-15 (a pedido del cliente, **sin entrega final**: `final/` vacía; el último material aprobado para revisión es el montaje de `revision/`) |
+| Estado | 🟢 Cerrado el 2026-10-15 (a pedido del cliente, **sin entrega final**: `final/` vacía; el último material aprobado para revisión es el montaje de `revision/`). Archivado el 2026-11-17: `public/` y `revision/` en `C:/Videos/archivo/2026-10-15_cei_dia-de-la-madre/` |
 | Abierto | 2026-10-15 |
 | Cerrado | 2026-10-15 |
 
@@ -77,6 +77,8 @@ Sin archivos en `out/2026-10-15_cei_dia-de-la-madre/final/`: el cliente cerró e
 | `borrador_dia-de-la-madre_9x16_c.mp4` | 76,7 s | 2ª ronda: subtítulos recalculados con las pausas de la voz, música "My Little Star" (Mixkit 1037), flor con sombra, 540×960 | -13,9 |
 | `montaje_dia-de-la-madre_9x16_a.mp4` | 76,7 s | solo tomas + voz + placa y logo, con estabilización (vidstab), 1080×1920 | -14,1 |
 | `montaje_dia-de-la-madre_9x16_b.mp4` | 76,7 s | igual que `_a` pero **sin estabilizar** (último pedido) | -14,1 |
+
+Archivo (2026-11-17): copia de `revision/` en `C:/Videos/archivo/2026-10-15_cei_dia-de-la-madre/revision/`; originales de Mixkit 1037 (`8efc36df9024`), 1081 (`a07e945508eb`) y 1060 (`66efe4ce5e0b`) en `…/biblioteca/`.
 
 Pendiente si se retoma: render a resolución completa del video con subtítulos y música (composición `cei-dia-de-la-madre`) → `final/dia-de-la-madre_9x16_v1.mp4`.
 

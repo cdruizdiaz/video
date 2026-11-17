@@ -1,0 +1,12 @@
+Trabajo 2026-10-27_animana_manta-dalma-bdw cerrado y archivado el 2026-11-17.
+
+Material pesado (proxies, audio, imágenes): C:/Videos/archivo/2026-10-27_animana_manta-dalma-bdw/public/
+Copia de las entregas: C:/Videos/archivo/2026-10-27_animana_manta-dalma-bdw/final/
+Originales de Mixkit usados: mixkit-371-cat-walk.mp3 -> C:/Videos/archivo/2026-10-27_animana_manta-dalma-bdw/biblioteca/
+Originales de cámara (sin tocar): C:/Videos/crudos/2026-10-27_animana_manta-dalma-bdw/
+Código y TRABAJO.md: src/trabajos/2026-10-27_animana_manta-dalma-bdw/ (en el repo)
+
+Para restaurar (desde la raíz del proyecto, Git Bash):
+  rm -rf public/trabajos/2026-10-27_animana_manta-dalma-bdw
+  cp -r "C:/Videos/archivo/2026-10-27_animana_manta-dalma-bdw/public" public/trabajos/2026-10-27_animana_manta-dalma-bdw
+Después seguir "Cómo rehacerlo" en src/trabajos/2026-10-27_animana_manta-dalma-bdw/TRABAJO.md.

@@ -1,0 +1,12 @@
+Trabajo 2026-10-23_familia_abuela-80 cerrado y archivado el 2026-11-17.
+
+Material pesado (proxies, audio, imágenes): C:/Videos/archivo/2026-10-23_familia_abuela-80/public/
+Copia de las entregas: C:/Videos/archivo/2026-10-23_familia_abuela-80/final/
+Originales de Mixkit usados: ninguno
+Originales de cámara (sin tocar): C:/Videos/crudos/2026-10-23_familia_abuela-80/
+Código y TRABAJO.md: src/trabajos/2026-10-23_familia_abuela-80/ (en el repo)
+
+Para restaurar (desde la raíz del proyecto, Git Bash):
+  rm -rf public/trabajos/2026-10-23_familia_abuela-80
+  cp -r "C:/Videos/archivo/2026-10-23_familia_abuela-80/public" public/trabajos/2026-10-23_familia_abuela-80
+Después seguir "Cómo rehacerlo" en src/trabajos/2026-10-23_familia_abuela-80/TRABAJO.md.

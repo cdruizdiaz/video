@@ -4,9 +4,9 @@
 |---|---|
 | Cliente / marca | RASTRO (`src/marcas/rastro`) |
 | Pieza | affinity-dia-01 |
-| Estado | 🟡 En curso |
+| Estado | 🟢 Cerrado el 2026-11-17 **sin entrega final** (a pedido del usuario; quedó en el borrador A, sin música) |
 | Abierto | 2026-10-23 |
-| Cerrado | — |
+| Cerrado | 2026-11-17 |
 
 ## Brief
 - **Objetivo:** primer video de la sección **"Día 1/20 probando Affinity"** para las redes de RASTRO. Es un video **orgánico** que muestra cómo funciona Affinity mientras Pau arma la portada del reel.
@@ -85,8 +85,10 @@
 | Archivo (`out/2026-10-23_rastro_affinity-dia-01/final/`) | Fecha | Cambios respecto de la versión anterior |
 |---|---|---|
 
+Sin archivos en `final/`: se cerró con lo que hay en `out/2026-10-23_rastro_affinity-dia-01/revision/` (borrador A). Copia de `revision/` en `C:/Videos/archivo/2026-10-23_rastro_affinity-dia-01/revision/`. Sin Mixkit.
+
 ## Cómo rehacerlo
-1. Si el trabajo está cerrado, restaurar `public/trabajos/2026-10-23_rastro_affinity-dia-01/` desde `C:/Videos/archivo/2026-10-23_rastro_affinity-dia-01/`.
+1. Trabajo cerrado y archivado el 2026-11-17: restaurar `public/trabajos/2026-10-23_rastro_affinity-dia-01/` desde `C:/Videos/archivo/2026-10-23_rastro_affinity-dia-01/public/` (ver `ARCHIVADO.txt`).
 2. Preparar el material:
    - `bash …/proxies.sh`;
    - `node scripts/transcribir.mjs <original> datos/tr/<clip>.json --sin-vad --prompt "Affinity, Canva, Illustrator, RASTRO, capas, vectores, pinceles"` por toma, y después `node …/armar_transcripcion.mjs`;

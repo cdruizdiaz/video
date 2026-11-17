@@ -4,9 +4,9 @@
 |---|---|
 | Cliente / marca | VOLTO (`src/marcas/volto`) |
 | Pieza | Radio: serie de reels con el material de la radio |
-| Estado | 🟡 En curso: transcripción y propuesta de narrativas |
+| Estado | 🟢 Cerrado (2026-11-17): 20 previews entregadas; la pieza "trabajo" quedó en el borrador G (no se pidió la final) |
 | Abierto | 2026-10-19 |
-| Cerrado | — |
+| Cerrado | 2026-11-17 |
 
 ## Brief
 - **Pedido:** "nuevas previews para Volto, como con los videos de la fashion week": analizar y transcribir todo el material de la radio y proponer **todas las narrativas posibles para reels de ~1 minuto, sin repetir contenido** entre ellas. Después, previews de cortes como en `2026-10-06_volto_fashion-week`.
@@ -83,6 +83,8 @@
 ## Entregas
 | Archivo (`out/2026-10-19_volto_radio/final/`) | Fecha | Cambios respecto de la versión anterior |
 |---|---|---|
+| `preview-<pieza>_9x16_v1.mp4` × 20 (30-dias, alquiler, cardigan, casamiento, chatbot, contadores, departamentos, facturas, gimnasios, herramientas, horno, manada, media-loca, mejor-vendedor, origen, pauta, software-98, tienda-online, trabajo, trinchera) | 2026-10-19 | Previews de cortes de las 20 narrativas de `NARRATIVAS.md`: solo cortes y planos, sin subtítulos, gráficos ni música. 26–64 s; todas entre −13,8 y −14,2 LUFS, pico ≤ −1,1 dBFS (medido el 2026-11-17). ⚠️ Pueden tener el glitch de cuadros vacíos de la v1 (ver Decisiones) |
+| `preview-origen_9x16_v2.mp4` · `preview-tienda-online_9x16_v2.mp4` | 2026-10-19 | Segunda versión de esas dos previews (63,2 s y 54,3 s; −14,2 y −14,1 LUFS) |
 | `revision/borrador_trabajo_9x16_G.mp4` (borrador) | 2026-10-23 | Comillas de la cita hasta "¿qué voy a hacer yo?" (« »); música un poco más alta (~21 dB bajo la voz). -14,1 LUFS |
 | `revision/borrador_trabajo_9x16_F.mp4` (borrador) | 2026-10-23 | Música de fondo tecnológica (Mixkit 134), ~26 dB bajo la voz, sube en la placa. -14,1 LUFS, pico -1,4 dBFS |
 | `revision/borrador_trabajo_9x16_E.mp4` (borrador) | 2026-10-23 | Tarjeta del 90 % y lista más abajo, cerca de las cabezas |
@@ -92,6 +94,9 @@
 | `revision/borrador_trabajo_9x16_A.mp4` (borrador, no entrega) | 2026-10-22 | Edición completa de `preview-trabajo_v1`: subtítulos, gráficos de vidrio, voz limpia (conductor subido), empuje, placa con música; sin los cuadros vacíos de la v1. -14,1 LUFS, pico -1,4 dBFS |
 
 ## Cómo rehacerlo
-1. Restaurar `public/trabajos/2026-10-19_volto_radio/` desde `C:/Videos/archivo/2026-10-19_volto_radio/` (si el trabajo está cerrado).
+**Decisiones finales (cierre 2026-11-17):** plantilla `HablaSubtitulada` / `EntrevistaRadio`. Música solo en el borrador de "trabajo": Mixkit 134 "Deep Techno Ambience" de Alejandro Magaña (sha256 `b873f8373c4d`), antes Mixkit 175 "Digital Clouds" (sha256 `71cd4ea39edc`, rechazada). Licencia libre de Mixkit, en `public/biblioteca/LICENCIAS-mixkit.json`. Las previews no llevan música.
+
+1. Trabajo cerrado y archivado el 2026-11-17: restaurar `public/trabajos/2026-10-19_volto_radio/` desde `C:/Videos/archivo/2026-10-19_volto_radio/public/` (ver `ARCHIVADO.txt`). Originales de Mixkit (134, 175) en `C:/Videos/archivo/2026-10-19_volto_radio/biblioteca/`.
 2. Proxies: `bash src/trabajos/2026-10-19_volto_radio/preparar_crudos.sh`
-3. `npx remotion render src/index.ts <id-composición> out/2026-10-19_volto_radio/final/<salida>_vN.mp4 --crf=18`
+3. Voz y música: `bash src/trabajos/2026-10-19_volto_radio/preparar_voz.sh`, `preparar_voz_conductor.sh`, `preparar_musica.sh`.
+4. Previews: `bash src/trabajos/2026-10-19_volto_radio/render_previews.sh`. Pieza "trabajo" final: `npx remotion render src/index.ts volto-radio-trabajo <tmp>.mp4 --crf=18` → `bash scripts/terminar_audio.sh <tmp>.mp4 out/2026-10-19_volto_radio/final/trabajo_9x16_v1.mp4`.

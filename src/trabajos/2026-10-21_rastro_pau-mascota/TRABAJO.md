@@ -4,9 +4,9 @@
 |---|---|
 | Cliente / marca | RASTRO (`src/marcas/rastro`) |
 | Pieza | pau-mascota |
-| Estado | 🟡 En curso |
+| Estado | 🟢 Cerrado el 2026-11-17 **sin entrega final** (a pedido del usuario; último: borrador D, sin música: la pone el cliente) |
 | Abierto | 2026-10-21 |
-| Cerrado | — |
+| Cerrado | 2026-11-17 |
 
 ## Brief
 - **Objetivo:** reel para las redes de RASTRO: Pau cuenta cómo pasamos "de esto a esto" y presenta a Bloomie (la mascota del CEI). Seguir la narrativa de los clips de `pau/`, **cortar las partes donde se ríe** y dejar todo lo necesario para que se entienda.
@@ -77,7 +77,9 @@
 | Archivo (`out/2026-10-21_rastro_pau-mascota/final/`) | Fecha | Cambios respecto de la versión anterior |
 |---|---|---|
 
+Sin archivos en `final/`: se cerró con los borradores A–D de `out/2026-10-21_rastro_pau-mascota/revision/` (el último, `borrador_pau-mascota_9x16_d.mp4`, 52 s, −14,2 LUFS). Copia en `C:/Videos/archivo/2026-10-21_rastro_pau-mascota/revision/`. Originales de Mixkit 1142 "Gummies" (`28a4219e2b0c`, hasta el borrador C), 2356 (`aa1085ba2eb7`) y 2357 (`78040d4d9f09`) en `…/biblioteca/`.
+
 ## Cómo rehacerlo
-1. Restaurar `public/trabajos/2026-10-21_rastro_pau-mascota/` desde `C:/Videos/archivo/2026-10-21_rastro_pau-mascota/` (si el trabajo está cerrado).
+1. Trabajo cerrado y archivado el 2026-11-17: restaurar `public/trabajos/2026-10-21_rastro_pau-mascota/` desde `C:/Videos/archivo/2026-10-21_rastro_pau-mascota/public/` (ver `ARCHIVADO.txt`).
 2. `bash …/proxies.sh`, `bash …/preparar_pantallas.sh`, `bash …/preparar_voz.sh`, `bash …/preparar_sonidos.sh`; copiar `bloomie_entrada_hola_v3.mp4` a `crudos/bloomie_hola_v3.mp4`; `python …/recortar_bloomie.py` (lee los videos de `carpetaCrudos/<ID>/otros/`); `python …/seguir_puntos.py`; `node …/armar_bloomie.mjs`; `node …/armar_transcripcion.mjs`; clips con Bloomie: `npx remotion render src/index.ts rastro-pau-mascota-bloomie-palma public/trabajos/<ID>/crudos/IMG_9053b.mp4 --crf=16 --muted` (ídem hombro → IMG_9054b).
 3. `npx remotion render src/index.ts rastro-pau-mascota-reel <tmp>.mp4 --crf=18` y `bash scripts/terminar_audio.sh <tmp>.mp4 out/<ID>/final/pau-mascota_9x16_vN.mp4` (corrige el atraso del AAC y deja −14 LUFS).
