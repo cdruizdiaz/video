@@ -36,6 +36,16 @@ Reglas:
 - Un trabajo parecido a otro anterior se hace reutilizando su plantilla y cambiando solo los datos (textos, imágenes, duraciones, música).
 - **Reels de entrevista o persona hablando** (`HablaSubtitulada`, una o dos cámaras): leer y aplicar **de entrada** `src/plantillas/HablaSubtitulada/CRITERIOS_REEL.md`, empezando por su lista de control de arranque. Cubre color y material, planos, zoom, subtítulos, gráficos, audio y efectos, tal como los fue corrigiendo el cliente. Si en un trabajo se aprende un criterio nuevo, se suma ahí.
 - **Criterios por cliente:** si el cliente tiene `src/marcas/<cliente>/CRITERIOS.md` (Volto, CEI, CTPSFPC, DOCBA, Cipax), leerlo **de entrada** en cada trabajo nuevo de ese cliente y aplicar todo desde el primer borrador. Cada corrección nueva del cliente se suma ahí (no solo en la memoria local, que no viaja entre PCs).
+- **Criterios generales (todos los clientes)**, aprendidos en los trabajos y aplicados desde el primer borrador:
+  - **Inserts / b-roll sin sonido** siempre (proxy con `-an`, `muted`), salvo pedido contrario (DOCBA R3, 2026-10-28).
+  - **Subtítulos a la par de la voz:** tiempos por palabra con alineación forzada `python scripts/alinear.py <audio> "texto" --desde s --hasta s`; no usar valles de energía ni confiar solo en el DTW de Whisper. Cada trozo entra en su primera palabra (−0,03 s).
+  - **No estabilizar clips cortos por defecto** (vidstab deja un movimiento raro): probar primero sin estabilizar.
+  - **Crudos de iPhone HDR** (`color_transfer` = `arib-std-b67`): proxies con tonemap HLG→SDR BT.709 (ver `src/trabajos/2026-10-29_cei_halloween/hacer_proxies.sh`). Chequear con ffprobe antes de hacer proxies.
+  - **Variar gráficos:** cada placa o gráfico nuevo cambia colores (dentro de la marca), composición y animación; nunca repetir el anterior.
+  - **Ortografía RAE** en todo texto en pantalla (p. ej. "abasto", "ológrafa" sin h, aunque la voz o Whisper digan otra cosa).
+  - **Bloomie sobre video real:** rig 2D plano tipo motion graphic, nunca el 3D de Blender (rechazado en `2026-10-21_rastro_pau-mascota`).
+  - **Material de clientes:** originales y recursos de marca en `Documents/RASTRO/Clientes/<Cliente>/` (`carpetaClientes` de `herramientas.json`); anotar la subcarpeta usada en `TRABAJO.md`.
+  - **"Solo eso, nada más":** hacer únicamente el cambio pedido y avisar de los relacionados sin tocarlos.
 - Remotion copia TODO `public/` en cada render: mantener solo trabajos activos; al terminar, `/cerrar-trabajo` mueve el material pesado a `<carpetaArchivo>/<ID>/`.
 - IDs de composición: solo letras, números y guiones (`<cliente>-<pieza>-<variante>`); se registran en `src/trabajos/index.ts`.
 
