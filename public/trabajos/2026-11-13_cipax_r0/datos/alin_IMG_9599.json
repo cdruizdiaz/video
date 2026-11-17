@@ -1,0 +1,47 @@
+[
+ {
+  "palabra": "Pensado",
+  "ini": 1.2,
+  "fin": 1.54
+ },
+ {
+  "palabra": "para",
+  "ini": 1.62,
+  "fin": 1.76
+ },
+ {
+  "palabra": "hacerte",
+  "ini": 1.8,
+  "fin": 2.12
+ },
+ {
+  "palabra": "más",
+  "ini": 2.16,
+  "fin": 2.26
+ },
+ {
+  "palabra": "fácil",
+  "ini": 2.34,
+  "fin": 2.72
+ },
+ {
+  "palabra": "el",
+  "ini": 3.0,
+  "fin": 3.08
+ },
+ {
+  "palabra": "día",
+  "ini": 3.12,
+  "fin": 3.2
+ },
+ {
+  "palabra": "a",
+  "ini": 3.26,
+  "fin": 3.28
+ },
+ {
+  "palabra": "día.",
+  "ini": 3.32,
+  "fin": 3.5
+ }
+]

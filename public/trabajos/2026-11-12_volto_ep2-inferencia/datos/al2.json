@@ -1,0 +1,482 @@
+[
+ {
+  "palabra": "pueden",
+  "ini": 26.74,
+  "fin": 26.86
+ },
+ {
+  "palabra": "tener",
+  "ini": 26.9,
+  "fin": 27.06
+ },
+ {
+  "palabra": "diferentes",
+  "ini": 27.1,
+  "fin": 27.44
+ },
+ {
+  "palabra": "modelos",
+  "ini": 27.52,
+  "fin": 27.86
+ },
+ {
+  "palabra": "de",
+  "ini": 27.88,
+  "fin": 27.98
+ },
+ {
+  "palabra": "pricing",
+  "ini": 28.26,
+  "fin": 28.68
+ },
+ {
+  "palabra": "te",
+  "ini": 28.74,
+  "fin": 28.8
+ },
+ {
+  "palabra": "pueden",
+  "ini": 28.86,
+  "fin": 29.04
+ },
+ {
+  "palabra": "hacer",
+  "ini": 29.08,
+  "fin": 29.28
+ },
+ {
+  "palabra": "ahorro",
+  "ini": 29.92,
+  "fin": 30.24
+ },
+ {
+  "palabra": "por",
+  "ini": 30.32,
+  "fin": 30.42
+ },
+ {
+  "palabra": "comprar",
+  "ini": 30.8,
+  "fin": 31.04
+ },
+ {
+  "palabra": "masivamente",
+  "ini": 31.1,
+  "fin": 31.58
+ },
+ {
+  "palabra": "etc.",
+  "ini": 31.62,
+  "fin": 31.86
+ },
+ {
+  "palabra": "etc.",
+  "ini": 31.88,
+  "fin": 32.16
+ },
+ {
+  "palabra": "pero",
+  "ini": 32.52,
+  "fin": 32.66
+ },
+ {
+  "palabra": "su",
+  "ini": 32.74,
+  "fin": 32.82
+ },
+ {
+  "palabra": "servicio",
+  "ini": 32.9,
+  "fin": 33.38
+ },
+ {
+  "palabra": "en",
+  "ini": 33.42,
+  "fin": 33.46
+ },
+ {
+  "palabra": "esta",
+  "ini": 33.48,
+  "fin": 33.58
+ },
+ {
+  "palabra": "industria",
+  "ini": 33.6,
+  "fin": 33.98
+ },
+ {
+  "palabra": "es",
+  "ini": 34.5,
+  "fin": 34.64
+ },
+ {
+  "palabra": "pura",
+  "ini": 35.1,
+  "fin": 35.3
+ },
+ {
+  "palabra": "inferencia",
+  "ini": 35.34,
+  "fin": 35.74
+ },
+ {
+  "palabra": "este",
+  "ini": 35.92,
+  "fin": 36.12
+ },
+ {
+  "palabra": "te",
+  "ini": 36.2,
+  "fin": 36.26
+ },
+ {
+  "palabra": "diría",
+  "ini": 36.3,
+  "fin": 36.44
+ },
+ {
+  "palabra": "que",
+  "ini": 36.5,
+  "fin": 36.58
+ },
+ {
+  "palabra": "es",
+  "ini": 36.6,
+  "fin": 36.7
+ },
+ {
+  "palabra": "hoy",
+  "ini": 36.8,
+  "fin": 36.92
+ },
+ {
+  "palabra": "en",
+  "ini": 36.96,
+  "fin": 37.0
+ },
+ {
+  "palabra": "día",
+  "ini": 37.02,
+  "fin": 37.12
+ },
+ {
+  "palabra": "uno",
+  "ini": 37.24,
+  "fin": 37.32
+ },
+ {
+  "palabra": "de",
+  "ini": 37.34,
+  "fin": 37.38
+ },
+ {
+  "palabra": "los",
+  "ini": 37.4,
+  "fin": 37.48
+ },
+ {
+  "palabra": "más",
+  "ini": 37.54,
+  "fin": 37.66
+ },
+ {
+  "palabra": "sólidos",
+  "ini": 37.72,
+  "fin": 38.1
+ },
+ {
+  "palabra": "en",
+  "ini": 38.34,
+  "fin": 38.4
+ },
+ {
+  "palabra": "todo",
+  "ini": 38.44,
+  "fin": 38.68
+ },
+ {
+  "palabra": "este",
+  "ini": 38.74,
+  "fin": 38.86
+ },
+ {
+  "palabra": "esquema",
+  "ini": 38.88,
+  "fin": 39.1
+ },
+ {
+  "palabra": "de",
+  "ini": 39.16,
+  "fin": 39.2
+ },
+ {
+  "palabra": "la",
+  "ini": 39.22,
+  "fin": 39.26
+ },
+ {
+  "palabra": "industria",
+  "ini": 39.28,
+  "fin": 39.48
+ },
+ {
+  "palabra": "porque",
+  "ini": 39.5,
+  "fin": 39.62
+ },
+ {
+  "palabra": "está",
+  "ini": 39.64,
+  "fin": 39.72
+ },
+ {
+  "palabra": "clarísimo",
+  "ini": 39.82,
+  "fin": 40.32
+ },
+ {
+  "palabra": "de",
+  "ini": 40.36,
+  "fin": 40.4
+ },
+ {
+  "palabra": "hecho",
+  "ini": 40.42,
+  "fin": 40.54
+ },
+ {
+  "palabra": "por",
+  "ini": 40.9,
+  "fin": 40.98
+ },
+ {
+  "palabra": "eso",
+  "ini": 41.02,
+  "fin": 41.18
+ },
+ {
+  "palabra": "todos",
+  "ini": 41.36,
+  "fin": 41.56
+ },
+ {
+  "palabra": "los",
+  "ini": 41.58,
+  "fin": 41.78
+ },
+ {
+  "palabra": "aumentos",
+  "ini": 41.92,
+  "fin": 42.32
+ },
+ {
+  "palabra": "en",
+  "ini": 42.38,
+  "fin": 42.42
+ },
+ {
+  "palabra": "memoria",
+  "ini": 42.48,
+  "fin": 42.74
+ },
+ {
+  "palabra": "RAM",
+  "ini": 42.84,
+  "fin": 43.0
+ },
+ {
+  "palabra": "en",
+  "ini": 43.44,
+  "fin": 43.9
+ },
+ {
+  "palabra": "placa",
+  "ini": 45.24,
+  "fin": 45.56
+ },
+ {
+  "palabra": "de",
+  "ini": 45.66,
+  "fin": 45.72
+ },
+ {
+  "palabra": "video",
+  "ini": 45.8,
+  "fin": 46.0
+ },
+ {
+  "palabra": "y",
+  "ini": 46.1,
+  "fin": 46.12
+ },
+ {
+  "palabra": "también",
+  "ini": 46.26,
+  "fin": 46.56
+ },
+ {
+  "palabra": "en",
+  "ini": 47.14,
+  "fin": 47.3
+ },
+ {
+  "palabra": "almacenamiento",
+  "ini": 47.58,
+  "fin": 48.44
+ },
+ {
+  "palabra": "en",
+  "ini": 48.52,
+  "fin": 48.56
+ },
+ {
+  "palabra": "todo",
+  "ini": 48.58,
+  "fin": 48.68
+ },
+ {
+  "palabra": "en",
+  "ini": 48.76,
+  "fin": 48.8
+ },
+ {
+  "palabra": "la",
+  "ini": 48.88,
+  "fin": 48.94
+ },
+ {
+  "palabra": "CPU",
+  "ini": 49.04,
+  "fin": 49.32
+ },
+ {
+  "palabra": "y",
+  "ini": 49.36,
+  "fin": 49.38
+ },
+ {
+  "palabra": "lo",
+  "ini": 49.4,
+  "fin": 49.44
+ },
+ {
+  "palabra": "que",
+  "ini": 49.46,
+  "fin": 49.52
+ },
+ {
+  "palabra": "sea",
+  "ini": 49.54,
+  "fin": 49.64
+ },
+ {
+  "palabra": "porque",
+  "ini": 50.04,
+  "fin": 50.22
+ },
+ {
+  "palabra": "estos",
+  "ini": 50.26,
+  "fin": 50.38
+ },
+ {
+  "palabra": "grandes",
+  "ini": 50.42,
+  "fin": 50.66
+ },
+ {
+  "palabra": "proveedores",
+  "ini": 50.7,
+  "fin": 51.06
+ },
+ {
+  "palabra": "están",
+  "ini": 51.1,
+  "fin": 51.24
+ },
+ {
+  "palabra": "ganando",
+  "ini": 51.28,
+  "fin": 51.66
+ },
+ {
+  "palabra": "todos",
+  "ini": 51.78,
+  "fin": 51.88
+ },
+ {
+  "palabra": "le",
+  "ini": 51.92,
+  "fin": 51.98
+ },
+ {
+  "palabra": "están",
+  "ini": 52.0,
+  "fin": 52.12
+ },
+ {
+  "palabra": "poniendo",
+  "ini": 52.14,
+  "fin": 52.36
+ },
+ {
+  "palabra": "plata",
+  "ini": 52.4,
+  "fin": 52.58
+ },
+ {
+  "palabra": "ahí",
+  "ini": 52.6,
+  "fin": 52.72
+ },
+ {
+  "palabra": "y",
+  "ini": 53.38,
+  "fin": 53.4
+ },
+ {
+  "palabra": "están",
+  "ini": 53.44,
+  "fin": 53.56
+ },
+ {
+  "palabra": "invirtiendo",
+  "ini": 53.62,
+  "fin": 54.1
+ },
+ {
+  "palabra": "en",
+  "ini": 54.46,
+  "fin": 54.54
+ },
+ {
+  "palabra": "tener",
+  "ini": 54.68,
+  "fin": 54.9
+ },
+ {
+  "palabra": "su",
+  "ini": 54.96,
+  "fin": 55.04
+ },
+ {
+  "palabra": "lugar",
+  "ini": 55.06,
+  "fin": 55.22
+ },
+ {
+  "palabra": "en",
+  "ini": 55.24,
+  "fin": 55.28
+ },
+ {
+  "palabra": "el",
+  "ini": 55.34,
+  "fin": 55.38
+ },
+ {
+  "palabra": "mercado",
+  "ini": 55.42,
+  "fin": 55.76
+ }
+]

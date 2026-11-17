@@ -42,6 +42,10 @@ import { composiciones as docbaR1Nov } from "./2026-10-27_docba_r1-nov/composici
 import { composiciones as docbaR3Nov } from "./2026-10-28_docba_r3-nov/composiciones";
 import { composiciones as docbaR2Nov } from "./2026-10-28_docba_r2-nov/composiciones";
 import { composiciones as docbaR4Nov } from "./2026-10-28_docba_r4-nov/composiciones";
+import { composiciones as voltoEp1LaboratoriosIa } from "./2026-11-06_volto_ep1-laboratorios-ia/composiciones";
+import { composiciones as voltoEp2Inferencia } from "./2026-11-12_volto_ep2-inferencia/composiciones";
+import { composiciones as cipaxR0 } from "./2026-11-13_cipax_r0/composiciones";
+import { composiciones as ceiBookOfWishesPlacas } from "./2026-11-16_cei_book-of-wishes-placas/composiciones";
 import type { Trabajo } from "./tipos";
 
 export const TRABAJOS: Trabajo[] = [
@@ -88,4 +92,8 @@ export const TRABAJOS: Trabajo[] = [
   { id: "2026-10-28_docba_r3-nov", composiciones: docbaR3Nov },
   { id: "2026-10-28_docba_r2-nov", composiciones: docbaR2Nov },
   { id: "2026-10-28_docba_r4-nov", composiciones: docbaR4Nov },
+  { id: "2026-11-06_volto_ep1-laboratorios-ia", composiciones: voltoEp1LaboratoriosIa },
+  { id: "2026-11-12_volto_ep2-inferencia", composiciones: voltoEp2Inferencia },
+  { id: "2026-11-13_cipax_r0", composiciones: cipaxR0 },
+  { id: "2026-11-16_cei_book-of-wishes-placas", composiciones: ceiBookOfWishesPlacas },
 ];

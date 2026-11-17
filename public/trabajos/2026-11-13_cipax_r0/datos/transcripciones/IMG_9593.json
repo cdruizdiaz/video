@@ -1,0 +1,51 @@
+{
+  "archivo": "IMG_9593.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 2833,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        1106,
+        2268
+      ],
+      [
+        2583,
+        2833
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 1106,
+      "hastaMs": 2086,
+      "texto": "tu organización"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " tu",
+      "fromMs": 1246,
+      "toMs": 1246,
+      "dtwMs": 1406,
+      "p": 0.606944
+    },
+    {
+      "text": " organiz",
+      "fromMs": 1356,
+      "toMs": 1706,
+      "dtwMs": 1686,
+      "p": 0.992795
+    },
+    {
+      "text": "ación",
+      "fromMs": 1776,
+      "toMs": 2086,
+      "dtwMs": 2066,
+      "p": 0.998291
+    }
+  ]
+}

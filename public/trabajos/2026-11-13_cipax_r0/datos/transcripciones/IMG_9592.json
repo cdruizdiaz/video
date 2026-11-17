@@ -1,0 +1,218 @@
+{
+  "archivo": "IMG_9592.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7437,
+  "vad": null,
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 7440,
+      "texto": "No es que no te lleves bien con la tecnología, es que esas herramientas no se pensaron para cómo trabaja tu organización."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " No",
+      "fromMs": 0,
+      "toMs": 200,
+      "dtwMs": 1100,
+      "p": 0.34001
+    },
+    {
+      "text": " es",
+      "fromMs": 200,
+      "toMs": 400,
+      "dtwMs": 1180,
+      "p": 0.947121
+    },
+    {
+      "text": " que",
+      "fromMs": 400,
+      "toMs": 700,
+      "dtwMs": 1260,
+      "p": 0.995327
+    },
+    {
+      "text": " no",
+      "fromMs": 730,
+      "toMs": 760,
+      "dtwMs": 1380,
+      "p": 0.995611
+    },
+    {
+      "text": " te",
+      "fromMs": 990,
+      "toMs": 1100,
+      "dtwMs": 1480,
+      "p": 0.986486
+    },
+    {
+      "text": " lle",
+      "fromMs": 1100,
+      "toMs": 1400,
+      "dtwMs": 1640,
+      "p": 0.951824
+    },
+    {
+      "text": "ves",
+      "fromMs": 1400,
+      "toMs": 1740,
+      "dtwMs": 1740,
+      "p": 0.983918
+    },
+    {
+      "text": " bien",
+      "fromMs": 1740,
+      "toMs": 1920,
+      "dtwMs": 1900,
+      "p": 0.981452
+    },
+    {
+      "text": " con",
+      "fromMs": 1920,
+      "toMs": 2070,
+      "dtwMs": 2020,
+      "p": 0.956435
+    },
+    {
+      "text": " la",
+      "fromMs": 2070,
+      "toMs": 2140,
+      "dtwMs": 2140,
+      "p": 0.994977
+    },
+    {
+      "text": " tecnología",
+      "fromMs": 2200,
+      "toMs": 2700,
+      "dtwMs": 2620,
+      "p": 0.970023
+    },
+    {
+      "text": ",",
+      "fromMs": 2700,
+      "toMs": 2850,
+      "dtwMs": 3220,
+      "p": 0.446084
+    },
+    {
+      "text": " es",
+      "fromMs": 2860,
+      "toMs": 2870,
+      "dtwMs": 3220,
+      "p": 0.646131
+    },
+    {
+      "text": " que",
+      "fromMs": 3140,
+      "toMs": 3200,
+      "dtwMs": 3320,
+      "p": 0.998211
+    },
+    {
+      "text": " esas",
+      "fromMs": 3280,
+      "toMs": 3550,
+      "dtwMs": 3520,
+      "p": 0.932399
+    },
+    {
+      "text": " herramient",
+      "fromMs": 3650,
+      "toMs": 4200,
+      "dtwMs": 3880,
+      "p": 0.98217
+    },
+    {
+      "text": "as",
+      "fromMs": 4200,
+      "toMs": 4230,
+      "dtwMs": 4280,
+      "p": 0.999874
+    },
+    {
+      "text": " no",
+      "fromMs": 4440,
+      "toMs": 4460,
+      "dtwMs": 4580,
+      "p": 0.92984
+    },
+    {
+      "text": " se",
+      "fromMs": 4460,
+      "toMs": 4600,
+      "dtwMs": 4720,
+      "p": 0.989519
+    },
+    {
+      "text": " pens",
+      "fromMs": 4600,
+      "toMs": 4890,
+      "dtwMs": 4960,
+      "p": 0.987833
+    },
+    {
+      "text": "aron",
+      "fromMs": 4980,
+      "toMs": 5200,
+      "dtwMs": 5180,
+      "p": 0.999371
+    },
+    {
+      "text": " para",
+      "fromMs": 5200,
+      "toMs": 5460,
+      "dtwMs": 5440,
+      "p": 0.910081
+    },
+    {
+      "text": " cómo",
+      "fromMs": 5460,
+      "toMs": 5700,
+      "dtwMs": 5660,
+      "p": 0.747039
+    },
+    {
+      "text": " trabaj",
+      "fromMs": 5700,
+      "toMs": 6190,
+      "dtwMs": 5940,
+      "p": 0.964185
+    },
+    {
+      "text": "a",
+      "fromMs": 6190,
+      "toMs": 6230,
+      "dtwMs": 6220,
+      "p": 0.994482
+    },
+    {
+      "text": " tu",
+      "fromMs": 6430,
+      "toMs": 6430,
+      "dtwMs": 6500,
+      "p": 0.979404
+    },
+    {
+      "text": " organiz",
+      "fromMs": 6460,
+      "toMs": 7010,
+      "dtwMs": 6780,
+      "p": 0.993961
+    },
+    {
+      "text": "ación",
+      "fromMs": 7010,
+      "toMs": 7170,
+      "dtwMs": 7100,
+      "p": 0.998157
+    },
+    {
+      "text": ".",
+      "fromMs": 7300,
+      "toMs": 7430,
+      "dtwMs": 7200,
+      "p": 0.73271
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+[
+ {
+  "palabra": "No",
+  "ini": 1.04,
+  "fin": 1.08
+ },
+ {
+  "palabra": "es",
+  "ini": 1.12,
+  "fin": 1.16
+ },
+ {
+  "palabra": "que",
+  "ini": 1.18,
+  "fin": 1.26
+ },
+ {
+  "palabra": "no",
+  "ini": 1.3,
+  "fin": 1.36
+ },
+ {
+  "palabra": "te",
+  "ini": 1.42,
+  "fin": 1.46
+ },
+ {
+  "palabra": "lleves",
+  "ini": 1.52,
+  "fin": 1.74
+ },
+ {
+  "palabra": "bien",
+  "ini": 1.8,
+  "fin": 1.92
+ },
+ {
+  "palabra": "con",
+  "ini": 1.96,
+  "fin": 2.04
+ },
+ {
+  "palabra": "la",
+  "ini": 2.08,
+  "fin": 2.12
+ },
+ {
+  "palabra": "tecnología,",
+  "ini": 2.18,
+  "fin": 2.84
+ },
+ {
+  "palabra": "es",
+  "ini": 3.16,
+  "fin": 3.22
+ },
+ {
+  "palabra": "que",
+  "ini": 3.24,
+  "fin": 3.32
+ },
+ {
+  "palabra": "esas",
+  "ini": 3.42,
+  "fin": 3.58
+ },
+ {
+  "palabra": "herramientas",
+  "ini": 3.64,
+  "fin": 4.28
+ },
+ {
+  "palabra": "no",
+  "ini": 4.52,
+  "fin": 4.58
+ },
+ {
+  "palabra": "se",
+  "ini": 4.64,
+  "fin": 4.7
+ },
+ {
+  "palabra": "pensaron",
+  "ini": 4.78,
+  "fin": 5.2
+ },
+ {
+  "palabra": "para",
+  "ini": 5.3,
+  "fin": 5.46
+ },
+ {
+  "palabra": "cómo",
+  "ini": 5.56,
+  "fin": 5.7
+ },
+ {
+  "palabra": "trabaja",
+  "ini": 5.76,
+  "fin": 6.14
+ },
+ {
+  "palabra": "tu",
+  "ini": 6.42,
+  "fin": 6.5
+ },
+ {
+  "palabra": "organización.",
+  "ini": 6.56,
+  "fin": 7.1
+ }
+]

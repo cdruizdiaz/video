@@ -1,0 +1,194 @@
+{
+  "archivo": "IMG_9589.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7103,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        1112,
+        6487
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 1112,
+      "hastaMs": 6487,
+      "texto": "¿Tenés una PyME y probaste un montón de herramientas digitales y ninguna te sirvió?"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " ¿",
+      "fromMs": 1112,
+      "toMs": 1212,
+      "dtwMs": 2012,
+      "p": 0.494339
+    },
+    {
+      "text": "T",
+      "fromMs": 1342,
+      "toMs": 1392,
+      "dtwMs": 2112,
+      "p": 0.875395
+    },
+    {
+      "text": "en",
+      "fromMs": 1392,
+      "toMs": 1672,
+      "dtwMs": 2212,
+      "p": 0.899995
+    },
+    {
+      "text": "és",
+      "fromMs": 1972,
+      "toMs": 1972,
+      "dtwMs": 2312,
+      "p": 0.907588
+    },
+    {
+      "text": " una",
+      "fromMs": 2062,
+      "toMs": 2402,
+      "dtwMs": 2472,
+      "p": 0.978607
+    },
+    {
+      "text": " Py",
+      "fromMs": 2402,
+      "toMs": 2692,
+      "dtwMs": 2652,
+      "p": 0.495687
+    },
+    {
+      "text": "ME",
+      "fromMs": 2692,
+      "toMs": 2912,
+      "dtwMs": 2792,
+      "p": 0.654564
+    },
+    {
+      "text": " y",
+      "fromMs": 3032,
+      "toMs": 3062,
+      "dtwMs": 3112,
+      "p": 0.841967
+    },
+    {
+      "text": " prob",
+      "fromMs": 3062,
+      "toMs": 3262,
+      "dtwMs": 3292,
+      "p": 0.978643
+    },
+    {
+      "text": "aste",
+      "fromMs": 3262,
+      "toMs": 3352,
+      "dtwMs": 3452,
+      "p": 0.979985
+    },
+    {
+      "text": " un",
+      "fromMs": 3482,
+      "toMs": 3582,
+      "dtwMs": 3592,
+      "p": 0.939628
+    },
+    {
+      "text": " montón",
+      "fromMs": 3582,
+      "toMs": 3912,
+      "dtwMs": 3872,
+      "p": 0.994277
+    },
+    {
+      "text": " de",
+      "fromMs": 3912,
+      "toMs": 3982,
+      "dtwMs": 4012,
+      "p": 0.983368
+    },
+    {
+      "text": " herramient",
+      "fromMs": 3982,
+      "toMs": 4332,
+      "dtwMs": 4212,
+      "p": 0.991467
+    },
+    {
+      "text": "as",
+      "fromMs": 4332,
+      "toMs": 4412,
+      "dtwMs": 4452,
+      "p": 0.998624
+    },
+    {
+      "text": " digital",
+      "fromMs": 4412,
+      "toMs": 5012,
+      "dtwMs": 4732,
+      "p": 0.972558
+    },
+    {
+      "text": "es",
+      "fromMs": 5012,
+      "toMs": 5032,
+      "dtwMs": 5112,
+      "p": 0.994981
+    },
+    {
+      "text": " y",
+      "fromMs": 5222,
+      "toMs": 5222,
+      "dtwMs": 5372,
+      "p": 0.695733
+    },
+    {
+      "text": " ninguna",
+      "fromMs": 5322,
+      "toMs": 5722,
+      "dtwMs": 5632,
+      "p": 0.951523
+    },
+    {
+      "text": " te",
+      "fromMs": 5722,
+      "toMs": 5802,
+      "dtwMs": 5792,
+      "p": 0.985158
+    },
+    {
+      "text": " sir",
+      "fromMs": 5942,
+      "toMs": 6052,
+      "dtwMs": 5972,
+      "p": 0.994622
+    },
+    {
+      "text": "vi",
+      "fromMs": 6052,
+      "toMs": 6182,
+      "dtwMs": 6072,
+      "p": 0.987483
+    },
+    {
+      "text": "ó",
+      "fromMs": 6182,
+      "toMs": 6232,
+      "dtwMs": 6172,
+      "p": 0.999743
+    },
+    {
+      "text": "?",
+      "fromMs": 6232,
+      "toMs": 6242,
+      "dtwMs": 6372,
+      "p": 0.99507
+    }
+  ]
+}

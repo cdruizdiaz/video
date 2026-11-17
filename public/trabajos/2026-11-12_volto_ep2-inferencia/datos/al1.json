@@ -1,0 +1,417 @@
+[
+ {
+  "palabra": "lo",
+  "ini": 0.02,
+  "fin": 0.1
+ },
+ {
+  "palabra": "que",
+  "ini": 0.12,
+  "fin": 0.18
+ },
+ {
+  "palabra": "yo",
+  "ini": 0.2,
+  "fin": 0.24
+ },
+ {
+  "palabra": "llamo",
+  "ini": 0.26,
+  "fin": 0.38
+ },
+ {
+  "palabra": "los",
+  "ini": 0.4,
+  "fin": 0.48
+ },
+ {
+  "palabra": "proveedores",
+  "ini": 0.68,
+  "fin": 1.02
+ },
+ {
+  "palabra": "de",
+  "ini": 1.06,
+  "fin": 1.12
+ },
+ {
+  "palabra": "inferencia",
+  "ini": 1.2,
+  "fin": 1.9
+ },
+ {
+  "palabra": "que",
+  "ini": 2.0,
+  "fin": 2.06
+ },
+ {
+  "palabra": "este",
+  "ini": 2.08,
+  "fin": 2.18
+ },
+ {
+  "palabra": "es",
+  "ini": 2.2,
+  "fin": 2.24
+ },
+ {
+  "palabra": "un",
+  "ini": 2.28,
+  "fin": 2.34
+ },
+ {
+  "palabra": "gran",
+  "ini": 2.4,
+  "fin": 2.58
+ },
+ {
+  "palabra": "player",
+  "ini": 2.68,
+  "fin": 3.06
+ },
+ {
+  "palabra": "no",
+  "ini": 3.96,
+  "fin": 4.02
+ },
+ {
+  "palabra": "necesariamente",
+  "ini": 4.1,
+  "fin": 4.82
+ },
+ {
+  "palabra": "hacen",
+  "ini": 4.88,
+  "fin": 5.22
+ },
+ {
+  "palabra": "modelos",
+  "ini": 5.38,
+  "fin": 5.76
+ },
+ {
+  "palabra": "de",
+  "ini": 5.78,
+  "fin": 5.82
+ },
+ {
+  "palabra": "inteligencia",
+  "ini": 5.84,
+  "fin": 6.16
+ },
+ {
+  "palabra": "artificial",
+  "ini": 6.2,
+  "fin": 6.62
+ },
+ {
+  "palabra": "algunos",
+  "ini": 7.34,
+  "fin": 7.6
+ },
+ {
+  "palabra": "puede",
+  "ini": 7.64,
+  "fin": 7.78
+ },
+ {
+  "palabra": "ser",
+  "ini": 7.84,
+  "fin": 7.9
+ },
+ {
+  "palabra": "que",
+  "ini": 7.94,
+  "fin": 8.0
+ },
+ {
+  "palabra": "sí",
+  "ini": 8.04,
+  "fin": 8.1
+ },
+ {
+  "palabra": "como",
+  "ini": 8.2,
+  "fin": 8.32
+ },
+ {
+  "palabra": "OpenAI",
+  "ini": 8.42,
+  "fin": 8.76
+ },
+ {
+  "palabra": "y",
+  "ini": 8.82,
+  "fin": 8.84
+ },
+ {
+  "palabra": "Anthropic",
+  "ini": 8.9,
+  "fin": 9.26
+ },
+ {
+  "palabra": "pero",
+  "ini": 9.84,
+  "fin": 10.0
+ },
+ {
+  "palabra": "lo",
+  "ini": 10.14,
+  "fin": 10.18
+ },
+ {
+  "palabra": "que",
+  "ini": 10.26,
+  "fin": 10.34
+ },
+ {
+  "palabra": "sí",
+  "ini": 10.4,
+  "fin": 10.48
+ },
+ {
+  "palabra": "o",
+  "ini": 10.56,
+  "fin": 10.58
+ },
+ {
+  "palabra": "sí",
+  "ini": 10.66,
+  "fin": 10.72
+ },
+ {
+  "palabra": "te",
+  "ini": 11.1,
+  "fin": 11.18
+ },
+ {
+  "palabra": "ofrecen",
+  "ini": 11.22,
+  "fin": 11.66
+ },
+ {
+  "palabra": "es",
+  "ini": 11.88,
+  "fin": 12.0
+ },
+ {
+  "palabra": "inferencia",
+  "ini": 12.16,
+  "fin": 12.86
+ },
+ {
+  "palabra": "es",
+  "ini": 12.96,
+  "fin": 13.02
+ },
+ {
+  "palabra": "inferencia",
+  "ini": 13.08,
+  "fin": 13.54
+ },
+ {
+  "palabra": "como",
+  "ini": 13.6,
+  "fin": 13.72
+ },
+ {
+  "palabra": "servicio",
+  "ini": 13.8,
+  "fin": 14.32
+ },
+ {
+  "palabra": "que",
+  "ini": 14.6,
+  "fin": 14.66
+ },
+ {
+  "palabra": "básicamente",
+  "ini": 14.7,
+  "fin": 15.12
+ },
+ {
+  "palabra": "son",
+  "ini": 15.18,
+  "fin": 15.34
+ },
+ {
+  "palabra": "racks",
+  "ini": 15.56,
+  "fin": 15.78
+ },
+ {
+  "palabra": "enormes",
+  "ini": 15.86,
+  "fin": 16.28
+ },
+ {
+  "palabra": "edificios",
+  "ini": 16.36,
+  "fin": 16.66
+ },
+ {
+  "palabra": "enormes",
+  "ini": 16.7,
+  "fin": 17.0
+ },
+ {
+  "palabra": "de",
+  "ini": 17.04,
+  "fin": 17.08
+ },
+ {
+  "palabra": "placas",
+  "ini": 17.18,
+  "fin": 17.44
+ },
+ {
+  "palabra": "gráficas",
+  "ini": 17.48,
+  "fin": 18.0
+ },
+ {
+  "palabra": "que",
+  "ini": 18.74,
+  "fin": 18.84
+ },
+ {
+  "palabra": "te",
+  "ini": 19.1,
+  "fin": 19.2
+ },
+ {
+  "palabra": "hostean",
+  "ini": 19.66,
+  "fin": 20.1
+ },
+ {
+  "palabra": "un",
+  "ini": 20.26,
+  "fin": 20.32
+ },
+ {
+  "palabra": "modelo",
+  "ini": 20.38,
+  "fin": 20.66
+ },
+ {
+  "palabra": "propio",
+  "ini": 20.74,
+  "fin": 21.08
+ },
+ {
+  "palabra": "o",
+  "ini": 21.18,
+  "fin": 21.2
+ },
+ {
+  "palabra": "un",
+  "ini": 21.3,
+  "fin": 21.36
+ },
+ {
+  "palabra": "modelo",
+  "ini": 21.4,
+  "fin": 21.76
+ },
+ {
+  "palabra": "de",
+  "ini": 21.82,
+  "fin": 21.88
+ },
+ {
+  "palabra": "un",
+  "ini": 21.94,
+  "fin": 21.98
+ },
+ {
+  "palabra": "third",
+  "ini": 22.02,
+  "fin": 22.14
+ },
+ {
+  "palabra": "party",
+  "ini": 22.18,
+  "fin": 22.48
+ },
+ {
+  "palabra": "y",
+  "ini": 23.2,
+  "fin": 23.22
+ },
+ {
+  "palabra": "te",
+  "ini": 23.28,
+  "fin": 23.34
+ },
+ {
+  "palabra": "lo",
+  "ini": 23.38,
+  "fin": 23.46
+ },
+ {
+  "palabra": "ofrecen",
+  "ini": 23.5,
+  "fin": 24.04
+ },
+ {
+  "palabra": "a",
+  "ini": 24.18,
+  "fin": 24.2
+ },
+ {
+  "palabra": "vos",
+  "ini": 24.28,
+  "fin": 24.5
+ },
+ {
+  "palabra": "a",
+  "ini": 24.6,
+  "fin": 24.62
+ },
+ {
+  "palabra": "un",
+  "ini": 24.68,
+  "fin": 24.72
+ },
+ {
+  "palabra": "precio",
+  "ini": 24.76,
+  "fin": 24.98
+ },
+ {
+  "palabra": "por",
+  "ini": 25.08,
+  "fin": 25.22
+ },
+ {
+  "palabra": "token",
+  "ini": 25.3,
+  "fin": 25.54
+ },
+ {
+  "palabra": "te",
+  "ini": 25.62,
+  "fin": 25.68
+ },
+ {
+  "palabra": "lo",
+  "ini": 25.72,
+  "fin": 25.78
+ },
+ {
+  "palabra": "venden",
+  "ini": 25.8,
+  "fin": 26.02
+ },
+ {
+  "palabra": "por",
+  "ini": 26.08,
+  "fin": 26.18
+ },
+ {
+  "palabra": "token",
+  "ini": 26.24,
+  "fin": 26.42
+ }
+]

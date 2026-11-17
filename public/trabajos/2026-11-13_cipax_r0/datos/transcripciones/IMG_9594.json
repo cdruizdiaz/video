@@ -1,0 +1,119 @@
+{
+  "archivo": "IMG_9594.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 15140,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        0,
+        1138
+      ],
+      [
+        2392,
+        2896
+      ],
+      [
+        6093,
+        7289
+      ],
+      [
+        8015,
+        9337
+      ],
+      [
+        11854,
+        15140
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 0,
+      "hastaMs": 14595,
+      "texto": "Tu organización. Para eso está Cipax."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Tu",
+      "fromMs": 0,
+      "toMs": 880,
+      "dtwMs": 12135,
+      "p": 0.0845926
+    },
+    {
+      "text": " organiz",
+      "fromMs": 880,
+      "toMs": 8388,
+      "dtwMs": 12475,
+      "p": 0.973657
+    },
+    {
+      "text": "ación",
+      "fromMs": 8398,
+      "toMs": 12895,
+      "dtwMs": 12855,
+      "p": 0.985693
+    },
+    {
+      "text": ".",
+      "fromMs": 12895,
+      "toMs": 13065,
+      "dtwMs": 13075,
+      "p": 0.319583
+    },
+    {
+      "text": " Para",
+      "fromMs": 13275,
+      "toMs": 13515,
+      "dtwMs": 13415,
+      "p": 0.822571
+    },
+    {
+      "text": " eso",
+      "fromMs": 13515,
+      "toMs": 13795,
+      "dtwMs": 13795,
+      "p": 0.991008
+    },
+    {
+      "text": " está",
+      "fromMs": 13795,
+      "toMs": 14145,
+      "dtwMs": 14175,
+      "p": 0.791446
+    },
+    {
+      "text": " C",
+      "fromMs": 14145,
+      "toMs": 14205,
+      "dtwMs": 14335,
+      "p": 0.817013
+    },
+    {
+      "text": "ip",
+      "fromMs": 14285,
+      "toMs": 14355,
+      "dtwMs": 14435,
+      "p": 0.796292
+    },
+    {
+      "text": "ax",
+      "fromMs": 14385,
+      "toMs": 14585,
+      "dtwMs": 14575,
+      "p": 0.999666
+    },
+    {
+      "text": ".",
+      "fromMs": 14585,
+      "toMs": 14595,
+      "dtwMs": 14575,
+      "p": 0.848625
+    }
+  ]
+}

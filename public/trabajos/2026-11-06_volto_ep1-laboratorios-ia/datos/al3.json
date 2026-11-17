@@ -1,0 +1,392 @@
+[
+ {
+  "palabra": "que",
+  "ini": 39.1,
+  "fin": 39.16
+ },
+ {
+  "palabra": "son",
+  "ini": 39.18,
+  "fin": 39.32
+ },
+ {
+  "palabra": "estas",
+  "ini": 40.12,
+  "fin": 40.32
+ },
+ {
+  "palabra": "marcas",
+  "ini": 40.4,
+  "fin": 40.8
+ },
+ {
+  "palabra": "que",
+  "ini": 41.14,
+  "fin": 41.22
+ },
+ {
+  "palabra": "de",
+  "ini": 41.24,
+  "fin": 41.28
+ },
+ {
+  "palabra": "alguna",
+  "ini": 41.3,
+  "fin": 41.44
+ },
+ {
+  "palabra": "manera",
+  "ini": 41.48,
+  "fin": 41.76
+ },
+ {
+  "palabra": "lo",
+  "ini": 41.78,
+  "fin": 41.82
+ },
+ {
+  "palabra": "que",
+  "ini": 41.84,
+  "fin": 41.92
+ },
+ {
+  "palabra": "se",
+  "ini": 41.98,
+  "fin": 42.06
+ },
+ {
+  "palabra": "dedican",
+  "ini": 42.14,
+  "fin": 42.46
+ },
+ {
+  "palabra": "a",
+  "ini": 42.5,
+  "fin": 42.54
+ },
+ {
+  "palabra": "hacer",
+  "ini": 42.56,
+  "fin": 42.78
+ },
+ {
+  "palabra": "es",
+  "ini": 43.3,
+  "fin": 43.44
+ },
+ {
+  "palabra": "crear",
+  "ini": 43.7,
+  "fin": 43.92
+ },
+ {
+  "palabra": "modelos",
+  "ini": 43.98,
+  "fin": 44.3
+ },
+ {
+  "palabra": "específicamente",
+  "ini": 44.44,
+  "fin": 44.98
+ },
+ {
+  "palabra": "crear",
+  "ini": 45.12,
+  "fin": 45.38
+ },
+ {
+  "palabra": "modelos",
+  "ini": 45.5,
+  "fin": 45.74
+ },
+ {
+  "palabra": "la",
+  "ini": 45.76,
+  "fin": 45.8
+ },
+ {
+  "palabra": "creación",
+  "ini": 45.86,
+  "fin": 46.12
+ },
+ {
+  "palabra": "de",
+  "ini": 46.14,
+  "fin": 46.18
+ },
+ {
+  "palabra": "modelos",
+  "ini": 46.26,
+  "fin": 46.52
+ },
+ {
+  "palabra": "por",
+  "ini": 46.54,
+  "fin": 46.62
+ },
+ {
+  "palabra": "ejemplo",
+  "ini": 46.66,
+  "fin": 46.96
+ },
+ {
+  "palabra": "gemini",
+  "ini": 47.28,
+  "fin": 47.72
+ },
+ {
+  "palabra": "ge",
+  "ini": 47.82,
+  "fin": 47.92
+ },
+ {
+  "palabra": "pe",
+  "ini": 48,
+  "fin": 48.06
+ },
+ {
+  "palabra": "te",
+  "ini": 48.16,
+  "fin": 48.26
+ },
+ {
+  "palabra": "claude",
+  "ini": 48.84,
+  "fin": 49.58
+ },
+ {
+  "palabra": "kimi",
+  "ini": 49.8,
+  "fin": 50.16
+ },
+ {
+  "palabra": "esto",
+  "ini": 50.82,
+  "fin": 50.94
+ },
+ {
+  "palabra": "es",
+  "ini": 50.96,
+  "fin": 51
+ },
+ {
+  "palabra": "muy",
+  "ini": 51.08,
+  "fin": 51.26
+ },
+ {
+  "palabra": "claro",
+  "ini": 51.34,
+  "fin": 51.68
+ },
+ {
+  "palabra": "y",
+  "ini": 51.78,
+  "fin": 51.8
+ },
+ {
+  "palabra": "muy",
+  "ini": 51.86,
+  "fin": 51.98
+ },
+ {
+  "palabra": "evidente",
+  "ini": 52.04,
+  "fin": 52.46
+ },
+ {
+  "palabra": "en",
+  "ini": 53.02,
+  "fin": 53.1
+ },
+ {
+  "palabra": "algunas",
+  "ini": 53.16,
+  "fin": 53.38
+ },
+ {
+  "palabra": "marcas",
+  "ini": 53.42,
+  "fin": 53.66
+ },
+ {
+  "palabra": "sobre",
+  "ini": 53.7,
+  "fin": 53.82
+ },
+ {
+  "palabra": "todo",
+  "ini": 53.84,
+  "fin": 53.92
+ },
+ {
+  "palabra": "las",
+  "ini": 54,
+  "fin": 54.06
+ },
+ {
+  "palabra": "marcas",
+  "ini": 54.12,
+  "fin": 54.36
+ },
+ {
+  "palabra": "chinas",
+  "ini": 54.44,
+  "fin": 54.76
+ },
+ {
+  "palabra": "o",
+  "ini": 54.82,
+  "fin": 54.84
+ },
+ {
+  "palabra": "en",
+  "ini": 54.9,
+  "fin": 54.94
+ },
+ {
+  "palabra": "laboratorios",
+  "ini": 55.1,
+  "fin": 55.38
+ },
+ {
+  "palabra": "más",
+  "ini": 55.42,
+  "fin": 55.5
+ },
+ {
+  "palabra": "chicos",
+  "ini": 55.58,
+  "fin": 55.88
+ },
+ {
+  "palabra": "que",
+  "ini": 56.22,
+  "fin": 56.28
+ },
+ {
+  "palabra": "no",
+  "ini": 56.32,
+  "fin": 56.36
+ },
+ {
+  "palabra": "trabajan",
+  "ini": 56.42,
+  "fin": 56.74
+ },
+ {
+  "palabra": "tanto",
+  "ini": 56.78,
+  "fin": 57.04
+ },
+ {
+  "palabra": "en el",
+  "ini": 57.12,
+  "fin": 57.86
+ },
+ {
+  "palabra": "nivel",
+  "ini": 57.92,
+  "fin": 58.08
+ },
+ {
+  "palabra": "de",
+  "ini": 58.1,
+  "fin": 58.14
+ },
+ {
+  "palabra": "producto",
+  "ini": 58.22,
+  "fin": 58.6
+ },
+ {
+  "palabra": "no",
+  "ini": 58.66,
+  "fin": 58.72
+ },
+ {
+  "palabra": "trabajan",
+  "ini": 58.76,
+  "fin": 59.06
+ },
+ {
+  "palabra": "tanto",
+  "ini": 59.12,
+  "fin": 59.28
+ },
+ {
+  "palabra": "a",
+  "ini": 59.32,
+  "fin": 59.34
+ },
+ {
+  "palabra": "nivel",
+  "ini": 59.36,
+  "fin": 59.48
+ },
+ {
+  "palabra": "de",
+  "ini": 59.5,
+  "fin": 59.56
+ },
+ {
+  "palabra": "ofrecer",
+  "ini": 59.58,
+  "fin": 59.82
+ },
+ {
+  "palabra": "inferencia",
+  "ini": 59.86,
+  "fin": 60.16
+ },
+ {
+  "palabra": "trabajan",
+  "ini": 60.54,
+  "fin": 60.82
+ },
+ {
+  "palabra": "particularmente",
+  "ini": 60.88,
+  "fin": 61.42
+ },
+ {
+  "palabra": "con",
+  "ini": 61.46,
+  "fin": 61.54
+ },
+ {
+  "palabra": "ofrecer",
+  "ini": 61.56,
+  "fin": 61.8
+ },
+ {
+  "palabra": "un",
+  "ini": 61.84,
+  "fin": 61.88
+ },
+ {
+  "palabra": "modelo",
+  "ini": 61.9,
+  "fin": 62.22
+ },
+ {
+  "palabra": "y",
+  "ini": 63.18,
+  "fin": 63.2
+ },
+ {
+  "palabra": "poder",
+  "ini": 63.46,
+  "fin": 63.6
+ },
+ {
+  "palabra": "publicarlo",
+  "ini": 63.66,
+  "fin": 64.08
+ },
+ {
+  "palabra": "después",
+  "ini": 64.12,
+  "fin": 64.78
+ }
+]

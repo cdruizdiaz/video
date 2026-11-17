@@ -1,0 +1,138 @@
+{
+  "archivo": "IMG_9597.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 5870,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        1151,
+        5180
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 1151,
+      "hastaMs": 5180,
+      "texto": "Construimos soluciones a medida en base a lo que realmente necesitas."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Const",
+      "fromMs": 1391,
+      "toMs": 1501,
+      "dtwMs": 1571,
+      "p": 0.884198
+    },
+    {
+      "text": "ru",
+      "fromMs": 1581,
+      "toMs": 1641,
+      "dtwMs": 1671,
+      "p": 0.999274
+    },
+    {
+      "text": "imos",
+      "fromMs": 1641,
+      "toMs": 1921,
+      "dtwMs": 1971,
+      "p": 0.993987
+    },
+    {
+      "text": " sol",
+      "fromMs": 1921,
+      "toMs": 1961,
+      "dtwMs": 2351,
+      "p": 0.837954
+    },
+    {
+      "text": "uciones",
+      "fromMs": 2231,
+      "toMs": 2611,
+      "dtwMs": 2571,
+      "p": 0.999114
+    },
+    {
+      "text": " a",
+      "fromMs": 2641,
+      "toMs": 2691,
+      "dtwMs": 2711,
+      "p": 0.994831
+    },
+    {
+      "text": " medida",
+      "fromMs": 2691,
+      "toMs": 3121,
+      "dtwMs": 3011,
+      "p": 0.994254
+    },
+    {
+      "text": " en",
+      "fromMs": 3251,
+      "toMs": 3311,
+      "dtwMs": 3371,
+      "p": 0.698643
+    },
+    {
+      "text": " base",
+      "fromMs": 3311,
+      "toMs": 3651,
+      "dtwMs": 3611,
+      "p": 0.990667
+    },
+    {
+      "text": " a",
+      "fromMs": 3651,
+      "toMs": 3711,
+      "dtwMs": 3851,
+      "p": 0.956886
+    },
+    {
+      "text": " lo",
+      "fromMs": 3711,
+      "toMs": 3831,
+      "dtwMs": 3951,
+      "p": 0.982006
+    },
+    {
+      "text": " que",
+      "fromMs": 3831,
+      "toMs": 4021,
+      "dtwMs": 4051,
+      "p": 0.992631
+    },
+    {
+      "text": " realmente",
+      "fromMs": 4021,
+      "toMs": 4571,
+      "dtwMs": 4371,
+      "p": 0.989423
+    },
+    {
+      "text": " neces",
+      "fromMs": 4571,
+      "toMs": 4911,
+      "dtwMs": 4731,
+      "p": 0.932054
+    },
+    {
+      "text": "itas",
+      "fromMs": 4911,
+      "toMs": 4991,
+      "dtwMs": 5011,
+      "p": 0.994907
+    },
+    {
+      "text": ".",
+      "fromMs": 5180,
+      "toMs": 5180,
+      "dtwMs": 5171,
+      "p": 0.791453
+    }
+  ]
+}

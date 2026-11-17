@@ -1,0 +1,131 @@
+{
+  "archivo": "IMG_9595.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 7068,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        558,
+        1062
+      ],
+      [
+        1728,
+        7068
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 558,
+      "hastaMs": 2543,
+      "texto": "Ay, perdón"
+    },
+    {
+      "desdeMs": 2543,
+      "hastaMs": 4783,
+      "texto": "Tu organización"
+    },
+    {
+      "desdeMs": 4783,
+      "hastaMs": 6463,
+      "texto": "Para eso está Cipax"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Ay",
+      "fromMs": 558,
+      "toMs": 878,
+      "dtwMs": 2103,
+      "p": 0.539792
+    },
+    {
+      "text": ",",
+      "fromMs": 878,
+      "toMs": 1058,
+      "dtwMs": 2203,
+      "p": 0.764538
+    },
+    {
+      "text": " perd",
+      "fromMs": 1973,
+      "toMs": 2203,
+      "dtwMs": 2323,
+      "p": 0.997894
+    },
+    {
+      "text": "ón",
+      "fromMs": 2203,
+      "toMs": 2463,
+      "dtwMs": 2463,
+      "p": 0.994495
+    },
+    {
+      "text": " Tu",
+      "fromMs": 2543,
+      "toMs": 2863,
+      "dtwMs": 4043,
+      "p": 0.905807
+    },
+    {
+      "text": " organiz",
+      "fromMs": 2943,
+      "toMs": 3983,
+      "dtwMs": 4363,
+      "p": 0.998803
+    },
+    {
+      "text": "ación",
+      "fromMs": 3983,
+      "toMs": 4783,
+      "dtwMs": 4743,
+      "p": 0.999969
+    },
+    {
+      "text": " Para",
+      "fromMs": 4783,
+      "toMs": 5243,
+      "dtwMs": 5243,
+      "p": 0.91713
+    },
+    {
+      "text": " eso",
+      "fromMs": 5243,
+      "toMs": 5603,
+      "dtwMs": 5603,
+      "p": 0.999582
+    },
+    {
+      "text": " está",
+      "fromMs": 5833,
+      "toMs": 5983,
+      "dtwMs": 6003,
+      "p": 0.859583
+    },
+    {
+      "text": " C",
+      "fromMs": 5983,
+      "toMs": 6073,
+      "dtwMs": 6163,
+      "p": 0.920982
+    },
+    {
+      "text": "ip",
+      "fromMs": 6073,
+      "toMs": 6263,
+      "dtwMs": 6283,
+      "p": 0.70684
+    },
+    {
+      "text": "ax",
+      "fromMs": 6263,
+      "toMs": 6323,
+      "dtwMs": 6443,
+      "p": 0.999836
+    }
+  ]
+}

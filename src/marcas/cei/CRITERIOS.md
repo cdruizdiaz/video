@@ -70,3 +70,8 @@
 ## Historias de IG (montaje musical, 2026-11-03, visita al cementerio)
 - **Cortas (~15 s)** y **sin tomas repetitivas**: una sola toma por momento (no dos del colectivo, no varios grupos parecidos entre tumbas).
 - **Sin placa gráfica final**: cierra con la última toma y fundido a negro (el título de apertura sí va).
+
+## Placas de serie "The book of wishes" (2026-11-16)
+- **Colores del CEI sin irse del azul royal y el vino**: nada de degradés índigo/violeta ni chispas que la hagan parecer "una galaxia".
+- **Sin el medallón/flor dorada del libro** en el centro ("me parece horrible"): título + episodio + "Next episode" sobre el azul, con marco y esquinas doradas.
+- Le gustó la entrada como **tapa de libro que se cierra** sobre la pantalla.

@@ -106,6 +106,7 @@ const CIERRE_FUNDIDO = 9; // frames de fundido de entrada del cierre
 const CIERRE_LOGO_DEMORA = 4; // frames hasta que entra el logo (con fundido)
 const CIERRE_TEXTO_DEMORA = 10; // frames hasta que entran frase y sitio (con fundido)
 const CIERRE_ENTRADA = 14; // frames de la animación de entrada
+const CIERRE_SUBE = 14; // con `sube`: frames en que la placa sube desde abajo, sobre los últimos frames de la toma
 const CIERRE_LOGO_COLORES =
   "linear-gradient(100deg, #f97d55 0%, #95a8a0 42%, #406162 72%, #262626 100%)"; // logo de la placa blanca
 const CIERRE_FRASE_MAX = 120; // tamaño de la frase manuscrita en el cierre "degrade"…
@@ -156,6 +157,7 @@ export type HablaSubtituladaProps = {
     estilo?: "oscuro" | "degrade" | "claro";
     colaAmbiente?: boolean; // el sonido del último clip sigue bajo el cierre y se apaga
     corte?: boolean; // la placa entra por corte (sin fundido con la toma) y solo se anima el logo
+    sube?: boolean; // la placa entra subiendo desde abajo sobre la toma final (dale `pausaMs` a esa toma)
   };
   subtitulos?: {
     estilo?: "capsula" | "reel";
@@ -184,6 +186,9 @@ export type HablaSubtituladaProps = {
   // Capa sobre el video y debajo de logo y subtítulos, en frames de salida (p. ej. grabaciones de pantalla con
   // la voz en off: la persona sigue sonando y los subtítulos quedan encima)
   sobreVideo?: React.ReactNode;
+  // Capa encima de la placa final (p. ej. "próximo episodio"); su frame 0 es cuando la placa ya está en pantalla
+  // (con `sube`, cuando terminó de subir)
+  sobreCierre?: React.ReactNode;
 };
 
 export type CapaDetras = {
@@ -982,12 +987,16 @@ const Cierre: React.FC<{
   sitio: string;
   estilo: "oscuro" | "degrade" | "claro";
   corte?: boolean;
-}> = ({ m, frase, sitio, estilo, corte }) => {
+  sube?: boolean;
+}> = ({ m, frase, sitio, estilo, corte, sube }) => {
   const frame = useCurrentFrame();
-  const fondo = corte
+  const fondo = corte || sube
     ? 1
     : interpolate(frame, [0, CIERRE_FUNDIDO], [0, 1], clamp);
-  const demoraLogo = corte ? 0 : CIERRE_LOGO_DEMORA;
+  const demoraLogo = sube ? CIERRE_SUBE - 4 : corte ? 0 : CIERRE_LOGO_DEMORA;
+  const subida = sube
+    ? interpolate(frame, [0, CIERRE_SUBE], [1, 0], { ...clamp, easing: Easing.bezier(0.22, 1, 0.36, 1) })
+    : 0;
   const logo = interpolate(
     frame,
     [demoraLogo, demoraLogo + CIERRE_ENTRADA],
@@ -1005,7 +1014,7 @@ const Cierre: React.FC<{
   const degrade = estilo === "degrade";
   const claro = estilo === "claro";
   return (
-    <AbsoluteFill>
+    <AbsoluteFill style={{ transform: `translateY(${(subida * 1920).toFixed(1)}px)` }}>
       <AbsoluteFill
         style={{
           background: claro
@@ -1268,9 +1277,16 @@ export const HablaSubtitulada: React.FC<HablaSubtituladaProps> = (p) => {
       {/* el cierre empieza a fundir sobre los últimos frames de la toma final (con `corte`, entra seco) */}
       {p.cierre ? (
         <Sequence
-          from={p.cierre.corte ? finTomas : finTomas - CIERRE_FUNDIDO}
+          from={
+            p.cierre.sube
+              ? finTomas - CIERRE_SUBE
+              : p.cierre.corte
+                ? finTomas
+                : finTomas - CIERRE_FUNDIDO
+          }
           durationInFrames={
-            p.cierre.duracion + (p.cierre.corte ? 0 : CIERRE_FUNDIDO)
+            p.cierre.duracion +
+            (p.cierre.sube ? CIERRE_SUBE : p.cierre.corte ? 0 : CIERRE_FUNDIDO)
           }
           name="cierre"
         >
@@ -1280,7 +1296,16 @@ export const HablaSubtitulada: React.FC<HablaSubtituladaProps> = (p) => {
             sitio={p.cierre.sitio}
             estilo={p.cierre.estilo ?? "oscuro"}
             corte={p.cierre.corte}
+            sube={p.cierre.sube}
           />
+          {p.sobreCierre ? (
+            <Sequence
+              from={p.cierre.sube ? CIERRE_SUBE : p.cierre.corte ? 0 : CIERRE_FUNDIDO}
+              name="sobre el cierre"
+            >
+              {p.sobreCierre}
+            </Sequence>
+          ) : null}
         </Sequence>
       ) : null}
     </AbsoluteFill>

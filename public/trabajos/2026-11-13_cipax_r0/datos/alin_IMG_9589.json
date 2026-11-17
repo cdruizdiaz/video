@@ -1,0 +1,72 @@
+[
+ {
+  "palabra": "¿Tenés",
+  "ini": 2.04,
+  "fin": 2.28
+ },
+ {
+  "palabra": "una",
+  "ini": 2.34,
+  "fin": 2.5
+ },
+ {
+  "palabra": "PyME",
+  "ini": 2.56,
+  "fin": 2.82
+ },
+ {
+  "palabra": "y",
+  "ini": 3.06,
+  "fin": 3.08
+ },
+ {
+  "palabra": "probaste",
+  "ini": 3.14,
+  "fin": 3.48
+ },
+ {
+  "palabra": "un",
+  "ini": 3.52,
+  "fin": 3.58
+ },
+ {
+  "palabra": "montón",
+  "ini": 3.62,
+  "fin": 3.92
+ },
+ {
+  "palabra": "de",
+  "ini": 3.94,
+  "fin": 4.0
+ },
+ {
+  "palabra": "herramientas",
+  "ini": 4.02,
+  "fin": 4.44
+ },
+ {
+  "palabra": "digitales",
+  "ini": 4.48,
+  "fin": 5.06
+ },
+ {
+  "palabra": "y",
+  "ini": 5.32,
+  "fin": 5.34
+ },
+ {
+  "palabra": "ninguna",
+  "ini": 5.4,
+  "fin": 5.68
+ },
+ {
+  "palabra": "te",
+  "ini": 5.74,
+  "fin": 5.8
+ },
+ {
+  "palabra": "sirvió?",
+  "ini": 5.84,
+  "fin": 6.12
+ }
+]

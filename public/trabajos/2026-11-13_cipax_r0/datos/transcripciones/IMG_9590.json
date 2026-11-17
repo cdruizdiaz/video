@@ -1,0 +1,241 @@
+{
+  "archivo": "IMG_9590.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 13473,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        796,
+        12468
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 796,
+      "hastaMs": 1936,
+      "texto": "Cuando vos quieras"
+    },
+    {
+      "desdeMs": 1936,
+      "hastaMs": 12468,
+      "texto": "No podés dar seguimiento al prospecto, la consideración bancaria te lleva horas o no sabés cuánto ganás"
+    }
+  ],
+  "tokens": [
+    {
+      "text": " Cuando",
+      "fromMs": 1026,
+      "toMs": 1216,
+      "dtwMs": 1156,
+      "p": 0.389382
+    },
+    {
+      "text": " vos",
+      "fromMs": 1216,
+      "toMs": 1416,
+      "dtwMs": 1316,
+      "p": 0.813583
+    },
+    {
+      "text": " quier",
+      "fromMs": 1436,
+      "toMs": 1776,
+      "dtwMs": 1456,
+      "p": 0.68972
+    },
+    {
+      "text": "as",
+      "fromMs": 1776,
+      "toMs": 1936,
+      "dtwMs": 1516,
+      "p": 0.996594
+    },
+    {
+      "text": " No",
+      "fromMs": 1936,
+      "toMs": 2046,
+      "dtwMs": 2216,
+      "p": 0.71171
+    },
+    {
+      "text": " pod",
+      "fromMs": 2166,
+      "toMs": 2216,
+      "dtwMs": 2456,
+      "p": 0.862492
+    },
+    {
+      "text": "és",
+      "fromMs": 2216,
+      "toMs": 2326,
+      "dtwMs": 2536,
+      "p": 0.455477
+    },
+    {
+      "text": " dar",
+      "fromMs": 2326,
+      "toMs": 2486,
+      "dtwMs": 2676,
+      "p": 0.992326
+    },
+    {
+      "text": " segu",
+      "fromMs": 2496,
+      "toMs": 2726,
+      "dtwMs": 2876,
+      "p": 0.912149
+    },
+    {
+      "text": "imiento",
+      "fromMs": 2726,
+      "toMs": 3156,
+      "dtwMs": 3096,
+      "p": 0.950416
+    },
+    {
+      "text": " al",
+      "fromMs": 3156,
+      "toMs": 4206,
+      "dtwMs": 8536,
+      "p": 0.158281
+    },
+    {
+      "text": " prospect",
+      "fromMs": 4256,
+      "toMs": 7946,
+      "dtwMs": 8836,
+      "p": 0.970047
+    },
+    {
+      "text": "o",
+      "fromMs": 8706,
+      "toMs": 9216,
+      "dtwMs": 9196,
+      "p": 0.996793
+    },
+    {
+      "text": ",",
+      "fromMs": 9296,
+      "toMs": 9336,
+      "dtwMs": 9256,
+      "p": 0.549426
+    },
+    {
+      "text": " la",
+      "fromMs": 9336,
+      "toMs": 9406,
+      "dtwMs": 9456,
+      "p": 0.750899
+    },
+    {
+      "text": " consider",
+      "fromMs": 9446,
+      "toMs": 9746,
+      "dtwMs": 9716,
+      "p": 0.475261
+    },
+    {
+      "text": "ación",
+      "fromMs": 9746,
+      "toMs": 9946,
+      "dtwMs": 9876,
+      "p": 0.998475
+    },
+    {
+      "text": " banc",
+      "fromMs": 9946,
+      "toMs": 9996,
+      "dtwMs": 10056,
+      "p": 0.988791
+    },
+    {
+      "text": "aria",
+      "fromMs": 10196,
+      "toMs": 10296,
+      "dtwMs": 10216,
+      "p": 0.998222
+    },
+    {
+      "text": " te",
+      "fromMs": 10296,
+      "toMs": 10366,
+      "dtwMs": 10356,
+      "p": 0.94359
+    },
+    {
+      "text": " lleva",
+      "fromMs": 10536,
+      "toMs": 10706,
+      "dtwMs": 10576,
+      "p": 0.980122
+    },
+    {
+      "text": " horas",
+      "fromMs": 10716,
+      "toMs": 11036,
+      "dtwMs": 10976,
+      "p": 0.982241
+    },
+    {
+      "text": " o",
+      "fromMs": 11036,
+      "toMs": 11106,
+      "dtwMs": 11256,
+      "p": 0.72842
+    },
+    {
+      "text": " no",
+      "fromMs": 11106,
+      "toMs": 11256,
+      "dtwMs": 11356,
+      "p": 0.986904
+    },
+    {
+      "text": " sab",
+      "fromMs": 11256,
+      "toMs": 11476,
+      "dtwMs": 11556,
+      "p": 0.776762
+    },
+    {
+      "text": "és",
+      "fromMs": 11476,
+      "toMs": 11626,
+      "dtwMs": 11616,
+      "p": 0.982221
+    },
+    {
+      "text": " cuánt",
+      "fromMs": 11626,
+      "toMs": 11996,
+      "dtwMs": 11756,
+      "p": 0.882616
+    },
+    {
+      "text": "o",
+      "fromMs": 11996,
+      "toMs": 12066,
+      "dtwMs": 11856,
+      "p": 0.99644
+    },
+    {
+      "text": " gan",
+      "fromMs": 12066,
+      "toMs": 12126,
+      "dtwMs": 12036,
+      "p": 0.998565
+    },
+    {
+      "text": "ás",
+      "fromMs": 12346,
+      "toMs": 12468,
+      "dtwMs": 12256,
+      "p": 0.941884
+    }
+  ]
+}

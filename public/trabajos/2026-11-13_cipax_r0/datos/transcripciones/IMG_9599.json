@@ -1,0 +1,115 @@
+{
+  "archivo": "IMG_9599.mp4",
+  "modelo": "large-v3-turbo-q8_0",
+  "duracionMs": 4735,
+  "vad": {
+    "metodo": "silencedetect",
+    "umbralDb": -35,
+    "silencioMinSeg": 0.8,
+    "margenSeg": 0.25,
+    "tramos": [
+      [
+        974,
+        3628
+      ]
+    ]
+  },
+  "segmentos": [
+    {
+      "desdeMs": 974,
+      "hastaMs": 2734,
+      "texto": "pensado para hacerte más fácil"
+    },
+    {
+      "desdeMs": 2734,
+      "hastaMs": 3494,
+      "texto": "el día a día."
+    }
+  ],
+  "tokens": [
+    {
+      "text": " pens",
+      "fromMs": 1214,
+      "toMs": 1244,
+      "dtwMs": 1434,
+      "p": 0.796948
+    },
+    {
+      "text": "ado",
+      "fromMs": 1244,
+      "toMs": 1444,
+      "dtwMs": 1554,
+      "p": 0.987796
+    },
+    {
+      "text": " para",
+      "fromMs": 1444,
+      "toMs": 1714,
+      "dtwMs": 1774,
+      "p": 0.990118
+    },
+    {
+      "text": " hac",
+      "fromMs": 1714,
+      "toMs": 1814,
+      "dtwMs": 1954,
+      "p": 0.981319
+    },
+    {
+      "text": "erte",
+      "fromMs": 1934,
+      "toMs": 2184,
+      "dtwMs": 2094,
+      "p": 0.999723
+    },
+    {
+      "text": " más",
+      "fromMs": 2184,
+      "toMs": 2384,
+      "dtwMs": 2274,
+      "p": 0.982873
+    },
+    {
+      "text": " fácil",
+      "fromMs": 2384,
+      "toMs": 2734,
+      "dtwMs": 2694,
+      "p": 0.994254
+    },
+    {
+      "text": " el",
+      "fromMs": 2894,
+      "toMs": 2894,
+      "dtwMs": 3074,
+      "p": 0.998062
+    },
+    {
+      "text": " día",
+      "fromMs": 2974,
+      "toMs": 3114,
+      "dtwMs": 3254,
+      "p": 0.99954
+    },
+    {
+      "text": " a",
+      "fromMs": 3194,
+      "toMs": 3224,
+      "dtwMs": 3374,
+      "p": 0.998887
+    },
+    {
+      "text": " día",
+      "fromMs": 3224,
+      "toMs": 3494,
+      "dtwMs": 3474,
+      "p": 0.999201
+    },
+    {
+      "text": ".",
+      "fromMs": 3494,
+      "toMs": 3494,
+      "dtwMs": 3474,
+      "p": 0.706944
+    }
+  ]
+}
